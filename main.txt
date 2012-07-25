@@ -1,0 +1,62 @@
+:title: Introduction à SysML
+:description: Template
+:keywords: one two
+:Author: Jean-Michel Bruel 
+:Author Initials: JMB
+:Email: jean-michel.bruel@univ-tlse2.fr
+:Revision: 1.0
+:Date: {localdate}
+:images: images
+:toc_title: Content
+:slideshowlocation: [IUT Blagnac]
+:duration: 85
+:slidebackground: asciidocslidy
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by Asciidoc and W3C Slidy &#169; 
+:incremental!:
+
+= {title}
+
+// raccourcis sites
+:moodle: http://webetud.iut-blagnac.fr[Moodle]
+:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
+:slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
+
+// data
+:jmi: Jean-Michel Inglebert
+:jmimail: jean-michel.inglebert@univ-tlse2.fr
+
+include::chap00AvantPropos.txt[]
+
+
+== Tips and tricks
+
+[TIP]
+====
+*tip1*:: definition of 'tip1'
+*tip2*:: definition
+====
+
+ifdef::backend-slidy2[<<<]
+
+[IMPORTANT]
+====
+This is 'important'
+====
+
+== Links
+
+- provide some sites http://goo.gl/GVhhX[here].
+- For more about the http://jmb.c.la[author]
+
+== About...
+
+**********************************************************************
+Document generated with {asciidoc} (v. 8.6.8) from 'Stuart Rackham' by mailto:{email}[{author}].
+
+Using {slidy2} (C) from 'Dave Raggett', an HTML slideshow tool, improved by mailto:{jmimail}[{jmi}].
+
+image:./images/icons/88x31.png["Licence Creative Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
+http://creativecommons.org/licenses/by-sa/3.0/[licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé].
+**********************************************************************
+
+

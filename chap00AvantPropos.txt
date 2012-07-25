@@ -1,0 +1,69 @@
+== Some section
+
+=== Some subsection
+
+Blabla
+
+* list1
+** list11
+** list 12
+* list2
+
+// For breakpage :
+// ifdef::backend-slidy2[<<<]
+
+// For nobreakpage :
+// ifdef::backend-slidy2[>>>]
+
+=== Some other subsection
+
+ifdef::backend-slidy2[:slidebackground!:]
+
+image:./doc/images/osmfmoma4.png["Full",scaledwidth="90%",link="./doc/images/osmfmoma4.png"]
+
+[NOTE]
+====
+- this is a 'note'
+- blabla
+====
+
+[quote, Bertrand Russell, The World of Mathematics (1956)]
+____________________________________________________________________
+A good notation has subtlety and suggestiveness which at times makes
+it almost seem like a live teacher.
+____________________________________________________________________
+
+
+[verse, William Blake, from Auguries of Innocence]
+__________________________________________________
+To see a world in a grain of sand,
+And a heaven in a wild flower,
+Hold infinity in the palm of your hand,
+And eternity in an hour.
+__________________________________________________
+
+.source code
+----
+first line  <1>
+second line <1><2>
+----
+
+<1> first callout
+<2> second callout
+
+=== Incremental images block
+
+:incremental:
+
+ifdef::backend-slidy2[]
+
+images::./doc/images/osmfmoma4.png[./doc/images/osmfmoma1.png,./doc/images/osmfmoma2.png,./doc/images/osmfmoma3.png]
+endif::backend-slidy2[]
+
+ifndef::backend-slidy2[]
+
+image::./doc/images/osmfmoma4.png[scaledwidth="90%"]
+endif::backend-slidy2[]
+
+:incremental!:
+
