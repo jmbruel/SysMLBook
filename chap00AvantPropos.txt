@@ -1,31 +1,4 @@
-== Some section
-
-=== Some subsection
-
-Blabla
-
-* list1
-** list11
-** list 12
-* list2
-
-// For breakpage :
-// ifdef::backend-slidy2[<<<]
-
-// For nobreakpage :
-// ifdef::backend-slidy2[>>>]
-
-=== Some other subsection
-
-ifdef::backend-slidy2[:slidebackground!:]
-
-image:./doc/images/osmfmoma4.png["Full",scaledwidth="90%",link="./doc/images/osmfmoma4.png"]
-
-[NOTE]
-====
-- this is a 'note'
-- blabla
-====
+== Avant-propos
 
 [quote, Bertrand Russell, The World of Mathematics (1956)]
 ____________________________________________________________________
@@ -33,37 +6,44 @@ A good notation has subtlety and suggestiveness which at times makes
 it almost seem like a live teacher.
 ____________________________________________________________________
 
+=== A qui est destiné ce document?
+//My students, my colleagues, and myself!
 
-[verse, William Blake, from Auguries of Innocence]
-__________________________________________________
-To see a world in a grain of sand,
-And a heaven in a wild flower,
-Hold infinity in the palm of your hand,
-And eternity in an hour.
-__________________________________________________
+Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de référence accessible, et ... moi-même (pour organiser mes notes diverses)!
 
-.source code
-----
-first line  <1>
-second line <1><2>
-----
+=== A qui il n'est pas destiné?
 
-<1> first callout
-<2> second callout
+Si vous appartenez à une de ces catégories, ce livre n'est pas pour vous :
+- vous cherchez un livre de référence
+- vous voulez vous perfectionner
 
-=== Incremental images block
+=== Historique
+//This document is a compilation of notes and discussions. The reference section (see \mapage{sec:biblio} where you will find the main books I have used). I would like to thank some of my friends who have helped me in this compilation: my colleagues who also teach, \who{Nicolas}{Belloir} (\corp{UPPA}), \who{Laurent}{Nonne} (\corp{IUT de Blagnac}); my colleagues from \sysmlfrance{}, \who{Pascal}{Roques} from \corp{PRFC}, \who{Agusti}{Canals} from \corp{C-S}, \who{Lo\"ic}{F\'ejoz} from \corp{RTaW}, the people from \corp{Universitad Aut\'onoma de Guadalajara}, and more especially \who{Karina}{Aguilar} for inviting me to teach \SysML{} there.
+Blabla
 
-:incremental:
+[[comment-lire]]
+=== Comment lire ce document?
 
-ifdef::backend-slidy2[]
+Blabla
+//\input{conventions-fr}
+//\input{conventions}
 
-images::./doc/images/osmfmoma4.png[./doc/images/osmfmoma1.png,./doc/images/osmfmoma2.png,./doc/images/osmfmoma3.png]
-endif::backend-slidy2[]
+=== Pourquoi parler de "document"?
 
-ifndef::backend-slidy2[]
+Parce que j'ignore la version que vous êtes en train de lire. A partir de l'link:main.txt[original], plusieurs versions ont été générées grâce à {asciidoc}:
 
-image::./doc/images/osmfmoma4.png[scaledwidth="90%"]
-endif::backend-slidy2[]
+* link:main.html[html]
+* link:main.slidy.html[présentation]
+* link:main.pdf[pdf]
 
-:incremental!:
+=== Utilisation et autres mentions légales
+
+Document généré par mailto:{email}[{author}] via {asciidoc} (version +8.6.8+) de 'Stuart Rackham'.
+La version présentation a été générée en utilisant {slidy2} (C) de 'Dave Raggett', amélioré par mailto:{jmimail}[{jmi}].
+Pour l'instant ce document est libre d'utilisation et géré par la 'Licence Creative Commons'. 
+image:../images/icons/88x31.png["Licence Creative 
+Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
+http://creativecommons.org/licenses/by-sa/3.0/[licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé].
+
+N'hésitez pas à m'envoyer vos remarques en tout genre.
 

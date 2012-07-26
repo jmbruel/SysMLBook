@@ -1,0 +1,14 @@
+<revision committer="Y Saito &lt;saito@ysaito1.corp.google.com&gt;" format="5" inventory_sha1="0fa6c388fcaee0f78805b40612c7fd0d8552db52" revision_id="saito@ysaito1.corp.google.com-20051221034159-8fd93c06f8da974e" timestamp="1135136519.228439093" timezone="-28800">
+<message>Removed dependency on sys.argv in basecanvas. In the new code,
+sys.argv is used when it exists, otherwise ["unknown"] is assumed.
+
+Added a doc for Unicode support.
+
+Code cleanup: changed "" to '' where applicable.
+
+Updated the regtest golden files again.
+</message>
+<parents>
+<revision_ref revision_id="saito@ysaito1.corp.google.com-20051221010339-c2a75f1d60d70c11" />
+</parents>
+</revision>

@@ -1,0 +1,6 @@
+<revision committer="Y Saito &lt;saito@ysaito1.corp.google.com&gt;" format="5" inventory_sha1="b6a254a120fd12bd76b947497d94c968f69078c0" revision_id="saito@ysaito1.corp.google.com-20051221010120-c67189d447834081" timestamp="1135126880.368004084" timezone="-28800">
+<message>Added ignore patterns; added unicodetest.</message>
+<parents>
+<revision_ref revision_id="saito@ysaito1.corp.google.com-20051221005843-00e082c96ec359f3" />
+</parents>
+</revision>

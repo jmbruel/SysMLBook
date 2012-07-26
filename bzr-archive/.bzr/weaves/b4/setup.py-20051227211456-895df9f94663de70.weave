@@ -1,0 +1,26 @@
+# bzr weave file v5
+i
+1 b8ff4437f2536c943863d75ac7abeadfa1d171f3
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+w
+{ 0
+. from distutils.core import setup
+. import pychart.version
+. 
+. setup (name = "PyChart",
+.        version = pychart.version.version,
+.        description = "Python Chart Generator",
+.        author = "Yasushi Saito",
+.        author_email = "yasushi@cs.washington.edu",
+.        url = "http://www.hpl.hp.com/personal/Yasushi_Saito/pychart",
+.        license = "GPL",
+.        long_description = """
+. Pychart is a Python library for creating high-quality
+. charts in Postscript, PDF, PNG, and SVG. 
+. It produces line plots, bar plots, range-fill plots, and pie
+. charts.""",
+.        packages = ['pychart', 'pychart.afm']
+.       )
+}
+W

@@ -1,0 +1,17 @@
+== Liens utiles
+
+- Sites officiels
+* Le site de l'association http://www.sysml-france.fr[SysML-France]
+* Le site de l'http://www.omg.org/[OMG]  (Object Management Group)
+* Le portail http://www.omgwiki.org/OMGSysML/[SysML] de l'OMG (Object
+Management Group)
+* Le site de l'http://www.incose.org/[INCOSE] (International Council on
+Systems Engineering)
+* Le site de l'http://www.afis.fr/[AFIS] (Association Française
+d'Ingénierie Système)
+
+- Blogs
+* Le site de http://model-based-systems-engineering.com/[Tim Weilkiens]
+* La démarche http://caminao.wordpress.com/[Caminao]
+- Divers
+* Pour en savoir plus sur l'http://jmb.c.la[auteur]

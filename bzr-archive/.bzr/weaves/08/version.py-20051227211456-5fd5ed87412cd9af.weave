@@ -1,0 +1,35 @@
+# bzr weave file v5
+i
+1 ffb566d8ba27a4c7bd9f9256260a89abc2d032b9
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+i 0
+1 6564da029afcc67606ca0f893a3cd0d11eaa6d24
+n saito@ysaito1.corp.google.com-20051221034159-8fd93c06f8da974e
+
+w
+{ 0
+. #
+. # Copyright (C) 2000-2005 by Yasushi Saito (yasushi.saito@gmail.com)
+. # 
+. # Jockey is free software; you can redistribute it and/or modify it
+. # under the terms of the GNU General Public License as published by the
+. # Free Software Foundation; either version 2, or (at your option) any
+. # later version.
+. #
+. # Jockey is distributed in the hope that it will be useful, but WITHOUT
+. # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+. # FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+. # for more details.
+. #
+[ 1
+. version = "1.38"
+. copyright = "Copyright 1999-2005 Yasushi Saito"
+] 1
+{ 1
+. version = "1.39"
+. copyright = "Copyright 1999-2006 Yasushi Saito"
+}
+. 
+}
+W

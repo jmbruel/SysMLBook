@@ -1,0 +1,19 @@
+# bzr weave file v5
+i
+1 2339fe5c9fd972c4266307af9398285f80d1023c
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+w
+{ 0
+. import unittest
+. import font_regtest
+. import chart_object_regtest
+. import chart_data_regtest
+. 
+. suite = unittest.TestSuite()
+. suite.addTest(font_regtest.TestFonts())
+. suite.addTest(chart_object_regtest.TestChartObject())
+. suite.addTest(chart_data_regtest.TestChartData())
+. unittest.TextTestRunner().run(suite)
+}
+W

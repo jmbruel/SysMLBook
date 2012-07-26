@@ -1,10 +1,12 @@
 :title: Introduction à SysML
-:description: Template
+:doctype: book
+:description: Livre d'intro à SysML
 :keywords: one two
 :Author: Jean-Michel Bruel 
 :Author Initials: JMB
 :Email: jean-michel.bruel@univ-tlse2.fr
 :Revision: 1.0
+:localdate: {sys: date +%d/%m/%Y}
 :Date: {localdate}
 :images: images
 :toc_title: Content
@@ -13,6 +15,7 @@
 :slidebackground: asciidocslidy
 :copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by Asciidoc and W3C Slidy &#169; 
 :incremental!:
+:indir: dessins
 
 = {title}
 
@@ -24,39 +27,71 @@
 // data
 :jmi: Jean-Michel Inglebert
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
+:sysml: SysML indexterm:[SysML]
+:eggstitle: Humour
 
+
+== Listes
+
+=== Figures
+
+. <<fig:eggs,\{eggstitle}>>
+
+// chapitres 
 include::chap00AvantPropos.txt[]
 
+include::chap01Methode.txt[]
 
-== Tips and tricks
+include::apx01Links.txt[]
 
-[TIP]
-====
-*tip1*:: definition of 'tip1'
-*tip2*:: definition
-====
-
-ifdef::backend-slidy2[<<<]
-
-[IMPORTANT]
-====
-This is 'important'
-====
-
-== Links
-
-- provide some sites http://goo.gl/GVhhX[here].
-- For more about the http://jmb.c.la[author]
-
-== About...
+== A propos de ce document...
 
 **********************************************************************
-Document generated with {asciidoc} (v. 8.6.8) from 'Stuart Rackham' by mailto:{email}[{author}].
-
-Using {slidy2} (C) from 'Dave Raggett', an HTML slideshow tool, improved by mailto:{jmimail}[{jmi}].
-
-image:./images/icons/88x31.png["Licence Creative Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
+Document généré par mailto:{email}[{author}] via {asciidoc} (version +8.6.8+) de 'Stuart Rackham'.
+La version présentation a été générée en utilisant {slidy2} (C) de 'Dave Raggett', amélioré par mailto:{jmimail}[{jmi}].
+Pour l'instant ce document est libre d'utilisation et géré par la 'Licence Creative Commons'. 
+image:../images/icons/88x31.png["Licence Creative 
+Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
 http://creativecommons.org/licenses/by-sa/3.0/[licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé].
 **********************************************************************
 
+:numbered!:
 
+[appendix]
+= Annexes
+One or more optional appendixes go here at section level zero.
+
+NOTE: Preface and appendix subsections start out of sequence at level
+2 (level 1 is skipped).  This only applies to multi-part book
+documents.
+
+
+[bibliography]
+= Bibliographie
+Les références...
+
+[bibliography]
+- [[[taoup]]] Eric Steven Raymond. 'The Art of Unix
+  Programming'. Addison-Wesley. ISBN 0-13-142901-9.
+- [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
+  'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
+  ISBN 1-56592-580-7.
+
+[glossary]
+= Glossaire
+Les définitions...
+
+[glossary]
+SysML::
+  System Modeling Language
+
+A second glossary term::
+  The corresponding (indented) definition.
+
+
+[index]
+= Index
+////////////////////////////////////////////////////////////////
+The index is normally left completely empty, it's contents are
+generated automatically by the DocBook toolchain.
+////////////////////////////////////////////////////////////////

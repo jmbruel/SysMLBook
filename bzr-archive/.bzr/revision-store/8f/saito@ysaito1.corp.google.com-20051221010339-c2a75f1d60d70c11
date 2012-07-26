@@ -1,0 +1,6 @@
+<revision committer="Y Saito &lt;saito@ysaito1.corp.google.com&gt;" format="5" inventory_sha1="468bb9f773dd00c602f10ac1f31bb57552fa0ee2" revision_id="saito@ysaito1.corp.google.com-20051221010339-c2a75f1d60d70c11" timestamp="1135127019.594137907" timezone="-28800">
+<message>Makefile cleaned up</message>
+<parents>
+<revision_ref revision_id="saito@ysaito1.corp.google.com-20051221010120-c67189d447834081" />
+</parents>
+</revision>

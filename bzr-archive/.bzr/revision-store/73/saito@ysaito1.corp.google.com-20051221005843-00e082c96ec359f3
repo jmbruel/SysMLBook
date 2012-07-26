@@ -1,0 +1,11 @@
+<revision committer="Y Saito &lt;saito@ysaito1.corp.google.com&gt;" format="5" inventory_sha1="674858a2b788f95a5ddc1c44687279ab81bf873f" revision_id="saito@ysaito1.corp.google.com-20051221005843-00e082c96ec359f3" timestamp="1135126723.986917019" timezone="-28800">
+<message>Added a limited Unicode support. Currently only Latin fonts (i.e.,
+single-byte fonts) are supported.
+
+
+
+</message>
+<parents>
+<revision_ref revision_id="saito@ysaito0.corp.google.com-20051229065707-a5994323fbc2c37b" />
+</parents>
+</revision>
