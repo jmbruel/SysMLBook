@@ -23,6 +23,7 @@
 :moodle: http://webetud.iut-blagnac.fr[Moodle]
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
 :slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
+:omg: http://www.omg.org[OMG]
 
 // data
 :jmi: Jean-Michel Inglebert
@@ -77,17 +78,7 @@ Les références...
   'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
   ISBN 1-56592-580-7.
 
-[glossary]
-= Glossaire
-Les définitions...
-
-[glossary]
-SysML::
-  System Modeling Language
-
-A second glossary term::
-  The corresponding (indented) definition.
-
+include::glossary.txt[]
 
 [index]
 = Index

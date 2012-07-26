@@ -1,0 +1,10 @@
+[glossary]
+= Glossaire
+Les définitions...
+
+[glossary]
+[[SysML]]SysML::
+  **Sys**tem **M**odeling **L**anguage (TM) : le langage de modélisation de systèmes maintenu par l'{omg}.
+
+A second glossary term::
+  The corresponding (indented) definition.

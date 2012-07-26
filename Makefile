@@ -9,7 +9,7 @@ compact:
 slidy:
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -a posix --unsafe make.txt
-		
+
 co: 
 	@echo '==> Checkout de la dernière version'
 	git checkout master
@@ -21,7 +21,7 @@ commit:
 
 github:
 	@echo '==> Create github repo'
-	git remote add origin https://github.com/jmbruel/main.git
+	git remote add origin https://github.com/jmbruel/SysMLBook.git
 
 push:
 	@echo '==> Pushing to gitub'
