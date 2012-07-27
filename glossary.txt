@@ -3,8 +3,8 @@
 Les définitions...
 
 [glossary]
-[[SysML]]SysML::
-  **Sys**tem **M**odeling **L**anguage (TM) : le langage de modélisation de systèmes maintenu par l'{omg}.
+TRL::
+	_**T**echnology **R**eadiness **L**evel_ : système de mesure employé par des agences gouvernementales américaines et par de nombreuses compagnies (et agences) mondiales afin d'évaluer le niveau de maturité d'une technologie (cf. http://fr.wikipedia.org/wiki/Technology_Readiness_Level[Wikipedia]).
 
-A second glossary term::
-  The corresponding (indented) definition.
+[[SysML]]SysML::
+  _**Sys**tem **M**odeling **L**anguage_ (TM) : le langage de modélisation de systèmes maintenu par l'{omg}.

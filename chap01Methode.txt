@@ -1,5 +1,9 @@
 == Méthode pour cet ouvrage
 
+[quote, Albert Einstein]
+____________________________________________________________________
+Everything should be made as simple as possible, but no simpler.
+____________________________________________________________________
 
 [[fig:eggs]]
 .\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])

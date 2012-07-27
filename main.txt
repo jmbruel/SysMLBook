@@ -8,6 +8,7 @@
 :Revision: 1.0
 :localdate: {sys: date +%d/%m/%Y}
 :Date: {localdate}
+:startdate: 26/07/2012
 :images: images
 :toc_title: Content
 :slideshowlocation: [IUT Blagnac]
@@ -20,17 +21,17 @@
 = {title}
 
 // raccourcis sites
-:moodle: http://webetud.iut-blagnac.fr[Moodle]
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
-:slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
+:moodle: http://webetud.iut-blagnac.fr[Moodle]
 :omg: http://www.omg.org[OMG]
+:pandoc: http://johnmacfarlane.net/pandoc/[Pandoc]
+:slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
 
 // data
+:eggstitle: Humour
 :jmi: Jean-Michel Inglebert
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
 :sysml: SysML indexterm:[SysML]
-:eggstitle: Humour
-
 
 == Listes
 
@@ -47,14 +48,8 @@ include::apx01Links.txt[]
 
 == A propos de ce document...
 
-**********************************************************************
-Document généré par mailto:{email}[{author}] via {asciidoc} (version +8.6.8+) de 'Stuart Rackham'.
-La version présentation a été générée en utilisant {slidy2} (C) de 'Dave Raggett', amélioré par mailto:{jmimail}[{jmi}].
-Pour l'instant ce document est libre d'utilisation et géré par la 'Licence Creative Commons'. 
-image:../images/icons/88x31.png["Licence Creative 
-Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
-http://creativecommons.org/licenses/by-sa/3.0/[licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé].
-**********************************************************************
+include::about.txt[]
+
 
 :numbered!:
 
