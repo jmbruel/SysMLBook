@@ -5,7 +5,7 @@
 	* Le site de l'http://www.omg.org/[OMG]  (Object Management Group)
 	* Le portail http://www.omgwiki.org/OMGSysML/[SysML] de l'OMG (Object
 	Management Group)
-	* http://www.omg.org/spec/SysML/1.2/PDF[La spécification elle-même]
+	* http://www.omg.org/spec/SysML/1.3/PDF[La spécification elle-même]
 	* Le site de l'http://www.incose.org/[INCOSE] (International Council on
 	Systems Engineering)
 	* Le site de l'http://www.afis.fr/[AFIS] (Association Française

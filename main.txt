@@ -51,6 +51,7 @@
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
 :iut: IUT de Blagnac
 :nonne: Laurent Nonne
+:omg: OMG
 :prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
 :pdss:  Pierre de Saqui Sannes
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]
@@ -96,7 +97,7 @@ ou les modèles, sera celle-ci :
 
 [[Matrice]]
 .La carte de base
-[cols="h,4*",options="header",width="50%"]
+[align="center",cols="h,4*",options="header",width="50%"]
 |======================
 |					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
 | {organisation}	|					|        		|				|
@@ -180,7 +181,7 @@ On abordera :
 === {resume}
 
 .Exigences
-[cols="h,4*",options="header"]
+[cols="h,2,1,1,1",options="header",width="70%"]
 |======================
 |					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
 | {organisation}	| +⊕–+, +\<<deriveRqt>>+			|        		|				|
@@ -211,6 +212,7 @@ On abordera :
 - Block Definition Diagrams 
 - Internal Block Diagrams
 - Parametric Diagrams
+
 
 == Le comportement du système
 

@@ -46,9 +46,19 @@ it almost seem like a live teacher.</simpara>
 </section>
 <section id="_a_qui_il_n_8217_est_pas_destiné">
 <title>A qui il n&#8217;est pas destiné?</title>
-<simpara>Si vous appartenez à une de ces catégories, ce livre n&#8217;est pas pour vous :
-- vous cherchez un livre de référence
-- vous voulez vous perfectionner</simpara>
+<simpara>Si vous appartenez à une de ces catégories, ce livre n&#8217;est pas pour vous :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+vous cherchez un livre de référence
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+vous voulez vous perfectionner
+</simpara>
+</listitem>
+</itemizedlist>
 </section>
 <section id="_historique">
 <title>Historique</title>
@@ -60,6 +70,25 @@ au Master Recherche SAID, de l&#8217;UPS (introduction),
 au M.Sc. Gotteborg, Suède (introduction réalisée par Nicolas Belloir),
 à l&#8217;Universitad Autonoma de Guadalajara, Mexico (40h de formation professionnelle aux employés de Continental),
 ou plus récemment au Master ??? de l&#8217;UPS.</simpara>
+<simpara>Vous trouverez en référence (cf. <xref linkend="refs"/>) les ouvrages et autres documents utilisés.</simpara>
+<simpara>Je tiens à remercier mes collègues qui m&#8217;ont aidé dans mon entreprise :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Nicolas Belloir de l&#8217;Université de Pau et des Pays de l&#8217;Adour, Laurent Nonne de l&#8217;IUT de Blagnac et Karina Aguilar de l&#8217;Universitad Autonoma de Guadalajara;
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+mes collègues de <ulink url="http://www.sysml-france.fr">SysML-France</ulink> : <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink>, Agusti Canals de C-S et Loïc Féjoz de RTaW;
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+le maître d&#8217;<ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> : Jean-Michel Inglebert.
+</simpara>
+</listitem>
+</itemizedlist>
 </section>
 <section id="_sur_l_8217_auteur">
 <title>Sur l&#8217;auteur</title>
@@ -709,13 +738,71 @@ Activity Diagrams
 </listitem>
 </itemizedlist>
 </chapter>
+<chapter id="_les_aspects_transversaux">
+<title>Les aspects transversaux</title>
+<table
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>Aspects transversaux</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="43*"/>
+<colspec colname="col_2" colwidth="43*"/>
+<colspec colname="col_3" colwidth="43*"/>
+<colspec colname="col_4" colwidth="43*"/>
+<colspec colname="col_5" colwidth="43*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> Requirements        </entry>
+<entry align="left" valign="top"> Structure   </entry>
+<entry align="left" valign="top"> Comportement    </entry>
+<entry align="left" valign="top"> <emphasis role="strong"><phrase role="red">Transverse</phrase></emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Organisation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Analyse</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Conception</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Implémentation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</chapter>
 <chapter id="_considérations_méthodologiques">
 <title>Considérations méthodologiques</title>
 <simpara>Exemples de démarche autour de SysML <indexterm>
   <primary>SysML</primary>
 </indexterm>, lien avec la section <xref linkend="Methodes"/>.</simpara>
 </chapter>
-<chapter id="_exercices_de_révision">
+<chapter id="Exos">
 <title>Exercices de révision</title>
 </chapter>
 <chapter id="_liens_utiles">
@@ -874,8 +961,149 @@ Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la 
 <note><simpara>Preface and appendix subsections start out of sequence at level
 2 (level 1 is skipped).  This only applies to multi-part book
 documents.</simpara></note>
+<chapter id="_historique_de_sysml">
+<title>Historique de SysML</title>
+<simpara>Un point sur les évolutions de SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>.</simpara>
+</chapter>
+<chapter id="_d_8217_uml_à_sysml">
+<title>D&#8217;UML à SysML</title>
+<simpara>Un point sur comment aborder SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm> quand on vient d&#8217;UML <indexterm>
+  <primary>UML</primary>
+</indexterm>.</simpara>
+</chapter>
+<chapter id="_challenges_et_questions_ouvertes_autour_de_sysml">
+<title>Challenges et questions ouvertes autour de SysML</title>
+</chapter>
+<chapter id="_faq">
+<title>FAQ</title>
+<simpara>Cette <emphasis><emphasis role="strong">F</emphasis>requently <emphasis role="strong">A</emphasis>sked <emphasis role="strong">Q</emphasis>uestion</emphasis> a été construite par expérience, en regroupant
+les questions des étudiants durant mes différentes interventions.
+J&#8217;ai aussi ajouté des questions souvent rencontrées dans les journées organisés par <ulink url="http://www.sysml-france.fr">SysML-France</ulink>.</simpara>
+<note><simpara>Voir aussi cette <ulink url="http://www.sysmlforum.com/faq">FAQ</ulink> très bien faite.</simpara></note>
+<simpara>Cette FAQ peut servir de base à la révision d&#8217;examens (cf. aussi <xref linkend="Exos"/>).</simpara>
+<section id="_what_is_the_current_version_of_sysml_and_how_can_i_obtain_it">
+<title>What is the current version of SysML and how can I obtain it?</title>
+<simpara>Verson 1.3 and here is the specification link: <ulink url="http://www.omg.org/cgi-bin/doc?formal/10-06-02">http://www.omg.org/cgi-bin/doc?formal/10-06-02</ulink>.</simpara>
+</section>
+<section id="_what_changes_were_made_during_the_last_revision">
+<title>What changes were made during the last revision?</title>
+<simpara>Notable changes in Version 1.2 of SysML include:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Synchronization with changes in UML 2.3
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Conjugate ports metamodel and notation
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Naming of interruptible activity regions
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Inclusion of UML instance specifications
+ -Inclusion of UML structured activity nodes
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Inclusion of UML multiple item flow notation
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Improvements to Unit and QuantityKind support for value types, and a non-normative model to define systems of units and quantities
+</simpara>
+</listitem>
+</itemizedlist>
+<note><simpara>The SysML v1.3 Revision Task Force led by Roger Burkhart and Rick Steiner is continuing to work on proposed improvements to SysML based on feedback from the systems modeling community.</simpara></note>
+</section>
+<section id="_how_do_we_setup_ranges_limits_of_input_variables_in_a_par_for_example">
+<title>How do we setup ranges (limits) of (input) variables (in a par for example)?</title>
+<simpara>In the details or the definition of the Flow Item.</simpara>
+</section>
+<section id="_what_does_the_literal_strict_literal_keyword_means_for_profile_application">
+<title>What does the <literal>{strict}</literal> keyword means for profile application?</title>
+<simpara>No other meta-elements than the one in the applied profile were used (e.g., you can use a tool supporting the profile with confidence).</simpara>
+<blockquote>
+<attribution>
+SysML1.2 p. 8
+</attribution>
+<simpara>The semantics of UML profiles ensure that when a user model “strictly” applies the SysML profile, only the UML metaclasses referenced by SysML are available to the user of that model. If the
+profile is not “strictly” applied, then additional UML metaclasses that were not explicitly referenced may also be available.</simpara>
+</blockquote>
+</section>
+<section id="_what_does_the_visibility_literal_private_literal_literal_public_literal_8230_means_for_a_block">
+<title>What does the visibility (<literal>private</literal>, <literal>public</literal>, &#8230;) means for a block?</title>
+<simpara>As any model elements, the visibility of a block describes how it can be imported outside its namespace.</simpara>
+<note><simpara>It depends on the tool support for visibility controls to use this feature.</simpara></note>
+</section>
+<section id="_what_is_the_difference_between_an_internal_and_a_self_transition">
+<title>What is the difference between an internal and a self transition?</title>
+<simpara>In a self transition the exit and the the entry events are trigered.</simpara>
+</section>
+<section id="_can_i_attach_a_history_pseudostate_to_a_particular_non_composite_state">
+<title>Can I attach a History pseudostate to a particular (non composite) state?</title>
+<simpara>No. The History pseudostate (H) is indicated inside a composite state and means that when back in this superstate, the machine goes back to its last active state.</simpara>
+</section>
+<section id="_divers">
+<title>Divers</title>
+<simpara>Quelques autres questions que je laisse à votre sagacité :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Here is a list of unaswered questions that you should work on:
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Why do systems engineer need yet-another-modeling-language?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+What is the relationship between “open source SysML” and “OMG SysML”?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+What is the roadmap for OMG SysML 2.0?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Who are the SysML Partners?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+What is the relationship between UML and SysML? Can SysML and UML be used together?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Can SysML be customized?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Which language is easier to learn, SysML or UML?
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
 </appendix>
-<bibliography id="_bibliographie">
+<bibliography id="refs">
 <title>Bibliographie</title>
 <simpara>Les références&#8230;</simpara>
 <bibliodiv>
@@ -887,6 +1115,11 @@ documents.</simpara></note>
 <bibliomixed>
 <bibliomisc>
 <anchor id="Roques2010" xreflabel="[Roques2010]"/>[Roques2010] <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink>. SysML par l&#8217;exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. A acheter <ulink url="http://www.numilog.com/LIVRES/FICHES/62775.Livre">ici</ulink>.
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="SysML12" xreflabel="[SysML12]"/>[SysML12] OMG. Systems modeling language version 1.2. Technical report, 2010.
 </bibliomisc>
 </bibliomixed>
 <bibliomixed>
@@ -906,7 +1139,27 @@ documents.</simpara></note>
 </bibliography>
 <glossary id="_glossaire">
 <title>Glossaire</title>
-<simpara>Les définitions&#8230;</simpara>
+<note>
+<title>Ressources</title>
+<simpara>Les définitions ci-dessous sont regroupées à titre indicatif. Les sources utilisées sont :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Glossaire du <ulink url="http://www.sei.cmu.edu/architecture/start/glossary">Software Engineering Institute</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://www.computer-dictionary-online.org/">IEEE Computer Dictionary Online</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://fr.wikipedia.org/">Wikipedia</ulink> –- Version française￼￼
+</simpara>
+</listitem>
+</itemizedlist>
+</note>
 <glossentry>
 <glossterm>
 OMG
