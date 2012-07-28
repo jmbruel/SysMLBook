@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<book lang="en">
+<bookinfo>
+    <title>Introduction à SysML</title>
+    <date>28/07/2012</date>
+    <author>
+        <firstname>Jean-Michel</firstname>
+        <surname>Bruel</surname>
+        <email>jean-michel.bruel@univ-tlse2.fr</email>
+    </author>
+    <authorinitials>JMB</authorinitials>
+<revhistory><revision><revnumber>1.0</revnumber><date>28/07/2012</date><authorinitials>JMB</authorinitials></revision></revhistory>
+</bookinfo>
+<chapter id="_listes">
+<title>Listes</title>
+<section id="_figures">
+<title>Figures</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>
+<link linkend="fig:eggs">Humour</link>
+</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<part id="_partie_1_introduction">
+<title>Partie 1 : Introduction</title>
+<chapter id="_avant_propos">
+<title>Avant-propos</title>
+<blockquote>
+<attribution>
+Bertrand Russell
+<citetitle>The World of Mathematics (1956)</citetitle>
+</attribution>
+<simpara>A good notation has subtlety and suggestiveness which at times makes
+it almost seem like a live teacher.</simpara>
+</blockquote>
+<section id="_a_qui_est_destiné_ce_document">
+<title>A qui est destiné ce document?</title>
+<simpara>Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de référence accessible, et &#8230; moi-même (pour organiser mes notes diverses)!</simpara>
+</section>
+<section id="_a_qui_il_n_8217_est_pas_destiné">
+<title>A qui il n&#8217;est pas destiné?</title>
+<simpara>Si vous appartenez à une de ces catégories, ce livre n&#8217;est pas pour vous :
+- vous cherchez un livre de référence
+- vous voulez vous perfectionner</simpara>
+</section>
+<section id="_historique">
+<title>Historique</title>
+<simpara>Ce document est la compilation de plusieurs années d&#8217;enseignement de SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>, que ce soit
+au Master Internet, de l&#8217;Université of Pau (cours d&#8217;introduction avec mon collègue et ami Nicolas Belloir),
+au Master Recherche SAID, de l&#8217;UPS (introduction),
+au M.Sc. Gotteborg, Suède (introduction réalisée par Nicolas Belloir),
+à l&#8217;Universitad Autonoma de Guadalajara, Mexico (40h de formation professionnelle aux employés de Continental),
+ou plus récemment au Master ??? de l&#8217;UPS.</simpara>
+</section>
+<section id="_sur_l_8217_auteur">
+<title>Sur l&#8217;auteur</title>
+<itemizedlist>
+<listitem>
+<simpara>
+Professeur à l&#8217;<ulink url="http://www.univ-toulouse.fr">Univesité de Toulouse</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Cofoundateur de l&#8217;association <ulink url="http://www.sysml-france.fr">SysML-France</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Member of the Software and System Modeling journal editorial board
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Co-lead of the Ambient Systems Research group at IRIT Head of the Computer Science Department of my institute
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Married, one (wonderful) child
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="comment-lire">
+<title>Comment lire ce document?</title>
+<simpara>Blabla</simpara>
+</section>
+<section id="_pourquoi_parler_de_document">
+<title>Pourquoi parler de "document"?</title>
+<simpara>Parce que j&#8217;ignore la version que vous êtes en train de lire. A partir de l&#8217;<ulink url="main.txt">original</ulink>, plusieurs versions ont été générées grâce à <ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink>:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+<ulink url="main.html">html</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="main.slidy.html">présentation</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="main.pdf">pdf</ulink>
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="_utilisation_et_autres_mentions_légales">
+<title>Utilisation et autres mentions légales</title>
+<sidebar>
+<simpara>Document généré par <ulink url="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</ulink> via <ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> (version <literal>8.6.8</literal>) de <emphasis>Stuart Rackham</emphasis>.
+La version présentation a été générée en utilisant <ulink url="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</ulink> &#169; de <emphasis>Dave Raggett</emphasis>, amélioré par <ulink url="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</ulink>.
+Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <emphasis>Licence Creative Commons</emphasis>.
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="../images/icons/88x31.png"/>
+  </imageobject>
+  <textobject><phrase>Licence Creative Commons</phrase></textobject>
+</inlinemediaobject>
+<ulink url="http://creativecommons.org/licenses/by-sa/3.0/">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé</ulink>.</simpara>
+</sidebar>
+<simpara>N&#8217;hésitez pas à m&#8217;envoyer vos remarques en tout genre.</simpara>
+</section>
+</chapter>
+<chapter id="_méthode_pour_cet_ouvrage">
+<title>Méthode pour cet ouvrage</title>
+<blockquote>
+<attribution>
+Albert Einstein
+</attribution>
+<simpara>Everything should be made as simple as possible, but no simpler.</simpara>
+</blockquote>
+<figure id="fig:eggs"><title>Humour (taken from <ulink url="https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74">here</ulink>)</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="./images/ProgrammerHumor.jpg"/>
+  </imageobject>
+  <textobject><phrase>Joke</phrase></textobject>
+</mediaobject>
+</figure>
+<simpara>Exemple de note à propos de SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm> <footnote><simpara>An example footnote.</simpara></footnote>.</simpara>
+<simpara>An example link to a bibliography entry <xref linkend="taoup"/>.
+<indexterm>
+  <primary>Second example index entry</primary>
+</indexterm></simpara>
+<informalfigure>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="images/chart.png"/>
+  </imageobject>
+  <textobject><phrase>Chart</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</chapter>
+<chapter id="_c_8217_est_quoi_sysml">
+<title>C&#8217;est quoi SysML?</title>
+<simpara>Si vous ne deviez lire qu&#8217;un seul chapitre&#8230;</simpara>
+</chapter>
+<chapter id="_un_exemple_fil_rouge">
+<title>Un exemple fil rouge</title>
+<simpara>L&#8217;exemple de système qui sera modélisé tout au long de ce livre en guise d&#8217;exemple.</simpara>
+<simpara>Il existe un certain nombre d&#8217;exemple complets :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Le radio-réveil de <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink> <xref linkend="Roques2010"/>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Le distiller de <xref linkend="FMS"/>
+</simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+</part>
+<part id="_partie_2_ingénierie_système">
+<title>Partie 2 : Ingénierie système</title>
+<simpara>La matrice qui nous servira de carte de base pour placer les activités
+ou les modèles, sera celle-ci :</simpara>
+<table id="Matrice"
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>La carte de base</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="43*"/>
+<colspec colname="col_2" colwidth="43*"/>
+<colspec colname="col_3" colwidth="43*"/>
+<colspec colname="col_4" colwidth="43*"/>
+<colspec colname="col_5" colwidth="43*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> Requirements        </entry>
+<entry align="left" valign="top"> Structure   </entry>
+<entry align="left" valign="top"> Comportement    </entry>
+<entry align="left" valign="top"> Transverse</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Organisation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Analyse</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Conception</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Implémentation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<chapter id="_différence_avec_l_8217_ingénierie_logicielle">
+<title>Différence avec l&#8217;ingénierie logicielle</title>
+<simpara>Enseignant en informatique, je me retrouve souvent à enseigner SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm> à des informaticiens.
+D&#8217;où ce petit exposé sur mon opinion de la différence entre les deux "mondes".</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Not Software Engineering&#8230;
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+&#8230;Before Software Engineering!
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Historically
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+In the development process
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter id="_les_exigences">
+<title>Les exigences</title>
+</chapter>
+<chapter id="_l_8217_architecture_du_système">
+<title>L&#8217;architecture du système</title>
+</chapter>
+<chapter id="_le_comportement_du_système">
+<title>Le comportement du système</title>
+</chapter>
+<chapter id="Methodes">
+<title>Méthodes et démarches</title>
+</chapter>
+</part>
+<part id="_partie_3_la_notation_sysml">
+<title>Partie 3 : La notation SysML</title>
+<simpara>Rappel sur la matrice (cf. <xref linkend="Matrice"/>).</simpara>
+<chapter id="_principes_de_base">
+<title>Principes de base</title>
+<simpara>A aborder :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Les cartouches
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+La différence entre modèles et schémas
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Les stéréotypes, définitions de base etc.
+</simpara>
+</listitem>
+</itemizedlist>
+<simpara>On insistera ici sur l&#8217;organisation.</simpara>
+</chapter>
+<chapter id="_organisation">
+<title>Organisation</title>
+<table
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>Organisation</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="43*"/>
+<colspec colname="col_2" colwidth="43*"/>
+<colspec colname="col_3" colwidth="43*"/>
+<colspec colname="col_4" colwidth="43*"/>
+<colspec colname="col_5" colwidth="43*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> Requirements        </entry>
+<entry align="left" valign="top"> Structure   </entry>
+<entry align="left" valign="top"> Comportement    </entry>
+<entry align="left" valign="top"> Transverse</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong"><emphasis role="strong"><phrase role="red">Organisation</phrase></emphasis></emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Analyse</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Conception</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Implémentation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<simpara>On abordera :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+The Package Diagram
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Different types of packages
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Possible organisations
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Namespaces
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Dependencies
+</simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter id="_les_exigences_2">
+<title>Les exigences</title>
+<table
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>Exigences</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="43*"/>
+<colspec colname="col_2" colwidth="43*"/>
+<colspec colname="col_3" colwidth="43*"/>
+<colspec colname="col_4" colwidth="43*"/>
+<colspec colname="col_5" colwidth="43*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> <emphasis role="strong"><phrase role="red">Requirements</phrase></emphasis>         </entry>
+<entry align="left" valign="top"> Structure   </entry>
+<entry align="left" valign="top"> Comportement    </entry>
+<entry align="left" valign="top"> Transverse</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Organisation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Analyse</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Conception</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Implémentation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<simpara>On abordera :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Requirements organization
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Requirements properties
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Requirements links
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Traceability considerations
+</simpara>
+</listitem>
+</itemizedlist>
+<section id="_en_résumé">
+<title>En résumé</title>
+<table
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>Exigences</title>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="20*"/>
+<colspec colname="col_2" colwidth="20*"/>
+<colspec colname="col_3" colwidth="20*"/>
+<colspec colname="col_4" colwidth="20*"/>
+<colspec colname="col_5" colwidth="20*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> <emphasis role="strong"><phrase role="red">Requirements</phrase></emphasis>         </entry>
+<entry align="left" valign="top"> Structure   </entry>
+<entry align="left" valign="top"> Comportement    </entry>
+<entry align="left" valign="top"> Transverse</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Organisation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>⊕–</literal>, <literal>&lt;&lt;deriveRqt&gt;&gt;</literal></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Analyse</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>&lt;&lt;satisfy&gt;&gt;</literal> entre reqs et UC</simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Conception</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>&lt;&lt;allocate&gt;&gt;</literal></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Implémentation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>&lt;&lt;satisfy&gt;&gt;</literal>, <literal>&lt;&lt;verify&gt;&gt;</literal></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section id="_questions_de_révision">
+<title>Questions de révision</title>
+<itemizedlist>
+<listitem>
+<simpara>
+Quelles sont les différences entre <emphasis>besoins</emphasis> et <emphasis>exigences</emphasis>?
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter id="_l_8217_architecture_du_système_2">
+<title>L&#8217;architecture du système</title>
+<table
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>Structure</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="43*"/>
+<colspec colname="col_2" colwidth="43*"/>
+<colspec colname="col_3" colwidth="43*"/>
+<colspec colname="col_4" colwidth="43*"/>
+<colspec colname="col_5" colwidth="43*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> Requirements        </entry>
+<entry align="left" valign="top"> <emphasis role="strong"><phrase role="red">Structure</phrase></emphasis>    </entry>
+<entry align="left" valign="top"> Comportement    </entry>
+<entry align="left" valign="top"> Transverse</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Organisation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Analyse</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Conception</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Implémentation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<simpara>On abordera :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Structure organization
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Block Definition Diagrams
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Internal Block Diagrams
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Parametric Diagrams
+</simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter id="_le_comportement_du_système_2">
+<title>Le comportement du système</title>
+<table
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>Structure</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="43*"/>
+<colspec colname="col_2" colwidth="43*"/>
+<colspec colname="col_3" colwidth="43*"/>
+<colspec colname="col_4" colwidth="43*"/>
+<colspec colname="col_5" colwidth="43*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> Requirements        </entry>
+<entry align="left" valign="top"> Structure   </entry>
+<entry align="left" valign="top"> <emphasis role="strong"><phrase role="red">Comportement</phrase></emphasis>     </entry>
+<entry align="left" valign="top"> Transverse</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Organisation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Analyse</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Conception</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Implémentation</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<simpara>On abordera :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Use Case Diagrams
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Sequence Diagrams
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+State Machines
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Activity Diagrams
+</simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter id="_considérations_méthodologiques">
+<title>Considérations méthodologiques</title>
+<simpara>Exemples de démarche autour de SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>, lien avec la section <xref linkend="Methodes"/>.</simpara>
+</chapter>
+<chapter id="_exercices_de_révision">
+<title>Exercices de révision</title>
+</chapter>
+<chapter id="_liens_utiles">
+<title>Liens utiles</title>
+<itemizedlist>
+<listitem>
+<simpara>
+Sites officiels
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Le site de l&#8217;association <ulink url="http://www.sysml-france.org">SysML-France</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Le site de l&#8217;<ulink url="http://www.omg.org/">OMG</ulink>  (Object Management Group)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Le portail <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> de l&#8217;OMG (Object
+        Management Group)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://www.omg.org/spec/SysML/1.2/PDF">La spécification elle-même</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Le site de l&#8217;<ulink url="http://www.incose.org/">INCOSE</ulink> (International Council on
+        Systems Engineering)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Le site de l&#8217;<ulink url="http://www.afis.fr/">AFIS</ulink> (Association Française
+        d&#8217;Ingénierie Système)
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>
+Blogs
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Le site de <ulink url="http://model-based-systems-engineering.com/">Tim Weilkiens</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+La démarche <ulink url="http://caminao.wordpress.com/">Caminao</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://www.omgwiki.org/MBSE/doku.php">Un WiKi avec de nombreux exemples</ulink>
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>
+Outils SysML
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+<ulink url="http://www.topcased.org/">TopCased</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://www.eclipse.org/modeling/mdt/papyrus/">Papyrus</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://www.artisansw.com/">Artisan</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://www-01.ibm.com/software/rational/products/rhapsody">Rhapsody</ulink>
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>
+Outils de production
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Les conseils généraux de Scott Ambler sur <ulink url="http://www.ambysoft.com/books/bookWriting.html">Ecrire un livre technique</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Les conseils techniques de Matthew Mc Cullough sur <ulink url="https://gist.github.com/1609255">Ecrire un livre technique</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<ulink url="http://johnmacfarlane.net/pandoc/">Pandoc</ulink>
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>
+Divers
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Pour en savoir plus sur l&#8217;<ulink url="http://jmb.c.la">auteur</ulink>
+</simpara>
+<literallayout class="monospaced">The specification itself:</literallayout>
+</listitem>
+</itemizedlist>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter id="_a_propos_de_ce_document_8230">
+<title>A propos de ce document&#8230;</title>
+<sidebar>
+<simpara>Document généré par <ulink url="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</ulink> via <ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> (version <literal>8.6.8</literal>) de <emphasis>Stuart Rackham</emphasis>.
+La version présentation a été générée en utilisant <ulink url="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</ulink> &#169; de <emphasis>Dave Raggett</emphasis>, amélioré par <ulink url="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</ulink>.
+Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <emphasis>Licence Creative Commons</emphasis>.
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="../images/icons/88x31.png"/>
+  </imageobject>
+  <textobject><phrase>Licence Creative Commons</phrase></textobject>
+</inlinemediaobject>
+<ulink url="http://creativecommons.org/licenses/by-sa/3.0/">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé</ulink>.</simpara>
+</sidebar>
+</chapter>
+</part>
+<appendix id="_annexes">
+<title>Annexes</title>
+<simpara>One or more optional appendixes go here at section level zero.</simpara>
+<note><simpara>Preface and appendix subsections start out of sequence at level
+2 (level 1 is skipped).  This only applies to multi-part book
+documents.</simpara></note>
+</appendix>
+<bibliography id="_bibliographie">
+<title>Bibliographie</title>
+<simpara>Les références&#8230;</simpara>
+<bibliodiv>
+<bibliomixed>
+<bibliomisc>
+<anchor id="FMS" xreflabel="[FMS]"/>[FMS] Friedenthal&#8230;
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="Roques2010" xreflabel="[Roques2010]"/>[Roques2010] <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink>. SysML par l&#8217;exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. A acheter <ulink url="http://www.numilog.com/LIVRES/FICHES/62775.Livre">ici</ulink>.
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="taoup" xreflabel="[taoup]"/>[taoup] Eric Steven Raymond. <emphasis>The Art of Unix
+  Programming</emphasis>. Addison-Wesley. ISBN 0-13-142901-9.
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="walsh-muellner" xreflabel="[walsh-muellner]"/>[walsh-muellner] Norman Walsh &amp; Leonard Muellner.
+  <emphasis>DocBook - The Definitive Guide</emphasis>. O&#8217;Reilly &amp; Associates. 1999.
+  ISBN 1-56592-580-7.
+</bibliomisc>
+</bibliomixed>
+</bibliodiv>
+</bibliography>
+<glossary id="_glossaire">
+<title>Glossaire</title>
+<simpara>Les définitions&#8230;</simpara>
+<glossentry>
+<glossterm>
+OMG
+</glossterm>
+<glossdef>
+<simpara>
+        <emphasis><emphasis role="strong">O</emphasis>bject <emphasis role="strong">M</emphasis>anagement <emphasis role="strong">G</emphasis>roup</emphasis> : L&#8217;organisme international chargé des principales normes liés à l&#8217;objet (CORBA, UML, etc.).
+</simpara>
+</glossdef>
+</glossentry>
+<glossentry>
+<glossterm>
+TRL
+</glossterm>
+<glossdef>
+<simpara>
+        <emphasis><emphasis role="strong">T</emphasis>echnology <emphasis role="strong">R</emphasis>eadiness <emphasis role="strong">L</emphasis>evel</emphasis> : système de mesure employé par des agences gouvernementales américaines et par de nombreuses compagnies (et agences) mondiales afin d'évaluer le niveau de maturité d&#8217;une technologie (cf. <ulink url="http://fr.wikipedia.org/wiki/Technology_Readiness_Level">Wikipedia</ulink>).
+</simpara>
+</glossdef>
+</glossentry>
+<glossentry>
+<glossterm>
+<anchor id="SysML" xreflabel="[SysML]"/>SysML
+</glossterm>
+<glossdef>
+<simpara>
+        <emphasis><emphasis role="strong">Sys</emphasis>tem <emphasis role="strong">M</emphasis>odeling <emphasis role="strong">L</emphasis>anguage</emphasis> &#8482; : le langage de modélisation de systèmes maintenu par l&#8217;<ulink url="http://www.omg.org">OMG</ulink>.
+</simpara>
+</glossdef>
+</glossentry>
+</glossary>
+<index id="_index">
+<title>Index</title>
+</index>
+</book>

@@ -18,8 +18,29 @@ Si vous appartenez à une de ces catégories, ce livre n'est pas pour vous :
 - vous voulez vous perfectionner
 
 === Historique
-//This document is a compilation of notes and discussions. The reference section (see \mapage{sec:biblio} where you will find the main books I have used). I would like to thank some of my friends who have helped me in this compilation: my colleagues who also teach, \who{Nicolas}{Belloir} (\corp{UPPA}), \who{Laurent}{Nonne} (\corp{IUT de Blagnac}); my colleagues from \sysmlfrance{}, \who{Pascal}{Roques} from \corp{PRFC}, \who{Agusti}{Canals} from \corp{C-S}, \who{Lo\"ic}{F\'ejoz} from \corp{RTaW}, the people from \corp{Universitad Aut\'onoma de Guadalajara}, and more especially \who{Karina}{Aguilar} for inviting me to teach \SysML{} there.
-Blabla
+
+Ce document est la compilation de plusieurs années d'enseignement de {sysml}, que ce soit 
+au Master Internet, de l'Université of Pau (cours d'introduction avec mon collègue et ami {nico}),
+au Master Recherche SAID, de l'UPS (introduction),
+au Master ICE de l'{univ-tlse2} (introduction avec mon collègue et ami {pdss}),
+au M.Sc. Gotteborg, Suède (introduction réalisée par {nico}),
+à l'{uag}, Mexico (40h de formation professionnelle aux employés de Continental),
+ou plus récemment au Master ??? de l'UPS.
+
+Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés.
+
+Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
+
+- {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
+- mes collègues de {sysmlfrance} : {prfc}, {agusti} de C-S et {loic} de RTaW;
+- le maître d'{asciidoc} : {jmi}.
+
+=== Sur l'auteur
+- Professeur à l'{univ-tlse}
+- Cofoundateur de l'association {sysmlfrance}
+- Member of the Software and System Modeling journal editorial board
+- Co-lead of the Ambient Systems Research group at IRIT Head of the Computer Science Department of my institute
+- Married, one (wonderful) child
 
 [[comment-lire]]
 === Comment lire ce document?

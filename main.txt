@@ -29,29 +29,236 @@
 
 // data
 :eggstitle: Humour
+:sysml: SysML indexterm:[SysML]
+:uml: UML indexterm:[UML]
+:Requirements: Requirements
+:Structure: Structure
+:Behavior: Comportement
+:Crosscutting: Transverse
+:organisation: Organisation
+:analysis: Analyse
+:design: Conception
+:implementation: Implémentation
+:resume: En résumé
+:revisions: Questions de révision
+
+// personnes et institutions
+:karina: Karina Aguilar
+:nico: Nicolas Belloir
+:agusti: Agusti Canals
+:loic: Loïc Féjoz
 :jmi: Jean-Michel Inglebert
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
-:sysml: SysML indexterm:[SysML]
+:iut: IUT de Blagnac
+:nonne: Laurent Nonne
+:prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
+:pdss:  Pierre de Saqui Sannes
+:sysmlfrance: http://www.sysml-france.fr[SysML-France]
+:univ-tlse: http://www.univ-toulouse.fr[Univesité de Toulouse]
+:uag: Universitad Autonoma de Guadalajara
+:uppa: Université de Pau et des Pays de l'Adour
 
+//================================================================
 == Listes
+//================================================================
 
 === Figures
 
 . <<fig:eggs,\{eggstitle}>>
 
+//================================================================
 // chapitres 
+//================================================================
+
+= Partie 1 : Introduction
+
 include::chap00AvantPropos.txt[]
 
 include::chap01Methode.txt[]
 
+== C'est quoi SysML?
+
+Si vous ne deviez lire qu'un seul chapitre...
+
+== Un exemple fil rouge
+
+L'exemple de système qui sera modélisé tout au long de ce livre en guise d'exemple.
+
+Il existe un certain nombre d'exemple complets :
+
+- Le radio-réveil de {prfc} <<Roques2010>>
+- Le distiller de <<FMS>> 
+
+= Partie 2 : Ingénierie système
+
+La matrice qui nous servira de carte de base pour placer les activités
+ou les modèles, sera celle-ci :
+
+[[Matrice]]
+.La carte de base
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+== Différence avec l'ingénierie logicielle
+
+Enseignant en informatique, je me retrouve souvent à enseigner {sysml} à des informaticiens.
+D'où ce petit exposé sur mon opinion de la différence entre les deux "mondes".
+
+- Not Software Engineering...
+- ...Before Software Engineering!
+	* Historically
+	* In the development process
+
+== Les exigences
+
+== L'architecture du système
+
+== Le comportement du système
+
+[[Methodes]]
+== Méthodes et démarches
+
+= Partie 3 : La notation SysML
+
+Rappel sur la matrice (cf. <<Matrice>>).
+
+== Principes de base
+
+A aborder :
+
+- Les cartouches
+- La différence entre modèles et schémas
+- Les stéréotypes, définitions de base etc.
+
+On insistera ici sur l'organisation.
+
+== Organisation
+
+.Organisation
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| [red]*{organisation}*	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+On abordera :
+
+- The Package Diagram
+- Different types of packages
+- Possible organisations
+- Namespaces
+- Dependencies
+
+== Les exigences
+
+.Exigences
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+On abordera :
+
+- Requirements organization 
+- Requirements properties 
+- Requirements links 
+- Traceability considerations
+
+=== {resume}
+
+.Exigences
+[cols="h,4*",options="header"]
+|======================
+|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	| +⊕–+, +\<<deriveRqt>>+			|        		|				|
+| {analysis}		| +\<<satisfy>>+ entre reqs et UC		|        		|				|
+| {design}			| +\<<allocate>>+			|        		|				|
+| {implementation}	|	+\<<satisfy>>+, +\<<verify>>+				|        		|				|
+|======================
+
+=== {revisions}
+
+- Quelles sont les différences entre _besoins_ et _exigences_?
+
+== L'architecture du système
+
+.Structure
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| [red]*{Structure}*	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+On abordera :
+
+- Structure organization 
+- Block Definition Diagrams 
+- Internal Block Diagrams
+- Parametric Diagrams
+
+== Le comportement du système
+
+.Structure
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| [red]*{Behavior}* 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+On abordera :
+
+- Use Case Diagrams 
+- Sequence Diagrams 
+- State Machines 
+- Activity Diagrams
+
+== Les aspects transversaux
+
+.Aspects transversaux
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| [red]*{Crosscutting}*
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+== Considérations méthodologiques
+
+Exemples de démarche autour de {sysml}, lien avec la section <<Methodes>>.
+
+[[Exos]]	
+== Exercices de révision
+
+//================================================================
+// APPENDIX
+//================================================================
+	
 include::apx01Links.txt[]
 
 == A propos de ce document...
 
 include::about.txt[]
-
-
-:numbered!:
 
 [appendix]
 = Annexes
@@ -61,12 +268,95 @@ NOTE: Preface and appendix subsections start out of sequence at level
 2 (level 1 is skipped).  This only applies to multi-part book
 documents.
 
+== Historique de SysML
+
+Un point sur les évolutions de {sysml}.
+
+== D'UML à SysML
+
+Un point sur comment aborder {sysml} quand on vient d'{uml}.
+
+== Challenges et questions ouvertes autour de SysML
+
+== FAQ
+
+Cette _**F**requently **A**sked **Q**uestion_ a été construite par expérience, en regroupant 
+les questions des étudiants durant mes différentes interventions. 
+J'ai aussi ajouté des questions souvent rencontrées dans les journées organisés par {sysmlfrance}. 
+
+NOTE: Voir aussi cette http://www.sysmlforum.com/faq[FAQ] très bien faite.
+
+Cette FAQ peut servir de base à la révision d'examens (cf. aussi <<Exos>>).
+
+=== What is the current version of SysML and how can I obtain it?
+
+Verson 1.3 and here is the specification link: http://www.omg.org/cgi-bin/doc?formal/10-06-02.
+
+=== What changes were made during the last revision?
+
+Notable changes in Version 1.2 of SysML include:
+
+- Synchronization with changes in UML 2.3
+- Conjugate ports metamodel and notation 
+- Naming of interruptible activity regions 
+- Inclusion of UML instance specifications
+ -Inclusion of UML structured activity nodes 
+- Inclusion of UML multiple item flow notation
+- Improvements to Unit and QuantityKind support for value types, and a non-normative model to define systems of units and quantities
+
+NOTE: The SysML v1.3 Revision Task Force led by Roger Burkhart and Rick Steiner is continuing to work on proposed improvements to SysML based on feedback from the systems modeling community.
+
+
+=== How do we setup ranges (limits) of (input) variables (in a par for example)?
+
+In the details or the definition of the Flow Item.
+
+=== What does the +\{strict\}+ keyword means for profile application?
+
+No other meta-elements than the one in the applied profile were used (e.g., you can use a tool supporting the profile with confidence).
+
+[quote, SysML1.2 p. 8]
+____________________________________________________________________
+The semantics of UML profiles ensure that when a user model “strictly” applies the SysML profile, only the UML metaclasses referenced by SysML are available to the user of that model. If the
+profile is not “strictly” applied, then additional UML metaclasses that were not explicitly referenced may also be available.
+____________________________________________________________________
+
+=== What does the visibility (+private+, +public+, ...) means for a block?
+
+As any model elements, the visibility of a block describes how it can be imported outside its namespace.
+
+NOTE: It depends on the tool support for visibility controls to use this feature.
+
+=== What is the difference between an internal and a self transition?
+
+In a self transition the exit and the the entry events are trigered.
+
+=== Can I attach a History pseudostate to a particular (non composite) state?
+
+No. The History pseudostate (H) is indicated inside a composite state and means that when back in this superstate, the machine goes back to its last active state.
+
+=== Divers
+
+Quelques autres questions que je laisse à votre sagacité :
+
+- Here is a list of unaswered questions that you should work on:
+- Why do systems engineer need yet-another-modeling-language?
+- What is the relationship between “open source SysML” and “OMG SysML”?
+- What is the roadmap for OMG SysML 2.0?
+- Who are the SysML Partners?
+- What is the relationship between UML and SysML? Can SysML and UML be used together?
+- Can SysML be customized?
+- Which language is easier to learn, SysML or UML?
 
 [bibliography]
+[[refs]]
 = Bibliographie
 Les références...
 
 [bibliography]
+- [[[FMS]]] Friedenthal...
+- [[[Roques2010]]] {prfc}. SysML par l'exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. A acheter http://www.numilog.com/LIVRES/FICHES/62775.Livre[ici].
+- [[[SysML12]]] OMG. Systems modeling language version 1.2. Technical report, 2010.
 - [[[taoup]]] Eric Steven Raymond. 'The Art of Unix
   Programming'. Addison-Wesley. ISBN 0-13-142901-9.
 - [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.

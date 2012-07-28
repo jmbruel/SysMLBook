@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>documents</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>main.txt</string>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>chap00AvantPropos.txt</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>chap01Methode.txt</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>apx01Links.txt</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>glossary.txt</string>
+		</dict>
+	</array>
+	<key>fileHierarchyDrawerWidth</key>
+	<integer>200</integer>
+	<key>metaData</key>
+	<dict/>
+	<key>showFileHierarchyDrawer</key>
+	<true/>
+	<key>windowFrame</key>
+	<string>{{320, 197}, {640, 388}}</string>
+</dict>
+</plist>
