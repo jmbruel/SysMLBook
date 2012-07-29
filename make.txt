@@ -30,7 +30,7 @@ endif::posix[]
 
 // remove exclamation mark (!) to select output
 :html:
-:slidy!:
+:slidy:
 :pdf!:
 :ditaa!:
 
@@ -50,9 +50,9 @@ endif::posix[]
 // generic commands defs
 :cmddb: {asciidocbin} -b docbook  -a revnumber={doc_version}
 
-:cmdfo: {xsltprocbin} --stringparam ulink.show 0 --stringparam callout.graphics 1 --stringparam navig.graphics 1 --stringparam admon.textlabel 0 --stringparam admon.graphics 1 --stringparam admon.graphics.path ./images/icons/ --stringparam callout.graphics.path ./images/icons/callouts/ --stringparam navig.graphics.path ./images/icons/
+:cmdfo: {xsltprocbin} --stringparam ulink.show 0 --stringparam callout.graphics 1 --stringparam navig.graphics 1 --stringparam admon.textlabel 0 --stringparam admon.graphics 1 --stringparam admon.graphics.path ../images/icons/ --stringparam callout.graphics.path ./images/icons/callouts/ --stringparam navig.graphics.path ../images/icons/
 
-:cmdpdf: a2x -v -f pdf -L --fop --icons-dir=./images/icons -a revnumber={doc_version}
+:cmdpdf: a2x -v -f pdf -L --fop --icons-dir=../images/icons -a revnumber={doc_version}
 
 :cmdditaa: java -jar {ditaajar} -r -o 
 
@@ -68,7 +68,7 @@ ifdef::local[]
 
 :cmdhtml: {asciidocbin} {stylesdir? -a stylesdir={stylesdir}} {scriptsdir? -a scriptsdir={scriptsdir}} -a numbered -a icons {iconsdir? -a iconsdir={iconsdir}} {style? -a stylesheet={style}} -a badges -a toc -a revnumber={doc_version} -a data-uri
 
-:cmdslidy: {asciidocbin} --backend slidy2 -a numbered -a icons -a badges  {iconsdir? -a iconsdir=./images/icons} {style? -a stylesheet={style}} -a revnumber={doc_version} -a data-uri -a slide
+:cmdslidy: {asciidocbin} --backend slidy2 -a numbered -a icons -a badges  {iconsdir? -a iconsdir=../images/icons} {style? -a stylesheet={style}} -a revnumber={doc_version} -a data-uri -a slide
 
 {slidy}asciidoc:{cmdslidy}[{doc1}.txt,{doc1}.slidy.html]
 

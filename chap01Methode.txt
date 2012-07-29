@@ -20,3 +20,13 @@ sys2::[python "dessins/chart.py" --format=png --output="{images}/chart.png" --sc
 
 // Display chart image file.
 image::{images}/chart.png["Chart"]
+
+ifdef::backend-slidy2[<<<]
+
+:incremental:
+
+ifdef::backend-slidy2[]
+images::{images}/fig-enchainement.png[{images}/fig-enchainement-1.png,{images}/fig-enchainement-2.png,{images}/fig-enchainement-3.png,{images}/fig-enchainement-4.png]
+endif::backend-slidy2[]
+
+:incremental!:
