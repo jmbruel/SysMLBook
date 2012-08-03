@@ -252,6 +252,9 @@ Exemples de démarche autour de {sysml}, lien avec la section <<Methodes>>.
 [[Exos]]	
 == Exercices de révision
 
+Reprendre ici les questions des chapitres (à organiser en fichiers!) et 
+également le link:test-QCM4.txt[quizz].
+
 //================================================================
 // APPENDIX
 //================================================================
