@@ -1,0 +1,196 @@
+Rappel sur la matrice (cf. <<Matrice>>).
+
+SysML n'est pas une palette de dessins et d'éléments de base servant à faire
+des diagrammes. Il existe une représentation graphique des éléments modélisés en SysML. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est le modèle qui importe le plus. C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes  SysML footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés (cf. section <<Outils>>).
+
+Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section :
+
+.Organisation
+[cols="h,4*",options="header",width="50%"]
+|======================
+|				| {Requirements}, cf. <<reqs>> 	| {Structure}, cf. <<archi>>	| {Behavior}, cf. <<behavior>> 	| {Crosscutting}, cf. <<transvers>>
+| {organisation}, cf. <<orga>>	|		+pkg+			|     +pkg+, +bdd+   		|		+pkg+		|
+| {analysis}, {design}, {implementation} footnote:[En fonction du niveau de détail.]
+				|		+req+			|     +bdd+, +ibd+, +seq+, +par+   		| +uc+, +seq+, +st+, +act+				| +par+
+|======================
+
+== 	Outils SysML
+[[Outils]]
+
+Il existe un certain nombre d'outils permettant de réaliser des modèles SysML. Voici une liste non exhaustive :
+
+* http://www.topcased.org/[TopCased]
+* http://www.eclipse.org/modeling/mdt/papyrus/[Papyrus]
+* http://www.artisansw.com/[Artisan]
+* http://www-01.ibm.com/software/rational/products/rhapsody[Rhapsody]
+
+Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
+
+Ce que je voudrai souligner ici c'est l'importance du modèle comme "dépôt" (je préfère le terme anglais de _repository_) d'éléments de base en relation les uns avec les autres. C'est toute la différence entre le dessin et le modèle.
+
+IMPORTANT: Attention toutefois à ne pas confondre ce que vous permet (ou pas) de faire l'outil et la notation elle-même. Les fabricants ont parfois pris des libertés ou bien n'ont pas complètement implémenté toutes les subtilités de la notation.
+		
+== Principes de base
+
+A aborder :
+
+- Les cartouches
+- La différence entre modèles et schémas
+- Les stéréotypes, définitions de base etc.
+
+On insistera ici sur l'organisation.
+
+== Organisation
+[[org]]
+
+.Organisation
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| [red]*{organisation}*	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+=== Fondements
+
+On abordera :
+
+- Le _Package Diagram_
+- Les différent types de _packages_
+- Les organisations possibles 
+- La notion de _Namespaces_
+- Les _Dependencies_
+
+
+=== {resume}
+En résumé...
+
+=== {revisions}
+Pour réviser...
+
+== Les exigences
+[[reqs]]
+
+.Place des Exigences
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+=== Fondements
+
+On abordera :
+
+- L'organization des _Requirements_ 
+- Les _Requirements properties_ 
+- Les _Requirements links_ 
+- Les _Requirements Diagrams_ 
+- Les considerations sur la _Traceability_
+
+=== {resume}
+
+.Déclinaison des Exigences
+[cols="h,2,1,1,1",options="header",width="70%"]
+|======================
+|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	| +⊕–+, +\<<deriveRqt>>+			|        		|				|
+| {analysis}		| +\<<satisfy>>+ entre reqs et UC		|        		|				|
+| {design}			| +\<<allocate>>+			|        		|				|
+| {implementation}	|	+\<<satisfy>>+, +\<<verify>>+				|        		|				|
+|======================
+
+=== {revisions}
+
+- Quelles sont les différences entre *besoins* et *exigences* ?
+
+== L'architecture du système
+[[archi]]
+
+.PLace des aspects structurels
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| [red]*{Structure}*	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+=== Fondements
+
+On abordera :
+
+- l'organisation du système et des modèles 
+- les _Block Definition Diagrams_ 
+- les _Internal Block Diagrams_
+- les _Parametric Diagrams_ (pour les contraintes physiques)
+- les _Sequence Diagrams_ (diagramme de séquence système) 
+
+
+=== {resume}
+En résumé...
+
+=== {revisions}
+Pour réviser...
+
+== Le comportement du système
+[[behavior]]
+
+.Place du Comportement
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| [red]*{Behavior}* 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+=== Fondements
+
+On abordera :
+
+- les _Use Case Diagrams_ (scénarios) 
+- les _Sequence Diagrams_ 
+- les _State Machines_
+- les _Activity Diagrams_
+
+=== {resume}
+En résumé...
+
+=== {revisions}
+Pour réviser...
+
+== Les aspects transversaux
+[[transvers]]
+
+.Aspects transversaux
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| [red]*{Crosscutting}*
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+=== Fondements
+
+On abordera ici les aspects transversaux comme :
+
+- la traçabilité des exigences indexterm:[Traçabilité]
+- les mécanismes d'allocation
+- le diagramme paramétrique
+
+=== {resume}
+En résumé...
+
+=== {revisions}
+Pour réviser...
+

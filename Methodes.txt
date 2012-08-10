@@ -1,0 +1,31 @@
+[[Methodes]]
+== Méthodes et démarches
+indexterm:[Méthodes]
+
+SysML n'est pas une méthode. En effet aucune démarche n'est imposée pour
+l'utilisation des diagrammes, l'ordre logique dans lesquels il vaut mieux les réaliser, etc. La spécification ne porte que sur la notation elle-même. D'où le pluriel dans le titre de cette section : il existe presque autant de méthodes que d'entreprise développant des systèmes.
+Nous nous contenterons de donner ici quelques heuristiques (cf. Annexe <<methodo, Considérations méthodologiques>> pour la présentation de quelques méthodes bien identifiées) :
+
+.Approche itérative
+[caption="Heuristique : "]
+==========================
+Un diagramme ne doit pas être considéré comme définitif. Il peut être complété alors que l'on traite un autre aspect de la modélisation (exemple classique : ajout d'un nouveau block lors de la réalisation d'un diagramme de séquence). Quelque soit la démarche adoptée elle doit être *itérative* et permettre de revenir sur les premières étapes.
+==========================
+
+.Niveau d'abstraction
+[caption="Heuristique : "]
+==========================
+Bien intégrer les niveaux d'abstraction dans votre démarche. SysML possède certaines constructions pour formaliser cet aspect (+Packages+ par exemple). Nous matérialisons cet aspect par la partie verticale de la matrice (cf. <<Matrice>>).
+==========================
+
+.Tous les diagrammes ne sont pas utiles
+[caption="Heuristique : "]
+==========================
+N'essayez pas de réaliser tous les diagrammes possibles pour votre système. Réalisez uniquement ceux qui sont utiles à votre cas particulier. 
+==========================
+
+.etc.
+[caption="Heuristique : "]
+==========================
+Etc.
+==========================

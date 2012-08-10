@@ -5,28 +5,27 @@ ____________________________________________________________________
 Everything should be made as simple as possible, but no simpler.
 ____________________________________________________________________
 
-[[fig:eggs]]
-.\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
-[caption="Illustration: "]
-image::./images/ProgrammerHumor.jpg["Joke"] 
+Mon approche pédagogique repose sur plusieurs principes bien établis :
 
-Exemple de note à propos de {sysml} footnote:[An example footnote.].
+La répétition::
+	Par exemple certains diagrammes sont abordés plusieurs fois (comme le diagramme paramétrique). Le lecteur pourra avoir une impression de redite par moment. Sauf erreur de ma part (toujours possible!), c'est volontaire. En général les répétitions vont en niveau de précision, de détails et de complexité croissant.
+L'illustration::
+	Dans la mesure du possible, j'essaye de donner des exemples aux principes énoncés.
+Le référencement::
+	Les définitions ou autres affirmations sont tirées d'ouvrages de référence généralement citées.
+La "carte de base"::
+	J'aime réaliser une "carte" footnote:[voir aussi le concept de _Mind Maps_.] qui sert à "placer" les différents concepts abordés. Il me semble que cela permet aux étudiants de raccrocher les nouveaux concepts aux précédents.
+...::
+	etc.
 
-An example link to a bibliography entry <<taoup>>.
-indexterm:[Second example index entry]
+//Exemple de note à propos de {sysml} footnote:[An example footnote.].
+
+//An example link to a bibliography entry <<taoup>>.
+//indexterm:[Second example index entry]
 
 // Generate chart image file.
-sys2::[python "dessins/chart.py" --format=png --output="{images}/chart.png" --scale=2]
+//sys2::[python "dessins/chart.py" --format=png --output="{images}/chart.png" --scale=2]
 
 // Display chart image file.
-image::{images}/chart.png["Chart"]
+//image::{images}/chart.png["Chart"]
 
-ifdef::backend-slidy2[<<<]
-
-:incremental:
-
-ifdef::backend-slidy2[]
-images::{images}/fig-enchainement.png[{images}/fig-enchainement-1.png,{images}/fig-enchainement-2.png,{images}/fig-enchainement-3.png,{images}/fig-enchainement-4.png]
-endif::backend-slidy2[]
-
-:incremental!:

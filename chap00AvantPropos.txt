@@ -11,23 +11,24 @@ ____________________________________________________________________
 
 Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de référence accessible, et ... moi-même (pour organiser mes notes diverses)!
 
-=== A qui il n'est pas destiné?
+=== A qui n'est-il pas destiné?
 
 Si vous appartenez à une de ces catégories, ce livre n'est pas pour vous :
 
 - vous cherchez un livre de référence (pour cela, même s'il est en anglais, je conseille <<FMS>>)
 - vous voulez vous perfectionner (ce livre n'est qu'une introduction)
-- vous souhaitez préparer la certification de l'{omg} (mieux vaut vous plonger dans la specification <<SysML12>>)
+- vous souhaitez préparer la certification de l'{omg} (mieux vaut vous plonger dans la spécification <<SysML12>>)
 
 === Historique
 
-Ce document est la compilation de plusieurs années d'enseignement de {sysml}, que ce soit 
-au Master Internet, de l'Université of Pau (cours d'introduction avec mon collègue et ami {nico}),
-au Master Recherche SAID, de l'UPS (introduction),
-au Master ICE de l'{univ-tlse2} (introduction avec mon collègue et ami {pdss}),
-au M.Sc. Gotteborg, Suède (introduction réalisée par {nico}),
-à l'{uag}, Mexico (40h de formation professionnelle aux employés de Continental),
-ou plus récemment au Master ??? de l'UPS.
+Ce document est la compilation de plusieurs années d'enseignement de {sysml} depuis 2007, que ce soit :
+
+- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de l'{uppa} (cours d'introduction avec mon collègue et ami {nico}),
+- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de l'{UPS} (introduction),
+- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de l'{univ-tlse2} (introduction avec mon collègue et ami {pdss}),
+- au _Master of Science_ de Göteborg, Suède (introduction réalisée par {nico}),
+- à l'{uag}, au Mexique (40h de formation professionnelle aux employés de Continental),
+- ou plus récemment au {glre} (parcours "logiciels embarqués") de l'{ups}.
 
 Vous trouverez en référence (cf. <<refs, Bibiliographie>>) les ouvrages et autres documents utilisés.
 
@@ -39,14 +40,17 @@ Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise :
 
 === Sur l'auteur
 - Professeur à l'{univ-tlse}
-- Cofoundateur de l'association {sysmlfrance}
-- Member of the Software and System Modeling journal editorial board
-- Co-lead of the Ambient Systems Research group at IRIT 
-- Chef du département informatique de l'{iut} 2009 à 2012
-- Married, one (wonderful) child
+- Co-foundateur de l'association {sysmlfrance}
+- Membre du comité éditorial de la revue _{sosym}_
+- Membre du _Steering Committee_ de la conférence ACM/IEEE {models}
+- Chef du département informatique de l'{iut} de 2009 à 2012
+- Co-responsable de l'axe *Systèmes Ambiants* de l'{IRIT} 
+- Marié, une (merveilleuse) fille
 
 [[comment-lire]]
 === Comment lire ce document?
+
+==== Version électronique
 
 Ce document a été réalisé de manière à être lu de préférence
 dans sa version électronique (au format PDF), ce qui permet de
@@ -54,7 +58,7 @@ naviguer entre les références et les renvois interactivement, de consulter
 directement les documents référencés par une URL, etc.
 // Par exemple, les sigles comme {omg} apparaissent avec une astérisque qui permet un renvoie direct à leur définition dans le document PDF (lien clickable menant à la section <<Glossaire>>).
 
-WARNING: Si vous lisez la version papier de ce document, ces liens clickables ne
+IMPORTANT: Si vous lisez la version papier de ce document, ces liens clickables ne
 vous servent à rien, et c'est votre punition pour avoir utilisé du papier
 au lieu du support électronique!
 
@@ -82,13 +86,13 @@ volontairement ces termes (e.g., {Requirements}).
 
 Parce que j'ignore la version que vous êtes en train de lire. A partir de l'link:main.txt[original], plusieurs versions ont été générées grâce à {asciidoc}:
 
-* link:main.html[html]
-* link:main.slidy.html[présentation]
-* link:main.pdf[pdf]
+* Une version pour le web (Moodle) au format link:main.html[html]
+* Une version pour présentation en amphi au format link:main.slidy.html[slidy]
+* Une version pour impression au format link:main.pdf[pdf]
 
 === Utilisation et autres mentions légales
 
 include::about.txt[]
 
-N'hésitez pas à m'envoyer vos remarques en tout genre.
+N'hésitez pas à m'envoyer vos remarques en tout genre en m'écrivant mailto:{email}[ici].
 

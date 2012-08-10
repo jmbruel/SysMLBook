@@ -1,0 +1,47 @@
+La matrice qui nous servira de carte de base pour placer les activités
+ou les modèles, sera celle-ci :
+
+[[Matrice]]
+.La carte de base
+[align="center",cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+== Différence avec l'ingénierie logicielle
+
+Enseignant en informatique, je me retrouve souvent à enseigner {sysml} à des informaticiens.
+D'où ce petit exposé sur mon opinion de la différence entre les deux "mondes".
+
+- Not Software Engineering...
+- ...Before Software Engineering!
+	* Historically
+	* In the development process
+
+== Normes et standards
+
+IEEE, EIA, ISO, certification, NASA, INCOSE, AFIS, ...
+
+== Les exigences
+
+Importance de l'ingénierie des exigences en IS...
+
+[[fig:eggs]]
+.\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
+[caption="Illustration: "]
+image::./images/ProgrammerHumor.jpg["Joke"] 
+
+== L'architecture du système
+
+Liens avec AADL, ...
+
+== Le comportement du système
+
+Liens avec la V&V
+
+include::Methodes.txt[]
+

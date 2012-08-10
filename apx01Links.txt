@@ -26,8 +26,4 @@
 	* {pandoc}
 - Divers
 	* Pour en savoir plus sur l'http://jmb.c.la[auteur]
-
-
-	
-	The specification itself:
 	    

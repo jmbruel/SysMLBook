@@ -30,7 +30,7 @@ endif::posix[]
 
 // remove exclamation mark (!) to select output
 :html:
-:slidy:
+:slidy!:
 :pdf!:
 :ditaa!:
 

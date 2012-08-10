@@ -1,0 +1,68 @@
+== FAQ
+
+Cette _**F**requently **A**sked **Q**uestion_ a été construite par expérience, en regroupant 
+les questions des étudiants durant mes différentes interventions. 
+J'ai aussi ajouté des questions souvent rencontrées dans les journées organisés par {sysmlfrance}. 
+
+NOTE: Voir aussi cette http://www.sysmlforum.com/faq[FAQ] très bien faite.
+
+Cette FAQ peut servir de base à la révision d'examens (cf. aussi <<Exos>>).
+
+=== What is the current version of SysML and how can I obtain it?
+
+Verson 1.3 and here is the specification link: http://www.omg.org/cgi-bin/doc?formal/10-06-02.
+
+=== What changes were made during the last revision?
+
+Notable changes in Version 1.2 of SysML include:
+
+- Synchronization with changes in UML 2.3
+- Conjugate ports metamodel and notation 
+- Naming of interruptible activity regions 
+- Inclusion of UML instance specifications
+ -Inclusion of UML structured activity nodes 
+- Inclusion of UML multiple item flow notation
+- Improvements to Unit and QuantityKind support for value types, and a non-normative model to define systems of units and quantities
+
+NOTE: The SysML v1.3 Revision Task Force led by Roger Burkhart and Rick Steiner is continuing to work on proposed improvements to SysML based on feedback from the systems modeling community.
+
+
+=== How do we setup ranges (limits) of (input) variables (in a par for example)?
+
+In the details or the definition of the Flow Item.
+
+=== What does the +\{strict\}+ keyword means for profile application?
+
+No other meta-elements than the one in the applied profile were used (e.g., you can use a tool supporting the profile with confidence).
+
+[quote, SysML1.2 p. 8]
+____________________________________________________________________
+The semantics of UML profiles ensure that when a user model “strictly” applies the SysML profile, only the UML metaclasses referenced by SysML are available to the user of that model. If the
+profile is not “strictly” applied, then additional UML metaclasses that were not explicitly referenced may also be available.
+____________________________________________________________________
+
+=== What does the visibility (+private+, +public+, ...) means for a block?
+
+As any model elements, the visibility of a block describes how it can be imported outside its namespace.
+
+NOTE: It depends on the tool support for visibility controls to use this feature.
+
+=== What is the difference between an internal and a self transition?
+
+In a self transition the exit and the the entry events are trigered.
+
+=== Can I attach a History pseudostate to a particular (non composite) state?
+
+No. The History pseudostate (H) is indicated inside a composite state and means that when back in this superstate, the machine goes back to its last active state.
+
+=== Divers
+
+Quelques autres questions que je laisse à votre sagacité :
+
+- Why do systems engineer need yet-another-modeling-language?
+- What is the relationship between “open source SysML” and “OMG SysML”?
+- What is the roadmap for OMG SysML 2.0?
+- Who are the SysML Partners?
+- What is the relationship between UML and SysML? Can SysML and UML be used together?
+- Can SysML be customized?
+- Which language is easier to learn, SysML or UML?

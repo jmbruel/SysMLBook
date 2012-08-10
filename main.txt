@@ -22,10 +22,13 @@
 
 // raccourcis sites
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
+:models: http://www.modelsconference.org/[MODELS]
 :moodle: http://webetud.iut-blagnac.fr[Moodle]
 :omg: http://www.omg.org[OMG]
 :pandoc: http://johnmacfarlane.net/pandoc/[Pandoc]
 :slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
+:sosym: http://www.sosym.org[Software and System Modeling journal]
+:sysmlfrance: http://www.sysml-france.fr[SysML France]
 
 // data
 :eggstitle: Humour
@@ -46,9 +49,11 @@
 :karina: Karina Aguilar
 :nico: Nicolas Belloir
 :agusti: Agusti Canals
+:glre: http://glre.deptinfo.fr/[Master GLRE]
 :loic: Loïc Féjoz
 :jmi: Jean-Michel Inglebert
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
+:irit: http://www.irit.fr[IRIT]
 :iut: IUT de Blagnac
 :nonne: Laurent Nonne
 :omg: OMG
@@ -56,16 +61,18 @@
 :pdss:  Pierre de Saqui Sannes
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]
 :univ-tlse: http://www.univ-toulouse.fr[Univesité de Toulouse]
+:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
 :uag: Universitad Autonoma de Guadalajara
 :uppa: Université de Pau et des Pays de l'Adour
+:ups: http://www.univ-tlse3.fr[UPS]
 
 //================================================================
-== Listes
+//== Listes
 //================================================================
 
-=== Figures
+//=== Figures
 
-. <<fig:eggs,\{eggstitle}>>
+//. <<fig:eggs,\{eggstitle}>>
 
 //================================================================
 // chapitres 
@@ -81,6 +88,31 @@ include::chap01Methode.txt[]
 
 Si vous ne deviez lire qu'un seul chapitre...
 
+SysML, c'est :
+
+* Un ensemble de diagrammes
+** Diagrammes structuraux
+*** Diagrammes de définition de blocks (+bdd+)
+*** Diagrammes internes de blocks (+ibd+)
+*** Diagrammes paramétriques (+par+)
+*** Diagrammes de packages (+pkg+)
+** Diagrammes comportementaux
+*** Diagrammes de séquence (+seq+)
+*** Diagrammes d'activité (+act+)
+*** Diagrammes de cas d'utilisation (+uc+)
+*** Diagrammes d'états (+st+)
+** Diagramme d'exigence (+req+)
+* Un profil UML
+* ... xxx
+
+== A propos du Bac STI2D
+[[STI2D]]
+
+Si vous utilisez cet ouvrage dans le cadre du bac STI2D, indexterm:[STI2D] qui a introduit depuis 2011 la notation SysML au programme, nous vous recommandons footnote:[Je remercie au passage xxx pour nos fructueuses discussions à ce sujet.]...
+
+L'objectif en STI2D n'est pas de former des spécialistes de SysML mais de permettre à tous d'apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l'importance de la communication devront primer.
+
+
 == Un exemple fil rouge
 
 L'exemple de système qui sera modélisé tout au long de ce livre en guise d'exemple.
@@ -88,190 +120,100 @@ L'exemple de système qui sera modélisé tout au long de ce livre en guise d'ex
 Il existe un certain nombre d'exemple complets :
 
 - Le radio-réveil de {prfc} <<Roques2010>>
-- Le distiller de <<FMS>> 
+- Le distilleur de <<FMS>> 
+- Le pacemaker de <<SEE-BOOK>>
 
 = Partie 2 : Ingénierie système
 
-La matrice qui nous servira de carte de base pour placer les activités
-ou les modèles, sera celle-ci :
-
-[[Matrice]]
-.La carte de base
-[align="center",cols="h,4*",options="header",width="50%"]
-|======================
-|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| {organisation}	|					|        		|				|
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
-|======================
-
-== Différence avec l'ingénierie logicielle
-
-Enseignant en informatique, je me retrouve souvent à enseigner {sysml} à des informaticiens.
-D'où ce petit exposé sur mon opinion de la différence entre les deux "mondes".
-
-- Not Software Engineering...
-- ...Before Software Engineering!
-	* Historically
-	* In the development process
-
-== Les exigences
-
-== L'architecture du système
-
-== Le comportement du système
-
-[[Methodes]]
-== Méthodes et démarches
+include::IS.txt[]
 
 = Partie 3 : La notation SysML
 
-Rappel sur la matrice (cf. <<Matrice>>).
+include::notation.txt[]
 
-== Principes de base
-
-A aborder :
-
-- Les cartouches
-- La différence entre modèles et schémas
-- Les stéréotypes, définitions de base etc.
-
-On insistera ici sur l'organisation.
-
-== Organisation
-
-.Organisation
-[cols="h,4*",options="header",width="50%"]
-|======================
-|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| [red]*{organisation}*	|					|        		|				|
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
-|======================
-
-On abordera :
-
-- The Package Diagram
-- Different types of packages
-- Possible organisations
-- Namespaces
-- Dependencies
-
-== Les exigences
-
-.Exigences
-[cols="h,4*",options="header",width="50%"]
-|======================
-|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| {organisation}	|					|        		|				|
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
-|======================
-
-On abordera :
-
-- Requirements organization 
-- Requirements properties 
-- Requirements links 
-- Traceability considerations
-
-=== {resume}
-
-.Exigences
-[cols="h,2,1,1,1",options="header",width="70%"]
-|======================
-|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| {organisation}	| +⊕–+, +\<<deriveRqt>>+			|        		|				|
-| {analysis}		| +\<<satisfy>>+ entre reqs et UC		|        		|				|
-| {design}			| +\<<allocate>>+			|        		|				|
-| {implementation}	|	+\<<satisfy>>+, +\<<verify>>+				|        		|				|
-|======================
-
-=== {revisions}
-
-- Quelles sont les différences entre _besoins_ et _exigences_?
-
-== L'architecture du système
-
-.Structure
-[cols="h,4*",options="header",width="50%"]
-|======================
-|					| {Requirements} 	| [red]*{Structure}*	| {Behavior} 	| {Crosscutting}
-| {organisation}	|					|        		|				|
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
-|======================
-
-On abordera :
-
-- Structure organization 
-- Block Definition Diagrams 
-- Internal Block Diagrams
-- Parametric Diagrams
-
-
-== Le comportement du système
-
-.Structure
-[cols="h,4*",options="header",width="50%"]
-|======================
-|					| {Requirements} 	| {Structure}	| [red]*{Behavior}* 	| {Crosscutting}
-| {organisation}	|					|        		|				|
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
-|======================
-
-On abordera :
-
-- Use Case Diagrams 
-- Sequence Diagrams 
-- State Machines 
-- Activity Diagrams
-
-== Les aspects transversaux
-
-.Aspects transversaux
-[cols="h,4*",options="header",width="50%"]
-|======================
-|					| {Requirements} 	| {Structure}	| {Behavior} 	| [red]*{Crosscutting}*
-| {organisation}	|					|        		|				|
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
-|======================
+= Partie 4 : Pour aller plus loin
 
 == Considérations méthodologiques
+[[methodo]]
 
 Exemples de démarche autour de {sysml}, lien avec la section <<Methodes>>.
+indexterm:[Méthodes]
 
-[[Exos]]	
 == Exercices de révision
+[[Exos]]	
 
-Reprendre ici les questions des chapitres (à organiser en fichiers!) et 
-également le link:test-QCM4.txt[quizz].
+Reprendre ici les questions des chapitres (à organiser en fichiers!).
+
+=== Quizz
+
+==== Sujet
+
+Un quizz en ligne est disponible http://webetud.iut-blagnac.fr/mod/quiz/view.php?id=9007[ici] (me contacter pour le mot de passe).
+
+En voici une capture d'écran :
+
+image::{images}/quizz.png["Crosword", width="60%"]
+
+
+==== Corrigé
+
+L'ensemble des questions du quizz a été généré à partir de ce fichier
+ link:test-QCM4.txt[quizz] (qui contient les réponses).
+
+=== Mots croisés
+
+==== Sujet
+
+Voici un petit exercice (en anglais pour l'instant, désolé) pour changer :
+
+image::{images}/crossword.png["Crosword"]
+
+Vertical (across)::
+- 2. outside-inside connection
+- 4. the full name of a model element is also a ... name 
+- 6. the black diamond in SysML
+- 9. History is one of them
+- 10. what a block can do
+- 13. between states
+- 14. a supporter of SysML
+Horizontal (down)::
+1. used to describe a flow of actions
+3. message represented by a regular (unfilled) arrow
+5. each use case is advised to be linked to at least one of them
+7. they are handled in SysML by Packages
+8. communication entity in a +seq+
+11. a supporter of SysML
+12. number of diagrams in SysML
+
+==== Corrigé
+
+[ditaa]
+==========================
+             A    
+DELEGATION   C    
+     S       T    
+     Y   QUALIFIED
+     N       V    
+   R COMPOSITION  
+ M E H       T A  
+ E Q R       Y M  
+PSEUDOSTATES   E  
+ S I N         S  
+ A R OPERATION P  
+ G E U      M  A  
+ E M S   N  G  C  
+   E     I     E  
+TRANSITION INCOSE 
+   T     E        
+==========================
 
 //================================================================
 // APPENDIX
 //================================================================
-	
-include::apx01Links.txt[]
-
-== A propos de ce document...
-
-include::about.txt[]
-
 [appendix]
 = Annexes
-One or more optional appendixes go here at section level zero.
-
-NOTE: Preface and appendix subsections start out of sequence at level
-2 (level 1 is skipped).  This only applies to multi-part book
-documents.
+	
+include::apx01Links.txt[]
 
 == Historique de SysML
 
@@ -283,75 +225,12 @@ Un point sur comment aborder {sysml} quand on vient d'{uml}.
 
 == Challenges et questions ouvertes autour de SysML
 
-== FAQ
+include::faq.txt[]
 
-Cette _**F**requently **A**sked **Q**uestion_ a été construite par expérience, en regroupant 
-les questions des étudiants durant mes différentes interventions. 
-J'ai aussi ajouté des questions souvent rencontrées dans les journées organisés par {sysmlfrance}. 
+== A propos de ce document...
 
-NOTE: Voir aussi cette http://www.sysmlforum.com/faq[FAQ] très bien faite.
+include::about.txt[]
 
-Cette FAQ peut servir de base à la révision d'examens (cf. aussi <<Exos>>).
-
-=== What is the current version of SysML and how can I obtain it?
-
-Verson 1.3 and here is the specification link: http://www.omg.org/cgi-bin/doc?formal/10-06-02.
-
-=== What changes were made during the last revision?
-
-Notable changes in Version 1.2 of SysML include:
-
-- Synchronization with changes in UML 2.3
-- Conjugate ports metamodel and notation 
-- Naming of interruptible activity regions 
-- Inclusion of UML instance specifications
- -Inclusion of UML structured activity nodes 
-- Inclusion of UML multiple item flow notation
-- Improvements to Unit and QuantityKind support for value types, and a non-normative model to define systems of units and quantities
-
-NOTE: The SysML v1.3 Revision Task Force led by Roger Burkhart and Rick Steiner is continuing to work on proposed improvements to SysML based on feedback from the systems modeling community.
-
-
-=== How do we setup ranges (limits) of (input) variables (in a par for example)?
-
-In the details or the definition of the Flow Item.
-
-=== What does the +\{strict\}+ keyword means for profile application?
-
-No other meta-elements than the one in the applied profile were used (e.g., you can use a tool supporting the profile with confidence).
-
-[quote, SysML1.2 p. 8]
-____________________________________________________________________
-The semantics of UML profiles ensure that when a user model “strictly” applies the SysML profile, only the UML metaclasses referenced by SysML are available to the user of that model. If the
-profile is not “strictly” applied, then additional UML metaclasses that were not explicitly referenced may also be available.
-____________________________________________________________________
-
-=== What does the visibility (+private+, +public+, ...) means for a block?
-
-As any model elements, the visibility of a block describes how it can be imported outside its namespace.
-
-NOTE: It depends on the tool support for visibility controls to use this feature.
-
-=== What is the difference between an internal and a self transition?
-
-In a self transition the exit and the the entry events are trigered.
-
-=== Can I attach a History pseudostate to a particular (non composite) state?
-
-No. The History pseudostate (H) is indicated inside a composite state and means that when back in this superstate, the machine goes back to its last active state.
-
-=== Divers
-
-Quelques autres questions que je laisse à votre sagacité :
-
-- Here is a list of unaswered questions that you should work on:
-- Why do systems engineer need yet-another-modeling-language?
-- What is the relationship between “open source SysML” and “OMG SysML”?
-- What is the roadmap for OMG SysML 2.0?
-- Who are the SysML Partners?
-- What is the relationship between UML and SysML? Can SysML and UML be used together?
-- Can SysML be customized?
-- Which language is easier to learn, SysML or UML?
 
 [bibliography]
 [[refs]]
@@ -367,6 +246,7 @@ Les références...
 - [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
   'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
   ISBN 1-56592-580-7.
+- [[[SEE-BOOK]]] Kordon et al. To b published. XXX
 
 include::glossary.txt[]
 
