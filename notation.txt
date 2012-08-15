@@ -6,7 +6,7 @@ des diagrammes. Il existe une représentation graphique des éléments modélis�
 Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section :
 
 .Organisation
-[cols="h,4*",options="header",width="50%"]
+[cols="h,4*",options="header",width="70%"]
 |======================
 |				| {Requirements}, cf. <<reqs>> 	| {Structure}, cf. <<archi>>	| {Behavior}, cf. <<behavior>> 	| {Crosscutting}, cf. <<transvers>>
 | {organisation}, cf. <<orga>>	|		+pkg+			|     +pkg+, +bdd+   		|		+pkg+		|

@@ -3,64 +3,232 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>make.txt</string>
+	<string>notation.txt</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>make.txt</string>
 			<key>lastUsed</key>
-			<date>2012-08-09T13:19:00Z</date>
+			<date>2012-08-10T15:13:11Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>main.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-11T13:53:49Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>chap00AvantPropos.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-11T13:53:11Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>chap01Methode.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-11T13:53:00Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>IS.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-11T13:53:20Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Methodes.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-11T13:52:56Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>notation.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-11T13:53:49Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>main.txt</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>chap00AvantPropos.txt</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>chap01Methode.txt</string>
-		</dict>
-		<dict>
-			<key>filename</key>
 			<string>apx01Links.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-10T14:20:46Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>glossary.txt</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>faq.txt</string>
+			<key>lastUsed</key>
+			<date>2012-08-11T13:53:38Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
+		<key>IS.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>51</integer>
+				<key>line</key>
+				<integer>26</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>Methodes.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>22</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>22</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>23</integer>
+			</dict>
+		</dict>
+		<key>apx01Links.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>28</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>chap00AvantPropos.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>88</integer>
+				<key>line</key>
+				<integer>23</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>chap01Methode.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>225</integer>
+				<key>line</key>
+				<integer>16</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>faq.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>61</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>30</integer>
+		</dict>
+		<key>main.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>162</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>147</integer>
+		</dict>
 		<key>make.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>6</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>32</integer>
+				<integer>65</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>23</integer>
+			<integer>49</integer>
+		</dict>
+		<key>notation.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>38</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>make.txt</string>
+		<string>main.txt</string>
+		<string>faq.txt</string>
+		<string>IS.txt</string>
+		<string>notation.txt</string>
+		<string>Methodes.txt</string>
+		<string>apx01Links.txt</string>
+		<string>chap01Methode.txt</string>
+		<string>chap00AvantPropos.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{320, 197}, {640, 388}}</string>
+	<string>{{10, 4}, {1067, 774}}</string>
 </dict>
 </plist>
