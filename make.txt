@@ -19,14 +19,14 @@ ifdef::posix[]
 :asciidocbin: /opt/local/bin/asciidoc.py
 :cp: cp 
 :ditaajar: /Users/bruel/dev/ditaa0_9/ditaa0_9.jar
-:style: /Users/bruel/.asciidoc/backends/slidy2/doc/keycap.css
+:style: /Users/bruel/Dropbox/Public/dev/slidy2-v1.0.3/doc/copy_of_css_js/keycap.css
 endif::posix[]
 
 :scriptsdir: {asciidocdir}javascripts
 :stylesdir: {asciidocdir}stylesheets
 
 // output files relative paths
-:iconsdir: ../images/icons
+:iconsdir: {asciidocdir}/images/icons
 
 // remove exclamation mark (!) to select output
 :html:
