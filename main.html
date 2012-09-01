@@ -535,21 +535,183 @@ body.manpage div.sectionbody {
 }
 
 
-.keycap {
-	padding-left: .2em;
-	padding-right: .2em;
-	border-style: solid;
-	border-top-width: 2px;
-	border-left-width: 3px;
-	border-right-width: 3px;
-	border-bottom-width: 4px;
-	border-top-color: #ddddbb;
-	border-left-color: #ddddbb;
-	border-right-color: #888866;
-	border-bottom-color: #888866;
-	background-color: #ccccaa;
-	font-family: sans-serif;
-	font-size: smaller;
+/* ---------------------------------------------------------------------------
+   Bare AsciiDoc styles
+   Ryan Tomayko <r@tomayko.com>
+--------------------------------------------------------------------------- */
+
+body {
+	font-family:verdana,helvetica,arial,sans-serif;
+	font-size:81.25%;   /* 13px */
+	line-height:1.538;  /* 20px */
+	margin:40px auto 50px auto;
+	max-width:53.8461538462em; /* 790px */
+	color:#333;
+}
+
+em {
+	font-style:italic;
+}
+
+strong {
+	font-weight:bold;
+	color:#000;
+}
+
+tt {
+	font-family:consolas, 'lucida console', 'bitstream vera sans mono',
+	           'courier new', monospace;
+	color:#000;
+  font-size: 8px;
+}
+
+p, ul, ol, dl {
+	margin:10px 0
+}
+
+dl {
+	margin-left:40px
+}
+
+dt {
+	font-weight:normal;
+	color:#000;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:'lucida grande',georgia,verdana,helvetica,arial,sans-serif;
+	font-weight:normal;
+	color:#000;
+}
+
+h1 {
+	font-size:40px;
+	line-height:1.428;
+	margin:20px 0;
+}
+
+h2 {
+	font-size:30px;
+	line-height:1.36363636; /* repeating, of course */
+	margin:60px 0 20px 0;
+}
+
+h2 + .sectionbody {}
+
+h3 {
+	font-size:24px;
+	line-height:1.1;
+	margin:30px 0 10px 0;
+}
+
+h4 {
+	font-size:18px;
+	line-height:1.1;
+	margin:20px 0 5px 0;
+}
+
+h5 {
+	font-size:13px;
+	font-style:italic;
+	line-height:1.1;
+}
+
+#header {
+	text-align:center;
+	margin-bottom:30px;
+}
+
+#header h1 { margin-bottom:0 }
+
+.title, .sidebar-title {
+	font-weight:normal;
+	color:#000;
+	margin-bottom:0;
+}
+
+.admonitionblock .title {
+	font-weight:bold;
+}
+
+.admonitionblock {
+	margin:30px 0px;
+	color:#555;
+}
+
+.admonitionblock td.icon {
+	width:30px;
+	padding-right:20px;
+	padding-left:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#888;
+}
+
+.listingblock {
+  margin: 13px 0;
+}
+
+.listingblock .content {
+	border:1px solid silver;
+	background:#eee;
+	padding:5px;
+}
+
+.listingblock .content pre {
+	margin:0;
+}
+
+.literalblock .content {
+	margin-left:40px;
+}
+
+.verseblock .content {
+	white-space:pre
+}
+
+.sidebarblock .sidebar-content {
+	border:1px solid silver;
+	background:#FFFFEE;
+	padding:0 10px;
+	color:#222;
+	font-size:smaller;
+	line-height:1.5;
+}
+
+.sidebar-title {
+	margin:10px 0;
+	font-weight:bold;
+	color:#442;
+}
+
+.quoteblock-content {
+	font-style:italic;
+	color:#444;
+	margin-left:40px;
+}
+
+.quoteblock-content .attribution {
+	font-style:normal;
+	text-align:right;
+	color:#000;
+}
+
+.exampleblock-content *:first-child { margin-top:0 }
+.exampleblock-content {
+	border-left:2px solid silver;
+	padding-left:8px;
+}
+
+#footer {
+	font-size:11px;
+	margin-top:40px;
+	border-top:1px solid silver;
+	color:#555;
+}
+
+#author {
+	color:#000;
+	text-transform:uppercase
 }
 </style>
 <script type="text/javascript">
@@ -753,7 +915,7 @@ asciidoc.install(2);
 <span id="author">Jean-Michel Bruel</span><br />
 <span id="email"><code>&lt;<a href="mailto:jean-michel.bruel@univ-tlse2.fr">jean-michel.bruel@univ-tlse2.fr</a>&gt;</code></span><br />
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">15/08/2012</span>
+<span id="revdate">01/09/2012</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -1027,7 +1189,8 @@ Une version pour impression au format <a href="main.pdf">pdf</a>
 <h3 id="_utilisation_et_autres_mentions_légales">1.7. Utilisation et autres mentions légales</h3>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>Document généré par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</a> via <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> (version <code>8.6.8</code>) de <em>Stuart Rackham</em>.
+<div class="paragraph"><p>Dernière MAJ : 01/09/2012 - 00:53:45 CEST<br />
+Document généré par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</a> via <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> (version <code>8.6.8</code>) de <em>Stuart Rackham</em>.
 La version présentation a été générée en utilisant <a href="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</a> &#169; de <em>Dave Raggett</em>, amélioré par <a href="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</a>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <em>Licence Creative Commons</em>.
 <span class="image">
@@ -6035,12 +6198,17 @@ Les conseils techniques de Matthew Mc Cullough sur <a href="https://gist.github.
 </li>
 <li>
 <p>
-<a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a>
+<a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> comme moteur de base.
 </p>
 </li>
 <li>
 <p>
-<a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>
+<a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> pour la conversion de documents.
+</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/schacon/git-scribe">git-scribe</a> pour la génération des documents à partir d&#8217;<a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a>.
 </p>
 </li>
 </ul></div>
@@ -6357,7 +6525,8 @@ Which language is easier to learn, SysML or UML?
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>Document généré par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</a> via <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> (version <code>8.6.8</code>) de <em>Stuart Rackham</em>.
+<div class="paragraph"><p>Dernière MAJ : 01/09/2012 - 00:53:45 CEST<br />
+Document généré par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</a> via <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> (version <code>8.6.8</code>) de <em>Stuart Rackham</em>.
 La version présentation a été générée en utilisant <a href="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</a> &#169; de <em>Dave Raggett</em>, amélioré par <a href="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</a>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <em>Licence Creative Commons</em>.
 <span class="image">
@@ -6615,7 +6784,7 @@ TRL
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br />
-Last updated 2012-08-10 16:38:13 CEST
+Last updated 2012-09-01 00:46:52 CEST
 </div>
 <div id="footer-badges">
 <a href="http://validator.w3.org/check?uri=referer">

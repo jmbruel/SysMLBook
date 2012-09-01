@@ -7,7 +7,7 @@
 :Email: jean-michel.bruel@univ-tlse2.fr
 :Revision: 1.0
 :localdate: {sys: date +%d/%m/%Y}
-:Date: {localdate}
+:date: {localdate}
 :startdate: 26/07/2012
 :images: images
 :toc_title: Content
