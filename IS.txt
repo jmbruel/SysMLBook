@@ -1,4 +1,4 @@
-La matrice qui nous servira de carte de base pour placer les activités
+La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-ci :
 
 [[Matrice]]
@@ -11,6 +11,29 @@ ou les modèles, sera celle-ci :
 | {design}			|					|        		|				|
 | {implementation}	|					|        		|				|
 |======================
+
+Dans un axe horizontal, j'ai différencié quatre grands points de vue :
+
+{Requirements}::
+	Les exigences et leur prises en compte sont un éléments critique pour le succès du développement du système. Sans explorer l'ensemble des activités d'ingénierie système (ce qui nécessiterait tout un volume du type de <<reqs>>) nous insisterons beaucoup sur cet aspect qui est souvent à l'origine de l'intérêt de {sysml}.
+{Structure}::
+	La description de l'architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important. C'est souvent la partie de {sysml} qui pose le moins de problème aux débutants. 
+{Behavior}::
+	Le comportement ...
+{Crosscutting}::
+	Un certains nombre de concepts sont transverses aux trois points de vue précédents...
+
+Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie du développement :
+
+{organisation}::
+	blabla...
+{analysis}::
+	blabla...
+{design}::
+	blabla...
+{implementation}::
+	blabla...
+
 
 == Différence avec l'ingénierie logicielle
 
