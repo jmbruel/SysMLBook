@@ -3,13 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
+<<<<<<< HEAD
 	<string>IS.txt</string>
+=======
+	<string>main.txt</string>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>make.txt</string>
 			<key>lastUsed</key>
+<<<<<<< HEAD
 			<date>2012-09-01T09:26:29Z</date>
 		</dict>
 		<dict>
@@ -17,12 +22,21 @@
 			<string>about.txt</string>
 			<key>lastUsed</key>
 			<date>2012-08-31T22:50:34Z</date>
+=======
+			<date>2012-08-23T05:59:30Z</date>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>main.txt</string>
 			<key>lastUsed</key>
+<<<<<<< HEAD
 			<date>2012-09-01T10:02:41Z</date>
+=======
+			<date>2012-08-23T06:02:40Z</date>
+			<key>selected</key>
+			<true/>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -54,7 +68,11 @@
 			<key>filename</key>
 			<string>notation.txt</string>
 			<key>lastUsed</key>
+<<<<<<< HEAD
 			<date>2012-09-01T09:47:10Z</date>
+=======
+			<date>2012-08-23T05:53:24Z</date>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -219,21 +237,35 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
+<<<<<<< HEAD
 			<integer>126</integer>
+=======
+			<integer>41</integer>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 		</dict>
 		<key>make.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+<<<<<<< HEAD
 				<integer>5</integer>
 				<key>line</key>
 				<integer>35</integer>
+=======
+				<integer>24</integer>
+				<key>line</key>
+				<integer>28</integer>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+			<integer>5</integer>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 		</dict>
 		<key>notation.txt</key>
 		<dict>
@@ -266,6 +298,10 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
+<<<<<<< HEAD
 	<string>{{67, -30}, {1067, 774}}</string>
+=======
+	<string>{{644, 91}, {1067, 774}}</string>
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 </dict>
 </plist>
