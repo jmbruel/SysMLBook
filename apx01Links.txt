@@ -22,8 +22,9 @@
 - Outils de production
 	* Les conseils généraux de Scott Ambler sur http://www.ambysoft.com/books/bookWriting.html[Ecrire un livre technique]
 	* Les conseils techniques de Matthew Mc Cullough sur https://gist.github.com/1609255[Ecrire un livre technique]
-	* {asciidoc}
-	* {pandoc}
+	* {asciidoc} comme moteur de base.
+	* {pandoc} pour la conversion de documents.
+	* https://github.com/schacon/git-scribe[git-scribe] pour la génération des documents à partir d'{asciidoc}.
 - Divers
 	* Pour en savoir plus sur l'http://jmb.c.la[auteur]
 	    

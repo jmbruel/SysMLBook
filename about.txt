@@ -1,4 +1,5 @@
 **********************************************************************
+Dernière MAJ : {date} - {localtime} +
 Document généré par mailto:{email}[{author}] via {asciidoc} (version +8.6.8+) de 'Stuart Rackham'.
 La version présentation a été générée en utilisant {slidy2} (C) de 'Dave Raggett', amélioré par mailto:{jmimail}[{jmi}].
 Pour l'instant ce document est libre d'utilisation et géré par la 'Licence Creative Commons'. 

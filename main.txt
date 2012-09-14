@@ -7,7 +7,7 @@
 :Email: jean-michel.bruel@univ-tlse2.fr
 :Revision: 1.1
 :localdate: {sys: date +%d/%m/%Y}
-:Date: {localdate}
+:date: {localdate}
 :startdate: 26/07/2012
 :images: images
 :toc_title: Content
@@ -29,6 +29,7 @@
 :slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
 :sosym: http://www.sosym.org[Software and System Modeling journal]
 :sysmlfrance: http://www.sysml-france.fr[SysML France]
+:rapportPotier: http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf[Rapport Potier]
 
 // data
 :eggstitle: Humour
@@ -88,9 +89,9 @@ include::chap01Methode.txt[]
 
 Si vous ne deviez lire qu'un seul chapitre...
 
-SysML, c'est :
+{SysML}, *c'est* :
 
-* Un ensemble de diagrammes
+* Un ensemble de 9 types de diagrammes :
 ** Diagrammes structuraux
 *** Diagrammes de définition de blocks (+bdd+)
 *** Diagrammes internes de blocks (+ibd+)
@@ -102,8 +103,14 @@ SysML, c'est :
 *** Diagrammes de cas d'utilisation (+uc+)
 *** Diagrammes d'états (+st+)
 ** Diagramme d'exigence (+req+)
-* Un profil UML
-* ... xxx
+* Un profil {UML}, c'est à dire une extension de cette notation
+* Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de référence à la modélisation des systèmes
+
+{SysML}, *ce n'est pas* :
+
+* Une méthode ou une démarche de développement de système
+* Un outil
+* Un raton laveur (c'est juste pour voir ceux qui suivent)
 
 == A propos du Bac STI2D
 [[STI2D]]
@@ -177,13 +184,13 @@ Vertical (across)::
 - 13. between states
 - 14. a supporter of SysML
 Horizontal (down)::
-1. used to describe a flow of actions
-3. message represented by a regular (unfilled) arrow
-5. each use case is advised to be linked to at least one of them
-7. they are handled in SysML by Packages
-8. communication entity in a +seq+
-11. a supporter of SysML
-12. number of diagrams in SysML
+- 1. used to describe a flow of actions
+- 3. message represented by a regular (unfilled) arrow
+- 5. each use case is advised to be linked to at least one of them
+- 7. they are handled in SysML by Packages
+- 8. communication entity in a +seq+
+- 11. a supporter of SysML
+- 12. number of diagrams in SysML
 
 ==== Corrigé
 
@@ -219,6 +226,7 @@ include::apx01Links.txt[]
 
 Un point sur les évolutions de {sysml}.
 
+[[umlAsysml]]
 == D'UML à SysML
 
 Un point sur comment aborder {sysml} quand on vient d'{uml}.
@@ -239,14 +247,15 @@ Les références...
 
 [bibliography]
 - [[[FMS]]] Friedenthal...
-- [[[Roques2010]]] {prfc}. SysML par l'exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. A acheter http://www.numilog.com/LIVRES/FICHES/62775.Livre[ici].
-- [[[SysML12]]] OMG. Systems modeling language version 1.2. Technical report, 2010.
+- [[[Roques2010]]] {prfc}. SysML par l'exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. a acheter http://www.numilog.com/LIVRES/FICHES/62775.Livre[ici].
+- [[[SysML]]] OMG. Systems modeling language version 1.3. Technical report, 2012.
 - [[[taoup]]] Eric Steven Raymond. 'The Art of Unix
   Programming'. Addison-Wesley. ISBN 0-13-142901-9.
 - [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
   'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
   ISBN 1-56592-580-7.
-- [[[SEE-BOOK]]] Kordon et al. To b published. XXX
+- [[[SEE-BOOK]]] Kordon et al. To be published. XXX
+- [[[reqs]]] ???
 
 include::glossary.txt[]
 

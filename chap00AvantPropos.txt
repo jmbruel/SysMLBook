@@ -9,15 +9,15 @@ ____________________________________________________________________
 === A qui est destiné ce document?
 //My students, my colleagues, and myself!
 
-Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de référence accessible, et ... moi-même (pour organiser mes notes diverses)!
+Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de cours et d'exercice accessible, et ... moi-même (pour organiser mes notes diverses)!
 
 === A qui n'est-il pas destiné?
 
-Si vous appartenez à une de ces catégories, ce livre n'est pas pour vous :
+Si vous appartenez à l'une de ces catégories, ce livre *n'est pas pour vous* :
 
 - vous cherchez un livre de référence (pour cela, même s'il est en anglais, je conseille <<FMS>>)
 - vous voulez vous perfectionner (ce livre n'est qu'une introduction)
-- vous souhaitez préparer la certification de l'{omg} (mieux vaut vous plonger dans la spécification <<SysML12>>)
+- vous souhaitez préparer la certification de l'{omg} (mieux vaut vous plonger dans la spécification <<SysML>>)
 
 === Historique
 
@@ -35,8 +35,8 @@ Vous trouverez en référence (cf. <<refs, Bibiliographie>>) les ouvrages et aut
 Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
 
 - {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
-- mes collègues de {sysmlfrance} : {prfc}, {agusti} de C-S et {loic} de RTaW;
-- le maître d'{asciidoc} : {jmi}.
+- mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} (RTaW);
+- mon maître d'{asciidoc} : {jmi}.
 
 === Sur l'auteur
 - Professeur à l'{univ-tlse}
@@ -86,9 +86,10 @@ volontairement ces termes (e.g., {Requirements}).
 
 Parce que j'ignore la version que vous êtes en train de lire. A partir de l'link:main.txt[original], plusieurs versions ont été générées grâce à {asciidoc}:
 
-* Une version pour le web (Moodle) au format link:main.html[html]
-* Une version pour présentation en amphi au format link:main.slidy.html[slidy]
-* Une version pour impression au format link:main.pdf[pdf]
+* pour le web (Moodle) au format link:main.html[html]
+* pour présentation en amphi au format link:main.slidy.html[slidy]
+* pour impression au format link:main.pdf[pdf]
+* pour lire au format link:main.mobi[Kindle]
 
 === Utilisation et autres mentions légales
 

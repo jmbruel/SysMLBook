@@ -19,11 +19,17 @@ ifdef::posix[]
 :asciidocbin: /opt/local/bin/asciidoc.py
 :cp: cp 
 :ditaajar: /Users/bruel/dev/ditaa0_9/ditaa0_9.jar
+<<<<<<< HEAD
+//:style: /Users/bruel/.asciidoc/backends/slidy2/doc/keycap.css
+:style: /Users/bruel/dev/asciidoc/SysMLBook/stylesheets/scribe.css
+=======
 :style: /Users/bruel/Dropbox/Public/dev/slidy2-v1.0.3/doc/copy_of_css_js/keycap.css
+>>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 endif::posix[]
 
 :scriptsdir: {asciidocdir}javascripts
-:stylesdir: {asciidocdir}stylesheets
+//:stylesdir: {asciidocdir}stylesheets
+:stylesdir: ./stylesheets
 
 // output files relative paths
 :iconsdir: {asciidocdir}/images/icons

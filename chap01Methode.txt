@@ -2,7 +2,7 @@
 
 [quote, Albert Einstein]
 ____________________________________________________________________
-Everything should be made as simple as possible, but no simpler.
+Everything should be made as simple as possible, but not simpler.
 ____________________________________________________________________
 
 Mon approche pédagogique repose sur plusieurs principes bien établis :
@@ -17,6 +17,13 @@ La "carte de base"::
 	J'aime réaliser une "carte" footnote:[voir aussi le concept de _Mind Maps_.] qui sert à "placer" les différents concepts abordés. Il me semble que cela permet aux étudiants de raccrocher les nouveaux concepts aux précédents.
 ...::
 	etc.
+
+A part le chapitre <<umlAsysml, d'UML à SysML>>, aucune connaissance particulière d'{uml} n'est nécessaire.
+Il s'agit d'un partie pris prenant en compte plusieurs points :
+
+- La plupart des ingénieurs systèmes ne connaissent pas {uml}
+- Les étudiants de STI2D ne connaissent pas {uml}
+- Ceux qui connaissent {uml} auront sûrement plaisir à retrouver les bases
 
 //Exemple de note à propos de {sysml} footnote:[An example footnote.].
 
