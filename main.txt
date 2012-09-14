@@ -29,6 +29,7 @@
 :slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
 :sosym: http://www.sosym.org[Software and System Modeling journal]
 :sysmlfrance: http://www.sysml-france.fr[SysML France]
+:rapportPotier: http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf[Rapport Potier]
 
 // data
 :eggstitle: Humour

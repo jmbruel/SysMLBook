@@ -1,3 +1,5 @@
+== Introduction
+
 La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-ci :
 
@@ -34,7 +36,6 @@ Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie d
 {implementation}::
 	blabla...
 
-
 == Différence avec l'ingénierie logicielle
 
 Enseignant en informatique, je me retrouve souvent à enseigner {sysml} à des informaticiens.
@@ -45,9 +46,14 @@ D'où ce petit exposé sur mon opinion de la différence entre les deux "mondes"
 	* Historically
 	* In the development process
 
+
 == Normes et standards
 
 IEEE, EIA, ISO, certification, NASA, INCOSE, AFIS, ...
+
+=== Etat de l'art
+
+Un rapport de 2010, le {rapportPotier}, présente l'état des logiciels embarqués...
 
 == Les exigences
 

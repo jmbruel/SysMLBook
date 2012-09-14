@@ -3,92 +3,50 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-<<<<<<< HEAD
 	<string>IS.txt</string>
-=======
-	<string>main.txt</string>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>make.txt</string>
-			<key>lastUsed</key>
-<<<<<<< HEAD
-			<date>2012-09-01T09:26:29Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>about.txt</string>
-			<key>lastUsed</key>
-			<date>2012-08-31T22:50:34Z</date>
-=======
-			<date>2012-08-23T05:59:30Z</date>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>main.txt</string>
 			<key>lastUsed</key>
-<<<<<<< HEAD
-			<date>2012-09-01T10:02:41Z</date>
-=======
-			<date>2012-08-23T06:02:40Z</date>
-			<key>selected</key>
-			<true/>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
+			<date>2012-09-12T13:57:51Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>chap00AvantPropos.txt</string>
-			<key>lastUsed</key>
-			<date>2012-09-01T09:37:17Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>chap01Methode.txt</string>
-			<key>lastUsed</key>
-			<date>2012-09-01T10:03:06Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>IS.txt</string>
 			<key>lastUsed</key>
-			<date>2012-09-01T10:03:06Z</date>
+			<date>2012-09-12T13:57:51Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>Methodes.txt</string>
-			<key>lastUsed</key>
-			<date>2012-08-31T21:18:49Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
 			<string>notation.txt</string>
-			<key>lastUsed</key>
-<<<<<<< HEAD
-			<date>2012-09-01T09:47:10Z</date>
-=======
-			<date>2012-08-23T05:53:24Z</date>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>apx01Links.txt</string>
-			<key>lastUsed</key>
-			<date>2012-08-31T22:45:59Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>glossary.txt</string>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>faq.txt</string>
-			<key>lastUsed</key>
-			<date>2012-08-11T13:53:38Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>about.txt</string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -100,208 +58,38 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>10</integer>
-				<key>line</key>
-				<integer>31</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>Methodes.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>22</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>22</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>23</integer>
-			</dict>
-		</dict>
-		<key>about.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>13</integer>
-				<key>line</key>
-				<integer>1</integer>
+				<integer>56</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>apx01Links.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>35</integer>
-				<key>line</key>
-				<integer>24</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>chap00AvantPropos.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>36</integer>
-				<key>line</key>
-				<integer>91</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>56</integer>
-		</dict>
-		<key>chap01Methode.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>9</integer>
-				<key>line</key>
-				<integer>9</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>9</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>10</integer>
-			</dict>
-		</dict>
-		<key>faq.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>61</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>30</integer>
+			<integer>19</integer>
 		</dict>
 		<key>main.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>16</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>256</integer>
+				<integer>32</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-<<<<<<< HEAD
-			<integer>126</integer>
-=======
-			<integer>41</integer>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
-		</dict>
-		<key>make.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-<<<<<<< HEAD
-				<integer>5</integer>
-				<key>line</key>
-				<integer>35</integer>
-=======
-				<integer>24</integer>
-				<key>line</key>
-				<integer>28</integer>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-<<<<<<< HEAD
-			<integer>1</integer>
-=======
-			<integer>5</integer>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
-		</dict>
-		<key>notation.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>38</integer>
-				<key>line</key>
-				<integer>8</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>156</integer>
+			<integer>17</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>make.txt</string>
 		<string>main.txt</string>
-		<string>faq.txt</string>
 		<string>IS.txt</string>
-		<string>notation.txt</string>
-		<string>Methodes.txt</string>
-		<string>apx01Links.txt</string>
-		<string>about.txt</string>
-		<string>chap01Methode.txt</string>
-		<string>chap00AvantPropos.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-<<<<<<< HEAD
-	<string>{{67, -30}, {1067, 774}}</string>
-=======
-	<string>{{644, 91}, {1067, 774}}</string>
->>>>>>> cd390759f106ab1ca611f8d188e589993ce7ee02
+	<string>{{0, 4}, {1070, 774}}</string>
 </dict>
 </plist>
