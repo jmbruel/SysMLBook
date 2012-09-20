@@ -128,7 +128,7 @@ Il existe un certain nombre d'exemple complets :
 
 - Le radio-réveil de {prfc} <<Roques2010>>
 - Le distilleur de <<FMS>> 
-- Le pacemaker de <<SEE-BOOK>>
+- Le pacemaker de <<SeeBook2012>>
 
 = Partie 2 : Ingénierie système
 
@@ -138,12 +138,16 @@ include::IS.txt[]
 
 include::notation.txt[]
 
-= Partie 4 : Pour aller plus loin
+= Partie 4 : Modéliser un système en SysML
+
+include::cookbook.txt[]
+
+= Partie 5 : Pour aller plus loin
 
 == Considérations méthodologiques
 [[methodo]]
 
-Exemples de démarche autour de {sysml}, lien avec la section <<Methodes>>.
+Exemples de démarche autour de {sysml}, lien avec la section <<Methodes, Méthodes>>.
 indexterm:[Méthodes]
 
 == Exercices de révision
@@ -231,6 +235,10 @@ Un point sur les évolutions de {sysml}.
 
 Un point sur comment aborder {sysml} quand on vient d'{uml}.
 
+== Idées de projets
+
+Quelques exemples de sujet propice au développement SysML.
+
 == Challenges et questions ouvertes autour de SysML
 
 include::faq.txt[]
@@ -243,19 +251,8 @@ include::about.txt[]
 [bibliography]
 [[refs]]
 = Bibliographie
-Les références...
 
-[bibliography]
-- [[[FMS]]] Friedenthal...
-- [[[Roques2010]]] {prfc}. SysML par l'exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. a acheter http://www.numilog.com/LIVRES/FICHES/62775.Livre[ici].
-- [[[SysML]]] OMG. Systems modeling language version 1.3. Technical report, 2012.
-- [[[taoup]]] Eric Steven Raymond. 'The Art of Unix
-  Programming'. Addison-Wesley. ISBN 0-13-142901-9.
-- [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
-  'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
-  ISBN 1-56592-580-7.
-- [[[SEE-BOOK]]] Kordon et al. To be published. XXX
-- [[[reqs]]] ???
+include::biblio.txt[]
 
 include::glossary.txt[]
 
