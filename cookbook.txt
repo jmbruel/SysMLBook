@@ -1,0 +1,69 @@
+== Une démarche parmi d'autres
+
+Nous allons aborder le développement complet de notre exemple fil rouge en suivant une démarche classique et simple
+(utilisée par exemple dans <<SeeBook2012>>, où proche de la démarche globale enseignée dans nos cous de DUT Informatique, ou encore proche des documents de référence en la matière <<HAS2012>>, <<KAP2007>>,<<FIO2012>>) :
+
+1. Spécification du système 
+2. Conception du système
+3. Traçabilité et Allocations
+4. Modèle de test
+
+Nous partirons du modèle des exigences produit initialement.
+
+=== Spécification du système
+
+Il s’agit ici de décrire le contexte et d’identifier les principaux cas d’utilisation du système.
+
+[[contexte]]
+
+=== Conception du système
+
+Chaque cas d'utilisation sera précisé (`seq` et `act`).
+Les données métier seront alors identifiées pour construire le modèle d’architecture logique (+bdd+ et +ibd+) complété par la description des comportements complexes (+st+).
+Enfin le modèle d’architecture physique permettra de déterminer les aspects déploiement et constructions physiques d'équipements/
+
+=== Traçabilité et Allocations 
+
+Afin de consolider les différents modèles, les liens de traçabilité qui n'auront pas été déjà décritfootnote:[Il est recommandé de ne pas attendre pour matérialiser ces liens, mais de les exprimés dès que rencontrés dans telle ou telle modélisation.] seront rajoutés en insistant sur les liens :
+
+- de satisfaction des exigences par les éléments de l’architecture, 
+- d’allocation des éléments du modèle fonctionnel vers les éléments logiques, 
+- d’allocation des éléments logiques vers les éléments de l’architecture physique.
+
+=== Modèle de test
+
+Nous insistons dans l'ensemble de nos formations sur les approches _test-driven_, alors nous montrons dans cette section comment participer à la qualité du développement d'un système en formalisant (par exemple avec des diagrammes de séquence de scénarios à éviter)
+les test et les jeux de test.
+
+== Recettes et bonnes pratiques
+
+La plupart des ouvrages sur un langage enseignent les éléments de ce langage, comme nous l'avons fait à la partie précédente.
+Nous allons ici partir du principe inverse : comment modéliser tel ou tel partie ou vue de mon système avec SysML. Un peu à la
+manière des ouvrages du type _Cookbook_, nous allons donner une liste non exhaustives de recettes. Les choix des éléments de modélisation sont arbitraires ou tirés de discussions (comme ce sera mentionné si c'est le cas).
+
+=== Architecture
+
+.Je souhaite modéliser mon système dans son environnement
+[caption="Recette : "]
+==========================
+C'est conseillé. Un block +System+ permet de raccrocher tous les éléments qui le composent à un même niveau.
+
+Dans l'exemple ci-dessous le système (le bloc +Pacemaker+) est lui-même un simple composant d'un élément de plus haut niveau : le contexte du système (le bloc +Context+) qui relie alors le système à son environnement.
+
+.Le contexte du Pacemaker (<<SeeBook2012>>)
+image:{images}/pacemaker-context.png[width="70%",alt="Le contexte du Pacemaker"]
+
+Voir aussi la section <<contexte>>.
+==========================
+
+=== Comportement
+
+.Je souhaite modéliser les différents modes (nominal, alternatifs)
+[caption="Recette : "]
+==========================
+Un diagramme d'état peu modéliser les différents modes et les événements qui produisent les changements de mode.
+==========================
+
+=== Patrons de conception système
+
+Mérite une section ??

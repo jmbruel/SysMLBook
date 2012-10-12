@@ -1,0 +1,14 @@
+Les références...
+
+[bibliography]
+- [[[FIO2012]]] Fiorèse S., Meinadier J., Découvrir et comprendre l’ingénierie système, AFIS 2012.
+- [[[FMS]]] Friedenthal...
+- [[[HAS2012]]] Haskins C., SE Handbook Working Group, INCOSE Systems Engineering Handbook: Version 3.2.2, International Council on Systems Engineering, 2012.
+- [[[KAP2007]]] Kapurch S., NASA Systems Engineering Handbook, 2007 (http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20080008301_2008008500.pdf[pdf]).
+- [[[REQ2012]]] Guide Bonnes Pratiques en Ingénierie des Exigences, AFIS 2012.
+- [[[Roques2010]]] {prfc}. SysML par l'exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. a acheter http://www.numilog.com/LIVRES/FICHES/62775.Livre[ici].
+- [[[SeeBook2012]]] Kordon et al. To be published. XXX
+- [[[SysML]]] OMG. Systems modeling language version 1.3. Technical report, 2012.
+- [[[taoup]]] Eric Steven Raymond. 'The Art of Unix
+  Programming'. Addison-Wesley. ISBN 0-13-142901-9.
+- [[[Walsh1999]]] Norman Walsh & Leonard Muellner. DocBook - The Definitive Guide. O'Reilly & Associates. 1999. ISBN 1-56592-580-7.
