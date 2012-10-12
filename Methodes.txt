@@ -13,10 +13,13 @@ Un diagramme ne doit pas être considéré comme définitif. Il peut être compl
 ==========================
 
 .Niveau d'abstraction
-[caption="Heuristique : "]
+[icon="images/heuristic.jpeg",caption="Heuristique : "]
 ==========================
 Bien intégrer les niveaux d'abstraction dans votre démarche. SysML possède certaines constructions pour formaliser cet aspect (+Packages+ par exemple). Nous matérialisons cet aspect par la partie verticale de la matrice (cf. <<Matrice>>).
 ==========================
+
+[icon="images/heuristic.jpeg",caption="Heuristique : "]
+NOTE: Bien intégrer les niveaux d'abstraction dans votre démarche. SysML possède certaines constructions pour formaliser cet aspect (+Packages+ par exemple). Nous matérialisons cet aspect par la partie verticale de la matrice (cf. <<Matrice>>).
 
 .Tous les diagrammes ne sont pas utiles
 [caption="Heuristique : "]

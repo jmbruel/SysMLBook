@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>IS.txt</string>
+	<string>main.txt</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -14,7 +14,9 @@
 			<key>filename</key>
 			<string>main.txt</string>
 			<key>lastUsed</key>
-			<date>2012-09-12T13:57:51Z</date>
+			<date>2012-09-20T08:11:54Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -28,9 +30,7 @@
 			<key>filename</key>
 			<string>IS.txt</string>
 			<key>lastUsed</key>
-			<date>2012-09-12T13:57:51Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-09-14T13:02:15Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -53,20 +53,6 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>IS.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>56</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>19</integer>
-		</dict>
 		<key>main.txt</key>
 		<dict>
 			<key>caret</key>
@@ -79,17 +65,16 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>17</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>main.txt</string>
-		<string>IS.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{0, 4}, {1070, 774}}</string>
+	<string>{{415, 330}, {1070, 774}}</string>
 </dict>
 </plist>

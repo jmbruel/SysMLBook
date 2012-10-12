@@ -535,184 +535,6 @@ body.manpage div.sectionbody {
 }
 
 
-/* ---------------------------------------------------------------------------
-   Bare AsciiDoc styles
-   Ryan Tomayko <r@tomayko.com>
---------------------------------------------------------------------------- */
-
-body {
-	font-family:verdana,helvetica,arial,sans-serif;
-	font-size:81.25%;   /* 13px */
-	line-height:1.538;  /* 20px */
-	margin:40px auto 50px auto;
-	max-width:53.8461538462em; /* 790px */
-	color:#333;
-}
-
-em {
-	font-style:italic;
-}
-
-strong {
-	font-weight:bold;
-	color:#000;
-}
-
-tt {
-	font-family:consolas, 'lucida console', 'bitstream vera sans mono',
-	           'courier new', monospace;
-	color:#000;
-  font-size: 8px;
-}
-
-p, ul, ol, dl {
-	margin:10px 0
-}
-
-dl {
-	margin-left:40px
-}
-
-dt {
-	font-weight:normal;
-	color:#000;
-}
-
-h1, h2, h3, h4, h5 {
-	font-family:'lucida grande',georgia,verdana,helvetica,arial,sans-serif;
-	font-weight:normal;
-	color:#000;
-}
-
-h1 {
-	font-size:40px;
-	line-height:1.428;
-	margin:20px 0;
-}
-
-h2 {
-	font-size:30px;
-	line-height:1.36363636; /* repeating, of course */
-	margin:60px 0 20px 0;
-}
-
-h2 + .sectionbody {}
-
-h3 {
-	font-size:24px;
-	line-height:1.1;
-	margin:30px 0 10px 0;
-}
-
-h4 {
-	font-size:18px;
-	line-height:1.1;
-	margin:20px 0 5px 0;
-}
-
-h5 {
-	font-size:13px;
-	font-style:italic;
-	line-height:1.1;
-}
-
-#header {
-	text-align:center;
-	margin-bottom:30px;
-}
-
-#header h1 { margin-bottom:0 }
-
-.title, .sidebar-title {
-	font-weight:normal;
-	color:#000;
-	margin-bottom:0;
-}
-
-.admonitionblock .title {
-	font-weight:bold;
-}
-
-.admonitionblock {
-	margin:30px 0px;
-	color:#555;
-}
-
-.admonitionblock td.icon {
-	width:30px;
-	padding-right:20px;
-	padding-left:20px;
-	text-transform:uppercase;
-	font-weight:bold;
-	color:#888;
-}
-
-.listingblock {
-  margin: 13px 0;
-}
-
-.listingblock .content {
-	border:1px solid silver;
-	background:#eee;
-	padding:5px;
-}
-
-.listingblock .content pre {
-	margin:0;
-}
-
-.literalblock .content {
-	margin-left:40px;
-}
-
-.verseblock .content {
-	white-space:pre
-}
-
-.sidebarblock .sidebar-content {
-	border:1px solid silver;
-	background:#FFFFEE;
-	padding:0 10px;
-	color:#222;
-	font-size:smaller;
-	line-height:1.5;
-}
-
-.sidebar-title {
-	margin:10px 0;
-	font-weight:bold;
-	color:#442;
-}
-
-.quoteblock-content {
-	font-style:italic;
-	color:#444;
-	margin-left:40px;
-}
-
-.quoteblock-content .attribution {
-	font-style:normal;
-	text-align:right;
-	color:#000;
-}
-
-.exampleblock-content *:first-child { margin-top:0 }
-.exampleblock-content {
-	border-left:2px solid silver;
-	padding-left:8px;
-}
-
-#footer {
-	font-size:11px;
-	margin-top:40px;
-	border-top:1px solid silver;
-	color:#555;
-}
-
-#author {
-	color:#000;
-	text-transform:uppercase
-}
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -914,8 +736,7 @@ asciidoc.install(2);
 <h1>Introduction à SysML</h1>
 <span id="author">Jean-Michel Bruel</span><br />
 <span id="email"><code>&lt;<a href="mailto:jean-michel.bruel@univ-tlse2.fr">jean-michel.bruel@univ-tlse2.fr</a>&gt;</code></span><br />
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">01/09/2012</span>
+<span id="revdate">14/09/2012</span>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -1194,7 +1015,7 @@ pour lire au format <a href="main.mobi">Kindle</a>
 <h3 id="_utilisation_et_autres_mentions_légales">1.7. Utilisation et autres mentions légales</h3>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>Dernière MAJ : 01/09/2012 - 12:10:08 CEST<br />
+<div class="paragraph"><p>Dernière MAJ : 14/09/2012 - 15:08:54 CEST<br />
 Document généré par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</a> via <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> (version <code>8.6.8</code>) de <em>Stuart Rackham</em>.
 La version présentation a été générée en utilisant <a href="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</a> &#169; de <em>Dave Raggett</em>, amélioré par <a href="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</a>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <em>Licence Creative Commons</em>.
@@ -1508,6 +1329,9 @@ Le pacemaker de <a href="#SEE-BOOK">[SEE-BOOK]</a>
 </div>
 </div>
 <h1 id="_partie_2_ingénierie_système">Partie 2 : Ingénierie système</h1>
+<div class="sect1">
+<h2 id="_introduction">1. Introduction</h2>
+<div class="sectionbody">
 <div class="paragraph"><p>La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-ci :</p></div>
 <div class="tableblock" id="Matrice">
@@ -1633,8 +1457,10 @@ Implémentation
 </p>
 </dd>
 </dl></div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="_différence_avec_l_8217_ingénierie_logicielle">1. Différence avec l&#8217;ingénierie logicielle</h2>
+<h2 id="_différence_avec_l_8217_ingénierie_logicielle">2. Différence avec l&#8217;ingénierie logicielle</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Enseignant en informatique, je me retrouve souvent à enseigner SysML  à des informaticiens.
 D&#8217;où ce petit exposé sur mon opinion de la différence entre les deux "mondes".</p></div>
@@ -1665,13 +1491,17 @@ In the development process
 </div>
 </div>
 <div class="sect1">
-<h2 id="_normes_et_standards">2. Normes et standards</h2>
+<h2 id="_normes_et_standards">3. Normes et standards</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>IEEE, EIA, ISO, certification, NASA, INCOSE, AFIS, &#8230;</p></div>
+<div class="sect2">
+<h3 id="_etat_de_l_8217_art">3.1. Etat de l&#8217;art</h3>
+<div class="paragraph"><p>Un rapport de 2010, le <a href="http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf">Rapport Potier</a>, présente l'état des logiciels embarqués&#8230;</p></div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_les_exigences">3. Les exigences</h2>
+<h2 id="_les_exigences">4. Les exigences</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Importance de l&#8217;ingénierie des exigences en IS&#8230;</p></div>
 <div class="imageblock" id="fig:eggs">
@@ -2697,19 +2527,19 @@ nr6oD342K/I1J82SHsrUB//Z" />
 </div>
 </div>
 <div class="sect1">
-<h2 id="_l_8217_architecture_du_système">4. L&#8217;architecture du système</h2>
+<h2 id="_l_8217_architecture_du_système">5. L&#8217;architecture du système</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Liens avec AADL, &#8230;</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_le_comportement_du_système">5. Le comportement du système</h2>
+<h2 id="_le_comportement_du_système">6. Le comportement du système</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Liens avec la V&amp;V</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Methodes">6. Méthodes et démarches</h2>
+<h2 id="Methodes">7. Méthodes et démarches</h2>
 <div class="sectionbody">
 <div class="paragraph"><p></p></div>
 <div class="paragraph"><p>SysML n&#8217;est pas une méthode. En effet aucune démarche n&#8217;est imposée pour
@@ -2725,6 +2555,130 @@ Nous nous contenterons de donner ici quelques heuristiques (cf. Annexe <a href="
 <div class="content">
 <div class="paragraph"><p>Bien intégrer les niveaux d&#8217;abstraction dans votre démarche. SysML possède certaines constructions pour formaliser cet aspect (<code>Packages</code> par exemple). Nous matérialisons cet aspect par la partie verticale de la matrice (cf. <a href="#Matrice">[Matrice]</a>).</p></div>
 </div></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Heuristique : " src="data:image/png;base64,
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAd
+Hx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3
+Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCADzANADASIA
+AhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAAAwABAgQHBQYI/8QAPxAAAQMDAwEEBwYEBgEFAAAA
+AQACAwQFEQYSITETQVFhBxQicYGRsRUjMlKhwRZCU9EzNGJykuFjJENE8PH/xAAaAQADAQEBAQAA
+AAAAAAAAAAABAgMABAUG/8QAIxEBAQACAgICAgMBAAAAAAAAAAECEQMhEjEEQSIyE1FhQv/aAAwD
+AQACEQMRAD8A4ICfCcBSwvefEbRwnwpAJYWDZsJYUsJ8LBtHCWFPCWFg2jhLCnhLCLbQwlhTwlhY
+NoYTYRMJsIDtDCbCJhNhZtoYTEKeE2Fh2hhNhTITYWHaGExCmQmIWNtDCZTITELDtDCZTwmIWNtY
+wnATgKQCyG0QE+FMNJU2xrNq0MBOGFHEamGIbNOOq4jUuzVgMT7EPI841cRp+zVjYn2IeQ/xxW7N
+Ls1Z2JbFvIf44q9momNW9ibYj5BeOKhYVEtPgrZYoliPkS8aoQmIVl0ag6NHZbjYAQmIRS3CiQsX
+YZCiQiEJiFjShkJiFMhMQsbYZCYhTITELDKthuURsaI1iK1iW5NjxhtYphiIGIgYl2tMAgxSDEUM
+Uw1DZ5iCGKQYihqkGobN4g7VKOF8r2sjY573HAa0ZJRo4nSPaxjS5zjgAdSVoOn7JHa4A+QB1U8e
+2/8AL5D/AO8qfJyTCLcPBeS/48rS6QuczQ6QRQA90jufkFa/gepx/nIM/wCxy9wkua8+bunw+KPA
+y6KuDR93NTv+JH7Ln1OmrrTgl1I54HfGQ76LTUxRnyMy5fD476Y/JC+J22RjmOHc4YKGWLXqimgq
+WbKiFkrfB7QVwLhpGinBdSOdTv8AD8Tfl1VcfkS+3Nn8LKfrds+LFAsXbudjrbdl00W6L+ozlv8A
+18Vyy1dEyl7jjy47jdWKjmIbo1cLENzE0qWWCmW4UCFbcxBcxPKjcbASFEhEIUSEQlDITEKZCYhA
+0rrtaiNapNaiNapWuuYoBqmGqYaphqXZ5igGqQaiBqkGobPoMNUg1EDU5cIhuPUdENjp6HSNuaZ3
+1UjcmLhvk4/2H1XrlQsdL6pa4I3D2y3e/wD3HkqN+vNHYLXNca95bDGOAPxPcejR5lcXJl5ZPU4c
+PDCR0UliQ1zqjV95NuscrKNzmOkjgjeGuc0d248k/JUrFqPWVTLXCiq6qWSgjMtTHI/cWAEg5Ds8
+8HjySK6rd5ZGRRukkc1jGAuc5xwAB1JWZ3/0t0tPO+Gy0oqWtOO3lJDXe4DnHvwuHdNbXHUmm4bX
+UerUstxqGQsqC/sxIzPtEjuaDjLumMhH03o+tpLRerNrOmpmWna2eK4wSNLmPPH3Zxk8DoR5YOUf
+TSTW6swelW4Qdi+42uIRTN3xlu5m9viCcgr22nNYWjUOI6Wbs6nGfV5cBx93cfgvB3X+FrnZrbZ6
+iO9Q0tuBZT1e1jnbT1Dh1xwO7uXI1pYqqbUVDV6ItrpLfPE3sZaE5b2jc7ifyEcdcdFvXttS+m4u
+AIIIyCvOXnTEFTulodsM3XZ/I7+y5no51hJfoJbbdQY7tR5EgcNpkAOCcfmB4I+K9onxyuPcR5OO
+ZdZRllTTS00zop4yyRvUFV3NWlXe1wXKHbIA2Vo9iQDkf9LwNbSS0k74J27Xt+R8wuzj5PJ5nNwX
+C/457moTmK25qG5qrK5ssVJ7EIhXXNQXsTyufLD+lYhRIRXNwoEIkjvtaiNana1Ea1c+3pSIhqmG
+qYaptahs8iAapBqIGqQahs2kA1VYMVd0pqYdJJmtPuzz+is1buxppH+A4XM09WRx6otjZHAB84aP
+eQQP1wlyuofDHeUjXfcso9N9ZUSTWm2UNLPVTYfUmKOMvbtBAyQOT3j4lass59Kstws1badQWl0j
+ahm+jOxm8u3kOa3bg5yWkLiepj7UbPBYainpNczWSagucLzC2lp3GNk8w43BvcOv65Bxz0W199hd
+U1f8I0YiqgfWOyY5kkjT13Oxk9T1C7GkZrleLbTVepaE0txgme8RObjhww1+MnBxke/K6tdeqS31
+4p7hK2na+MPhkfw15BIc3PiPZ478oyQuVu2dVlt0xdbFW1FPTysqu0hhkdOAXWqPONwaCPuxySRn
+OeenHodJWah+xvsgXqO7wwVLZ3uYeNpB2sxk4GRldHUFuZTXShvlEwMnZM2GqaBxPC8hrgR3kEg/
+BcS8amg09XTXC8w1La4TOpIIoqctZLTh2Qd2cHg5yTwcgDrk/ew3uaexfJResG3yRwj7ntBG5oAc
+3ODgeXGfDIXnKm1OsN2ZLaZZKehuZNPURx/+xK4ERytz0IOB8V1jHZ9T0VNUujZVQjEkTiCHNyPD
+qM/qj3Z8QhbNVOEVLTvE0j3f6eQB4nICJN6YW60ag9H2prfdbnNHUdtUnMsUpeZfzh2RnJBK3ilu
+1urHbaSuppnflZKCfksuuWk7fX6ycysuVSypuUcslJDI3a6mnxuIc3HLCCeR4Y5XJZpC8Ummbpdb
+hDVU1XRyt7GAtDhKzgFwx7yfglnSuX5arciuTfrW24U2WACdgyw+Pksx0pr662qClfe4Kma01JLY
+p3tJIxwdrv5seB+C1ymqYaymjqaaRssMrQ5j2nIcCqY5au4jyYdarN3sLSWuGCDgg9yE5q9NqmgE
+Uwq42+zIcP8AJ3j8V55zV2Y5bm3lZ4eN0quagvarbmoTmp5UcsVN7EBzcK69qBIxUlc2eD0LWojW
+p2tRA1cz05DBqmGqTWqYagaRENUg1TDVINQNpx9SzCmtbnnpvaFnprphXR1bHYkieHs8iDkfRaVq
+OjNZZaqJoy8M3t97ef2Wa22hqLnWR0tIwvkece7zUs9706uCSS19GW6sjuFBT1kP+HPG2RvxGVXv
+1qgvNrmoahzmB+HMlacOie07mvB8QQCmsFv+ybNSUG7d2EYaT59T9V5T0wXY2/SdRFHJKx84Dcxn
+B57j5YByoaXl9PLaHvWqrlrisFTcYamlomvjny8GJ4zxtI7yRnPd3rSrfd7Pf4gaWamq+zd/huLS
+5jh5H6hYppvS8eodG+s6TqZmX6FxirqeSYNErH8ZB4wMfPBHgtFq7DPSacbT2i2UTrtLQCnqWQyR
+jEgBDX84zgucc9VpT54x6e+19FQQNnu1TFTUzHtdiRwBe4HIAHvWOekWv1LPcn2aplbPbqyUTwui
+wWubnIax3XjOD8+i6+oLK2y22q07NVS10ZhZWvrZWDNK4HDsnqQdpLW9eceaq+ii3Ud8v0tdUVL+
+zoGbaOikfucWnq892M9w8fmfZZ1up6xj1vRm1TUltkbTUsLBvt7nO44y1wHtAYAHh1wUwv8AX3D0
+kQRW6qPqT4Q10Fe94ib7J3j2gcO44Pj5LZ15b0lWqW7aTqxSs31VOPWIh1Li3qP+JK3YSz1pVo6e
+/U1obTTvgfdH1D6emnDu0NPTkbvxkZPA6keHXCb+FLrT/f0eoqoVfX23uLXHzBJH6Kt6PRSWWlgt
+Ut/p7lVVgNTG1hwW+yMtAznGMHnHQ8L0lX9pwXJslHDHU0s4a2QPk2mEg/iHiCD08R5pp6Jl7eA1
+VarzrKmp7OXwUNztkm+Snd7MM8buBK3APTpj/Uo+i+7VNnv9bpC5zRyFjiYHxv3NDwMkA+BHOO4g
++K93eKOKe726Yj2wJYpCO+JzDuB8s4KxejstJp3Wdqls93juMDphIHNGHsw4DDh55PPvQs1dw+OU
+yxsreK+mbV0skDv5hwfA9xXgpGFri1ww4HBC0V3evHagp+xuLyBgSAPH7/qujiv04efHc24rmoTm
+q05qE5qvK47FVzUB7Vbe1Be1PKjlHfa1Ea1JoRGhQd0hNaphqdrUQBKaRENUw1SDVMNQNpANHfyE
+bRWmKezxvqdoMsjiWkjoMotBAKmqEf8AK0bn+5ekAAGBwFPkuuluLHfaSyHX9+ulj9I8dTSxmpZH
+QtDIHxF7Njid/A7zjr8FrmV4X0kVVbpww6qtmN8URpKkObuBjc4OaceThjP+pRrpxvYlLTG4Waii
+slDHZvtbNVWiFmwsHAI4A5OR4d/mnd6PLUGfc1E8dQORK3AIPjxg/qjejy/XC/WRtZd6M0tQ973R
++xtEsROQ5uecZP0PeupXC7U9x7S3RQ1FNUBokbK/aYSONw8QQeniPNNPRMt77cGnjmjrG6f1XC24
+xygvoqh3/wAjbz2T/E8ZGeuOVjdFqn7O1vJdrdRCgibUl3qbTw1vRzPjzx0B6dF9CX6nbUCiwMyx
+1kUkR7wQ7n9MrMtcNqdU32osFDYKdtRSSOqG1AAjlmjbnOM43A57soZT7Px5Tuaa/BNHUQRzQu3R
+yMD2O8QRkIdZVQUVJNVVUrYoIWF8j3dGtHUrDrBeNUVEdULTUVBjtsIfNGJcCNg7tp8MHjyVi/au
+ud8oabTN2IojXPifLVvjLdkBOdzm94PB7uiO4HhdqFtrrK/WE+qKihrKOxund6vJtcWmUDPUdPEN
+HQnyWnW3UtZ6h65cqMNpH0prIKiKZpc6HwcDgbwMZx4rzumtLT6fs14oNSVdJcdNzMbJEISXGR5P
+Bb+U8Dv64OeqtvuYFtipDpWdtoiYWRiOd+5rD1HTBB8CVsdtyXG3pK9a3jZZRdLbQvlhNQKep9ad
+skY3qRs6jIxyfEdV5jQ9qtd31ZLW2WOYUTZGyu7QcRnqWA94B+q6usLTcNdTRT6ZqQaWqa2KsbLJ
+2YgLOWh7OueT0znj3qPogvMNFLUaYqGRRzxveY3tIO9zT7TSR16ZB96MvfYa/C6amVwNTxZbBL5l
+v7rvFcrULc0IPhIP3VMPbm5JvGvKOCE5qsuCE4LojisVXBBeFacEF4TxLKO+0IjQmaERoUHZIdoR
+AEzQiNCBtE0IVZUspIDI8geGVZAXgNeVdXJc/UQHRwBjTn84P/aFujTG3p7PQF+pbnPcIGuAna8O
+bn+dmOo9x+q9mvnummdQva+ne6OVhyHsOC0+RXtbF6RpqcsivYEsOQO3aMPb5kdD9VLKW9ujHU6j
+TkCupIK+jmpKuJstPMwskY7o5p6oocHAFpyDyCklMyLVn8Z2fUlpggrXvtwlbHS1DWDGeh7bxOM+
+R7vL2Ums7dTXqOy1T3mtlLRGYG7mvJGcYPIPlz16r088MVRC+GeNkkTxhzHtBDh5grwd29Flrqrv
+HdbdW1VDVRyNkAz2rMg+DuR81u4O5fa7U6soqq61dltkpjvMcTtr6tm1rHY6NHe7nP8AfogQ1FFe
+Bbr5T18tJFZpHetxzRB07Hhu0xF3gc88HPHw8xftNP0pqCLVd2khukUk22SBkRiDXbMNdnJ8PmvS
+6PqbBqS1TMstH6rRxVwkqKc/zO25z15BOPkt7rWam4rUV7paCqrK616UexlW4uqJ2SYfLkk5IwW9
+54yuebRpersNzqonVVRU1NSx1VV1ft1FCCfxnploGemQfcONHNXHFWMostY50RewHgEAgED3ZHzX
+ntR29lDUwagtzGslhcG1TGj2Z4HEB4I7yAc/BG4hMrtX0dbLRFbBbqG6C6Q09QKlzyByXAgZHgCP
+0Xo5rlBBXmlqJWQkxCRhkcAHjJBwT4cfMLy+odT0mnqx9TcIag1LJTTwsip3NY+DIP4j7J65zngg
+gDqvQMdbL/R09T2UdXCMSxlzeW5GQcdQjP6Llv25N5s8VNdoqmmBip7kDR10cZ27g8ENeMdHA9/m
+VkdxsD9C363T0l3p654nzti9l8ZaQSHDJ68j5rcbvPFFEKytJipKQ9s8uHLi3kAD3rGbva7ZctQx
+3az1ksxq3OdNTSt9uKQ8n4HJx9UMsdm489S79N4Y8SMa9v4XAOHuK5t+P/oseLx+6vUzDDTQxHqy
+NrfkMLmX9/3cUfiS5Vx9ufP9XAcEFwVlwQXhWjksVnBBeFZeEF4TROx32hEaFFoRWhRdUO0IjQma
+ERoQPDgKtcbXSXOER1cW7H4XjhzfcVcaEQBA0ZpqPSU1qp5KyCXt6VnLsjDmjz8QuRouyyamv8cc
+ns0UDt8x/NjnYPM/Re99IFyFFZH0jP8AGrQYwfyt/mP7fFeB0x9p/atLS6fGaqMlzcnDGA9S7yPf
+4qeXtfD9W+DAGBwB0SygUhqPVo/XOy9Y2/edjnZnyzzhFQA+UySbKzOTquyxai0/WWuUhvbM9h5/
+keOWn3ZAz5ZWd2nW1NZ79Q6dpdNmjcx4p6tkHLi8gfhGMuweck5IWsrz1903HWXGK829sEV3gbsb
+JI3LZGfldjkeThyPMcLaNMprVXrhQ2+9UsYrI2zxNduY8Egg9DyOR4EJV8baml9VjAbDgCR54axg
+68+4LLbJc9QWnWlWdUPqaCnmY97nl+2J7+MEO5aeBj6rn0Wup9Q0t7oL/Uv7B0LjTSMBa2PB43Bo
+5zx14+aMyjXjroeky8X6WultT4Gus1aWPhIaDvYMHAI5BJGee4oGp59ZsdaK2ntc0NHDCz2qJxfl
+uQS123lowAMH5oXo6s131LUQTXF07LLROJhD8gPcRg7fHj4DK2xoDGhrRgAYAHcEJNzY3LxutemH
+3PU1yj1e+42uOtrLdsEJgeJHNyW+2xu7Pte76L0Hoy0dWwVE14vFL6oJH7qekfncwZyM56fHnjla
+hlMU0neyZZ7mtGK8/dZe1q3Y6M9kLsVtQIISR+M8NC8+8KmMc/JfpXcEJwR3BCcFSIVXeEF4Vh4Q
+XhNE67zQitCg1EaFJ0xNoRWhQaitCU8SaFMBM0IjQgaPLekJluNlBrnObUAkUxYMuLscj3eKzu2X
+Wa0T001FhjoHb9v9R2MEu8c8jyHRahre1R3GwzSHiala6aN3uHI+I/ZZxpqyS19VBPOC2B0jdgPW
+Q5+iWzdVxsmPbcaab1imim2lvaMa/aeoyM4RFBgDGhregGAnygB8pZTZTLMfKZLKZFkZY45ozHMx
+kjHdWvaCD8CqUFmtVO2RtPbKKJshDntZTsAcR0JAHOFfTLaDZgAAABgDgAdySSYlECKFPM2Jm559
+w8VKR4Ywud0C5NRI6V+53wHgmkLldA1MrppC9/wHgqzgjuCE5PEaA4ITkZyE5NCUB4QHqw9Bemid
+d1qK1DaitUXTBGorUNqK1A0TaiNUGojUp44+sHkafqYWnDqgthz4Bx9o/wDHK8raqyJl8tsAwGdu
+xoHh4Lu+kKoNNZIpO7twD/xcsqNdOaqOojcWvjeHsPgQchbehmFyr6GykqFlucN3tkFbAeJW+038
+ru8H3FXsoCfKbKZJZj5TJkkQJJNlMsxyUybKYogrVzjsaPEqg5Xq38LfeqLk0JkE5CciuQnIkoLk
+JyK5CcmidBegvR3oD00JXdaitQWozVJ0QVqK1BaitQNBWojUJqI1KaOdqe1fbNjqaNuO1cN0RPc8
+cj+3xWMNp3skdHIwte0kOaRggjqFvgXn7/pGivEpqGPdTVJ/E9gyH/7h4+aGlJlqPB6bv9VYJXGD
+EkDz95C48HzHgfNezh9IdrcB21PUxu7wA1w+oXGl9HNcSezuVMR3bmOH91Um9HN5aMxVNHJ5b3D6
+hHoPb1kevLE/8Us7P90J/ZdOh1Babg8Mpa6Jzz0Y47XH4FZFeLDcrI0PuVOY4icCQEOaT7wvPvrp
+Z6iOnpct3OA39/wQt0bHC19IJsoVKSaaEuJJMbck9/CJlMmdMSmymysx0xKbKbKIA1QzFnwKoOXR
+mGYnDyXOciWhOQnIrkJyJKE5BeiuQnJonQXoL0ZyC9NCV22orSgtKK0qa8GaUVpQGlFaUp4M0ojS
+gtKmCgaDAqYKECpgoCICpZQwU+UDPL+k/DtG1YP9SLH/ACCyPTtOH3FriMiNpd8eg+q1b0pSbdJv
+b+eojH6k/ss60xD91JLjmSQMHuH/AOoa3kfy1x1t8IxDGPBoH6Kaj04HckqInJTZTZTZWY5KZLKi
+SsB3cjC5j+CQuiufUDErveiWguQnKbihOKaEobkJyI4oTimhKE8oL0V5QXponXaaUVpQGlEaVJeD
+tKI0oDSiNKB4O0ogKA0qYKAjgqQKCCpgoGFBUsoIKfcgO3jPS3Ls09Tsz+OqH6NcvNWGDs20EJHJ
+ezPvJBXd9Kv37LPS/wBSoeT7gB/dc+zN33iib/5m/VHGd2tyZfjI08nlNlRyllMU+UiVHKWVgJLK
+YlNlZiJVOsGHg+IVslVq0ZjB8CiWqLihOKm4oTijCVBxQnFTcUJxTQlDeUF5RHlBeU0TrstKI0oD
+SiNKmvKO0ojSgNKICgaUcFTBQAVMOQNscOUg5ADlIOQHY25PuQtyfcsO3jNffeXa256RQyO+LiB+
+xVTTLd9+o/JxPyaVZ1o8OusQ/LAPqUPSDd19jP5Y3n9Mfumk6Tyu60DKSjlIlYxyU2UyYlZtpZTZ
+UcpZWDZZQ5xuhePJSJTFEHJcUNxU5Rte5vgcILijE7UXFBeVNxQXFNCWoOKC8qbigvKaJ2uy1Eak
+kprwQIgSSQOmFIJJIGTCkkkgJ8p0klmeJ1bzeTn+k390XRYH2u8/+B31CSSb6T/6e4SSSQOYpkkl
+mJRKSSIGKYlJJYHLrP8AMPVVySSaJ0JyE5JJNCUF6C9JJNE8n//Z" />
+</td>
+<td class="content">Bien intégrer les niveaux d&#8217;abstraction dans votre démarche. SysML possède certaines constructions pour formaliser cet aspect (<code>Packages</code> par exemple). Nous matérialisons cet aspect par la partie verticale de la matrice (cf. <a href="#Matrice">[Matrice]</a>).</td>
+</tr></table>
+</div>
 <div class="exampleblock">
 <div class="title">Heuristique : Tous les diagrammes ne sont pas utiles</div>
 <div class="content">
@@ -6637,7 +6591,7 @@ Which language is easier to learn, SysML or UML?
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph"><p>Dernière MAJ : 01/09/2012 - 12:10:08 CEST<br />
+<div class="paragraph"><p>Dernière MAJ : 14/09/2012 - 15:08:54 CEST<br />
 Document généré par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</a> via <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> (version <code>8.6.8</code>) de <em>Stuart Rackham</em>.
 La version présentation a été générée en utilisant <a href="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</a> &#169; de <em>Dave Raggett</em>, amélioré par <a href="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</a>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <em>Licence Creative Commons</em>.
@@ -6900,8 +6854,7 @@ TRL
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br />
-Last updated 2012-09-01 12:01:11 CEST
+Last updated 2012-09-14 14:55:34 CEST
 </div>
 <div id="footer-badges">
 <a href="http://validator.w3.org/check?uri=referer">
