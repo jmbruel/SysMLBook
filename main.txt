@@ -10,6 +10,7 @@
 :date: {localdate}
 :startdate: 26/07/2012
 :images: images
+:dessins: dessins
 :toc_title: Content
 :slideshowlocation: [IUT Blagnac]
 :duration: 85
@@ -18,23 +19,56 @@
 :incremental!:
 :indir: dessins
 
+//----------- dck.js --------------
+// swiss, neon beamer
+:deckjs_theme: web-2.0 
+
+//fade, horizontal-slide, vertical-slide
+:deckjs_transition: horizontal-slide
+
+///////////////////////
+	AsciiDoc use `source-highlight` as default highlighter.
+
+	Styles available for pygment highlighter:
+	monokai, manni, perldoc, borland, colorful, default, murphy, vs, trac,
+	tango, fruity, autumn, bw, emacs, vim, pastie, friendly, native,
+
+	Uncomment following two lines if you want to highlight your code
+	with `Pygments`.
+///////////////////////
+//:pygments:
+//:pygments_style: native
+///////////////////////
+	Uncomment following line if you want to scroll inside slides
+	with {down,up} arrow keys.
+///////////////////////
+:scrollable:
+///////////////////////
+	Uncomment following line if you want to link css and js file 
+	from outside instead of embedding them into the output file.
+///////////////////////
+//:linkcss:
+
 = {title}
 
 // raccourcis sites
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
+:eclipse: http://www.eclipse.org[eclipse]
 :models: http://www.modelsconference.org/[MODELS]
 :moodle: http://webetud.iut-blagnac.fr[Moodle]
 :omg: http://www.omg.org[OMG]
 :pandoc: http://johnmacfarlane.net/pandoc/[Pandoc]
 :slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
 :sosym: http://www.sosym.org[Software and System Modeling journal]
-:sysmlfrance: http://www.sysml-france.fr[SysML France]
 :rapportPotier: http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf[Rapport Potier]
+:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]
+:topcased: http://www.topcased.org[TOPCASED]
 
 // data
 :eggstitle: Humour
 :sysml: SysML indexterm:[SysML]
-:uml: UML indexterm:[UML]
+:STI2D: STI2D indexterm:[STI2D]
+:uml: http://www.uml.org/[UML] indexterm:[UML]
 :Requirements: Requirements
 :Structure: Structure
 :Behavior: Comportement
@@ -45,6 +79,7 @@
 :implementation: Implémentation
 :resume: En résumé
 :revisions: Questions de révision
+:is: Ingénierie Système indexterm:[IS]
 
 // personnes et institutions
 :karina: Karina Aguilar
@@ -54,10 +89,11 @@
 :loic: Loïc Féjoz
 :jmi: Jean-Michel Inglebert
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
+:incose: http://www.incose.org/[INCOSE]
 :irit: http://www.irit.fr[IRIT]
 :iut: IUT de Blagnac
 :nonne: Laurent Nonne
-:omg: OMG
+:omg: http://www.omg.org[OMG]
 :prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
 :pdss:  Pierre de Saqui Sannes
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]
@@ -79,15 +115,34 @@
 // chapitres 
 //================================================================
 
+ifndef::backend-slidy2[]
+
 = Partie 1 : Introduction
+
+endif::backend-slidy2[]
 
 include::chap00AvantPropos.txt[]
 
 include::chap01Methode.txt[]
 
+
 == C'est quoi SysML?
 
-Si vous ne deviez lire qu'un seul chapitre...
+Si vous ne deviez lire qu'un seul chapitre, voilà ce qu'il faudrait retenir...
+
+[NOTE]
+.Carte d'identité
+====
+- Date de naissance : 2001!
+- Version actuelle : 1.3 (2/6/2012)
+- Paternité : {OMG}/{UML} + {INCOSE}
+- Auteurs principaux
+* Conrad Bock
+* Cris Kobryn
+* Sanford Friedenthal
+====
+
+ifdef::backend-slidy2[<<<]
 
 {SysML}, *c'est* :
 
@@ -102,6 +157,17 @@ Si vous ne deviez lire qu'un seul chapitre...
 *** Diagrammes d'activité (+act+)
 *** Diagrammes de cas d'utilisation (+uc+)
 *** Diagrammes d'états (+st+)
+
+ifdef::backend-slidy2[]
+
+<<<
+
+{SysML}, *c'est* (suite):
+
+* Un ensemble de types de diagrammes :
+
+endif::backend-slidy2[]
+
 ** Diagramme d'exigence (+req+)
 * Un profil {UML}, c'est à dire une extension de cette notation
 * Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de référence à la modélisation des systèmes
@@ -115,34 +181,53 @@ Si vous ne deviez lire qu'un seul chapitre...
 == A propos du Bac STI2D
 [[STI2D]]
 
-Si vous utilisez cet ouvrage dans le cadre du bac STI2D, indexterm:[STI2D] qui a introduit depuis 2011 la notation SysML au programme, nous vous recommandons footnote:[Je remercie au passage xxx pour nos fructueuses discussions à ce sujet.]...
+Si vous utilisez cet ouvrage dans le cadre du bac {STI2D} qui a introduit depuis 2011 la notation {SysML} au programme, nous donnerons
+ici (bientôt) des conseils sur l'utilisation de ce cours footnote:[Je remercie au passage les collègues de Lycée rencontrés dans le cadre de {sysmlfrance} pour nos fructueuses discussions à ce sujet.].
 
-L'objectif en STI2D n'est pas de former des spécialistes de SysML mais de permettre à tous d'apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l'importance de la communication devront primer.
+L'objectif en {STI2D} n'est pas de former des spécialistes de {SysML} mais de permettre à tous d'apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l'importance de la communication devront primer.
 
 
 == Un exemple fil rouge
 
-L'exemple de système qui sera modélisé tout au long de ce livre en guise d'exemple.
+L'exemple de système qui sera modélisé tout au long de ce livre en guise d'exemple
+est l'exemple d'un système de gestion et de supervision de crise. Les détails sont
+donnés en annexe (cf. <<appendix,Annexes>>).
 
-Il existe un certain nombre d'exemple complets :
+Il existe un certain nombre d'autres exemple complets :
 
 - Le radio-réveil de {prfc} <<Roques2010>>
 - Le distilleur de <<FMS>> 
 - Le pacemaker de <<SeeBook2012>>
 
+ifndef::backend-slidy2[]
+
 = Partie 2 : Ingénierie système
+
+endif::backend-slidy2[]
 
 include::IS.txt[]
 
+ifndef::backend-slidy2[]
+
 = Partie 3 : La notation SysML
+
+endif::backend-slidy2[]
 
 include::notation.txt[]
 
+ifndef::backend-slidy2[]
+
 = Partie 4 : Modéliser un système en SysML
+
+endif::backend-slidy2[]
 
 include::cookbook.txt[]
 
+ifndef::backend-slidy2[]
+
 = Partie 5 : Pour aller plus loin
+
+endif::backend-slidy2[]
 
 == Considérations méthodologiques
 [[methodo]]
@@ -198,8 +283,7 @@ Horizontal (down)::
 
 ==== Corrigé
 
-[ditaa]
-==========================
+.................
              A    
 DELEGATION   C    
      S       T    
@@ -216,13 +300,18 @@ PSEUDOSTATES   E
    E     I     E  
 TRANSITION INCOSE 
    T     E        
-==========================
+.................
 
 //================================================================
 // APPENDIX
 //================================================================
+
+ifndef::backend-slidy2[]
+
 [appendix]
 = Annexes
+
+endif::backend-slidy2[]
 	
 include::apx01Links.txt[]
 
@@ -248,13 +337,19 @@ include::faq.txt[]
 include::about.txt[]
 
 
+ifndef::backend-slidy2[]
+
 [bibliography]
 [[refs]]
 = Bibliographie
 
+endif::backend-slidy2[]
+
 include::biblio.txt[]
 
 include::glossary.txt[]
+
+ifndef::backend-slidy2[]
 
 [index]
 = Index
@@ -262,3 +357,5 @@ include::glossary.txt[]
 The index is normally left completely empty, it's contents are
 generated automatically by the DocBook toolchain.
 ////////////////////////////////////////////////////////////////
+
+endif::backend-slidy2[]

@@ -1,6 +1,25 @@
-all: main.txt chap00AvantPropos.txt
+#-----------------------------------------------------
+MAIN=main
+ICONSDIR=/Users/bruel/dev/asciidoc/images/icons
+#-----------------------------------------------------
+
+all: *.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
-	asciidoc -a posix --unsafe make.txt
+	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
+	 -a numbered $(MAIN).txt
+tp: ups-tp.txt
+	@echo '==> Compiling asciidoc files to generate HTML'
+	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
+	 -o ups-tp.html -a numbered ups-tp.txt
+deckjs:
+	@echo '==> Compiling asciidoc files to generate SLIDES'
+	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri -a numbered \
+	 -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 \
+	 -o $(MAIN).deckjs.html $(MAIN).txt
+
+#all: *.txt
+#	@echo '==> Compiling asciidoc files to generate HTML'
+#	asciidoc -a posix --unsafe make.txt
 
 compact:
 	@echo '==> Compiling asciidoc files to generate compact HTML'

@@ -8,8 +8,62 @@ Nous allons aborder le développement complet de notre exemple fil rouge en suiv
 3. Traçabilité et Allocations
 4. Modèle de test
 
-Nous partirons du modèle des exigences produit initialement.
+Nous partirons du modèle des exigences produit initialement. Mais avant tout, parlons outils.
 
+=== Environnement de développement
+
+Nous sommes des défenseurs des principes <<DRY>> et <<TDD>>. Nous allons donc réaliser nos diagrammes dans un outil et non "à la main" (de simples dessins).
+Nous choisissons ici l'outil {topcased} pour des raisons que nous expliquerons ailleurs. La version utilisée pour réaliser les exemples de cette section 
+est la version +5.2+.
+
+Un outil {SysML} seul ne suffit pas (cf. <<outils,Outillage>>). Il faut penser à la documentation (cf. <<gendoc,Génération de doc>>).
+
+.Outillage autour de SysML
+image:{dessins}/SysMLTool-fr.png[width="80%",alt="Outillage autour de SysML"]
+
+[[outils]]
+==== Outils
+
+Il existe de nombreux outils {sysml}. Nous renvoyons le lecteur sur le site de {sysmlfrance} pour 
+des informations sur les dernières versions des outils.
+
+
+[[gendoc]]
+==== Génération de documentation
+
+La plupart des outils permettent de générer de la documentation. Pour les outils basés {eclipse} comme
+{topcased}, il est possible d'utiliser le plug-in +GenDoc2+.
+
+.Génération de documentation à partir de TOPCASED
+image:{images}/gendoc-1.png["GENDOC",height="300",link="{images}/gendoc-1.png"]
+image:{images}/gendoc-2.png["GENDOC",height="300",link="{images}/gendoc-2.png"]
+
+Les outils commerciaux comme {rhapsody} permettent de générer de nombreux formats.
+
+.Génération de documentation à partir de Rhapsody
+image:{images}/gendoc-rhapsody1.png["Rhapsody",height="300",link="{images}/gendoc-rhapsody1.png"]
+
+==== Animation de modèles et simulation
+
+Fortement liée aux outils, la possibilité d'animer les modèles ou encore d'effectuer des simulations
+est une exigence de plus en plus forte des ingénieurs systèmes.
+
+Il existe de nombreuses possibilités. Citons par exemple :
+
+Génération de code VHDL::
+	L'outil +RTaW+ propose, via génération de code VHDL de simuler les modèles. Voir une démonstration
+	https://www.realtimeatwork.com/wp-content/uploads/screencasts/bouncingball/[ici].
+Simulation en Rhapsody::
+	L'outil {rhapsody} possède une interface très pratique pour faire du prototypage rapide.
++
+image:{images}/rhapsody-animation.png["Animation",width="80%",link="{images}/rhapsody-animation.png"]
++
+Voir mon tutoriel (en anglais) disponible http://jmbhome.heroku.com/teaching/SysML/tp-undergraduate.html[ici].
+
+Animation de modèles en Artisan::
+	L'outil +Artisan+ permet également de faire de l'animation de modèles.
+	image:{images}/artisan.png["Animation",width="80%",link="{images}/artisan.png"]
+	
 === Spécification du système
 
 Il s’agit ici de décrire le contexte et d’identifier les principaux cas d’utilisation du système.
@@ -24,7 +78,7 @@ Enfin le modèle d’architecture physique permettra de déterminer les aspects 
 
 === Traçabilité et Allocations 
 
-Afin de consolider les différents modèles, les liens de traçabilité qui n'auront pas été déjà décritfootnote:[Il est recommandé de ne pas attendre pour matérialiser ces liens, mais de les exprimés dès que rencontrés dans telle ou telle modélisation.] seront rajoutés en insistant sur les liens :
+Afin de consolider les différents modèles, les liens de traçabilité qui n'auront pas été déjà décrit footnote:[Il est recommandé de ne pas attendre pour matérialiser ces liens, mais de les exprimés dès que rencontrés dans telle ou telle modélisation.] seront rajoutés en insistant sur les liens :
 
 - de satisfaction des exigences par les éléments de l’architecture, 
 - d’allocation des éléments du modèle fonctionnel vers les éléments logiques, 

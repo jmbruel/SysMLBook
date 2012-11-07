@@ -6,14 +6,14 @@
 <book lang="en">
 <bookinfo>
     <title>Introduction à SysML</title>
-    <date>01/09/2012</date>
+    <date>02/11/2012</date>
     <author>
         <firstname>Jean-Michel</firstname>
         <surname>Bruel</surname>
         <email>jean-michel.bruel@univ-tlse2.fr</email>
     </author>
     <authorinitials>JMB</authorinitials>
-<revhistory><revision><revnumber>1.0</revnumber><date>01/09/2012</date><authorinitials>JMB</authorinitials></revision></revhistory>
+<revhistory><revision><revnumber>1.0</revnumber><date>02/11/2012</date><authorinitials>JMB</authorinitials></revision></revhistory>
 </bookinfo>
 <part id="_partie_1_introduction">
 <title>Partie 1 : Introduction</title>
@@ -29,11 +29,11 @@ it almost seem like a live teacher.</simpara>
 </blockquote>
 <section id="_a_qui_est_destiné_ce_document">
 <title>A qui est destiné ce document?</title>
-<simpara>Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de référence accessible, et &#8230; moi-même (pour organiser mes notes diverses)!</simpara>
+<simpara>Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de cours et d&#8217;exercice accessible, et &#8230; moi-même (pour organiser mes notes diverses)!</simpara>
 </section>
 <section id="_a_qui_n_8217_est_il_pas_destiné">
 <title>A qui n&#8217;est-il pas destiné?</title>
-<simpara>Si vous appartenez à une de ces catégories, ce livre n&#8217;est pas pour vous :</simpara>
+<simpara>Si vous appartenez à l&#8217;une de ces catégories, ce livre <emphasis role="strong">n&#8217;est pas pour vous</emphasis> :</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
@@ -47,7 +47,7 @@ vous voulez vous perfectionner (ce livre n&#8217;est qu&#8217;une introduction)
 </listitem>
 <listitem>
 <simpara>
-vous souhaitez préparer la certification de l&#8217;OMG (mieux vaut vous plonger dans la spécification <xref linkend="SysML12"/>)
+vous souhaitez préparer la certification de l&#8217;OMG (mieux vaut vous plonger dans la spécification <xref linkend="SysML"/>)
 </simpara>
 </listitem>
 </itemizedlist>
@@ -99,12 +99,12 @@ Nicolas Belloir de l&#8217;Université de Pau et des Pays de l&#8217;Adour, Laur
 </listitem>
 <listitem>
 <simpara>
-mes collègues de <ulink url="http://www.sysml-france.fr">SysML-France</ulink> : <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink>, Agusti Canals de C-S et Loïc Féjoz de RTaW;
+mes collègues de <ulink url="http://www.sysml-france.fr">SysML-France</ulink> : <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink> (PRFC), Agusti Canals (C-S) et Loïc Féjoz (RTaW);
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-le maître d&#8217;<ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> : Jean-Michel Inglebert.
+mon maître d&#8217;<ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> : Jean-Michel Inglebert.
 </simpara>
 </listitem>
 </itemizedlist>
@@ -204,17 +204,22 @@ volontairement ces termes (e.g., Requirements).
 <itemizedlist>
 <listitem>
 <simpara>
-Une version pour le web (Moodle) au format <ulink url="main.html">html</ulink>
+pour le web (Moodle) au format <ulink url="main.html">html</ulink>
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Une version pour présentation en amphi au format <ulink url="main.slidy.html">slidy</ulink>
+pour présentation en amphi au format <ulink url="main.slidy.html">slidy</ulink> ou <ulink url="main.deckjs.html">deck.js</ulink>
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Une version pour impression au format <ulink url="main.pdf">pdf</ulink>
+pour impression au format <ulink url="main.pdf">pdf</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+pour lire au format <ulink url="main.mobi">Kindle</ulink> (bientôt!)
 </simpara>
 </listitem>
 </itemizedlist>
@@ -222,7 +227,7 @@ Une version pour impression au format <ulink url="main.pdf">pdf</ulink>
 <section id="_utilisation_et_autres_mentions_légales">
 <title>Utilisation et autres mentions légales</title>
 <sidebar>
-<simpara>Dernière MAJ : 01/09/2012 - 11:20:07 CEST<?asciidoc-br?>
+<simpara>Dernière MAJ : 02/11/2012 - 16:07:45 CET<?asciidoc-br?>
 Document généré par <ulink url="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</ulink> via <ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> (version <literal>8.6.8</literal>) de <emphasis>Stuart Rackham</emphasis>.
 La version présentation a été générée en utilisant <ulink url="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</ulink> &#169; de <emphasis>Dave Raggett</emphasis>, amélioré par <ulink url="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</ulink>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <emphasis>Licence Creative Commons</emphasis>.
@@ -243,7 +248,7 @@ Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la 
 <attribution>
 Albert Einstein
 </attribution>
-<simpara>Everything should be made as simple as possible, but no simpler.</simpara>
+<simpara>Everything should be made as simple as possible, but not simpler.</simpara>
 </blockquote>
 <simpara>Mon approche pédagogique repose sur plusieurs principes bien établis :</simpara>
 <variablelist>
@@ -287,26 +292,47 @@ La "carte de base"
 </simpara>
 </listitem>
 </varlistentry>
-<varlistentry>
-<term>
-&#8230;
-</term>
-<listitem>
-<simpara>
-        etc.
-</simpara>
-</listitem>
-</varlistentry>
 </variablelist>
-</chapter>
-<chapter id="_c_8217_est_quoi_sysml">
-<title>C&#8217;est quoi SysML?</title>
-<simpara>Si vous ne deviez lire qu&#8217;un seul chapitre&#8230;</simpara>
-<simpara>SysML, c&#8217;est :</simpara>
+<simpara>A part le chapitre <link linkend="umlAsysml">d&#8217;UML à SysML</link>, aucune connaissance particulière d&#8217;UML <indexterm>
+  <primary>UML</primary>
+</indexterm> n&#8217;est nécessaire.
+Il s&#8217;agit d&#8217;un partie pris prenant en compte plusieurs points :</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
-Un ensemble de diagrammes
+La plupart des ingénieurs systèmes ne connaissent pas UML <indexterm>
+  <primary>UML</primary>
+</indexterm>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Les étudiants de STI2D ne connaissent pas UML <indexterm>
+  <primary>UML</primary>
+</indexterm> et sont pourtant formés à SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Ceux qui connaissent UML <indexterm>
+  <primary>UML</primary>
+</indexterm> auront sûrement plaisir à retrouver les bases
+</simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter id="_c_8217_est_quoi_sysml">
+<title>C&#8217;est quoi SysML?</title>
+<simpara>Si vous ne deviez lire qu&#8217;un seul chapitre, voilà ce qu&#8217;il faudrait retenir&#8230;</simpara>
+<simpara>SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>, <emphasis role="strong">c&#8217;est</emphasis> :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Un ensemble de 9 types de diagrammes :
 </simpara>
 <itemizedlist>
 <listitem>
@@ -372,22 +398,51 @@ Diagramme d&#8217;exigence (<literal>req</literal>)
 </listitem>
 <listitem>
 <simpara>
-Un profil UML
+Un profil UML <indexterm>
+  <primary>UML</primary>
+</indexterm>, c&#8217;est à dire une extension de cette notation
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-&#8230; xxx
+Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de référence à la modélisation des systèmes
+</simpara>
+</listitem>
+</itemizedlist>
+<simpara>SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>, <emphasis role="strong">ce n&#8217;est pas</emphasis> :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Une méthode ou une démarche de développement de système
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Un outil
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Un raton laveur (c&#8217;est juste pour voir ceux qui suivent)
 </simpara>
 </listitem>
 </itemizedlist>
 </chapter>
 <chapter id="_a_propos_du_bac_sti2d">
 <title>A propos du Bac STI2D</title>
-<simpara id="STI2D">Si vous utilisez cet ouvrage dans le cadre du bac STI2D, <indexterm>
+<simpara id="STI2D">Si vous utilisez cet ouvrage dans le cadre du bac STI2D <indexterm>
   <primary>STI2D</primary>
-</indexterm> qui a introduit depuis 2011 la notation SysML au programme, nous vous recommandons <footnote><simpara>Je remercie au passage xxx pour nos fructueuses discussions à ce sujet.</simpara></footnote>&#8230;</simpara>
-<simpara>L&#8217;objectif en STI2D n&#8217;est pas de former des spécialistes de SysML mais de permettre à tous d&#8217;apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l&#8217;importance de la communication devront primer.</simpara>
+</indexterm> qui a introduit depuis 2011 la notation SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm> au programme, nous donnerons
+ici (bientôt) des conseils sur l&#8217;utilisation de ce cours <footnote><simpara>Je remercie au passage les collègues de Lycée rencontrés dans le cadre de <ulink url="http://www.sysml-france.fr">SysML-France</ulink> pour nos fructueuses discussions à ce sujet.</simpara></footnote>.</simpara>
+<simpara>L&#8217;objectif en STI2D <indexterm>
+  <primary>STI2D</primary>
+</indexterm> n&#8217;est pas de former des spécialistes de SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm> mais de permettre à tous d&#8217;apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l&#8217;importance de la communication devront primer.</simpara>
 </chapter>
 <chapter id="_un_exemple_fil_rouge">
 <title>Un exemple fil rouge</title>
@@ -406,7 +461,7 @@ Le distilleur de <xref linkend="FMS"/>
 </listitem>
 <listitem>
 <simpara>
-Le pacemaker de <xref linkend="SEE-BOOK"/>
+Le pacemaker de <xref linkend="SeeBook2012"/>
 </simpara>
 </listitem>
 </itemizedlist>
@@ -414,7 +469,9 @@ Le pacemaker de <xref linkend="SEE-BOOK"/>
 </part>
 <part id="_partie_2_ingénierie_système">
 <title>Partie 2 : Ingénierie système</title>
-<simpara>La matrice qui nous servira de carte de base pour placer les activités
+<chapter id="_introduction">
+<title>Introduction</title>
+<simpara>La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-ci :</simpara>
 <table id="Matrice"
 frame="all"
@@ -471,6 +528,108 @@ rowsep="1" colsep="1"
 </tbody>
 </tgroup>
 </table>
+<section id="_points_de_vue">
+<title>Points de vue</title>
+<simpara>Dans un axe horizontal, j&#8217;ai différencié quatre grands points de vue :</simpara>
+<variablelist>
+<varlistentry>
+<term>
+Requirements
+</term>
+<listitem>
+<simpara>
+        Les exigences et leur prises en compte sont un éléments critique pour le succès du développement du système. Sans explorer l&#8217;ensemble des activités d&#8217;ingénierie système (ce qui nécessiterait tout un volume du type de <xref linkend="reqs"/>) nous insisterons beaucoup sur cet aspect qui est souvent à l&#8217;origine de l&#8217;intérêt de SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>.
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Structure
+</term>
+<listitem>
+<simpara>
+        La description de l&#8217;architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important. C&#8217;est souvent la partie de SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm> qui pose le moins de problème aux débutants.
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Comportement
+</term>
+<listitem>
+<simpara>
+        Le comportement d&#8217;un système est du point de vue de l&#8217;utilisateur final beaucoup plus important que la structure elle-même. C&#8217;est la partie
+        qu&#8217;il est la plus à même d&#8217;exprimer, de comprendre (vos modèles) et de valider.
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Transverse
+</term>
+<listitem>
+<simpara>
+        Un certains nombre de concepts sont transverses aux trois points de vue précédents. Il s&#8217;agira principalement de parler de cohérence entre
+        les phases de développement ou entre les points de vue.
+</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</section>
+<section id="_phase_de_développement">
+<title>Phase de développement</title>
+<simpara>Dans un axe vertical, j&#8217;ai différencié quatre grandes phases du cycle de vie du développement :</simpara>
+<variablelist>
+<varlistentry>
+<term>
+Organisation
+</term>
+<listitem>
+<simpara>
+        Une étape indépendante du type de cycle de développement envisagé (en V, agile, etc.) mais qui concerne la mise en place
+        d&#8217;un cadre de travail qui permette un développement de qualité (outils, éditeurs, gestionnaire de version, de tâches, etc.)
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Analyse
+</term>
+<listitem>
+<simpara>
+        Cette phase vise plutôt à examiner le domaine du problème. Elle se focalise sur les cahiers des charges et les exigences.
+        L&#8217;analyse débouche sur un dossier d&#8217;analyse qui décrit les grandes lignes (cas d&#8217;utilisation, architecture principale) du système.
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Conception
+</term>
+<listitem>
+<simpara>
+        Cette phase vise plutôt à examiner le domaine de la solution. Elle débouche sur un dossier de conception qui décrit les détails
+        conceptuels de la solution envisagée (structure détaillée, comportement, etc.)
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Implémentation
+</term>
+<listitem>
+<simpara>
+        Cette phase traite des développements finaux (construction ou approvisionnement en matériel, développement de codes, etc.).
+</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</section>
+</chapter>
 <chapter id="_différence_avec_l_8217_ingénierie_logicielle">
 <title>Différence avec l&#8217;ingénierie logicielle</title>
 <simpara>Enseignant en informatique, je me retrouve souvent à enseigner SysML <indexterm>
@@ -505,6 +664,10 @@ In the development process
 <chapter id="_normes_et_standards">
 <title>Normes et standards</title>
 <simpara>IEEE, EIA, ISO, certification, NASA, INCOSE, AFIS, &#8230;</simpara>
+<section id="_etat_de_l_8217_art">
+<title>Etat de l&#8217;art</title>
+<simpara>Un rapport de 2010, le <ulink url="http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf">Rapport Potier</ulink>, présente l'état des logiciels embarqués&#8230;</simpara>
+</section>
 </chapter>
 <chapter id="_les_exigences">
 <title>Les exigences</title>
@@ -542,6 +705,7 @@ Nous nous contenterons de donner ici quelques heuristiques (cf. Annexe <link lin
 <title>Niveau d&#8217;abstraction</title>
 <simpara>Bien intégrer les niveaux d&#8217;abstraction dans votre démarche. SysML possède certaines constructions pour formaliser cet aspect (<literal>Packages</literal> par exemple). Nous matérialisons cet aspect par la partie verticale de la matrice (cf. <xref linkend="Matrice"/>).</simpara>
 </example>
+<note><simpara>Bien intégrer les niveaux d&#8217;abstraction dans votre démarche. SysML possède certaines constructions pour formaliser cet aspect (<literal>Packages</literal> par exemple). Nous matérialisons cet aspect par la partie verticale de la matrice (cf. <xref linkend="Matrice"/>).</simpara></note>
 <example>
 <title>Tous les diagrammes ne sont pas utiles</title>
 <simpara>N&#8217;essayez pas de réaliser tous les diagrammes possibles pour votre système. Réalisez uniquement ceux qui sont utiles à votre cas particulier.</simpara>
@@ -1183,13 +1347,210 @@ le diagramme paramétrique
 </section>
 </chapter>
 </part>
-<part id="_partie_4_pour_aller_plus_loin">
-<title>Partie 4 : Pour aller plus loin</title>
+<part id="_partie_4_modéliser_un_système_en_sysml">
+<title>Partie 4 : Modéliser un système en SysML</title>
+<chapter id="_une_démarche_parmi_d_8217_autres">
+<title>Une démarche parmi d&#8217;autres</title>
+<simpara>Nous allons aborder le développement complet de notre exemple fil rouge en suivant une démarche classique et simple
+(utilisée par exemple dans <xref linkend="SeeBook2012"/>, où proche de la démarche globale enseignée dans nos cous de DUT Informatique, ou encore proche des documents de référence en la matière <xref linkend="HAS2012"/>, <xref linkend="KAP2007"/>,<xref linkend="FIO2012"/>) :</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>
+Spécification du système
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Conception du système
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Traçabilité et Allocations
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Modèle de test
+</simpara>
+</listitem>
+</orderedlist>
+<simpara>Nous partirons du modèle des exigences produit initialement. Mais avant tout, parlons outils.</simpara>
+<section id="_environnement_de_développement">
+<title>Environnement de développement</title>
+<simpara>Nous sommes des défenseurs des principes <xref linkend="DRY"/> et <xref linkend="TDD"/>. Nous allons donc réaliser nos diagrammes dans un outil et non "à la main" (de simples dessins).
+Nous choisissons ici l&#8217;outil <ulink url="http://www.topcased.org">TOPCASED</ulink> pour des raisons que nous expliquerons ailleurs. La version utilisée pour réaliser les exemples de cette section
+est la version <literal>5.2</literal>.</simpara>
+<simpara>Un outil SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm> seul ne suffit pas (cf. <link linkend="outils">Outillage</link>). Il faut penser à la documentation (cf. <link linkend="gendoc">Génération de doc</link>).</simpara>
+<formalpara><title>Outillage autour de SysML</title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="dessins/SysMLTool-fr.png" contentwidth="80%"/>
+  </imageobject>
+  <textobject><phrase>Outillage autour de SysML</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+<section id="outils">
+<title>Outils</title>
+<simpara>Il existe de nombreux outils SysML <indexterm>
+  <primary>SysML</primary>
+</indexterm>. Nous renvoyons le lecteur sur le site de <ulink url="http://www.sysml-france.fr">SysML-France</ulink> pour
+des informations sur les dernières versions des outils.</simpara>
+</section>
+<section id="gendoc">
+<title>Génération de documentation</title>
+<simpara>La plupart des outils permettent de générer de la documentation. Pour les outils basés <ulink url="http://www.eclipse.org">eclipse</ulink> comme
+<ulink url="http://www.topcased.org">TOPCASED</ulink>, il est possible d&#8217;utiliser le plug-in <literal>GenDoc2</literal>.</simpara>
+<formalpara><title>Génération de documentation à partir de TOPCASED</title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/gendoc-1.png" contentdepth="300"/>
+  </imageobject>
+  <textobject><phrase>GENDOC</phrase></textobject>
+</inlinemediaobject>
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/gendoc-2.png" contentdepth="300"/>
+  </imageobject>
+  <textobject><phrase>GENDOC</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+<simpara>Les outils commerciaux comme <ulink url="http://www-142.ibm.com/software/products/us/en/ratirhap">Rhapsody</ulink> permettent de générer de nombreux formats.</simpara>
+<formalpara><title>Génération de documentation à partir de Rhapsody</title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/gendoc-rhapsody1.png" contentdepth="300"/>
+  </imageobject>
+  <textobject><phrase>Rhapsody</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+</section>
+<section id="_animation_de_modèles_et_simulation">
+<title>Animation de modèles et simulation</title>
+<simpara>Fortement liée aux outils, la possibilité d&#8217;animer les modèles ou encore d&#8217;effectuer des simulations
+est une exigence de plus en plus forte des ingénieurs systèmes.</simpara>
+<simpara>Il existe de nombreuses possibilités. Citons par exemple :</simpara>
+<variablelist>
+<varlistentry>
+<term>
+Génération de code VHDL
+</term>
+<listitem>
+<simpara>
+        L&#8217;outil <literal>RTaW</literal> propose, via génération de code VHDL de simuler les modèles. Voir une démonstration
+        <ulink url="https://www.realtimeatwork.com/wp-content/uploads/screencasts/bouncingball/">ici</ulink>.
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Simulation en Rhapsody
+</term>
+<listitem>
+<simpara>
+        L&#8217;outil <ulink url="http://www-142.ibm.com/software/products/us/en/ratirhap">Rhapsody</ulink> possède une interface très pratique pour faire du prototypage rapide.
+</simpara>
+<simpara><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/rhapsody-animation.png" contentwidth="80%"/>
+  </imageobject>
+  <textobject><phrase>Animation</phrase></textobject>
+</inlinemediaobject></simpara>
+<simpara>Voir mon tutoriel (en anglais) disponible <ulink url="http://jmbhome.heroku.com/teaching/SysML/tp-undergraduate.html">ici</ulink>.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Animation de modèles en Artisan
+</term>
+<listitem>
+<simpara>
+        L&#8217;outil <literal>Artisan</literal> permet également de faire de l&#8217;animation de modèles.
+        <inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/artisan.png" contentwidth="80%"/>
+  </imageobject>
+  <textobject><phrase>Animation</phrase></textobject>
+</inlinemediaobject>
+</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</section>
+</section>
+<section id="_spécification_du_système">
+<title>Spécification du système</title>
+<simpara>Il s’agit ici de décrire le contexte et d’identifier les principaux cas d’utilisation du système.</simpara>
+</section>
+<section id="contexte">
+<title>Conception du système</title>
+<simpara>Chaque cas d&#8217;utilisation sera précisé (<literal>seq</literal> et <literal>act</literal>).
+Les données métier seront alors identifiées pour construire le modèle d’architecture logique (<literal>bdd</literal> et <literal>ibd</literal>) complété par la description des comportements complexes (<literal>st</literal>).
+Enfin le modèle d’architecture physique permettra de déterminer les aspects déploiement et constructions physiques d'équipements/</simpara>
+</section>
+<section id="_traçabilité_et_allocations">
+<title>Traçabilité et Allocations</title>
+<simpara>Afin de consolider les différents modèles, les liens de traçabilité qui n&#8217;auront pas été déjà décrit <footnote><simpara>Il est recommandé de ne pas attendre pour matérialiser ces liens, mais de les exprimés dès que rencontrés dans telle ou telle modélisation.</simpara></footnote> seront rajoutés en insistant sur les liens :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+de satisfaction des exigences par les éléments de l’architecture,
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+d’allocation des éléments du modèle fonctionnel vers les éléments logiques,
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+d’allocation des éléments logiques vers les éléments de l’architecture physique.
+</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section id="_modèle_de_test">
+<title>Modèle de test</title>
+<simpara>Nous insistons dans l&#8217;ensemble de nos formations sur les approches <emphasis>test-driven</emphasis>, alors nous montrons dans cette section comment participer à la qualité du développement d&#8217;un système en formalisant (par exemple avec des diagrammes de séquence de scénarios à éviter)
+les test et les jeux de test.</simpara>
+</section>
+</chapter>
+<chapter id="_recettes_et_bonnes_pratiques">
+<title>Recettes et bonnes pratiques</title>
+<simpara>La plupart des ouvrages sur un langage enseignent les éléments de ce langage, comme nous l&#8217;avons fait à la partie précédente.
+Nous allons ici partir du principe inverse : comment modéliser tel ou tel partie ou vue de mon système avec SysML. Un peu à la
+manière des ouvrages du type <emphasis>Cookbook</emphasis>, nous allons donner une liste non exhaustives de recettes. Les choix des éléments de modélisation sont arbitraires ou tirés de discussions (comme ce sera mentionné si c&#8217;est le cas).</simpara>
+<section id="_architecture">
+<title>Architecture</title>
+<example>
+<title>Je souhaite modéliser mon système dans son environnement</title>
+<simpara>C&#8217;est conseillé. Un block <literal>System</literal> permet de raccrocher tous les éléments qui le composent à un même niveau.</simpara>
+<simpara>Dans l&#8217;exemple ci-dessous le système (le bloc <literal>Pacemaker</literal>) est lui-même un simple composant d&#8217;un élément de plus haut niveau : le contexte du système (le bloc <literal>Context</literal>) qui relie alors le système à son environnement.</simpara>
+<formalpara><title>Le contexte du Pacemaker (<xref linkend="SeeBook2012"/>)</title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/pacemaker-context.png" contentwidth="70%"/>
+  </imageobject>
+  <textobject><phrase>Le contexte du Pacemaker</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+<simpara>Voir aussi la section <xref linkend="contexte"/>.</simpara>
+</example>
+</section>
+<section id="_comportement">
+<title>Comportement</title>
+<example>
+<title>Je souhaite modéliser les différents modes (nominal, alternatifs)</title>
+<simpara>Un diagramme d'état peu modéliser les différents modes et les événements qui produisent les changements de mode.</simpara>
+</example>
+</section>
+<section id="_patrons_de_conception_système">
+<title>Patrons de conception système</title>
+<simpara>Mérite une section ??</simpara>
+</section>
+</chapter>
+</part>
+<part id="_partie_5_pour_aller_plus_loin">
+<title>Partie 5 : Pour aller plus loin</title>
 <chapter id="_considérations_méthodologiques">
 <title>Considérations méthodologiques</title>
 <simpara id="methodo">Exemples de démarche autour de SysML <indexterm>
   <primary>SysML</primary>
-</indexterm>, lien avec la section <xref linkend="Methodes"/>.
+</indexterm>, lien avec la section <link linkend="Methodes">Méthodes</link>.
 <indexterm>
   <primary>Méthodes</primary>
 </indexterm></simpara>
@@ -1324,7 +1685,6 @@ Horizontal (down)
 </section>
 <section id="_corrigé_2">
 <title>Corrigé</title>
-<informalexample>
 <literallayout class="monospaced">             A
 DELEGATION   C
      S       T
@@ -1341,7 +1701,6 @@ PSEUDOSTATES   E
    E     I     E
 TRANSITION INCOSE
    T     E</literallayout>
-</informalexample>
 </section>
 </section>
 </chapter>
@@ -1492,13 +1851,17 @@ Pour en savoir plus sur l&#8217;<ulink url="http://jmb.c.la">auteur</ulink>
   <primary>SysML</primary>
 </indexterm>.</simpara>
 </chapter>
-<chapter id="_d_8217_uml_à_sysml">
+<chapter id="umlAsysml">
 <title>D&#8217;UML à SysML</title>
 <simpara>Un point sur comment aborder SysML <indexterm>
   <primary>SysML</primary>
 </indexterm> quand on vient d&#8217;UML <indexterm>
   <primary>UML</primary>
 </indexterm>.</simpara>
+</chapter>
+<chapter id="_idées_de_projets">
+<title>Idées de projets</title>
+<simpara>Quelques exemples de sujet propice au développement SysML.</simpara>
 </chapter>
 <chapter id="_challenges_et_questions_ouvertes_autour_de_sysml">
 <title>Challenges et questions ouvertes autour de SysML</title>
@@ -1625,7 +1988,7 @@ Which language is easier to learn, SysML or UML?
 <chapter id="_a_propos_de_ce_document_8230">
 <title>A propos de ce document&#8230;</title>
 <sidebar>
-<simpara>Dernière MAJ : 01/09/2012 - 11:20:07 CEST<?asciidoc-br?>
+<simpara>Dernière MAJ : 02/11/2012 - 16:07:45 CET<?asciidoc-br?>
 Document généré par <ulink url="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</ulink> via <ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> (version <literal>8.6.8</literal>) de <emphasis>Stuart Rackham</emphasis>.
 La version présentation a été générée en utilisant <ulink url="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</ulink> &#169; de <emphasis>Dave Raggett</emphasis>, amélioré par <ulink url="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</ulink>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <emphasis>Licence Creative Commons</emphasis>.
@@ -1645,17 +2008,42 @@ Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la 
 <bibliodiv>
 <bibliomixed>
 <bibliomisc>
+<anchor id="FIO2012" xreflabel="[FIO2012]"/>[FIO2012] Fiorèse S., Meinadier J., Découvrir et comprendre l’ingénierie système, AFIS 2012.
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
 <anchor id="FMS" xreflabel="[FMS]"/>[FMS] Friedenthal&#8230;
 </bibliomisc>
 </bibliomixed>
 <bibliomixed>
 <bibliomisc>
-<anchor id="Roques2010" xreflabel="[Roques2010]"/>[Roques2010] <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink>. SysML par l&#8217;exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. A acheter <ulink url="http://www.numilog.com/LIVRES/FICHES/62775.Livre">ici</ulink>.
+<anchor id="HAS2012" xreflabel="[HAS2012]"/>[HAS2012] Haskins C., SE Handbook Working Group, INCOSE Systems Engineering Handbook: Version 3.2.2, International Council on Systems Engineering, 2012.
 </bibliomisc>
 </bibliomixed>
 <bibliomixed>
 <bibliomisc>
-<anchor id="SysML12" xreflabel="[SysML12]"/>[SysML12] OMG. Systems modeling language version 1.2. Technical report, 2010.
+<anchor id="KAP2007" xreflabel="[KAP2007]"/>[KAP2007] Kapurch S., NASA Systems Engineering Handbook, 2007 (<ulink url="http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20080008301_2008008500.pdf">pdf</ulink>).
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="REQ2012" xreflabel="[REQ2012]"/>[REQ2012] Guide Bonnes Pratiques en Ingénierie des Exigences, AFIS 2012.
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="Roques2010" xreflabel="[Roques2010]"/>[Roques2010] <ulink url="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</ulink>. SysML par l&#8217;exemple - Un langage de modélisation pour systèmes complexes. Eyrolles. a acheter <ulink url="http://www.numilog.com/LIVRES/FICHES/62775.Livre">ici</ulink>.
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="SeeBook2012" xreflabel="[SeeBook2012]"/>[SeeBook2012] Kordon et al. To be published. XXX
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+<anchor id="SysML" xreflabel="[SysML]"/>[SysML] OMG. Systems modeling language version 1.3. Technical report, 2012.
 </bibliomisc>
 </bibliomixed>
 <bibliomixed>
@@ -1666,14 +2054,7 @@ Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la 
 </bibliomixed>
 <bibliomixed>
 <bibliomisc>
-<anchor id="walsh-muellner" xreflabel="[walsh-muellner]"/>[walsh-muellner] Norman Walsh &amp; Leonard Muellner.
-  <emphasis>DocBook - The Definitive Guide</emphasis>. O&#8217;Reilly &amp; Associates. 1999.
-  ISBN 1-56592-580-7.
-</bibliomisc>
-</bibliomixed>
-<bibliomixed>
-<bibliomisc>
-<anchor id="SEE-BOOK" xreflabel="[SEE-BOOK]"/>[SEE-BOOK] Kordon et al. To b published. XXX
+<anchor id="Walsh1999" xreflabel="[Walsh1999]"/>[Walsh1999] Norman Walsh &amp; Leonard Muellner. DocBook - The Definitive Guide. O&#8217;Reilly &amp; Associates. 1999. ISBN 1-56592-580-7.
 </bibliomisc>
 </bibliomixed>
 </bibliodiv>
@@ -1703,11 +2084,33 @@ Glossaire du <ulink url="http://www.sei.cmu.edu/architecture/start/glossary">Sof
 </note>
 <glossentry>
 <glossterm>
+<anchor id="DRY" xreflabel="[DRY]"/>DRY
+</glossterm>
+<glossdef>
+<simpara>
+        <emphasis><emphasis role="strong">D</emphasis>on&#8217;t <emphasis role="strong">R</emphasis>epeat <emphasis role="strong">Y</emphasis>ourself</emphasis> : Un bon principe qui veut qu&#8217;on évite de répéter des tâches manuelles
+        (comme les tests) en utilisant plutôt des scripts et des programmes.
+</simpara>
+</glossdef>
+</glossentry>
+<glossentry>
+<glossterm>
 OMG
 </glossterm>
 <glossdef>
 <simpara>
         <emphasis><emphasis role="strong">O</emphasis>bject <emphasis role="strong">M</emphasis>anagement <emphasis role="strong">G</emphasis>roup</emphasis> : L&#8217;organisme international chargé des principales normes liés à l&#8217;objet (CORBA, UML, etc.).
+</simpara>
+</glossdef>
+</glossentry>
+<glossentry>
+<glossterm>
+<anchor id="TDD" xreflabel="[TDD]"/>TDD
+</glossterm>
+<glossdef>
+<simpara>
+        <emphasis><emphasis role="strong">T</emphasis>est <emphasis role="strong">D</emphasis>riven <emphasis role="strong">D</emphasis>evelopment</emphasis> : Développements dirigés par les tests. On écrit les tests avant d'écrire le code. On travaille son
+        code tant que les tests ne passent pas.
 </simpara>
 </glossdef>
 </glossentry>

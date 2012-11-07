@@ -1,9 +1,90 @@
-Rappel sur la matrice (cf. <<Matrice>>).
+[[Notation]]
+== Pourquoi une nouvelle notation
 
-SysML n'est pas une palette de dessins et d'éléments de base servant à faire
-des diagrammes. Il existe une représentation graphique des éléments modélisés en SysML. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est le modèle qui importe le plus. C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes  SysML footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés (cf. section <<Outils>>).
+Il existe une notation qui se veut "unifiée" pour les modèles : {uml}.
+Néanmoins cette notation est peu adaptée pour l'{is} :
 
-Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section :
+* UML 1.x était complètement inadaptée :
+** Principalement pour les systèmes d'information
+** Peu de liens entre les diagrammes
+** Peu de liens entre les modèles et les exigences
+
+ifdef::backend-slidy2[<<<]
+
+* UML 2.x n'est pas beaucoup mieux si n'est :
+** Implication des ingénieurs systèmes pour sa définition
+** Introduction du diagramme de structure composite 
+
+ifdef::backend-slidy2[<<<]
+
+En conclusion {UML} est une bonne base :
+
+* Standard _De facto_ en génie logiciel
+* Fournit beaucoup de concepts utiles pour décrire des systèmes (même complexes)
+* Stable et extensible (grâce notamment au mécanisme de _profile_)
+* Beaucoup d'outils disponibles
+
+Mais...
+
+* Manque de certains concepts clés d'{is}
+* Vocabulaire beaucoup trop « software » pour être utilisé par les ingénieurs systèmes (concept de +classe+ ou d'+héritage+ par exemple)
+* Trop de diagrammes (13 sortes)
+
+== Introduction à SysML
+
+=== Fiche d'identité
+
+- Date de naissance : 2001!
+- Version actuelle : 1.3 (2/6/2012)
+- Paternité : {OMG}/{UML} + {INCOSE}
+- Auteurs principaux
+* Conrad Bock
+* Cris Kobryn
+* Sanford Friedenthal
+
+[NOTE]
+.Versions de la spécification de SysML
+====
+La version 1.0 du langage de modélisation SysML a été adoptée officiellement par l'OMG le 19 septembre 2007. Depuis, trois révisions ont été réalisées :  +1.1+ en décembre 2008, +1.2+ en juin 2010, et +1.3+ en juin 2012.
+====
+
+=== Différence avec UML
+
+.Liens entre UML et SysML
+image:{images}/diff.png[width="60%"]
+
+=== Qui est "derrière"?
+
+Industrie::
+American Systems, BAE Systems, Boeing, Deere & Company, EADS Astrium, Eurostep, Israel Aircraft Industries,  Lockheed Martin, Motorola, NIST, Northrop Grumman, oose.de, Raytheon, Thales, ...
+
+Vendeurs d'outils::
+Artisan, EmbeddedPlus, Gentleware, IBM, Mentor Graphics, PivotPoint Technology, Sparx Systems, Vitech, ...
+
+Autres organisations::
+AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
+
+=== Organisation des différents diagrammes
+
+.Les 9 diagrammes SysML et leur lien avec UML
+image:{images}/Figure4.1.png[width="90%"]
+
+ifdef::backend-slidy2[<<<]
+
+.Version abrégée des diagrammes
+image:{images}/Figure4.1-bis.png[width="90%"]
+
+
+=== Différence entre modèle et dessin
+
+{SysML} n'est pas une palette de dessins et d'éléments de base servant à faire
+des diagrammes. Il existe une représentation graphique des éléments modélisés en {SysML}. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est *le modèle* qui importe le plus. 
+
+C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes {SysML} footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés (cf. section <<Outils>>).
+
+ifdef::backend-slidy2[<<<]
+
+Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
 
 .Organisation
 [cols="h,4*",options="header",width="70%"]
@@ -32,13 +113,23 @@ IMPORTANT: Attention toutefois à ne pas confondre ce que vous permet (ou pas) d
 		
 == Principes de base
 
-A aborder :
+Abordons quelques principes généraux de {sysml}.
 
-- Les cartouches
-- La différence entre modèles et schémas
-- Les stéréotypes, définitions de base etc.
+- Chaque diagramme {SysML} représente un élément de modélisation
+- Chaque diagramme {SysML} doit être incluse dans un cadre (_Diagram Frame_)
+- L'entête du cadre, appelé *cartouche*, indique les informations sur le diagramme:
+* le type de diagramme (+req+, +act+, +bdd+, +ibd+, +sd+, etc.)
+* le type d'élément (_package_, _block_, _activity_, etc.)
+* le nom de l'élément
+* le nom du diagramme ou de la vue
 
-On insistera ici sur l'organisation.
+ifdef::backend-slidy2[<<<]
+
+Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Definition Diagram_ (type +bdd+) qui représente un
+_package_, nommé "Context".  
+
+.Exemple de diagramme SysML
+image:{images}/pacemaker-context.png[width="80%"]
 
 == Organisation
 [[org]]
@@ -63,12 +154,112 @@ On abordera :
 - La notion de _Namespaces_
 - Les _Dependencies_
 
+=== Le _Package Diagram_
+
+* Identique à {uml}, et classique pour les développeurs (java notamment)
+* Permet d'organiser les modèles en créant un espace de nommage (_name space_)
+
+[NOTE]
+.Espace de nommage
+====
+Dans un _package_, on n'a pas à se soucier des noms des éléments. Même si d'autres utilisent les mêmes noms,
+il n'y aura pas ambiguité.
+====
+
+Les modèles peuvent être organisés selon toutes sortes de considération (cf. <<organisation>>).
+Le mécanisme qui permet de les organiser est le _package_ (paquetage).
+
+- hiérarchie "système" (e.g., entreprise, système, composant)
+- types de diagrammes (e.g., besoins, structure, comportements)
+- par points de vue
+- etc.
+
+=== Les différent types de _packages_
+
+Il existe plusieurs types de _package_ :
+
+models:: 
+	un _package_ "top-level" dans une hiérarchie de _package_
+packages:: 
+	le type le plus classique : un ensemble d'éléments de modèles
+model librairies:: 
+	un _package_ prévu pour être réutilisé (importé) par d'autres éléments 
+views:: 
+	un _package_ spécial pour représenter les points de vue
+
+[[organisation]]
+=== Les organisations possibles 
+
+Les modèles peuvent être organisés selon toutes sortes de considération :
+
+- par hiérarchie "système" (e.g., entreprise, système, composant, ...)
+- par types de diagrammes (e.g., besoins, structure, comportements, ...)
+- par cycle de vie (e.g., analyse, conception, ...)
+- par équipes (e.g., architectes, <<IPT>>, ...)
+- par points de vue (e.g., sécurité, performance, ...)
+- etc.
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+image:{images}/pkg-organisation2.png[width="60%"]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+image:{images}/pkg-organisation-modelview.png[width="40%"]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+image:{images}/pkg-organisation.png[width="40%"]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+image:{images}/pkg-topcased.png[width="60%"]
+
+
+=== La notion de _Namespaces_
+
+Un _package_ est un espace de nommage pour tous les éléments qu'il contient.
+
+[NOTE]
+====
+Dans les outils {sysml}, vous pouvez demander à voir les noms complets (_Qualified names_)
+des éléments, c'est à dire le nom de l'élément prefixé par son (ou ses) _package(s)_ 
+(e.g., `Structure::Products::Clock`).
+====
+
+=== Les dépendances
+
+Un certain nombre de dépendances peuvent exister entre des éléments de _package_
+ou entre les _packages_ eux-mêmes :
+
+_Dependency_::
+	une dépendance "générale", non précisée, +
+	représentée par une simple flèche pointillée `----->`
+_Use_::
+	l'élément "utilise" celui à l'autre bout de la flèche (un type par exemple), +
+	représentée par le stéréotype `≪ use ≫`
+_Refine_::
+	l'élément est un raffinage (plus détaillé) de celui à l'autre bout de la flèche, +
+	représentée par le stéréotype `≪ refine ≫`
+_Realization_::
+	l'élément est une "réalisation" (implémentation) de celui à l'autre bout de la flèche, +
+	représentée par le stéréotype `≪ realize ≫`
+_Allocation_::
+	l'élément (e.g., une activité ou un _requirement_) est "alloué" sur celui à l'autre bout de la flèche (un +block+ la plupart du temps), +
+	représentée par le stéréotype `≪ allocate ≫`
 
 === {resume}
-En résumé...
+{sysml} propose un certain nombre de mécanismes pour organiser les différents modèles,
+tirés pour la plupart d'{uml}.
 
 === {revisions}
-Pour réviser...
+
+. Quels sont les 5 types de dépendances entre _packageable elements_ ?
+. A quoi sert-il de renseigner les dépendances (donnez des exemples concrets) ?
 
 == Les exigences
 [[reqs]]

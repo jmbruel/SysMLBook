@@ -32,11 +32,15 @@ Ce document est la compilation de plusieurs années d'enseignement de {sysml} de
 
 Vous trouverez en référence (cf. <<refs, Bibiliographie>>) les ouvrages et autres documents utilisés.
 
+ifndef::backend-slidy2[]
+
 Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
 
 - {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
 - mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} (RTaW);
 - mon maître d'{asciidoc} : {jmi}.
+
+endif::backend-slidy2[]
 
 === Sur l'auteur
 - Professeur à l'{univ-tlse}
@@ -87,9 +91,9 @@ volontairement ces termes (e.g., {Requirements}).
 Parce que j'ignore la version que vous êtes en train de lire. A partir de l'link:main.txt[original], plusieurs versions ont été générées grâce à {asciidoc}:
 
 * pour le web (Moodle) au format link:main.html[html]
-* pour présentation en amphi au format link:main.slidy.html[slidy]
+* pour présentation en amphi au format link:main.slidy.html[slidy] ou link:main.deckjs.html[deck.js] 
 * pour impression au format link:main.pdf[pdf]
-* pour lire au format link:main.mobi[Kindle]
+* pour lire au format link:main.mobi[Kindle] (bientôt!)
 
 === Utilisation et autres mentions légales
 
