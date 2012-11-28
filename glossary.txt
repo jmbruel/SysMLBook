@@ -1,4 +1,4 @@
-[glossary]
+[[glossary]]
 = Glossaire
 
 [NOTE]
@@ -11,11 +11,20 @@ Les définitions ci-dessous sont regroupées à titre indicatif. Les sources uti
 - http://fr.wikipedia.org/[Wikipedia] –- Version française￼￼
 =====================================================================
 
-[glossary]
+[[DRY]]DRY::
+	_**D**on't **R**epeat **Y**ourself_ : Un bon principe qui veut qu'on évite de répéter des tâches manuelles 
+	(comme les tests) en utilisant plutôt des scripts et des programmes.
+INCOSE::
+	**I**nternational **C**ouncil on **S**ystems **E**ngineering : une organisation fondée en 1990 pour faire avancer les technologies d'{is}.
+[[IPT]]IPT::
+	_**I**ntegrated **P**roduct **T**eam_ : une équipe classique en développement système.
 OMG::
 	_**O**bject **M**anagement **G**roup_ : L'organisme international chargé des principales normes liés à l'objet (CORBA, UML, etc.).
+[[TDD]]TDD::
+	_**T**est **D**riven **D**evelopment_ : Développements dirigés par les tests. On écrit les tests avant d'écrire le code. On travaille son
+	code tant que les tests ne passent pas.
 TRL::
 	_**T**echnology **R**eadiness **L**evel_ : système de mesure employé par des agences gouvernementales américaines et par de nombreuses compagnies (et agences) mondiales afin d'évaluer le niveau de maturité d'une technologie (cf. http://fr.wikipedia.org/wiki/Technology_Readiness_Level[Wikipedia]).
 
-[[SysML]]SysML::
+SysML::
 	_**Sys**tem **M**odeling **L**anguage_ (TM) : le langage de modélisation de systèmes maintenu par l'{omg}.

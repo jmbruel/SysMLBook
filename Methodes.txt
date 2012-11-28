@@ -27,8 +27,10 @@ NOTE: Bien intégrer les niveaux d'abstraction dans votre démarche. SysML poss�
 N'essayez pas de réaliser tous les diagrammes possibles pour votre système. Réalisez uniquement ceux qui sont utiles à votre cas particulier. 
 ==========================
 
+////////
 .etc.
 [caption="Heuristique : "]
 ==========================
 Etc.
 ==========================
+/////////

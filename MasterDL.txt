@@ -1,0 +1,19 @@
+:Author: Jean-Michel Bruel 
+:Author Initials: JMB
+:Email: jean-michel.bruel@univ-tlse2.fr
+:Revision: 1.1
+:localdate: {sys: date +%d/%m/%Y}
+:date: {localdate}
+
+= UPS-M2-DL-IS - Introduction à SysML
+
+== Supports de cours
+
+- Présentation générale (file:ups.html[HTML], file:ups.deckjs.html[Slides])
+- Cours SysML Complet (file:main.html[HTML], file:main.slidy.html[Slides])
+
+== Travaux pratiques
+
+- file:ups-tp.html[TP]
+- file:ups-tp.correction.html[Correction] (c'est pour plus tard ;-)
+

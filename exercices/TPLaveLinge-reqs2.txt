@@ -1,0 +1,17 @@
+Une machine à laver ou un lave-linge ou encore une laveuse (québécisme) est une machine conçue pour nettoyer les vêtements, serviettes, draps et autres tissus ménagers. En général, ce terme désigne seulement les machines dans lesquelles l'eau constitue la solution principale de lavage. 
+Les machines effectuant un nettoyage à sec, c'est-à-dire ayant recours à des fluides de nettoyage alternatifs, ne sont pas qualifiées de machines à laver et sont l'apanage d'une industrie spécialisée.
+
+Toutes les machines ont le même principe de fonctionnement : un cycle de lavage, (éventuellement précédé par un cycle de prélavage) 
+avec de la lessive, à chaud (entre 30 et 95°C). Dans la plupart des modèles, la lessive, comme tous les autres produits utilisés 
+est placée dans un bac à produits. Ces derniers sont entraînés par de l'eau dans le tambour où se trouvent les vêtements, au moment 
+adéquat, de manière automatique. Suit ensuite un cycle de rinçage à l'eau froide, pour éliminer la lessive et les salissures se trouvant dans l'eau. À la dernière eau de rinçage est ajouté un assouplissant si l'utilisateur en a mis dans le bac à produits. Le linge est ensuite essoré par centrifugation (l'option "Arrêt cuve pleine" permet de déclencher l'essorage quand l'utilisateur le désire, cela évite que le linge ne patiente essoré et se froisse).
+
+
+En plus de caractéristiques habituelles présentées ci-dessus, la machine à laver que vous devez modéliser possède un système simplifié de programmes. 
+Seuls 4 programmes sont disponibles, sachant qu’ils s’enchaînent les uns après les autres en fonction de leur numéro 
+(Enclencher le programme 2 provoque l’exécution des cycles 2, 3 et 4) :
+
+1.	Prélavage : En utilisant la lessive présente dans le bac 1, lave le linge pendant 20 minutes. Le cycle se termine par une vidange.
+2.	Lavage : En utilisant la lessive présente dans le bac 2, lave le linge pendant 15 minutes. Le cycle se termine par une vidange.
+3.	Rinçage : Cycle se répétant 3 fois s’il y a eu un prélavage, et 2 fois sinon. Chaque itération du cycle dure 5 minutes et se termine par une vidange. Au dernier rinçage, l’adoucissant présent dans le bac 3 est utilisé.
+4.	Essorage : Essore le linge à grande vitesse pendant 8 minutes. Le cycle effectue une vidange en même temps que le tambour est en rotation.

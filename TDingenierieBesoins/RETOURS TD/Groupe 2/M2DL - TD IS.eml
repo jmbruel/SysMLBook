@@ -1,0 +1,107 @@
+Delivered-To: f.salazar@ebps-consulting.com
+Received: by 10.114.11.70 with SMTP id o6csp221812ldb;
+        Fri, 16 Nov 2012 06:18:35 -0800 (PST)
+Received: by 10.180.101.231 with SMTP id fj7mr2684048wib.4.1353075514260;
+        Fri, 16 Nov 2012 06:18:34 -0800 (PST)
+Return-Path: <anthony.letourneur@gmail.com>
+Received: from mail-wg0-f42.google.com (mail-wg0-f42.google.com [74.125.82.42])
+        by mx.google.com with ESMTPS id b75si979653wep.66.2012.11.16.06.18.33
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 16 Nov 2012 06:18:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of anthony.letourneur@gmail.com designates 74.125.82.42 as permitted sender) client-ip=74.125.82.42;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of anthony.letourneur@gmail.com designates 74.125.82.42 as permitted sender) smtp.mail=anthony.letourneur@gmail.com; dkim=pass header.i=@gmail.com
+Received: by mail-wg0-f42.google.com with SMTP id fm10so51757wgb.5
+        for <f.salazar@ebps-consulting.com>; Fri, 16 Nov 2012 06:18:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:cc:content-type;
+        bh=Gpz27fvk4yxw4dWH8zBL1GwsHwQqdETuUe8q+QeACm4=;
+        b=B1RQxDRjCIGOIbyQz332ggD1IjFTOKgVQLXkaq6YAv4ko1QxTOy58AMInwnHJsbzAY
+         9KiJoVWkp6bw+PVx9iLsZCS2RPzkoaspqhhULTtr7Onk5xVkEG6lMtFYWxcJdVRxvXH6
+         mNHKZ458q2pdmm2XK7mUdgrRiUZHtEfFUslNPbtCxrllzj5HVGS+dVclYbIGNsP1TV5e
+         XER11/Kswj+9P2dTKaRDlP+371elPltSiLgEZ2n0Bu/F/Bq/VBnD4Z/Bw9ZIOvDe7UZo
+         pP9O8TLvd+EYXDfYTutx0Mdyu8HBL2xanIck9NmH/loXA0W2rf5r4dGmNjv910rwMBQe
+         KiFQ==
+MIME-Version: 1.0
+Received: by 10.180.24.193 with SMTP id w1mr5339819wif.22.1353075513637; Fri,
+ 16 Nov 2012 06:18:33 -0800 (PST)
+Received: by 10.216.238.72 with HTTP; Fri, 16 Nov 2012 06:18:33 -0800 (PST)
+Date: Fri, 16 Nov 2012 15:18:33 +0100
+Message-ID: <CAB08+w8rZEzAhkHzHkgR7wLaNQ8ntM_WBRKSSfe9POq1YhSfag@mail.gmail.com>
+Subject: M2DL - TD IS
+From: Anthony Letourneur <anthony.letourneur@gmail.com>
+To: f.salazar@ebps-consulting.com
+Cc: Thierry Weissbeck <thierry.weissbeck@gmail.com>, 
+	Sebastien Chapeyroux <chapeyroux.sebastien@gmail.com>, Lois Collet <collet.lois@gmail.com>, 
+	ste.bernard.ven@gmail.com, bakinibilel@gmail.com
+Content-Type: multipart/alternative; boundary=f46d0418264c583a6a04ce9d712a
+
+--f46d0418264c583a6a04ce9d712a
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour,
+
+Nous avons rendu en d=E9but de semaine le TD1 et TD2 d'IS, (*IS_Ingenierie
+des exigences et
+architecture_Bernard_Collet_Chapeyroux_Letourneur_Weissbeck.docx.pdf)*
+cependant nous avons oubli=E9 de mettre sur le document le nom de Bilel Bak=
+ini
+qui a particip=E9 au TD avec nous.
+
+Merci de le prendre en consid=E9ration,
+
+Cordialement, le groupe :
+*Bilel BAKINI*
+St=E9ven BERNARD,
+S=E9bastien CHAPEYROUX,
+Lo=EFs COLLET,
+Anthony LETOURNEUR,
+Thierry WEISSBECK
+
+--f46d0418264c583a6a04ce9d712a
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px;l=
+ine-height:17px;text-align:center;white-space:nowrap">Bonjour,</span></div>=
+<div><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px;l=
+ine-height:17px;text-align:center;white-space:nowrap"><br>
+</span></div><div><span style=3D"text-align:center"><font face=3D"Arial, He=
+lvetica, sans-serif"><span style=3D"line-height:17px;white-space:nowrap">No=
+us avons rendu en=A0d=E9but=A0de semaine le TD1 et TD2 d&#39;IS, (</span></=
+font></span><b style=3D"font-family:arial,sans-serif;font-size:13px">IS_Ing=
+enierie des exigences et architecture_Bernard_Collet_Chapeyroux_Letourneur_=
+Weissbeck.docx.pdf)</b></div>
+<div><span style=3D"text-align:center"><font face=3D"Arial, Helvetica, sans=
+-serif"><span style=3D"line-height:17px;white-space:nowrap">cependant nous =
+avons oubli=E9 de mettre sur le document le nom de=A0</span></font></span><=
+span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px;line-he=
+ight:17px;text-align:center;white-space:nowrap">Bilel Bakini</span></div>
+<div><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px;l=
+ine-height:17px;text-align:center;white-space:nowrap">qui a particip=E9 au =
+TD avec nous.</span></div><div><span style=3D"font-family:Arial,Helvetica,s=
+ans-serif;font-size:13px;line-height:17px;text-align:center;white-space:now=
+rap"><br>
+</span></div><div><span style=3D"font-family:Arial,Helvetica,sans-serif;fon=
+t-size:13px;line-height:17px;text-align:center;white-space:nowrap">Merci de=
+ le prendre en consid=E9ration,</span></div><div><span style=3D"font-family=
+:Arial,Helvetica,sans-serif;font-size:13px;line-height:17px;text-align:cent=
+er;white-space:nowrap"><br>
+</span></div><div><span style=3D"font-family:Arial,Helvetica,sans-serif;fon=
+t-size:13px;line-height:17px;text-align:center;white-space:nowrap">Cordiale=
+ment, le groupe :</span></div><div><b style=3D"font-family:Arial,Helvetica,=
+sans-serif;font-size:13px;line-height:17px;text-align:center;white-space:no=
+wrap">Bilel BAKINI</b><span style=3D"font-family:Arial,Helvetica,sans-serif=
+;font-size:13px;line-height:17px;text-align:center;white-space:nowrap"><br>
+</span></div><div><div style=3D"font-family:arial,sans-serif;font-size:13px=
+">St=E9ven BERNARD,</div><div style=3D"font-family:arial,sans-serif;font-si=
+ze:13px">S=E9bastien CHAPEYROUX,</div><div style=3D"font-family:arial,sans-=
+serif;font-size:13px">
+Lo=EFs COLLET,</div><div style=3D"font-family:arial,sans-serif;font-size:13=
+px">Anthony LETOURNEUR,</div><div style=3D"font-family:arial,sans-serif;fon=
+t-size:13px">Thierry WEISSBECK</div></div><div style=3D"font-family:arial,s=
+ans-serif;font-size:13px">
+<br></div>
+
+--f46d0418264c583a6a04ce9d712a--

@@ -1,0 +1,181 @@
+// ------------------------------------------
+//  Created by Jean-Michel Bruel on 2012-10-19.
+//  Copyright (c) 2012 IRIT/U. Toulouse. All rights reserved.
+// ------------------------------------------
+:title: Master UPS - DL - TP SysML
+// ------------------------------------------
+:doctype: article
+:description: 
+:keywords: 
+:Author: Jean-Michel Bruel 
+:Author Initials: JMB
+:Email: jean-michel.bruel@univ-tlse2.fr
+:Revision: 1.0
+:localdate: {sys: date +%d/%m/%Y}
+:Date: {localdate}
+:startdate: 2012-10-19
+:images: images
+:tool: http://www.topcased.org/[TOPCASED]
+:toolname: TOPCASED
+:toolversion: 5.1
+
+// raccourcis sites
+:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
+:aptana: http://www.aptana.com/[Aptana]
+:cucumber: http://cukes.info/[Cucumber]
+:aquarium: http://aquarium.rubyforge.org/[Aquarium]
+:aspectj: http://www.eclipse.org/aspectj/[AspectJ]
+:rubymine: http://www.jetbrains.com/ruby/[RubyMine]
+:eclipse: http://www.eclipse.org[eclipse]
+:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]
+
+// personnes et institutions
+:irit: http://www.irit.fr[IRIT]
+:iut: http://www.iut-blagnac.fr[IUT de Blagnac]
+:jmb: mailto:jean-michel.bruel@univ-tlse2.fr[Jean-Michel Bruel]
+:sysml: http://www.sysml-france.org/[SysML]
+:topcased: http://www.topcased.org/[TOPCASED]
+
+//----------- dck.js --------------
+// swiss, neon beamer
+:deckjs_theme: web-2.0 
+
+//fade, horizontal-slide, vertical-slide
+:deckjs_transition: horizontal-slide
+
+///////////////////////
+	AsciiDoc use `source-highlight` as default highlighter.
+
+	Styles available for pygment highlighter:
+	monokai, manni, perldoc, borland, colorful, default, murphy, vs, trac,
+	tango, fruity, autumn, bw, emacs, vim, pastie, friendly, native,
+
+	Uncomment following two lines if you want to highlight your code
+	with `Pygments`.
+///////////////////////
+//:pygments:
+//:pygments_style: native
+///////////////////////
+	Uncomment following line if you want to scroll inside slides
+	with {down,up} arrow keys.
+///////////////////////
+:scrollable:
+///////////////////////
+	Uncomment following line if you want to link css and js file 
+	from outside instead of embedding them into the output file.
+///////////////////////
+//:linkcss:
+
+= {title}
+
+ifndef::backend-deckjs[]
+
+image:{images}/logoisi.gif[src="{images}/logoisi.gif",width="100",alt="Master DL Logo"]
+
+Dans ce TP, nous allons réaliser des modèles {SysML}.
+Nous allons utiliser dans ce TD l'outil {tool}. Nous allons modéliser les éléments
+manipulés lors de votre cours sur l'ingénierie des exigences.
+
+image:{images}/drone.png[width="60%"]
+
+endif::backend-deckjs[]
+
+== Contexte
+
+Nous reprenons ici l'exercice du système de supervision.
+
+== Outillage
+
+Vérifiez que vous possédez bien sur votre machine : {tool} ({toolversion}
+au moins pour ce TP).
+
+== Travail à faire
+
+. Ouvrez un nouveau projet (en pensant à le définir du type +SysML+)
+. Ajoutez votre propre organisation (en utilisant les +packages+ comme vu en cours, cf. exemples ci-dessous)
+ si besoin (+right-click->add->+) 
++
+.Exemple d'organisation possible
+image:{images}/pkg-organisation.png["organization",height="300",link="{images}/pkg-organisation.png"]
++
+.Exemple d'organisation proposée par TOPCASED
+image:{images}/pkg-topcased.png["organization",height="300",link="{images}/pkg-topcased.png"]
++
+. Réalisez un diagramme des cas d'utilisation (+uc+) à partir de la liste des acteurs :
+- Maire
+- pilote de Canadair
+- pompier
+- habitant
+- société de maintenance
+. Avant d'aller plus loin, sauvegardez bien votre travail, et utilisez la génération de documentation pour générer un rapport succinct sur votre TP. 
+  Aidez-vous du tutoriel http://www.topcased.org/index.php?id_projet_pere=102[TOPCASED].
++
+image:{images}/gendoc-1.png["GENDOC",height="300",link="{images}/gendoc-1.png"]
+image:{images}/gendoc-2.png["GENDOC",height="300",link="{images}/gendoc-2.png"]
++
+. Réalisez un diagramme de définition de block +bdd+.
+. Réalisez le diagramme interne correspondnt +ibd+.
+. Pour une des cas d'utilisation de la question sur le diagramme +uc+, réalisez un diagramme de séquence système +seq+,
+  puis son diagramme de séquence (détaillé) correspondant +seq+. 
++
+[WARNING]
+====
+Vérifiez bien la cohérence entre +seq+ et +bdd+.
+====
+
+[NOTE]
+====
+Pour la génération de documentation, ...
+====
+
+== Animation de modèles
+
+Pour ceux qui voudraient aller plus loin sur les aspects animations, installez une version d'évaluation
+du logiciel {rhapsody} et réalisez le TP spécifique que vous trouverez (en anglais) 
+http://jmbhome.heroku.com/teaching/SysML/tp-undergraduate.html[ici].
+ 
+== Conclusion
+
+Vous avez manipulé _a minima_ les diagrammes {sysml} suivants dans ce TP : +pkg+, +uc+, +bdd+, +ibd+, +seq+.
+
+== Liens utiles
+
+- http://www.dept-info.ups-tlse.fr/index.php?option=com_content&view=article&id=294&Itemid=697&lang=fr[Le lien UPS sur le cours]
+- http://www-igm.univ-mlv.fr/~dr/XPOSE2005/sophie//res/XPOSE_ASPECTJ3_LEVY_SOPHIE.pdf[Support AspectJ] en français (un peu âgé)
+- http://www.jetbrains.com/ruby/[RubyMine] (un EDI particulièrement puissant et gratuit pour l'enseignement)
+- http://fr.slideshare.net/deimos/aspect-orientated-programming-in-ruby[AOP en ruby]
+- http://www.aptana.com/[Aptana]
+- http://cukes.info/[Cucumber]
+- http://aquarium.rubyforge.org/[Aquarium]
+- http://www.eclipse.org/aspectj/[AspectJ]
+- http://www.eclipse.org/aspectj/doc/released/progguide/index.html[Guide AspectJ]
+
+ifndef::backend-deckjs[]
+
+**********************************************************************
+Document généré par mailto:{email}[{author}] via {asciidoc} (version +8.6.8+) de 'Stuart Rackham'.
+La version file:main.deckjs.html[présentation] a été générée en utilisant {deckjs} (C) de 'Qingping Hou'.
+Pour l'instant ce document est libre d'utilisation et géré par la 'Licence Creative Commons'. 
+image:../images/icons/88x31.png["Licence Creative 
+Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
+http://creativecommons.org/licenses/by-sa/3.0/[licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé].
+**********************************************************************
+
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[]
+
+== About...
+
+**********************************************************************
+Document généré par mailto:{email}[{author}] via {asciidoc} (version +8.6.8+) de 'Stuart Rackham'.
+Cette présentation a été générée en utilisant {deckjs} (C) de 'Qingping Hou'. La version
+en une page HTML (donc imprimable) est disponible file:main.html[ici] .
+Pour l'instant ce document est libre d'utilisation et géré par la 'Licence Creative Commons'. 
+image:../images/icons/88x31.png["Licence Creative 
+Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
+http://creativecommons.org/licenses/by-sa/3.0/[licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé].
+**********************************************************************
+
+endif::backend-deckjs[]
+

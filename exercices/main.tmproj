@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>currentDocument</key>
+	<string>main.txt</string>
+	<key>documents</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>main.txt</string>
+			<key>lastUsed</key>
+			<date>2012-11-14T22:33:52Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+	</array>
+	<key>fileHierarchyDrawerWidth</key>
+	<integer>200</integer>
+	<key>metaData</key>
+	<dict>
+		<key>main.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>2</integer>
+				<key>line</key>
+				<integer>102</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>93</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>main.txt</string>
+	</array>
+	<key>showFileHierarchyDrawer</key>
+	<false/>
+	<key>windowFrame</key>
+	<string>{{495, 96}, {900, 574}}</string>
+</dict>
+</plist>

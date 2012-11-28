@@ -1,0 +1,1097 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.8" />
+<title>make.txt : an AsciiDoc poor man Makefile</title>
+<style type="text/css">
+/* Shared CSS for AsciiDoc xhtml11 and html5 backends */
+
+/* Default font. */
+body {
+  font-family: Georgia,serif;
+}
+
+/* Title font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+h5 {
+  font-size: 1.0em;
+}
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+ul > li     { color: #aaa; }
+ul > li > * { color: black; }
+
+.monospaced, code, pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+  padding: 0;
+  margin: 0;
+}
+
+
+#author {
+  color: #527bbd;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#email {
+}
+#revnumber, #revdate, #revremark {
+}
+
+#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+  margin-right: 10%;
+  color: #606060;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid #dddddd;
+  border-left: 4px solid #f0f0f0;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid #dddddd;
+  border-left: 5px solid #f0f0f0;
+  background: #f8f8f8;
+  padding: 0.5em;
+}
+
+div.quoteblock, div.verseblock {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  margin-right: 10%;
+  border-left: 5px solid #f0f0f0;
+  color: #888;
+}
+
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock > pre.content {
+  font-family: inherit;
+  font-size: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 3px solid #dddddd;
+}
+
+div.exampleblock > div.content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+div.colist td {
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  vertical-align: top;
+}
+div.colist td img {
+  margin-top: 0.3em;
+}
+
+@media print {
+  #footer-badges { display: none; }
+}
+
+#toc {
+  margin-bottom: 2.5em;
+}
+
+#toctitle {
+  color: #527bbd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+div.unbreakable { page-break-inside: avoid; }
+
+
+/*
+ * xhtml11 specific
+ *
+ * */
+
+div.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead, p.table.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+/*
+ * html5 specific
+ *
+ * */
+
+table.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+thead, p.tableblock.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.tableblock {
+  margin-top: 0;
+}
+table.tableblock {
+  border-width: 3px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: #527bbd;
+  border-collapse: collapse;
+}
+th.tableblock, td.tableblock {
+  border-width: 1px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #527bbd;
+}
+
+table.tableblock.frame-topbot {
+  border-left-style: hidden;
+  border-right-style: hidden;
+}
+table.tableblock.frame-sides {
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+table.tableblock.frame-none {
+  border-style: hidden;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+
+/*
+ * manpage specific
+ *
+ * */
+
+body.manpage h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+}
+body.manpage h2 {
+  border-style: none;
+}
+body.manpage div.sectionbody {
+  margin-left: 3em;
+}
+
+@media print {
+  body.manpage div#toc { display: none; }
+}
+
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install();
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>make.txt : an AsciiDoc poor man Makefile</h1>
+</div>
+<div id="content">
+<div class="sect1 /Users/bruel/.asciidoc/backends/slidy2/doc/keycap.css">
+<h2 id="_backends_plugins_list">backends plugins list</h2>
+<div class="sectionbody">
+<div class="paragraph"><p><div class="listingblock"><div class="content">
+<tt>/opt/local/bin/asciidoc.py --backend list</tt><tt style="color: green;"> </tt> <br />
+<pre style="color: red;">/Users/bruel/.asciidoc/backends/deckjs
+/Users/bruel/.asciidoc/backends/slidy2</pre>
+</div></div></p></div>
+</div>
+</div>
+<div class="sect1 /Users/bruel/.asciidoc/backends/slidy2/doc/keycap.css">
+<h2 id="_local_outputs">local outputs</h2>
+<div class="sectionbody">
+<div class="paragraph"><p><div class="listingblock"><div class="content">
+<tt>/opt/local/bin/asciidoc.py --backend slidy2 -a icons -a badges   -a iconsdir=../images/icons  -a stylesheet=/Users/bruel/.asciidoc/backends/slidy2/doc/keycap.css -a revnumber=1.0 -a data-uri -a slide</tt><tt style="color: green;">  -o main.slidy.html main.txt</tt> <br />
+<pre style="color: red;"></pre> &#8594; <a href="main.slidy.html">main.slidy.html</a> compiled from <a href="main.txt">main.txt</a>
+</div></div></p></div>
+<div class="paragraph"><p></p></div>
+<div class="paragraph"><p></p></div>
+<div class="paragraph"><p></p></div>
+<div class="paragraph"><p><div class="listingblock"><div class="content">
+<tt>a2x -v -f pdf -L --fop --icons-dir=../images/icons -a revnumber=1.0</tt><tt style="color: green;"> main.txt</tt> <br />
+<pre style="color: red;">a2x: args: ['-v', '-f', 'pdf', '-L', '--fop', '--icons-dir=../images/icons', '-a', 'revnumber=1.0', 'main.txt']
+a2x: resource files: []
+a2x: resource directories: ['/opt/local/etc/asciidoc/images', '/opt/local/etc/asciidoc/stylesheets']
+a2x: executing: "/opt/local/bin/asciidoc" --backend docbook -a "a2x-format=pdf"  --attribute "revnumber=1.0" --verbose  --out-file "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.xml" "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.txt"
+
+asciidoc: reading: /opt/local/etc/asciidoc/asciidoc.conf
+asciidoc: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/main.txt
+asciidoc: main.txt: line 9: evaluating: {sys: date +%d/%m/%Y}
+asciidoc: main.txt: line 9: shelling:  date +%d/%m/%Y > "/var/folders/bk/hxbw1j_15cx_h6sx_f0fwdn00000gn/T/tmpawXhxF"
+asciidoc: reading: /opt/local/etc/asciidoc/docbook45.conf
+asciidoc: reading: /opt/local/etc/asciidoc/filters/code/code-filter.conf
+asciidoc: reading: /opt/local/etc/asciidoc/filters/graphviz/graphviz-filter.conf
+asciidoc: reading: /opt/local/etc/asciidoc/filters/latex/latex-filter.conf
+asciidoc: reading: /opt/local/etc/asciidoc/filters/music/music-filter.conf
+asciidoc: reading: /opt/local/etc/asciidoc/filters/source/source-highlight-filter.conf
+asciidoc: reading: /opt/local/etc/asciidoc/lang-en.conf
+asciidoc: writing: /Users/bruel/Dropbox/Public/dev/SysMLBook/main.xml
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/chap00AvantPropos.txt
+asciidoc: main.txt: line 129: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/chap00AvantPropos.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/about.txt
+asciidoc: chap00AvantPropos.txt: line 100: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/about.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/chap01Methode.txt
+asciidoc: main.txt: line 131: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/chap01Methode.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/IS.txt
+asciidoc: main.txt: line 215: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/IS.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/Methodes.txt
+asciidoc: IS.txt: line 150: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/Methodes.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/notation.txt
+asciidoc: main.txt: line 225: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/notation.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/cookbook.txt
+asciidoc: main.txt: line 235: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/cookbook.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/apx01Links.txt
+asciidoc: main.txt: line 335: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/apx01Links.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/faq.txt
+asciidoc: main.txt: line 352: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/faq.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/about.txt
+asciidoc: main.txt: line 356: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/about.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/biblio.txt
+asciidoc: main.txt: line 368: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/biblio.txt
+asciidoc: include: /Users/bruel/Dropbox/Public/dev/SysMLBook/glossary.txt
+asciidoc: main.txt: line 372: reading: /Users/bruel/Dropbox/Public/dev/SysMLBook/glossary.txt
+
+a2x: chdir /Users/bruel/Dropbox/Public/dev/SysMLBook
+a2x: executing: "xsltproc"  --stringparam callout.graphics 1 --stringparam navig.graphics 1 --stringparam admon.textlabel 0 --stringparam admon.graphics 1 --stringparam admon.graphics.path "../images/icons/" --stringparam callout.graphics.path "../images/icons/callouts/" --stringparam navig.graphics.path "../images/icons/"  --output "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.fo" "/opt/local/etc/asciidoc/docbook-xsl/fo.xsl" "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.xml"
+
+Making portrait pages on A4 paper (210mmx297mm)
+WARNING: xref to <simpara id="Outils"> has no generated text. Trying its ancestor elements.
+ERROR: xref linking to orga has no generated link text.
+Error: no ID for constraint linkend: orga.
+XLink to nonexistent id: orga
+WARNING: xref to <simpara id="Exos"> has no generated text. Trying its ancestor elements.
+
+a2x: chdir /Users/bruel/Dropbox/Public/dev/SysMLBook
+a2x: executing: "fop"   -fo "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.fo" -pdf "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.pdf"
+
+18 nov. 2012 20:49:47 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Font "Symbol,normal,700" not found. Substituting with "Symbol,normal,400".
+18 nov. 2012 20:49:47 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Font "ZapfDingbats,normal,700" not found. Substituting with "ZapfDingbats,normal,400".
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 27667 millipoints. (See position 163:2271)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 4999 millipoints. (See position 163:2640)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 33655 millipoints. (See position 163:3001)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 13503 millipoints. (See position 163:3291)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 23523 millipoints. (See position 163:3873)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 14847 millipoints. (See position 163:8154)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 38175 millipoints. (See position 163:10211)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 218:636)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 218:1005)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 218:1351)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 218:1699)
+18 nov. 2012 20:49:50 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Content overflows the viewport of the fo:region-before on page 14 in block-progression direction by 250 millipoints. (See position 200:1460)
+18 nov. 2012 20:49:54 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Content overflows the viewport of the fo:region-before on page 15 in block-progression direction by 250 millipoints. (See position 200:1460)
+18 nov. 2012 20:50:00 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Content overflows the viewport of the fo:region-before on page 16 in block-progression direction by 250 millipoints. (See position 200:1460)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 281:838)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 281:1209)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 10988 millipoints. (See position 282:4653)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 5 of a paragraph overflows the available area by 19976 millipoints. (See position 282:5631)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 16976 millipoints. (See position 282:5631)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 5 of a paragraph overflows the available area by 508 millipoints. (See position 282:6046)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 6844 millipoints. (See position 282:6800)
+18 nov. 2012 20:50:06 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 3 of a paragraph overflows the available area by 18496 millipoints. (See position 282:9191)
+18 nov. 2012 20:50:22 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 305:175)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 27667 millipoints. (See position 305:12100)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 4999 millipoints. (See position 305:12469)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 33655 millipoints. (See position 305:12830)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 13503 millipoints. (See position 305:13120)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 23523 millipoints. (See position 305:13702)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 14847 millipoints. (See position 305:18048)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 38175 millipoints. (See position 305:20105)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 357:169)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 358:125)
+18 nov. 2012 20:50:25 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Content overflows the viewport of the fo:region-body on page 35 in block-progression direction by 411719 millipoints. (See position 2:5763)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 27667 millipoints. (See position 393:11758)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 4999 millipoints. (See position 393:12193)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 33655 millipoints. (See position 393:12554)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 13503 millipoints. (See position 393:12844)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 23523 millipoints. (See position 393:13426)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 14847 millipoints. (See position 393:17707)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 38175 millipoints. (See position 393:19764)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 435:1141)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 435:1496)
+18 nov. 2012 20:50:29 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Glyph "?" (0x2295, circleplus) not available in font "Times-Roman".
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by more than 50 points. (See position 460:1745)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by more than 50 points. (See position 460:1975)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 463:252)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 25276 millipoints. (See position 464:6055)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 5124 millipoints. (See position 464:6345)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 15144 millipoints. (See position 464:6927)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Glyph "?" (0x2295, circleplus) not available in font "Courier".
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 13300 millipoints. (See position 464:10331)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 7300 millipoints. (See position 464:10870)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 6468 millipoints. (See position 464:11770)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 29796 millipoints. (See position 464:13925)
+18 nov. 2012 20:50:30 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 464:15641)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 27667 millipoints. (See position 466:11827)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 4999 millipoints. (See position 466:12196)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 33655 millipoints. (See position 466:12623)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 13503 millipoints. (See position 466:12913)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 23523 millipoints. (See position 466:13495)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 14847 millipoints. (See position 466:17776)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 38175 millipoints. (See position 466:19833)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 488:386)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by 9049 millipoints. (See position 512:129)
+18 nov. 2012 20:51:11 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 552:503)
+18 nov. 2012 20:51:39 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 27667 millipoints. (See position 559:11821)
+18 nov. 2012 20:51:39 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 4999 millipoints. (See position 559:12190)
+18 nov. 2012 20:51:39 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 33655 millipoints. (See position 559:12551)
+18 nov. 2012 20:51:39 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 13503 millipoints. (See position 559:12907)
+18 nov. 2012 20:51:39 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 23523 millipoints. (See position 559:13489)
+18 nov. 2012 20:51:39 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 14847 millipoints. (See position 559:17770)
+18 nov. 2012 20:51:39 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 38175 millipoints. (See position 559:19827)
+18 nov. 2012 20:51:52 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 27667 millipoints. (See position 580:16422)
+18 nov. 2012 20:51:52 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 4999 millipoints. (See position 580:16791)
+18 nov. 2012 20:51:52 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 33655 millipoints. (See position 580:17152)
+18 nov. 2012 20:51:52 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 13503 millipoints. (See position 580:17442)
+18 nov. 2012 20:51:52 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 23523 millipoints. (See position 580:18089)
+18 nov. 2012 20:51:52 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 14847 millipoints. (See position 580:22370)
+18 nov. 2012 20:51:52 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by 38175 millipoints. (See position 580:24427)
+18 nov. 2012 20:52:00 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 597:888)
+18 nov. 2012 20:52:00 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by 16344 millipoints. (See position 599:460)
+18 nov. 2012 20:52:00 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by 24958 millipoints. (See position 600:746)
+18 nov. 2012 20:52:00 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by more than 50 points. (See position 610:107)
+18 nov. 2012 20:52:00 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 612:65)
+18 nov. 2012 20:52:43 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 2 of a paragraph overflows the available area by more than 50 points. (See position 626:2298)
+18 nov. 2012 20:52:43 org.apache.fop.events.LoggingEventListener processEvent
+ATTENTION: Line 1 of a paragraph overflows the available area by more than 50 points. (See position 627:11783)
+18 nov. 2012 20:52:52 org.apache.fop.cli.Main startFOP
+GRAVE: Exception
+javax.xml.transform.TransformerException: org.apache.fop.fo.ValidationException: "{http://www.w3.org/1999/XSL/Format}block" is not a valid child of "fo:root"! (See position 793:9418)
+	at org.apache.fop.cli.InputHandler.transformTo(InputHandler.java:302)
+	at org.apache.fop.cli.InputHandler.renderTo(InputHandler.java:130)
+	at org.apache.fop.cli.Main.startFOP(Main.java:174)
+	at org.apache.fop.cli.Main.main(Main.java:205)
+Caused by: javax.xml.transform.TransformerException: org.apache.fop.fo.ValidationException: "{http://www.w3.org/1999/XSL/Format}block" is not a valid child of "fo:root"! (See position 793:9418)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:501)
+	at org.apache.fop.cli.InputHandler.transformTo(InputHandler.java:299)
+	... 3 more
+Caused by: org.apache.fop.fo.ValidationException: "{http://www.w3.org/1999/XSL/Format}block" is not a valid child of "fo:root"! (See position 793:9418)
+	at org.apache.fop.events.ValidationExceptionFactory.createException(ValidationExceptionFactory.java:38)
+	at org.apache.fop.events.EventExceptionManager.throwException(EventExceptionManager.java:54)
+	at org.apache.fop.events.DefaultEventBroadcaster$1.invoke(DefaultEventBroadcaster.java:175)
+	at $Proxy4.invalidChild(Unknown Source)
+	at org.apache.fop.fo.FONode.invalidChildError(FONode.java:534)
+	at org.apache.fop.fo.FONode.invalidChildError(FONode.java:517)
+	at org.apache.fop.fo.pagination.Root.validateChildNode(Root.java:133)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:267)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:171)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1072)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.xinclude.XIncludeHandler.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:484)
+	... 4 more
+
+---------
+
+javax.xml.transform.TransformerException: org.apache.fop.fo.ValidationException: "{http://www.w3.org/1999/XSL/Format}block" is not a valid child of "fo:root"! (See position 793:9418)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:501)
+	at org.apache.fop.cli.InputHandler.transformTo(InputHandler.java:299)
+	at org.apache.fop.cli.InputHandler.renderTo(InputHandler.java:130)
+	at org.apache.fop.cli.Main.startFOP(Main.java:174)
+	at org.apache.fop.cli.Main.main(Main.java:205)
+Caused by: org.apache.fop.fo.ValidationException: "{http://www.w3.org/1999/XSL/Format}block" is not a valid child of "fo:root"! (See position 793:9418)
+	at org.apache.fop.events.ValidationExceptionFactory.createException(ValidationExceptionFactory.java:38)
+	at org.apache.fop.events.EventExceptionManager.throwException(EventExceptionManager.javaa2x: ERROR: "fop"   -fo "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.fo" -pdf "/Users/bruel/Dropbox/Public/dev/SysMLBook/main.pdf" returned non-zero exit status 1
+:54)
+	at org.apache.fop.events.DefaultEventBroadcaster$1.invoke(DefaultEventBroadcaster.java:175)
+	at $Proxy4.invalidChild(Unknown Source)
+	at org.apache.fop.fo.FONode.invalidChildError(FONode.java:534)
+	at org.apache.fop.fo.FONode.invalidChildError(FONode.java:517)
+	at org.apache.fop.fo.pagination.Root.validateChildNode(Root.java:133)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:267)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:171)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1072)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.xinclude.XIncludeHandler.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:484)
+	... 4 more
+---------
+org.apache.fop.fo.ValidationException: "{http://www.w3.org/1999/XSL/Format}block" is not a valid child of "fo:root"! (See position 793:9418)
+	at org.apache.fop.events.ValidationExceptionFactory.createException(ValidationExceptionFactory.java:38)
+	at org.apache.fop.events.EventExceptionManager.throwException(EventExceptionManager.java:54)
+	at org.apache.fop.events.DefaultEventBroadcaster$1.invoke(DefaultEventBroadcaster.java:175)
+	at $Proxy4.invalidChild(Unknown Source)
+	at org.apache.fop.fo.FONode.invalidChildError(FONode.java:534)
+	at org.apache.fop.fo.FONode.invalidChildError(FONode.java:517)
+	at org.apache.fop.fo.pagination.Root.validateChildNode(Root.java:133)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:267)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:171)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1072)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.xinclude.XIncludeHandler.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:484)
+	at org.apache.fop.cli.InputHandler.transformTo(InputHandler.java:299)
+	at org.apache.fop.cli.InputHandler.renderTo(InputHandler.java:130)
+	at org.apache.fop.cli.Main.startFOP(Main.java:174)
+	at org.apache.fop.cli.Main.main(Main.java:205)
+</pre>
+</div></div></p></div>
+<div class="paragraph"><p></p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2012-11-18 19:17:34 CET
+</div>
+</div>
+</body>
+</html>
