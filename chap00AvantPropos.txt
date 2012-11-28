@@ -28,7 +28,7 @@ Ce document est la compilation de plusieurs années d'enseignement de {sysml} de
 - au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de l'{univ-tlse2} (introduction avec mon collègue et ami {pdss}),
 - au _Master of Science_ de Göteborg, Suède (introduction réalisée par {nico}),
 - à l'{uag}, au Mexique (40h de formation professionnelle aux employés de Continental),
-- ou plus récemment au {glre} (parcours "logiciels embarqués") de l'{ups}.
+- ou plus récemment au {dl} de l'{ups}.
 
 Vous trouverez en référence (cf. <<refs, Bibiliographie>>) les ouvrages et autres documents utilisés.
 
@@ -57,7 +57,7 @@ endif::backend-slidy2[]
 ==== Version électronique
 
 Ce document a été réalisé de manière à être lu de préférence
-dans sa version électronique (au format PDF), ce qui permet de
+dans sa version électronique, ce qui permet de
 naviguer entre les références et les renvois interactivement, de consulter
 directement les documents référencés par une URL, etc.
 // Par exemple, les sigles comme {omg} apparaissent avec une astérisque qui permet un renvoie direct à leur définition dans le document PDF (lien clickable menant à la section <<Glossaire>>).

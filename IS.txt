@@ -134,6 +134,10 @@ des notations et langages pour réaliser et communiquer avec ces modèles (cf. <
 L'ingénierie des exigences est d'une importance capitale en {is}.
 Nous renvoyons pour l'instant le lecteur au cours de Master qui précède ce cours.
 
+.300 corps de métiers sont parfois présents sur un chantier
+image::{images}/ingenierie-des-exigences.jpg[alt="Joke",link="http://www.inria.fr/centre/rennes/actualites/vers-un-cahier-des-charges-mieux-formule"] 
+
+
 [[fig:eggs]]
 .\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
 [caption="Illustration: "]

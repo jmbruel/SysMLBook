@@ -534,40 +534,6 @@ body.manpage div.sectionbody {
 }
 
 
-@media screen {
-  body {
-    max-width: 50em; /* approximately 80 characters wide */
-    margin-left: 16em;
-  }
-
-  #toc {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 13em;
-    padding: 0.5em;
-    padding-bottom: 1.5em;
-    margin: 0;
-    overflow: auto;
-    border-right: 3px solid #f8f8f8;
-    background-color: white;
-  }
-
-  #toc .toclevel1 {
-    margin-top: 0.5em;
-  }
-
-  #toc .toclevel2 {
-    margin-top: 0.25em;
-    display: list-item;
-    color: #aaaaaa;
-  }
-
-  #toctitle {
-    margin-top: 0.5em;
-  }
-}
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -760,26 +726,22 @@ install: function(toclevels) {
 }
 
 }
-asciidoc.install(2);
+asciidoc.install();
 /*]]>*/
 </script>
 </head>
 <body class="book">
 <div id="header">
-<h1>Master UPS DL - Introduction à SysML</h1>
+<h1>UPS-M2-DL-IS - Introduction à SysML</h1>
 <span id="author">Jean-Michel Bruel</span><br>
 <span id="email" class="monospaced">&lt;<a href="mailto:jean-michel.bruel@univ-tlse2.fr">jean-michel.bruel@univ-tlse2.fr</a>&gt;</span><br>
 <span id="revnumber">version 1.1,</span>
-<span id="revdate">30/10/2012</span>
-<div id="toc">
-  <div id="toctitle">Table of Contents</div>
-  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
-</div>
+<span id="revdate">09/11/2012</span>
 </div>
 <div id="content">
 <h1 id="_syllabus_contenue_de_cette_partie">Syllabus : Contenue de cette partie</h1>
 <div class="sect1">
-<h2 id="_organisation">1. Organisation</h2>
+<h2 id="_organisation">Organisation</h2>
 <div class="sectionbody">
 <div class="ulist"><ul>
 <li>
@@ -801,51 +763,7 @@ asciidoc.install(2);
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
-<img alt="Note" src="data:image/png;base64,
-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">
+<img src="/Users/bruel/dev/asciidoc/images/icons/note.png" alt="Note">
 </td>
 <td class="content">
 <div class="paragraph"><p>Les cours et les TD seront entremêlés en fonction de l&#8217;avancée des concepts</p></div>
@@ -855,7 +773,7 @@ PAr9L8j/96+U/w3yCoCXW14B8HLLvwDd67nwZIEPdgAAAABJRU5ErkJggg==">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_intervenants">2. Intervenants</h2>
+<h2 id="_intervenants">Intervenants</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Nous serons deux (tous les deux de l&#8217;<a href="http://www.irit.fr">IRIT</a>) :</p></div>
 <div class="ulist"><ul>
@@ -873,13 +791,13 @@ PAr9L8j/96+U/w3yCoCXW14B8HLLvwDd67nwZIEPdgAAAABJRU5ErkJggg==">
 </div>
 </div>
 <div class="sect1">
-<h2 id="_et_vous">3. Et vous?</h2>
+<h2 id="_et_vous">Et vous?</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Présentation rapide de vos objectifs et attentes autour de SysML.</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_contenu_détaillé">4. Contenu détaillé</h2>
+<h2 id="_contenu_détaillé">Contenu détaillé</h2>
 <div class="sectionbody">
 <div class="ulist"><ul>
 <li>
@@ -894,7 +812,7 @@ Lien avec le cours d&#8217;Ingénierie Système (IS) et celui d&#8217;Ingénieri
 </li>
 <li>
 <p>
-TP traitée en IE
+TP traitée en IE avec <a href="mailto:f.salazar@ebps-consulting.com">François Salazar</a>
 </p>
 <div class="ulist"><ul>
 <li>
@@ -922,590 +840,12 @@ Diagramme de séquence (DS) et diagramme de définition de block des composants 
 </ul></div>
 </div>
 </div>
-<h1 id="_partie_1_introduction">Partie 1 : Introduction</h1>
-<div class="sect1">
-<h2 id="_avant_propos">1. Avant-propos</h2>
-<div class="sectionbody">
-<div class="quoteblock">
-<div class="content">
-<div class="paragraph"><p>A good notation has subtlety and suggestiveness which at times makes
-it almost seem like a live teacher.</p></div>
-</div>
-<div class="attribution">
-<em>The World of Mathematics (1956)</em><br>
-&#8212; Bertrand Russell
-</div></div>
-<div class="sect2">
-<h3 id="_a_qui_est_destiné_ce_document">1.1. A qui est destiné ce document?</h3>
-<div class="paragraph"><p>Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de cours et d&#8217;exercice accessible, et &#8230; moi-même (pour organiser mes notes diverses)!</p></div>
-</div>
-<div class="sect2">
-<h3 id="_a_qui_n_8217_est_il_pas_destiné">1.2. A qui n&#8217;est-il pas destiné?</h3>
-<div class="paragraph"><p>Si vous appartenez à l&#8217;une de ces catégories, ce livre <strong>n&#8217;est pas pour vous</strong> :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-vous cherchez un livre de référence (pour cela, même s&#8217;il est en anglais, je conseille <a href="#FMS">[FMS]</a>)
-</p>
-</li>
-<li>
-<p>
-vous voulez vous perfectionner (ce livre n&#8217;est qu&#8217;une introduction)
-</p>
-</li>
-<li>
-<p>
-vous souhaitez préparer la certification de l&#8217;OMG (mieux vaut vous plonger dans la spécification <a href="#SysML">[SysML]</a>)
-</p>
-</li>
-</ul></div>
-</div>
-<div class="sect2">
-<h3 id="_historique">1.3. Historique</h3>
-<div class="paragraph"><p>Ce document est la compilation de plusieurs années d&#8217;enseignement de SysML  depuis 2007, que ce soit :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-au <a href="http://dep-informatique.univ-pau.fr/live/masterTI">Master TI</a>, de l&#8217;Université de Pau et des Pays de l&#8217;Adour (cours d&#8217;introduction avec mon collègue et ami Nicolas Belloir),
-</p>
-</li>
-<li>
-<p>
-au <a href="http://spiderman-2.laas.fr/M2R-SAID/">Master Recherche SAID</a>, de l&#8217;<a href="http://www.univ-tlse3.fr">UPS</a> (introduction),
-</p>
-</li>
-<li>
-<p>
-au <a href="http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/">Master ICE</a> de l&#8217;<a href="http://www.univ-tlse2.fr">Université de Toulouse II - Le Mirail</a> (introduction avec mon collègue et ami Pierre de Saqui Sannes),
-</p>
-</li>
-<li>
-<p>
-au <em>Master of Science</em> de Göteborg, Suède (introduction réalisée par Nicolas Belloir),
-</p>
-</li>
-<li>
-<p>
-à l&#8217;Universitad Autonoma de Guadalajara, au Mexique (40h de formation professionnelle aux employés de Continental),
-</p>
-</li>
-<li>
-<p>
-ou plus récemment au <a href="http://glre.deptinfo.fr/">Master GLRE</a> (parcours "logiciels embarqués") de l&#8217;<a href="http://www.univ-tlse3.fr">UPS</a>.
-</p>
-</li>
-</ul></div>
-<div class="paragraph"><p>Vous trouverez en référence (cf. <a href="#refs">Bibiliographie</a>) les ouvrages et autres documents utilisés.</p></div>
-<div class="paragraph"><p>Je tiens à remercier mes collègues qui m&#8217;ont aidé dans mon entreprise :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-Nicolas Belloir de l&#8217;Université de Pau et des Pays de l&#8217;Adour, Laurent Nonne de l&#8217;IUT de Blagnac et Karina Aguilar de l&#8217;Universitad Autonoma de Guadalajara;
-</p>
-</li>
-<li>
-<p>
-mes collègues de <a href="http://www.sysml-france.fr">SysML-France</a> : <a href="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</a> (PRFC), Agusti Canals (C-S) et Loïc Féjoz (RTaW);
-</p>
-</li>
-<li>
-<p>
-mon maître d&#8217;<a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> : Jean-Michel Inglebert.
-</p>
-</li>
-</ul></div>
-</div>
-<div class="sect2">
-<h3 id="_sur_l_8217_auteur">1.4. Sur l&#8217;auteur</h3>
-<div class="ulist"><ul>
-<li>
-<p>
-Professeur à l&#8217;<a href="http://www.univ-toulouse.fr">Univesité de Toulouse</a>
-</p>
-</li>
-<li>
-<p>
-Co-foundateur de l&#8217;association <a href="http://www.sysml-france.fr">SysML-France</a>
-</p>
-</li>
-<li>
-<p>
-Membre du comité éditorial de la revue <em><a href="http://www.sosym.org">Software and System Modeling journal</a></em>
-</p>
-</li>
-<li>
-<p>
-Membre du <em>Steering Committee</em> de la conférence ACM/IEEE <a href="http://www.modelsconference.org/">MODELS</a>
-</p>
-</li>
-<li>
-<p>
-Chef du département informatique de l&#8217;IUT de Blagnac de 2009 à 2012
-</p>
-</li>
-<li>
-<p>
-Co-responsable de l&#8217;axe <strong>Systèmes Ambiants</strong> de l&#8217;<a href="http://www.irit.fr">IRIT</a>
-</p>
-</li>
-<li>
-<p>
-Marié, une (merveilleuse) fille
-</p>
-</li>
-</ul></div>
-</div>
-<div class="sect2">
-<h3 id="comment-lire">1.5. Comment lire ce document?</h3>
-<div class="sect3">
-<h4 id="_version_électronique">1.5.1. Version électronique</h4>
-<div class="paragraph"><p>Ce document a été réalisé de manière à être lu de préférence
-dans sa version électronique (au format PDF), ce qui permet de
-naviguer entre les références et les renvois interactivement, de consulter
-directement les documents référencés par une URL, etc.</p></div>
-<div class="admonitionblock">
-<table><tr>
-<td class="icon">
-<img alt="Important" src="data:image/png;base64,
-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
-EQn3XQAAAABJRU5ErkJggg==">
-</td>
-<td class="content">Si vous lisez la version papier de ce document, ces liens clickables ne
-vous servent à rien, et c&#8217;est votre punition pour avoir utilisé du papier
-au lieu du support électronique!</td>
-</tr></table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_conventions_typographiques">1.5.2. Conventions typographiques</h4>
-<div class="paragraph"><p>J&#8217;ai utilisé un certain nombre de conventions personnelles
-pour rendre ce document le plus agréable à lire et le plus
-utile possible, grâce notamment à la puissance d&#8217;<a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-Des mises en formes particulières concernent les noms de
-personnalités (e.g., Jean-Michel Inglebert), etc.
-</p>
-</li>
-<li>
-<p>
-Les références bibliographiques présentées en fin de document
-(cf. <a href="#refs">Bibliographie</a>) sont complétées par le numéro des pages (lien clickable dans la
-version électronique de ce document) qui renvoie à l&#8217;endroit du document où elles sont
-citées.
-</p>
-</li>
-<li>
-<p>
-Tous les <em>flottants</em> (figures, tableaux, définitions, etc.) sont
-listés à la suite de la table des matière.
-</p>
-</li>
-<li>
-<p>
-Les termes anglais (souvent incontournables) sont repérés
-en <em>italique</em>, non pas pour indiquer qu&#8217;il s&#8217;agit d&#8217;un
-mot anglais, mais pour indiquer au lecteur que nous employons
-volontairement ces termes (e.g., Requirements).
-</p>
-</li>
-</ul></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pourquoi_parler_de_document">1.6. Pourquoi parler de "document"?</h3>
-<div class="paragraph"><p>Parce que j&#8217;ignore la version que vous êtes en train de lire. A partir de l&#8217;<a href="main.txt">original</a>, plusieurs versions ont été générées grâce à <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a>:</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-pour le web (Moodle) au format <a href="main.html">html</a>
-</p>
-</li>
-<li>
-<p>
-pour présentation en amphi au format <a href="main.slidy.html">slidy</a>
-</p>
-</li>
-<li>
-<p>
-pour impression au format <a href="main.pdf">pdf</a>
-</p>
-</li>
-<li>
-<p>
-pour lire au format <a href="main.mobi">Kindle</a>
-</p>
-</li>
-</ul></div>
-</div>
-<div class="sect2">
-<h3 id="_utilisation_et_autres_mentions_légales">1.7. Utilisation et autres mentions légales</h3>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph"><p>Dernière MAJ : 30/10/2012 - 13:59:14 CET<br>
-Document généré par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</a> via <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> (version <span class="monospaced">8.6.8</span>) de <em>Stuart Rackham</em>.
-La version présentation a été générée en utilisant <a href="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</a> &#169; de <em>Dave Raggett</em>, amélioré par <a href="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</a>.
-Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <em>Licence Creative Commons</em>.
-<span class="image">
-<a class="image" href="http://creativecommons.org/licenses/by-sa/3.0/">
-<img alt="Licence Creative Commons" src="data:image/png;base64,
-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
-AABJRU5ErkJggg==">
-</a>
-</span>
-<a href="http://creativecommons.org/licenses/by-sa/3.0/">licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé</a>.</p></div>
-</div></div>
-<div class="paragraph"><p>N&#8217;hésitez pas à m&#8217;envoyer vos remarques en tout genre en m'écrivant <a href="mailto:jean-michel.bruel@univ-tlse2.fr">ici</a>.</p></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_méthode_pour_cet_ouvrage">2. Méthode pour cet ouvrage</h2>
-<div class="sectionbody">
-<div class="quoteblock">
-<div class="content">
-<div class="paragraph"><p>Everything should be made as simple as possible, but not simpler.</p></div>
-</div>
-<div class="attribution">
-&#8212; Albert Einstein
-</div></div>
-<div class="paragraph"><p>Mon approche pédagogique repose sur plusieurs principes bien établis :</p></div>
-<div class="dlist"><dl>
-<dt class="hdlist1">
-La répétition
-</dt>
-<dd>
-<p>
-        Par exemple certains diagrammes sont abordés plusieurs fois (comme le diagramme paramétrique). Le lecteur pourra avoir une impression de redite par moment. Sauf erreur de ma part (toujours possible!), c&#8217;est volontaire. En général les répétitions vont en niveau de précision, de détails et de complexité croissant.
-</p>
-</dd>
-<dt class="hdlist1">
-L&#8217;illustration
-</dt>
-<dd>
-<p>
-        Dans la mesure du possible, j&#8217;essaye de donner des exemples aux principes énoncés.
-</p>
-</dd>
-<dt class="hdlist1">
-Le référencement
-</dt>
-<dd>
-<p>
-        Les définitions ou autres affirmations sont tirées d&#8217;ouvrages de référence généralement citées.
-</p>
-</dd>
-<dt class="hdlist1">
-La "carte de base"
-</dt>
-<dd>
-<p>
-        J&#8217;aime réaliser une "carte" <span class="footnote"><br>[voir aussi le concept de <em>Mind Maps</em>.]<br></span> qui sert à "placer" les différents concepts abordés. Il me semble que cela permet aux étudiants de raccrocher les nouveaux concepts aux précédents.
-</p>
-</dd>
-<dt class="hdlist1">
-&#8230;
-</dt>
-<dd>
-<p>
-        etc.
-</p>
-</dd>
-</dl></div>
-<div class="paragraph"><p>A part le chapitre <a href="#umlAsysml">d&#8217;UML à SysML</a>, aucune connaissance particulière d&#8217;UML  n&#8217;est nécessaire.
-Il s&#8217;agit d&#8217;un partie pris prenant en compte plusieurs points :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-La plupart des ingénieurs systèmes ne connaissent pas UML 
-</p>
-</li>
-<li>
-<p>
-Les étudiants de STI2D ne connaissent pas UML 
-</p>
-</li>
-<li>
-<p>
-Ceux qui connaissent UML  auront sûrement plaisir à retrouver les bases
-</p>
-</li>
-</ul></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_c_8217_est_quoi_sysml">3. C&#8217;est quoi SysML?</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>Si vous ne deviez lire qu&#8217;un seul chapitre&#8230;</p></div>
-<div class="paragraph"><p>SysML , <strong>c&#8217;est</strong> :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-Un ensemble de 9 types de diagrammes :
-</p>
-<div class="ulist"><ul>
-<li>
-<p>
-Diagrammes structuraux
-</p>
-<div class="ulist"><ul>
-<li>
-<p>
-Diagrammes de définition de blocks (<span class="monospaced">bdd</span>)
-</p>
-</li>
-<li>
-<p>
-Diagrammes internes de blocks (<span class="monospaced">ibd</span>)
-</p>
-</li>
-<li>
-<p>
-Diagrammes paramétriques (<span class="monospaced">par</span>)
-</p>
-</li>
-<li>
-<p>
-Diagrammes de packages (<span class="monospaced">pkg</span>)
-</p>
-</li>
-</ul></div>
-</li>
-<li>
-<p>
-Diagrammes comportementaux
-</p>
-<div class="ulist"><ul>
-<li>
-<p>
-Diagrammes de séquence (<span class="monospaced">seq</span>)
-</p>
-</li>
-<li>
-<p>
-Diagrammes d&#8217;activité (<span class="monospaced">act</span>)
-</p>
-</li>
-<li>
-<p>
-Diagrammes de cas d&#8217;utilisation (<span class="monospaced">uc</span>)
-</p>
-</li>
-<li>
-<p>
-Diagrammes d'états (<span class="monospaced">st</span>)
-</p>
-</li>
-</ul></div>
-</li>
-<li>
-<p>
-Diagramme d&#8217;exigence (<span class="monospaced">req</span>)
-</p>
-</li>
-</ul></div>
-</li>
-<li>
-<p>
-Un profil UML , c&#8217;est à dire une extension de cette notation
-</p>
-</li>
-<li>
-<p>
-Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de référence à la modélisation des systèmes
-</p>
-</li>
-</ul></div>
-<div class="paragraph"><p>SysML , <strong>ce n&#8217;est pas</strong> :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-Une méthode ou une démarche de développement de système
-</p>
-</li>
-<li>
-<p>
-Un outil
-</p>
-</li>
-<li>
-<p>
-Un raton laveur (c&#8217;est juste pour voir ceux qui suivent)
-</p>
-</li>
-</ul></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_un_exemple_fil_rouge">4. Un exemple fil rouge</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>L&#8217;exemple de système qui sera modélisé tout au long de ce livre en guise d&#8217;exemple.</p></div>
-<div class="paragraph"><p>Il existe un certain nombre d&#8217;exemple complets :</p></div>
-<div class="ulist"><ul>
-<li>
-<p>
-Le radio-réveil de <a href="http://www.dotnetguru2.org/proques/index.php">Pascal Roques</a> <a href="#Roques2010">[Roques2010]</a>
-</p>
-</li>
-<li>
-<p>
-Le distilleur de <a href="#FMS">[FMS]</a>
-</p>
-</li>
-<li>
-<p>
-Le pacemaker de <a href="#SeeBook2012">[SeeBook2012]</a>
-</p>
-</li>
-</ul></div>
-</div>
-</div>
 </div>
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
 Version 1.1<br>
-Last updated 2012-10-30 13:59:04 CET
+Last updated 2012-11-08 22:59:48 CET
 </div>
 </div>
 </body>

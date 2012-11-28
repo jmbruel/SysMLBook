@@ -1,0 +1,78 @@
+Le système *CMS* (_crash management system_) est un système distribué de gestion d'accidents 
+qui est responsable de la coordination et de la communication entre un coordinateur présent dans
+une caserne de pompiers (appelé FSC pour _Fire Station Coordinator_) et un autre présent dans un 
+poste de police (appelé PSC pour _Police Station Coordinator_) afin de gérer une crise dans un 
+délai raisonnable. 
+
+.Le système CMS
+image:CMS.png[width="80%"]
+
+La communication interne entre les membres de la police (y compris le PSC) est en dehors du 
+domaine qui nous intéresse ici (la gestion de crise). La même hypothèse s'applique aux 
+communications internes ou avec des acteurs externes côté pompiers (y compris le FSC). 
+Les informations concernant la crise ainsi que tout ce qui a trait aux tâches des coordinateurs 
+sont mises à jour et maintenues pendant et après la crise.
+
+Il n'existe pas de base de données centrale; caserne de pompiers et police ayant leur
+base de données respectives distinctes et seulement accessible aux autre à travers le
+système CMS. Chaque processus de coordination est donc en charge de l'ajout et la mise 
+à jour des informations dans sa base de données respective.
+
+CMS commence à fonctionner au moment où une crise donnée a été détectée et déclarée à la fois à la
+caserne de pompiers et au poste de police. 
+
+Toutes les caractéristiques des différents acteurs sont détaillées ci-dessous. 
+
+=== Coordinateur des pompiers (FSC)
+
+Un FSC maintient le contrôle sur une situation de crise en communiquant avec le coordinateur du poste de police
+(PSC) ainsi que les pompiers.
+
+Pour atteindre ses objectifs, les responsabilités d'un FSC sont les suivantes :
+
+- de déterminer où, quand et combien de camions de pompiers à envoyer,
+- de communiquer avec le PSC pour se présenter,
+- de garder le PSC informé en ce qui concerne la crise,
+- de proposer une stratégie pour traiter la crise,
+- parvenir à un accord avec le PSC sur la façon de procéder,
+- de recevoir des mises à jour concernant la crise côté pompiers, et
+- de rassembler et de diffuser des informations actualisées aux pompiers.
+
+=== Pompiers
+
+Un pompier agit sur ordres reçus du FSC et des fait des rapports au
+FSC. Par ailleurs, un pompier communique avec d'autres pompiers, des victimes et des témoins.
+
+Les responsabilités d'un pompier sont les suivantes :
+
+- recevoir des demandes pour aller/revenir sur les lieux de la crise,
+- signaler sa position au FSC,
+- signaler les conditions de la crise au FSC et à tous les pompiers, et
+- communiquer avec les victimes et les témoins.
+
+=== Coordinateur du poste de police (PSC)
+
+Pour atteindre ses objectifs, un PSC effectue les mêmes activités que le FSC.
+
+=== Agents de police
+
+Les agents de police agissent sur ordres reçus du PSC. 
+En outre, un agent de police communique avec d'autres policiers, des victimes et des témoins.
+Pour atteindre ses objectifs, un agent de police exerce les mêmes activités qu'un pompier en
+termes de communication avec son coordinateur. 
+
+=== Victimes (de la crise)
+Une victime a été touchée par la crise et peut communiquer avec les policiers et les
+pompiers.
+Les responsabilités d'une victime sont :
+
+- de fournir des informations liées à la crise
+- de suivre les instructions de pompiers et de policiers.
+
+
+=== Témoins (de la crise)
+Un témoin a observé la crise et communique avec les policiers et les pompiers.
+Les responsabilités d'un témoin sont les suivantes :
+
+- de fournir des informations aux pompiers et les policiers, et
+- de suivre les instructions de pompiers et de policiers.

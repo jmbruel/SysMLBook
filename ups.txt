@@ -48,7 +48,7 @@
 ///////////////////////
 //:linkcss:
 
-= Master UPS DL - {title}
+= UPS-M2-DL-IS - {title}
 
 // raccourcis sites
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
@@ -149,50 +149,3 @@ Présentation rapide de vos objectifs et attentes autour de SysML.
 * Diagramme de séquence système (DSS)
 * Diagramme de séquence (DS) et diagramme de définition de block des composants du système
 
-ifndef::backend-deckjs[]
-
-= Partie 1 : Introduction
-
-endif::backend-deckjs[]
-
-include::chap00AvantPropos.txt[]
-
-include::chap01Methode.txt[]
-
-
-== C'est quoi SysML?
-
-Si vous ne deviez lire qu'un seul chapitre...
-
-{SysML}, *c'est* :
-
-* Un ensemble de 9 types de diagrammes :
-** Diagrammes structuraux
-*** Diagrammes de définition de blocks (+bdd+)
-*** Diagrammes internes de blocks (+ibd+)
-*** Diagrammes paramétriques (+par+)
-*** Diagrammes de packages (+pkg+)
-** Diagrammes comportementaux
-*** Diagrammes de séquence (+seq+)
-*** Diagrammes d'activité (+act+)
-*** Diagrammes de cas d'utilisation (+uc+)
-*** Diagrammes d'états (+st+)
-** Diagramme d'exigence (+req+)
-* Un profil {UML}, c'est à dire une extension de cette notation
-* Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de référence à la modélisation des systèmes
-
-{SysML}, *ce n'est pas* :
-
-* Une méthode ou une démarche de développement de système
-* Un outil
-* Un raton laveur (c'est juste pour voir ceux qui suivent)
-
-== Un exemple fil rouge
-
-L'exemple de système qui sera modélisé tout au long de ce livre en guise d'exemple.
-
-Il existe un certain nombre d'exemple complets :
-
-- Le radio-réveil de {prfc} <<Roques2010>>
-- Le distilleur de <<FMS>> 
-- Le pacemaker de <<SeeBook2012>>

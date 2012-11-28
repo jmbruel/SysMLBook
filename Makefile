@@ -7,6 +7,14 @@ all: *.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
 	 -a numbered $(MAIN).txt
+
+tout: tp deckjs sommaire ups slidy
+
+veritas:
+	@echo '==> Compiling asciidoc files to generate SLIDES'
+	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri -a numbered \
+	 -o Veritas2012.html Veritas2012.txt
+	
 tp: ups-tp.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
@@ -20,7 +28,14 @@ deckjs:
 #all: *.txt
 #	@echo '==> Compiling asciidoc files to generate HTML'
 #	asciidoc -a posix --unsafe make.txt
-
+sommaire: MasterDL.txt
+	@echo '==> Compiling asciidoc files to generate HTML'
+	asciidoc -b html5 -a icons -a iconsdir=$(ICONSDIR) MasterDL.txt
+ups: ups.txt
+	asciidoc -b html5 -a icons -a iconsdir=$(ICONSDIR) ups.txt
+	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
+	 -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 \
+	 -o ups.deckjs.html ups.txt
 compact:
 	@echo '==> Compiling asciidoc files to generate compact HTML'
 	asciidoc -a theme=compact -a icons -a iconsdir=./images/icons main.txt -o main.compact.html

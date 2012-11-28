@@ -11,7 +11,7 @@ Néanmoins cette notation est peu adaptée pour l'{is} :
 
 ifdef::backend-slidy2[<<<]
 
-* UML 2.x n'est pas beaucoup mieux si n'est :
+* UML 2.x n'est pas beaucoup mieux si ce n'est :
 ** Implication des ingénieurs systèmes pour sa définition
 ** Introduction du diagramme de structure composite 
 
@@ -100,10 +100,7 @@ Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
 
 Il existe un certain nombre d'outils permettant de réaliser des modèles SysML. Voici une liste non exhaustive :
 
-* http://www.topcased.org/[TopCased]
-* http://www.eclipse.org/modeling/mdt/papyrus/[Papyrus]
-* http://www.artisansw.com/[Artisan]
-* http://www-01.ibm.com/software/rational/products/rhapsody[Rhapsody]
+include:outils.txt[]
 
 Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
 
@@ -154,6 +151,7 @@ On abordera :
 - La notion de _Namespaces_
 - Les _Dependencies_
 
+[[package]]
 === Le _Package Diagram_
 
 * Identique à {uml}, et classique pour les développeurs (java notamment)
@@ -219,6 +217,18 @@ ifdef::backend-slidy2[<<<]
 .Exemple d'organisation
 image:{images}/pkg-topcased.png[width="60%"]
 
+ifdef::backend-slidy2[<<<]
+
+[NOTE]
+.Organisation par défaut
+====
+L'outil {topcased} propose, lors de la création d'un premier modèle, de créer une organisation
+"type" par défaut. 
++
+image:{images}/pkg-template.png[width="80%"]
+image:{images}/pkg-topcased-default.png[width="80%"]
++
+====
 
 === La notion de _Namespaces_
 
@@ -241,16 +251,16 @@ _Dependency_::
 	représentée par une simple flèche pointillée `----->`
 _Use_::
 	l'élément "utilise" celui à l'autre bout de la flèche (un type par exemple), +
-	représentée par le stéréotype `≪ use ≫`
+	représentée par le stéréotype `<< use >>`
 _Refine_::
 	l'élément est un raffinage (plus détaillé) de celui à l'autre bout de la flèche, +
-	représentée par le stéréotype `≪ refine ≫`
+	représentée par le stéréotype `<< refine >>`
 _Realization_::
 	l'élément est une "réalisation" (implémentation) de celui à l'autre bout de la flèche, +
-	représentée par le stéréotype `≪ realize ≫`
+	représentée par le stéréotype `<< realize >>`
 _Allocation_::
 	l'élément (e.g., une activité ou un _requirement_) est "alloué" sur celui à l'autre bout de la flèche (un +block+ la plupart du temps), +
-	représentée par le stéréotype `≪ allocate ≫`
+	représentée par le stéréotype `<< allocate >>`
 
 === {resume}
 {sysml} propose un certain nombre de mécanismes pour organiser les différents modèles,
@@ -279,26 +289,158 @@ tirés pour la plupart d'{uml}.
 On abordera :
 
 - L'organization des _Requirements_ 
+- Les tableaux de _Requirements_
 - Les _Requirements properties_ 
 - Les _Requirements links_ 
 - Les _Requirements Diagrams_ 
 - Les considerations sur la _Traceability_
+- Annotations des _Requirements_
+- Les _Use Case Diagrams_ (scénarios) 
+
+[NOTE]
+====
+L'ingénierie des exigences est une discipline à part entière et nous n'abordons ici
+que les aspects en lien avec la modélisation système. Voir le livre de référence pour
+plus de détails (<<Sommerville1997>>) ou le guide de l'{afis} (<<REQ2012>>).
+====
+
+=== L'organisation des _Requirements_ 
+
+Comme nous l'avons vu pour les _packages_, plusieurs types d'organisations sont possibles :
+
+- Par niveau d'abstraction
+* Besoins généraux (en lien avec les  _use cases_ par exemple) 
+* Besoins techniques (en lien avec les éléments de conception)
+- Par point de vue
+* Besoins principaux (en lien avec les _use cases_)
+* Besoins spécifiques :
+** Fonctionnels
+** Marketing
+** Environnementaux
+** _Business_
+** ...
+- etc.
+
+==== Tableaux de _Requirements_
+
+Les _requirements_ sont généralement stockés dans des feuilles excel.
+
+.Exemples tableau d'exigences
+image:{images}/req-table.png[width="80%"]
+
+ifdef::backend-slidy2[<<<]
+
+.Import Modelio de tableau d'exigences
+image:{images}/req-modelio.png[width="80%"]
+
+=== Les _Requirements properties_ 
+
+Il est possible d'indiquer un certain nombre de propriétés sur un _requirement_ : 
+
+- _priority_ (+high+, +low+, ...) 
+- _source_ (+stakeolder+, +law+, +technical+, ...)
+- _risk_ (+high+, +low+, ...) 
+- _status_ (+proposed+, +aproved+, ...) 
+- _verification method_ (+analysis+, +tests+, ...)
+
+
+=== Les _Requirements links_ 
+
+Les principales relations entre _requirement_ sont :
+
+_Containment_:: 
+	pour décrire la décomposition d'un besoin en plusieurs sous-besoins (⊕–) 
+_Refinement_::
+ 	pour décrire un ajout de précision (`<<refine>>`)
+_Derivation_::
+ 	pour indiquer une différence de niveau d'abstraction (`<<deriveReqt>>`), par exemple
+	entre un système et un de ses sous-systèmes
+
+image:{images}/req-exp1.png[width="70%"]
+
+ifdef::backend-slidy2[<<<]
+
+Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
+(les _block_ principalement) comme `<<satisfy>>` ou `<<verify>>`, mais nous les aborderons
+dans la partie <<transvers,transverse>>.
+
+.Relations liées au _requirements_ dans TOPCASED
+image:{images}/topcased-req-connections.png[width="20%"]
+
+=== Les _Requirements Diagrams_ 
+
+Quelques exemples de +req+ tirés de http://www.uml-sysml.org/sysml :
+
+image:{images}/hsuv-reqs1.png[width="90%"]
+
+ifdef::backend-slidy2[<<<]
+
+image:{images}/hsuv-reqs2.png[width="90%"]
+
+=== Les considerations sur la _Traceability_
+
+Une fois que les _requirements_ ont été définis et organisés, il est utile de les lier au moins aux _use cases_ 
+(en utilisant `<<refine>>` par exemple) et aux éléments structurels (en utilisant `<<satisfy>>` par exemple), mais ceci
+sera abordé dans la partie <<transvers,transverse>>.
+
+[NOTE]
+====
+Chaque _requirement_ doit être relié à au moins un _use case_ (et vice-versa!).
+====
+
+=== Annotations des _Requirements_
+
+Il est possible d'annoter les éléments de modélisation en précisant les raisons 
+(_rationale_) ou les éventuels problèmes anticipés (_problem_).
+
+.Exemples de _rationale_ et _problem_
+image:{images}/hsuv-reqs2.png[width="90%"]
+
+=== Les _Use Case Diagrams_ (scénarios) 
+
+Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comportement>>, nous les abordons
+	ici du fait de leur proximité avec les _requirements_.
+
+.Exemple de lien entre _use case_ et _requirements_
+image:{images}/req-uc-relation.png[width="40%"]
+
+ifdef::backend-slidy2[<<<]
+
+Ce diagramme est exactement identique à celui d'{uml}.
+
+image:{images}/UCGestionNotes.png[width="60%"]
+
+ifdef::backend-slidy2[<<<]
+
+image:{images}/uc.png[width="60%"]
+
+[TIP]
+====
+Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
+====
 
 === {resume}
 
 .Déclinaison des Exigences
 [cols="h,2,1,1,1",options="header",width="70%"]
 |======================
-|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| {organisation}	| +⊕–+, +\<<deriveRqt>>+			|        		|				|
-| {analysis}		| +\<<satisfy>>+ entre reqs et UC		|        		|				|
-| {design}			| +\<<allocate>>+			|        		|				|
-| {implementation}	|	+\<<satisfy>>+, +\<<verify>>+				|        		|				|
+|					| [red]*{Requirements}* 			| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	| +⊕–+, +\<<deriveReqt>>+			|        		|				|
+| {analysis}		| `<<satisfy>>`, `<<refine>>`		|  `<<satisfy>>` entre reqs et UC|	`<<refine>>` |
+| {design}			| +\<<allocate>>+					|        		|				|
+| {implementation}	|	+\<<satisfy>>+, +\<<verify>>+	|        		|				|
 |======================
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple de démarche (_SYSMOD Zigzag pattern_)
+image:{images}/zigzag.png[width="80%",link="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"]
+
 
 === {revisions}
 
 - Quelles sont les différences entre *besoins* et *exigences* ?
+
 
 == L'architecture du système
 [[archi]]
@@ -323,12 +465,204 @@ On abordera :
 - les _Parametric Diagrams_ (pour les contraintes physiques)
 - les _Sequence Diagrams_ (diagramme de séquence système) 
 
+=== Organisation du système et des modèles
+
+En terme d'organisation, le mécanisme clef est celui de _package_.
+Celui-ci va permettre d'organiser les modèles, pas le système lui-même.
+Nous avons abordé cette organisation <<package,ici>>.
+
+Pour l'organisation du système, on trouve le plus souvent :
+
+- un diagramme décrivant le contexte (le système dans son environnement), décrit dans un _block definition diagram_ (cf. <<contextebdd>>)
+- un diagramme décrivant les éléments internes principaux du système,  décrit dans un _internal block diagram_
+
+=== _Block Definition Diagrams_ 
+
+==== Principes de base
+
+Un +bdd+ peut représenter : 
+
+- un _package_
+- un block
+- un block de contrainte (_constraint block_)
+
+ifdef::backend-slidy2[<<<]
+
+Un diagramme de block décrit les relations entre les blocks (composition, généralisations, ...).
+
+[[contextebdd]]
+.bdd du système dans son environnement
+image:{images}/pacemaker-context.png[width="70%"]
+
+ifdef::backend-slidy2[<<<]
+
+Un block est constitué d'un certain nombre de compartiments (_Compartments_) :
+
+_Properties_::
+	Equivalent {uml} des propriétés (e.g., attributs)
+_Operations_::
+	Les méthodes supportées par les instances du bloc.
+_Constraints_::
+	Les contraintes
+_Allocations_::
+	Les allocations
+_Requirements_::
+	Les exigences liées à ce bloc.
+_User defined_::
+	On peut définir ses propres compartiments
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple de définition de contraintes
+image:{images}/constraints.png[width="70%"]
+
+
+==== Propriétés
+
+On peut différencier 3 types de propriétés d'un block :
+
+_parts_:: 
+	Les éléments qui composent le block (cf. <<ibd>>)
+_values_::
+	Des caractéristiques (quantifiables)
+_references_::
+	Les éléments auquel le block a accès (via des associations ou des agrégations)
+
+[NOTE]
+====
+Les _values_ sont ce qui se rapproche de plus des attributs de classes UML.
+====
+
+==== _Value Types_
+
+Pour typer les valeurs, {SysML} propose de définir des _Value Types_.
+
+image:{images}/valueType.png[width="90%"]
+
+==== Associations entre blocks
+
+Il existe deux types de relations entre blocs : 
+
+- l’association (y compris l’agrégation et la composition)
+- la généralisation
+
+[[ibd]]
+=== _Internal Block Diagrams_
+
+Un +ibd+ décrit la structure interne d’un bloc sous forme de :
+
+parts::
+	Les parties qui constituent le système (ses sous-systèmes)
+ports::
+	Elément d'interaction avec un block
+connecteurs::
+	Liens entre ports
+
+==== Parts
+
+Les parties sont représentés par les éléments au bout d'une composition dans un +bdd+.
+Elles sont créés à la création du block qui les contient et sont détruites avec lui s'il
+est détruit (dépendance de vie). 
+
+[WARNING]
+====
+Il ne s'agit pas de redessiner le BDD. Les _parts_ sont des instances et non des classes (au sens objet). +
+Cela ne pose aucun problème à un ingénieur système, mais ça peut en poser à un ingénieur logiciel.
+====
+
+ifdef::backend-slidy2[<<<]
+
+On représente les _parts_ comme des block en traits pleins
+et les _references_ comme des blocks en trait pointillés.
+
+image:{images}/parts.png[width="70%"]
+
+ifdef::backend-slidy2[<<<]
+
+image:{images}/parts2.png[width="70%"]
+
+==== Ports
+
+Les ports :
+
+- préservent l'encapsulation du block
+- matérialise le fait que les interactions avec l'extérieur (via un port)
+sont transmise à une partie (via un connecteur)
+- les ports connectés doivent correspondre (_kind_, _type_, _direction_, etc.)
+
+[NOTE]
+====
+Les ports définissent les points d’interaction offerts (`«provided»`) et requis (`«required»`) entre les blocs. +
+Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaque hiérarchie.
+====
+
+image:{images}/ports-flots.png[width="90%"]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemples de flots multi-physique entre ports
+image:{images}/flots.png[width="90%"]
+
+ifdef::backend-slidy2[<<<]
+
+Les ports de type +Flux+ peuvent être :
+
+- atomiques (un seul flux),
+- composites (agrégation de flux de natures différentes). 
+
+[NOTE]
+====
+Un flow port atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux), 
+la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un Value Type représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
+====
+
+[[param]]
+=== _Parametric Diagrams_
+
+Ce diagramme utilise 3 concepts clefs :
+
+- _Constraints_ (un type de block)
+- _Parametric diagram_ (un type d'+ibd+)
+- _Value binding_
+
+==== Contraintes
+
+C'est un block particulier :
+
+- avec un stéréotype `≪constraint≫` (au lieu de block)
+- des parametres en guise d'attributs
+- des relations liant (contraignant) ces paramètres
+
+image:{images}/constraints.png[width="80%"]
+
+==== Diagramme paramétrique
+
+C'est une forme particulière de _Internal Block Definition_
+
+image:{images}/param.png[width="90%"]
+
+==== _Value Binding_
+
+Une fois les contraintes exprimées, il faut lier les paramètres (formels) à des valeurs (paramètre réel). C'est l'objet des _Value Binding_.
+
+Pour assigner des valeurs spécifiques, on utilise des _Block Configurations_;
+
+image:{images}/blockconf.png[width="90%", link="http://books.google.fr/books?id=8KY2YZIiXv0C&pg=PA174&lpg=PA174&dq=SYSml+%22block+configuration%22&source=bl&ots=ZdxokRYj6l&sig=PlDHvR8qGZC97W-C_08Yk9Xb1RY&hl=fr&sa=X&ei=1jizUOXKBsXAhAeinYHACg&ved=0CEEQ6AEwAg#v=onepage&q=SYSml%20%22block%20configuration%22&f=false"]
+
+=== Diagrammes de séquence système
+
+Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement). 
+
+Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails. Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence complet.
+
+image:{images}/dss.png[width="90%"]
 
 === {resume}
 En résumé...
 
 === {revisions}
-Pour réviser...
+
+. Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
 
 == Le comportement du système
 [[behavior]]
@@ -352,14 +686,37 @@ On abordera :
 - les _State Machines_
 - les _Activity Diagrams_
 
+==== _Use Case Diagrams_
+
+Les éléments de base :
+
+Acteurs::
+	les principaux acteurs (leur rôle) qui participent (on parle parfois d'acteurs principaux)
+	ou qui bénéficient (on parle alors d'acteurs secondaires) du système.
+Cas d'utilisation::
+	représente un ensemble d’actions réalisées par le système intéressant pour au moins un acteur 
+Association::
+	participation d'un acteur à un cas d'utilisation. 
+
+[TIP]
+====
+Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
+====
+
+==== _Sequence Diagrams_ 
+
+==== _State Machines_
+
+==== _Activity Diagrams_
+
 === {resume}
 En résumé...
 
 === {revisions}
 Pour réviser...
 
-== Les aspects transversaux
 [[transvers]]
+== Les aspects transversaux
 
 .Aspects transversaux
 [cols="h,4*",options="header",width="50%"]
@@ -378,6 +735,30 @@ On abordera ici les aspects transversaux comme :
 - la traçabilité des exigences indexterm:[Traçabilité]
 - les mécanismes d'allocation
 - le diagramme paramétrique
+
+[NOTE]
+====
+Chaque _requirement_ doit être relié à au moins un _use case_ (et vice-versa!).
+====
+
+=== Traçabilité des exigences
+
+Nous avons vu...
+
+=== Mécanismes d'allocation
+
+Parler du `<<AllocatedTo>>`
+
+=== Diagramme paramétrique	
+
+C'est une forme particulière de _Internal Block Definition_. Nous avons abordé cela dans la section <<param>>.
+
+image:{images}/param.png[width="90%"]
+
+[NOTE]
+====
+Certaines approchent (cf. <<MéDISIS>>) utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l'impact des changements de valeurs de tel ou tel paramètre.
+====
 
 === {resume}
 En résumé...
