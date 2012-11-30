@@ -51,7 +51,7 @@ La version 1.0 du langage de modélisation SysML a été adoptée officiellement
 === Différence avec UML
 
 .Liens entre UML et SysML
-image:{images}/diff.png[width="60%"]
+image::{images}/diff.png[width="60%"]
 
 === Qui est "derrière"?
 
@@ -67,12 +67,12 @@ AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
 === Organisation des différents diagrammes
 
 .Les 9 diagrammes SysML et leur lien avec UML
-image:{images}/Figure4.1.png[width="90%"]
+image::{images}/Figure4.1.png[width="90%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Version abrégée des diagrammes
-image:{images}/Figure4.1-bis.png[width="90%"]
+image::{images}/Figure4.1-bis.png[width="90%"]
 
 
 === Différence entre modèle et dessin
@@ -126,7 +126,7 @@ Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Defin
 _package_, nommé "Context".  
 
 .Exemple de diagramme SysML
-image:{images}/pacemaker-context.png[width="80%"]
+image::{images}/pacemaker-context.png[width="80%"]
 
 == Organisation
 [[org]]
@@ -200,22 +200,22 @@ Les modèles peuvent être organisés selon toutes sortes de considération :
 ifdef::backend-slidy2[<<<]
 
 .Exemple d'organisation
-image:{images}/pkg-organisation2.png[width="60%"]
+image::{images}/pkg-organisation2.png[width="60%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Exemple d'organisation
-image:{images}/pkg-organisation-modelview.png[width="40%"]
+image::{images}/pkg-organisation-modelview.png[width="40%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Exemple d'organisation
-image:{images}/pkg-organisation.png[width="40%"]
+image::{images}/pkg-organisation.png[width="40%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Exemple d'organisation
-image:{images}/pkg-topcased.png[width="60%"]
+image::{images}/pkg-topcased.png[width="60%"]
 
 ifdef::backend-slidy2[<<<]
 
@@ -326,12 +326,12 @@ Comme nous l'avons vu pour les _packages_, plusieurs types d'organisations sont 
 Les _requirements_ sont généralement stockés dans des feuilles excel.
 
 .Exemples tableau d'exigences
-image:{images}/req-table.png[width="80%"]
+image::{images}/req-table.png[width="80%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Import Modelio de tableau d'exigences
-image:{images}/req-modelio.png[width="80%"]
+image::{images}/req-modelio.png[width="80%"]
 
 === Les _Requirements properties_ 
 
@@ -356,7 +356,7 @@ _Derivation_::
  	pour indiquer une différence de niveau d'abstraction (`<<deriveReqt>>`), par exemple
 	entre un système et un de ses sous-systèmes
 
-image:{images}/req-exp1.png[width="70%"]
+image::{images}/req-exp1.png[width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
@@ -365,17 +365,17 @@ Il existe ensuite les relations entre les besoins et les autres éléments de mo
 dans la partie <<transvers,transverse>>.
 
 .Relations liées au _requirements_ dans TOPCASED
-image:{images}/topcased-req-connections.png[width="20%"]
+image::{images}/topcased-req-connections.png[width="20%"]
 
 === Les _Requirements Diagrams_ 
 
 Quelques exemples de +req+ tirés de http://www.uml-sysml.org/sysml :
 
-image:{images}/hsuv-reqs1.png[width="90%"]
+image::{images}/hsuv-reqs1.png[width="90%"]
 
 ifdef::backend-slidy2[<<<]
 
-image:{images}/hsuv-reqs2.png[width="90%"]
+image::{images}/hsuv-reqs2.png[width="90%"]
 
 === Les considerations sur la _Traceability_
 
@@ -394,7 +394,7 @@ Il est possible d'annoter les éléments de modélisation en précisant les rais
 (_rationale_) ou les éventuels problèmes anticipés (_problem_).
 
 .Exemples de _rationale_ et _problem_
-image:{images}/hsuv-reqs2.png[width="90%"]
+image::{images}/hsuv-reqs2.png[width="90%"]
 
 === Les _Use Case Diagrams_ (scénarios) 
 
@@ -402,17 +402,19 @@ Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comporte
 	ici du fait de leur proximité avec les _requirements_.
 
 .Exemple de lien entre _use case_ et _requirements_
-image:{images}/req-uc-relation.png[width="40%"]
+image::{images}/req-uc-relation.png[width="40%"]
 
 ifdef::backend-slidy2[<<<]
 
 Ce diagramme est exactement identique à celui d'{uml}.
 
-image:{images}/UCGestionNotes.png[width="60%"]
+.Exemple de diagrammes des cas d'utilisation
+image::{images}/UCGestionNotes.png[width="60%"]
 
 ifdef::backend-slidy2[<<<]
 
-image:{images}/uc.png[width="60%"]
+.Autre exemple de diagrammes des cas d'utilisation
+image::{images}/uc.png[width="60%"]
 
 [TIP]
 ====
@@ -434,7 +436,7 @@ Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plu
 ifdef::backend-slidy2[<<<]
 
 .Exemple de démarche (_SYSMOD Zigzag pattern_)
-image:{images}/zigzag.png[width="80%",link="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"]
+image::{images}/zigzag.png[width="80%",link="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"]
 
 
 === {revisions}
@@ -489,10 +491,11 @@ Un +bdd+ peut représenter :
 ifdef::backend-slidy2[<<<]
 
 Un diagramme de block décrit les relations entre les blocks (composition, généralisations, ...).
+Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
 
 [[contextebdd]]
 .bdd du système dans son environnement
-image:{images}/pacemaker-context.png[width="70%"]
+image::{images}/pacemaker-context.png[width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
@@ -514,7 +517,7 @@ _User defined_::
 ifdef::backend-slidy2[<<<]
 
 .Exemple de définition de contraintes
-image:{images}/constraints.png[width="70%"]
+image::{images}/constraints.png[width="70%"]
 
 
 ==== Propriétés
@@ -530,14 +533,15 @@ _references_::
 
 [NOTE]
 ====
-Les _values_ sont ce qui se rapproche de plus des attributs de classes UML.
+Les _values_ sont ce qui se rapproche le plus des attributs de classes UML.
 ====
 
 ==== _Value Types_
 
 Pour typer les valeurs, {SysML} propose de définir des _Value Types_.
 
-image:{images}/valueType.png[width="90%"]
+.Définition de _Value Types_.
+image::{images}/valueType.png[width="90%"]
 
 ==== Associations entre blocks
 
@@ -575,11 +579,13 @@ ifdef::backend-slidy2[<<<]
 On représente les _parts_ comme des block en traits pleins
 et les _references_ comme des blocks en trait pointillés.
 
-image:{images}/parts.png[width="70%"]
+.Exemple de _Parts_
+image::{images}/parts.png[width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
-image:{images}/parts2.png[width="70%"]
+.Parts
+image::{images}/parts2.png[width="70%"]
 
 ==== Ports
 
@@ -612,8 +618,8 @@ Les ports de type +Flux+ peuvent être :
 
 [NOTE]
 ====
-Un flow port atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux), 
-la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un Value Type représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
+Un _flow port_ atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux), 
+la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un block ou un _Value Type_ représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
 ====
 
 [[param]]
@@ -630,7 +636,7 @@ Ce diagramme utilise 3 concepts clefs :
 C'est un block particulier :
 
 - avec un stéréotype `≪constraint≫` (au lieu de block)
-- des parametres en guise d'attributs
+- des paramètres en guise d'attributs
 - des relations liant (contraignant) ces paramètres
 
 image:{images}/constraints.png[width="80%"]
@@ -653,16 +659,17 @@ image:{images}/blockconf.png[width="90%", link="http://books.google.fr/books?id=
 
 Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement). 
 
-Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails. Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence complet.
+Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails. Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence classique (cf. section sur les <<diagrammes de séquence,seq>>).
 
 image:{images}/dss.png[width="90%"]
 
 === {resume}
-En résumé...
+En résumé, il existe plusieurs diagrammes permettant d'exprimer la structure du système à concevoir. En fonction du niveau de détail nécessaire on peut voir les sous-systèmes comme des boîtes noires (des blocks) ou comme des boîtes blanches (grâce à l'+ibd+ correspondant).
 
 === {revisions}
 
 . Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
+. Quelles sont les différences entre une association dirigée (+->+), une composition (losange noir) et l'agrégation (losange blanc)?
 
 == Le comportement du système
 [[behavior]]
@@ -686,7 +693,7 @@ On abordera :
 - les _State Machines_
 - les _Activity Diagrams_
 
-==== _Use Case Diagrams_
+=== _Use Case Diagrams_
 
 Les éléments de base :
 
@@ -703,11 +710,239 @@ Association::
 Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
 ====
 
-==== _Sequence Diagrams_ 
+=== Le Diagramme des Cas d’Utilisation
 
-==== _State Machines_
+Le *Diagramme des Cas d'Utilisation* est un diagramme {UML} permettant de représenter :
 
-==== _Activity Diagrams_
+- les *UC* (_Use Case_ ou Cas d’Utilisation)
+- les *acteurs* (principaux et secondaires)
+- les *relations* 
+* entre acteurs et _Use Case_
+* entre _Use Cases_
+
+[NOTE]
+=====================================================================
+On notera simplement +uc+ pour signifier "diagramme des UC"
+=====================================================================
+
+==== Cas d'Utilisation (_Use Case_)
+
+include::{defs}/uc.txt[]
+
+===== Exemple de cas d'utilisation (UML)
+
+Retrait par carte bancaire
+
+Scénario principal::
+	L'UC démarre lorsque le Guichet Automatique Bancaire (GAB) demande au client son numéro confidentiel après l’introduction de sa CB. Le client 
+	entre son code et valide son entrée. Le GAB contrôle la validité du code. Si le code est valide, le GAB autorise 
+	le retrait et l’UC se termine.
+Scénario alternatif n°1 ::
+	Le client peut à tout instant annuler l'opération. La carte est éjectée et l'UC se termine.
+Exemple de codification de l'UC:: 
+	UC01 ou RetraitCB (pour Retrait par carte bleue)
+
+===== Précisions
+
+Un cas d'utilisation peut être précisé par : 
+
+- une description textuelle
+- un ou des diagrammes {UML} (séquence, activité)
+
+[NOTE]
+=====================================================================
+Dans les outils, cette "précision" se manifeste par le fait que l'on "attache"
+généralement un diagramme de séquence à un cas d'utilisation (clic droit sur un _Use Case_ -> nouveau +seq+).
+=====================================================================
+
+==== Acteur
+
+include::{defs}/acteur.txt[]
+
+On peut trouver plusieurs types d'acteurs :
+
+* extérieurs au système (cf. +actor+ <<ucdiag,Diagramme d'UC ci-après>>)
+** les acteurs principaux 
+** les acteurs secondaires 
+* exemples de types d'acteurs prédéfinis dans UML :
+** +\<<utility>>+
+** +\<<process>>+
+** +\<<thread>>+
+
+[NOTE]
+====
+On peut utiliser des liens de généralisation/spécialisation entre acteurs
+pour représenter les possibilités pour le spécialisé d'avoir les mêmes
+prérogatives (notamment en terme d'utilisation du système) que le généralisé.
+====
+
+==== Relations entre acteurs et _Use Case_
+
+En général, une simple association relie acteurs et _Use Case_.
+On peut également orienter ces associations.
+
+==== Relations entre _Use Case_
+
+Après avoir lister les cas d'utilisation, il est utile de les organiser et de montrer les relations entre eux.
+Plusieurs relations sont possibles :
+
+Extension (+\<<extend>>+)::
+	Indique que le _Use Case_ source est *éventuellement* exécutée en complément du _Use Case_ destination (cas particulier, erreur...)
+Inclusion (+\<<include>>+)::
+	Indique que le _Use Case_ est inclus *obligatoirement* dans un autre _Use Case_ (notion de sous-fonction par exemple)
+Généralisation::
+	Relation entre un _Use Case_ général et un autre plus spécialisé qui hérite de ses caractéristiques et en rajoute (différents modes d'utilisation d'un système par exemple)
+
+//ifdef::backend-slidy2[<<<]
+
+[[ucdiag]]
+.Notation dans le diagramme d'UC
+image::{acsi}/dessins/UC.png["Diagramme d'UC",width=35%"]
+
+[TIP]
+=====================================================================
+On n'utilise généralement `<<include>>` que dans le cas où le sous-cas d'utilisation est
+inclut dans plusieurs UC. Si ce n'est pas le cas, il est généralement englobé dans l'UC.
+=====================================================================
+
+
+==== Pour construire un UC (de manière générale)
+
+. identifier les acteurs
+. identifier les cas d'utilisation
+. structurer en _packages_
+. finaliser les diagrammes de cas d'utilisation (ajouter les relations)
+
+[NOTE]
+====
+Certains méthodologistes (comme T. Wielkins) préconisent de ne pas utiliser les acteurs et les cas d'utilisation
+(cf. son blog)
+====
+
+==== Exemples complets (UML)
+
+===== Service comptable
+
+[[ucexp]]
+.Exemple de diagramme d'UC
+image::{acsi}/images/UC.png["Exemple de Diagramme d'UC",width="80%"]
+
+===== Gestion des notes
+
+[[ucexp2]]
+.Autre exemple de diagramme d'UC
+image::{acsi}/images/uc2.png["Exemple de Diagramme d'UC",width="70%"]
+
+[[seq]]
+=== _Sequence Diagrams_ 
+
+==== Généralités
+
+Il permet de :
+
+* modéliser les interactions entre blocks
+* séquencer ces interactions dans le temps
+* représenter les échanges de messages
+* spécifier les scénarios des cas d'études
+
+Les éléments qui composent ce diagramme sont :
+
+Participants::
+	les éléments en interaction (des blocks généralement)
+Lignes de vie::
+	des lignes verticales qui permettent d'indiquer un départ ou une arrivée d'interaction
+Barres d'activation::
+	pour matérialiser quand l'élément est actif
+Messages::
+	ce qui "circule" d'un élément à l'autre (signal, appel de méthode, ...)
+
+ifdef::backend-slidy2[<<<]
+
+.Diagramme de séquence
+image:{acsi}/{images}/seq1.png["Diagramme de séquence",width="40%"]
+image:{acsi}/{images}/seq2.png["Eléments de notation",width="40%"]
+
+[WARNING]
+=====================================================================
+Les participants (et leur ligne de vie) représentent des instances de blocks (souvent "anonymes").
+=====================================================================
+
+==== Exemple
+
+[[seqexp]]
+.Exemple de diagramme de séquence
+image::{acsi}/{images}/seq3.png["Exemple de diagramme de séquence",width="60%"]
+
+==== Notions avancées
+
+On peut également représenter des instructions itératives et conditionnelles au travers de
+*cadres d'interaction* :
+
+* +loop+ (boucle)
+* +alt+ (alternative)
+* +opt+ (optionel)
+* +par+ (parallèle)
+* +region+ (région critique - un seul _thread_ à la fois)
+
+ifdef::backend-slidy2[<<<]
+
+[[fowler]]
+.Exemple algorithme / diagramme
+image:{acsi}/{images}/fowl1.png["Un algorithme",width="30%"]
+image:{acsi}/{images}/fowl2.png["Sa modélisation",width="60%"]
+
+==== Exemple de conceptions
+
+[[fowler1]]
+.Conception "centralisée"
+image::{acsi}/{images}/fowl3.png["Conception 'centralisée'",width="60%"]
+
+ifdef::backend-slidy2[<<<]
+
+[[fowler2]]
+.Conception "objet"
+image::{acsi}/{images}/fowl4.png["Conception 'objet'",width="60%"]
+
+
+[NOTE]
+====
+On utilise le diagramme de séquence pour représenter des algorithmes et des séquencements temporels. Lorsque le comportement se rapproche plus d'un flot, on utilise le diagramme d'activité (cf. section sur le <<diagramme d'activité,act>>).
+====
+
+==== Lien entre UC, DSS et DS
+
+La décomposition hiérarchique permet une description "_TOP-DOWN_" du système à réaliser.
+
+On fait un Diagramme de Séquence Système pour chaque cas d'utilisation (issu du Diagramme d’UC) pour déterminer les échanges d’informations entre l’acteur et le système.
+
+Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocks composant le système (issus du +bdd+) collaborent pour réaliser le traitement demandé.
+
+ifdef::backend-slidy2[<<<]
+
+[[exp1-uc]]
+.Diagramme d'UC
+image::{acsi}/{images}/ucexp1.png["Diagramme d'UC",width="30%"]
+
+ifdef::backend-slidy2[<<<]
+
+[[exp1-dss]]
+.Le DSS correspondant
+image::{acsi}/{images}/dssexp1.png["Le DSS correspondant",width="30%"]
+
+ifdef::backend-slidy2[<<<]
+
+[[exp1-ds]]
+.Le DS correspondant
+image::{acsi}/{images}/dsexp1.png["Le DS correspondant",width="70%"]
+
+=== _State Machines_
+
+To be completed...
+
+[[act]]
+=== _Activity Diagrams_
+
+To be completed...
 
 === {resume}
 En résumé...
@@ -743,11 +978,30 @@ Chaque _requirement_ doit être relié à au moins un _use case_ (et vice-versa!
 
 === Traçabilité des exigences
 
-Nous avons vu...
+Nous avons vu déjà un certain nombre de mécanismes {sysml} qui permettent de tracer les exigences.
+Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un block `<<satisfy>>` une exigence).
+
+.Traçabilité
+[cols="h,3*",options="header",width="50%"]
+|======================
+|					| {Requirements} 							| {Structure}	| {Behavior} 
+| {Requirements}	| `<<deriveRqt>>`, `<<refine>>`, `<<copy>>` |    			|				
+| {Structure}		| `<<allocate>>`, `<<satisfy>>`				| 				| `<<allocate>>`
+| {Behavior}		| `<<refine>>`								|				|				
+|======================
+
+XXX Mettre un exemple avec tous ces liens.
 
 === Mécanismes d'allocation
 
-Parler du `<<AllocatedTo>>`
+Un mécanisme nouveau en {sysml} et important pour l'{is} est le mécanisme d'*allocation*. Il permet de
+préciser quel élément conceptuel (comme un comportement ou une activité) est alloué sur quel élément physique.
+
+Il est possible d'exprimer cette allocation de plusieurs manières.
+
+Parler du `<<AllocatedTo>>`, compartiments des blocks et autres annotations.
+Parler des zones d'allocation dans les machines à états où les diagrammes d'activités par exemple.
+Parler des `<<allocate>>`.
 
 === Diagramme paramétrique	
 
@@ -761,8 +1015,46 @@ Certaines approchent (cf. <<MéDISIS>>) utilisent des feuilles excel pour tradui
 ====
 
 === {resume}
-En résumé...
+En résumé l'expression du comportement du système en {sysml} est très similaire à ce qui est fait dans {uml}. On retrouve néanmoins le renforcement des liens entre éléments de modèles par les dépendances précises et les allocations.
 
 === {revisions}
-Pour réviser...
+
+==== Exercices
+
+===== Diagramme des cas d'utilisation
+
+Placez dans un diagrammes des cas d'utilisation les différents acteurs et cas correspondant à l'étude de cas suivante 
+(en indiquant les relations) :
+
+[quote]
+____________________________________________________________________
+Pour faciliter sa gestion, un entrepôt de stockage envisage de concevoir un système permettant d'allouer automatiquement un emplacement de stockage pour chaque produit du chargement des camions qui convoient le stock à entreposer.
+Lors de l’arrivée d’un camion, un employé doit saisir dans le système les caractéristiques de chaque article ; le système produit alors une liste où figure un emplacement pour chaque article. Lors du chargement d’un camion les caractéristiques des articles à charger dans un camion sont saisies par un employé afin d’indiquer au système de libérer les emplacements correspondant.
+____________________________________________________________________
+
+ifdef::correction[]
+
+.Réponse
+image::{acsi}/../partiels/iut-S3-2012-stock-uc.png[width="60%"]
+
+endif::correction[]
+
+==== Questions de révisions
+
+. Quelles sont les différences entre `<<satisfy>>` et `<<allocate>>` ?
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+. L'inverse est-il aussi important ?
+
+ifdef::correction[]
+
+Éléments de réponses :
+
+. Quelles sont les différences entre `<<satisfy>>` et `<<allocate>>` ?
+La satisfaction concerne une propriété (d'une solution vis à vis d'un problème) quand l'allocation permet de rajouter un information sur qui fait quoi.
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+Sinon on peut se demander s'il s'agit vraiment d'une utilisation du système qui nous concerne (une exigence a-t'elle été oubliée?).
+. L'inverse est-il aussi important ?
+Encore plus je dirais, au sens où une exigence n'est couverte par aucune utilisation du système (cela peut arriver lors d'une exigence non satisfiable!)
+
+endif::correction[]
 

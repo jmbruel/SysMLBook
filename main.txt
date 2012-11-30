@@ -11,6 +11,8 @@
 :startdate: 26/07/2012
 :images: images
 :dessins: dessins
+:acsi: /Users/bruel/dev/asciidoc/ACSI
+:defs: /Users/bruel/dev/asciidoc/ACSI/defs
 :toc_title: Content
 :slideshowlocation: [IUT Blagnac]
 :duration: 85
@@ -252,6 +254,7 @@ Un quizz en ligne est disponible http://webetud.iut-blagnac.fr/mod/quiz/view.php
 
 En voici une capture d'écran :
 
+.Exemple de QCM sur SysML
 image::{images}/quizz.png["Crosword", width="60%"]
 
 
@@ -266,6 +269,7 @@ L'ensemble des questions du quizz a été généré à partir de ce fichier
 
 Voici un petit exercice (en anglais pour l'instant, désolé) pour changer :
 
+.Mots-croisés sur SysML
 image::{images}/crossword.png["Crosword"]
 
 Vertical (across)::

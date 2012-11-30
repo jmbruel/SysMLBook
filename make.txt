@@ -32,9 +32,9 @@ endif::posix[]
 :iconsdir: {asciidocdir}/images/icons
 
 // remove exclamation mark (!) to select output
-:html!:
-:slidy!:
-:pdf:
+:html:
+:slidy:
+:pdf!:
 :ditaa!:
 
 // remove exclamation mark (!) to select audience

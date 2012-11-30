@@ -65,7 +65,8 @@ On parle de système complexe lorsque l'on a affaire à :
 ** intégrés pour fournir des services (finalité du système) en fonction de leur environnement
 ** interagissant entre eux et avec leur environnement
 
-image:{images}/starwars.jpeg[alt="Système complexe",link="freeblueprints.net",width="70%"]
+.Un système complexe
+image::{images}/starwars.jpeg[alt="Système complexe",link="freeblueprints.net",width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
@@ -75,42 +76,45 @@ On parle aussi de *Système de systèmes* quand un système :
 - assure un comportement prévu à l'avance
 - gère les comportements (de l'environnement) inatendus
 
-image:{images}/starwars2.jpeg[alt="Système de systèmes",link="starwars.wikia.com",width="70%"]
+.Un système de système
+image::{images}/starwars2.jpeg[alt="Système de systèmes",link="starwars.wikia.com",width="70%"]
 
 === Différents types d'analyse
 
 Toute la question que l'{is} cherche à résoudre est : comment passer des exigences au système
 de la façon la plus efficace possible.
  
-image:{images}/analyse1.png[alt="Des reqs au système",width="70%"]
+.Des exigences au système
+image::{images}/analyse1.png[alt="Des reqs au système",width="70%"]
 
 Pour cela l'{is} est découpée en plusieurs analyses, chacune avec un but bien particulier :
 
 ifdef::backend-slidy2[<<<]
 
 .Analyse Fonctionnelle et/ou Comportementale
-image:{images}/analyse2.png[alt="Des reqs au système",width="70%"]
+image::{images}/analyse2.png[alt="Des reqs au système",width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Analyse Structurelle
-image:{images}/analyse3.png[alt="Des reqs au système",width="70%"]
+image::{images}/analyse3.png[alt="Des reqs au système",width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Analyse de performance
-image:{images}/analyse4.png[alt="Des reqs au système",width="70%"]
+image::{images}/analyse4.png[alt="Des reqs au système",width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
 .Analyses spécifiques
-image:{images}/analyse5.png[alt="Des reqs au système",width="70%"]
+image::{images}/analyse5.png[alt="Des reqs au système",width="70%"]
 
 ifdef::backend-slidy2[<<<]
 
 Pour arriver à combler le gap entre le système à développer et ses spécifications.
 
-image:{images}/analyse6.png[alt="Des reqs au système",width="70%"]
+.Des exigences au système
+image::{images}/analyse6.png[alt="Des reqs au système",width="70%"]
 
 == Normes et standards
 

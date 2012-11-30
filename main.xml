@@ -6,14 +6,14 @@
 <book lang="en">
 <bookinfo>
     <title>Introduction à SysML</title>
-    <date>18/11/2012</date>
+    <date>30/11/2012</date>
     <author>
         <firstname>Jean-Michel</firstname>
         <surname>Bruel</surname>
         <email>jean-michel.bruel@univ-tlse2.fr</email>
     </author>
     <authorinitials>JMB</authorinitials>
-<revhistory><revision><revnumber>1.0</revnumber><date>18/11/2012</date><authorinitials>JMB</authorinitials></revision></revhistory>
+<revhistory><revision><revnumber>1.0</revnumber><date>30/11/2012</date><authorinitials>JMB</authorinitials></revision></revhistory>
 </bookinfo>
 <preface>
 <title></title>
@@ -58,7 +58,7 @@ vous souhaitez préparer la certification de l&#8217;<ulink url="http://www.omg.
 </section>
 <section id="_historique">
 <title>Historique</title>
-<simpara>Ce document est la compilation de plusieurs années d&#8217;enseignement de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Ce document est la compilation de plusieurs années d&#8217;enseignement de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> depuis 2007, que ce soit :</simpara>
 <itemizedlist>
@@ -231,7 +231,7 @@ pour lire au format <ulink url="main.mobi">Kindle</ulink> (bientôt!)
 <section id="_utilisation_et_autres_mentions_légales">
 <title>Utilisation et autres mentions légales</title>
 <sidebar>
-<simpara>Dernière MAJ : 18/11/2012 - 20:49:38 CET<?asciidoc-br?>
+<simpara>Dernière MAJ : 30/11/2012 - 13:39:38 CET<?asciidoc-br?>
 Document généré par <ulink url="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</ulink> via <ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> (version <literal>8.6.8</literal>) de <emphasis>Stuart Rackham</emphasis>.
 La version présentation a été générée en utilisant <ulink url="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</ulink> &#169; de <emphasis>Dave Raggett</emphasis>, amélioré par <ulink url="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</ulink>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <emphasis>Licence Creative Commons</emphasis>.
@@ -297,30 +297,30 @@ La "carte de base"
 </listitem>
 </varlistentry>
 </variablelist>
-<simpara>A part le chapitre <link linkend="umlAsysml">d&#8217;UML à SysML</link>, aucune connaissance particulière d&#8217;<ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+<simpara>A part le chapitre <link linkend="umlAsysml">d&#8217;UML à SysML</link>, aucune connaissance particulière d&#8217;<ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm> n&#8217;est nécessaire.
 Il s&#8217;agit d&#8217;un partie pris prenant en compte plusieurs points :</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
-La plupart des ingénieurs systèmes ne connaissent pas <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+La plupart des ingénieurs systèmes ne connaissent pas <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm>
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Les étudiants de STI2D ne connaissent pas <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+Les étudiants de STI2D ne connaissent pas <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
-</indexterm> et sont pourtant formés à <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+</indexterm> et sont pourtant formés à <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Ceux qui connaissent <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+Ceux qui connaissent <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm> auront sûrement plaisir à retrouver les bases
 </simpara>
@@ -330,51 +330,8 @@ Ceux qui connaissent <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
 <chapter id="_c_8217_est_quoi_sysml">
 <title>C&#8217;est quoi SysML?</title>
 <simpara>Si vous ne deviez lire qu&#8217;un seul chapitre, voilà ce qu&#8217;il faudrait retenir&#8230;</simpara>
-<note>
-<title>Carte d&#8217;identité</title>
-<itemizedlist>
-<listitem>
-<simpara>
-Date de naissance : 2001!
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-Version actuelle : 1.3 (2/6/2012)
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-Paternité : <ulink url="http://www.omg.org">OMG</ulink>/<ulink url="http://www.uml.org/">UML</ulink> <indexterm>
-  <primary>UML</primary>
-</indexterm> + <ulink url="http://www.incose.org/">INCOSE</ulink>
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-Auteurs principaux
-</simpara>
-<itemizedlist>
-<listitem>
-<simpara>
-Conrad Bock
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-Cris Kobryn
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-Sanford Friedenthal
-</simpara>
-</listitem>
-</itemizedlist>
-</listitem>
-</itemizedlist>
-</note>
-<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>include:fiche.txt[]</simpara>
+<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>, <emphasis role="strong">c&#8217;est</emphasis> :</simpara>
 <itemizedlist>
@@ -446,18 +403,18 @@ Diagramme d&#8217;exigence (<literal>req</literal>)
 </listitem>
 <listitem>
 <simpara>
-Un profil <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+Un profil <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
-</indexterm>, c&#8217;est à dire une extension de cette notation
+</indexterm>, c&#8217;est à dire une <emphasis role="strong">extension</emphasis> de cette notation
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de référence à la modélisation des systèmes
+Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de <emphasis role="strong">référence</emphasis> à la modélisation des systèmes
 </simpara>
 </listitem>
 </itemizedlist>
-<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>, <emphasis role="strong">ce n&#8217;est pas</emphasis> :</simpara>
 <itemizedlist>
@@ -482,15 +439,16 @@ Un raton laveur (c&#8217;est juste pour voir ceux qui suivent)
 <title>A propos du Bac STI2D</title>
 <simpara id="STI2D">Si vous utilisez cet ouvrage dans le cadre du bac STI2D <indexterm>
   <primary>STI2D</primary>
-</indexterm> qui a introduit depuis 2011 la notation <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+</indexterm> qui a introduit depuis 2011 la notation <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> au programme, nous donnerons
 ici (bientôt) des conseils sur l&#8217;utilisation de ce cours <footnote><simpara>Je remercie au passage les collègues de Lycée rencontrés dans le cadre de <ulink url="http://www.sysml-france.fr">SysML-France</ulink> pour nos fructueuses discussions à ce sujet.</simpara></footnote>.</simpara>
 <simpara>L&#8217;objectif en STI2D <indexterm>
   <primary>STI2D</primary>
-</indexterm> n&#8217;est pas de former des spécialistes de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+</indexterm> n&#8217;est pas de former des spécialistes de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> mais de permettre à tous d&#8217;apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l&#8217;importance de la communication devront primer.</simpara>
+<simpara>A l&#8217;heure où nous écrivons ces lignes, il est également prévu de l&#8217;enseigner en classe prépa dès 2013.</simpara>
 </chapter>
 <chapter id="_un_exemple_fil_rouge">
 <title>Un exemple fil rouge</title>
@@ -589,7 +547,7 @@ Requirements
 </term>
 <listitem>
 <simpara>
-        Les exigences et leur prises en compte sont un éléments critique pour le succès du développement du système. Sans explorer l&#8217;ensemble des activités d&#8217;ingénierie système (ce qui nécessiterait tout un volume du type de <xref linkend="reqs"/>) nous insisterons beaucoup sur cet aspect qui est souvent à l&#8217;origine de l&#8217;intérêt de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+        Les exigences et leur prises en compte sont un éléments critique pour le succès du développement du système. Sans explorer l&#8217;ensemble des activités d&#8217;ingénierie système (ce qui nécessiterait tout un volume du type de <xref linkend="reqs"/>) nous insisterons beaucoup sur cet aspect qui est souvent à l&#8217;origine de l&#8217;intérêt de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>.
 </simpara>
@@ -601,7 +559,7 @@ Structure
 </term>
 <listitem>
 <simpara>
-        La description de l&#8217;architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important. C&#8217;est souvent la partie de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+        La description de l&#8217;architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important. C&#8217;est souvent la partie de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> qui pose le moins de problème aux débutants.
 </simpara>
@@ -683,7 +641,7 @@ Implémentation
 </chapter>
 <chapter id="_différence_avec_l_8217_ingénierie_logicielle">
 <title>Différence avec l&#8217;ingénierie logicielle</title>
-<simpara>Enseignant en informatique, je me retrouve souvent à enseigner <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Enseignant en informatique, je me retrouve souvent à enseigner <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> à des informaticiens.
 D&#8217;où ce petit exposé sur mon opinion de la différence entre les deux "mondes".</simpara>
@@ -722,12 +680,14 @@ interagissant entre eux et avec leur environnement
 </itemizedlist>
 </listitem>
 </itemizedlist>
-<simpara><inlinemediaobject>
+<figure><title>Un système complexe</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/starwars.jpeg" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Système complexe</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</figure>
 <simpara>On parle aussi de <emphasis role="strong">Système de systèmes</emphasis> quand un système :</simpara>
 <itemizedlist>
 <listitem>
@@ -746,12 +706,14 @@ gère les comportements (de l&#8217;environnement) inatendus
 </simpara>
 </listitem>
 </itemizedlist>
-<simpara><inlinemediaobject>
+<figure><title>Un système de système</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/starwars2.jpeg" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Système de systèmes</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_différents_types_d_8217_analyse">
 <title>Différents types d&#8217;analyse</title>
@@ -759,46 +721,58 @@ gère les comportements (de l&#8217;environnement) inatendus
   <primary>IS</primary>
 </indexterm> cherche à résoudre est : comment passer des exigences au système
 de la façon la plus efficace possible.</simpara>
-<simpara><inlinemediaobject>
+<figure><title>Des exigences au système</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/analyse1.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Des reqs au système</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</figure>
 <simpara>Pour cela l&#8217;Ingénierie Système <indexterm>
   <primary>IS</primary>
 </indexterm> est découpée en plusieurs analyses, chacune avec un but bien particulier :</simpara>
-<formalpara><title>Analyse Fonctionnelle et/ou Comportementale</title><para><inlinemediaobject>
+<figure><title>Analyse Fonctionnelle et/ou Comportementale</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/analyse2.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Des reqs au système</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Analyse Structurelle</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Analyse Structurelle</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/analyse3.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Des reqs au système</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Analyse de performance</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Analyse de performance</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/analyse4.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Des reqs au système</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Analyses spécifiques</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Analyses spécifiques</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/analyse5.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Des reqs au système</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 <simpara>Pour arriver à combler le gap entre le système à développer et ses spécifications.</simpara>
-<simpara><inlinemediaobject>
+<figure><title>Des exigences au système</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/analyse6.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>Des reqs au système</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</figure>
 </section>
 </chapter>
 <chapter id="_normes_et_standards">
@@ -826,6 +800,14 @@ des notations et langages pour réaliser et communiquer avec ces modèles (cf. <
   <primary>IS</primary>
 </indexterm>.
 Nous renvoyons pour l&#8217;instant le lecteur au cours de Master qui précède ce cours.</simpara>
+<figure><title>300 corps de métiers sont parfois présents sur un chantier</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="images/ingenierie-des-exigences.jpg"/>
+  </imageobject>
+  <textobject><phrase>Joke</phrase></textobject>
+</mediaobject>
+</figure>
 <figure id="fig:eggs"><title>Humour (taken from <ulink url="https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74">here</ulink>)</title>
 <mediaobject>
   <imageobject>
@@ -871,7 +853,7 @@ Nous nous contenterons de donner ici quelques heuristiques (cf. Annexe <link lin
 <title>Partie 3 : La notation SysML</title>
 <chapter id="Notation">
 <title>Pourquoi une nouvelle notation</title>
-<simpara>Il existe une notation qui se veut "unifiée" pour les modèles : <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+<simpara>Il existe une notation qui se veut "unifiée" pour les modèles : <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm>.
 Néanmoins cette notation est peu adaptée pour l&#8217;Ingénierie Système <indexterm>
@@ -902,7 +884,7 @@ Peu de liens entre les modèles et les exigences
 </listitem>
 <listitem>
 <simpara>
-UML 2.x n&#8217;est pas beaucoup mieux si n&#8217;est :
+UML 2.x n&#8217;est pas beaucoup mieux si ce n&#8217;est :
 </simpara>
 <itemizedlist>
 <listitem>
@@ -918,7 +900,7 @@ Introduction du diagramme de structure composite
 </itemizedlist>
 </listitem>
 </itemizedlist>
-<simpara>En conclusion <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+<simpara>En conclusion <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm> est une bonne base :</simpara>
 <itemizedlist>
@@ -981,7 +963,7 @@ Version actuelle : 1.3 (2/6/2012)
 </listitem>
 <listitem>
 <simpara>
-Paternité : <ulink url="http://www.omg.org">OMG</ulink>/<ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+Paternité : <ulink url="http://www.omg.org">OMG</ulink>/<ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm> + <ulink url="http://www.incose.org/">INCOSE</ulink>
 </simpara>
@@ -1016,12 +998,14 @@ Sanford Friedenthal
 </section>
 <section id="_différence_avec_uml">
 <title>Différence avec UML</title>
-<formalpara><title>Liens entre UML et SysML</title><para><inlinemediaobject>
+<figure><title>Liens entre UML et SysML</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/diff.png" contentwidth="60%"/>
   </imageobject>
   <textobject><phrase>images/diff.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_qui_est_derrière">
 <title>Qui est "derrière"?</title>
@@ -1060,28 +1044,32 @@ AP-233, INCOSE, Georgia Institute of Technology, AFIS, &#8230;
 </section>
 <section id="_organisation_des_différents_diagrammes">
 <title>Organisation des différents diagrammes</title>
-<formalpara><title>Les 9 diagrammes SysML et leur lien avec UML</title><para><inlinemediaobject>
+<figure><title>Les 9 diagrammes SysML et leur lien avec UML</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/Figure4.1.png" contentwidth="90%"/>
   </imageobject>
   <textobject><phrase>images/Figure4.1.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Version abrégée des diagrammes</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Version abrégée des diagrammes</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/Figure4.1-bis.png" contentwidth="90%"/>
   </imageobject>
   <textobject><phrase>images/Figure4.1-bis.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_différence_entre_modèle_et_dessin">
 <title>Différence entre modèle et dessin</title>
-<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> n&#8217;est pas une palette de dessins et d'éléments de base servant à faire
-des diagrammes. Il existe une représentation graphique des éléments modélisés en <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+des diagrammes. Il existe une représentation graphique des éléments modélisés en <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c&#8217;est <emphasis role="strong">le modèle</emphasis> qui importe le plus.</simpara>
-<simpara>C&#8217;est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>C&#8217;est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> <footnote><simpara>Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.</simpara></footnote>, mais d&#8217;utiliser des outils dédiés (cf. section <xref linkend="Outils"/>).</simpara>
 <simpara>Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section (nous utilisons ici le "plan" vu lors de l&#8217;introduction de la <xref linkend="Matrice"/>) :</simpara>
@@ -1131,48 +1119,27 @@ rowsep="1" colsep="1"
 <chapter id="_outils_sysml">
 <title>Outils SysML</title>
 <simpara id="Outils">Il existe un certain nombre d&#8217;outils permettant de réaliser des modèles SysML. Voici une liste non exhaustive :</simpara>
-<itemizedlist>
-<listitem>
-<simpara>
-<ulink url="http://www.topcased.org/">TopCased</ulink>
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-<ulink url="http://www.eclipse.org/modeling/mdt/papyrus/">Papyrus</ulink>
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-<ulink url="http://www.artisansw.com/">Artisan</ulink>
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-<ulink url="http://www-01.ibm.com/software/rational/products/rhapsody">Rhapsody</ulink>
-</simpara>
-</listitem>
-</itemizedlist>
+<simpara>include:outils.txt[]</simpara>
 <simpara>Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.</simpara>
 <simpara>Ce que je voudrai souligner ici c&#8217;est l&#8217;importance du modèle comme "dépôt" (je préfère le terme anglais de <emphasis>repository</emphasis>) d'éléments de base en relation les uns avec les autres. C&#8217;est toute la différence entre le dessin et le modèle.</simpara>
 <important><simpara>Attention toutefois à ne pas confondre ce que vous permet (ou pas) de faire l&#8217;outil et la notation elle-même. Les fabricants ont parfois pris des libertés ou bien n&#8217;ont pas complètement implémenté toutes les subtilités de la notation.</simpara></important>
 </chapter>
 <chapter id="_principes_de_base">
 <title>Principes de base</title>
-<simpara>Abordons quelques principes généraux de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Abordons quelques principes généraux de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>.</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
-Chaque diagramme <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+Chaque diagramme <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> représente un élément de modélisation
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Chaque diagramme <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+Chaque diagramme <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> doit être incluse dans un cadre (<emphasis>Diagram Frame</emphasis>)
 </simpara>
@@ -1207,12 +1174,14 @@ le nom du diagramme ou de la vue
 </itemizedlist>
 <simpara>Dans l&#8217;exemple ci-dessous, le diagramme "<emphasis>Context_Overview</emphasis>" est un <emphasis>Block Definition Diagram</emphasis> (type <literal>bdd</literal>) qui représente un
 <emphasis>package</emphasis>, nommé "Context".</simpara>
-<formalpara><title>Exemple de diagramme SysML</title><para><inlinemediaobject>
+<figure><title>Exemple de diagramme SysML</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/pacemaker-context.png" contentwidth="80%"/>
   </imageobject>
   <textobject><phrase>images/pacemaker-context.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </chapter>
 <chapter id="_organisation">
 <title>Organisation</title>
@@ -1307,7 +1276,7 @@ Les <emphasis>Dependencies</emphasis>
 <itemizedlist>
 <listitem>
 <simpara>
-Identique à <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+Identique à <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm>, et classique pour les développeurs (java notamment)
 </simpara>
@@ -1429,30 +1398,38 @@ etc.
 </simpara>
 </listitem>
 </itemizedlist>
-<formalpara><title>Exemple d&#8217;organisation</title><para><inlinemediaobject>
+<figure><title>Exemple d&#8217;organisation</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/pkg-organisation2.png" contentwidth="60%"/>
   </imageobject>
   <textobject><phrase>images/pkg-organisation2.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Exemple d&#8217;organisation</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Exemple d&#8217;organisation</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/pkg-organisation-modelview.png" contentwidth="40%"/>
   </imageobject>
   <textobject><phrase>images/pkg-organisation-modelview.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Exemple d&#8217;organisation</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Exemple d&#8217;organisation</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/pkg-organisation.png" contentwidth="40%"/>
   </imageobject>
   <textobject><phrase>images/pkg-organisation.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Exemple d&#8217;organisation</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Exemple d&#8217;organisation</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/pkg-topcased.png" contentwidth="60%"/>
   </imageobject>
   <textobject><phrase>images/pkg-topcased.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 <note>
 <title>Organisation par défaut</title>
 <simpara>L&#8217;outil <ulink url="http://www.topcased.org">TOPCASED</ulink> propose, lors de la création d&#8217;un premier modèle, de créer une organisation
@@ -1477,7 +1454,7 @@ etc.
 <title>La notion de <emphasis>Namespaces</emphasis></title>
 <simpara>Un <emphasis>package</emphasis> est un espace de nommage pour tous les éléments qu&#8217;il contient.</simpara>
 <note>
-<simpara>Dans les outils <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Dans les outils <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>, vous pouvez demander à voir les noms complets (<emphasis>Qualified names</emphasis>)
 des éléments, c&#8217;est à dire le nom de l'élément prefixé par son (ou ses) <emphasis>package(s)</emphasis>
@@ -1548,10 +1525,10 @@ ou entre les <emphasis>packages</emphasis> eux-mêmes :</simpara>
 </section>
 <section id="_en_résumé">
 <title>En résumé</title>
-<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara><ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> propose un certain nombre de mécanismes pour organiser les différents modèles,
-tirés pour la plupart d&#8217;<ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+tirés pour la plupart d&#8217;<ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm>.</simpara>
 </section>
@@ -1679,8 +1656,8 @@ que les aspects en lien avec la modélisation système. Voir le livre de référ
 plus de détails (<xref linkend="Sommerville1997"/>) ou le guide de l&#8217;AFIS (<xref linkend="REQ2012"/>).</simpara>
 </note>
 </section>
-<section id="_l_8217_organization_des_emphasis_requirements_emphasis">
-<title>L&#8217;organization des <emphasis>Requirements</emphasis></title>
+<section id="_l_8217_organisation_des_emphasis_requirements_emphasis">
+<title>L&#8217;organisation des <emphasis>Requirements</emphasis></title>
 <simpara>Comme nous l&#8217;avons vu pour les <emphasis>packages</emphasis>, plusieurs types d&#8217;organisations sont possibles :</simpara>
 <itemizedlist>
 <listitem>
@@ -1753,18 +1730,22 @@ etc.
 <section id="_tableaux_de_emphasis_requirements_emphasis">
 <title>Tableaux de <emphasis>Requirements</emphasis></title>
 <simpara>Les <emphasis>requirements</emphasis> sont généralement stockés dans des feuilles excel.</simpara>
-<formalpara><title>Exemples tableau d&#8217;exigences</title><para><inlinemediaobject>
+<figure><title>Exemples tableau d&#8217;exigences</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/req-table.png" contentwidth="80%"/>
   </imageobject>
   <textobject><phrase>images/req-table.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<formalpara><title>Import Modelio de tableau d&#8217;exigences</title><para><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Import Modelio de tableau d&#8217;exigences</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/req-modelio.png" contentwidth="80%"/>
   </imageobject>
   <textobject><phrase>images/req-modelio.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </section>
 </section>
 <section id="_les_emphasis_requirements_properties_emphasis">
@@ -1834,37 +1815,45 @@ etc.
 </listitem>
 </varlistentry>
 </variablelist>
-<simpara><inlinemediaobject>
+<informalfigure>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/req-exp1.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>images/req-exp1.png</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</informalfigure>
 <simpara>Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
 (les <emphasis>block</emphasis> principalement) comme <literal>&lt;&lt;satisfy&gt;&gt;</literal> ou <literal>&lt;&lt;verify&gt;&gt;</literal>, mais nous les aborderons
 dans la partie <link linkend="transvers">transverse</link>.</simpara>
-<formalpara><title>Relations liées au <emphasis>requirements</emphasis> dans TOPCASED</title><para><inlinemediaobject>
+<figure><title>Relations liées au <emphasis>requirements</emphasis> dans TOPCASED</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/topcased-req-connections.png" contentwidth="20%"/>
   </imageobject>
   <textobject><phrase>images/topcased-req-connections.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_les_emphasis_requirements_diagrams_emphasis">
 <title>Les <emphasis>Requirements Diagrams</emphasis></title>
 <simpara>Quelques exemples de <literal>req</literal> tirés de <ulink url="http://www.uml-sysml.org/sysml">http://www.uml-sysml.org/sysml</ulink> :</simpara>
-<simpara><inlinemediaobject>
+<informalfigure>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/hsuv-reqs1.png" contentwidth="90%"/>
   </imageobject>
   <textobject><phrase>images/hsuv-reqs1.png</phrase></textobject>
-</inlinemediaobject></simpara>
-<simpara><inlinemediaobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/hsuv-reqs2.png" contentwidth="90%"/>
   </imageobject>
   <textobject><phrase>images/hsuv-reqs2.png</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</informalfigure>
 </section>
 <section id="_les_considerations_sur_la_emphasis_traceability_emphasis">
 <title>Les considerations sur la <emphasis>Traceability</emphasis></title>
@@ -1879,38 +1868,46 @@ sera abordé dans la partie <link linkend="transvers">transverse</link>.</simpar
 <title>Annotations des <emphasis>Requirements</emphasis></title>
 <simpara>Il est possible d&#8217;annoter les éléments de modélisation en précisant les raisons
 (<emphasis>rationale</emphasis>) ou les éventuels problèmes anticipés (<emphasis>problem</emphasis>).</simpara>
-<formalpara><title>Exemples de <emphasis>rationale</emphasis> et <emphasis>problem</emphasis></title><para><inlinemediaobject>
+<figure><title>Exemples de <emphasis>rationale</emphasis> et <emphasis>problem</emphasis></title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/hsuv-reqs2.png" contentwidth="90%"/>
   </imageobject>
   <textobject><phrase>images/hsuv-reqs2.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_les_emphasis_use_case_diagrams_emphasis_scénarios">
 <title>Les <emphasis>Use Case Diagrams</emphasis> (scénarios)</title>
 <simpara>Bien que nous traitions les cas d&#8217;utilisation dans la partie <link linkend="behavior">comportement</link>, nous les abordons
         ici du fait de leur proximité avec les <emphasis>requirements</emphasis>.</simpara>
-<formalpara><title>Exemple de lien entre <emphasis>use case</emphasis> et <emphasis>requirements</emphasis></title><para><inlinemediaobject>
+<figure><title>Exemple de lien entre <emphasis>use case</emphasis> et <emphasis>requirements</emphasis></title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/req-uc-relation.png" contentwidth="40%"/>
   </imageobject>
   <textobject><phrase>images/req-uc-relation.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
-<simpara>Ce diagramme est exactement identique à celui d&#8217;<ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+</mediaobject>
+</figure>
+<simpara>Ce diagramme est exactement identique à celui d&#8217;<ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm>.</simpara>
-<simpara><inlinemediaobject>
+<figure><title>Exemple de diagrammes des cas d&#8217;utilisation</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/UCGestionNotes.png" contentwidth="60%"/>
   </imageobject>
   <textobject><phrase>images/UCGestionNotes.png</phrase></textobject>
-</inlinemediaobject></simpara>
-<simpara><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Autre exemple de diagrammes des cas d&#8217;utilisation</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/uc.png" contentwidth="60%"/>
   </imageobject>
   <textobject><phrase>images/uc.png</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</figure>
 <tip>
 <simpara>Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.</simpara>
 </tip>
@@ -1943,7 +1940,7 @@ rowsep="1" colsep="1"
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara><emphasis role="strong">Organisation</emphasis></simpara></entry>
-<entry align="left" valign="top"><simpara><literal>⊕–</literal>, <literal>&lt;&lt;deriveRqt&gt;&gt;</literal></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>⊕–</literal>, <literal>&lt;&lt;deriveReqt&gt;&gt;</literal></simpara></entry>
 <entry align="left" valign="top"><simpara></simpara></entry>
 <entry align="left" valign="top"><simpara></simpara></entry>
 <entry align="left" valign="top"><simpara></simpara></entry>
@@ -1972,12 +1969,14 @@ rowsep="1" colsep="1"
 </tbody>
 </tgroup>
 </table>
-<formalpara><title>Exemple de démarche (<emphasis>SYSMOD Zigzag pattern</emphasis>)</title><para><inlinemediaobject>
+<figure><title>Exemple de démarche (<emphasis>SYSMOD Zigzag pattern</emphasis>)</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/zigzag.png" contentwidth="80%"/>
   </imageobject>
   <textobject><phrase>images/zigzag.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_questions_de_révision_2">
 <title>Questions de révision</title>
@@ -2119,13 +2118,18 @@ un block de contrainte (<emphasis>constraint block</emphasis>)
 </simpara>
 </listitem>
 </itemizedlist>
-<simpara>Un diagramme de block décrit les relations entre les blocks (composition, généralisations, &#8230;).</simpara>
-<formalpara id="contextebdd"><title>bdd du système dans son environnement</title><para><inlinemediaobject>
+<simpara>Un diagramme de block décrit les relations entre les blocks (composition, généralisations, &#8230;).
+Ce diagramme utilise les mêmes éléments que le diagramme de classe <ulink url="http://www.uml.org/">UML</ulink><indexterm>
+  <primary>UML</primary>
+</indexterm>.</simpara>
+<figure id="contextebdd"><title>bdd du système dans son environnement</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/pacemaker-context.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>images/pacemaker-context.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 <simpara>Un block est constitué d&#8217;un certain nombre de compartiments (<emphasis>Compartments</emphasis>) :</simpara>
 <variablelist>
 <varlistentry>
@@ -2134,7 +2138,7 @@ un block de contrainte (<emphasis>constraint block</emphasis>)
 </term>
 <listitem>
 <simpara>
-        Equivalent <ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+        Equivalent <ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm> des propriétés (e.g., attributs)
 </simpara>
@@ -2191,12 +2195,14 @@ un block de contrainte (<emphasis>constraint block</emphasis>)
 </listitem>
 </varlistentry>
 </variablelist>
-<formalpara><title>Exemple de définition de contraintes</title><para><inlinemediaobject>
+<figure><title>Exemple de définition de contraintes</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/constraints.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>images/constraints.png</phrase></textobject>
-</inlinemediaobject></para></formalpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_propriétés">
 <title>Propriétés</title>
@@ -2234,20 +2240,22 @@ un block de contrainte (<emphasis>constraint block</emphasis>)
 </varlistentry>
 </variablelist>
 <note>
-<simpara>Les <emphasis>values</emphasis> sont ce qui se rapproche de plus des attributs de classes UML.</simpara>
+<simpara>Les <emphasis>values</emphasis> sont ce qui se rapproche le plus des attributs de classes UML.</simpara>
 </note>
 </section>
 <section id="_emphasis_value_types_emphasis">
 <title><emphasis>Value Types</emphasis></title>
-<simpara>Pour typer les valeurs, <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Pour typer les valeurs, <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> propose de définir des <emphasis>Value Types</emphasis>.</simpara>
-<simpara><inlinemediaobject>
+<figure><title>Définition de <emphasis>Value Types</emphasis>.</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/valueType.png" contentwidth="90%"/>
   </imageobject>
   <textobject><phrase>images/valueType.png</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_associations_entre_blocks">
 <title>Associations entre blocks</title>
@@ -2312,18 +2320,22 @@ Cela ne pose aucun problème à un ingénieur système, mais ça peut en poser �
 </warning>
 <simpara>On représente les <emphasis>parts</emphasis> comme des block en traits pleins
 et les <emphasis>references</emphasis> comme des blocks en trait pointillés.</simpara>
-<simpara><inlinemediaobject>
+<figure><title>Exemple de <emphasis>Parts</emphasis></title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/parts.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>images/parts.png</phrase></textobject>
-</inlinemediaobject></simpara>
-<simpara><inlinemediaobject>
+</mediaobject>
+</figure>
+<figure><title>Parts</title>
+<mediaobject>
   <imageobject>
   <imagedata fileref="images/parts2.png" contentwidth="70%"/>
   </imageobject>
   <textobject><phrase>images/parts2.png</phrase></textobject>
-</inlinemediaobject></simpara>
+</mediaobject>
+</figure>
 </section>
 <section id="_ports">
 <title>Ports</title>
@@ -2376,20 +2388,96 @@ composites (agrégation de flux de natures différentes).
 </listitem>
 </itemizedlist>
 <note>
-<simpara>Un flow port atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux),
-la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un Value Type représentant le type d’élément pouvant circuler en entrée ou en sortie du port.</simpara>
+<simpara>Un <emphasis>flow port</emphasis> atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux),
+la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un block ou un <emphasis>Value Type</emphasis> représentant le type d’élément pouvant circuler en entrée ou en sortie du port.</simpara>
 </note>
 </section>
 </section>
-<section id="_emphasis_parametric_diagrams_emphasis">
+<section id="param">
 <title><emphasis>Parametric Diagrams</emphasis></title>
+<simpara>Ce diagramme utilise 3 concepts clefs :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+<emphasis>Constraints</emphasis> (un type de block)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<emphasis>Parametric diagram</emphasis> (un type d'<literal>ibd</literal>)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<emphasis>Value binding</emphasis>
+</simpara>
+</listitem>
+</itemizedlist>
+<section id="_contraintes">
+<title>Contraintes</title>
+<simpara>C&#8217;est un block particulier :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+avec un stéréotype <literal>≪constraint≫</literal> (au lieu de block)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+des paramètres en guise d&#8217;attributs
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+des relations liant (contraignant) ces paramètres
+</simpara>
+</listitem>
+</itemizedlist>
+<simpara><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/constraints.png" contentwidth="80%"/>
+  </imageobject>
+  <textobject><phrase>images/constraints.png</phrase></textobject>
+</inlinemediaobject></simpara>
 </section>
-<section id="_emphasis_sequence_diagrams_emphasis">
-<title><emphasis>Sequence Diagrams</emphasis></title>
+<section id="_diagramme_paramétrique">
+<title>Diagramme paramétrique</title>
+<simpara>C&#8217;est une forme particulière de <emphasis>Internal Block Definition</emphasis></simpara>
+<simpara><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/param.png" contentwidth="90%"/>
+  </imageobject>
+  <textobject><phrase>images/param.png</phrase></textobject>
+</inlinemediaobject></simpara>
+</section>
+<section id="_emphasis_value_binding_emphasis">
+<title><emphasis>Value Binding</emphasis></title>
+<simpara>Une fois les contraintes exprimées, il faut lier les paramètres (formels) à des valeurs (paramètre réel). C&#8217;est l&#8217;objet des <emphasis>Value Binding</emphasis>.</simpara>
+<simpara>Pour assigner des valeurs spécifiques, on utilise des <emphasis>Block Configurations</emphasis>;</simpara>
+<simpara><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/blockconf.png" contentwidth="90%"/>
+  </imageobject>
+  <textobject><phrase>images/blockconf.png</phrase></textobject>
+</inlinemediaobject></simpara>
+</section>
+</section>
+<section id="_diagrammes_de_séquence_système">
+<title>Diagrammes de séquence système</title>
+<simpara>Les diagrammes de séquence système (DSS) sont des <emphasis>Sequence Diagrams</emphasis> <ulink url="http://www.uml.org/">UML</ulink><indexterm>
+  <primary>UML</primary>
+</indexterm> classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement).</simpara>
+<simpara>Il permet de décrire les scénarios des cas d&#8217;utilisation sans entrer dans les détails. Il convient donc mieux à l&#8217;ingénierie système qu&#8217;un diagramme de séquence classique (cf. section sur les <link linkend="diagrammes de séquence">seq</link>).</simpara>
+<simpara><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/dss.png" contentwidth="90%"/>
+  </imageobject>
+  <textobject><phrase>images/dss.png</phrase></textobject>
+</inlinemediaobject></simpara>
 </section>
 <section id="_en_résumé_3">
 <title>En résumé</title>
-<simpara>En résumé&#8230;</simpara>
+<simpara>En résumé, il existe plusieurs diagrammes permettant d&#8217;exprimer la structure du système à concevoir. En fonction du niveau de détail nécessaire on peut voir les sous-systèmes comme des boîtes noires (des blocks) ou comme des boîtes blanches (grâce à l'<literal>ibd</literal> correspondant).</simpara>
 </section>
 <section id="_questions_de_révision_3">
 <title>Questions de révision</title>
@@ -2397,6 +2485,11 @@ la direction étant simplement indiquée par une flèche à l’intérieur du ca
 <listitem>
 <simpara>
 Quelle est la différence entre un <emphasis>package</emphasis> de type <emphasis role="strong"><emphasis>model</emphasis></emphasis> et un <emphasis>package</emphasis> de type <emphasis role="strong"><emphasis>package</emphasis></emphasis>?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Quelles sont les différences entre une association dirigée (<literal>&#8594;</literal>), une composition (losange noir) et l&#8217;agrégation (losange blanc)?
 </simpara>
 </listitem>
 </orderedlist>
@@ -2484,6 +2577,7 @@ les <emphasis>Activity Diagrams</emphasis>
 </simpara>
 </listitem>
 </itemizedlist>
+</section>
 <section id="_emphasis_use_case_diagrams_emphasis">
 <title><emphasis>Use Case Diagrams</emphasis></title>
 <simpara>Les éléments de base :</simpara>
@@ -2524,15 +2618,468 @@ Association
 <simpara>Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.</simpara>
 </tip>
 </section>
-<section id="_emphasis_sequence_diagrams_emphasis_2">
+<section id="_le_diagramme_des_cas_d_utilisation">
+<title>Le Diagramme des Cas d’Utilisation</title>
+<simpara>Le <emphasis role="strong">Diagramme des Cas d&#8217;Utilisation</emphasis> est un diagramme <ulink url="http://www.uml.org/">UML</ulink><indexterm>
+  <primary>UML</primary>
+</indexterm> permettant de représenter :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+les <emphasis role="strong">UC</emphasis> (<emphasis>Use Case</emphasis> ou Cas d’Utilisation)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+les <emphasis role="strong">acteurs</emphasis> (principaux et secondaires)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+les <emphasis role="strong">relations</emphasis>
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+entre acteurs et <emphasis>Use Case</emphasis>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+entre <emphasis>Use Cases</emphasis>
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</itemizedlist>
+<note>
+<simpara>On notera simplement <literal>uc</literal> pour signifier "diagramme des UC"</simpara>
+</note>
+<section id="_cas_d_8217_utilisation_emphasis_use_case_emphasis">
+<title>Cas d&#8217;Utilisation (<emphasis>Use Case</emphasis>)</title>
+<simpara>Un cas d&#8217;utilisation représente un ensemble de <emphasis role="strong">scénarios</emphasis> que le système doit exécuter pour produire un résultat observable par un <link linkend="acteur"><emphasis role="strong">acteur</emphasis></link>.</simpara>
+<section id="_exemple_de_cas_d_8217_utilisation_uml">
+<title>Exemple de cas d&#8217;utilisation (UML)</title>
+<simpara>Retrait par carte bancaire</simpara>
+<variablelist>
+<varlistentry>
+<term>
+Scénario principal
+</term>
+<listitem>
+<simpara>
+        L&#8217;UC démarre lorsque le Guichet Automatique Bancaire (GAB) demande au client son numéro confidentiel après l’introduction de sa CB. Le client
+        entre son code et valide son entrée. Le GAB contrôle la validité du code. Si le code est valide, le GAB autorise
+        le retrait et l’UC se termine.
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Scénario alternatif n°1 
+</term>
+<listitem>
+<simpara>
+        Le client peut à tout instant annuler l&#8217;opération. La carte est éjectée et l&#8217;UC se termine.
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Exemple de codification de l&#8217;UC
+</term>
+<listitem>
+<simpara>
+        UC01 ou RetraitCB (pour Retrait par carte bleue)
+</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</section>
+<section id="_précisions">
+<title>Précisions</title>
+<simpara>Un cas d&#8217;utilisation peut être précisé par :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+une description textuelle
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+un ou des diagrammes <ulink url="http://www.uml.org/">UML</ulink><indexterm>
+  <primary>UML</primary>
+</indexterm> (séquence, activité)
+</simpara>
+</listitem>
+</itemizedlist>
+<note>
+<simpara>Dans les outils, cette "précision" se manifeste par le fait que l&#8217;on "attache"
+généralement un diagramme de séquence à un cas d&#8217;utilisation (clic droit sur un <emphasis>Use Case</emphasis> &#8594; nouveau <literal>seq</literal>).</simpara>
+</note>
+</section>
+</section>
+<section id="_acteur">
+<title>Acteur</title>
+<simpara>Un acteur peut être une personne, un ensemble de personnes, un logiciel, un processus qui interagit avec un ou plusieurs <link linkend="uc">UC</link>.</simpara>
+<simpara>On peut trouver plusieurs types d&#8217;acteurs :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+extérieurs au système (cf. <literal>actor</literal> <link linkend="ucdiag">Diagramme d&#8217;UC ci-après</link>)
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+les acteurs principaux
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+les acteurs secondaires
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>
+exemples de types d&#8217;acteurs prédéfinis dans UML :
+</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+<literal>&lt;&lt;utility&gt;&gt;</literal>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>&lt;&lt;process&gt;&gt;</literal>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>&lt;&lt;thread&gt;&gt;</literal>
+</simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</itemizedlist>
+<note>
+<simpara>On peut utiliser des liens de généralisation/spécialisation entre acteurs
+pour représenter les possibilités pour le spécialisé d&#8217;avoir les mêmes
+prérogatives (notamment en terme d&#8217;utilisation du système) que le généralisé.</simpara>
+</note>
+</section>
+<section id="_relations_entre_acteurs_et_emphasis_use_case_emphasis">
+<title>Relations entre acteurs et <emphasis>Use Case</emphasis></title>
+<simpara>En général, une simple association relie acteurs et <emphasis>Use Case</emphasis>.
+On peut également orienter ces associations.</simpara>
+</section>
+<section id="_relations_entre_emphasis_use_case_emphasis">
+<title>Relations entre <emphasis>Use Case</emphasis></title>
+<simpara>Après avoir lister les cas d&#8217;utilisation, il est utile de les organiser et de montrer les relations entre eux.
+Plusieurs relations sont possibles :</simpara>
+<variablelist>
+<varlistentry>
+<term>
+Extension (<literal>&lt;&lt;extend&gt;&gt;</literal>)
+</term>
+<listitem>
+<simpara>
+        Indique que le <emphasis>Use Case</emphasis> source est <emphasis role="strong">éventuellement</emphasis> exécutée en complément du <emphasis>Use Case</emphasis> destination (cas particulier, erreur&#8230;)
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Inclusion (<literal>&lt;&lt;include&gt;&gt;</literal>)
+</term>
+<listitem>
+<simpara>
+        Indique que le <emphasis>Use Case</emphasis> est inclus <emphasis role="strong">obligatoirement</emphasis> dans un autre <emphasis>Use Case</emphasis> (notion de sous-fonction par exemple)
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Généralisation
+</term>
+<listitem>
+<simpara>
+        Relation entre un <emphasis>Use Case</emphasis> général et un autre plus spécialisé qui hérite de ses caractéristiques et en rajoute (différents modes d&#8217;utilisation d&#8217;un système par exemple)
+</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<figure id="ucdiag"><title>Notation dans le diagramme d&#8217;UC</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/dessins/UC.png"/>
+  </imageobject>
+  <textobject><phrase>"Diagramme d'UC"</phrase></textobject>
+</mediaobject>
+</figure>
+<tip>
+<simpara>On n&#8217;utilise généralement <literal>&lt;&lt;include&gt;&gt;</literal> que dans le cas où le sous-cas d&#8217;utilisation est
+inclut dans plusieurs UC. Si ce n&#8217;est pas le cas, il est généralement englobé dans l&#8217;UC.</simpara>
+</tip>
+</section>
+<section id="_pour_construire_un_uc_de_manière_générale">
+<title>Pour construire un UC (de manière générale)</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>
+identifier les acteurs
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+identifier les cas d&#8217;utilisation
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+structurer en <emphasis>packages</emphasis>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+finaliser les diagrammes de cas d&#8217;utilisation (ajouter les relations)
+</simpara>
+</listitem>
+</orderedlist>
+<note>
+<simpara>Certains méthodologistes (comme T. Wielkins) préconisent de ne pas utiliser les acteurs et les cas d&#8217;utilisation
+(cf. son blog)</simpara>
+</note>
+</section>
+<section id="_exemples_complets_uml">
+<title>Exemples complets (UML)</title>
+<section id="_service_comptable">
+<title>Service comptable</title>
+<figure id="ucexp"><title>Exemple de diagramme d&#8217;UC</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/UC.png" contentwidth="80%"/>
+  </imageobject>
+  <textobject><phrase>Exemple de Diagramme d'UC</phrase></textobject>
+</mediaobject>
+</figure>
+</section>
+<section id="_gestion_des_notes">
+<title>Gestion des notes</title>
+<figure id="ucexp2"><title>Autre exemple de diagramme d&#8217;UC</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/uc2.png" contentwidth="70%"/>
+  </imageobject>
+  <textobject><phrase>Exemple de Diagramme d'UC</phrase></textobject>
+</mediaobject>
+</figure>
+</section>
+</section>
+</section>
+<section id="seq">
 <title><emphasis>Sequence Diagrams</emphasis></title>
+<section id="_généralités">
+<title>Généralités</title>
+<simpara>Il permet de :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+modéliser les interactions entre blocks
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+séquencer ces interactions dans le temps
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+représenter les échanges de messages
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+spécifier les scénarios des cas d'études
+</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Les éléments qui composent ce diagramme sont :</simpara>
+<variablelist>
+<varlistentry>
+<term>
+Participants
+</term>
+<listitem>
+<simpara>
+        les éléments en interaction (des blocks généralement)
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Lignes de vie
+</term>
+<listitem>
+<simpara>
+        des lignes verticales qui permettent d&#8217;indiquer un départ ou une arrivée d&#8217;interaction
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Barres d&#8217;activation
+</term>
+<listitem>
+<simpara>
+        pour matérialiser quand l'élément est actif
+</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+Messages
+</term>
+<listitem>
+<simpara>
+        ce qui "circule" d&#8217;un élément à l&#8217;autre (signal, appel de méthode, &#8230;)
+</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<formalpara><title>Diagramme de séquence</title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/seq1.png" contentwidth="40%"/>
+  </imageobject>
+  <textobject><phrase>Diagramme de séquence</phrase></textobject>
+</inlinemediaobject>
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/seq2.png" contentwidth="40%"/>
+  </imageobject>
+  <textobject><phrase>Eléments de notation</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+<warning>
+<simpara>Les participants (et leur ligne de vie) représentent des instances de blocks (souvent "anonymes").</simpara>
+</warning>
+</section>
+<section id="_exemple">
+<title>Exemple</title>
+<figure id="seqexp"><title>Exemple de diagramme de séquence</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/seq3.png" contentwidth="60%"/>
+  </imageobject>
+  <textobject><phrase>Exemple de diagramme de séquence</phrase></textobject>
+</mediaobject>
+</figure>
+</section>
+<section id="_notions_avancées">
+<title>Notions avancées</title>
+<simpara>On peut également représenter des instructions itératives et conditionnelles au travers de
+<emphasis role="strong">cadres d&#8217;interaction</emphasis> :</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+<literal>loop</literal> (boucle)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>alt</literal> (alternative)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>opt</literal> (optionel)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>par</literal> (parallèle)
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>region</literal> (région critique - un seul <emphasis>thread</emphasis> à la fois)
+</simpara>
+</listitem>
+</itemizedlist>
+<formalpara id="fowler"><title>Exemple algorithme / diagramme</title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/fowl1.png" contentwidth="30%"/>
+  </imageobject>
+  <textobject><phrase>Un algorithme</phrase></textobject>
+</inlinemediaobject>
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/fowl2.png" contentwidth="60%"/>
+  </imageobject>
+  <textobject><phrase>Sa modélisation</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+</section>
+<section id="_exemple_de_conceptions">
+<title>Exemple de conceptions</title>
+<figure id="fowler1"><title>Conception "centralisée"</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/fowl3.png" contentwidth="60%"/>
+  </imageobject>
+  <textobject><phrase>Conception 'centralisée'</phrase></textobject>
+</mediaobject>
+</figure>
+<figure id="fowler2"><title>Conception "objet"</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/fowl4.png" contentwidth="60%"/>
+  </imageobject>
+  <textobject><phrase>Conception 'objet'</phrase></textobject>
+</mediaobject>
+</figure>
+<note>
+<simpara>On utilise le diagramme de séquence pour représenter des algorithmes et des séquencements temporels. Lorsque le comportement se rapproche plus d&#8217;un flot, on utilise le diagramme d&#8217;activité (cf. section sur le <link linkend="diagramme d&#8217;activité">act</link>).</simpara>
+</note>
+</section>
+<section id="_lien_entre_uc_dss_et_ds">
+<title>Lien entre UC, DSS et DS</title>
+<simpara>La décomposition hiérarchique permet une description "<emphasis>TOP-DOWN</emphasis>" du système à réaliser.</simpara>
+<simpara>On fait un Diagramme de Séquence Système pour chaque cas d&#8217;utilisation (issu du Diagramme d’UC) pour déterminer les échanges d’informations entre l’acteur et le système.</simpara>
+<simpara>Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocks composant le système (issus du <literal>bdd</literal>) collaborent pour réaliser le traitement demandé.</simpara>
+<figure id="exp1-uc"><title>Diagramme d&#8217;UC</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/ucexp1.png" contentwidth="30%"/>
+  </imageobject>
+  <textobject><phrase>Diagramme d'UC</phrase></textobject>
+</mediaobject>
+</figure>
+<figure id="exp1-dss"><title>Le DSS correspondant</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/dssexp1.png" contentwidth="30%"/>
+  </imageobject>
+  <textobject><phrase>Le DSS correspondant</phrase></textobject>
+</mediaobject>
+</figure>
+<figure id="exp1-ds"><title>Le DS correspondant</title>
+<mediaobject>
+  <imageobject>
+  <imagedata fileref="/Users/bruel/dev/asciidoc/ACSI/images/dsexp1.png" contentwidth="70%"/>
+  </imageobject>
+  <textobject><phrase>Le DS correspondant</phrase></textobject>
+</mediaobject>
+</figure>
+</section>
 </section>
 <section id="_emphasis_state_machines_emphasis">
 <title><emphasis>State Machines</emphasis></title>
+<simpara>To be completed&#8230;</simpara>
 </section>
-<section id="_emphasis_activity_diagrams_emphasis">
+<section id="act">
 <title><emphasis>Activity Diagrams</emphasis></title>
-</section>
+<simpara>To be completed&#8230;</simpara>
 </section>
 <section id="_en_résumé_4">
 <title>En résumé</title>
@@ -2626,14 +3173,126 @@ le diagramme paramétrique
 <simpara>Chaque <emphasis>requirement</emphasis> doit être relié à au moins un <emphasis>use case</emphasis> (et vice-versa!).</simpara>
 </note>
 </section>
+<section id="_traçabilité_des_exigences">
+<title>Traçabilité des exigences</title>
+<simpara>Nous avons vu déjà un certain nombre de mécanismes <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
+  <primary>SysML</primary>
+</indexterm> qui permettent de tracer les exigences.
+Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un block <literal>&lt;&lt;satisfy&gt;&gt;</literal> une exigence).</simpara>
+<table
+frame="all"
+rowsep="1" colsep="1"
+>
+<title>Traçabilité</title>
+<?dbhtml table-width="50%"?>
+<?dbfo table-width="50%"?>
+<?dblatex table-width="50%"?>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="53*"/>
+<colspec colname="col_2" colwidth="53*"/>
+<colspec colname="col_3" colwidth="53*"/>
+<colspec colname="col_4" colwidth="53*"/>
+<thead>
+<row>
+<entry align="left" valign="top">                                       </entry>
+<entry align="left" valign="top"> Requirements                                                        </entry>
+<entry align="left" valign="top"> Structure   </entry>
+<entry align="left" valign="top"> Comportement</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Requirements</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>&lt;&lt;deriveRqt&gt;&gt;</literal>, <literal>&lt;&lt;refine&gt;&gt;</literal>, <literal>&lt;&lt;copy&gt;&gt;</literal></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Structure</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>&lt;&lt;allocate&gt;&gt;</literal>, <literal>&lt;&lt;satisfy&gt;&gt;</literal></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>&lt;&lt;allocate&gt;&gt;</literal></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Comportement</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>&lt;&lt;refine&gt;&gt;</literal></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+<entry align="left" valign="top"><simpara></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<simpara>XXX Mettre un exemple avec tous ces liens.</simpara>
+</section>
+<section id="_mécanismes_d_8217_allocation">
+<title>Mécanismes d&#8217;allocation</title>
+<simpara>Un mécanisme nouveau en <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
+  <primary>SysML</primary>
+</indexterm> et important pour l&#8217;Ingénierie Système <indexterm>
+  <primary>IS</primary>
+</indexterm> est le mécanisme d'<emphasis role="strong">allocation</emphasis>. Il permet de
+préciser quel élément conceptuel (comme un comportement ou une activité) est alloué sur quel élément physique.</simpara>
+<simpara>Il est possible d&#8217;exprimer cette allocation de plusieurs manières.</simpara>
+<simpara>Parler du <literal>&lt;&lt;AllocatedTo&gt;&gt;</literal>, compartiments des blocks et autres annotations.
+Parler des zones d&#8217;allocation dans les machines à états où les diagrammes d&#8217;activités par exemple.
+Parler des <literal>&lt;&lt;allocate&gt;&gt;</literal>.</simpara>
+</section>
+<section id="_diagramme_paramétrique_2">
+<title>Diagramme paramétrique</title>
+<simpara>C&#8217;est une forme particulière de <emphasis>Internal Block Definition</emphasis>. Nous avons abordé cela dans la section <xref linkend="param"/>.</simpara>
+<simpara><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="images/param.png" contentwidth="90%"/>
+  </imageobject>
+  <textobject><phrase>images/param.png</phrase></textobject>
+</inlinemediaobject></simpara>
+<note>
+<simpara>Certaines approchent (cf. <xref linkend="MéDISIS"/>) utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l&#8217;impact des changements de valeurs de tel ou tel paramètre.</simpara>
+</note>
+</section>
 <section id="_en_résumé_5">
 <title>En résumé</title>
-<simpara>En résumé&#8230;</simpara>
+<simpara>En résumé l&#8217;expression du comportement du système en <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
+  <primary>SysML</primary>
+</indexterm> est très similaire à ce qui est fait dans <ulink url="http://www.uml.org/">UML</ulink><indexterm>
+  <primary>UML</primary>
+</indexterm>. On retrouve néanmoins le renforcement des liens entre éléments de modèles par les dépendances précises et les allocations.</simpara>
 </section>
 <section id="_questions_de_révision_5">
 <title>Questions de révision</title>
-<simpara>Pour réviser&#8230;</simpara>
+<section id="_exercices">
+<title>Exercices</title>
+<section id="_diagramme_des_cas_d_8217_utilisation">
+<title>Diagramme des cas d&#8217;utilisation</title>
+<simpara>Placez dans un diagrammes des cas d&#8217;utilisation les différents acteurs et cas correspondant à l'étude de cas suivante
+(en indiquant les relations) :</simpara>
+<blockquote>
+<simpara>Pour faciliter sa gestion, un entrepôt de stockage envisage de concevoir un système permettant d&#8217;allouer automatiquement un emplacement de stockage pour chaque produit du chargement des camions qui convoient le stock à entreposer.
+Lors de l’arrivée d’un camion, un employé doit saisir dans le système les caractéristiques de chaque article ; le système produit alors une liste où figure un emplacement pour chaque article. Lors du chargement d’un camion les caractéristiques des articles à charger dans un camion sont saisies par un employé afin d’indiquer au système de libérer les emplacements correspondant.</simpara>
+</blockquote>
+</section>
+</section>
+<section id="_questions_de_révisions">
+<title>Questions de révisions</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>
+Quelles sont les différences entre <literal>&lt;&lt;satisfy&gt;&gt;</literal> et <literal>&lt;&lt;allocate&gt;&gt;</literal> ?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Pourquoi est-il important de relier un <emphasis>use case</emphasis> à au moins un <emphasis>requirement</emphasis> ?
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+L&#8217;inverse est-il aussi important ?
+</simpara>
+</listitem>
+</orderedlist>
 <simpara><?asciidoc-pagebreak?></simpara>
+</section>
 </section>
 </chapter>
 </part>
@@ -2671,7 +3330,7 @@ Modèle de test
 <simpara>Nous sommes des défenseurs des principes <xref linkend="DRY"/> et <xref linkend="TDD"/>. Nous allons donc réaliser nos diagrammes dans un outil et non "à la main" (de simples dessins).
 Nous choisissons ici l&#8217;outil <ulink url="http://www.topcased.org">TOPCASED</ulink> pour des raisons que nous expliquerons ailleurs. La version utilisée pour réaliser les exemples de cette section
 est la version <literal>5.2</literal>.</simpara>
-<simpara>Un outil <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Un outil <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm> seul ne suffit pas (cf. <link linkend="outils">Outillage</link>). Il faut penser à la documentation (cf. <link linkend="gendoc">Génération de doc</link>).</simpara>
 <formalpara><title>Outillage autour de SysML</title><para><inlinemediaobject>
@@ -2682,7 +3341,7 @@ est la version <literal>5.2</literal>.</simpara>
 </inlinemediaobject></para></formalpara>
 <section id="outils">
 <title>Outils</title>
-<simpara>Il existe de nombreux outils <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Il existe de nombreux outils <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>. Nous renvoyons le lecteur sur le site de <ulink url="http://www.sysml-france.fr">SysML-France</ulink> pour
 des informations sur les dernières versions des outils.</simpara>
@@ -2839,7 +3498,7 @@ manière des ouvrages du type <emphasis>Cookbook</emphasis>, nous allons donner 
 <title>Partie 5 : Pour aller plus loin</title>
 <chapter id="_considérations_méthodologiques">
 <title>Considérations méthodologiques</title>
-<simpara id="methodo">Exemples de démarche autour de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara id="methodo">Exemples de démarche autour de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>, lien avec la section <link linkend="Methodes">Méthodes</link>.
 <indexterm>
@@ -2855,14 +3514,14 @@ manière des ouvrages du type <emphasis>Cookbook</emphasis>, nous allons donner 
 <title>Sujet</title>
 <simpara>Un quizz en ligne est disponible <ulink url="http://webetud.iut-blagnac.fr/mod/quiz/view.php?id=9007">ici</ulink> (me contacter pour le mot de passe).</simpara>
 <simpara>En voici une capture d'écran :</simpara>
-<informalfigure>
+<figure><title>Exemple de QCM sur SysML</title>
 <mediaobject>
   <imageobject>
   <imagedata fileref="images/quizz.png" contentwidth="60%"/>
   </imageobject>
   <textobject><phrase>Crosword</phrase></textobject>
 </mediaobject>
-</informalfigure>
+</figure>
 </section>
 <section id="_corrigé">
 <title>Corrigé</title>
@@ -2875,14 +3534,14 @@ manière des ouvrages du type <emphasis>Cookbook</emphasis>, nous allons donner 
 <section id="_sujet_2">
 <title>Sujet</title>
 <simpara>Voici un petit exercice (en anglais pour l&#8217;instant, désolé) pour changer :</simpara>
-<informalfigure>
+<figure><title>Mots-croisés sur SysML</title>
 <mediaobject>
   <imageobject>
   <imagedata fileref="images/crossword.png"/>
   </imageobject>
   <textobject><phrase>Crosword</phrase></textobject>
 </mediaobject>
-</informalfigure>
+</figure>
 <variablelist>
 <varlistentry>
 <term>
@@ -3120,15 +3779,15 @@ Pour en savoir plus sur l&#8217;<ulink url="http://jmb.c.la">auteur</ulink>
 </chapter>
 <chapter id="_historique_de_sysml">
 <title>Historique de SysML</title>
-<simpara>Un point sur les évolutions de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Un point sur les évolutions de <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
 </indexterm>.</simpara>
 </chapter>
 <chapter id="umlAsysml">
 <title>D&#8217;UML à SysML</title>
-<simpara>Un point sur comment aborder <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink> <indexterm>
+<simpara>Un point sur comment aborder <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
   <primary>SysML</primary>
-</indexterm> quand on vient d&#8217;<ulink url="http://www.uml.org/">UML</ulink> <indexterm>
+</indexterm> quand on vient d&#8217;<ulink url="http://www.uml.org/">UML</ulink><indexterm>
   <primary>UML</primary>
 </indexterm>.</simpara>
 </chapter>
@@ -3146,75 +3805,121 @@ les questions des étudiants durant mes différentes interventions.
 J&#8217;ai aussi ajouté des questions souvent rencontrées dans les journées organisés par <ulink url="http://www.sysml-france.fr">SysML-France</ulink>.</simpara>
 <note><simpara>Voir aussi cette <ulink url="http://www.sysmlforum.com/faq">FAQ</ulink> très bien faite.</simpara></note>
 <simpara>Cette FAQ peut servir de base à la révision d&#8217;examens (cf. aussi <xref linkend="Exos"/>).</simpara>
-<section id="_what_is_the_current_version_of_sysml_and_how_can_i_obtain_it">
-<title>What is the current version of SysML and how can I obtain it?</title>
-<simpara>Verson 1.3 and here is the specification link: <ulink url="http://www.omg.org/cgi-bin/doc?formal/10-06-02">http://www.omg.org/cgi-bin/doc?formal/10-06-02</ulink>.</simpara>
+<section id="_peut_on_avoir_un_emphasis_requirement_emphasis_contenu_dans_plusieurs_autres">
+<title>Peut-on avoir un <emphasis>requirement</emphasis> contenu dans plusieurs autres ?</title>
+<simpara>Non. Le lien de <emphasis>containment</emphasis> est en fait une action qui place le "contenu" dans le
+"contenant". Dans TOPCASED, le diagramme laisse les liens précédents à l'écran, mais dans
+le modèle, c&#8217;est bien le dernier <emphasis>containment</emphasis> réalisé qui est pris en compte. Dans
+la figure ci-dessous le lien <literal>A-C</literal> a été "dessiné" après celui <literal>B-C</literal>.</simpara>
+<formalpara><title>Exemple de divergence entre modèle et diagramme (bug)</title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="exercices/topcased-containment-1.png"/>
+  </imageobject>
+  <textobject><phrase>exercices/topcased-containment-1.png</phrase></textobject>
+</inlinemediaobject><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="exercices/topcased-containment-2.png"/>
+  </imageobject>
+  <textobject><phrase>exercices/topcased-containment-2.png</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+<note>
+<simpara>Ce "bug" provient du fait que le lien de <emphasis>containment</emphasis> n&#8217;est pas un lien de dépendance,
+mais plutôt une représentation graphique de la contenance.</simpara>
+</note>
 </section>
-<section id="_what_changes_were_made_during_the_last_revision">
-<title>What changes were made during the last revision?</title>
-<simpara>Notable changes in Version 1.2 of SysML include:</simpara>
+<section id="_comment_alors_peut_on_partager_un_emphasis_requirement_emphasis">
+<title>Comment alors peut-on "partager" un <emphasis>requirement</emphasis> ?</title>
+<simpara>(En lien avec la question précédente)</simpara>
+<simpara>L&#8217;organisation <ulink url="http://www.omgwiki.org/OMGSysML/">SysML</ulink><indexterm>
+  <primary>SysML</primary>
+</indexterm> des <emphasis>requirements</emphasis> est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien <literal>&lt;&lt;copy&gt;&gt;</literal> pour créer plusieurs copies d&#8217;un même <emphasis>requirement</emphasis>. Personnellement je n&#8217;aime pas cette solution.</simpara>
+<formalpara><title>Exemple de partage de <emphasis>requirement</emphasis></title><para><inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="exercices/topcased-containment-3.png"/>
+  </imageobject>
+  <textobject><phrase>exercices/topcased-containment-3.png</phrase></textobject>
+</inlinemediaobject></para></formalpara>
+</section>
+<section id="_peut_on_avoir_un_lien_literal_lt_lt_satisfy_gt_gt_literal_entre_exigences">
+<title>Peut-on avoir un lien <literal>&lt;&lt;satisfy&gt;&gt;</literal> entre exigences?</title>
+<simpara>Techniquement oui (<literal>&lt;&lt;satisfy&gt;&gt;</literal> étant dérivé de <literal>&lt;&lt;dependency&gt;&gt;</literal>), mais ça n&#8217;a pas beaucoup de sens que de dire qu&#8217;un besoin est satisfait par un autre. Il s&#8217;agit le plus souvent d&#8217;un lien <literal>&lt;&lt;deriveReqt&gt;&gt;</literal>.</simpara>
+<note>
+<simpara>Certaines méthodes utilise ce lien pour par exemple exprimer qu&#8217;une exigence cliente et satisfaite par une exigence système (comme la méthode Harmony).</simpara>
+</note>
+</section>
+<section id="_quelle_est_la_différence_entre_literal_lt_lt_derivereqt_gt_gt_literal_et_literal_lt_lt_refine_gt_gt_literal">
+<title>Quelle est la différence entre <literal>&lt;&lt;deriveReqt&gt;&gt;</literal> et <literal>&lt;&lt;refine&gt;&gt;</literal> ?</title>
+<simpara>La norme n&#8217;impose pas de sémantique précise à <literal>&lt;&lt;deriveReqt&gt;&gt;</literal>. Il y a généralement deux interprétations.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>
+Un usage classique est de l&#8217;utiliser pour ajouter des exigences plus détaillés déduites à partir d&#8217;autres exigences. Un exemple issue de la norme est une exigence de <literal>puissance moteur</literal> déduite (<literal>deriveReqt</literal>) depuis l&#8217;exigence sur l’<literal>accélération</literal> d&#8217;un véhicule.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Une vision plus stricte, aussi illustré par l&#8217;exemple précédent, est que l&#8217;exigence dérivée est une condition nécessaire (un pré-requis) à l&#8217;exigence cible.
+</simpara>
+</listitem>
+</orderedlist>
+<simpara>Autre exemple respectant 1 mais pas 2 : "Le véhicule doit posséder 4 roues." est dérivé de "Le véhicule doit se déplacer sur route." En effet, un aéroglisseur répondrait aussi l&#8217;exigence initiale et n&#8217;a pourtant pas de roues.</simpara>
+<simpara>Quant au <literal>&lt;&lt;refine&gt;&gt;</literal> il est utilisé pour indiquer qu&#8217;un élément de modèle (qui peut être lui-même un <emphasis>requirement</emphasis>) est un raffinement (au sens niveaux d&#8217;abstraction, du plus abstrait au plus concret) d&#8217;un <emphasis>requirement</emphasis>. Par exemple, un <emphasis>use case</emphasis> ou un diagramme d&#8217;activité peut être un raffinement d&#8217;une exigence fonctionnelle (textuelle par exemple).</simpara>
+</section>
+<section id="_a_quoi_sert_le_lien_literal_lt_lt_trace_gt_gt_literal">
+<title>A quoi sert le lien <literal>&lt;&lt;trace&gt;&gt;</literal> ?</title>
+<simpara>Il est utilisé pour indiquer que l&#8217;on souhaite conserver un lien de traçabilité entre les éléments
+(par exemple entre un élément de modélisation et un document). Il est recommandé d&#8217;utilisé une de ces
+versions plus précises (<literal>&lt;&lt;deriveReqt&gt;&gt;</literal> ou <literal>&lt;&lt;satisfy&gt;&gt;</literal> par exemple).</simpara>
+</section>
+<section id="_quelle_est_la_version_courante_de_la_spécification_et_comment_l_8217_obtenir">
+<title>Quelle est la version courante de la spécification et comment l&#8217;obtenir?</title>
+<simpara>Verson <literal>1.3</literal> et disponible à l&#8217;URL: <ulink url="http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf">http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf</ulink></simpara>
+</section>
+<section id="_quels_en_sont_les_changements_notables_depuis_la_dernière_version">
+<title>Quels en sont les changements notables depuis la dernière version ?</title>
+<simpara>(en lien avec  la question précédente)</simpara>
+<simpara>Les changements notables par rapport à la <literal>1.2</literal> concernent :</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
-Synchronization with changes in UML 2.3
+synchronisation avec les changements d&#8217;UML 2.3
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Conjugate ports metamodel and notation
+le métamodèle de <emphasis>Conjugate ports</emphasis> et sa notation
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Naming of interruptible activity regions
+le nommage des <emphasis>activity regions</emphasis> "interruptible"
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Inclusion of UML instance specifications
- -Inclusion of UML structured activity nodes
+inclusion de <emphasis>UML instance</emphasis>
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Inclusion of UML multiple item flow notation
+inclusion des <emphasis>structured activity nodes</emphasis> d&#8217;UML
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Improvements to Unit and QuantityKind support for value types, and a non-normative model to define systems of units and quantities
+inclusion des <emphasis>multiple item flow</emphasis> d&#8217;UML
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+améliorations du support à <emphasis>Unit</emphasis> et <emphasis>QuantityKind</emphasis> pour les <emphasis>value types</emphasis>,
+et ajout d&#8217;un modèle (non normatif) pour définir les systèmes d&#8217;unités et de quantités.
 </simpara>
 </listitem>
 </itemizedlist>
-<note><simpara>The SysML v1.3 Revision Task Force led by Roger Burkhart and Rick Steiner is continuing to work on proposed improvements to SysML based on feedback from the systems modeling community.</simpara></note>
-</section>
-<section id="_how_do_we_setup_ranges_limits_of_input_variables_in_a_par_for_example">
-<title>How do we setup ranges (limits) of (input) variables (in a par for example)?</title>
-<simpara>In the details or the definition of the Flow Item.</simpara>
-</section>
-<section id="_what_does_the_literal_strict_literal_keyword_means_for_profile_application">
-<title>What does the <literal>{strict}</literal> keyword means for profile application?</title>
-<simpara>No other meta-elements than the one in the applied profile were used (e.g., you can use a tool supporting the profile with confidence).</simpara>
-<blockquote>
-<attribution>
-SysML1.2 p. 8
-</attribution>
-<simpara>The semantics of UML profiles ensure that when a user model “strictly” applies the SysML profile, only the UML metaclasses referenced by SysML are available to the user of that model. If the
-profile is not “strictly” applied, then additional UML metaclasses that were not explicitly referenced may also be available.</simpara>
-</blockquote>
-</section>
-<section id="_what_does_the_visibility_literal_private_literal_literal_public_literal_8230_means_for_a_block">
-<title>What does the visibility (<literal>private</literal>, <literal>public</literal>, &#8230;) means for a block?</title>
-<simpara>As any model elements, the visibility of a block describes how it can be imported outside its namespace.</simpara>
-<note><simpara>It depends on the tool support for visibility controls to use this feature.</simpara></note>
-</section>
-<section id="_what_is_the_difference_between_an_internal_and_a_self_transition">
-<title>What is the difference between an internal and a self transition?</title>
-<simpara>In a self transition the exit and the the entry events are trigered.</simpara>
-</section>
-<section id="_can_i_attach_a_history_pseudostate_to_a_particular_non_composite_state">
-<title>Can I attach a History pseudostate to a particular (non composite) state?</title>
-<simpara>No. The History pseudostate (H) is indicated inside a composite state and means that when back in this superstate, the machine goes back to its last active state.</simpara>
+<note>
+<simpara>SysML v1.3 <emphasis>Revision Task Force</emphasis> dirigée par Roger Burkhart et Rick Steiner améliore de manière régulière la spécification en fonction des retours des utilisateurs.</simpara>
+</note>
 </section>
 <section id="_divers">
 <title>Divers</title>
@@ -3222,37 +3927,32 @@ profile is not “strictly” applied, then additional UML metaclasses that were
 <itemizedlist>
 <listitem>
 <simpara>
-Why do systems engineer need yet-another-modeling-language?
+Pourquoi les ingénieurs systèmes auraient-ils besoin d&#8217;un n-ième langage de modéliation ?
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-What is the relationship between “open source SysML” and “OMG SysML”?
+Quelles sont les relations entre “open source SysML” et “OMG SysML” ?
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-What is the roadmap for OMG SysML 2.0?
+Quelle est la feuille de route pour SysML 2.0?
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Who are the SysML Partners?
+Quelles sont les relations entre UML et SysML? Peut-on les utiliser ensemble?
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-What is the relationship between UML and SysML? Can SysML and UML be used together?
+Peut-on "customizer" SysML?
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-Can SysML be customized?
-</simpara>
-</listitem>
-<listitem>
-<simpara>
-Which language is easier to learn, SysML or UML?
+Quel langage est le plus facile à apprendre, SysML ou UML?
 </simpara>
 </listitem>
 </itemizedlist>
@@ -3261,7 +3961,7 @@ Which language is easier to learn, SysML or UML?
 <chapter id="_a_propos_de_ce_document_8230">
 <title>A propos de ce document&#8230;</title>
 <sidebar>
-<simpara>Dernière MAJ : 18/11/2012 - 20:49:38 CET<?asciidoc-br?>
+<simpara>Dernière MAJ : 30/11/2012 - 13:39:38 CET<?asciidoc-br?>
 Document généré par <ulink url="mailto:jean-michel.bruel@univ-tlse2.fr">Jean-Michel Bruel</ulink> via <ulink url="http://www.methods.co.nz/asciidoc">AsciiDoc</ulink> (version <literal>8.6.8</literal>) de <emphasis>Stuart Rackham</emphasis>.
 La version présentation a été générée en utilisant <ulink url="http://www.w3.org/Talks/Tools/Slidy2/">W3C HTML Slidy</ulink> &#169; de <emphasis>Dave Raggett</emphasis>, amélioré par <ulink url="mailto:jean-michel.inglebert@univ-tlse2.fr">Jean-Michel Inglebert</ulink>.
 Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la <emphasis>Licence Creative Commons</emphasis>.
@@ -3298,6 +3998,11 @@ Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la 
 <bibliomixed>
 <bibliomisc>
 <anchor id="KAP2007" xreflabel="[KAP2007]"/>[KAP2007] Kapurch S., NASA Systems Engineering Handbook, 2007 (<ulink url="http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20080008301_2008008500.pdf">pdf</ulink>).
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+[<anchor id="MéDICIS" xreflabel="[MéDICIS]"/>] ENSI Bourges/PRiSM.
 </bibliomisc>
 </bibliomixed>
 <bibliomixed>

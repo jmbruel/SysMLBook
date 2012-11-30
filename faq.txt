@@ -16,7 +16,7 @@ le modèle, c'est bien le dernier _containment_ réalisé qui est pris en compte
 la figure ci-dessous le lien +A-C+ a été "dessiné" après celui +B-C+.
 
 .Exemple de divergence entre modèle et diagramme (bug)
-image:topcased-containment-1.png[]image:topcased-containment-2.png[]
+image:exercices/topcased-containment-1.png[]image:exercices/topcased-containment-2.png[]
 
 [NOTE]
 ====
@@ -31,7 +31,7 @@ mais plutôt une représentation graphique de la contenance.
 L'organisation {sysml} des _requirements_ est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien `<<copy>>` pour créer plusieurs copies d'un même _requirement_. Personnellement je n'aime pas cette solution.
 
 .Exemple de partage de _requirement_
-image:topcased-containment-3.png[]
+image:exercices/topcased-containment-3.png[]
 
 === Peut-on avoir un lien `<<satisfy>>` entre exigences?
 
