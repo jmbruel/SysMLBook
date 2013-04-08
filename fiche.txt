@@ -1,11 +1,14 @@
-[NOTE]
-.Carte d'identité
-====
-- Date de naissance : 2001!
+//[NOTE]
+//.Carte d'identité
+//====
+********************************
+- Date de naissance non officielle : 2001!
+- Première spécification adoptée à l'{OMG} : 19 septembre 2007
 - Version actuelle : http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf[1.3] (12/06/2012)
 - Paternité : {OMG}/{UML} + {INCOSE}
-- Auteurs principaux
+- Auteurs principaux :
 * Conrad Bock
 * Cris Kobryn
 * Sanford Friedenthal
-====
+********************************
+//====

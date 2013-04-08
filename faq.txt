@@ -2,21 +2,28 @@
 
 Cette _**F**requently **A**sked **Q**uestion_ a été construite par expérience, en regroupant 
 les questions des étudiants durant mes différentes interventions. 
-J'ai aussi ajouté des questions souvent rencontrées dans les journées organisés par {sysmlfrance}. 
+J'ai aussi ajouté des questions souvent rencontrées dans les journées organisées par {sysmlfrance}. 
 
 NOTE: Voir aussi cette http://www.sysmlforum.com/faq[FAQ] très bien faite.
 
 Cette FAQ peut servir de base à la révision d'examens (cf. aussi <<Exos>>).
 
-=== Peut-on avoir un _requirement_ contenu dans plusieurs autres ?
+:numbered!:
+
+=== Peut-on avoir un _requirement_ contenu plusieurs fois ?
 
 Non. Le lien de _containment_ est en fait une action qui place le "contenu" dans le
 "contenant". Dans TOPCASED, le diagramme laisse les liens précédents à l'écran, mais dans
 le modèle, c'est bien le dernier _containment_ réalisé qui est pris en compte. Dans 
 la figure ci-dessous le lien +A-C+ a été "dessiné" après celui +B-C+.
 
-.Exemple de divergence entre modèle et diagramme (bug)
-image:exercices/topcased-containment-1.png[]image:exercices/topcased-containment-2.png[]
+.Exemple de divergence modèle/diagramme (diagramme)
+ifdef::book[image::exercices/topcased-containment-1.png[scale=60]]
+ifndef::book[image::exercices/topcased-containment-1.png[]]
+
+.Exemple de divergence modèle/diagramme (modèle)
+ifdef::book[image::exercices/topcased-containment-2.png[scale=60]]
+ifndef::book[image::exercices/topcased-containment-2.png[]]
 
 [NOTE]
 ====
@@ -31,7 +38,16 @@ mais plutôt une représentation graphique de la contenance.
 L'organisation {sysml} des _requirements_ est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien `<<copy>>` pour créer plusieurs copies d'un même _requirement_. Personnellement je n'aime pas cette solution.
 
 .Exemple de partage de _requirement_
-image:exercices/topcased-containment-3.png[]
+ifdef::book[image::exercices/topcased-containment-3.png[scale=50]]
+ifndef::book[image::exercices/topcased-containment-3.png[]]
+
+.Définition : Réutilisation d'exigences (OMG SysML v1.3, Fig.16.6, p. 152)
+[icon="./images/icons/sysml.jpeg"]
+[NOTE]
+====
+_...the use of the Copy dependency [...] allow a single requirement to be reused in several requirements hierarchies._
+====
+
 
 === Peut-on avoir un lien `<<satisfy>>` entre exigences?
 
@@ -39,7 +55,7 @@ Techniquement oui (`<<satisfy>>` étant dérivé de `<<dependency>>`), mais ça 
 
 [NOTE]
 ====
-Certaines méthodes utilise ce lien pour par exemple exprimer qu'une exigence cliente et satisfaite par une exigence système (comme la méthode Harmony).
+Certaines méthodes utilise ce lien pour par exemple exprimer qu'une exigence cliente est satisfaite par une exigence système (comme la méthode <<Harmony>>).
 ====
 
 === Quelle est la différence entre `<<deriveReqt>>` et `<<refine>>` ?
@@ -157,3 +173,5 @@ ifdef::uk[]
 - Which language is easier to learn, SysML or UML?
 
 endif::uk[]
+
+:numbered:

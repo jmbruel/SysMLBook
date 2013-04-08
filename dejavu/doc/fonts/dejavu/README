@@ -1,0 +1,19 @@
+This package contains LaTeX support for the fonts DejaVu. They are derived
+from the Vera fonts and contain more characters and styles.
+
+The fonts are included in the original TrueType format and converted
+Type 1 format.
+
+The (currently) supported encodings are: OT1, T1, IL2, TS1, T2*, X2, QX
+and LGR. The package (currently) doesn't support math. More encodings
+and/or features will come later.
+
+The fonts are licensed under the Vera and Arev licenses, DejaVu changes
+are in the public domain. All the support files are released under the
+LaTeX Project Public License, either version 1.3 of this license or
+(at your option) any later version. The files released under the LaTeX
+Project Public License are listed in manifest.txt.
+
+The main reason why I created this package is that I am not satisfied
+with the Arev and Bera packages for the Czech language, but some problems
+are not just Czech-related. Moreover, you get more characters and styles.

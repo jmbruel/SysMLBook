@@ -1,0 +1,174 @@
+== Introduction
+
+La matrice qui nous servira de "carte de base" pour placer les activités
+ou les modèles, sera celle-ci :
+
+[[Matrice]]
+.La carte de base
+ifdef::book[[align="center",cols="h,4*",options="header"]]
+ifndef::book[[align="center",cols="h,4*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+
+=== Points de vue
+
+Dans un axe horizontal, j'ai différencié quatre grands points de vue :
+
+{Requirements}::
+	Les exigences et leur prises en compte sont un éléments critique pour le succès du développement du système. Sans explorer l'ensemble des activités d'ingénierie système (ce qui nécessiterait tout un volume du type de <<reqs>>) nous insisterons beaucoup sur cet aspect qui est souvent à l'origine de l'intérêt de {sysml}.
+{Structure}::
+	La description de l'architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important. C'est souvent la partie de {sysml} qui pose le moins de problème aux débutants. 
+{Behavior}::
+	Le comportement d'un système est du point de vue de l'utilisateur final beaucoup plus important que la structure elle-même. C'est la partie
+	qu'il est la plus à même d'exprimer, de comprendre (vos modèles) et de valider.
+{Crosscutting}::
+	Un certains nombre de concepts sont transverses aux trois points de vue précédents. Il s'agira principalement de parler de cohérence entre
+	les phases de développement ou entre les points de vue.
+
+=== Phase de développement
+
+Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie du développement :
+
+{organisation}::
+	Une étape indépendante du type de cycle de développement envisagé (en V, agile, etc.) mais qui concerne la mise en place
+	d'un cadre de travail qui permette un développement de qualité (outils, éditeurs, gestionnaire de version, de tâches, etc.)
+{analysis}::
+	Cette phase vise plutôt à examiner le domaine du problème. Elle se focalise sur les cahiers des charges et les exigences.
+	L'analyse débouche sur un dossier d'analyse qui décrit les grandes lignes (cas d'utilisation, architecture principale) du système.
+{design}::
+	Cette phase vise plutôt à examiner le domaine de la solution. Elle débouche sur un dossier de conception qui décrit les détails
+	conceptuels de la solution envisagée (structure détaillée, comportement, etc.)
+{implementation}::
+	Cette phase traite des développements finaux (construction ou approvisionnement en matériel, développement de codes, etc.).
+
+== Différence avec l'ingénierie logicielle
+
+Enseignant en informatique, je me retrouve souvent à enseigner {sysml} à des informaticiens.
+D'où ce petit exposé sur mon opinion de la différence entre les deux "mondes".
+
+=== Une ingénierie plus ancienne
+
+Que ce soit généralement en terme de cycle de développement ou historiquement,
+l'{is} arrive avant l'Ingénierie Logicielle. Les ingénieurs systèmes ont donc une longue
+expérience et des pratiques bien ancrées.
+
+=== Des systèmes plus complexes
+
+On parle de système complexe lorsque l'on a affaire à :
+
+* un ensemble d'éléments humains et matériels en relation avec :
+** de nombreux éléments technologiques (Informatique, Hydraulique, Electronique, ...)
+** intégrés pour fournir des services (finalité du système) en fonction de leur environnement
+** interagissant entre eux et avec leur environnement
+
+.Un système complexe
+ifdef::book[image::{images}/starwars.jpeg[scale=60]]
+ifndef::book[image::{images}/starwars.jpeg[alt="Système complexe",link="freeblueprints.net",width="70%"]]
+
+ifdef::backend-slidy2[<<<]
+
+On parle aussi de *Système de systèmes* quand un système :
+
+- doit gérer les interactions entre ses parties (ou composantes)
+- assure un comportement prévu à l'avance
+- gère les comportements (de l'environnement) inatendus
+
+.Un système de système
+ifdef::book[image::{images}/starwars2.jpeg[scale=70]]
+ifndef::book[image::{images}/starwars2.jpeg[alt="Système de systèmes",link="starwars.wikia.com",width="70%"]]
+
+=== Différents types d'analyse
+
+Toute la question que l'{is} cherche à résoudre est : comment passer des exigences au système
+de la façon la plus efficace possible.
+ 
+.Des exigences au système
+ifdef::book[image::{images}/analyse1.png[scale=50]]
+ifndef::book[image::{images}/analyse1.png[alt="Des reqs au système",width="70%"]]
+
+Pour cela l'{is} est découpée en plusieurs analyses, chacune avec un but bien particulier :
+
+ifdef::backend-slidy2[<<<]
+
+.Analyse Fonctionnelle et/ou Comportementale
+ifdef::book[image::{images}/analyse2.png[scale=50]]
+ifndef::book[image::{images}/analyse2.png[alt="Des reqs au système",width="70%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Analyse Structurelle
+ifdef::book[image::{images}/analyse3.png[scale=50]]
+ifndef::book[image::{images}/analyse3.png[alt="Des reqs au système",width="70%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Analyse de performance
+ifdef::book[image::{images}/analyse4.png[scale=50]]
+ifndef::book[image::{images}/analyse4.png[alt="Des reqs au système",width="70%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Analyses spécifiques
+ifdef::book[image::{images}/analyse5.png[scale=50]]
+ifndef::book[image::{images}/analyse5.png[alt="Des reqs au système",width="70%"]]
+
+ifdef::backend-slidy2[<<<]
+
+Pour arriver à combler le gap entre le système à développer et ses spécifications.
+
+.Des exigences au système
+ifdef::book[image::{images}/analyse6.png[scale=50]]
+ifndef::book[image::{images}/analyse6.png[alt="Des reqs au système",width="70%"]]
+
+== Normes et standards
+
+Il existe un grand nombre de standards en {is}. Cette section fera (bientôt) une revue
+de ces différents standards et organismes et de leur utilisation (IEEE, EIA, ISO, certification, NASA, INCOSE, AFIS, ...).
+
+Enfin, citons un rapport de 2010, le {rapportPotier}, qui présente l'état des logiciels embarqués
+et qui sera utiles à ceux qui s'intéressent aux verrous technologiques liés à ce domaine.
+
+L'{is} génère beaucoup de documentation. Les processus de certification (par exemple dans l'aéronautique) sont
+encore basés sur des documents textuels. 
+
+== Des documents aux modèles
+
+Vue la complexité grandissante des systèmes, petit à petit cette ingénierie tente de passer d'une
+ingénierie *centrée documents* à une ingénierie *centrée modèles*. D'où l'importance de se poser la question
+des notations et langages pour réaliser et communiquer avec ces modèles (cf. <<Notation>>).
+ 
+[[exigences]]
+== Les exigences
+
+L'ingénierie des exigences est d'une importance capitale en {is}.
+Nous renvoyons pour l'instant le lecteur au cours de Master qui précède ce cours.
+
+.300 corps de métiers sont parfois présents sur un chantier
+ifdef::book[image::{images}/ingenierie-des-exigences.jpg[scale=60]] 
+ifndef::book[image::{images}/ingenierie-des-exigences.jpg[alt="Joke",link="http://www.inria.fr/centre/rennes/actualites/vers-un-cahier-des-charges-mieux-formule",width="70%"]] 
+
+
+[[fig:eggs]]
+.\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
+[caption="Illustration: "]
+ifdef::book[image::./images/ProgrammerHumor.jpg[scale=50]]
+ifndef::book[image::./images/ProgrammerHumor.jpg["Joke",width="70%"]]
+
+[[structure]]
+== L'architecture du système
+
+Liens avec AADL, ...
+
+[[comportement]]
+== Le comportement du système
+
+Liens avec la V&V
+
+include::Methodes.txt[]
+

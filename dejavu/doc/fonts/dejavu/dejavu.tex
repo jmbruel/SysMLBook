@@ -1,0 +1,312 @@
+%% Copyright 2011 Pavel Farar
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Pavel Farar
+
+
+\documentclass[oneside]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[czech, polutonikogreek, english]{babel}
+\usepackage[IL2, T1]{fontenc}
+
+\usepackage{DejaVuSans}
+\usepackage{DejaVuSansMono}
+\usepackage{DejaVuSerif}
+
+\usepackage{booktabs}
+
+\usepackage{textcomp}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{pdfauthor={Pavel Farar}}
+
+\usepackage{graphicx}
+
+
+\title{Support package for DejaVu fonts}
+\author{Pavel Farář\\
+\href{mailto:pavel.farar@centrum.cz}{pavel.farar@centrum.cz}}
+
+\newcommand{\myBig}{\Huge}
+\newcommand{\myExperimental}{\color{blue}}
+
+\begin{document}
+
+\selectlanguage{english}%
+
+\maketitle
+
+\tableofcontents
+
+
+\section{Introduction}
+
+This package contains the LaTeX support for the DejaVu fonts. These fonts
+are derived from the Vera fonts and there are already other Vera derivatives
+on CTAN (Bera and Arev). The main reason why I created support for the DejaVu
+fonts is that I am not satisfied with the Bera and Arev fonts for the Czech
+and Slovak languages. However, other people should also benefit from this
+package---the fonts support more languages and they have several additional
+styles.
+
+The following figures show all supported styles. There are four basic and four
+condensed styles for DejaVu Sans and  and DejaVu Serif. DejaVu Sans Mono has
+four basic styles. DejaVu Sans ExtraLight is not supported at this moment, but
+it will come some time later. The additional styles not present in the original
+Vera fonts are in blue color and they are considered experimental.
+
+% !!! Use slanted (not "it") in the following table
+\begin{figure}[!htb]
+\centering{%
+  \begin{tabular}{ll}
+    {\usefont{T1}{DejaVuSans-TLF}{m}{n}DejaVu Sans} &
+    {\usefont{T1}{DejaVuSans-TLF}{b}{n}DejaVu Sans Bold} \\
+    {\usefont{T1}{DejaVuSans-TLF}{m}{sl}DejaVu Sans Oblique} &
+    {\usefont{T1}{DejaVuSans-TLF}{b}{sl}DejaVu Sans Bold Oblique} \\
+    {\usefont{T1}{DejaVuSans-TLF}{c}{n}\myExperimental DejaVu Sans Condensed} &
+    {\usefont{T1}{DejaVuSans-TLF}{bc}{n}\myExperimental DejaVu Sans Condensed
+      Bold} \\
+    {\usefont{T1}{DejaVuSans-TLF}{c}{sl}\myExperimental DejaVu Sans Condensed
+      Oblique} &
+    {\usefont{T1}{DejaVuSans-TLF}{bc}{sl}\myExperimental DejaVu Sans Condensed
+      Bold Oblique} \\
+    {\usefont{T1}{DejaVuSans-TLF}{el}{n}\myExperimental DejaVu Sans ExtraLight} &
+       ~
+
+  \end{tabular}
+\caption{The styles of DejaVu Sans}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering{%
+  \begin{tabular}{ll}
+    {\usefont{T1}{DejaVuSerif-TLF}{m}{n}DejaVu Serif} &
+    {\usefont{T1}{DejaVuSerif-TLF}{b}{n}DejaVu Serif Bold} \\
+    {\usefont{T1}{DejaVuSerif-TLF}{m}{it}\myExperimental DejaVu Serif Italic} &
+    {\usefont{T1}{DejaVuSerif-TLF}{b}{it}\myExperimental DejaVu Serif Bold Italic} \\
+    {\usefont{T1}{DejaVuSerif-TLF}{c}{n}\myExperimental DejaVu Serif Condensed} &
+    {\usefont{T1}{DejaVuSerif-TLF}{bc}{n}\myExperimental DejaVu Serif Condensed Bold} \\
+    {\usefont{T1}{DejaVuSerif-TLF}{c}{it}\myExperimental DejaVu Serif Condensed Italic} &
+    {\usefont{T1}{DejaVuSerif-TLF}{bc}{it}\myExperimental DejaVu Serif Condensed Bold Italic}
+  \end{tabular}
+\caption{The styles of DejaVu Serif}}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering{%
+  \begin{tabular}{ll}
+    {\usefont{T1}{DejaVuSansMono-TLF}{m}{n}DejaVu Sans Mono} &
+    {\usefont{T1}{DejaVuSansMono-TLF}{b}{n}DejaVu Sans Mono Bold} \\
+    {\usefont{T1}{DejaVuSansMono-TLF}{m}{sl}DejaVu Sans Mono Oblique} &
+    {\usefont{T1}{DejaVuSansMono-TLF}{b}{sl}DejaVu Sans Mono Bold Oblique}
+  \end{tabular}
+\caption{The styles of DejaVu Sans Mono}}
+\end{figure}
+
+The fonts have Latin, Cyrillic and Greek letters (and even more).
+The fonts cover many languages, but the three
+families do not have exactly the same characters. DejaVu Sans has usually more characters than the other fonts. Look at the file \texttt{languages.txt} what
+languages are supported.
+
+This package currently supports encodings T1, OT1, IL2, TS1, T2*, X2, QX
+and LGR. The fonts are included in the original
+TrueType format and in the converted Type 1 format.
+
+
+\section{License}
+
+The DejaVu fonts are derived from the Vera fonts and take some
+characters from the Arev fonts. Therefore the Vera and Arev licenses
+apply. DejaVu changes are in the public domain.
+
+The fonts in TrueType format are original files and the
+fonts in Type 1 format were converted by me
+using FontForge.
+
+All the support files are licensed under the \LaTeX\ Project Public License,
+either version 1.3 of this license or (at  your option) any later version.
+
+
+\section{Problems in Arev and Bera}
+
+The fonts Bera and Arev do not have all accented letters precomposed.
+Some letters are composed from the base letter and accent and some
+results are really bad. I will show two quite common problems.
+
+First, the letters dcaron, tcaron, lcaron and Lcaron should use a special type
+of caron, not the apostrophe. And the letters should not be much wider
+than the unaccented letters! Look at the following text using DejaVu Sans:\\
+{\Huge\usefont{T1}{DejaVuSans-TLF}{m}{n}žluťoučká loďka}
+
+Then compare it with the same text using Arev and Bera:\\
+{\Huge
+{\usefont{T1}{fav}{m}{n}žluťoučká loďka}\\	% arev sans
+{\usefont{T1}{fvs}{m}{n}žluťoučká loďka}	% bera sans
+}
+
+Second, the original Vera fonts have different shapes of accents for capital and
+small letters. Bera and Arev compose the missing accented letters with only
+one type of accents---that used for small letters. This results in capital
+letters with different shapes of accents. First, look at the accents in DejaVu
+fonts:\\
+{\Huge\usefont{T1}{DejaVuSans-TLF}{m}{n}PŘÍŠERNÝ příšerný}
+
+Then compare the accents in the letters Rcaron and Scaron in Bera fonts:\\
+{\Huge\usefont{T1}{fvs}{m}{n}PŘÍŠERNÝ příšerný}		% bera sans
+
+Arev fonts do not have problems in exactly the same letters as Bera fonts,
+but they have similar problems:\\
+{\Huge\usefont{T1}{fav}{m}{n}PŘÍŠERNÝ příšerný}		% arev sans
+
+Look at the accents in Iacute and Yacute.
+They are different from the accents used in the small letters. On the other
+hand, the accents in the letters Rcaron and Scaron are the same as those
+used in the small letters. And you can see that the different height of
+accents in the first three accented capital letters does not look very good.
+
+The problems with accents in capital letters are not just Czech-specific, you
+can see them also in other central European languages, such as Polish. And there
+is also the non-ideal position of accents in letters like Ccaron and ccaron.
+
+
+\section{The LGR encoding for Greek}
+
+The capital Greek accented letters are composed from the accent and the
+capital letter. There are (currently) no kerning pairs between these accents
+and capital letters in the fonts. Therefore, I added additional kerning pairs
+for these combinations and I think that the result is much better:
+\textgreek{>`A <'O <O >'E >E}.
+
+The combination accent and capital letter doesn't still give the same result
+as the precomposed letter. The combination has bigger left side bearing than
+the precomposed letter. I may do something with it later, but the most visible
+problem for me was the position of accents.
+
+The extra kerning pairs are not included in the fonts, but were used to
+generate the tfm files and I put them to the package for the case you want
+to look at them.
+
+
+\section{Using the package}
+
+The package was created using \texttt{fontools}, but with some changes. From
+\texttt{fontools} also come the mixed case names and the suffix \texttt{-TLF}
+(tabular lining figures) of the font families and also the mixed case
+names of the packages for the individual font families.
+
+There are two map files for the fonts: \texttt{dejavu-truetype.map} and \texttt{dejavu-type1.map}.
+You should use just one of them. The file \texttt{dejavu-type1.map} is a safe
+choice and you will get the full power of \TeX. If you just want to create PDF
+files with pdf\TeX\ or pdf\LaTeX\ you can use the file
+\texttt{dejavu-truetype.map} and the original TrueType fonts will be used.
+You install the fonts with a command like:
+\begin{verbatim}
+updmap-sys --enable Map=dejavu-type1.map
+\end{verbatim}
+
+There are several packages that you can use to set the fonts. You
+must explicitly use the package \texttt{fontenc} or \texttt{textcomp} (if
+needed). The easiest way to use the fonts is the package \texttt{dejavu}:
+\begin{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{dejavu}
+\end{verbatim}
+
+\sloppy
+This sets the font \texttt{DejaVuSerif-TLF} as the default serif family,
+the font \texttt{DejaVuSans-TLF} as the default sans serif family
+and finally the
+font \texttt{DejaVuSansMono-TLF} as the default typewriter family.
+
+\sloppy
+There are also several packages that set the individual font families.
+They have the same name as the font family, but without the suffix:
+\texttt{DejaVuSerif}, \texttt{DejaVuSerifCondensed},
+\texttt{DejaVuSans}, \texttt{DejaVuSansCondensed} and \texttt{DejaVuSansMono}.
+
+For example the package \texttt{DejaVuSerif} sets the font \texttt{DejaVuSerif-TLF}
+and you use it this way:
+\begin{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{DejaVuSerif}
+\end{verbatim}
+
+If you want to use some font together with another font that has somewhat
+different proportions, you can use the option \texttt{scaled}:
+\begin{verbatim}
+\usepackage[scaled=0.9]{DejaVuSerif}
+\end{verbatim}
+
+You can also typeset some text in a desired font like this:
+\begin{verbatim}
+{\usefont{T1}{DejaVuSerifCondensed-TLF}{m}{it}Text in
+DejaVu Serif Condensed Italic}
+\end{verbatim}
+
+You can see the available series/shape combinations in the
+table~\ref{tableShape}. There are just the combinations that really
+exist in the fonts, but you can use also some other combinations and
+then the substitution will be used. The bold extended series
+will change to the bold series and you can use the slanted or italic
+shape for all families.
+
+\begin{table}[!htb]
+\centering{%
+  \begin{tabular}{ll}
+    \toprule
+    font family & series/shape combinations \\
+    \midrule
+    DejaVuSerif-TLF & m/n, m/it, b/n, b/it, c/n, c/it, bc/n, bc/it \\
+    DejaVuSerifCondensed-TLF & m/n, m/it, b/n, b/it \\
+    DejaVuSans-TLF & m/n, m/sl, b/n, b/sl, c/n, c/sl, bc/n, bc/sl, el/n \\
+    DejaVuSansCondensed-TLF & m/n, m/sl, b/n, b/sl \\
+    DejaVuSansMono-TLF & m/n, m/sl, b/n, b/sl \\
+    \bottomrule
+  \end{tabular}
+\caption{The series/shape combinations for the fonts}\label{tableShape}}
+\end{table}
+
+
+
+
+
+\section{Known bugs}
+
+I put the letters \emph{Cyrillic letter short I with tail},
+\emph{Cyrillic letter EL with tail} and \emph{Cyrillic
+letter EM with tail} to the slots where the same letters with descender
+should be. They are somewhat similar and some languages should use exactly
+these letters. I think that it is better than leaving the slots empty.
+
+I experienced problems with letters \emph{dcroat} and \emph{Idotaccent}.
+The use of the fonts DejaVu-LGC did not help. Now
+I use different names of characters in the encoding T1 for the TrueType and
+Type 1 fonts and it works fine for me.
+
+The encodings OT1 and IL2 are not exactly the same as implemented in Computer
+Modern fonts, they are similar to the encodings in \TeX\ Gyre fonts. There
+is no change from dollar to pound in the italic shape, but I believe that
+it should not be a serious problem.
+
+The substitution of two or three hyphens in the monospaced font is not ideal.
+The behaviour is similar to both the Computer Modern and the \TeX\ Gyre fonts,
+but you may get some warnings when you use the TrueType fonts and the text is
+not in the \texttt{verbatim} environment. I recommend you to use one hyphen
+for en-dash and the expression \texttt{\{-\}\{-\}} for em-dash.
+
+Please \href{mailto:pavel.farar@centrum.cz}{send me} bug reports and
+suggestions about this package.
+
+
+
+
+\end{document}

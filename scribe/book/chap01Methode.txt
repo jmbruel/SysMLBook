@@ -1,0 +1,33 @@
+=== Méthode pour cet ouvrage
+
+[quote, Albert Einstein]
+____________________________________________________________________
+Everything should be made as simple as possible, but not simpler.
+____________________________________________________________________
+
+Mon approche pédagogique repose sur quelques principes, que j'ai essayé de mettre en oeuvre dans
+cet ouvrage :
+
+La répétition::
+	Par exemple certains diagrammes sont abordés plusieurs fois (comme le diagramme paramétrique). Le lecteur pourra avoir une impression de redite par moment. Sauf erreur de ma part (toujours possible!), c'est volontaire. En général les répétitions vont en niveau de précision, de détails et de complexité croissant. Ces répétitions sont limitées dans la version livre de cet ouvrage
+(car toute longueur inutile a un coût dans ce cas).
+L'illustration::
+	Dans la mesure du possible, j'essaye de donner des exemples aux principes énoncés. Vous trouverez donc plus d'exemples que de définitions.
+
+ifdef::backend-slidy2[<<<]
+
+Le référencement::
+	Les définitions ou autres affirmations sont tirées d'ouvrages de référence généralement citées.
+La "carte de base"::
+	J'aime réaliser une "carte" footnote:[voir aussi le concept de _Mind Maps_.] qui sert à "placer" les différents concepts abordés. Il me semble que cela permet aux étudiants de raccrocher les nouveaux concepts aux précédents.
+
+ifdef::backend-slidy2[<<<]
+
+//A part le chapitre <<umlAsysml, d'UML à SysML>>, aucune connaissance particulière d'{uml} n'est nécessaire.
+Aucune connaissance particulière d'{uml} n'est nécessaire, même si j'y fais référence à plusieurs endroits pour les étudiants qui connaissent cette notation (quasiment enseignée partout maintenant comme langage de modélisation).
+Il s'agit d'un parti pris prenant en compte plusieurs points :
+
+- La plupart des ingénieurs systèmes ne connaissent pas {uml}.
+- Les étudiants de STI2D ne connaissent pas {uml} et sont pourtant formés à {sysml}.
+- Ceux qui connaissent {uml} auront sûrement plaisir à retrouver les bases.
+

@@ -1,0 +1,62 @@
+:leveloffset: 2
+Le système de gestion de crise doit montrer les suivants propriétés non-fonctionnelles :
+
+ifndef::book[]
+[CAUTION]
+====
+La traduction a été principalement obtenue automatiquement, alors n'hésitez pas en cas de doutes à poser des questions!
+====
+endif::book[]
+
+=== Disponibilité
+
+- Le système doit être en opération 24 heures par jour, tous les jours, sans interruption, pendant toute l'année, sauf pour un temps d'arrêt maximal de 2 heures tous les 30 jours pour la maintenance.
+- Le système doit récupérer dans un maximum de 30 secondes en cas d'échec.
+- L'entretien doit être reportée ou interrompue quand une crise est imminente sans affecter les capacités des systèmes.
+
+=== Fiabilité
+
+- Le système ne doit pas dépasser un taux d'échec maximum de 0,001%.
+- Les unités mobiles sont en mesure de communiquer avec d'autres unités sur le site crise et le centre de contrôle, indépendamment des conditions d'emplacement, le terrain et la météo.
+
+=== Persistance
+
+- Le système doit permettre le stockage, la mise à jour et l'accès à l'information suivante sur les crises : type de crise, l'emplacement de la crise, rapport d'un témoin, emplacement du témoin, les données concernant les témoins, la durée de la crise, les ressources déployées, les victimes civiles, les stratégies utilisées, l'emplacement des équipes de secours sur la crise, journal des communications, et des décisions.
+- Le système doit permettre le stockage, la mise à jour et l'accès à l'information suivante sur les ressources disponibles et déployés (à la fois en interne et en externe) : type de ressources (humaines ou équipement), la capacité, l'équipe de sauvetage, l'emplacement, l'heure estimée d'arrivée (ETA) sur le site crise.
+- Le système doit permettre le stockage, la mise à jour et l'accès à l'information suivante sur les stratégies de sortie de crise : type de crise, étapes pour résoudre la crise, la configuration des missions nécessaires, des liens vers d'autres stratégies, applications aux crises précédentes, et le taux de succès.
+
+=== Sécurité
+
+- Le système doit définir des politiques d'accès pour les différentes catégories d'utilisateurs. La politique d'accès doit décrire les éléments et informations de chaque acteur peut ajouter, accéder et mettre à jour les informations.
+- Le système doit authentifier les utilisateurs sur la base des politiques d'accès lors de leur premier accès pour accéder aux éléments d'informations. Si un utilisateur reste inactif pendant 30 minutes ou plus, le système doit les obliger à se ré-authentifier.
+- Toutes les communications dans le système doit utiliser des canaux sécurisés conformes avec le cryptage AES-128 standard.
+
+=== Mobilité
+
+- Les ressources de secours doivent pouvoir accéder à l'information sur les mouvements.
+- Le système fournit des informations de localisation utiles pour économiser les ressources.
+- Les ressources de secours doivent communiquer leur emplacement au centre de contrôle.
+- Le système doit avoir accès à des cartes détaillées, des données de terrain et les conditions météorologiques pour l'emplacement de crise et les routes qui y mènent.
+
+=== Sécurité
+
+- Le système doit surveiller les émissions provenant du site crise pour déterminer les distances de fonctionnement sûres pour les ressources de sauvetage.
+- Le système doit surveiller les conditions météorologiques et le terrain sur le site de crise pour assurer la sécurité et le retrait des moyens de secours, et l'évacuation de civils, et les victimes.
+- Le système détermine un périmètre pour le site crise pour assurer la sécurité des civils et l'évacuation des victimes à une distance sûre.
+- Le système surveille les activités criminelles pour assurer la sécurité des moyens de secours, des civils et des blessés.
+- La sécurité du personnel de secours doit avoir la priorité absolue pour le système. 
+
+=== Adaptabilité
+
+- Le système doit recommander ou solliciter des ressources alternatives en cas d'indisponibilité ou l'insuffisance de ressources appropriées.
+- Le système doit être en mesure d'utiliser les canaux de communication de rechange en cas d'indisponibilité ou l'insuffisance des moyens existants.
+- Le système doit être en mesure de maintenir une communication efficace dans les zones de perturbation ou de bruit élevé sur le site crise.
+
+=== Précision
+
+- Le système doit avoir accès aux données de la carte, le terrain et les conditions météorologiques avec une précision de 99%.
+- Le système doit fournir des informations à jour pour sauver les ressources.
+- Le système doit enregistrer des données sur la réception sans modifications.
+- La communication entre le système et les ressources de sauvetage doit avoir un facteur de détérioration maximum de 0,0001 pour 1000 km
+
+:leveloffset: 0

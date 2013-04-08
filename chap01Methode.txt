@@ -1,16 +1,19 @@
-== Méthode pour cet ouvrage
+=== Méthode pour cet ouvrage
 
-[quote, Albert Einstein]
+[quote, Princesse Irulan, Extrait du Manuel de Muad’Dib]
 ____________________________________________________________________
-Everything should be made as simple as possible, but not simpler.
+C’est à l’heure du commencement qu’il faut tout particulièrement veiller à ce que les équilibres soient précis.
 ____________________________________________________________________
 
-Mon approche pédagogique repose sur plusieurs principes bien établis :
+
+Mon approche pédagogique repose sur quelques principes, que j'ai essayé de mettre en oeuvre dans
+cet ouvrage :
 
 La répétition::
-	Par exemple certains diagrammes sont abordés plusieurs fois (comme le diagramme paramétrique). Le lecteur pourra avoir une impression de redite par moment. Sauf erreur de ma part (toujours possible!), c'est volontaire. En général les répétitions vont en niveau de précision, de détails et de complexité croissant.
+	Par exemple certains diagrammes sont abordés plusieurs fois (comme le diagramme paramétrique). Le lecteur pourra avoir une impression de redite par moment. Sauf erreur de ma part (toujours possible!), c'est volontaire. En général les répétitions vont en niveau de précision, de détails et de complexité croissant. Ces répétitions sont limitées dans la version livre de cet ouvrage
+(car toute longueur inutile a un coût dans ce cas).
 L'illustration::
-	Dans la mesure du possible, j'essaye de donner des exemples aux principes énoncés.
+	Dans la mesure du possible, j'essaye de donner des exemples aux principes énoncés. Vous trouverez donc plus d'exemples que de définitions.
 
 ifdef::backend-slidy2[<<<]
 
@@ -21,21 +24,10 @@ La "carte de base"::
 
 ifdef::backend-slidy2[<<<]
 
-A part le chapitre <<umlAsysml, d'UML à SysML>>, aucune connaissance particulière d'{uml} n'est nécessaire.
-Il s'agit d'un partie pris prenant en compte plusieurs points :
+Aucune connaissance particulière d'{uml} n'est nécessaire, même si j'y fais référence à plusieurs endroits pour les étudiants qui connaissent cette notation (quasiment enseignée partout maintenant comme langage de modélisation).
+Il s'agit d'un parti pris prenant en compte plusieurs points :
 
-- La plupart des ingénieurs systèmes ne connaissent pas {uml}
-- Les étudiants de STI2D ne connaissent pas {uml} et sont pourtant formés à {sysml}
-- Ceux qui connaissent {uml} auront sûrement plaisir à retrouver les bases
-
-//Exemple de note à propos de {sysml} footnote:[An example footnote.].
-
-//An example link to a bibliography entry <<taoup>>.
-//indexterm:[Second example index entry]
-
-// Generate chart image file.
-//sys2::[python "dessins/chart.py" --format=png --output="{images}/chart.png" --scale=2]
-
-// Display chart image file.
-//image::{images}/chart.png["Chart"]
+- La plupart des ingénieurs systèmes ne connaissent pas {uml}.
+- Les étudiants de STI2D ne connaissent pas {uml} et sont pourtant formés à {sysml}.
+- Ceux qui connaissent {uml} auront sûrement plaisir à retrouver les bases.
 

@@ -16,10 +16,11 @@ Nous sommes des défenseurs des principes <<DRY>> et <<TDD>>. Nous allons donc r
 Nous choisissons ici l'outil {topcased} pour des raisons que nous expliquerons ailleurs. La version utilisée pour réaliser les exemples de cette section 
 est la version +5.2+.
 
-Un outil {SysML} seul ne suffit pas (cf. <<outils,Outillage>>). Il faut penser à la documentation (cf. <<gendoc,Génération de doc>>).
+Un outil {SysML} seul ne suffit pas (cf. <<outils>>). Il faut penser à la documentation (cf. <<gendoc>>).
 
 .Outillage autour de SysML
-image:{dessins}/SysMLTool-fr.png[width="80%",alt="Outillage autour de SysML"]
+ifdef::book[image::{dessins}/SysMLTool-fr.png[scale=30]]
+ifndef::book[image::{dessins}/SysMLTool-fr.png[width="80%",alt="Outillage autour de SysML"]]
 
 [[outils]]
 ==== Outils
@@ -34,14 +35,19 @@ des informations sur les dernières versions des outils.
 La plupart des outils permettent de générer de la documentation. Pour les outils basés {eclipse} comme
 {topcased}, il est possible d'utiliser le plug-in +GenDoc2+.
 
-.Génération de documentation à partir de TOPCASED
-image:{images}/gendoc-1.png["GENDOC",height="300",link="{images}/gendoc-1.png"]
-image:{images}/gendoc-2.png["GENDOC",height="300",link="{images}/gendoc-2.png"]
+.Génération de documentation à partir de TOPCASED (1)
+ifdef::book[image::{images}/gendoc-1.png[scale=40]]
+ifndef::book[image::{images}/gendoc-1.png["GENDOC",height="300",link="{images}/gendoc-1.png"]]
+
+.Génération de documentation à partir de TOPCASED (1)
+ifdef::book[image::{images}/gendoc-2.png[scale=40]]
+ifndef::book[image::{images}/gendoc-2.png["GENDOC",height="300",link="{images}/gendoc-2.png"]]
 
 Les outils commerciaux comme {rhapsody} permettent de générer de nombreux formats.
 
 .Génération de documentation à partir de Rhapsody
-image:{images}/gendoc-rhapsody1.png["Rhapsody",height="300",link="{images}/gendoc-rhapsody1.png"]
+ifdef::book[image::{images}/gendoc-rhapsody1.png[scale=40]]
+ifndef::book[image::{images}/gendoc-rhapsody1.png["Rhapsody",height="300",link="{images}/gendoc-rhapsody1.png"]]
 
 ==== Animation de modèles et simulation
 
@@ -56,13 +62,17 @@ Génération de code VHDL::
 Simulation en Rhapsody::
 	L'outil {rhapsody} possède une interface très pratique pour faire du prototypage rapide.
 +
-image:{images}/rhapsody-animation.png["Animation",width="80%",link="{images}/rhapsody-animation.png"]
+ifdef::book[image:{images}/rhapsody-animation.png[scale=50]]
+ifndef::book[image:{images}/rhapsody-animation.png["Animation",width="80%",link="{images}/rhapsody-animation.png"]]
 +
 Voir mon tutoriel (en anglais) disponible http://jmbhome.heroku.com/teaching/SysML/tp-undergraduate.html[ici].
 
 Animation de modèles en Artisan::
 	L'outil +Artisan+ permet également de faire de l'animation de modèles.
-	image:{images}/artisan.png["Animation",width="80%",link="{images}/artisan.png"]
+	
+.Animation Artisan
+ifdef::book[image::{images}/artisan.png[scale=50]]
+ifndef::book[image::{images}/artisan.png["Animation",width="80%",link="{images}/artisan.png"]]
 	
 === Spécification du système
 
@@ -73,7 +83,7 @@ Il s’agit ici de décrire le contexte et d’identifier les principaux cas d�
 === Conception du système
 
 Chaque cas d'utilisation sera précisé (`seq` et `act`).
-Les données métier seront alors identifiées pour construire le modèle d’architecture logique (+bdd+ et +ibd+) complété par la description des comportements complexes (+st+).
+Les données métier seront alors identifiées pour construire le modèle d’architecture logique (+{bdd}+ et +{ibd}+) complété par la description des comportements complexes (+{stm}+).
 Enfin le modèle d’architecture physique permettra de déterminer les aspects déploiement et constructions physiques d'équipements/
 
 === Traçabilité et Allocations 
@@ -99,25 +109,23 @@ manière des ouvrages du type _Cookbook_, nous allons donner une liste non exhau
 
 .Je souhaite modéliser mon système dans son environnement
 [caption="Recette : "]
-==========================
-C'est conseillé. Un block +System+ permet de raccrocher tous les éléments qui le composent à un même niveau.
-
+NOTE: C'est conseillé. Un block +System+ permet de raccrocher tous les éléments qui le composent à un même niveau.
 Dans l'exemple ci-dessous le système (le bloc +Pacemaker+) est lui-même un simple composant d'un élément de plus haut niveau : le contexte du système (le bloc +Context+) qui relie alors le système à son environnement.
+Voir aussi <<contexte>>.
 
 .Le contexte du Pacemaker (<<SeeBook2012>>)
-image:{images}/pacemaker-context.png[width="70%",alt="Le contexte du Pacemaker"]
-
-Voir aussi la section <<contexte>>.
-==========================
+ifdef::book[image::{images}/pacemaker-context.png[scale=50]]
+ifndef::book[image::{images}/pacemaker-context.png[width="70%",alt="Le contexte du Pacemaker"]]
 
 === Comportement
 
 .Je souhaite modéliser les différents modes (nominal, alternatifs)
 [caption="Recette : "]
-==========================
-Un diagramme d'état peu modéliser les différents modes et les événements qui produisent les changements de mode.
-==========================
+NOTE: Un diagramme d'état peu modéliser les différents modes et les événements qui produisent les changements de mode.
 
+////
 === Patrons de conception système
 
 Mérite une section ??
+
+/////

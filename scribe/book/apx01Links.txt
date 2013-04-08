@@ -1,0 +1,31 @@
+[[liens]]
+== Liens utiles
+
+- Sites officiels
+	* Le site de l'association http://www.sysml-france.org[SysML-France]
+	* Le site de l'http://www.omg.org/[OMG]  (Object Management Group)
+	* Le portail http://www.omgwiki.org/OMGSysML/[SysML] de l'OMG (Object
+	Management Group)
+	* http://www.omg.org/spec/SysML/1.3/PDF[La spécification elle-même]
+	* Le site de l'http://www.incose.org/[INCOSE] (International Council on
+	Systems Engineering)
+	* Le site de l'http://www.afis.fr/[AFIS] (Association Française
+	d'Ingénierie Système)
+- Blogs
+	* Le site de http://model-based-systems-engineering.com/[Tim Weilkiens]
+	* La démarche http://caminao.wordpress.com/[Caminao]
+	* http://www.omgwiki.org/MBSE/doku.php[Un WiKi avec de nombreux exemples]
+- Outils SysML
+	* http://www.topcased.org/[TopCased]
+    * http://www.eclipse.org/modeling/mdt/papyrus/[Papyrus]
+    * http://www.artisansw.com/[Artisan]
+	* http://www-01.ibm.com/software/rational/products/rhapsody[Rhapsody]
+- Outils de production
+	* Les conseils généraux de Scott Ambler sur http://www.ambysoft.com/books/bookWriting.html[Ecrire un livre technique]
+	* Les conseils techniques de Matthew Mc Cullough sur https://gist.github.com/1609255[Ecrire un livre technique]
+	* {asciidoc} comme moteur de base.
+	* {pandoc} pour la conversion de documents.
+	* https://github.com/schacon/git-scribe[git-scribe] pour la génération des documents à partir d'{asciidoc}.
+- Divers
+	* Pour en savoir plus sur l'http://jmb.c.la[auteur]
+	    

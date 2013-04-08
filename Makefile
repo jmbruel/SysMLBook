@@ -6,13 +6,22 @@ ICONSDIR=/Users/bruel/dev/asciidoc/images/icons
 all: *.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
-	 -a numbered $(MAIN).txt
+	-a stylesheet=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/scribe.css \
+	-a numbered $(MAIN).txt
 
 tout: tp deckjs sommaire ups slidy
 
+book:
+	@echo '==> Book ouput'
+	a2x -a icons -a iconsdir=$(ICONSDIR) --verbose -ftex $(MAIN).txt
+	sed "s/T2A,T2D,//g" main.tex > test.tex
+	pdflatex test
+	makeindex test.idx
+	pdflatex test
+
 veritas:
 	@echo '==> Compiling asciidoc files to generate SLIDES'
-	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri -a numbered \
+	asciidoc -b html5 -a icons -a iconsdir=$(ICONSDIR) -a stylesheet=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/scribe.css -a data-uri -a numbered \
 	 -o Veritas2012.html Veritas2012.txt
 	
 tp: ups-tp.txt

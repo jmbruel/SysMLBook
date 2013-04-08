@@ -1,0 +1,29 @@
+# bzr weave file v5
+i
+1 bdbde0208bb06702b63e42c1f08803411908d762
+n saito@ysaito1.corp.google.com-20051221010120-c67189d447834081
+
+i 0
+1 6af0bc3009e11b309b7ad92b78f5d7c371964093
+n saito@ysaito1.corp.google.com-20051221034159-8fd93c06f8da974e
+
+w
+{ 0
+. demos/*.eps
+. demos/*.svg
+. demos/*.pdf
+. demos/*.png
+}
+{ 1
+. doc/*.eps
+. doc/*.svg
+. doc/*.pdf
+. doc/*.png
+. doc/examples
+. doc/pychart
+. doc/pychart.tex
+. ./MANIFEST
+. .coverage
+. *,cover
+}
+W

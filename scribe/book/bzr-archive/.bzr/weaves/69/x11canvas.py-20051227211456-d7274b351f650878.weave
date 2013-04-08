@@ -1,0 +1,34 @@
+# bzr weave file v5
+i
+1 dd3823fa3a7edf6692220677cd86226aff7cacf7
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+w
+{ 0
+. #
+. # Copyright (C) 2000-2005 by Yasushi Saito (yasushi.saito@gmail.com)
+. # 
+. # Jockey is free software; you can redistribute it and/or modify it
+. # under the terms of the GNU General Public License as published by the
+. # Free Software Foundation; either version 2, or (at your option) any
+. # later version.
+. #
+. # Jockey is distributed in the hope that it will be useful, but WITHOUT
+. # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+. # FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+. # for more details.
+. #
+. import os
+. import gs_frontend
+. import theme
+. import sys
+. 
+. class T(gs_frontend.T):
+.     def close(self):
+.         gs_frontend.T.close(self)
+.         self.start_gs("-sDEVICE=x11")
+.         sys.stdin.readline()
+.         self.close_gs()
+. 
+}
+W
