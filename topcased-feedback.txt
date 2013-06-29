@@ -1,0 +1,12 @@
+== Petits défauts de Topcased
+
+Graphiques::
+
+- il met des noms aux associations dans les +uc+ par défaut
+- il laisse les liens de composition dans les +req+, même si on les changes (cf. <<faq>>)
+	
+Modélisation::
+
+- il est impossible de préciser (autrement qu'avec un commentaire) les conditions des +loop+ +opt+
+et autres fragments dans un +seq+
+

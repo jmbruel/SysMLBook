@@ -1,0 +1,84 @@
+<<<<
+
+//================================================================
+// UPSTI
+//================================================================
+== Retour sur le programme STI
+
+ifdef::backend-deckjs[]
+
+* Programme
+* Cycle en V et compétences
+
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Programme
+
+- Programmes des classes préparatoires aux Grandes Ecoles 
+- Filière : scientifique 
+- Voie : Physique, technologie et sciences de l’ingénieur (PTSI)
+- disponible http://cache.media.education.gouv.fr/file/special_3_ESR/45/2/programme-PTSI_252452.pdf[ici	]
+
+=== Le cycle en V
+
+image::cycleV.png["Exemple de Diagramme d'UC",width="80%"]
+
+=== Compétences à acquérir
+
+image::competences.png[]
+
+ifdef::backend-deckjs[]
+=== Compétences à acquérir (suite)
+endif::backend-deckjs[]
+
+- Analyser 
+- Modéliser 
+- Résoudre 
+- Expérimenter 
+- Concevoir 
+- Réaliser 
+- Communiquer
+
+ifdef::backend-deckjs[]
+:leveloffset: -2
+endif::backend-deckjs[]
+
+==== Analyser 
+
+* Identifier le besoin et définir les exigences du système 
+** => Diagramme des exigences [red]#`req`# (lecture)
+* Définir les frontières de l'analyse 
+** => Diagramme des cas d'utilisation [red]#`uc`# (interaction acteur-système)
+** => Diagramme de séquence [red]#`sd`# (chronologie des interactions)
+* Conduire l'analyse 
+** => pas vraiment de consignes
+
+==== Modéliser 
+* Justifier ou choisir les grandeurs nécessaires à la modélisation 
+** => pas vraiment de consignes
+* Proposer un modèle 
+** => Diagramme de séquence [red]#`sd`# ou d'état [red]#`stm`# 
+* Valider un modèle 
+
+==== Résoudre 
+
+* => pas vraiment de consignes
+
+==== Expérimenter 
+
+* => pas vraiment de consignes
+
+==== Concevoir 
+* => pas vraiment de consignes
+
+==== Réaliser 
+* => pas vraiment de consignes
+
+==== Communiquer
+* => pas vraiment de consignes
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+

@@ -1,0 +1,36 @@
+# bzr weave file v5
+i
+1 c4e69c5709679ee42c05dd1484e18ee40530e97e
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+w
+{ 0
+. import sys
+. import unittest
+. 
+. sys.path.append('..')
+. from pychart import *
+. 
+. class TestChartObject(unittest.TestCase):
+.     def test(self):
+.         b = bar_plot.T()
+.         b.label = "unknown"
+.         ok = False
+.         try:
+.             b.label = 10
+.         except TypeError:
+.             ok = True
+.         self.failUnless(ok)
+.         ok = False
+.         try:
+.             b.foobar = 999
+.         except Exception:
+.             ok = True
+.         self.failUnless(ok)
+.         
+.     def runTest(self):
+.         self.test()
+. if __name__ == '__main__':
+.     unittest.main()        
+}
+W

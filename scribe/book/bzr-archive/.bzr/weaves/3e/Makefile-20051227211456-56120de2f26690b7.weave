@@ -1,0 +1,47 @@
+# bzr weave file v5
+i
+1 bc823b5573e721ce6f92af06a8b9f2ac8d713d44
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+i 0
+1 968352da8465e9d45005f1105de76ff6ffd9dae8
+n saito@ysaito1.corp.google.com-20051221034159-8fd93c06f8da974e
+
+w
+{ 0
+. PYCHART_DIR=..
+[ 1
+. PYTHON_DOC_DIR=$(HOME)/Python-2.4.2/Doc
+] 1
+{ 1
+. PYTHON_DOC_DIR=$(HOME)/Python-2.4.1/Doc
+}
+. all: pychart examples
+. 
+. pychart: pychart.tex
+. 	$(PYTHON_DOC_DIR)/tools/mkhowto --html pychart.tex
+. 	$(MAKE) markup
+. 
+. pychart.pdf: pychart.tex
+. 	$(PYTHON_DOC_DIR)/tools/mkhowto --pdf pychart.tex
+. 
+. pychart.tex: template.tex doc.py
+. 	make -C$(PYCHART_DIR)/demos colorpng
+. 	PYTHONPATH=$(PYCHART_DIR):$(PYCHART_DIR)/demos python doc.py --pychart-dir=$(PYCHART_DIR) template.tex >$@
+. 
+. markup:
+. 	for f in pychart/*.html; do echo $$f; python markuphtml.py <$$f >foo.html; mv foo.html $$f; done
+. 
+. clean:
+. 	rm -f *.pyc *~ *.html *.info tmp.texi *.png *.eps pychart.tex
+. 	rm -rf examples html demos
+. 
+. demo:
+. 	PYTHONPATH=..:../demos python demodoc.py
+. examples: examples.py $(wildcard ../demos/*.py)
+. 	python examples.py
+. 
+. index.html: index.html $(GIFFILES)
+. 	gtml index.gtml
+}
+W

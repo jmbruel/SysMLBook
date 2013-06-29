@@ -1,0 +1,15 @@
+= Remerciements
+
+À faire au dernier moment...
+
+///////
+Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
+
+- {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
+- mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} ({RTaW});
+- mon maître d'{asciidoc} : {jmi}.
+
+Je remercie les professeurs de lycée (que ce soit de l'option STI2D du bac ou des classes préparatoires)
+pour leur très fructueuses discussions. L'Union des Professeurs de Sciences et Techniques Industrielles (UPSTI),
+particulièrement active, m'a donné l'occasion d'approfondir les points clefs de SysML par leurs pertinentes questions.
+///////

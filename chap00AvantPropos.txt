@@ -1,17 +1,12 @@
 == Avant-propos
 
-[quote, Bertrand Russell, The World of Mathematics (1956)]
-____________________________________________________________________
-A good notation has subtlety and suggestiveness which at times makes
-it almost seem like a live teacher.
-____________________________________________________________________
+=== Sur ce document
 
-=== A qui est destiné ce document?
-//My students, my colleagues, and myself!
+==== A qui est destiné ce document?
 
-Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de cours et d'exercice accessible, et ... moi-même (pour organiser mes notes diverses)!
+Les étudiants qui découvrent le langage, mes collègues enseignants qui cherchent un document de support à leur cours et d'exercice accessible, et ... moi-même (pour organiser mes notes diverses)!
 
-=== A qui n'est-il pas destiné?
+==== A qui n'est-il pas destiné?
 
 Si vous appartenez à l'une de ces catégories, ce livre *n'est pas pour vous* :
 
@@ -19,7 +14,7 @@ Si vous appartenez à l'une de ces catégories, ce livre *n'est pas pour vous* :
 - vous voulez vous perfectionner (ce livre n'est qu'une introduction)
 - vous souhaitez préparer la certification de l'{omg} (mieux vaut vous plonger dans la spécification <<SysML>>)
 
-=== Historique
+==== Historique
 
 Ce document est la compilation de plusieurs années d'enseignement de {sysml} depuis 2007, que ce soit :
 
@@ -30,25 +25,28 @@ Ce document est la compilation de plusieurs années d'enseignement de {sysml} de
 - à l'{uag}, au Mexique (40h de formation professionnelle aux employés de Continental),
 - ou plus récemment au {dl} de l'{ups}.
 
-Vous trouverez en référence (cf. <<refs, Bibiliographie>>) les ouvrages et autres documents utilisés.
+Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés.
 
 ifndef::backend-slidy2[]
+ifndef::book[]
 
 Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
 
 - {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
-- mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} (RTaW);
+- mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} ({RTaW});
 - mon maître d'{asciidoc} : {jmi}.
 
+endif::book[]
 endif::backend-slidy2[]
 
 === Sur l'auteur
 - Professeur à l'{univ-tlse}
-- Co-foundateur de l'association {sysmlfrance}
-- Membre du comité éditorial de la revue _{sosym}_
-- Membre du _Steering Committee_ de la conférence ACM/IEEE {models}
-- Chef du département informatique de l'{iut} de 2009 à 2012
-- Co-responsable de l'axe *Systèmes Ambiants* de l'{IRIT} 
+- Co-fondateur de l'association {sysmlfrance} en 2009
+- Membre du comité éditorial de la revue _{sosym}_ depuis sa création en 2002
+- Membre du _Steering Committee_ de la conférence ACM/IEEE {models} depuis 2008
+- Enseignant en modélisation depuis 1995
+ifndef::book[- Chef du département informatique de l'{iut} de 2009 à 2012]
+ifndef::book[- Co-responsable de l'axe *Systèmes Ambiants* de l'{IRIT}]
 - Marié, une (merveilleuse) fille
 
 [[comment-lire]]
@@ -60,11 +58,12 @@ Ce document a été réalisé de manière à être lu de préférence
 dans sa version électronique, ce qui permet de
 naviguer entre les références et les renvois interactivement, de consulter
 directement les documents référencés par une URL, etc.
-// Par exemple, les sigles comme {omg} apparaissent avec une astérisque qui permet un renvoie direct à leur définition dans le document PDF (lien clickable menant à la section <<Glossaire>>).
 
-IMPORTANT: Si vous lisez la version papier de ce document, ces liens clickables ne
-vous servent à rien, et c'est votre punition pour avoir utilisé du papier
-au lieu du support électronique!
+[NOTE]
+====
+Si vous lisez la version papier de ce document, ces liens clickables ne
+vous servent à rien, mais n'hésitez pas à en consulter la version http://www.sysML.fr[électronique]!
+====
 
 ==== Conventions typographiques
 
@@ -72,32 +71,82 @@ J'ai utilisé un certain nombre de conventions personnelles
 pour rendre ce document le plus agréable à lire et le plus
 utile possible, grâce notamment à la puissance d'{asciidoc} :
 
-- Des mises en formes particulières concernent les noms de
-personnalités (e.g., {jmi}), etc.
-- Les références bibliographiques présentées en fin de document
-(cf. <<refs, Bibliographie>>) sont complétées par le numéro des pages (lien clickable dans la
-version électronique de ce document) qui renvoie à l'endroit du document où elles sont
-citées.
-- Tous les _flottants_ (figures, tableaux, définitions, etc.) sont
-listés à la suite de la table des matière.
-- Les termes anglais (souvent incontournables) sont repérés
+- des mises en formes particulières (e.g., +NomDeBloc+ pour un élément de modèle),
+- des références bibliographiques, présentées en fin de document
+(cf. <<refs>>),
+- tous les _flottants_ (figures, tableaux) sont
+listés à la suite de la table des matière,
+- les termes anglais (souvent incontournables) sont repérés
 en _italique_, non pas pour indiquer qu'il s'agit d'un
 mot anglais, mais pour indiquer au lecteur que nous employons
-volontairement ces termes (e.g., {Requirements}).
+volontairement ces termes (e.g., _Requirements_).
 
+Les figures, sauf mention contraire, ont été réalisées avec l'outil {topcased} en français.
+Le titre des figures indique (entre parenthèses) un +R+ pour les figures issues de {rhapsody} et un +UK+ pour les figures en anglais. Pour les conventions (de nommage notamment), cf. <<conventions>>.
 
-=== Pourquoi parler de "document"?
+[NOTE]
+====
+Les notes comme celles-ci sont utilisées pour indiquer des éléments intéressant pour la majorité des lecteurs.
+====
 
-Parce que j'ignore la version que vous êtes en train de lire. A partir de l'link:main.txt[original], plusieurs versions ont été générées grâce à {asciidoc}:
+[CAUTION]
+====
+Ces notes indiquent des points importants qui réclament votre attention.
+====
 
-* pour le web (Moodle) au format link:main.html[html]
-* pour présentation en amphi au format link:main.slidy.html[slidy] ou link:main.deckjs.html[deck.js] 
-* pour impression au format link:main.pdf[pdf]
-* pour lire au format link:main.mobi[Kindle] (bientôt!)
+[TIP]
+====
+Celles-ci concernent en général des points de détail et permettent "d'aller plus loin".
+====
 
-=== Utilisation et autres mentions légales
+.Définition : Exemple (OMG SysML v1.3, p. 152)
+[icon="./images/icons/sysml.jpeg"]
+[NOTE]
+====
+Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
+====
+
+.Convention : Titre du conseil spécifique
+[icon="./images/upsti-logo.png"]
+[NOTE]
+====
+Conseil spécifique aux formateurs.
+====
+
+[icon="images/icons/appbar.weather.thunder.png"]
+[NOTE]
+====
+Modélisation SysML incorrecte.
+====
+
+[icon="images/icons/appbar.weather.overcast.png"]
+[NOTE]
+====
+Modélisation SysML partiellement correcte ou pouvant prêter à confusion.
+====
+
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+Modélisation SysML correcte.
+====
+
+==== Pourquoi parler de "document"?
+
+Parce que j'ignore la version que vous êtes en train de lire. A partir de l'link:main.txt[original], plusieurs versions ont été générées grâce à {asciidoc} :
+
+* pour le web (nous utilisons à l'{iut} l'excellent {Moodle}) au format http://www.sysml.fr/main[html]
+* pour présentation (en amphi par exemple) au format http://www.sysml.fr/slidy[slidy] ou http://www.sysml.fr/deckjs[deck.js] 
+* pour impression au format http://www.sysml.fr/main.pdf[pdf] (bien que bien sûr nous vous recommandons l'achat du livre)
+* pour lire au format http://www.sysml.fr/main.mobi[Kindle] (bientôt!)
+
+==== Utilisation et autres mentions légales
 
 include::about.txt[]
 
+ifdef::book[]
+N'hésitez pas à m'envoyer vos remarques en tout genre en m'écrivant à {email}.
+endif::book[]
+ifndef::book[]
 N'hésitez pas à m'envoyer vos remarques en tout genre en m'écrivant mailto:{email}[ici].
-
+endif::book[]

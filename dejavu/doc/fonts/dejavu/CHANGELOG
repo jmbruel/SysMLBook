@@ -1,0 +1,45 @@
+This is the changelog of the LaTeX package, not the fonts.
+
+
+2011-11-03
+----------
+
+- Added the missing font DejaVu Sans ExtraLight (requested by
+	Pander).
+
+
+2011-09-14
+----------
+
+- Added extra kerning pairs between the Greek accents and the
+	capital Greek letters for the serif and sans serif
+	families (the monospaced family left unchanged). The
+	kerning values are generated from the fonts (sfd files)
+	and the combination accent + letter should give the
+	same relative position of accent and letter as in the
+	precomposed accented capital Greek letters. Most kerning
+	values are big negative, but there are also several
+	small positive values.
+
+- Small changes in the LGR encoding: uni1FBD replaced by uni1FBF
+	and grave replaced by uni1FEF. They have exactly the same
+	glyph, but are more consistent with the Greek alphabet.
+	These should be user invisible changes.
+
+
+2011-08-24
+----------
+
+- Added the QX encoding (requested by Mojca Miklavec).
+
+- Added the LGR encoding (it may be usable as it is, but
+	I think that it needs an improvement--see the
+	documentation).
+
+- I moved the documentation of the fonts to its own subdirectory.
+
+
+2011-08-09 (font version 2.33)
+-------------------------
+
+- First public release.

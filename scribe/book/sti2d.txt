@@ -1,0 +1,42 @@
+[[STI2D]]
+== A propos du Bac STI2D
+
+Si vous utilisez cet ouvrage dans le cadre du bac {STI2D} (Sciences et Technologies de l'Industrie et du Développement Durable) qui a introduit depuis 2011 la notation {SysML} au programme, nous donnons
+ici des conseils sur l'utilisation de ce cours footnote:[Je remercie au passage les collègues de Lycée rencontrés dans le cadre de {sysmlfrance} pour nos fructueuses discussions à ce sujet.].
+
+L'objectif en {STI2D} n'est pas de former des spécialistes de {SysML} mais de permettre à tous d'apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l'importance de la communication devront primer.
+
+[NOTE]
+====
+A l'heure où nous écrivons ces lignes, il est également prévu de l'enseigner en classe prépa dès 2013.
+====
+
+=== Utilisation pratique
+
+Cet ouvrage est tout à fait utilisable dans le cadre des cours dispensés en {sti2d}.
+Seul un sous-ensemble des diagrammes de {sysml} a été retenu. 
+Les élèves et les enseignants du bac {STI2D} pourront trouver dans ce document des
+éléments utiles sur ces diagrammes :
+
+- diagramme des exigences (cf. <<reqs>>)
+- diagramme des cas d'utilisation (cf. <<usecase>>)
+- diagramme de séquences (cf. <<seq>>)
+- diagramme d'états (cf. <<stm>>)
+- diagramme de définition de blocs (cf. <<bddsec>>)
+- diagramme de blocs internes (cf. <<ibd>>)
+
+Ces 6 diagrammes sont tous traités dans cet ouvrage à un niveau qui devrait correspondre
+à l'utilisation qui en est faite en {sti2D}.
+
+Ces 6 diagrammes servent trois objectifs principaux inscrits au programme et dont les
+élèves pourront également trouver des éléments de réflexion :
+
+- Modélisation des exigences  (cf. <<exigences>>)
+- Modélisation structurelle (cf. <<structure>>)
+- Modélisation comportementale (cf. <<comportement>>)
+
+=== Pour aller plus loin
+
+Les questions et exercices de fin de chapitres de la partie notation seront peut-être d'un niveau plus avancé pour servir véritablement d'exercices, mais pourront amener  à une réflexion encadrée par l'enseignant. 
+
+Un blog récent recense les supports en liens avec {sti2d} : http://www.scoop.it/t/formation-sysml-sti2d.

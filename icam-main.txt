@@ -1,0 +1,345 @@
+//================================================================
+// Plan
+//================================================================
+== Plan
+
+- Généralités
+* Qui suis-je?
+* Objectifs et attentes
+* Principes de base
+- Retour sur le programme STI
+- Survol global de SysML
+- Etude de cas pas à pas
+- Retour sur les diagrammes
+- Annexes
+* Le temps réel
+* Conventions
+* FAQ
+* Références utiles
+* Bibliographie
+
+image:LogoSysML-France.png[link="http://www.sysml-france.org/"]
+
+<<<<
+
+//================================================================
+// Généralités
+//================================================================
+== Généralités
+
+ifdef::backend-deckjs[]
+
+* Qui suis-je?
+* Objectifs et attentes
+* Principes de base
+
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Qui suis-je ?
+
+- Professeur à l'{univ-tlse}
+- Co-fondateur de l'association {sysmlfrance}
+- Membre du comité éditorial de la revue _{sosym}_
+- Membre du _Steering Committee_ de la conférence ACM/IEEE {models}
+- Co-responsable de l'axe Systèmes Ambiants de l'{IRIT} 
+- Enseigne la modélisation depuis 1995
+
+ifdef::backend-deckjs[image:logo-irit.png[width="50%"]]
+
+=== Objectifs et attentes
+
+- Formation à SysML pour novices
+- Réponses aux questions pour les moins novices
+- Aide pour les 1er TP de la rentrés 2013
+
+=== Principes
+
+- Support à garder confidentiel pour l'instant, merci (livre en préparation)
+- Contact toujours possible : bruel@irit.fr
+- http://jmbhome.heroku.com/teaching/SysML/icam.html
+
+=== Conventions typographiques
+
+[NOTE]
+====
+Les notes comme celles-ci sont utilisées pour indiquer des éléments intéressant pour la majorité des lecteurs.
+====
+
+[CAUTION]
+====
+Ces notes indiquent des points importants qui réclament votre attention.
+====
+
+[TIP]
+====
+Celles-ci concernent en général des points de détail et permettent "d'aller plus loin".
+====
+
+.Définition : Exemple (OMG SysML v1.3, p. 152)
+[icon="./images/icons/sysml.jpeg"]
+[NOTE]
+====
+Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
+====
+
+ifdef::backend-deckjs[=== Conventions (suite)]
+<<<<
+
+.Convention : Titre du conseil spécifique
+[icon="./images/upsti-logo.png"]
+[NOTE]
+====
+Conseil spécifique aux formateurs.
+====
+
+[icon="images/icons/appbar.weather.thunder.png"]
+[NOTE]
+====
+Modélisation SysML incorrecte.
+====
+
+[icon="images/icons/appbar.weather.overcast.png"]
+[NOTE]
+====
+Modélisation SysML partiellement correcte ou pouvant prêter à confusion.
+====
+
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+Modélisation SysML correcte.
+====
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+
+include::progSTI.txt[]
+
+<<<<
+
+//================================================================
+// Survol de SysML
+//================================================================
+
+== C'est quoi SysML?
+
+Si vous ne deviez lire qu'un seul chapitre, voilà ce qu'il faudrait retenir.
+
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+
+
+=== Fiche d'identité
+
+include::fiche.txt[]
+
+=== SysML, c'est...
+
+Un ensemble de 9 types de diagrammes::
+* Diagrammes structuraux
+** Diagrammes de définition de blocs (+{bdd}+)
+** Diagrammes internes de blocs (+{ibd}+)
+** Diagrammes paramétriques (+{par}+)
+** Diagrammes de packages (+pkg+)
+* Diagrammes comportementaux
+** Diagrammes de séquence (+{seq}+)
+** Diagrammes d'activité (+{act}+)
+** Diagrammes de cas d'utilisation (+{uc}+)
+** Diagrammes d'états (+{stm}+)
+
+ifdef::backend-deckjs[]
+
+=== SysML, c'est (suite):
+
+Un ensemble de 9 types de diagrammes (suite)::
+
+endif::backend-deckjs[]
+
+* Diagramme d'exigence (+{req}+)
+
+Un profil {uml}::
+	C'est à dire une *extension* de cette notation, un ensemble de nouveaux concepts et éléments qui sont définis à partir des éléments de base d'{uml}. Un exemple : le +bloc+ {sysml} n'est qu'une redéfinition de la +classe+ {uml}.
+Une notation::
+ 	Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de *référence* à la modélisation des systèmes.
+
+<<<<
+
+=== SysML, ce n'est pas...
+
+Une méthode::
+ 	En effet, contrairement à ce que beaucoup pensent en l'abordant, {sysml} ne propose pas de démarche particulière de développement de système. C'est à la fois sa force (votre méthode existante pourra continuer à être utilisée) comme sa faiblesse car cette absence de guide méthodologique fait souvent défaut à son utilisation.
+ifdef::backend-deckjs[=== SysML, ce n'est pas...]
+Un outil::
+	Nous verrons en effet que {sysml} ne fait que ce qu'on veut bien en faire. Comme tout langage il est limité dans son pouvoir d'expression, mais surtout il reste une simple notation qu'il convient d'utiliser avec des outils et des démarches associées.
+ifndef::backend-deckjs[]
+Un raton laveur::
+	C'est juste pour voir ceux qui suivent. indexterm:[Raton laveur]
+endif::backend-deckjs[]
+
+[NOTE]
+====
+On ne dit pas "le SysML" mais tout simplement "SysML".
+====
+
+=== SysML est un langage
+
+- Langage
+* => Notation + Syntaxe + Sémantique
+- Outils
+* Topcased, Papyrus, Rhapsody, EA, Modelio, 
+
+=== Méthodes
+
+- Classiques en IS :
+* APTE
+* SADT
+* ...
+- Avec SysML :
+* SysMOD
+* Harmony (IBM)
+* OOSEM
+* ARCADIA (Thales)
+
+=== Sous-ensemble SysML?
+
+- Diagrammes
+* Exigences
+* Cas d'Utilisation
+* Séquence
+* Etat
+* Bloc
+* Interne
+* Activité
+
+=== Lien avec l'existant
+
+- Génie électrique
+* Diagramme sagittal
+* Performances
+* SF et SG
+* SF et FU
+* Algorigrammes de fonctionnement
+* SF degré 1
+* SF degré 2
+- Génie Mécanique
+* Bête à corne
+* Diagramme de pieuvre APTE
+* Rédaction FP et FC
+* Performances
+* Analyse Fonctionnelle externe (FS)
+* Analyse Fonctionnelle interne (FT)
+* Composants
+
+=== Exemple de la bête à Corne (APTE)
+
+image::bac.png["Bête à Corne SysML",width="60%"]
+
+=== Exemple de la bête à Corne (SysML)
+
+image::sysml-bac.png["Bête à Corne SysML",width="70%"]
+
+=== Particularités des études de cas STI
+
+- On part toujours d'un système existant
+- La description du système est faite par les fonctions (décomposition fonctionnelle)
+- Les laboratoires hébergent jusqu'à une dizaine d'EdC différentes
+- Les EdC servent sur environ 60 séances de 2h!
+- À Fermat les seuls logiciels utilisés sont Matlab (avec module StateFlow) et Autogen
+
+=== Etudes de cas
+
+Quelques études de cas envisagées :
+
+- Capteur SNCF
+- Vélo électrique
+- https://www.cerpet.adc.education.fr/ressources/1055/SysML%20pour%20STI2D.pdf[VLib] (STI2D)
+- Maison BBC
+- Drone Parot
+
+=== Exemples d'applications
+
+- Compléter des diagrammes existants
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+
+//================================================================
+// Retour sur les diagrammes
+//================================================================
+
+ifndef::backend-deckjs[]
+
+== La notation SysML
+
+:leveloffset: +1
+endif::backend-deckjs[]
+
+include::notation.txt[]
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+
+//include::cookbook.txt[]
+
+include::upsti.txt[]
+
+//================================================================
+// Annexes
+//================================================================
+
+ifndef::backend-deckjs[]
+
+[[appendix]]
+= Annexes
+
+endif::backend-deckjs[]
+	
+include::apx01Links.txt[]
+
+<<<<
+
+== Le temps et sa prise en compte dans les modèles
+
+Il existe plusieurs façon de représenter les informations temporelles.
+
+{SysML} permet par exemple d’ajouter des contraintes temporelles sur le diagramme de séquence. 
+Il existe deux types de contraintes :
+
+- la contrainte de durée, qui permet d’indiquer une contrainte sur la durée exacte, la durée minimum ou la durée maximum entre deux événements ;
+- la contrainte de temps, qui permet de positionner des étiquettes associées à des instants dans le diagramme au niveau de certains messages et d'ainsi contraindre leur relation.
+
+.Exemple de contrainte temporelle (tirée de <<SysML>>)
+ifdef::book[image::temps.png[scale=50]]
+ifndef::book[image::temps.png[width="70%"]]
+
+Néanmoins, pour une prise en compte industriel des contraintes temporelles, il conviendra d'utiliser 
+le profil dédié à ces aspects : le profil {marte}.
+
+include::conventions.txt[]
+
+include::faq.txt[]
+
+//================================================================
+// Références utiles
+//================================================================
+
+== Références utiles
+
+- http://cache.media.education.gouv.fr/file/special_3_ESR/45/2/programme-PTSI_252452.pdf[Programme du BO]
+- http://www.scoop.it/t/formation-sysml-sti2d[Le forum STI2D]
+- http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d?ref=http://www.scoop.it/t/formation-sysml-sti2d[Slides STI2D]
+- http://www.sysml-france.org/[SysML-France]
+- Contact : bruel@irit.fr
+
+include::biblio.txt[]
+
+== About...
+
+include::about.txt[]
+
+

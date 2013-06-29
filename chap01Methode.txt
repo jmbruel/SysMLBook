@@ -28,6 +28,6 @@ Aucune connaissance particulière d'{uml} n'est nécessaire, même si j'y fais r
 Il s'agit d'un parti pris prenant en compte plusieurs points :
 
 - La plupart des ingénieurs systèmes ne connaissent pas {uml}.
-- Les étudiants de STI2D ne connaissent pas {uml} et sont pourtant formés à {sysml}.
-- Ceux qui connaissent {uml} auront sûrement plaisir à retrouver les bases.
+- Les étudiants de STI2D ou de prepa ne connaissent pas {uml} et sont pourtant formés à {sysml}.
+- Ceux qui connaissent déjà {uml} auront sûrement plaisir à retrouver les bases.
 

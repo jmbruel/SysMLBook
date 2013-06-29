@@ -1,19 +1,59 @@
-Il existe un certain nombre de conventions complémentaires aux règles de la spécification elle-même.
-Nous ne les donnons ici qu'à titre indicatif. Il est important pour une organisation qui souhaite utiliser {sysml} comme notation pour ses modèles de se mettre d'accord sur ce type de convention. En voici quelques-unes :
+<<<<
+//-================================================================================
+[[Conventions]]
+== Conventions et recommandations
+//-================================================================================
 
-- Convention pour les noms :
-* de blocs commencent par une majuscule (origine : {UML})
-* de cas d'utilisation (qui représentent une action) doivent être un verbe à l'infinitif (origine : {UML})
-* d'activité (qui représentent une action) doivent être un verbe à l'infinitif (origine : {UML})
-* d'attributs commencent par une minuscule et ne sont pas au pluriel  (origine : {UML})
-- Convention pour les _requirements_ :
-* ...
-- Dépendances
-* En général un cas d'utilisation qui n'est inclus (`<<include>>`) que dans un seul autre cas est fusionné dans ce dernier
-* Lorsqu'un cas d'utilisation possède plusieurs cas `<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. <<conventions>>).
-
+Il existe un certain nombre de conventions complémentaires aux règles formelles de syntaxe que
+l'on trouve dans la spécification elle-même.
+Nous ne les donnons ici qu'à titre indicatif. Il est important pour une organisation qui souhaite utiliser {sysml} comme notation pour ses modèles de se mettre d'accord sur ce type de convention. En voici quelques-unes dans lequel vous pourrez piocher pour définir *vos propres conventions*.
 
 [NOTE]
 ====
 Pour les origines UML de certaines conventions, cf. <<Styles>>.
 ====
+
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Points de vue
+
+. Les cas d'utilisation concernent les utilisateurs du système et non le système lui-même.
+Ainsi les cas d'utilisation +Obtenir les coordonnées actuelles+ ou +Enregistrer une trace+
+sont de bons cas d'utilisation d'un GPS. Alors que +Economiser la batterie+ ou +Crypter les données+
+ne sont pas de bons cas.
+. Eviter de placer les matières premières comme des acteurs dans un diagramme d'utilisation, mais plutôt (éventuellement) comme des éléments de diagramme de définition de bloc (principalement celui de contexte).
+
+=== Cas d'utilisation et acteurs
+
+. Placer les acteurs principaux à gauche (e.g., <<UC1>>)
+. Placer les acteurs secondaires à droite (e.g., <<UC1>>)
+. Différencier les acteurs humains (_stickman_) des autres (stéréotype `<<actor>>`) e.g., <<UC1>>
+. Différencier les cas d'utilisation selon :
+- leur importance (e.g., `<<Principal>>`, `<<Secondaire>>`)
+- leur type (e.g., `<<TopLevel>>`, `<<Operational>>`)
+
+=== Nommage des divers éléments
+
+. Les noms de blocs commencent par une majuscule (origine : {UML}).
+. Les noms de cas d'utilisation (qui représentent une façon d'utiliser le système du point de vue de l'acteur) doivent être un verbe à l'infinitif (origine : {UML}).
+. Les noms d'activité (qui représentent une action) doivent être un verbe à l'infinitif (origine : {UML})
+. Les noms d'attributs commencent par une minuscule et ne sont pas au pluriel  (origine : {UML})
+
+=== Les _requirements_
+
+. Différencier les exigences descriptives et prescriptives. On pourra par exemple utiliser les stéréotypes `<<UserRequirements>>` et `<<SystemRequirements>>`
+
+=== Les dépendances
+. En général un cas d'utilisation qui n'est inclus (`<<include>>`) que dans un seul autre cas est fusionné dans ce dernier
+. Lorsqu'un cas d'utilisation possède plusieurs cas `<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement.
+
+=== Divers
+
+. Toujours indiquer les conditions des +loop+, +alt+, etc. dans un diagramme de séquence
+. Vérifier la complétude et la non intersection des conditions des transitions sortant d'un même état.
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]

@@ -1,0 +1,52 @@
+[[STI2D]]
+== À propos du Bac STI2D et des classes prépas
+
+Si vous utilisez cet ouvrage dans le cadre du bac {STI2D} (Sciences et Technologies de l'Industrie et du Développement Durable) qui a introduit depuis 2011 la notation {SysML} au programme ou encore dans le cadre des classes préparatoires aux écoles d'ingénieur qui devraient l'adopter bientôt, nous donnons
+ici des conseils sur l'utilisation de ce cours footnote:[Je remercie au passage les collègues de Lycée rencontrés dans le cadre de {sysmlfrance} pour nos fructueuses discussions à ce sujet.].
+
+L'objectif dans ces niveaux n'est pas de former des spécialistes de {SysML} mais de permettre à tous d'apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l'importance de la communication devront primer.
+
+[NOTE]
+====
+A l'heure où nous écrivons ces lignes, il est en effet prévu de l'enseigner en classe prépa dès 2013.
+====
+
+=== Utilisation pratique en STI2D
+
+Cet ouvrage est tout à fait utilisable dans le cadre des ces cours.
+Pour {sti2d}, seul un sous-ensemble des diagrammes de {sysml} a été retenu. 
+Les élèves et les enseignants du bac {STI2D} pourront trouver dans ce document des
+éléments utiles sur ces diagrammes :
+
+- diagramme des exigences (cf. <<reqs>>)
+- diagramme des cas d'utilisation (cf. <<usecase>>)
+- diagramme de séquences (cf. <<seq>>)
+- diagramme d'états (cf. <<stm>>)
+- diagramme de définition de blocs (cf. <<bddsec>>)
+- diagramme de blocs internes (cf. <<ibd>>)
+
+Ces 6 diagrammes sont tous traités dans cet ouvrage à un niveau qui devrait correspondre
+à l'utilisation qui en est faite en {sti2D}.
+
+Ils servent trois objectifs principaux inscrits au programme et dont les
+élèves pourront également trouver des éléments de réflexion :
+
+- Modélisation des exigences  (cf. <<exigences>>)
+- Modélisation structurelle (cf. <<structure>>)
+- Modélisation comportementale (cf. <<comportement>>)
+
+[TIP]
+====
+Un blog récent recense les supports en liens avec {sti2d} : http://www.scoop.it/t/formation-sysml-sti2d.
+====
+
+=== Classe préparatoire et UPSTI
+
+L'Union des Professeurs de Sciences et Techniques Industrielles ({UPSTI}) prépare à leur où nous écrivons ces lignes un document de cadrage en terme de méthodologie et de démarche. Nous n'insisterons donc pas sur ces aspects, mais donnerons quelques pistes dans le chapitre commun sur les conseils d'enseignement <<upsti,Pédagogie>>.
+
+Notons que dans ce cadre là, les 9 diagrammes sont utilisables même si pour l'instant les diagrammes paramétriques et de paquetages sont un peu mis en retrait.
+
+=== Pour aller plus loin
+
+Les questions et exercices de fin de chapitres de la partie notation seront peut-être d'un niveau plus avancé pour servir véritablement d'exercices, mais pourront amener à une réflexion encadrée par l'enseignant. 
+

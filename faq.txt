@@ -1,4 +1,8 @@
+<<<<
+//-================================================================================
+[[faq]]
 == FAQ
+//-================================================================================
 
 Cette _**F**requently **A**sked **Q**uestion_ a été construite par expérience, en regroupant 
 les questions des étudiants durant mes différentes interventions. 
@@ -9,73 +13,14 @@ NOTE: Voir aussi cette http://www.sysmlforum.com/faq[FAQ] très bien faite.
 Cette FAQ peut servir de base à la révision d'examens (cf. aussi <<Exos>>).
 
 :numbered!:
-
-=== Peut-on avoir un _requirement_ contenu plusieurs fois ?
-
-Non. Le lien de _containment_ est en fait une action qui place le "contenu" dans le
-"contenant". Dans TOPCASED, le diagramme laisse les liens précédents à l'écran, mais dans
-le modèle, c'est bien le dernier _containment_ réalisé qui est pris en compte. Dans 
-la figure ci-dessous le lien +A-C+ a été "dessiné" après celui +B-C+.
-
-.Exemple de divergence modèle/diagramme (diagramme)
-ifdef::book[image::exercices/topcased-containment-1.png[scale=60]]
-ifndef::book[image::exercices/topcased-containment-1.png[]]
-
-.Exemple de divergence modèle/diagramme (modèle)
-ifdef::book[image::exercices/topcased-containment-2.png[scale=60]]
-ifndef::book[image::exercices/topcased-containment-2.png[]]
-
-[NOTE]
-====
-Ce "bug" provient du fait que le lien de _containment_ n'est pas un lien de dépendance,
-mais plutôt une représentation graphique de la contenance.
-====
-
-=== Comment alors peut-on "partager" un _requirement_ ?
-
-(En lien avec la question précédente)
-
-L'organisation {sysml} des _requirements_ est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien `<<copy>>` pour créer plusieurs copies d'un même _requirement_. Personnellement je n'aime pas cette solution.
-
-.Exemple de partage de _requirement_
-ifdef::book[image::exercices/topcased-containment-3.png[scale=50]]
-ifndef::book[image::exercices/topcased-containment-3.png[]]
-
-.Définition : Réutilisation d'exigences (OMG SysML v1.3, Fig.16.6, p. 152)
-[icon="./images/icons/sysml.jpeg"]
-[NOTE]
-====
-_...the use of the Copy dependency [...] allow a single requirement to be reused in several requirements hierarchies._
-====
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
 
 
-=== Peut-on avoir un lien `<<satisfy>>` entre exigences?
-
-Techniquement oui (`<<satisfy>>` étant dérivé de `<<dependency>>`), mais ça n'a pas beaucoup de sens que de dire qu'un besoin est satisfait par un autre. Il s'agit le plus souvent d'un lien `<<deriveReqt>>`.
-
-[NOTE]
-====
-Certaines méthodes utilise ce lien pour par exemple exprimer qu'une exigence cliente est satisfaite par une exigence système (comme la méthode <<Harmony>>).
-====
-
-=== Quelle est la différence entre `<<deriveReqt>>` et `<<refine>>` ?
-
-La norme n'impose pas de sémantique précise à `<<deriveReqt>>`. Il y a généralement deux interprétations.
-
-1. Un usage classique est de l'utiliser pour ajouter des exigences plus détaillés déduites à partir d'autres exigences. Un exemple issue de la norme est une exigence de +puissance moteur+ déduite (+deriveReqt+) depuis l'exigence sur l’+accélération+ d'un véhicule.
-
-2. Une vision plus stricte, aussi illustré par l'exemple précédent, est que l'exigence dérivée est une condition nécessaire (un pré-requis) à l'exigence cible.
-
-Autre exemple respectant 1 mais pas 2 : "Le véhicule doit posséder 4 roues." est dérivé de "Le véhicule doit se déplacer sur route." En effet, un aéroglisseur répondrait aussi l'exigence initiale et n'a pourtant pas de roues.
-
-Quant au `<<refine>>` il est utilisé pour indiquer qu'un élément de modèle (qui peut être lui-même un _requirement_) est un raffinement (au sens niveaux d'abstraction, du plus abstrait au plus concret) d'un _requirement_. Par exemple, un _use case_ ou un diagramme d'activité peut être un raffinement d'une exigence fonctionnelle (textuelle par exemple). 
-
-=== A quoi sert le lien `<<trace>>` ?
-
-Il est utilisé pour indiquer que l'on souhaite conserver un lien de traçabilité entre les éléments
-(par exemple entre un élément de modélisation et un document). Il est recommandé d'utilisé une de ces
-versions plus précises (`<<deriveReqt>>` ou `<<satisfy>>` par exemple).
-
+//-================================================================================
+// Généralités
+//-================================================================================
 === Quelle est la version courante de la spécification et comment l'obtenir?
 
 Verson +1.3+ et disponible à l'URL: http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf
@@ -99,7 +44,234 @@ et ajout d'un modèle (non normatif) pour définir les systèmes d'unités et de
 SysML v1.3 _Revision Task Force_ dirigée par Roger Burkhart et Rick Steiner améliore de manière régulière la spécification en fonction des retours des utilisateurs.
 ====
 
+//-================================================================================
+// REQ
+//-================================================================================
+=== Peut-on avoir un _requirement_ contenu plusieurs fois ?
 
+Non. Le lien de _containment_ est en fait une action qui place le "contenu" dans le
+"contenant". Dans TOPCASED, le diagramme laisse les liens précédents à l'écran, mais dans
+le modèle, c'est bien le dernier _containment_ réalisé qui est pris en compte. Dans 
+la figure ci-dessous le lien +A-C+ a été "dessiné" après celui +B-C+.
+
+.Exemple de divergence modèle/diagramme (diagramme)
+ifdef::book[image::topcased-containment-1.png[scale=60]]
+ifndef::book[image::topcased-containment-1.png[]]
+
+.Exemple de divergence modèle/diagramme (modèle)
+ifdef::book[image::topcased-containment-2.png[scale=60]]
+ifndef::book[image::topcased-containment-2.png[]]
+
+[NOTE]
+====
+Ce "bug" provient du fait que le lien de _containment_ n'est pas un lien de dépendance,
+mais plutôt une représentation graphique de la contenance.
+====
+
+=== Comment alors peut-on "partager" un _requirement_ ?
+
+(En lien avec la question précédente)
+
+L'organisation {sysml} des _requirements_ est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien `<<copy>>` pour créer plusieurs copies d'un même _requirement_. Personnellement je n'aime pas cette solution.
+
+.Exemple de partage de _requirement_
+ifdef::book[image::topcased-containment-3.png[scale=50]]
+ifndef::book[image::topcased-containment-3.png[]]
+
+.Définition : Réutilisation d'exigences (OMG SysML v1.3, Fig.16.6, p. 152)
+[icon="images/icons/sysml.jpeg"]
+[NOTE]
+====
+_...the use of the Copy dependency [...] allow a single requirement to be reused in several requirements hierarchies._
+====
+
+
+=== Peut-on avoir un lien `<<satisfy>>` entre exigences?
+
+Techniquement oui (`<<satisfy>>` étant dérivé de `<<dependency>>`), mais ça n'a pas beaucoup de sens que de dire qu'un besoin est satisfait par un autre. Il s'agit le plus souvent d'un lien `<<deriveReqt>>`.
+
+[NOTE]
+====
+Certaines méthodes utilisent ce lien pour par exemple exprimer qu'une exigence cliente est satisfaite par une exigence système (comme la méthode <<Harmony>>).
+====
+
+=== Quelle est la différence entre `<<deriveReqt>>` et `<<refine>>` ?
+
+La norme n'impose pas de sémantique précise à `<<deriveReqt>>`. Il y a généralement deux interprétations.
+
+1. Un usage classique est de l'utiliser pour ajouter des exigences plus détaillés déduites à partir d'autres exigences. Un exemple issue de la norme est une exigence de +puissance moteur+ déduite (+deriveReqt+) depuis l'exigence sur l’+accélération+ d'un véhicule.
+
+2. Une vision plus stricte, aussi illustré par l'exemple précédent, est que l'exigence dérivée est une condition nécessaire (un pré-requis) à l'exigence cible.
+
+Autre exemple respectant 1 mais pas 2 : "Le véhicule doit posséder 4 roues." est dérivé de "Le véhicule doit se déplacer sur route." En effet, un aéroglisseur répondrait aussi l'exigence initiale et n'a pourtant pas de roues.
+
+Quant au `<<refine>>` il est utilisé pour indiquer qu'un élément de modèle (qui peut être lui-même un _requirement_) est un raffinement (au sens niveaux d'abstraction, du plus abstrait au plus concret) d'un _requirement_. Par exemple, un _use case_ ou un diagramme d'activité peut être un raffinement d'une exigence fonctionnelle (textuelle par exemple). 
+
+=== A quoi sert le lien `<<trace>>` ?
+
+Il est utilisé pour indiquer que l'on souhaite conserver un lien de traçabilité entre les éléments
+(par exemple entre un élément de modélisation et un document). Il est recommandé d'utilisé une de ces
+versions plus précises (`<<deriveReqt>>` ou `<<satisfy>>` par exemple).
+
+=== Comment SysML permet-il la validation et la vérification des exigences ?
+
+//http://www.sysmlforum.com/faq/how-does-sysml-enable-requirements-verification-and-validation.html
+
+Comment {SysML} permet de vérifier et de valider les exigences ?
+
+La *validation* d'une exigence est de la responsabilité des {stakeholders}.
+À partir de la spécification des exigences, 
+ils valident qu'il s'agit bien du bon produit à construire. 
+Typiquement, le diagramme des exigences sert de base à cette validation.
+
+La *vérification* d'une exigence est de la responsabilité de l'ingénieur système et/ou de l'analyste système. 
+C'est à eux de montrer la correspondance entre les éléments constituant du système et les exigences spécifiées.
+C'est principalement pour cette activité que sont utilisés les relations `<<satisfy>>` et `<<verify>>`.
+
+.Validation et Vérification des exigences (Reproduced by Permission © 2003-2013 PivotPoint Technology Corp)
+ifdef::book[image::Requirements-VV.png[scale=50]]
+ifndef::book[image::Requirements-VV.png[width="70%"]]
+
+//-================================================================================
+// UC
+//-================================================================================
+
+=== À quoi sert un diagramme des UC avec un seul cas d'utilisation ?
+
+image::plantuml/uc6.png[]
+
+Tout simplement à relier les autres diagrammes à ce cas d'utilisation. Par exemple le comportement
+du système, l'architecture, etc. (les solutions) pourront être reliées (`<<satisfy>>`) à ce cas.
+Il faut aussi ne pas perdre de vue qu'un diagramme peut évoluer. On pourra très bien rajouter au
+diagramme des cas non encore pris en compte comme +Transporter le système+, +Recycler le système+, etc.
+
+=== Comment faut-il comprendre "interaction" dans les diagrammes d'UC ?
+
+La définition de la norme {norme} :
+
+[[actorsdef]]
+.Définition : _Actors_ (OMG SysML v1.3, p. 123)
+[icon="images/icons/sysml.jpeg"]
+[NOTE]
+====
+_... Actors represent classifier roles that are external to the system that may correspond to users, systems, and or other environmental entities. They may interact either directly or indirectly with the system ..._
+====
+
+Pour la comprendre il ne faut pas utiliser le Larousse français (qui rend presque le caractère réciproque obligatoire),
+mais plutôt la comprendre dans son acceptation informatique (comme dans "Interaction Homme-Machine").
+Par exemple un message (appel de méthode) d'un élément vers un autre dans un diagramme de séquence est appelé en SysML une _interaction_.
+ 
+SysML permet de *préciser le caractère réciproque* ou non de l'interaction par exemple entre un +Acteur+ et un +Cas d'utilisation+ :
+
+[[UCinter]]
+.Trois types d'interaction différentes possibles en SysML
+image::plantuml/uc5.png[]
+
+=== Les "matières premières" font-elles parties des acteurs ?
+
+On pourrait les considérer comme des acteurs en se fiant à la définition (cf. <<actorsdef,Acteurs>>)
+et en les associant à des _environmental entities_.
+Mais elles sont échangées avec les entités de l'environnement, ce qui n'est pas la même chose.
+Autrement dit, il faut indiquer qui fournit les matières premières et qui recueille les matières produites
+éventuellement en tant qu'acteurs, pas les matières elles-même, qui seront représenter comme des flux
+échangés ou des blocs.
+Eventuellement on peut les retrouver dans le diagramme de contexte ou encore dans un
+diagramme structurel comme le diagramme de bloc interne.
+
+[TIP]
+====
+Je recommande la lecture (anglaise, _sorry_) de l'excellent plaidoyer pour la mort des acteurs :
+http://model-based-systems-engineering.com/tag/sysml/.
+====
+
+[WARNING]
+====
+Donc non, le soleil et le vent ne sont pas des acteurs!! (ni la corde, ni la raquette)
+====
+
+=== Pour l'analyse fonctionnelle : diagramme des UC ou des activités ?
+
+Pour alimenter le débat, je renvois aux exemples donnés par {loic} lors de la journée {UPSTI}.
+Voici un diagramme classique {fast} :
+
+.Diagramme FAST
+image::/Users/bruel/dev/asciidoc/sif2013/images/fast.png[]
+
+.Représentation possible en SysML
+image::/Users/bruel/dev/asciidoc/sif2013/images/sysml-fast.png[]
+
+On pourrait croire que ces schémas sont identiques mais pas du
+tout. {SysML} présente juste l'organisation du modèle et non l'arbre
+d'appel. De plus, {FAST} a tendance à focaliser sur une solution unique
+alors que {SysML} permet de repousser ce choix voir d'explorer des alternatives.
+
+//-================================================================================
+// ACT
+//-================================================================================
+
+=== Quelle est la différence entre un _join_ de type "OU" et un _fusion_ dans un diagramme d'activités ?
+
+Pour rappel le _join_ est utilisé pour représenter la synchronisation (le "rendez-vous") et
+représente donc une conjonction "ET". Mais le comportement par défaut pouvant être modifié par
+un `<<joinSpecification>>`, on peut indiquer un "OU" pour signifier l'attente d'un seul des deux jetons.
+Mais justement le _fusion_ est là pour ça normalement. Ces 2 concepts étant issus d'{UML}, il
+nous faut nous référer à la norme de ce dernier:
+
+.Définition : Types de diagrammes (UML Superstructure v2.4.1 p. 399)
+[icon="images/icons/sysml.jpeg"]
+[NOTE]
+====
+All tokens offered on incoming edges are offered to the outgoing edge. There is no synchronization of flows or joining of tokens.
+====
+
+Il n'y a donc sémantiquement aucune différence.
+
+[WARNING]
+====
+Attention, il n'y a pas beaucoup de sens à utiliser un _join_ de cette façon, car non seulement il ne "joint" plus rien,
+mais en plus contrairement à un _join_ qui "consomme" les 2 jetons, une telle utilisation aurait pour effet de laisser
+les 2 jetons passer, mais l'un après l'autre!
+====
+
+//-================================================================================
+// STM
+//-================================================================================
+
+=== Un système peut il avoir plusieurs états?
+
+On lit souvent qu'il n'y a pour un système ou un composant "qu'un seul état actif à la fois".
+
+Du point de vue structurel, si l'on considère que l'état à un instant +t+ d'un composant est représenté par
+la valeur de ses attributs à cet instant, alors cette composition est unique. Néanmoins cela prête souvent
+à confusion avec le fait qu'un composant dont le comportement est décrit par une machine à état avec des
+régions concurrentes peut se retrouver dans plusieurs états ({sysml} du coup) en même temps.
+
+Il faut donc bien faire la différence entre :
+
+- l'*état du système* (en tant qu'association de valeurs d'attributs à un instant T)
+qui lui est unique à un instant donné, et 
+- l'*état d'une machine à états* (en tant qu'abstraction d'un ensemble d'états au sens précédent).
+
+.Exemple d'un système ayant plusieurs états, au sens des machine à états (fourni par {loic}) 
+[NOTE]
+====
+Soit un système avec une unique variable +i+.
+Les états du systèmes seraient par exemple l'ensemble des entiers naturels (positifs).
+Dans une machine à état UML, on pourrait par exemple avoir l'état +pair+ et l'état +impair+.
+Mais on pourrait aussi avoir, deux-sous états (+nul+ et +non-nul+) et rajouter en concurrence (+multiple de 4+ ou non, etc.).
+====
+
+[[Grafcet]]
+=== Comment traduire un Grafcet en machine à état ?
+
+En automatique, la notation la plus connue pour représenter la dynamique d'un système est le {grafcet}.
+Il semble qu'il existe une synthèse du passage {grafcet} => diagramme d'état. J'attends de le trouver
+pour l'intégrer ici. Car sans en être un spécialiste, ce que j'en ai lu me fait plutôt penser à un diagramme
+d'activité (notamment par leur proximités à tous les deux avec les {rdp}).
+
+//-================================================================================
+// FAQ anglaise
+//-================================================================================
 ifdef::uk[]
 
 === What is the current version of SysML and how can I obtain it?
@@ -151,6 +323,9 @@ No. The History pseudostate (H) is indicated inside a composite state and means 
 
 endif::uk[]
 
+//-================================================================================
+// Divers
+//-================================================================================
 === Divers
 
 Quelques autres questions que je laisse à votre sagacité :
@@ -174,4 +349,41 @@ ifdef::uk[]
 
 endif::uk[]
 
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+
+//-================================================================================
+// FAQ française des questions idiotes
+//-================================================================================
+== FABQ
+
+Cette _**F**requently **A**sked **B**ad **Q**uestion_ est une compilation des questions
+trouvées parfois dans les forums et qui montrent l'incompréhension qui entoure encore {sysml}. 
+
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Comment installer SysML?
+
+{sysml} n'est pas un programme qu'on installe. Il existe de nombreux
+outils qui chacun possède sa propre façon d'être installé sur votre machine
+(en fonction de votre système d'exploitation, si c'est un _plugin_, etc.).
+
+=== Comment exécuter un diagramme SysML?
+
+Les diagrammes {sysml} ne sont que des dessins, des représentations graphiques,
+ils ne s'_exécutent_ donc pas. Bien sûr de nombreux travaux et outils portent sur
+les modèles exécutables. Il s'agit alors pour un outil de proposer de reproduire
+la dynamique d'un diagramme. Il s'agit en général de diagramme de comportement
+(par exemple une machine à état) pour lequel l'outil propose de simuler l'arrivée
+d'événement et de reproduire (plus ou moins graphiquement) le comportement modélisé
+(par exemple le franchissement d'une transition).
+
+
+
 :numbered:
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]

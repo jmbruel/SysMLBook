@@ -1,11 +1,12 @@
+//----------- Basic definitions for Asciidoc --------------
 :title: Introduction à SysML
 :doctype: book
 :description: Livre d'intro à SysML
-:keywords: one two
+:keywords: SysML Ingénierie Systèmes
 :Author: Jean-Michel Bruel 
 :Author Initials: JMB
-:Email: jean-michel.bruel@univ-tlse2.fr
-:Revision: 1.1
+:Email: bruel@irit.fr
+:Revision: 1.2
 :localdate: {sys: date +%d/%m/%Y}
 :date: {localdate}
 :startdate: 26/07/2012
@@ -13,13 +14,14 @@
 :dessins: dessins
 :acsi: /Users/bruel/dev/asciidoc/ACSI
 :defs: /Users/bruel/dev/asciidoc/ACSI/defs
-:toc_title: Content
+:toc_title: Table des matières
 :slideshowlocation: [IUT Blagnac]
 :duration: 85
 :slidebackground: asciidocslidy
 :copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by Asciidoc and W3C Slidy &#169; 
 :incremental!:
 :indir: dessins
+:source-highlighter: pygments
 
 //----------- dck.js --------------
 // swiss, neon beamer
@@ -54,23 +56,30 @@
 = {title}
 
 // raccourcis sites
-:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
-:eclipse: http://www.eclipse.org[eclipse]
+:aadl: http://www.aadl.info/[AADL]indexterm:[AADL]
+:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]indexterm:[AsciiDoc]
+:doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
+:eclipse: http://www.eclipse.org[eclipse]indexterm:[eclipse]
+:marte: http://www.omgmarte.org/[MARTE]indexterm:[MARTE]
+:modelio: http://www.modeliosoft.com/[Modelio]
 :models: http://www.modelsconference.org/[MODELS]
 :moodle: http://webetud.iut-blagnac.fr[Moodle]
-:omg: http://www.omg.org[OMG]
+:omg: http://www.omg.org[OMG(TM)]indexterm:[OMG(TM)]
 :pandoc: http://johnmacfarlane.net/pandoc/[Pandoc]
+:rapportPotier: http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf[Rapport Potier]
+:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]indexterm:[Rhapsody]
+:rtaw: http://www.realtimeatwork.com/[RTaW]indexterm:[RTaW]
 :slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
 :sosym: http://www.sosym.org[Software and System Modeling journal]
-:rapportPotier: http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf[Rapport Potier]
-:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]
-:topcased: http://www.topcased.org[TOPCASED]
+:sym: http://www.omg.org/spec/SyM/[SysML-Modelica]indexterm:[Modelica]
+:sysml: http://www.omgsysml.org/[SysML(TM)]indexterm:[SysML(TM)]
+:sysmltrends: http://www.google.fr/trends/explore#q=sysml[SysML Trends]
+:topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
+:uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
 
 // data
 :eggstitle: Humour
-:sysml: http://www.omgwiki.org/OMGSysML/[SysML]indexterm:[SysML]
-:STI2D: STI2D indexterm:[STI2D]
-:uml: http://www.uml.org/[UML]indexterm:[UML]
+:STI2D: STI2D(((STI2D)))
 :Requirements: Requirements
 :Structure: Structure
 :Behavior: Comportement
@@ -81,48 +90,65 @@
 :implementation: Implémentation
 :resume: En résumé
 :revisions: Questions de révision
-:is: Ingénierie Système indexterm:[IS]
-:sym: http://www.omg.org/spec/SyM/[SysML-Modelica]
-:sysmltrends: http://www.google.fr/trends/explore#q=sysml[SysML Trends]
-
+:is: Ingénierie Système(((IS)))
+ifndef::uk[] 
+:stakeholders: parties prenantes 
+endif::uk[]
+:satisfy: +<<satisfy>>+
+:verify: +<<verify>>+
+	
 // personnes et institutions
-:afis: AFIS
-:karina: Karina Aguilar
-:nico: Nicolas Belloir
+:afis: AFIS(((AFIS)))
 :agusti: Agusti Canals
 :dl: http://www.dept-info.ups-tlse.fr/index.php?option=com_content&view=article&id=294&Itemid=697&lang=fr[Master DL-SI]
-:loic: Loïc Féjoz
+:incose: http://www.incose.org/[INCOSE]indexterm:[INCOSE]
+:irit: http://www.irit.fr[IRIT]
+:iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
 :jmi: Jean-Michel Inglebert
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
-:incose: http://www.incose.org/[INCOSE]
-:irit: http://www.irit.fr[IRIT]
-:iut: IUT de Blagnac
+:karina: Karina Aguilar
+:loic: Loïc Féjoz
+:nico: Nicolas Belloir
 :nonne: Laurent Nonne
-:omg: http://www.omg.org[OMG]
 :prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
 :pdss:  Pierre de Saqui Sannes
-:sysmlfrance: http://www.sysml-france.fr[SysML-France]
+:sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :univ-tlse: http://www.univ-toulouse.fr[Univesité de Toulouse]
 :univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
-:uag: Universitad Autonoma de Guadalajara
-:uppa: Université de Pau et des Pays de l'Adour
+:uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
+:uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
 :ups: http://www.univ-tlse3.fr[UPS]
+:upsti: http://www.upsti.fr/[UPSTI]
 
-//================================================================
-//== Listes
-//================================================================
+// SysML diagrams
+:seq: sd(((sd)))
+:sd: sd(((sd)))
+:bdd: bdd(((bdd)))
+:ibd: ibd(((ibd)))
+:act: act(((act)))
+:stm: stm(((stm)))
+:req: req(((req)))
+:uc: uc(((uc)))
+:pkg: pkg(((pkg)))
+:par: par(((par)))
+:dss: dss(((dss)))
 
-//=== Figures
-
-//. <<fig:eggs,\{eggstitle}>>
-
-//================================================================
-// chapitres 
-//================================================================
-
-<<<
+//Environnement
+:images: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images
+:icons: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons
+:plantuml: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/plantuml
 
 ifndef::backend-slidy2[]
+
+ifdef::book[]
+
+[dedication]
+include::thanks.txt[]
+
+[preface]
+include::preface.txt[]
+
+endif::book[]
 
 = Partie 1 : Introduction
 
@@ -132,72 +158,11 @@ include::chap00AvantPropos.txt[]
 
 include::chap01Methode.txt[]
 
+include::sysml.txt[]
 
-== C'est quoi SysML?
+include::sti2d.txt[]
 
-Si vous ne deviez lire qu'un seul chapitre, voilà ce qu'il faudrait retenir...
-
-include:fiche.txt[]
-
-ifdef::backend-slidy2[<<<]
-
-{SysML}, *c'est* :
-
-* Un ensemble de 9 types de diagrammes :
-** Diagrammes structuraux
-*** Diagrammes de définition de blocks (+bdd+)
-*** Diagrammes internes de blocks (+ibd+)
-*** Diagrammes paramétriques (+par+)
-*** Diagrammes de packages (+pkg+)
-** Diagrammes comportementaux
-*** Diagrammes de séquence (+seq+)
-*** Diagrammes d'activité (+act+)
-*** Diagrammes de cas d'utilisation (+uc+)
-*** Diagrammes d'états (+st+)
-
-ifdef::backend-slidy2[]
-
-<<<
-
-{SysML}, *c'est* (suite):
-
-* Un ensemble de types de diagrammes :
-
-endif::backend-slidy2[]
-
-** Diagramme d'exigence (+req+)
-* Un profil {uml}, c'est à dire une *extension* de cette notation
-* Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de *référence* à la modélisation des systèmes
-
-{SysML}, *ce n'est pas* :
-
-* Une méthode ou une démarche de développement de système
-* Un outil
-* Un raton laveur (c'est juste pour voir ceux qui suivent)
-
-== A propos du Bac STI2D
-[[STI2D]]
-
-Si vous utilisez cet ouvrage dans le cadre du bac {STI2D} qui a introduit depuis 2011 la notation {SysML} au programme, nous donnerons
-ici (bientôt) des conseils sur l'utilisation de ce cours footnote:[Je remercie au passage les collègues de Lycée rencontrés dans le cadre de {sysmlfrance} pour nos fructueuses discussions à ce sujet.].
-
-L'objectif en {STI2D} n'est pas de former des spécialistes de {SysML} mais de permettre à tous d'apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l'importance de la communication devront primer.
-
-A l'heure où nous écrivons ces lignes, il est également prévu de l'enseigner en classe prépa dès 2013.
-
-== Un exemple fil rouge
-
-L'exemple de système qui sera modélisé tout au long de ce livre en guise d'exemple
-est l'exemple d'un système de gestion et de supervision de crise. Les détails sont
-donnés en annexe (cf. <<appendix,Annexes>>).
-
-Il existe un certain nombre d'autres exemple complets :
-
-- Le radio-réveil de {prfc} <<Roques2010>>
-- Le distilleur de <<FMS>> 
-- Le pacemaker de <<SeeBook2012>>
-
-<<<
+include::filRouge.txt[]
 
 ifndef::backend-slidy2[]
 
@@ -207,7 +172,6 @@ endif::backend-slidy2[]
 
 include::IS.txt[]
 
-<<<
 
 ifndef::backend-slidy2[]
 
@@ -217,8 +181,6 @@ endif::backend-slidy2[]
 
 include::notation.txt[]
 
-<<<
-
 ifndef::backend-slidy2[]
 
 = Partie 4 : Modéliser un système en SysML
@@ -227,22 +189,34 @@ endif::backend-slidy2[]
 
 include::cookbook.txt[]
 
-<<<
-
 ifndef::backend-slidy2[]
 
-= Partie 5 : Pour aller plus loin
+[[upsti]]
+= Partie 5 : Pédagogie
 
 endif::backend-slidy2[]
 
-== Considérations méthodologiques
-[[methodo]]
+include::upsti.txt[]
 
-Exemples de démarche autour de {sysml}, lien avec la section <<Methodes, Méthodes>>.
+ifndef::backend-slidy2[]
+
+= Partie 6 : Pour aller plus loin
+
+endif::backend-slidy2[]
+
+[[methodo]]
+== Considérations méthodologiques
+
+Exemples de démarche autour de {sysml}, (cf. <<Methodes>>).
 indexterm:[Méthodes]
 
+[[Analyse]]
+== Analyses et simulation
+
+To be completed
+
+[[Exos]]
 == Exercices de révision
-[[Exos]]	
 
 Reprendre ici les questions des chapitres (à organiser en fichiers!).
 
@@ -255,7 +229,8 @@ Un quizz en ligne est disponible http://webetud.iut-blagnac.fr/mod/quiz/view.php
 En voici une capture d'écran :
 
 .Exemple de QCM sur SysML
-image::{images}/quizz.png["Crosword", width="60%"]
+ifdef::book[image::{images}/quizz.png[scale=30]]
+ifndef::book[image::{images}/quizz.png["Crosword", width="60%"]]
 
 
 ==== Corrigé
@@ -270,7 +245,8 @@ L'ensemble des questions du quizz a été généré à partir de ce fichier
 Voici un petit exercice (en anglais pour l'instant, désolé) pour changer :
 
 .Mots-croisés sur SysML
-image::{images}/crossword.png["Crosword"]
+ifdef::book[image::{images}/crossword.png[scale=50]]
+ifndef::book[image::{images}/crossword.png["Crosword"]]
 
 Vertical (across)::
 - 2. outside-inside connection
@@ -285,7 +261,7 @@ Horizontal (down)::
 - 3. message represented by a regular (unfilled) arrow
 - 5. each use case is advised to be linked to at least one of them
 - 7. they are handled in SysML by Packages
-- 8. communication entity in a +seq+
+- 8. communication entity in a +{seq}+
 - 11. a supporter of SysML
 - 12. number of diagrams in SysML
 
@@ -314,7 +290,6 @@ TRANSITION INCOSE
 
 endif::correction[]
 
-<<<
 
 //================================================================
 // APPENDIX
@@ -329,6 +304,9 @@ endif::backend-slidy2[]
 	
 include::apx01Links.txt[]
 
+include::conventions.txt[]
+
+/////
 == Historique de SysML
 
 Un point sur les évolutions de {sysml}.
@@ -337,44 +315,51 @@ Un point sur les évolutions de {sysml}.
 == D'UML à SysML
 
 Un point sur comment aborder {sysml} quand on vient d'{uml}.
+/////
 
+== Le temps et sa prise en compte dans les modèles
+
+Il existe plusieurs façon de représenter les informations temporelles.
+
+{SysML} permet par exemple d’ajouter des contraintes temporelles sur le diagramme de séquence. 
+Il existe deux types de contraintes :
+
+- la contrainte de durée, qui permet d’indiquer une contrainte sur la durée exacte, la durée minimum ou la durée maximum entre deux événements ;
+- la contrainte de temps, qui permet de positionner des étiquettes associées à des instants dans le diagramme au niveau de certains messages et d'ainsi contraindre leur relation.
+
+.Exemple de contrainte temporelle (tirée de <<SysML>>)
+ifdef::book[image::{images}/temps.png[scale=50]]
+ifndef::book[image::{images}/temps.png[width="70%"]]
+
+Néanmoins, pour une prise en compte industriel des contraintes temporelles, il conviendra d'utiliser 
+le profil dédié à ces aspects : le profil {marte}.
+
+/////
 == Idées de projets
 
 Quelques exemples de sujet propice au développement SysML.
 
 == Challenges et questions ouvertes autour de SysML
 
+TBD...
+//////
+
 include::faq.txt[]
-
-== A propos de ce document...
-
-include::about.txt[]
-
-<<<
-
-ifndef::backend-slidy2[]
-
-[bibliography]
-[[refs]]
-= Bibliographie
-
-endif::backend-slidy2[]
 
 include::biblio.txt[]
 
-<<<
-
 include::glossary.txt[]
 
-<<<
-
 ifndef::backend-slidy2[]
+ifdef::book[]
 
 [index]
-= Index
-////////////////////////////////////////////////////////////////
-The index is normally left completely empty, it's contents are
-generated automatically by the DocBook toolchain.
-////////////////////////////////////////////////////////////////
+== Index
 
+endif::book[]
 endif::backend-slidy2[]
+
+
+include::about.txt[]
+
+

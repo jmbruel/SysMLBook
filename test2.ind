@@ -1,0 +1,33 @@
+\begin{theindex}
+
+  \item Bengal Tiger, \hyperpage{3}
+  \item Big cats
+    \subitem Lions, \hyperpage{3}
+    \subitem Tigers
+      \subsubitem Bengal Tiger, \hyperpage{3}
+      \subsubitem Siberian Tiger, \hyperpage{3}
+
+  \indexspace
+
+  \item Example index entry, \hyperpage{3}
+
+  \indexspace
+
+  \item Lions, \hyperpage{3}
+
+  \indexspace
+
+  \item monkeys, \hyperpage{3}
+
+  \indexspace
+
+  \item Second example index entry, \hyperpage{5}
+  \item Siberian Tiger, \hyperpage{3}
+
+  \indexspace
+
+  \item Tigers
+    \subitem Bengal Tiger, \hyperpage{3}
+    \subitem Siberian Tiger, \hyperpage{3}
+
+\end{theindex}

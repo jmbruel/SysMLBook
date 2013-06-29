@@ -1,0 +1,50 @@
+%%
+%% This style is derived from the docbook one.
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{asciidoc}[2008/06/05 AsciiDoc DocBook Style]
+
+%===========================================================
+%                               Layout
+%===========================================================
+%\pagestyle{plain}%fancy
+%\setlength{\topmargin}{4.8cm}%
+%\setlength{\oddsidemargin}{4cm}%
+%\setlength{\evensidemargin}{4cm}%
+%\setlength{\textwidth}{13cm}%
+%\setlength{\textheight}{18.5cm}%
+
+%\setlength{\paperwidth}{21cm}
+%\setlength{\paperheight}{29.7cm}
+\usepackage[top=4.6cm, bottom=4.6cm, left=4cm, right=4cm]{geometry}
+
+%===========================================================
+%                               heading
+%===========================================================
+\usepackage{fancyhdr}
+\lhead{Introduction à SysML}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\copyright{} J.-M. Bruel - 2013}
+\rfoot{}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+%% Just use the original package and pass the options.
+\RequirePackageWithOptions{docbook}
+
+% Sidebar is a boxed minipage that can contain verbatim.
+% Changed shadow box to double box.
+\renewenvironment{sidebar}[1][0.95\textwidth]{
+  \hspace{0mm}\newline%
+  \noindent\begin{Sbox}\begin{minipage}{#1}%
+  \setlength\parskip{\medskipamount}%
+}{
+  \end{minipage}\end{Sbox}\doublebox{\TheSbox}%
+}
+
+% For DocBook literallayout elements, see `./dblatex/dblatex-readme.txt`.
+%\usepackage{alltt}
+\cfoot{\copyright{} J.-M. Bruel - 2013}
+

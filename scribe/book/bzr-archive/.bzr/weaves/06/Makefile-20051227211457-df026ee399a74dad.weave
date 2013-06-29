@@ -1,0 +1,14 @@
+# bzr weave file v5
+i
+1 07c110da12671bde01b9734d6abe2bc7a064b7d1
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+w
+{ 0
+. clean:
+. 	rm -f *~ *.pyc *.bak
+. setup:
+. 	python2 empty_docs.py
+. 	PYTHONPATH=.. python2 generate_docs.py
+}
+W

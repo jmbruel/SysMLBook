@@ -1,0 +1,213 @@
+:icons: /Users/bruel/dev/asciidoc/images/icons
+== Context
+
+Cette partie est dédiée à l'enseignement à {SysML}. J'y distille des conseils et
+des remarques issues des nombreuses questions soulevées dans le cadre des journées
+SysML-France ou {upsti}.
+
+//===========================================================================
+== Respect des notations SysML
+
+Je recommande vraiment l'utilisation d'outils (même de dessins, mais dédié à) {sysml}.
+Ils respectent en général la norme {norme} (bien qu'il faille se méfier).
+Eviter de "dessiner" des diagrammes. 
+
+ifndef::deckjs[]
+:leveloffset: +1
+endif::deckjs[]
+
+Par contre la norme permet de faire des adaptations graphiques (cf. la discussion http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/).
+
+include::slides/cordeuse/bdd.asc[]
+
+include::slides/cordeuse/seq.asc[]
+
+
+ifndef::deckjs[]
+:leveloffset: 0
+endif::deckjs[]
+
+<<<<
+
+//===========================================================================
+== Diagramme des cas d'utilisation
+
+ifdef::deckjs[]
+:leveloffset: -1
+endif::deckjs[]
+
+[[Utilisation]]
+=== Utilisation du système
+
+.Problème : Fournir n'est pas Obtenir...	
+[icon="images/icons/appbar.weather.overcast.png"]
+[NOTE]
+====
+image::ucBad.png[]
+====
+
+Il vaut mieux définir les cas d'utilisation du point de vue de (ou des) utilisateurs plutôt que du système. Cf. <<Conventions>>.
+Pour rappel, un cas d'utilisation est un regroupement de scénarios qui correspondent à un but d'un des acteurs (dans le domaine du problème considéré et selon la granularité envisagée).
+
+Dans le diagramme ci-dessus il aurait fallut écrire :
+
+.Solution : Prendre le point de vue de l'utilisateur
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+image::plantuml/uc7.png[]
+====
+
+ifdef::deckjs[]
+:leveloffset: 0
+endif::deckjs[]
+
+ifndef::deckjs[]
+:leveloffset: +1
+endif::deckjs[]
+
+include::slides/cordeuse/uc.asc[]
+
+ifdef::deckjs[]
+:leveloffset: -1
+endif::deckjs[]
+ifndef::deckjs[]
+:leveloffset: 0
+endif::deckjs[]
+
+=== Utilisation des `<<include>>`
+
+Il faut faire attention à ne pas abuser des `<<include>>`.
+Par exemple ma recommandation en SysML/UML est de ne jamais avoir ça :
+
+[[UC2]]
+.Problème : mauvaise utilisation de l'`<<include>>`
+[icon="images/icons/appbar.weather.overcast.png"]
+[NOTE]
+====
+image::plantuml/uc2.png[width="80%"]
+====
+
+Dans la figure <<UC2>>, il n'y a aucune raison de ne pas inclure le cas d'utilisation
++S'identifier+ directement dans le cas d'utilisation +Acheter en ligne+. Et avoir ainsi :
+
+[[UC3]]
+.Solution 1 : On englobe les `<<include>>` "isolés"
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+image::plantuml/uc3.png[width="80%"]
+====
+
+J'enseigne qu'un `<<include>>` devrait toujours concerner un cas inclut dans plusieurs autres, comme la figure <<UC4>> :
+	
+[[UC4]]
+.Solution 2 : On "mutualise" les `<<include>>`
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+image::plantuml/uc4.png[width="80%"]
+====
+
+Néanmoins je vois deux raisons valables pour décomposer les cas d'utilisation avec des `<<include>>` qui se retrouvent isolés :
+	
+1. Pour indiquer que seulement une partie du cas d'utilisation principal interagit avec un acteur (secondaire la plupart du temps).
+C'est ce qui est fait dans <<UC1bis>>.
+
+2. Pour faire de la décomposition fonctionnelle (cf. point suivant).
+
+=== Niveau de détails des UC
+
+Faut-il minimiser le nombre de cas d'utilisation ou au contraire détailler?
+Normalement un bon diagramme des UC est indépendant de la solution, il exprime
+plutôt le problème (les attentes). 
+
+Néanmoins dans le cadre de l'enseignement en prépa comme support graphique à une analyse
+fonctionnelle, pourquoi pas détailler. À ce moment-là, utiliser des stéréotypes pour différencier
+les cas d'utilisation (`<<TopLevel>>` et `<<Operational>>` par exemple comme dans la documentation SysML 1.3 pp 185-186
+sur le +HybridSUV+).
+
+[NOTE]
+====
+La question de l'utilisation des cas d'utilisation pour exprimer les activités du système reste à trancher.
+Le diagramme des activités étant tout de même plus adapté a priori (cf. <<faq>>).
+Le principal défaut du diagramme <<UC1>> est surtout de mélanger des cas d'utilisations de niveaux différents. 
+N'oublions pas que derrière chaque UC, il devrait y avoir un but d'une partie prenante.
+====
+
+
+ifdef::deckjs[]
+:leveloffset: 0
+endif::deckjs[]
+
+<<<<
+
+//===========================================================================
+== Diagrammes de bloc
+
+ifdef::deckjs[]
+:leveloffset: -1
+endif::deckjs[]
+
+=== Héritage
+
+Attention à la notion d'héritage, complexe à appréhender. On ne peut surtout pas dire :
+
+.Erreur : Confondre héritage et propriété
+[icon="images/icons/appbar.weather.thunder.png"]
+[NOTE]
+====
+Un bloc +SarmentAttaché+ hérite des blocs +Lien+ et +SarmentNonAttaché+.
+image:plantuml/bdd1.png[]
+====
+
+La relation doit pourvoir se lire "est un". Or, un +SarmentAttaché+ n'est pas un +SarmentNonAttaché+ (c'est même le contraire)!
+
+Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de *généralisation*. À l'inverse, quand on constate qu'un bloc possède réellement plusieurs déclinaisons différentes et que l'on créé alors des blocs spécifiques, on parle alors de *spécialisation*.
+
+.Exemple de lien de généralisation/spécialisation
+image::genspec.png[width="70%"]
+
+On retrouve cette association entre blocs, mais aussi entre acteurs, cas d'utilisation, etc.
+
+.Solution
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+Un bloc +SarmentAttaché+ hérite du bloc +Sarment+ et possède un +Lien+.
+image:plantuml/bdd2.png[]
+====
+
+=== Cardinalités
+
+Attention aux cardinnalités indiquées dans les associations.
+
+.Erreur : Le système est composé de 32 propulseurs!
+[icon="images/icons/appbar.weather.thunder.png"]
+[NOTE]
+====
+image:cardBad.png[width="80%"]
+
+Il ne s'agit pas d'une erreur de syntaxe SysML, mais d'une erreur de conception.
+Un +Alistar+ est composé de 8 +Propulseurs+ et un +Propulseurs+ est composé de 4 +Propulseurs arrières+. 4*8=32.
+====
+
+.Solution possible
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+image:plantuml/bdd4.png[]
+image:plantuml/bdd5.png[]
+====
+
+ifdef::deckjs[]
+:leveloffset: 0
+endif::deckjs[]
+
+
+//===========================================================================
+<<<<
+
+include::slides/sm.asc[]
+
+

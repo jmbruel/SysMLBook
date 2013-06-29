@@ -1,0 +1,21 @@
+# bzr weave file v5
+i
+1 da0d595d9ed4c1093d321e6f893abc4af1cad68a
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+w
+{ 0
+. interval charts demo is broken.
+. 
+. area.T and axis.{X,Y} should be merged. There are many duplicate
+. functionalities.
+. 
+. Pychart doesn't do a good job of automatically determining min and max
+. X/Y values.
+. 
+. Y zapping support is totally broken.
+. 
+. There should be a more flexible way to specify data sets other than
+. using data & x_col attributes.
+}
+W

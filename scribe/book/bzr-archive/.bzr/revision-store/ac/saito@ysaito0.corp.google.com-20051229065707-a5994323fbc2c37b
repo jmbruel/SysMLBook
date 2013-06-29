@@ -1,0 +1,7 @@
+<revision committer="Yaz Saito &lt;saito@ysaito0.corp.google.com&gt;" format="5" inventory_sha1="3fab59ebaec11cfadf8820785fefa513c4f403c4" revision_id="saito@ysaito0.corp.google.com-20051229065707-a5994323fbc2c37b" timestamp="1135839427.325797081" timezone="-28800">
+<message>minor source-code cleanup.
+</message>
+<parents>
+<revision_ref revision_id="saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4" />
+</parents>
+</revision>

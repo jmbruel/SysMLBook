@@ -1,0 +1,19 @@
+Il existe un certain nombre de conventions complémentaires aux règles de la spécification elle-même.
+Nous ne les donnons ici qu'à titre indicatif. Il est important pour une organisation qui souhaite utiliser {sysml} comme notation pour ses modèles de se mettre d'accord sur ce type de convention. En voici quelques-unes :
+
+- Convention pour les noms :
+* de blocs commencent par une majuscule (origine : {UML})
+* de cas d'utilisation (qui représentent une action) doivent être un verbe à l'infinitif (origine : {UML})
+* d'activité (qui représentent une action) doivent être un verbe à l'infinitif (origine : {UML})
+* d'attributs commencent par une minuscule et ne sont pas au pluriel  (origine : {UML})
+- Convention pour les _requirements_ :
+* ...
+- Dépendances
+* En général un cas d'utilisation qui n'est inclus (`<<include>>`) que dans un seul autre cas est fusionné dans ce dernier
+* Lorsqu'un cas d'utilisation possède plusieurs cas `<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. <<conventions>>).
+
+
+[NOTE]
+====
+Pour les origines UML de certaines conventions, cf. <<Styles>>.
+====

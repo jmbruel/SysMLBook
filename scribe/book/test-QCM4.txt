@@ -1,0 +1,292 @@
+//-----------------------------------------
+// Questions about SysML
+// Author : JMB
+// 2012
+// version 1.0: first draft
+// version 1.1: correction by PFRC
+//-----------------------------------------
+//1 true/false
+SysML is supported by the OMG. {T}
+
+//2 multiple choice with specified feedback for right and wrong answers
+What is the meaning of the SysML acronym? 
+{ 	=SYStems Modeling Language # right; good! 
+	~SYStematic Modeling Language # wrong
+	~SYstems of Systems Modeling Language # wrong
+}
+
+//3 fill-in-the-blank
+A Use Case can {=include =extend =inherit =<<include>> =<<extend>> =<<inherit>>} another one.
+
+//4 matching
+Which concepts matches what diagram? { 
+	=state -> state diagram 
+	=message -> sequence diagram 
+	=attribute -> class diagram 
+	=event -> state diagram
+	=connector -> internal block diagram
+}
+
+//5 math range question
+How many diagrams are there in SysML (write a number - no letters)? {#9}
+
+
+//6 multiple numeric answers with partial credit and feedback
+When was SysML born? {
+         =2001      # Correct! Full credit. Decision made by INCOSE (not the first SysML draft!)
+         ~2002  	# Almost.
+         ~2003  	# Wrong.
+}
+
+//7 for fun :-)
+What is your favorite SysML diagram? {}
+
+//8 dangerous one if not up to date!
+What is the current version of SysML?  
+{ 	~1.2 # wrong; almost! 
+	~1.1 # wrong; almost!
+	=1.3 # right; recently!
+}
+
+//9 true/false
+SysML is supported by the INCOSE. {T}
+
+//10 a controversial one
+SysML is :  {
+         ~%33%a specific language for complex systems
+		 ~%33%strongly UML-Based
+		 ~%-10%just a UML profile
+		 ~%33%mainly focusing on analysis
+		 ~%-10%sufficient in itself
+		 ~%-50%a method
+}
+
+//11 matching
+Which diagram type match what category? { 
+	=pkg -> Structure Diagrams 
+	=bdd -> Structure Diagrams 
+	=ibd -> Structure Diagrams
+	=act -> Behavioral Diagrams 
+	=par -> Structure Diagrams
+	=seq -> Behavioral Diagrams 
+	=sm -> Behavioral Diagrams 
+	=uc -> Behavioral Diagrams 
+}
+
+//12 fill-in-the-blank
+A link from an external port of a block to a port of one of its part is
+called a {=delegation = Delegation}.
+
+//13 fill-in-the-blank
+Write the qualified name for a block A contained in a Package B which in turn is
+contained in a model C {=C::B::A =C.B.A}.
+
+//14 Questions about structure
+Namespaces are handled in SysML by {=Packages =packages}.
+
+//15
+The most significant types of packages used to organize models in SysML are:{
+~%25% models
+~%25% packages
+~%25% model librairies
+~%25% views
+~%-50% organized
+~%-25% namespaces 
+}
+
+//16
+The name of the model element prefixed by its packages (e.g., Structure::Products::Clock)
+is called a {=qualified =Qualified} name.
+
+//17
+Use and Refine are some kind of {=dependencies = Dependencies =stereotypes =stereotype =Dependency =dependency}.
+
+//18
+What are the two main Requirements properties:{
+~%-10%priority
+~%-20%source
+~%-10%risk
+~%50%id
+~%50%text
+}
+
+//19
+Each requirement should (well, in my opinion) be linked to at least one {=use case =usecase =UC} (and vice-versa!).
+
+//20
+A bdd can be used to represent:{
+~%33% a package
+~%33% a block
+~%33% a constraint block
+~%-20% a requirement
+~%-20% a viewpoint
+~%-50% a state machine
+}
+
+//21
+The white diamond indicates in SysML:{
+~composition
+=aggregation
+~delegation
+~generalisation
+}
+
+//22
+There are {#2} different kind of Flow ports (write a number - no letters).
+
+//23
+Assembly and Delegation are two kinds of {=connector =connectors}.
+
+//24
+A constraint is a special kind of {=block}.
+
+//25
+The Parametric diagram inherits from:{
+=The Internal Block Diagram 
+~The Block Definition Diagram
+~The Activity Diagram
+}
+
+//26
+Match the following drawings: { 
+	=rounded square box -> constraint in a parametric diagram
+	=square box -> part in a ibd 
+	=dashed line square box -> reference in a bdd
+}
+
+//27 Questions about dynamics
+The main relations between Use Cases are:{
+=extend
+=include
+~%50%allocate
+~%50%derive
+}
+
+//28
+Match the following drawings: { 
+	=scenarios -> sequence diagrams
+	=behavior dependent of current state -> state machines 
+	=behavior always the same -> activity diagrams
+}
+
+//29
+Which of the following concepts are part of sequence diagrams:{
+~%20%lifeline
+~%20%messages
+~%20%execution
+~%20%combined fragments
+~%20%state invariants
+}
+
+//30
+Match the following drawings: { 
+	=synchronous -> filled arrow 
+	=asynchronous -> non-filled arrow
+	=reply messages -> dashed line arrow
+}
+
+//31
+Namespaces are handled in SysML by {=Packages =packages}.
+
+//32
+The most significant types of packages used to organize models in SysML are:{
+~%25% models
+~%25% packages
+~%25% model librairies
+~%25% views
+~%-50% organized
+~%-25% namespaces 
+}
+
+//33
+The name of the model element prefixed by its packages (e.g., Structure::Products::Clock)
+is called a {=qualified =Qualified} name.
+
+//34
+Use and Refine are some kind of {=dependencies = Dependencies =stereotypes =stereotype}.
+
+//35
+What are the two main Requirements properties:{
+~%-10%priority
+~%-20%source
+~%-10%risk
+~%50%id
+~%50%text
+}
+
+//36
+Each requirement should be linked to at least one {=use case =usecase} (and vice-versa!).
+
+//37
+A bdd can represent:{
+~%33% a package
+~%33% a block
+~%33% a constraint block
+~%-20% a requirement
+~%-20% a viewpoint
+~%-50% a state machine
+}
+
+//38
+The white diamond indicates in SysML:{
+~composition
+=aggregation
+~delegation
+~generalisation
+}
+
+//39
+There are {#2} different kind of Flow ports (write a number - no letters).
+
+//40
+Assembly and Delegation are two kinds of {=connector =connectors}.
+
+//41
+A constraint is a special kind of {=block}.
+
+//42
+The Parametric diagram inherits from:{
+=The Internal Block Definition diagram 
+~The Block Definition diagram
+~The Activity diagram
+}
+
+//43
+Match the following drawings: { 
+	=round square box -> constraint in a parametric diagram
+	=square box -> part in a ibd 
+	=dashed line square box -> reference in a bdd
+}
+
+//44 Questions about dynamics
+The main relation between Use Cases are:{
+=extend
+=include
+~allocate
+~derive
+}
+
+//45
+Match the following drawings: { 
+	=scenarios -> sequence diagrams
+	=behavior dependent of current state -> state machines 
+	=behavior always the same -> activity diagrams
+}
+
+//46
+Which of the following concepts are part of sequence diagrams:{
+~%22%lifeline
+~%22%messages
+~%12%execution
+~%22%combined fragments
+~%22%state invariants
+}
+
+//47
+Match the following drawings: { 
+	=synchronous -> filled arrow 
+	=asynchronous -> non-filled arrow
+	=reply messages -> dashed line arrow
+}
+
+//---------------------------------------------

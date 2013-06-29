@@ -1,6 +1,7 @@
 #-----------------------------------------------------
 MAIN=main
 ICONSDIR=/Users/bruel/dev/asciidoc/images/icons
+IMAGESDIR=/Users/bruel/Dropbox/Public/dev/SysMLBook/images
 #-----------------------------------------------------
 
 all: *.txt
@@ -23,11 +24,29 @@ veritas:
 	@echo '==> Compiling asciidoc files to generate SLIDES'
 	asciidoc -b html5 -a icons -a iconsdir=$(ICONSDIR) -a stylesheet=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/scribe.css -a data-uri -a numbered \
 	 -o Veritas2012.html Veritas2012.txt
-	
+
+icamdoc:
+	@echo '==> Compiling asciidoc files to generate SLIDES ICAM'
+	asciidoc -b html5 -a icons \
+	 -a stylesheet=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/scribe.css \
+	 -a data-uri -a numbered \
+	 -a iconsdir=$(ICONSDIR) \
+	 -a imagesdir=$(IMAGESDIR) \
+	 -o icamplain.html icam.txt
+
+icam:
+	@echo '==> Compiling asciidoc files to generate SLIDES'
+	asciidoc -b deckjs -a icons -a data-uri -a numbered \
+	 -a iconsdir=$(ICONSDIR) \
+	 -a imagesdir=$(IMAGESDIR) \
+	 -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 \
+	 -o icam.html icam.txt
+
 tp: ups-tp.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
 	 -o ups-tp.html -a numbered ups-tp.txt
+
 deckjs:
 	@echo '==> Compiling asciidoc files to generate SLIDES'
 	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri -a numbered \

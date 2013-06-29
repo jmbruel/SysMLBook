@@ -1,0 +1,169 @@
+== FAQ
+
+Cette _**F**requently **A**sked **Q**uestion_ a été construite par expérience, en regroupant 
+les questions des étudiants durant mes différentes interventions. 
+J'ai aussi ajouté des questions souvent rencontrées dans les journées organisées par {sysmlfrance}. 
+
+NOTE: Voir aussi cette http://www.sysmlforum.com/faq[FAQ] très bien faite.
+
+Cette FAQ peut servir de base à la révision d'examens (cf. aussi <<Exos>>).
+
+:numbered!:
+
+=== Peut-on avoir un _requirement_ contenu plusieurs fois ?
+
+Non. Le lien de _containment_ est en fait une action qui place le "contenu" dans le
+"contenant". Dans TOPCASED, le diagramme laisse les liens précédents à l'écran, mais dans
+le modèle, c'est bien le dernier _containment_ réalisé qui est pris en compte. Dans 
+la figure ci-dessous le lien +A-C+ a été "dessiné" après celui +B-C+.
+
+.Exemple de divergence modèle/diagramme (diagramme)
+ifdef::book[image::exercices/topcased-containment-1.png[scale=60]]
+ifndef::book[image::exercices/topcased-containment-1.png[]]
+
+.Exemple de divergence modèle/diagramme (modèle)
+ifdef::book[image::exercices/topcased-containment-2.png[scale=60]]
+ifndef::book[image::exercices/topcased-containment-2.png[]]
+
+[NOTE]
+====
+Ce "bug" provient du fait que le lien de _containment_ n'est pas un lien de dépendance,
+mais plutôt une représentation graphique de la contenance.
+====
+
+=== Comment alors peut-on "partager" un _requirement_ ?
+
+(En lien avec la question précédente)
+
+L'organisation {sysml} des _requirements_ est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien `<<copy>>` pour créer plusieurs copies d'un même _requirement_. Personnellement je n'aime pas cette solution.
+
+.Exemple de partage de _requirement_
+ifdef::book[image::exercices/topcased-containment-3.png[scale=50]]
+ifndef::book[image::exercices/topcased-containment-3.png[]]
+
+=== Peut-on avoir un lien `<<satisfy>>` entre exigences?
+
+Techniquement oui (`<<satisfy>>` étant dérivé de `<<dependency>>`), mais ça n'a pas beaucoup de sens que de dire qu'un besoin est satisfait par un autre. Il s'agit le plus souvent d'un lien `<<deriveReqt>>`.
+
+[NOTE]
+====
+Certaines méthodes utilise ce lien pour par exemple exprimer qu'une exigence cliente est satisfaite par une exigence système (comme la méthode <<Harmony>>).
+====
+
+=== Quelle est la différence entre `<<deriveReqt>>` et `<<refine>>` ?
+
+La norme n'impose pas de sémantique précise à `<<deriveReqt>>`. Il y a généralement deux interprétations.
+
+1. Un usage classique est de l'utiliser pour ajouter des exigences plus détaillés déduites à partir d'autres exigences. Un exemple issue de la norme est une exigence de +puissance moteur+ déduite (+deriveReqt+) depuis l'exigence sur l’+accélération+ d'un véhicule.
+
+2. Une vision plus stricte, aussi illustré par l'exemple précédent, est que l'exigence dérivée est une condition nécessaire (un pré-requis) à l'exigence cible.
+
+Autre exemple respectant 1 mais pas 2 : "Le véhicule doit posséder 4 roues." est dérivé de "Le véhicule doit se déplacer sur route." En effet, un aéroglisseur répondrait aussi l'exigence initiale et n'a pourtant pas de roues.
+
+Quant au `<<refine>>` il est utilisé pour indiquer qu'un élément de modèle (qui peut être lui-même un _requirement_) est un raffinement (au sens niveaux d'abstraction, du plus abstrait au plus concret) d'un _requirement_. Par exemple, un _use case_ ou un diagramme d'activité peut être un raffinement d'une exigence fonctionnelle (textuelle par exemple). 
+
+=== A quoi sert le lien `<<trace>>` ?
+
+Il est utilisé pour indiquer que l'on souhaite conserver un lien de traçabilité entre les éléments
+(par exemple entre un élément de modélisation et un document). Il est recommandé d'utilisé une de ces
+versions plus précises (`<<deriveReqt>>` ou `<<satisfy>>` par exemple).
+
+=== Quelle est la version courante de la spécification et comment l'obtenir?
+
+Verson +1.3+ et disponible à l'URL: http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf
+
+=== Quels en sont les changements notables depuis la dernière version ?
+(en lien avec  la question précédente)
+
+Les changements notables par rapport à la +1.2+ concernent :
+
+- synchronisation avec les changements d'UML 2.3
+- le métamodèle de _Conjugate ports_ et sa notation 
+- le nommage des _activity regions_ "interruptible" 
+- inclusion de _UML instance_ 
+- inclusion des _structured activity nodes_ d'UML 
+- inclusion des _multiple item flow_ d'UML
+- améliorations du support à _Unit_ et _QuantityKind_ pour les _value types_, 
+et ajout d'un modèle (non normatif) pour définir les systèmes d'unités et de quantités.
+
+[NOTE]
+====
+SysML v1.3 _Revision Task Force_ dirigée par Roger Burkhart et Rick Steiner améliore de manière régulière la spécification en fonction des retours des utilisateurs.
+====
+
+
+ifdef::uk[]
+
+=== What is the current version of SysML and how can I obtain it?
+
+Verson 1.3 and here is the specification link: http://www.omg.org/cgi-bin/doc?formal/10-06-02.
+
+=== What changes were made during the last revision?
+
+Notable changes in Version 1.2 of SysML include:
+
+- Synchronization with changes in UML 2.3
+- Conjugate ports metamodel and notation 
+- Naming of interruptible activity regions 
+- Inclusion of UML instance specifications
+ -Inclusion of UML structured activity nodes 
+- Inclusion of UML multiple item flow notation
+- Improvements to Unit and QuantityKind support for value types, and a non-normative model to define systems of units and quantities
+
+NOTE: The SysML v1.3 Revision Task Force led by Roger Burkhart and Rick Steiner is continuing to work on proposed improvements to SysML based on feedback from the systems modeling community.
+
+
+=== How do we setup ranges (limits) of (input) variables (in a par for example)?
+
+In the details or the definition of the Flow Item.
+
+=== What does the +\{strict\}+ keyword means for profile application?
+
+No other meta-elements than the one in the applied profile were used (e.g., you can use a tool supporting the profile with confidence).
+
+[quote, SysML1.2 p. 8]
+____________________________________________________________________
+The semantics of UML profiles ensure that when a user model “strictly” applies the SysML profile, only the UML metaclasses referenced by SysML are available to the user of that model. If the
+profile is not “strictly” applied, then additional UML metaclasses that were not explicitly referenced may also be available.
+____________________________________________________________________
+
+=== What does the visibility (+private+, +public+, ...) means for a block?
+
+As any model elements, the visibility of a block describes how it can be imported outside its namespace.
+
+NOTE: It depends on the tool support for visibility controls to use this feature.
+
+=== What is the difference between an internal and a self transition?
+
+In a self transition the exit and the the entry events are trigered.
+
+=== Can I attach a History pseudostate to a particular (non composite) state?
+
+No. The History pseudostate (H) is indicated inside a composite state and means that when back in this superstate, the machine goes back to its last active state.
+
+endif::uk[]
+
+=== Divers
+
+Quelques autres questions que je laisse à votre sagacité :
+
+- Pourquoi les ingénieurs systèmes auraient-ils besoin d'un n-ième langage de modéliation ?
+- Quelles sont les relations entre “open source SysML” et “OMG SysML” ?
+- Quelle est la feuille de route pour SysML 2.0?
+- Quelles sont les relations entre UML et SysML? Peut-on les utiliser ensemble?
+- Peut-on "customizer" SysML?
+- Quel langage est le plus facile à apprendre, SysML ou UML?
+
+ifdef::uk[]
+
+- Why do systems engineer need yet-another-modeling-language?
+- What is the relationship between “open source SysML” and “OMG SysML”?
+- What is the roadmap for OMG SysML 2.0?
+- Who are the SysML Partners?
+- What is the relationship between UML and SysML? Can SysML and UML be used together?
+- Can SysML be customized?
+- Which language is easier to learn, SysML or UML?
+
+endif::uk[]
+
+:numbered:

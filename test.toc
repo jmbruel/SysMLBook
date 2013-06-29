@@ -1,0 +1,191 @@
+\select@language {french}
+\setcounter {tocdepth}{-1}\ignorespaces 
+\contentsline {chapter}{Remerciements}{ix}{chapter*.4}
+\setcounter {tocdepth}{0}\ignorespaces 
+\setcounter {tocdepth}{-1}\ignorespaces 
+\contentsline {chapter}{Pr\IeC {\'e}face}{x}{chapter*.5}
+\setcounter {tocdepth}{0}\ignorespaces 
+\contentsline {part}{I\hspace {1em}Partie 1 : Introduction}{1}{part.1}
+\contentsline {chapter}{\numberline {1}Avant-{}propos}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Sur ce document}{2}{section.1.1}
+\contentsline {subsection}{A qui est destin\IeC {\'e} ce document?}{2}{subsection*.6}
+\contentsline {subsection}{A qui n\IeC {\textquoteright }est-{}il pas destin\IeC {\'e}?}{2}{subsection*.7}
+\contentsline {subsection}{Historique}{2}{subsection*.8}
+\contentsline {section}{\numberline {1.2}Sur l\IeC {\textquoteright }auteur}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Comment lire ce document?}{3}{section.1.3}
+\contentsline {subsection}{Version \IeC {\'e}lectronique}{3}{subsection*.9}
+\contentsline {subsection}{Conventions typographiques}{3}{subsection*.10}
+\contentsline {subsection}{Pourquoi parler de "document"?}{4}{subsection*.11}
+\contentsline {subsection}{Utilisation et autres mentions l\IeC {\'e}gales}{5}{subsection*.12}
+\contentsline {section}{\numberline {1.4}M\IeC {\'e}thode pour cet ouvrage}{5}{section.1.4}
+\contentsline {chapter}{\numberline {2}C\IeC {\textquoteright }est quoi SysML?}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Fiche d\IeC {\textquoteright }identit\IeC {\'e}}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}SysML, c\IeC {\textquoteright }est\IeC {\dots }}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}SysML, ce n\IeC {\textquoteright }est pas\IeC {\dots }}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}R\IeC {\'e}f\IeC {\'e}rences et liens utiles}{7}{section.2.4}
+\contentsline {chapter}{\numberline {3}A propos du Bac STI2D}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Utilisation pratique}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Pour aller plus loin}{12}{section.3.2}
+\contentsline {chapter}{\numberline {4}Un exemple fil rouge}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Enonc\IeC {\'e}}{13}{section.4.1}
+\contentsline {subsection}{Coordinateur des pompiers (FSC)}{14}{subsection*.13}
+\contentsline {subsection}{Pompiers}{15}{subsection*.14}
+\contentsline {subsection}{Coordinateur du poste de police (PSC)}{15}{subsection*.15}
+\contentsline {subsection}{Agents de police}{15}{subsection*.16}
+\contentsline {subsection}{Victimes (de la crise)}{15}{subsection*.17}
+\contentsline {subsection}{T\IeC {\'e}moins (de la crise)}{16}{subsection*.18}
+\contentsline {subsection}{Informations compl\IeC {\'e}mentaires}{16}{subsection*.19}
+\contentsline {subsubsection}{Disponibilit\IeC {\'e}}{16}{subsubsection*.20}
+\contentsline {subsubsection}{Fiabilit\IeC {\'e}}{16}{subsubsection*.21}
+\contentsline {subsubsection}{Persistance}{16}{subsubsection*.22}
+\contentsline {subsubsection}{S\IeC {\'e}curit\IeC {\'e}}{17}{subsubsection*.23}
+\contentsline {subsubsection}{Mobilit\IeC {\'e}}{17}{subsubsection*.24}
+\contentsline {subsubsection}{S\IeC {\'e}curit\IeC {\'e}}{17}{subsubsection*.25}
+\contentsline {subsubsection}{Adaptabilit\IeC {\'e}}{18}{subsubsection*.26}
+\contentsline {subsubsection}{Pr\IeC {\'e}cision}{18}{subsubsection*.27}
+\contentsline {part}{II\hspace {1em}Partie 2 : Ing\IeC {\'e}nierie syst\IeC {\`e}me}{19}{part.2}
+\contentsline {chapter}{\numberline {5}Introduction}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Points de vue}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Phase de d\IeC {\'e}veloppement}{21}{section.5.2}
+\contentsline {chapter}{\numberline {6}Diff\IeC {\'e}rence avec l\IeC {\textquoteright }ing\IeC {\'e}nierie logicielle}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Une ing\IeC {\'e}nierie plus ancienne}{22}{section.6.1}
+\contentsline {section}{\numberline {6.2}Des syst\IeC {\`e}mes plus complexes}{22}{section.6.2}
+\contentsline {section}{\numberline {6.3}Diff\IeC {\'e}rents types d\IeC {\textquoteright }analyse}{23}{section.6.3}
+\contentsline {chapter}{\numberline {7}Normes et standards}{27}{chapter.7}
+\contentsline {chapter}{\numberline {8}Des documents aux mod\IeC {\`e}les}{28}{chapter.8}
+\contentsline {chapter}{\numberline {9}Les exigences}{29}{chapter.9}
+\contentsline {chapter}{\numberline {10}L\IeC {\textquoteright }architecture du syst\IeC {\`e}me}{31}{chapter.10}
+\contentsline {chapter}{\numberline {11}Le comportement du syst\IeC {\`e}me}{32}{chapter.11}
+\contentsline {chapter}{\numberline {12}M\IeC {\'e}thodes et d\IeC {\'e}marches}{33}{chapter.12}
+\contentsline {part}{III\hspace {1em}Partie 3 : La notation SysML}{34}{part.3}
+\contentsline {chapter}{\numberline {13}Pourquoi une nouvelle notation}{35}{chapter.13}
+\contentsline {chapter}{\numberline {14}Introduction \IeC {\`a} SysML}{36}{chapter.14}
+\contentsline {section}{\numberline {14.1}Fiche d\IeC {\textquoteright }identit\IeC {\'e}}{36}{section.14.1}
+\contentsline {section}{\numberline {14.2}Diff\IeC {\'e}rence avec UML}{36}{section.14.2}
+\contentsline {section}{\numberline {14.3}Qui est "derri\IeC {\`e}re"?}{37}{section.14.3}
+\contentsline {section}{\numberline {14.4}Organisation des diff\IeC {\'e}rents diagrammes}{38}{section.14.4}
+\contentsline {section}{\numberline {14.5}Diff\IeC {\'e}rence entre mod\IeC {\`e}le et dessin}{39}{section.14.5}
+\contentsline {chapter}{\numberline {15}Outils SysML}{41}{chapter.15}
+\contentsline {chapter}{\numberline {16}Cadre pour les diagrammes}{42}{chapter.16}
+\contentsline {chapter}{\numberline {17}Organisation}{43}{chapter.17}
+\contentsline {section}{\numberline {17.1}Fondements}{43}{section.17.1}
+\contentsline {section}{\numberline {17.2}Le \emph {Package Diagram}}{43}{section.17.2}
+\contentsline {section}{\numberline {17.3}Les diff\IeC {\'e}rent types de \emph {packages}}{44}{section.17.3}
+\contentsline {section}{\numberline {17.4}Les organisations possibles}{44}{section.17.4}
+\contentsline {section}{\numberline {17.5}La notion de \emph {Namespaces}}{46}{section.17.5}
+\contentsline {section}{\numberline {17.6}Les d\IeC {\'e}pendances}{47}{section.17.6}
+\contentsline {section}{\numberline {17.7}En r\IeC {\'e}sum\IeC {\'e}}{47}{section.17.7}
+\contentsline {section}{\numberline {17.8}Questions de r\IeC {\'e}vision}{48}{section.17.8}
+\contentsline {chapter}{\numberline {18}Les exigences}{49}{chapter.18}
+\contentsline {section}{\numberline {18.1}Fondements}{49}{section.18.1}
+\contentsline {section}{\numberline {18.2}L\IeC {\textquoteright }organisation des \emph {Requirements}}{49}{section.18.2}
+\contentsline {subsection}{Diff\IeC {\'e}rents types d\IeC {\textquoteright }organisation}{49}{subsection*.28}
+\contentsline {subsection}{Tableaux de \emph {Requirements}}{50}{subsection*.29}
+\contentsline {section}{\numberline {18.3}Les \emph {Requirements properties}}{51}{section.18.3}
+\contentsline {section}{\numberline {18.4}Les \emph {Requirements links}}{51}{section.18.4}
+\contentsline {section}{\numberline {18.5}Les \emph {Requirements Diagrams}}{53}{section.18.5}
+\contentsline {section}{\numberline {18.6}Les consid\IeC {\'e}rations sur la tra\IeC {\c c}abilit\IeC {\'e}}{53}{section.18.6}
+\contentsline {section}{\numberline {18.7}Annotations des \emph {Requirements}}{53}{section.18.7}
+\contentsline {section}{\numberline {18.8}Les \emph {Use Case Diagrams} (sc\IeC {\'e}narios)}{54}{section.18.8}
+\contentsline {section}{\numberline {18.9}En r\IeC {\'e}sum\IeC {\'e}}{55}{section.18.9}
+\contentsline {section}{\numberline {18.10}Questions de r\IeC {\'e}vision}{57}{section.18.10}
+\contentsline {chapter}{\numberline {19}L\IeC {\textquoteright }architecture du syst\IeC {\`e}me}{58}{chapter.19}
+\contentsline {section}{\numberline {19.1}Fondements}{58}{section.19.1}
+\contentsline {section}{\numberline {19.2}Organisation du syst\IeC {\`e}me et des mod\IeC {\`e}les}{58}{section.19.2}
+\contentsline {section}{\numberline {19.3}\emph {Block Definition Diagrams}}{59}{section.19.3}
+\contentsline {subsection}{Principes de base}{59}{subsection*.30}
+\contentsline {subsection}{Propri\IeC {\'e}t\IeC {\'e}s}{60}{subsection*.31}
+\contentsline {subsection}{\emph {Value Types}}{61}{subsection*.32}
+\contentsline {subsection}{Associations entre blocs}{61}{subsection*.33}
+\contentsline {subsubsection}{Association}{62}{subsubsection*.34}
+\contentsline {subsubsection}{Vers le code : que signifie vraiment une association?}{63}{subsubsection*.35}
+\contentsline {subsubsection}{G\IeC {\'e}n\IeC {\'e}ralisation/sp\IeC {\'e}cialisation}{64}{subsubsection*.36}
+\contentsline {section}{\numberline {19.4}\emph {Internal Block Diagrams}}{64}{section.19.4}
+\contentsline {subsection}{Parts}{65}{subsection*.37}
+\contentsline {subsection}{Ports}{66}{subsection*.38}
+\contentsline {section}{\numberline {19.5}\emph {Parametric Diagrams}}{68}{section.19.5}
+\contentsline {subsection}{Contraintes}{69}{subsection*.39}
+\contentsline {subsection}{Diagramme param\IeC {\'e}trique}{69}{subsection*.40}
+\contentsline {subsection}{\emph {Value Binding}}{70}{subsection*.41}
+\contentsline {section}{\numberline {19.6}Diagrammes de s\IeC {\'e}quence syst\IeC {\`e}me}{71}{section.19.6}
+\contentsline {section}{\numberline {19.7}En r\IeC {\'e}sum\IeC {\'e}}{72}{section.19.7}
+\contentsline {section}{\numberline {19.8}Questions de r\IeC {\'e}vision}{72}{section.19.8}
+\contentsline {chapter}{\numberline {20}Le comportement du syst\IeC {\`e}me}{73}{chapter.20}
+\contentsline {section}{\numberline {20.1}Fondements}{73}{section.20.1}
+\contentsline {section}{\numberline {20.2}\emph {Use Case Diagrams}}{73}{section.20.2}
+\contentsline {section}{\numberline {20.3}Le Diagramme des Cas d\IeC {\textquoteright }Utilisation}{74}{section.20.3}
+\contentsline {subsection}{Cas d\IeC {\textquoteright }Utilisation (\emph {Use Case})}{74}{subsection*.42}
+\contentsline {subsubsection}{Exemple de cas d\IeC {\textquoteright }utilisation (UML)}{74}{subsubsection*.43}
+\contentsline {subsubsection}{Pr\IeC {\'e}cisions}{74}{subsubsection*.44}
+\contentsline {subsection}{Acteur}{75}{subsection*.45}
+\contentsline {subsection}{Relations entre acteurs et \emph {Use Case}}{75}{subsection*.46}
+\contentsline {subsection}{Relations entre \emph {Use Case}}{75}{subsection*.47}
+\contentsline {subsection}{Pour construire un UC (de mani\IeC {\`e}re g\IeC {\'e}n\IeC {\'e}rale)}{76}{subsection*.48}
+\contentsline {section}{\numberline {20.4}\emph {Sequence Diagrams}}{77}{section.20.4}
+\contentsline {subsection}{G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{77}{subsection*.49}
+\contentsline {subsection}{Notions avanc\IeC {\'e}es}{78}{subsection*.50}
+\contentsline {subsection}{Exemple de conceptions}{79}{subsection*.51}
+\contentsline {subsection}{Lien entre UC, DSS et DS}{80}{subsection*.52}
+\contentsline {section}{\numberline {20.5}Diagramme d'\IeC {\'e}tats}{81}{section.20.5}
+\contentsline {section}{\numberline {20.6}Diagrammes d\IeC {\textquoteright }activit\IeC {\'e}}{82}{section.20.6}
+\contentsline {section}{\numberline {20.7}Actions}{83}{section.20.7}
+\contentsline {section}{\numberline {20.8}Flots}{83}{section.20.8}
+\contentsline {section}{\numberline {20.9}D\IeC {\'e}cision}{84}{section.20.9}
+\contentsline {section}{\numberline {20.10}R\IeC {\'e}utilisation}{85}{section.20.10}
+\contentsline {section}{\numberline {20.11}En r\IeC {\'e}sum\IeC {\'e}}{85}{section.20.11}
+\contentsline {section}{\numberline {20.12}Questions de r\IeC {\'e}vision}{86}{section.20.12}
+\contentsline {section}{\numberline {20.13}Exercices}{86}{section.20.13}
+\contentsline {subsection}{Diagramme des cas d\IeC {\textquoteright }utilisation}{86}{subsection*.53}
+\contentsline {chapter}{\numberline {21}Les aspects transversaux}{87}{chapter.21}
+\contentsline {section}{\numberline {21.1}Fondements}{87}{section.21.1}
+\contentsline {section}{\numberline {21.2}Tra\IeC {\c c}abilit\IeC {\'e} des exigences}{87}{section.21.2}
+\contentsline {section}{\numberline {21.3}M\IeC {\'e}canismes d\IeC {\textquoteright }allocation}{88}{section.21.3}
+\contentsline {section}{\numberline {21.4}Diagramme param\IeC {\'e}trique}{88}{section.21.4}
+\contentsline {section}{\numberline {21.5}En r\IeC {\'e}sum\IeC {\'e}}{89}{section.21.5}
+\contentsline {section}{\numberline {21.6}Questions de r\IeC {\'e}vision}{89}{section.21.6}
+\contentsline {part}{IV\hspace {1em}Partie 4 : Mod\IeC {\'e}liser un syst\IeC {\`e}me en SysML}{90}{part.4}
+\contentsline {chapter}{\numberline {22}Une d\IeC {\'e}marche parmi d\IeC {\textquoteright }autres}{91}{chapter.22}
+\contentsline {section}{\numberline {22.1}Environnement de d\IeC {\'e}veloppement}{91}{section.22.1}
+\contentsline {subsection}{Outils}{92}{subsection*.54}
+\contentsline {subsection}{G\IeC {\'e}n\IeC {\'e}ration de documentation}{92}{subsection*.55}
+\contentsline {subsection}{Animation de mod\IeC {\`e}les et simulation}{93}{subsection*.56}
+\contentsline {section}{\numberline {22.2}Sp\IeC {\'e}cification du syst\IeC {\`e}me}{95}{section.22.2}
+\contentsline {section}{\numberline {22.3}Conception du syst\IeC {\`e}me}{95}{section.22.3}
+\contentsline {section}{\numberline {22.4}Tra\IeC {\c c}abilit\IeC {\'e} et Allocations}{95}{section.22.4}
+\contentsline {section}{\numberline {22.5}Mod\IeC {\`e}le de test}{96}{section.22.5}
+\contentsline {chapter}{\numberline {23}Recettes et bonnes pratiques}{97}{chapter.23}
+\contentsline {section}{\numberline {23.1}Architecture}{97}{section.23.1}
+\contentsline {section}{\numberline {23.2}Comportement}{98}{section.23.2}
+\contentsline {part}{V\hspace {1em}Partie 5 : Pour aller plus loin}{99}{part.5}
+\contentsline {chapter}{\numberline {24}Consid\IeC {\'e}rations m\IeC {\'e}thodologiques}{100}{chapter.24}
+\contentsline {chapter}{\numberline {25}Analyses et simulation}{101}{chapter.25}
+\contentsline {chapter}{\numberline {26}Exercices de r\IeC {\'e}vision}{102}{chapter.26}
+\contentsline {section}{\numberline {26.1}Quizz}{102}{section.26.1}
+\contentsline {subsection}{Sujet}{102}{subsection*.57}
+\contentsline {subsection}{Corrig\IeC {\'e}}{103}{subsection*.58}
+\contentsline {section}{\numberline {26.2}Mots crois\IeC {\'e}s}{103}{section.26.2}
+\contentsline {subsection}{Sujet}{103}{subsection*.59}
+\contentsline {part}{VI\hspace {1em}Annexes}{105}{part.6}
+\contentsline {chapter}{\numberline {27}Liens utiles}{106}{chapter.27}
+\contentsline {chapter}{\numberline {28}Conventions}{108}{chapter.28}
+\contentsline {chapter}{\numberline {29}Le temps et sa prise en compte dans les mod\IeC {\`e}les}{109}{chapter.29}
+\contentsline {chapter}{\numberline {30}FAQ}{110}{chapter.30}
+\contentsline {section}{\numberline {30.1}Peut-{}on avoir un \emph {requirement} contenu plusieurs fois ?}{110}{section.30.1}
+\contentsline {section}{\numberline {30.2}Comment alors peut-{}on "partager" un \emph {requirement} ?}{111}{section.30.2}
+\contentsline {section}{\numberline {30.3}Peut-{}on avoir un lien \texttt {<{}<{}s\penalty 5000 a\penalty 5000 t\penalty 5000 i\penalty 5000 s\penalty 5000 f\penalty 5000 y>{}>{}} entre exigences?}{112}{section.30.3}
+\contentsline {section}{\numberline {30.4}Quelle est la diff\IeC {\'e}rence entre \texttt {<{}<{}d\penalty 5000 e\penalty 5000 r\penalty 5000 i\penalty 5000 v\penalty 5000 e\penalty 5000 R\penalty 5000 e\penalty 5000 q\penalty 5000 t>{}>{}} et \texttt {<{}<{}r\penalty 5000 e\penalty 5000 f\penalty 5000 i\penalty 5000 n\penalty 5000 e>{}>{}} ?}{112}{section.30.4}
+\contentsline {section}{\numberline {30.5}A quoi sert le lien \texttt {<{}<{}t\penalty 5000 r\penalty 5000 a\penalty 5000 c\penalty 5000 e>{}>{}} ?}{113}{section.30.5}
+\contentsline {section}{\numberline {30.6}Quelle est la version courante de la sp\IeC {\'e}cification et comment l\IeC {\textquoteright }obtenir?}{113}{section.30.6}
+\contentsline {section}{\numberline {30.7}Quels en sont les changements notables depuis la derni\IeC {\`e}re version ?}{113}{section.30.7}
+\contentsline {section}{\numberline {30.8}Divers}{114}{section.30.8}
+\contentsline {chapter}{\numberline {31}FABQ}{115}{chapter.31}
+\contentsline {section}{\numberline {31.1}Comment installer SysML?}{115}{section.31.1}
+\setcounter {tocdepth}{4}\ignorespaces 
+\contentsline {chapter}{Bibliographie}{116}{chapter*.60}
+\contentsline {section}{Bibliographie}{116}{section*.61}
+\setcounter {tocdepth}{0}\ignorespaces 
+\setcounter {tocdepth}{4}\ignorespaces 
+\contentsline {chapter}{Glossaire}{117}{chapter*.62}
+\setcounter {tocdepth}{0}\ignorespaces 
+\setcounter {tocdepth}{4}\ignorespaces 
+\contentsline {chapter}{Index}{119}{chapter.32}

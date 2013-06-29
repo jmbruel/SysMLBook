@@ -5,7 +5,8 @@ ou les modèles, sera celle-ci :
 
 [[Matrice]]
 .La carte de base
-[align="center",cols="h,4*",options="header",width="50%"]
+ifdef::book[[align="center",cols="h,4*",options="header"]]
+ifndef::book[[align="center",cols="h,4*",options="header",width="50%"]]
 |======================
 |					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
 | {organisation}	|					|        		|				|
@@ -13,6 +14,7 @@ ou les modèles, sera celle-ci :
 | {design}			|					|        		|				|
 | {implementation}	|					|        		|				|
 |======================
+
 
 === Points de vue
 
@@ -66,7 +68,8 @@ On parle de système complexe lorsque l'on a affaire à :
 ** interagissant entre eux et avec leur environnement
 
 .Un système complexe
-image::{images}/starwars.jpeg[alt="Système complexe",link="freeblueprints.net",width="70%"]
+ifdef::book[image::{images}/starwars.jpeg[scale=60]]
+ifndef::book[image::{images}/starwars.jpeg[alt="Système complexe",link="freeblueprints.net",width="70%"]]
 
 ifdef::backend-slidy2[<<<]
 
@@ -77,7 +80,8 @@ On parle aussi de *Système de systèmes* quand un système :
 - gère les comportements (de l'environnement) inatendus
 
 .Un système de système
-image::{images}/starwars2.jpeg[alt="Système de systèmes",link="starwars.wikia.com",width="70%"]
+ifdef::book[image::{images}/starwars2.jpeg[scale=70]]
+ifndef::book[image::{images}/starwars2.jpeg[alt="Système de systèmes",link="starwars.wikia.com",width="70%"]]
 
 === Différents types d'analyse
 
@@ -85,36 +89,42 @@ Toute la question que l'{is} cherche à résoudre est : comment passer des exige
 de la façon la plus efficace possible.
  
 .Des exigences au système
-image::{images}/analyse1.png[alt="Des reqs au système",width="70%"]
+ifdef::book[image::{images}/analyse1.png[scale=50]]
+ifndef::book[image::{images}/analyse1.png[alt="Des reqs au système",width="70%"]]
 
 Pour cela l'{is} est découpée en plusieurs analyses, chacune avec un but bien particulier :
 
 ifdef::backend-slidy2[<<<]
 
 .Analyse Fonctionnelle et/ou Comportementale
-image::{images}/analyse2.png[alt="Des reqs au système",width="70%"]
+ifdef::book[image::{images}/analyse2.png[scale=50]]
+ifndef::book[image::{images}/analyse2.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-slidy2[<<<]
 
 .Analyse Structurelle
-image::{images}/analyse3.png[alt="Des reqs au système",width="70%"]
+ifdef::book[image::{images}/analyse3.png[scale=50]]
+ifndef::book[image::{images}/analyse3.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-slidy2[<<<]
 
 .Analyse de performance
-image::{images}/analyse4.png[alt="Des reqs au système",width="70%"]
+ifdef::book[image::{images}/analyse4.png[scale=50]]
+ifndef::book[image::{images}/analyse4.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-slidy2[<<<]
 
 .Analyses spécifiques
-image::{images}/analyse5.png[alt="Des reqs au système",width="70%"]
+ifdef::book[image::{images}/analyse5.png[scale=50]]
+ifndef::book[image::{images}/analyse5.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-slidy2[<<<]
 
 Pour arriver à combler le gap entre le système à développer et ses spécifications.
 
 .Des exigences au système
-image::{images}/analyse6.png[alt="Des reqs au système",width="70%"]
+ifdef::book[image::{images}/analyse6.png[scale=50]]
+ifndef::book[image::{images}/analyse6.png[alt="Des reqs au système",width="70%"]]
 
 == Normes et standards
 
@@ -133,24 +143,45 @@ Vue la complexité grandissante des systèmes, petit à petit cette ingénierie 
 ingénierie *centrée documents* à une ingénierie *centrée modèles*. D'où l'importance de se poser la question
 des notations et langages pour réaliser et communiquer avec ces modèles (cf. <<Notation>>).
  
+[[exigences]]
 == Les exigences
 
 L'ingénierie des exigences est d'une importance capitale en {is}.
-Nous renvoyons pour l'instant le lecteur au cours de Master qui précède ce cours.
+En général les exigences sont exprimées par des ingénieurs dédiés à cette activité.
+La complexité des systèmes modernes (embarqués, communicants, critiques, ...).
 
 .300 corps de métiers sont parfois présents sur un chantier
-image::{images}/ingenierie-des-exigences.jpg[alt="Joke",link="http://www.inria.fr/centre/rennes/actualites/vers-un-cahier-des-charges-mieux-formule"] 
+ifdef::book[image::{images}/ingenierie-des-exigences.jpg[scale=60]] 
+ifndef::book[image::{images}/ingenierie-des-exigences.jpg[alt="Joke",link="http://www.inria.fr/centre/rennes/actualites/vers-un-cahier-des-charges-mieux-formule",width="70%"]] 
 
+.Besoins, exigences : question de vocabulaire
+[TIP]
+====
+La difficulté de l'emploi massif de l'anglais en {is} fait qu'il existe souvent une confusion entre
+les termes anglais et leurs traduction anglaise. Nous précisons donc ici notre utilisation des termes :
+
+_Requirements_::
+Exigences, c'est à dire une fonction ou une propriété que doit satisfaire le système considéré. 
+Par nature une exigence doit pouvoir être vérifiable.
+En génie logiciel on parle plus classiquement des spécifications ("spec") pour parler des contraintes à respecter pour un système. Les ingénieurs systèmes ont depuis longtemps intégré le terme d'exigences comme traduction directe de _requirement_.
+Besoins::
+Il s'agit des exigences du client. En {sysml} on va plus les retrouver dans les cas d'utilisation. Ils sont à l'origine des _requirements_ tels que définis plus haut.
+====
+
+Il est important pour une exigence qu'elle ne soit pas ambiguë (contrairement au terme +en+ dans la consigne exprimée par la maman dans l'illustration <<fig:eggs,ci-dessous>> : "_Ramène moi 1 bouteille de lait. S'il y a des oeufs, ramène m'en 6._").
 
 [[fig:eggs]]
 .\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
 [caption="Illustration: "]
-image::./images/ProgrammerHumor.jpg["Joke"] 
+ifdef::book[image::./images/ProgrammerHumor.jpg[scale=50]]
+ifndef::book[image::./images/ProgrammerHumor.jpg["Joke",width="70%"]]
 
+[[structure]]
 == L'architecture du système
 
 Liens avec AADL, ...
 
+[[comportement]]
 == Le comportement du système
 
 Liens avec la V&V

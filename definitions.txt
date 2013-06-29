@@ -1,0 +1,83 @@
+// raccourcis sites
+:aadl: http://www.aadl.info/[AADL]indexterm:[AADL]
+:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]indexterm:[AsciiDoc]
+:doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
+:eclipse: http://www.eclipse.org[eclipse]indexterm:[eclipse]
+:grafcet: http://fr.wikipedia.org/wiki/Grafcet[Grafcet]
+:marte: http://www.omgmarte.org/[MARTE]indexterm:[MARTE]
+:modelio: http://www.modeliosoft.com/[Modelio]
+:models: http://www.modelsconference.org/[MODELS]
+:moodle: http://webetud.iut-blagnac.fr[Moodle]
+:norme: http://www.omg.org/spec/SysML/1.3/PDF/[OMG SysML v1.3]
+:omg: http://www.omg.org[OMG(TM)]indexterm:[OMG]
+:pandoc: http://johnmacfarlane.net/pandoc/[Pandoc]
+:plantumlweb: http://plantuml.sourceforge.net/[plantUML]
+:rapportPotier: http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf[Rapport Potier]
+:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]indexterm:[Rhapsody]
+:rtaw: http://www.realtimeatwork.com/[RTaW]indexterm:[RTaW]
+:sart: http://fr.wikipedia.org/wiki/Structured_Analysis_for_Real_Time[SADT/SART]
+:sysml: http://www.omgsysml.org/[SysML(TM)]indexterm:[SysML]
+:sysmltrends: http://www.google.fr/trends/explore#q=sysml[SysML Trends]
+:topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
+:uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
+:umlspec: http://www.omg.org/spec/UML/2.4.1/Infrastructure/PDF/[UML 2.4.2 Specifictation]
+:yuml: http://yuml.me/[yuml]
+
+// data
+:eggstitle: Humour
+:STI2D: STI2D(((STI2D)))
+:Requirements: Requirements
+:Structure: Structure
+:Behavior: Comportement
+:Crosscutting: Transverse
+:organisation: Organisation
+:analysis: Analyse
+:design: Conception
+:implementation: Implémentation
+:resume: En résumé
+:revisions: Questions de révision
+:is: Ingénierie Système(((IS)))
+ifndef::uk[] 
+:stakeholders: parties prenantes 
+endif::uk[]
+:satisfy: +<<satisfy>>+
+:verify: +<<verify>>+
+:deckjsite: http://houqp.github.io/asciidoc-deckjs/[deckjs]
+	
+// personnes et institutions
+:afis: AFIS(((AFIS)))
+:agusti: Agusti Canals
+:dl: http://www.dept-info.ups-tlse.fr/index.php?option=com_content&view=article&id=294&Itemid=697&lang=fr[Master DL-SI]
+:fast: http://fr.wikipedia.org/wiki/Analyse_fonctionnelle_(conception)[FAST]
+:incose: http://www.incose.org/[INCOSE]indexterm:[INCOSE]
+:irit: http://www.irit.fr[IRIT]
+:iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
+:jmi: Jean-Michel Inglebert
+:jmimail: jean-michel.inglebert@univ-tlse2.fr
+:karina: Karina Aguilar
+:loic: mailto:loic.fejoz@realtimeatwork.com[Loïc Féjoz]
+:nico: Nicolas Belloir
+:nonne: Laurent Nonne
+:prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
+:pdss:  Pierre de Saqui Sannes
+:rdp: Réseaux de Petri
+:sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
+:univ-tlse: http://www.univ-toulouse.fr[Univesité de Toulouse]
+:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
+:uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
+:uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
+:ups: http://www.univ-tlse3.fr[UPS]
+:upsti: http://www.upsti.fr/[UPSTI]
+
+// SysML diagrams
+:seq: sd(((sd)))
+:sd: sd(((sd)))
+:bdd: bdd(((bdd)))
+:ibd: ibd(((ibd)))
+:act: act(((act)))
+:stm: stm(((stm)))
+:req: `req`(((req)))
+:uc: uc(((uc)))
+:pkg: pkg(((pkg)))
+:par: par(((par)))
+:dss: dss(((dss)))

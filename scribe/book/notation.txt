@@ -1,0 +1,1390 @@
+//---------------------------------------------------------------------------------
+[[Notation]]
+== Pourquoi une nouvelle notation
+//---------------------------------------------------------------------------------
+
+[quote, Bertrand Russell, The World of Mathematics (1956)]
+____________________________________________________________________
+A good notation has subtlety and suggestiveness which at times makes
+it almost seem like a live teacher.
+____________________________________________________________________
+
+
+Il existe une notation qui se veut "unifiée" pour les modèles : {uml}.
+Néanmoins cette notation est peu adaptée pour l'{is} :
+
+* UML 1.x était complètement inadaptée :
+** Principalement pour les systèmes d'information
+** Peu de liens entre les diagrammes
+** Peu de liens entre les modèles et les exigences
+
+ifdef::backend-slidy2[<<<]
+
+* UML 2.x n'est pas beaucoup mieux si ce n'est :
+** Implication des ingénieurs systèmes pour sa définition
+** Introduction du diagramme de structure composite 
+
+ifdef::backend-slidy2[<<<]
+
+En conclusion {UML} est une bonne base :
+
+* Standard _De facto_ en génie logiciel
+* Fournit beaucoup de concepts utiles pour décrire des systèmes (même complexes)
+* Stable et extensible (grâce notamment au mécanisme de _profile_)
+* Beaucoup d'outils disponibles
+
+Mais...
+
+* Manque de certains concepts clés d'{is}
+* Vocabulaire beaucoup trop « software » pour être utilisé par les ingénieurs systèmes (concept de +classe+ ou d'+héritage+ par exemple)
+* Trop de diagrammes (13 sortes)
+
+//---------------------------------------------------------------------------------
+== Introduction à SysML
+//---------------------------------------------------------------------------------
+
+=== Fiche d'identité
+
+include::fiche.txt[]
+
+=== Différence avec UML
+
+.Liens entre UML et SysML
+ifdef::book[image::{images}/diff.png[scale=60]]
+ifndef::book[image::{images}/diff.png[width="60%"]]
+
+=== Qui est "derrière"?
+
+Industrie::
+American Systems, BAE Systems, Boeing, Deere & Company, EADS Astrium, Eurostep, Israel Aircraft Industries,  Lockheed Martin, Motorola, NIST, Northrop Grumman, oose.de, Raytheon, Thales, ...
+
+Vendeurs d'outils::
+Artisan, EmbeddedPlus, Gentleware, IBM, Mentor Graphics, PivotPoint Technology, Sparx Systems, Vitech, ...
+
+Autres organisations::
+AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
+
+=== Organisation des différents diagrammes
+
+.Les 9 diagrammes SysML et leur lien avec UML
+ifdef::book[image::{images}/Figure4-1.png[scale=30]]
+ifndef::book[image::{images}/Figure4-1.png[width="90%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Version abrégée des diagrammes
+ifdef::book[image::{images}/Figure4-1-bis.png[scale=30]]
+ifndef::book[image::{images}/Figure4-1-bis.png[width="90%"]]
+
+
+=== Différence entre modèle et dessin
+
+{SysML} n'est pas une palette de dessins et d'éléments de base servant à faire
+des diagrammes. Il existe une représentation graphique des éléments modélisés en {SysML}. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est *le modèle* qui importe le plus. 
+
+C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes {SysML} footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés (cf. section <<Outils>>).
+
+ifdef::backend-slidy2[<<<]
+
+Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
+
+.Organisation
+ifdef::book[[cols="h,4*",options="header"]]
+ifndef::book[[cols="h,4*",options="header",width="70%"]]
+|======================
+|				| {Requirements}, cf. <<reqs>> 	| {Structure}, cf. <<archi>>	| {Behavior}, cf. <<behavior>> 	| {Crosscutting}, cf. <<transvers>>
+| {organisation}	|		+pkg+			|     +pkg+, +bdd+   		|		+pkg+		|
+| {analysis}, {design}, {implementation} footnote:[En fonction du niveau de détail.]
+				|		+req+			|     +bdd+, +ibd+, +seq+, +par+   		| +uc+, +seq+, +st+, +act+				| +par+
+|======================
+
+//---------------------------------------------------------------------------------
+[[Outils]]
+== 	Outils SysML
+//---------------------------------------------------------------------------------
+
+Il existe un certain nombre d'outils permettant de réaliser des modèles SysML. Voici une liste non exhaustive :
+
+include::outils.txt[]
+
+Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
+
+Ce que je voudrai souligner ici c'est l'importance du modèle comme "dépôt" (je préfère le terme anglais de _repository_) d'éléments de base en relation les uns avec les autres. C'est toute la différence entre le dessin et le modèle.
+
+IMPORTANT: Attention toutefois à ne pas confondre ce que vous permet (ou pas) de faire l'outil et la notation elle-même. Les fabricants ont parfois pris des libertés ou bien n'ont pas complètement implémenté toutes les subtilités de la notation.
+		
+//---------------------------------------------------------------------------------
+== Principes de base
+//---------------------------------------------------------------------------------
+
+Abordons quelques principes généraux de {sysml}.
+
+- Chaque diagramme {SysML} représente un élément de modélisation
+- Chaque diagramme {SysML} doit être incluse dans un cadre (_Diagram Frame_)
+- L'entête du cadre, appelé *cartouche*, indique les informations sur le diagramme:
+* le type de diagramme (+req+, +act+, +bdd+, +ibd+, +sd+, etc.)
+* le type d'élément (_package_, _block_, _activity_, etc.)
+* le nom de l'élément
+* le nom du diagramme ou de la vue
+
+ifdef::backend-slidy2[<<<]
+
+Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Definition Diagram_ (type +bdd+) qui représente un
+_package_, nommé "Context".  
+
+.Exemple de diagramme SysML
+ifdef::book[image::{images}/pacemaker-context.png[scale=50]]
+ifndef::book[image::{images}/pacemaker-context.png[width="80%"]]
+
+//---------------------------------------------------------------------------------
+[[org]]
+== Organisation
+//---------------------------------------------------------------------------------
+
+ifndef::book[]
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| [red]*{organisation}*	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+endif::book[]
+
+=== Fondements
+
+On abordera :
+
+- Le _Package Diagram_
+- Les différent types de _packages_
+- Les organisations possibles 
+- La notion de _Namespaces_
+- Les _Dependencies_
+
+[[package]]
+=== Le _Package Diagram_
+
+* Identique à {uml}, et classique pour les développeurs (java notamment)
+* Permet d'organiser les modèles en créant un espace de nommage (cf <<namespace>>)
+
+Les modèles peuvent être organisés selon toutes sortes de considération (cf. <<organisation>>).
+Le mécanisme qui permet de les organiser est le _package_ (paquetage).
+
+- hiérarchie "système" (e.g., entreprise, système, composant)
+- types de diagrammes (e.g., besoins, structure, comportements)
+- par points de vue
+- etc.
+
+=== Les différent types de _packages_
+
+Il existe plusieurs types de _package_ :
+
+models:: 
+	un _package_ "top-level" dans une hiérarchie de _package_
+packages:: 
+	le type le plus classique : un ensemble d'éléments de modèles
+model librairies:: 
+	un _package_ prévu pour être réutilisé (importé) par d'autres éléments 
+views:: 
+	un _package_ spécial pour représenter les points de vue
+
+[NOTE]
+====
+Un point de vue (_viewpoint_) est utilisé pour matérialiser une perspective particulière de modélisation.
+Il possède des propriétés standardisés (_concerns_, _language_, _purpose_, etc.) et permettent d'indiquer qu'une
+vue (un _packetage_ particulier, stéréotypé `<<view>>`) est conforme (dépendance `<<conform>>`) à un point de vue.
+====
+
+[[organisation]]
+=== Les organisations possibles 
+
+Les modèles peuvent être organisés selon toutes sortes de considération :
+
+- par hiérarchie "système" (e.g., entreprise, système, composant, ...)
+- par types de diagrammes (e.g., besoins, structure, comportements, ...)
+- par cycle de vie (e.g., analyse, conception, ...)
+- par équipes (e.g., architectes, <<IPT>>, ...)
+- par points de vue (e.g., sécurité, performance, ...)
+- etc.
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+ifdef::book[image::{images}/pkg-organisation2.png[scale=60]]
+ifndef::book[image::{images}/pkg-organisation2.png[width="60%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+ifdef::book[image::{images}/pkg-organisation-modelview.png[scale=40]]
+ifndef::book[image::{images}/pkg-organisation-modelview.png[width="40%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+ifdef::book[image::{images}/pkg-organisation.png[scale=40]]
+ifndef::book[image::{images}/pkg-organisation.png[width="40%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple d'organisation
+ifdef::book[image::{images}/pkg-topcased.png[scale=40]]
+ifndef::book[image::{images}/pkg-topcased.png[width="60%"]]
+
+ifdef::backend-slidy2[<<<]
+
+[NOTE]
+.Organisation par défaut
+====
+L'outil {topcased} propose, lors de la création d'un premier modèle, de créer une organisation
+"type" par défaut. 
+
+ifdef::book[image:{images}/pkg-template.png[scale=30]]
+ifndef::book[image:{images}/pkg-template.png[width="80%"]]
+ifdef::book[image:{images}/pkg-topcased-default.png[scale=20]]
+ifndef::book[image:{images}/pkg-topcased-default.png[width="80%"]]
+
+====
+
+[[namespace]]
+=== La notion de _Namespaces_
+
+Un _package_ est un espace de nommage pour tous les éléments qu'il contient.
+Ainsi, dans un _package_, on n'a pas à se soucier des noms des éléments. Même si d'autres utilisent les mêmes noms,
+il n'y aura pas ambiguité.
+
+.Définition : _Namespace_ (OMG SysML v1.3, p. 23)
+[NOTE]
+====
+_The package defines a namespace for the packageable elements._
+====
+
+[NOTE]
+====
+Dans les outils {sysml}, vous pouvez demander à voir les noms complets (_Qualified names_)
+des éléments, c'est à dire le nom de l'élément prefixé par son (ou ses) _package(s)_ 
+(e.g., `Structure::Products::Clock`).
+====
+
+=== Les dépendances
+
+Un certain nombre de dépendances peuvent exister entre des éléments de _package_
+ou entre les _packages_ eux-mêmes :
+
+_Dependency_::
+	une dépendance "générale", non précisée, +
+	représentée par une simple flèche pointillée `----->`
+_Use_::
+	l'élément "utilise" celui à l'autre bout de la flèche (un type par exemple), +
+	représentée par le stéréotype `<<use>>`
+_Refine_::
+	l'élément est un raffinage (plus détaillé) de celui à l'autre bout de la flèche, +
+	représentée par le stéréotype `<<refine>>`
+_Realization_::
+	l'élément est une "réalisation" (implémentation) de celui à l'autre bout de la flèche, +
+	représentée par le stéréotype `<<realize>>`
+_Allocation_::
+	l'élément (e.g., une activité ou un _requirement_) est "alloué" sur celui à l'autre bout de la flèche (un +block+ la plupart du temps), +
+	représentée par le stéréotype `<<allocate>>`
+
+=== {resume}
+{sysml} propose un certain nombre de mécanismes pour organiser les différents modèles,
+tirés pour la plupart d'{uml}. Ces mécanismes seront plus faciles à comprendre au travers
+de leur utilisation concrète dans la suite.
+
+.Organisation
+ifdef::book[[cols="h,4*",options="header"]]
+ifndef::book[[cols="h,4*",options="header",width="50%"]]
+|======================
+|						| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| [red]*{organisation}*	| +package+			| +package+		| +package+		| +dependencies+
+| {analysis}			|					|        		|				|
+| {design}				|					|        		|				|
+| {implementation}		|					|        		|				|
+|======================
+
+=== {revisions}
+
+. Quels sont les 5 types de dépendances entre _packageable elements_ ?
+. À quoi cela peut-il servir de définir les dépendances (donnez des exemples concrets) ?
+
+//---------------------------------------------------------------------------------
+[[reqs]]
+== Les exigences
+//---------------------------------------------------------------------------------
+
+ifndef::book[]
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+endif::book[]
+
+=== Fondements
+
+On abordera :
+
+- L'organization des _Requirements_ 
+- Les _Requirements properties_ 
+- Les _Requirements links_ 
+- Les _Requirements Diagrams_ 
+- Les considérations sur la traçabilité
+- Annotations des _Requirements_
+- Les _Use Case Diagrams_ (scénarios) 
+
+[NOTE]
+====
+L'ingénierie des exigences est une discipline à part entière et nous n'abordons ici
+que les aspects en lien avec la modélisation système. Voir le livre de référence pour
+plus de détails (<<Sommerville1997>>) ou le guide de l'{afis} (<<REQ2012>>).
+====
+
+=== L'organisation des _Requirements_ 
+
+==== Différents types d'organisation
+
+Comme nous l'avons vu pour les _packages_, plusieurs types d'organisations sont possibles :
+
+- Par niveau d'abstraction
+* Besoins généraux (en lien avec les  _use cases_ par exemple) 
+* Besoins techniques (en lien avec les éléments de conception)
+- Par point de vue
+* Besoins principaux (en lien avec les _use cases_)
+* Besoins spécifiques :
+** Fonctionnels
+** Marketing
+** Environnementaux
+** _Business_
+** ...
+- etc.
+
+==== Tableaux de _Requirements_
+
+Les _requirements_ sont généralement stockés dans des feuilles excel.
+
+.Exemples tableau d'exigences
+ifdef::book[image::{images}/req-table.png[scale=50]]
+ifndef::book[image::{images}/req-table.png[width="80%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Import Modelio de tableau d'exigences
+ifdef::book[image::{images}/req-modelio.png[scale=50]]
+ifndef::book[image::{images}/req-modelio.png[width="80%"]]
+
+=== Les _Requirements properties_ 
+
+Il est possible d'indiquer un certain nombre de propriétés sur un _requirement_ : 
+
+- _priority_ (+high+, +low+, ...) 
+- _source_ (+stakeolder+, +law+, +technical+, ...)
+- _risk_ (+high+, +low+, ...) 
+- _status_ (+proposed+, +aproved+, ...) 
+- _verification method_ (+analysis+, +tests+, ...)
+
+
+=== Les _Requirements links_ 
+
+Les principales relations entre _requirement_ sont :
+
+_Containment_:: 
+	pour décrire la décomposition d'une exigence en plusieurs sous-exigences (⊕–) 
+_Refinement_::
+ 	pour décrire un ajout de précision (`<<refine>>`)
+_Derivation_::
+ 	pour indiquer une différence de niveau d'abstraction (`<<deriveReqt>>`), par exemple
+	entre un système et un de ses sous-systèmes
+
+[NOTE]
+====
+Lorsqu'un cas d'utilisation possède plusieurs cas `<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. <<conventions>>).
+====
+
+.Exemples de relations entre exigences
+ifdef::book[image::{images}/req-exp1.png[scale=40]]
+ifndef::book[image::{images}/req-exp1.png[width="40%"]]
+
+ifdef::backend-slidy2[<<<]
+
+Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
+(les _block_ principalement) comme `<<satisfy>>` ou `<<verify>>`, mais nous les aborderons
+dans la partie <<transvers,transverse>>.
+
+.Relations liées au _requirements_ dans TOPCASED
+ifdef::book[image::{images}/topcased-req-connections.png[scale=20]]
+ifndef::book[image::{images}/topcased-req-connections.png[width="20%"]]
+
+=== Les _Requirements Diagrams_ 
+
+Quelques exemples de +req+ tirés de http://www.uml-sysml.org/sysml :
+
+.Exemples de composition d'exigences
+ifdef::book[image::{images}/hsuv-reqs1.png[scale=40]]
+ifndef::book[image::{images}/hsuv-reqs1.png[width="90%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemples de dépendances entre exigences
+ifdef::book[image::{images}/hsuv-reqs2.png[scale=40]]
+ifndef::book[image::{images}/hsuv-reqs2.png[width="90%"]]
+
+=== Les considérations sur la traçabilité
+
+Une fois que les _requirements_ ont été définis et organisés, il est utile de les lier au moins aux _use cases_ 
+(en utilisant `<<refine>>` par exemple) et aux éléments structurels (en utilisant `<<satisfy>>` par exemple), mais ceci
+sera abordé dans la partie <<transvers,transverse>>.
+
+[NOTE]
+====
+En général chaque _requirement_ devrait être relié à au moins un _use case_ (et vice-versa!).
+====
+
+=== Annotations des _Requirements_
+
+Il est possible d'annoter les éléments de modélisation en précisant les raisons 
+(_rationale_) ou les éventuels problèmes anticipés (_problem_).
+
+.Exemples de _rationale_ et _problem_
+ifdef::book[image::{images}/hsuv-reqs2.png[scale=50]]
+ifndef::book[image::{images}/hsuv-reqs2.png[width="90%"]]
+
+=== Les _Use Case Diagrams_ (scénarios) 
+
+Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comportement>>, nous les abordons
+	ici du fait de leur proximité avec les _requirements_.
+
+.Exemple de lien entre _use case_ et _requirements_
+ifdef::book[image::{images}/req-uc-relation.png[scale=50]]
+ifndef::book[image::{images}/req-uc-relation.png[width="40%"]]
+
+ifdef::backend-slidy2[<<<]
+
+Ce diagramme est exactement identique à celui d'{uml}.
+
+.Exemple de diagrammes des cas d'utilisation
+ifdef::book[image::{images}/UCGestionNotes.png[scale=50]]
+ifndef::book[image::{images}/UCGestionNotes.png[width="60%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Autre exemple de diagrammes des cas d'utilisation
+ifdef::book[image::{images}/uc.png[scale=60]]
+ifndef::book[image::{images}/uc.png[width="60%"]]
+
+[TIP]
+====
+Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
+====
+
+=== {resume}
+
+Les exigences sont très importantes en ingénierie système, plus en tout cas qu'en ingénierie logiciel,
+du fait de la multiplication des sous-systèmes et donc des intermédiaires (fournisseurs, sous-traitants, etc.)
+avec qui les aspects contractuels seront souvent basés sur ces exigences. Il n'est donc pas étonnant qu'un  diagramme
+et des mécanismes dédiés aient été prévus en {sysml}.
+
+.Déclinaison des Exigences
+ifdef::book[[cols="h,2,1,1,1",options="header"]]
+ifndef::book[[cols="h,2,1,1,1",options="header",width="70%"]]
+|======================
+|					| [red]*{Requirements}* 			| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	| +⊕–+, +\<<deriveReqt>>+			|        		|				|
+| {analysis}		| `<<satisfy>>`, `<<refine>>`		|  `<<satisfy>>` entre reqs et UC|	`<<refine>>` |
+| {design}			| +\<<allocate>>+					|        		|				|
+| {implementation}	|	+\<<satisfy>>+, +\<<verify>>+	|        		|				|
+|======================
+
+ifdef::backend-slidy2[<<<]
+
+En terme de démarche, il est classique d'avoir de nombreux aller-retour entre la modélisation
+des exigences et la modélisation du système lui-même (cf. <<sysmod>>).
+
+[[sysmod]]	
+.Exemple de démarche (_SYSMOD Zigzag pattern_)
+ifdef::book[image::{images}/zigzag.png[scale=30]]
+ifndef::book[image::{images}/zigzag.png[width="70%",link="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"]]
+
+
+=== {revisions}
+
+- Quelles sont les différences entre *besoins* et *exigences* ?
+- En quoi les cas d'utilisation sont-ils complémentaires des exigences?
+. Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
+
+//---------------------------------------------------------------------------------
+[[archi]]
+== L'architecture du système
+//---------------------------------------------------------------------------------
+
+ifndef::book[]
+
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| [red]*{Structure}*	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+endif::book[]
+
+=== Fondements
+
+On abordera :
+
+- l'organisation du système et des modèles 
+- les _Block Definition Diagrams_ 
+- les _Internal Block Diagrams_
+- les _Parametric Diagrams_ (pour les contraintes physiques)
+- les _Sequence Diagrams_ (diagramme de séquence système) 
+
+=== Organisation du système et des modèles
+
+En terme d'organisation, le mécanisme clef est celui de _package_.
+Celui-ci va permettre d'organiser les modèles, pas le système lui-même.
+Nous avons abordé cette organisation <<package,ici>>.
+
+Pour l'organisation du système, on trouve le plus souvent :
+
+- un diagramme décrivant le contexte (le système dans son environnement), décrit dans un _block definition diagram_ (cf. <<contextebdd>>)
+- un diagramme décrivant les éléments internes principaux du système,  décrit dans un _internal block diagram_
+
+[[bddsec]]
+=== _Block Definition Diagrams_ 
+
+==== Principes de base
+
+Un +bdd+ peut représenter : 
+
+- un _package_
+- un bloc
+- un bloc de contrainte (_constraint block_)
+
+ifdef::backend-slidy2[<<<]
+
+Un diagramme de bloc décrit les relations entre les blocs (composition, généralisations, ...).
+Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
+
+[[contextebdd]]
+.bdd du système dans son environnement
+ifdef::book[image::{images}/pacemaker-context.png[scale=60]]
+ifndef::book[image::{images}/pacemaker-context.png[width="70%"]]
+
+ifdef::backend-slidy2[<<<]
+
+Un bloc est constitué d'un certain nombre de compartiments (_Compartments_) :
+
+_Properties_::
+	Equivalent {uml} des propriétés (e.g., attributs)
+_Operations_::
+	Les méthodes supportées par les instances du bloc.
+_Constraints_::
+	Les contraintes
+_Allocations_::
+	Les allocations
+_Requirements_::
+	Les exigences liées à ce bloc.
+_User defined_::
+	On peut définir ses propres compartiments
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple de définition de contraintes
+ifdef::book[image::{images}/constraints.png[scale=60]]
+ifndef::book[image::{images}/constraints.png[width="70%"]]
+
+
+==== Propriétés
+
+On peut différencier 3 types de propriétés d'un bloc :
+
+_values_::
+	Des caractéristiques (quantifiables)
+_parts_:: 
+	Les éléments qui composent le bloc (cf. <<ibd>>)
+_references_::
+	Les éléments auquel le bloc a accès (via des associations ou des agrégations)
+
+[NOTE]
+====
+Les _values_ sont ce qui se rapproche le plus des attributs de classes UML.
+====
+
+==== _Value Types_
+
+Pour associer un type aux valeurs, {SysML} propose de définir des _Value Types_.
+
+.Définition de _Value Types_.
+ifdef::book[image::{images}/valueType.png[scale=60]]
+ifndef::book[image::{images}/valueType.png[width="60%"]]
+
+==== Associations entre blocs
+
+Il existe deux types de relations entre blocs : 
+
+- l’association (y compris l’agrégation et la composition)
+- la généralisation/spécialisation
+
+Ces deux types de relations, bien connues en {uml}, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d'aborder les associations, il est important de différencier la description d'éléments structurels sous la forme d'un bloc (au travers d'un +bdd+ par exemple) et ces éléments pris individuellement. Ces derniers sont des *instances* individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d'un bloc consiste à représenter l'ensemble des éléments qui caractérisent tout une série d'objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c'est donc leur "signature" que l'on représente. C'est pour cela qu'un bloc n'est pas un élément physique, mais simplement sa représentation, tandis qu'une instance de ce bloc représentera elle cet élément physique. C'est le cas notamment des participants d'un diagramme de séquence ou encore des parties d'un composé, qui sont des instances et non des blocs.
+
+=====  Association
+
+Une *association* est un ensemble de liens permanents existant entre les instances de deux ou plusieurs blocs. 
+On dira qu’une association lie plusieurs blocs ou que les blocs *participent* à l’association.
+
+Une association possède plusieurs propriétés :
+
+Dimension d’une association::
+Nombre de blocs mis en jeu par l’association +
+(binaire : 2, ternaire : 3, n-aire : n) +
+
+[NOTE]
+.Exemple d’association binaire
+====
+Soient les bloc +Fournisseurs+ et +Produits+. 
+On veut indiquer quels sont les produits susceptibles d’être fournis par chaque fournisseur et quels sont les fournisseurs susceptibles de fournir chaque produit.
+
+ifdef::book[image:{acsi}/{images}/prod-fourn.png[scale=40]]
+ifndef::book[image:{acsi}/{images}/prod-fourn.png[width="40%"]]
+====
+
+ifdef::backend-slidy2[<<<]
+
+Nom d’une association::
+Afin de clarifier les informations, il est important de nommer les associations. +
+Il existe trois façons de nommer une association :
+ 
+- un verbe à l’infinitif (e.g., +Fournir+)
+- un verbe conjugué avec un sens de lecture : +Fournit >+  ou  +< Est fourni par+
+- un rôle (placé à une extrémité de l’association)
+
+ifdef::backend-slidy2[<<<]
+
+Cardinalité::
+Indique à combien d’instances minimum et maximum du bloc d’en face est lié toute instance du bloc de départ. Elle est représentée par un couple +(M..N)+. 
+
+[NOTE]
+====
+Attention, dans une cardinalité +M..N+, +M+ doit toujours être inférieur ou égal à +N+.  Exemple : +3..10+.
+====
+
+=====  Vers le code : que signifie vraiment une association?
+
+En terme de logiciel, une *association* représente une contrainte sur la suite du développement : que ce soit un *code* (en langage orienté objet la plupart du temps) ou une *base de donnée*.
+
+Pour reprendre l'exemple précédent, cela signifie concrètement au niveau d'un code par exemple
+que depuis une variable +Produits+ on doit être capable d'accéder à une variable (correspondante)
+de type tableau (ou liste, ou ...) de +Fournisseurs+.
+
+Ce qui peut donner en java : 
+
+["source","java"]
+-----------------------------
+public class Produits
+{
+//Produits Attributes
+private String idPro;
+private String designation;
+private float poids;
+
+//Produits Associations
+private List<Fournisseurs> fournisseurs;
+...
+-----------------------------
+
+En terme d'ingénierie système, on utilisera plutôt des associations spécifiques (l'agrégation et la composition).
+
+.Deux façon de représenter une propriété de type +B+
+ifdef::book[image::{acsi}/{images}/aggreg-comp.png[scale=50]]
+ifndef::book[image::{acsi}/{images}/aggreg-comp.png[link="http://stackoverflow.com/questions/7718035/uml-association-and-dependency",width="60%"]]
+
+En terme d'{is}, une composition indique que l'élément est une partie intégrante (on parle de _part_) du tout (un composant, comme le moteur d'une voiture par exemple) tandis q'une agrégation indique que l'élément est une partie "externe" (on parle de _reference_) comme la batterie d'un portable.
+
+[NOTE]
+====
+Un moyen simple en terme logiciel de déterminer si une association +A->B+ est une association dirigée (navigable dans un sens), une agrégation ou une composition est de raisonner en terme d'implémentation :
+
+- c'est une agrégation si +b+ est initialisé dans le constructeur de +A+ ;
+- c'est une composition si il est aussi détruit dans le destructeur de +A+ ;
+- c'est une association dirigée simple si aucun des deux cas précédent ne s'applique.
+====
+
+=====  Généralisation/spécialisation
+
+Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de *généralisation*. À l'inverse, quand on constate qu'un bloc possède réellement plusieurs déclinaisons différentes et que l'on créé alors des blocs spécifiques, on parle alors de *spécialisation*.
+
+.Exemple de lien de généralisation/spécialisation
+ifdef::book[image::{images}/genspec.png[scale=50]]
+ifndef::book[image::{images}/genspec.png[width="50%"]]
+
+On retrouve cette association entre blocs, mais aussi entre acteurs, cas d'utilisation, etc.
+
+[[ibd]]
+=== _Internal Block Diagrams_
+
+Un +ibd+ décrit la structure interne d’un bloc sous forme de :
+
+parts::
+	Les parties qui constituent le système (ses sous-systèmes)
+ports::
+	Elément d'interaction avec un bloc
+connecteurs::
+	Liens entre ports
+
+==== Parts
+
+Les parties sont représentés par les éléments au bout d'une composition dans un +bdd+.
+Elles sont créés à la création du bloc qui les contient et sont détruites avec lui s'il
+est détruit (dépendance de vie). 
+
+[WARNING]
+====
+Il ne s'agit pas de redessiner le BDD. Les _parts_ sont des instances et non des classes (au sens objet). +
+Cela ne pose aucun problème à un ingénieur système, mais ça peut en poser à un ingénieur logiciel.
+====
+
+ifdef::backend-slidy2[<<<]
+
+On représente les _parts_ comme des bloc en traits pleins
+et les _references_ comme des blocs en trait pointillés.
+
+.Exemple de _Parts_
+ifdef::book[image::{images}/parts.png[scale=40]]
+ifndef::book[image::{images}/parts.png[width="40%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Autre exemple de _Parts_
+ifdef::book[image::{images}/parts2.png[scale=40]]
+ifndef::book[image::{images}/parts2.png[width="40%"]]
+
+==== Ports
+
+Les ports :
+
+- préservent l'encapsulation du bloc
+- matérialise le fait que les interactions avec l'extérieur (via un port)
+sont transmise à une partie (via un connecteur)
+- les ports connectés doivent correspondre (_kind_, _type_, _direction_, etc.)
+
+[NOTE]
+====
+Les ports définissent les points d’interaction offerts (`«provided»`) et requis (`«required»`) entre les blocs. +
+Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaque hiérarchie.
+====
+
+.Exemples de flots 
+ifdef::book[image::{images}/ports-flots.png[scale=60]]
+ifndef::book[image::{images}/ports-flots.png[width="60%"]]
+
+ifdef::backend-slidy2[<<<]
+
+.Exemples de flots multi-physique entre ports
+ifdef::book[image::{images}/flots.png[scale=50]]
+ifndef::book[image::{images}/flots.png[width="90%"]]
+
+ifdef::backend-slidy2[<<<]
+
+Les ports peuvent être de nature classique (comme en {UML}) et représenter la fourniture ou le besoin de services.
+Ils peuvent aussi être de nature "flux physique".
+
+Les +Flux+ peuvent être :
+
+- atomiques (un seul flux),
+- composites (agrégation de flux de natures différentes). 
+
+[NOTE]
+====
+Un _flow port_ atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux), 
+la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un _Value Type_ représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
+====
+
+[[param]]
+=== _Parametric Diagrams_
+
+Ce diagramme utilise 3 concepts clefs :
+
+- _Constraints_ (un type de bloc)
+- _Parametric diagram_ (un type d'+ibd+)
+- _Value binding_
+
+==== Contraintes
+
+C'est un bloc particulier :
+
+- avec un stéréotype `≪constraint≫` (au lieu de bloc)
+- des paramètres en guise d'attributs
+- des relations liant (contraignant) ces paramètres
+
+.Exemple de contraintes
+ifdef::book[image::{images}/constraints.png[scale=50]]
+ifndef::book[image::{images}/constraints.png[width="80%"]]
+
+==== Diagramme paramétrique
+
+C'est une forme particulière de _Internal Block Definition_
+
+.Exemple de diagramme paramétrique
+ifdef::book[image::{images}/param.png[scale=50]]
+ifndef::book[image::{images}/param.png[width="90%"]]
+
+==== _Value Binding_
+
+Une fois les contraintes exprimées, il faut lier les paramètres (formels) à des valeurs (paramètre réel). C'est l'objet des _Value Binding_.
+
+Pour assigner des valeurs spécifiques, on utilise des _Block Configurations_;
+
+.Exemple de bloc de configuration
+ifdef::book[image::{images}/blockconf.png[scale=60]]
+ifndef::book[image::{images}/blockconf.png[width="90%", link="http://books.google.fr/books?id=8KY2YZIiXv0C&pg=PA174&lpg=PA174&dq=SYSml+%22block+configuration%22&source=bl&ots=ZdxokRYj6l&sig=PlDHvR8qGZC97W-C_08Yk9Xb1RY&hl=fr&sa=X&ei=1jizUOXKBsXAhAeinYHACg&ved=0CEEQ6AEwAg#v=onepage&q=SYSml%20%22block%20configuration%22&f=false"]]
+
+=== Diagrammes de séquence système
+
+Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement). 
+
+Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails. Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence classique (cf. section sur les <<seq>>).
+
+.Exemples de DSS
+ifdef::book[image::{images}/dss.png[scale=70]]
+ifndef::book[image::{images}/dss.png[width="70%"]]
+
+=== {resume}
+En résumé, il existe plusieurs diagrammes permettant d'exprimer la structure du système à concevoir. En fonction du niveau de détail nécessaire on peut voir les sous-systèmes comme des boîtes noires (des blocs) ou comme des boîtes blanches (grâce à l'+ibd+ correspondant).
+
+.Place des aspects structurels
+ifdef::book[[cols="h,4*",options="header"]]
+ifndef::book[[cols="h,4*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 	| [red]*{Structure}*		| {Behavior} 	| {Crosscutting}
+| {organisation}	|					| +package+					|				|
+| {analysis}		|					| +bdd+ +par+       		|				|
+| {design}			|					| +bdd+ +par+ +ibd+ +dss+	|				|
+| {implementation}	|					| +bdd+ +par+ +ibd+ +dss+	|				|
+|======================
+
+=== {revisions}
+
+. Quelles sont les différences entre une association dirigée (+->+), une composition (losange noir) et l'agrégation (losange blanc) ?
+. Puisqu'un +bdd+ me donne souvent la liste des sous-systèmes (liens de composition), pourquoi ai-je besoin d'un +ibd+ ?
+
+//---------------------------------------------------------------------------------
+== Le comportement du système
+[[behavior]]
+//---------------------------------------------------------------------------------
+
+ifndef::book[]
+
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| [red]*{Behavior}* 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+endif::book[]
+
+=== Fondements
+
+On abordera :
+
+- les _Use Case Diagrams_ (scénarios) 
+- les _Sequence Diagrams_ 
+- les _State Machines_
+- les _Activity Diagrams_
+
+[[usecase]]
+=== _Use Case Diagrams_
+
+Les éléments de base :
+
+Acteurs::
+	les principaux acteurs (leur rôle) qui participent (on parle parfois d'acteurs principaux)
+	ou qui bénéficient (on parle alors d'acteurs secondaires) du système.
+Cas d'utilisation::
+	représente un ensemble d’actions réalisées par le système intéressant pour au moins un acteur 
+Association::
+	participation d'un acteur à un cas d'utilisation. 
+Sujet::
+	le domaine étudié (qui peut être une partie seulement de tout le système, pas forcément modélisé dans son ensemble)
+
+[TIP]
+====
+Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
+====
+
+=== Le Diagramme des Cas d’Utilisation
+
+Le *Diagramme des Cas d'Utilisation* est un diagramme {UML} permettant de représenter :
+
+- les *UC* (_Use Case_ ou Cas d’Utilisation)
+- les *acteurs* (principaux et secondaires)
+- les *relations* 
+* entre acteurs et _Use Case_
+* entre _Use Cases_
+
+[NOTE]
+=====================================================================
+On notera simplement +uc+ pour signifier "diagramme des UC"
+=====================================================================
+
+==== Cas d'Utilisation (_Use Case_)
+
+include::{defs}/uc.txt[]
+
+===== Exemple de cas d'utilisation (UML)
+
+Retrait par carte bancaire
+
+Scénario principal::
+	L'UC démarre lorsque le Guichet Automatique Bancaire (GAB) demande au client son numéro confidentiel après l’introduction de sa CB. Le client 
+	entre son code et valide son entrée. Le GAB contrôle la validité du code. Si le code est valide, le GAB autorise 
+	le retrait et l’UC se termine.
+Scénario alternatif n°1 ::
+	Le client peut à tout instant annuler l'opération. La carte est éjectée et l'UC se termine.
+Exemple de codification de l'UC:: 
+	UC01 ou RetraitCB (pour Retrait par carte bleue)
+
+===== Précisions
+
+Un cas d'utilisation peut être précisé par : 
+
+- une description textuelle
+- un ou des diagrammes {UML} (séquence, activité)
+
+[NOTE]
+=====================================================================
+Dans les outils, cette "précision" se manifeste par le fait que l'on "attache"
+généralement un diagramme de séquence à un cas d'utilisation (clic droit sur un _Use Case_ -> nouveau +seq+).
+=====================================================================
+
+==== Acteur
+
+include::{defs}/acteur.txt[]
+
+On peut trouver plusieurs types d'acteurs :
+
+* extérieurs au système (cf. +actor+ <<ucdiag>>)
+** les acteurs principaux 
+** les acteurs secondaires 
+* exemples de types d'acteurs prédéfinis dans UML :
+** +\<<utility>>+
+** +\<<process>>+
+** +\<<thread>>+
+
+[NOTE]
+====
+On peut utiliser des liens de généralisation/spécialisation entre acteurs
+pour représenter les possibilités pour le spécialisé d'avoir les mêmes
+prérogatives (notamment en terme d'utilisation du système) que le généralisé.
+====
+
+==== Relations entre acteurs et _Use Case_
+
+En général, une simple association relie acteurs et _Use Case_.
+On peut également orienter ces associations en plaçant une direction (flèche vide) au bout de l'association.
+
+==== Relations entre _Use Case_
+
+Après avoir lister les cas d'utilisation, il est utile de les organiser et de montrer les relations entre eux.
+Plusieurs relations sont possibles :
+
+Extension (+\<<extend>>+)::
+	Indique que le _Use Case_ source est *éventuellement* exécutée en complément du _Use Case_ destination (cas particulier, erreur...). Le point précis où l'extension peut se produire est appelé _extension point_ (surtout utile quand il existe plusieurs extensions pour un même cas)
+Inclusion (+\<<include>>+)::
+	Indique que le _Use Case_ est inclus *obligatoirement* dans un autre _Use Case_ (notion de sous-fonction par exemple)
+Généralisation::
+	Relation entre un _Use Case_ général et un autre plus spécialisé qui hérite de ses caractéristiques et en rajoute (différents modes d'utilisation d'un système par exemple, ou encore différents acteurs impliqués)
+
+//ifdef::backend-slidy2[<<<]
+
+[[ucdiag]]
+.Notation dans le diagramme d'UC
+ifdef::book[image::{acsi}/dessins/UC.png[scale=70]]
+ifndef::book[image::{acsi}/dessins/UC.png["Diagramme d'UC",width=35%"]]
+
+[TIP]
+=====================================================================
+On n'utilise généralement `<<include>>` que dans le cas où le sous-cas d'utilisation est
+inclut dans plusieurs UC. Si ce n'est pas le cas, il est généralement englobé dans l'UC.
+=====================================================================
+
+
+==== Pour construire un UC (de manière générale)
+
+. identifier les acteurs
+. identifier les cas d'utilisation
+. structurer en _packages_
+. finaliser les diagrammes de cas d'utilisation (ajouter les relations)
+
+[NOTE]
+====
+Certains méthodologistes (comme T. Wielkins) préconisent de ne pas utiliser les acteurs et les cas d'utilisation
+(cf. son blog)
+====
+
+==== Exemples complets (UML)
+
+===== Service comptable
+
+[[ucexp]]
+.Exemple de diagramme d'UC
+ifdef::book[image::{acsi}/images/UC.png[scale=40]]
+ifndef::book[image::{acsi}/images/UC.png["Exemple de Diagramme d'UC",width="80%"]]
+
+===== Gestion des notes
+
+[[ucexp2]]
+.Autre exemple de diagramme d'UC
+ifdef::book[image::{acsi}/images/uc2.png[scale=60]]
+ifndef::book[image::{acsi}/images/uc2.png["Exemple de Diagramme d'UC",width="70%"]]
+
+[[seq]]
+=== _Sequence Diagrams_ 
+
+==== Généralités
+
+Il permet de :
+
+* modéliser les interactions entre blocs
+* séquencer ces interactions dans le temps
+* représenter les échanges de messages
+* spécifier les scénarios des cas d'études
+
+Les éléments qui composent ce diagramme sont :
+
+Participants::
+	les éléments en interaction (des blocs généralement)
+Lignes de vie::
+	des lignes verticales qui permettent d'indiquer un départ ou une arrivée d'interaction
+Barres d'activation::
+	pour matérialiser quand l'élément est actif
+Messages::
+	ce qui "circule" d'un élément à l'autre (signal, appel de méthode, ...)
+
+ifdef::backend-slidy2[<<<]
+
+.Exemple de diagramme de séquence (1)
+ifdef::book[image::{acsi}/{images}/seq1.png["Diagramme de séquence",scale=40]]
+ifndef::book[image::{acsi}/{images}/seq1.png["Diagramme de séquence",width="40%"]]
+
+.Exemple de diagramme de séquence (2)
+ifdef::book[image::{acsi}/{images}/seq2.png["Eléments de notation",scale=40]]
+ifndef::book[image::{acsi}/{images}/seq2.png["Eléments de notation",width="40%"]]
+
+[WARNING]
+=====================================================================
+Les participants (et leur ligne de vie) représentent des instances de blocs (souvent "anonymes").
+=====================================================================
+
+==== Exemple
+
+[[seqexp]]
+.Exemple de diagramme de séquence (3)
+ifdef::book[image::{acsi}/{images}/seq3.png["Exemple de diagramme de séquence",scale=50]]
+ifndef::book[image::{acsi}/{images}/seq3.png["Exemple de diagramme de séquence",width="60%"]]
+
+==== Notions avancées
+
+On peut également représenter des instructions itératives et conditionnelles au travers de
+*cadres d'interaction* :
+
+* +loop+ (boucle)
+* +alt+ (alternative)
+* +opt+ (optionel)
+* +par+ (parallèle)
+* +region+ (région critique - un seul _thread_ à la fois)
+
+ifdef::backend-slidy2[<<<]
+
+[[fowler]]
+.Exemple d' algorithme...
+ifdef::book[image::{acsi}/{images}/fowl1.png["Un algorithme",scale=30]]
+ifndef::book[image::{acsi}/{images}/fowl1.png["Un algorithme",width="30%"]]
+
+.Et le diagramme correpondant
+ifdef::book[image::{acsi}/{images}/fowl2.png["Sa modélisation",scale=60]]
+ifndef::book[image::{acsi}/{images}/fowl2.png["Sa modélisation",width="60%"]]
+
+==== Exemple de conceptions
+
+[[fowler1]]
+.Conception "centralisée"
+ifdef::book[image::{acsi}/{images}/fowl3.png[scale=60]]
+ifndef::book[image::{acsi}/{images}/fowl3.png["Conception 'centralisée'",width="60%"]]
+
+ifdef::backend-slidy2[<<<]
+
+[[fowler2]]
+.Conception "objet"
+ifdef::book[image::{acsi}/{images}/fowl4.png[scale=60]]
+ifndef::book[image::{acsi}/{images}/fowl4.png["Conception 'objet'",width="60%"]]
+
+
+[NOTE]
+====
+On utilise le diagramme de séquence pour représenter des algorithmes et des séquencements temporels. Lorsque le comportement se rapproche plus d'un flot, on utilise le diagramme d'activité (cf. section sur le <<act>>).
+====
+
+==== Lien entre UC, DSS et DS
+
+La décomposition hiérarchique permet une description "_TOP-DOWN_" du système à réaliser.
+
+On fait un Diagramme de Séquence Système pour chaque cas d'utilisation (issu du Diagramme d’UC) pour déterminer les échanges d’informations entre l’acteur et le système.
+
+Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocs composant le système (issus du +bdd+) collaborent pour réaliser le traitement demandé.
+
+ifdef::backend-slidy2[<<<]
+
+[[exp1-uc]]
+.Diagramme d'UC
+ifdef::book[image::{acsi}/{images}/ucexp1.png[scale=50]]
+ifndef::book[image::{acsi}/{images}/ucexp1.png["Diagramme d'UC",width="30%"]]
+
+ifdef::backend-slidy2[<<<]
+
+[[exp1-dss]]
+.Le DSS correspondant
+ifdef::book[image::{acsi}/{images}/dssexp1.png[scale=50]]
+ifndef::book[image::{acsi}/{images}/dssexp1.png["Le DSS correspondant",width="30%"]]
+
+ifdef::backend-slidy2[<<<]
+
+[[exp1-ds]]
+.Le DS correspondant
+ifdef::book[image::{acsi}/{images}/dsexp1.png[scale=50]]
+ifndef::book[image::{acsi}/{images}/dsexp1.png["Le DS correspondant",width="70%"]]
+
+[[stm]]
+=== Diagramme d'états
+
+{SysML} a repris le concept, déjà connu en {uml}, de machine à états  (_State Machines_).
+Ce diagramme représente les différents *états* possibles d’un bloc particulier, et comment ce bloc réagit à des événements en fonction de son état courant (en passant éventuellement dans un nouvel état).
+Cette réaction (nommée *transition*) possède un événement déclencheur, une condition (garde), un effet et un état cible. 
+
+Le diagramme d’états comprend également deux *pseudo-états* :
+
+- l’état initial du diagramme d’états correspond à la création d’une instance ; 
+- l’état final du diagramme d’états correspond à la destruction de l’instance.
+
+.Un exemple de diagramme d'état (R,UK)
+ifdef::book[image::{acsi}/{images}/stm1.png[scale=50]]
+ifndef::book[image::{acsi}/{images}/stm1.png["Un diagramme d'état",width="70%"]]
+
+Lorsqu'un état nécessite lui-même plus de détails, on créé un *état composite* (aussi appelé super-état) 
+qui est lui-même une machine à état. On peut ainsi factoriser des transitions déclenchées par le même événement (et amenant vers le même état cible), tout en spécifiant des transitions particulières entre les sous-états. 
+Il est également possible d'attacher un diagramme d'état (composite) à un état pour garder une représentation hiérarchique.
+
+Un diagramme d'état peut représenter des régions concurrentes (dont les activités peuvent évoluer en parallèle), graphiquement représentées par des zones séparées par des traits pointillés. Chaque région contient ses propres états et transitions.
+
+Il existe encore d'autres concepts avancés que nous ne présenterons pas dans cette introduction car ils sont beaucoup moins utilisés (+entry+, +exit+, +transition interne+, etc.).
+
+[[act]]
+=== Diagrammes d'activité
+
+Les diagrammes d'activité (_Activity Diagrams_) est utilisé pour représenter les flots de données et de contrôle entre les actions. Il est utilisé pour raffiner en général un cas d'utilisation.
+Il est utilisé pour l’expression de la logique de contrôle et d’entrées/sorties. Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser, mais aussi ce qui est produit, consommé ou transformé au cours de l’exécution de cette activité.
+
+.Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
+ifdef::book[image::{images}/act-pcmk1.png[scale=40]]
+ifndef::book[image::{images}/act-pcmk1.png[width="70%"]]
+
+Les éléments de base du diagramme d’activité sont :
+
+- les actions,
+- les flots de contrôle entre actions,
+- les décisions (branchements conditionnels), 
+- un début et une ou plusieurs fins possibles.
+
+=== Actions
+
+Les actions sont les unités fondamentales pour spécifier les comportements en {SysML}. 
+Une action représente un traitement ou une transformation. 
+Les actions sont contenues dans les activités, qui leur servent alors de contexte. 
+
+=== Flots
+
+Un *flot de contrôle* permet le contrôle de l’exécution des noeuds d'activités. Les flots de contrôle sont des flèches reliant deux noeuds (actions, décisions, etc.). 
+
+Le diagramme d’activité permet également d’utiliser des *flots d’objets* (reliant une action et un objet consommé ou produit). Les _object flow_, associés aux broches d'entrée/sortie (_input/output pin_) permettent alors de décrire les transformations sur les objets manipulés.
+
+.Un exemple de flot continu (UK)
+ifdef::book[image::{images}/act-flow-continuous.png[scale=50]]
+ifndef::book[image::{images}/act-flow-continuous.png["Un flot continu",width="30%"]]
+
+Pour permettre la modélisation des *flots continus*, {SysML} ajoute à {UML} la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.). 
+On utilise pour cela des stéréotypes : `<<continuous>>` et `<<discrete>>`. 
+
+[NOTE]
+====
+Par défaut, un flot est supposé discret.
+====
+
+
+=== Décision
+
+Une décision est un noeud de contrôle représentant un choix dynamique entre plusieurs conditions (mutuellement exclusives). 
+Elle est représentée par un losange qui possède un arc entrant et plusieurs arcs sortants. Il existe plusieurs noeuds de contrôle (cf. Fig. <<Control>>) :
+
+_fork_::
+Un _fork_ est un noeud de contrôle représentant un débranchement parallèle. Il est représenté par une barre (horizontale ou verticale) qui possède un arc entrant et plusieurs arcs sortants. Le _fork_ duplique le "jeton" entrant sur chaque flot sortant. Les jetons sur les arcs sortants sont indépendants et concurrents. 
+_join_::
+Un _join_ est un noeud de contrôle structuré représentant une synchronisation entre actions (rendez-vous). Il est représenté par une barre (horizontale ou verticale) qui possède un arc sortant et plusieurs arcs entrants. Le _join_ ne produit son jeton de sortie que lorsqu’un jeton est disponible sur chaque flot entrant (d'où la synchronisation).
+_flow final_::
+Contrairement à la fin d’activité qui est globale à l’activité, la fin de flot est locale au flot concerné et n’a pas d’effet sur l’activité englobante.
+_merge_::
+La fusion est l’inverse de la décision : le même symbole du losange, mais cette fois-ci avec plusieurs flots entrants et un seul sortant.
+
+[[Control]]
+.Les différents contrôles de flow SysML
+ifdef::book[image::{images}/flow-ctrl.png[scale=40]]
+ifndef::book[image::{images}/flow-ctrl.png[width="20%"]]
+
+=== Réutilisation
+
+Les activités peuvent être réutilisées à travers des actions d’appel (_callBehaviorAction_). 
+L’action d’appel est représentée graphiquement par une fourche à droite de la boîte d’action, ainsi que par la chaîne : `nom d’action : nom d’activité`. {SysML} propose encore bien d’autres concepts et notations, comme la région interruptible, la région d’expansion ou encore les flots de type _stream_ qui sortent du cadre de ce livre d'intriduction.
+
+.Exemple de _callBehaviorAction_ (UK)
+ifdef::book[image::{images}/act-call.png[scale=40]]
+ifndef::book[image::{images}/act-call.png[width="20%"]]
+
+
+=== {resume}
+
+Il existe de nombreux diagrammes pour exprimer les comportements. Ces modèles sont importants dans la mesure où ils peuvent servir à valider le futur système vis-à-vis de ces comportements exprimés. Ils ne sont donc véritablement utiles que lorsqu'ils sont couplés à des outils de simulation ou d'analyse (cf. <<Analyse>>).
+
+.Place du Comportement
+ifdef::book[[cols="h,4*",options="header"]]
+ifndef::book[[cols="h,4*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| [red]*{Behavior}* 	| {Crosscutting}
+| {organisation}	|					|        		| +package+				|
+| {analysis}		|					|        		| +uc+ +ds+				|
+| {design}			|					|        		| +dss+ +ds+ +act+		|
+| {implementation}	|					|        		| +sm+			|
+|======================
+
+=== {revisions}
+
+. Comment, pour exprimer un comportement, savoir si j'ai besoin d'un diagramme de séquence plutôt qu'un diagramme d'activité ou encore d'une machine à état ?
+
+=== Exercices
+
+==== Diagramme des cas d'utilisation
+
+Placez dans un diagrammes des cas d'utilisation les différents acteurs et cas correspondant à l'étude de cas suivante 
+(en indiquant les relations) :
+
+[quote]
+____________________________________________________________________
+Pour faciliter sa gestion, un entrepôt de stockage envisage de concevoir un système permettant d'allouer automatiquement un emplacement de stockage pour chaque produit du chargement des camions qui convoient le stock à entreposer.
+Lors de l’arrivée d’un camion, un employé doit saisir dans le système les caractéristiques de chaque article ; le système produit alors une liste où figure un emplacement pour chaque article. Lors du chargement d’un camion les caractéristiques des articles à charger dans un camion sont saisies par un employé afin d’indiquer au système de libérer les emplacements correspondant.
+____________________________________________________________________
+
+ifdef::correction[]
+
+.Réponse
+ifdef::book[image::{acsi}/../partiels/iut-S3-2012-stock-uc.png[scale=60]]
+ifndef::book[image::{acsi}/../partiels/iut-S3-2012-stock-uc.png[width="60%"]]
+
+endif::correction[]
+
+
+//---------------------------------------------------------------------------------
+[[transvers]]
+== Les aspects transversaux
+//---------------------------------------------------------------------------------
+
+ifndef::book[]
+
+.Aspects transversaux
+[cols="h,4*",options="header",width="50%"]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| [red]*{Crosscutting}*
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+endif::book[]
+
+=== Fondements
+
+On abordera ici les aspects transversaux comme :
+
+- la traçabilité des exigences indexterm:[Traçabilité]
+- les mécanismes d'allocation
+- le diagramme paramétrique
+
+=== Traçabilité des exigences
+
+Nous avons vu déjà un certain nombre de mécanismes {sysml} qui permettent de tracer les exigences.
+Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un bloc `<<satisfy>>` une exigence).
+
+.Traçabilité
+ifdef::book[[cols="h,3*",options="header"]]
+ifndef::book[[cols="h,3*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 							| {Structure}	| {Behavior} 
+| {Requirements}	| `<<deriveRqt>>`, `<<refine>>`, `<<copy>>` |    			|				
+| {Structure}		| `<<allocate>>`, `<<satisfy>>`				| 				| `<<allocate>>`
+| {Behavior}		| `<<refine>>`								|				|				
+|======================
+
+Comme indiqué dans le tableau ci-dessus, en général, le lien de raffinement est utilisé entre une exigence et un élément comportemental (état, activité, +uc+, etc.) tandis que l'allocation concerne principalement les éléments de structures.
+ 
+XXX Mettre un exemple avec tous ces liens.
+
+=== Mécanismes d'allocation
+
+Un mécanisme nouveau en {sysml} et important pour l'{is} est le mécanisme d'*allocation*. Il permet de
+préciser quel élément conceptuel (comme un comportement ou une activité) est alloué sur quel élément physique.
+
+Il est possible d'exprimer cette allocation de plusieurs manières.
+
+Parler du `<<AllocatedTo>>`, compartiments des blocs et autres annotations.
+Parler des zones d'allocation dans les machines à états où les diagrammes d'activités par exemple.
+Parler des `<<allocate>>`.
+
+=== Diagramme paramétrique	
+
+C'est une forme particulière de _Internal Block Definition_. Nous avons abordé cela dans la section <<param>>.
+
+.Exemple de diagramme paramétrique
+ifdef::book[image::{images}/param.png[scale=50]]
+ifndef::book[image::{images}/param.png[width="90%"]]
+
+[NOTE]
+====
+Certaines approchent utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l'impact des changements de valeurs de tel ou tel paramètre.
+====
+
+=== {resume}
+En résumé l'expression du comportement du système en {sysml} est très similaire à ce qui est fait dans {uml}. On retrouve néanmoins le renforcement des liens entre éléments de modèles par les dépendances précises et les allocations. Un autre élément de renforcement entre éléments de modèles concerne le fait qu'un diagramme comportemental (comme une machine à état) est attachée à un élément bien précis (par exemple un bloc). Ces liens apparaissent entre blocs et machines à état, entre cas d'utilisation et diagrammes de séquence ou d'activité, etc.
+
+=== {revisions}
+
+. Quelles sont les différences entre `<<satisfy>>` et `<<allocate>>` ?
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+. L'inverse est-il aussi important ?
+
+ifdef::correction[]
+
+Éléments de réponses :
+
+. Quelles sont les différences entre `<<satisfy>>` et `<<allocate>>` ?
+La satisfaction concerne une propriété (d'une solution vis à vis d'un problème) quand l'allocation permet de rajouter un information sur qui fait quoi.
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+Sinon on peut se demander s'il s'agit vraiment d'une utilisation du système qui nous concerne (une exigence a-t'elle été oubliée?).
+. L'inverse est-il aussi important ?
+Encore plus je dirais, au sens où une exigence n'est couverte par aucune utilisation du système (cela peut arriver lors d'une exigence non satisfiable!)
+
+endif::correction[]
+

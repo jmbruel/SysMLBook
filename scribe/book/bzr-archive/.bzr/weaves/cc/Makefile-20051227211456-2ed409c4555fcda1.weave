@@ -1,0 +1,76 @@
+# bzr weave file v5
+i
+1 4251d9c754a2ffc8485292b84fa508c910f10ad7
+n saito@ysaito0.corp.google.com-20051227211519-5bbbeb4bc22364b4
+
+i 0
+1 2d8c6d0a295493419b50845ce0a21b8e733b11b0
+n saito@ysaito1.corp.google.com-20051221005843-00e082c96ec359f3
+
+i 1
+1 8589ecfef48126483cffaa546feaf3c0e3066121
+n saito@ysaito1.corp.google.com-20051221010339-c2a75f1d60d70c11
+
+w
+{ 0
+. # Works only for gmake.
+. #
+. # Just typing "make" creates all eps, pdf, color eps, color pdf files.
+. #
+. #
+. 
+. SAMPLEFILES=$(shell python ./list_sources.py)
+. PSFILES=$(SAMPLEFILES:.py=.eps)
+. PDFFILES=$(SAMPLEFILES:.py=.pdf)
+. COLOR_PSFILES=$(SAMPLEFILES:.py=-c.eps)
+. COLOR_PDFFILES=$(SAMPLEFILES:.py=-c.pdf)
+. COLOR_PNGFILES=$(SAMPLEFILES:.py=-c.png)
+. PNGFILES=$(SAMPLEFILES:.py=.png)
+{ 1
+. SVGFILES=$(SAMPLEFILES:.py=.svg)
+}
+. 
+. all: $(PSFILES) $(PDFFILES) $(COLOR_PSFILES) $(COLOR_PDFFILES) $(COLOR_PNGFILES)
+. 
+. ps: $(PSFILES)
+. pdf: $(PDFFILES)
+{ 1
+. svg: $(SVGFILES)
+}
+. colorps: $(COLOR_PSFILES)
+. colorpdf:    $(COLOR_PDFFILES)
+. png: $(PNGFILES)
+. colorpng: $(COLOR_PNGFILES)
+. 
+. regression: all
+. 	for psfile in *.eps; do echo $$psfile; ps2ps $$psfile /dev/null; done
+. 
+. clean:
+[ 2
+. 	rm -f *.eps *~ *.pyc *.ps foo.* *.bak *.gif *.png *.pdf
+] 2
+{ 2
+. 	rm -f *.eps *~ *.pyc *.ps foo.* *.bak *.gif *.png *.pdf *.svg
+}
+. 
+. PYTHON?=python
+. #PYTHON=jython
+. #PYTHON=python2 coverage.py -x
+. 
+. %.eps: %.py
+. 	PYTHONPATH=.. PYCHART_OPTIONS="output=$@" $(PYTHON) $*.py
+. %.pdf: %.py
+. 	PYTHONPATH=.. PYCHART_OPTIONS="output=$@" $(PYTHON) $*.py
+. %.svg: %.py
+. 	PYTHONPATH=.. PYCHART_OPTIONS="output=$@" $(PYTHON) $*.py
+. 
+. %-c.eps: %.py
+. 	PYTHONPATH=.. PYCHART_OPTIONS="output=$@ color=yes" $(PYTHON) $*.py
+. %-c.pdf: %.py
+. 	PYTHONPATH=.. PYCHART_OPTIONS="output=$@ color=yes" $(PYTHON) $*.py
+. %.png: %.py
+. 	PYTHONPATH=.. PYCHART_OPTIONS="scale=2 output=$@" $(PYTHON) $*.py
+. %-c.png: %.py
+. 	PYTHONPATH=.. PYCHART_OPTIONS="scale=2 output=$@ color=yes" $(PYTHON) $*.py
+}
+W

@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>glossary.txt</string>
+	<string>notation.txt</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>make.txt</string>
 			<key>lastUsed</key>
-			<date>2012-12-09T09:37:55Z</date>
+			<date>2013-06-03T15:25:12Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>main.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-16T18:19:01Z</date>
+			<date>2013-06-28T10:51:02Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>thanks.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-08T16:55:25Z</date>
+			<date>2013-06-25T20:33:18Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -34,19 +34,19 @@
 			<key>filename</key>
 			<string>chap00AvantPropos.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-16T17:11:27Z</date>
+			<date>2013-06-28T12:48:12Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>chap01Methode.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-16T17:11:31Z</date>
+			<date>2013-06-25T20:17:39Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>sysml.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-16T18:04:21Z</date>
+			<date>2013-06-28T12:55:25Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -58,7 +58,7 @@
 			<key>filename</key>
 			<string>sti2d.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-16T18:08:01Z</date>
+			<date>2013-06-25T20:39:08Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -76,7 +76,7 @@
 			<key>filename</key>
 			<string>IS.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-16T18:14:37Z</date>
+			<date>2013-06-25T19:26:03Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -88,13 +88,21 @@
 			<key>filename</key>
 			<string>notation.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-16T18:47:07Z</date>
+			<date>2013-06-28T12:55:25Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>cookbook.txt</string>
 			<key>lastUsed</key>
 			<date>2012-12-30T22:00:11Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>upsti.txt</string>
+			<key>lastUsed</key>
+			<date>2013-06-28T10:15:19Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -106,33 +114,31 @@
 			<key>filename</key>
 			<string>conventions.txt</string>
 			<key>lastUsed</key>
-			<date>2012-12-26T10:54:53Z</date>
+			<date>2013-06-28T12:44:01Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>faq.txt</string>
 			<key>lastUsed</key>
-			<date>2012-12-30T22:53:14Z</date>
+			<date>2013-06-28T11:35:57Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>about.txt</string>
 			<key>lastUsed</key>
-			<date>2012-12-25T17:35:53Z</date>
+			<date>2013-06-11T07:07:37Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>biblio.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-18T21:27:05Z</date>
+			<date>2013-06-28T11:08:17Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>glossary.txt</string>
 			<key>lastUsed</key>
-			<date>2013-02-18T21:27:05Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2013-06-28T11:32:42Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -156,7 +162,7 @@
 			<key>filename</key>
 			<string>../../../../dev/asciidoc/ACSI/defs/paq.txt</string>
 			<key>lastUsed</key>
-			<date>2012-12-29T17:43:17Z</date>
+			<date>2013-06-28T11:20:05Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -228,28 +234,12 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>144</integer>
+				<integer>162</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>139</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>130</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>144</integer>
-			</dict>
+			<integer>152</integer>
 		</dict>
 		<key>Methodes.txt</key>
 		<dict>
@@ -281,28 +271,72 @@
 				<integer>0</integer>
 			</dict>
 		</dict>
+		<key>biblio.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>chap00AvantPropos.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>82</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>35</integer>
+				<integer>132</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>74</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>86</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>132</integer>
+			</dict>
+		</dict>
+		<key>chap01Methode.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>28</integer>
+				<key>line</key>
+				<integer>31</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>92</integer>
+			<integer>7</integer>
 		</dict>
 		<key>conventions.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>17</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -313,16 +347,16 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>15</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>18</integer>
 			</dict>
 		</dict>
 		<key>cookbook.txt</key>
@@ -344,30 +378,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>20</integer>
 				<key>line</key>
-				<integer>47</integer>
+				<integer>48</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>23</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>43</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>47</integer>
-			</dict>
+			<integer>19</integer>
 		</dict>
 		<key>fiche.txt</key>
 		<dict>
@@ -418,44 +436,44 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>164</integer>
+				<integer>116</integer>
 				<key>line</key>
 				<integer>7</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>1</integer>
-		</dict>
-		<key>main.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>9</integer>
-				<key>line</key>
-				<integer>183</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>172</integer>
+			<integer>0</integer>
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>164</integer>
 				<key>line</key>
-				<integer>183</integer>
+				<integer>7</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>116</integer>
 				<key>line</key>
-				<integer>183</integer>
+				<integer>7</integer>
 			</dict>
+		</dict>
+		<key>main.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>348</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>333</integer>
 		</dict>
 		<key>make.txt</key>
 		<dict>
@@ -464,7 +482,7 @@
 				<key>column</key>
 				<integer>5</integer>
 				<key>line</key>
-				<integer>36</integer>
+				<integer>37</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -490,60 +508,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>38</integer>
 				<key>line</key>
-				<integer>557</integer>
+				<integer>1500</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>540</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>553</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>557</integer>
-			</dict>
+			<integer>0</integer>
 		</dict>
 		<key>sti2d.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>10</integer>
+				<integer>159</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>46</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>7</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>13</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>42</integer>
-			</dict>
+			<integer>18</integer>
 		</dict>
 		<key>sysml.txt</key>
 		<dict>
@@ -552,46 +538,115 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>47</integer>
+				<integer>0</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>52</integer>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>52</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
 		</dict>
 		<key>thanks.txt</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>82</integer>
+				<integer>112</integer>
 				<key>line</key>
-				<integer>8</integer>
+				<integer>12</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>40</integer>
+				<key>line</key>
+				<integer>12</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>112</integer>
+				<key>line</key>
+				<integer>12</integer>
+			</dict>
+		</dict>
+		<key>upsti.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>18</integer>
+				<key>line</key>
+				<integer>199</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>167</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>199</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>18</integer>
+				<key>line</key>
+				<integer>199</integer>
+			</dict>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>thanks.txt</string>
 		<string>main.txt</string>
+		<string>upsti.txt</string>
+		<string>faq.txt</string>
+		<string>conventions.txt</string>
 		<string>glossary.txt</string>
+		<string>make.txt</string>
 		<string>cookbook.txt</string>
 		<string>filRouge.txt</string>
 		<string>IS.txt</string>
 		<string>Methodes.txt</string>
 		<string>nf-reqs-fr.txt</string>
 		<string>chap00AvantPropos.txt</string>
-		<string>sti2d.txt</string>
+		<string>chap01Methode.txt</string>
+		<string>biblio.txt</string>
 		<string>notation.txt</string>
+		<string>../../../../dev/asciidoc/ACSI/defs/paq.txt</string>
 		<string>sysml.txt</string>
+		<string>sti2d.txt</string>
+		<string>thanks.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{245, 83}, {1006, 695}}</string>
+	<string>{{382, -71}, {1006, 695}}</string>
 </dict>
 </plist>

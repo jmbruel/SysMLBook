@@ -1,16 +1,34 @@
-[[glossary]]
-= Glossaire
+[glossary]
+== Glossaire
+
+*Acronymes SysML*
+
++{act}+:: Raccourcis pour Diagramme d'**ACT**ivité dans une cartouche {SysML}
++{bdd}+:: Raccourcis pour **B**lock **D**efinition **D**iagram dans une cartouche {SysML}
++{dss}+:: **D**iagramme de **S**équence **S**ystème (un +{seq}+ où seul le système dans sa globalité est représenté footnote:[Il ne s'agit pas d'un acronyme {SysML} à proprement parler mais nous l'utilisons beaucoup.])
++{ibd}+:: Raccourcis pour **I**nternal **B**lock **D**iagram dans une cartouche {SysML}
++{par}+:: Raccourcis pour **P**arametric Diagram dans une cartouche {SysML}
++{pkg}+:: Raccourcis pour **P**a**K**a**G**e Diagram dans une cartouche {SysML}
++{req}+:: Raccourcis pour **REQ**uirements Diagram dans une cartouche {SysML}
++{seq}+:: Raccourcis pour **SEQ**quence Diagram dans une cartouche {SysML}
++{stm}+:: Raccourcis pour **ST**ate **M**achine dans une cartouche {SysML}
++{uc}+:: Raccourcis pour **U**se **C**ase Diagram dans une cartouche {SysML}
+
+*Définitions générales*
+
 
 [NOTE]
 .Ressources
 =====================================================================
-Les définitions ci-dessous sont regroupées à titre indicatif. Les sources utilisées sont :
+Les définitions ci-dessous sont regroupées à titre indicatif. Je vous invite
+à consulter les sources suivantes :
 
 - Glossaire du http://www.sei.cmu.edu/architecture/start/glossary[Software Engineering Institute]
 - http://www.computer-dictionary-online.org/[IEEE Computer Dictionary Online]
-- http://fr.wikipedia.org/[Wikipedia] –- Version française￼￼
+- http://fr.wikipedia.org/[Wikipedia] – Version française
 =====================================================================
 
+[glossary]
 [[DRY]]DRY::
 	_**D**on't **R**epeat **Y**ourself_ : Un bon principe qui veut qu'on évite de répéter des tâches manuelles 
 	(comme les tests) en utilisant plutôt des scripts et des programmes.
@@ -25,5 +43,5 @@ OMG::
 	code tant que les tests ne passent pas.
 TRL::
 	_**T**echnology **R**eadiness **L**evel_ : système de mesure employé par des agences gouvernementales américaines et par de nombreuses compagnies (et agences) mondiales afin d'évaluer le niveau de maturité d'une technologie (cf. http://fr.wikipedia.org/wiki/Technology_Readiness_Level[Wikipedia]).
-SysML::
+SysML:: 
 	_**Sys**tem **M**odeling **L**anguage_ (TM) : le langage de modélisation de systèmes maintenu par l'{omg}.
