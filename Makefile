@@ -34,13 +34,28 @@ icamdoc:
 	 -a imagesdir=$(IMAGESDIR) \
 	 -o icamplain.html icam.txt
 
+icamdoctoc:
+	@echo '==> Compiling asciidoc files to generate SLIDES ICAM'
+	asciidoc -b html5 -a icons -a toc2\
+	 -a stylesheet=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/scribe.css \
+	 -a data-uri -a numbered \
+	 -a iconsdir=$(ICONSDIR) \
+	 -a imagesdir=$(IMAGESDIR) \
+	 -o icamplaintoc.html icam.txt
+
 icam:
 	@echo '==> Compiling asciidoc files to generate SLIDES'
 	asciidoc -b deckjs -a icons -a data-uri -a numbered \
+	 -a icamslides \
 	 -a iconsdir=$(ICONSDIR) \
 	 -a imagesdir=$(IMAGESDIR) \
 	 -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 \
 	 -o icam.html icam.txt
+
+publish:
+	cp icam.html /Users/bruel/dev/jmbhome/public/teaching/SysML/icam.html
+	cp icamplain.html /Users/bruel/dev/jmbhome/public/teaching/SysML/icamplain-notoc.html
+	cp icamplaintoc.html /Users/bruel/dev/jmbhome/public/teaching/SysML/icamplaintoc.html
 
 tp: ups-tp.txt
 	@echo '==> Compiling asciidoc files to generate HTML'

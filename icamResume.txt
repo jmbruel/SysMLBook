@@ -1,0 +1,45 @@
+== À emporter de cette présentation
+
+- Une notation à connaître
+- Un outil à maîtriser
+- Une démarche
+
+== Une notation à connaître
+
+- Participez aux forums
+- Posez des questions
+- Entrainez-vous
+
+== Un outil à maîtriser
+
+- Choisissez-en un et faites les tutoriels associés
+- Posez vos questions dans les forums
+
+== Une démarche
+
+.Un enchaînement possible des diagrammes
+[icon="images/icons/appbar.weather.overcast.png"]
+[NOTE]
+====
+image::upsti-demarche.png[]
+====
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+Une erreur s'est volontairement glissée dans le diagramme d'activité ci-dessus, voyez-vous lequel?
+====
+endif::backend-deckjs[]
+
+== Une démarche (suite)
+
+* Exigences
+* Comportement
+** Intéractions => Diag. de Séquences ({sd})
+** Automates et comportement séquentiel => Diag. d'états ({stm})
+** Flux => Diag d'activités ({act})
+* Structure
+** Boîte noire => Diag de blocs ({bdd})
+** Boîte blanche => Diag interne de blocs ({ibd})

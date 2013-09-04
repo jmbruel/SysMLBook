@@ -1,0 +1,51 @@
+== Recettes et bonnes pratiques
+
+La plupart des ouvrages sur un langage enseignent les éléments de ce langage, comme nous l'avons fait à la partie précédente.
+Nous allons ici partir du principe inverse : comment modéliser tel ou tel partie ou vue de mon système avec SysML. Un peu à la
+manière des ouvrages du type _Cookbook_, nous allons donner une liste non exhaustives de recettes. Les choix des éléments de modélisation sont arbitraires ou tirés de discussions (comme ce sera mentionné si c'est le cas).
+
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Architecture
+
+.Je souhaite modéliser mon système dans son environnement
+[caption="Recette : "]
+NOTE: C'est conseillé. Un block +System+ permet de raccrocher tous les éléments qui le composent à un même niveau.
+Dans l'exemple ci-dessous le système (le bloc +Pacemaker+) est lui-même un simple composant d'un élément de plus haut niveau : le contexte du système (le bloc +Context+) qui relie alors le système à son environnement.
+Voir aussi <<contexte>>.
+
+.Le contexte du Pacemaker (<<SeeBook2012>>)
+ifdef::book[image::pacemaker-context.png[scale=50]]
+ifndef::book[image::pacemaker-context.png[width="70%",alt="Le contexte du Pacemaker"]]
+
+=== Comportement
+
+.Je souhaite modéliser les différents modes (nominal, alternatifs)
+[caption="Recette : "]
+NOTE: Un diagramme d'état peu modéliser les différents modes et les événements qui produisent les changements de mode.
+
+=== Correspondances
+
+.Je souhaite utiliser SysML alors que j'utilisais déjà d'autres notation. Existe-t'il des correspondances?
+[caption="Recette : "]
+[NOTE]
+====
+Voici quelques correspondances intuitives glanées au fil des discussions avec les collègues du secondaire.
+====
+
+- Génie électrique
+* Diagramme sagittal + relations => Diagramme de contexte (un {bdd} particulier)
+* Performances => Diagramme des exigences ({req}) et paramétriques ({par})
+* Algorigrammes => Diagramme d'activités ({act})
+
+ifdef::backend-deckjs[=== Correspondances  (suite)]
+
+- Génie mécanique
+* Bête à corne => Diagramme de contexte
+* Diagramme de pieuvre => Diagramme de contexte
+* Performances => Diagramme des exigences ({req}) et paramétriques ({par})
+* Analyse fonctionnelle externe => Diagramme des cas d'utilisation ({uc})
+* Analyse fonctionnelle interne => Diagramme de définition de blocs ({bdd}) et d'états ({stm})
+* Composants => Diagramme interne de bloc ({ibd})

@@ -1,11 +1,10 @@
-<<<<
 //-================================================================================
 [[Conventions]]
 == Conventions et recommandations
 //-================================================================================
 
 Il existe un certain nombre de conventions complémentaires aux règles formelles de syntaxe que
-l'on trouve dans la spécification elle-même.
+l'on trouve dans la spécification elle-même (rappelées à la fin de cette section).
 Nous ne les donnons ici qu'à titre indicatif. Il est important pour une organisation qui souhaite utiliser {sysml} comme notation pour ses modèles de se mettre d'accord sur ce type de convention. En voici quelques-unes dans lequel vous pourrez piocher pour définir *vos propres conventions*.
 
 [NOTE]
@@ -27,32 +26,50 @@ ne sont pas de bons cas.
 
 === Cas d'utilisation et acteurs
 
-. Placer les acteurs principaux à gauche (e.g., <<UC1>>)
-. Placer les acteurs secondaires à droite (e.g., <<UC1>>)
-. Différencier les acteurs humains (_stickman_) des autres (stéréotype `<<actor>>`) e.g., <<UC1>>
+. Placer les acteurs principaux à gauche (e.g., <<UC1>>).
+. Placer les acteurs secondaires à droite (e.g., <<UC1>>).
+. Différencier les acteurs humains (_stickman_) des autres (stéréotype `<<actor>>`) e.g., <<UC1>>.
 . Différencier les cas d'utilisation selon :
-- leur importance (e.g., `<<Principal>>`, `<<Secondaire>>`)
-- leur type (e.g., `<<TopLevel>>`, `<<Operational>>`)
+- leur importance (e.g., `<<Principal>>`, `<<Secondaire>>`);
+- leur type (e.g., `<<TopLevel>>`, `<<Operational>>`).
 
 === Nommage des divers éléments
 
-. Les noms de blocs commencent par une majuscule (origine : {UML}).
-. Les noms de cas d'utilisation (qui représentent une façon d'utiliser le système du point de vue de l'acteur) doivent être un verbe à l'infinitif (origine : {UML}).
-. Les noms d'activité (qui représentent une action) doivent être un verbe à l'infinitif (origine : {UML})
-. Les noms d'attributs commencent par une minuscule et ne sont pas au pluriel  (origine : {UML})
+. Les noms de blocs commencent par une majuscule (source : {UML}).
+. Les noms de cas d'utilisation (qui représentent une façon d'utiliser le système du point de vue de l'acteur) doivent être un verbe à l'infinitif (source : {UML}).
+. Les noms d'activité (qui représentent une action) doivent être un verbe à l'infinitif (source : {UML}).
+. Les noms d'attributs commencent par une minuscule et ne sont pas au pluriel  (source : {UML}).
+. Nommer les "associationEnd" du point de vue du propriétaire et en minuscule (source : <<ENS2013>>).
 
 === Les _requirements_
 
-. Différencier les exigences descriptives et prescriptives. On pourra par exemple utiliser les stéréotypes `<<UserRequirements>>` et `<<SystemRequirements>>`
+. Différencier les exigences descriptives et prescriptives. On pourra par exemple utiliser les stéréotypes `<<UserRequirement>>` et `<<SystemRequirement>>`. On pourra aussi définir deux _packages_ différents : +DescriptiveRequirements+ et
++PrescriptiveRequirements+ (source : <<SysML4STI2D>>)
 
 === Les dépendances
-. En général un cas d'utilisation qui n'est inclus (`<<include>>`) que dans un seul autre cas est fusionné dans ce dernier
-. Lorsqu'un cas d'utilisation possède plusieurs cas `<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement.
+. En général un cas d'utilisation qui n'est inclus (`<<include>>`) que dans un seul autre cas est fusionné dans ce dernier.
+. Lorsqu'un cas d'utilisation possède plusieurs cas `<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (source : <<SysML4STI2D>>).
+
+=== Blocs et associations
+
+. Utiliser la référence (faible agrégation) avec parcimonie car c'est un concept complexe à appréhender, surtout si pour des non informaticiens  (source : <<ENS2013>>).
 
 === Divers
 
-. Toujours indiquer les conditions des +loop+, +alt+, etc. dans un diagramme de séquence
+. Toujours mentionner les multiplicités pour éviter toute ambiguïté, et de manière plus générale, éviter au maximum de se contenter des conventions par défaut (comme les <<confof,officielles>>), sources d'incompréhensions potentielles.
+. Toujours indiquer les conditions des +loop+, +alt+, etc. dans un diagramme de séquence.
 . Vérifier la complétude et la non intersection des conditions des transitions sortant d'un même état.
+. Ne pas hésiter à ajouter des légendes (sous forme de notes par exemple) à vos diagrammes un peu complexe.
+
+[[confof]]
+=== Conventions "officielles" (dans la spécification {norme})
+
+. Les classes représentées dans un {bdd} sont par défaut des `<<block>>` 
+ (source : {norme}, p. 38).
+. En l'absence de multiplicité sur les connecteurs, la multiplicité par défaut est "1" de chaque côté
+ (source : {norme}, p. 42).
+. En l'absence de multiplicité sur les associations unidirectionnelles (fléchées), la multiplicité par défaut est "1"
+ (source : {norme}, p. 62).
 
 ifdef::backend-deckjs[]
 :leveloffset: 0

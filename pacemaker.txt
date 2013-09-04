@@ -1,0 +1,81 @@
+== Etude de cas du pacemaker
+
+L'étude de cas suivante est tirée du livre <<SeeBook2012>>. 
+ 
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Exigences à satisfaire
+
+image::pacemaker/Requirements.png[width="70%"]
+
+ifdef::backend-deckjs[=== Exigences à satisfaire (suite)]
+
+image::pacemaker/Exigence_de_composition.png[width="70%"]
+
+ifdef::backend-deckjs[=== Exigences à satisfaire (suite)]
+
+image::pacemaker/Divers.png[width="70%"]
+
+=== Contexte global
+
+image::pacemaker/Context_Overview.png[width="70%"]
+
+=== Différentes utilisations du système
+
+image::pacemaker/NeedsUseCases.png[width="70%"]
+
+=== Structure et architecture
+
+image::pacemaker/logical_architecture_overview.png[width="70%"]
+
+ifdef::backend-deckjs[=== Structure et architecture (suite)]
+
+image::pacemaker/Pulse_Generator_Internal_Architecture.png[width="70%"]
+
+=== Données manipulées
+
+image::pacemaker/PPM_Frequency_mesure.png[width="70%"]
+
+ifdef::backend-deckjs[=== Données manipulées (suite)]
+
+image::pacemaker/Time_domain.png[width="70%"]
+
+=== Comportement
+
+image::pacemaker/Lifecycle.png[width="70%"]
+
+ifdef::backend-deckjs[=== Comportement (suite)]
+
+image::pacemaker/ConOps.png[width="70%"]
+
+ifdef::backend-deckjs[=== Comportement (suite)]
+
+image::pacemaker/PermanentToPaceNowTestCase.png[width="70%"]
+
+ifdef::backend-deckjs[=== Comportement (suite)]
+
+image::pacemaker/Pulse_Generator_SM.png[width="70%"]
+
+=== Liens entre éléments de modèles
+
+image::pacemaker/Global_view_PM.png[width="70%"]
+
+ifdef::backend-deckjs[=== Liens entre éléments de modèles (suite)]
+
+image::pacemaker/Global_view.png[width="70%"]
+
+ifdef::backend-deckjs[=== Liens entre éléments de modèles (suite)]
+
+image::pacemaker/functionnal2logical.png[width="70%"]
+
+ifdef::backend-deckjs[=== Liens entre éléments de modèles (suite)]
+
+image::pacemaker/Requirements_Verification.png[width="70%"]
+
+
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]

@@ -1,5 +1,8 @@
 [[liens]]
-== Liens utiles
+//================================================================
+// Références utiles
+//================================================================
+== Liens et références utiles
 
 - Sites officiels
 	* Le site de l'association http://www.sysml-france.org[SysML-France]
@@ -11,6 +14,13 @@
 	Systems Engineering)
 	* Le site de l'http://www.afis.fr/[AFIS] (Association Française
 	d'Ingénierie Système)
+- Spécial STI2D et UPSTI
+ 	* http://cache.media.education.gouv.fr/file/special_3_ESR/45/2/programme-PTSI_252452.pdf[Programme du BO]
+ 	* http://www.scoop.it/t/formation-sysml-sti2d[Le forum STI2D]
+ 	* http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d?ref=http://www.scoop.it/t/formation-sysml-sti2d[Slides STI2D]
+
+ifdef::backend-deckjs[== Liens et références utiles (suite)]
+
 - Blogs
 	* Le site de http://model-based-systems-engineering.com/[Tim Weilkiens]
 	* La démarche http://caminao.wordpress.com/[Caminao]
@@ -20,6 +30,9 @@
     * http://www.eclipse.org/modeling/mdt/papyrus/[Papyrus]
     * http://www.artisansw.com/[Artisan]
 	* http://www-01.ibm.com/software/rational/products/rhapsody[Rhapsody]
+
+ifdef::backend-deckjs[== Liens et références utiles (suite)]
+
 - Outils de production
 	* Les conseils généraux de Scott Ambler sur http://www.ambysoft.com/books/bookWriting.html[Ecrire un livre technique]
 	* Les conseils techniques de Matthew Mc Cullough sur https://gist.github.com/1609255[Ecrire un livre technique]
@@ -28,4 +41,3 @@
 	* https://github.com/schacon/git-scribe[git-scribe] pour la génération des documents à partir d'{asciidoc}.
 - Divers
 	* Pour en savoir plus sur l'http://jmb.c.la[auteur]
-	    

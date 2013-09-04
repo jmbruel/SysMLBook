@@ -1,4 +1,3 @@
-<<<<
 //-================================================================================
 [[faq]]
 == FAQ
@@ -42,6 +41,25 @@ et ajout d'un modèle (non normatif) pour définir les systèmes d'unités et de
 [NOTE]
 ====
 SysML v1.3 _Revision Task Force_ dirigée par Roger Burkhart et Rick Steiner améliore de manière régulière la spécification en fonction des retours des utilisateurs.
+====
+
+=== Qu'est-ce que la certification SysML et comment la passer?
+
+Les informations sur la certification sont sur le
+http://www.omg.org/ocsmp/exam-info.htm[site dédié] de l'{omg}.
+
+La certification (qui coûte environ 300€ par niveau) permet de garantir
+que celui qui la possède maîtrise la notation. 
+Il faut actuellement s'inscrire via le site de http://www.pearsonvue.com/omg/[Pearson Vue].
+
+[TIP]
+====
+Il faut vraiment maîtriser les concepts eux-même (le métamodèle), et pas seulement avoir une bonne pratique.
+De plus, il faut également bien maîtriser l'anglais car les questions/réponses sont en anglais et leur 
+formulation peut comporter des pièges.
+
+Pour vous tester sur le méta-modèle, vous pouvez vous tester sur le quizz 
+réalisé par {loic} : http://www.realtimeatwork.com/2010/06/test-quizz/
 ====
 
 //-================================================================================
@@ -195,10 +213,10 @@ Pour alimenter le débat, je renvois aux exemples donnés par {loic} lors de la 
 Voici un diagramme classique {fast} :
 
 .Diagramme FAST
-image::/Users/bruel/dev/asciidoc/sif2013/images/fast.png[]
+image::fast.png[]
 
 .Représentation possible en SysML
-image::/Users/bruel/dev/asciidoc/sif2013/images/sysml-fast.png[]
+image::sysml-fast.png[]
 
 On pourrait croire que ces schémas sont identiques mais pas du
 tout. {SysML} présente juste l'organisation du modèle et non l'arbre

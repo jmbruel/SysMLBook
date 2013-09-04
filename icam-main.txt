@@ -4,23 +4,14 @@
 == Plan
 
 - Généralités
-* Qui suis-je?
-* Objectifs et attentes
-* Principes de base
 - Retour sur le programme STI
 - Survol global de SysML
 - Etude de cas pas à pas
 - Retour sur les diagrammes
+- Enseigner SysML
 - Annexes
-* Le temps réel
-* Conventions
-* FAQ
-* Références utiles
-* Bibliographie
 
 image:LogoSysML-France.png[link="http://www.sysml-france.org/"]
-
-<<<<
 
 //================================================================
 // Généralités
@@ -51,11 +42,24 @@ ifdef::backend-deckjs[image:logo-irit.png[width="50%"]]
 
 - Formation à SysML pour novices
 - Réponses aux questions pour les moins novices
+- Conseils et démarche
 - Aide pour les 1er TP de la rentrés 2013
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+- Je me considère plus comme un collègue que comme un formateur.
+- Je ne maîtrise pas tout {sysml}.
+- Je suis novice en {MagicDraw}!
+- Je ne suis pas là pour vous dire ce que vous devez faire! 
+====
+endif::backend-deckjs[]
 
 === Principes
 
-- Support à garder confidentiel pour l'instant, merci (livre en préparation)
+- Support à garder *confidentiel pour l'instant*, merci (livre en préparation)
 - Contact toujours possible : bruel@irit.fr
 - http://jmbhome.heroku.com/teaching/SysML/icam.html
 
@@ -84,13 +88,11 @@ Ces notes concernent des définitions tirées de la spécification {sysml} et so
 ====
 
 ifdef::backend-deckjs[=== Conventions (suite)]
-<<<<
 
-.Convention : Titre du conseil spécifique
 [icon="./images/upsti-logo.png"]
 [NOTE]
 ====
-Conseil spécifique aux formateurs.
+Conseil spécifique aux formateurs STI.
 ====
 
 [icon="images/icons/appbar.weather.thunder.png"]
@@ -120,7 +122,7 @@ include::progSTI.txt[]
 <<<<
 
 //================================================================
-// Survol de SysML
+// Survol de SysML (couche 1)
 //================================================================
 
 == C'est quoi SysML?
@@ -152,7 +154,7 @@ Un ensemble de 9 types de diagrammes::
 
 ifdef::backend-deckjs[]
 
-=== SysML, c'est (suite):
+=== SysML, c'est (suite)...
 
 Un ensemble de 9 types de diagrammes (suite)::
 
@@ -169,10 +171,10 @@ Une notation::
 
 === SysML, ce n'est pas...
 
-Une méthode::
+*Une méthode*::
  	En effet, contrairement à ce que beaucoup pensent en l'abordant, {sysml} ne propose pas de démarche particulière de développement de système. C'est à la fois sa force (votre méthode existante pourra continuer à être utilisée) comme sa faiblesse car cette absence de guide méthodologique fait souvent défaut à son utilisation.
 ifdef::backend-deckjs[=== SysML, ce n'est pas...]
-Un outil::
+*Un outil*::
 	Nous verrons en effet que {sysml} ne fait que ce qu'on veut bien en faire. Comme tout langage il est limité dans son pouvoir d'expression, mais surtout il reste une simple notation qu'il convient d'utiliser avec des outils et des démarches associées.
 ifndef::backend-deckjs[]
 Un raton laveur::
@@ -189,7 +191,7 @@ On ne dit pas "le SysML" mais tout simplement "SysML".
 - Langage
 * => Notation + Syntaxe + Sémantique
 - Outils
-* Topcased, Papyrus, Rhapsody, EA, Modelio, 
+* {Topcased}, {Papyrus}, {Rhapsody}, {EA}, {Modelio}, {magicDraw}
 
 === Méthodes
 
@@ -205,14 +207,27 @@ On ne dit pas "le SysML" mais tout simplement "SysML".
 
 === Sous-ensemble SysML?
 
+Le choix de STI2D :
+
 - Diagrammes
-* Exigences
-* Cas d'Utilisation
-* Séquence
-* Etat
-* Bloc
-* Interne
-* Activité
+
+* {req}
+* {uc}
+* {seq}
+* {stm}
+* {bdd}
+* {ibd}
+* {act}
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+Quels diagrammes manque-t-il ?
+====
+
+endif::backend-deckjs[]
 
 === Lien avec l'existant
 
@@ -251,30 +266,51 @@ image::sysml-bac.png["Bête à Corne SysML",width="70%"]
 
 === Etudes de cas
 
-Quelques études de cas envisagées :
+Quelques études de cas existantes :
+
+- https://www.cerpet.adc.education.fr/ressources/1055/SysML%20pour%20STI2D.pdf[VLib] (STI2D)
+- Store SOMFY
+- Cordeuse
+
+Quelques études de cas possibles :
 
 - Capteur SNCF
 - Vélo électrique
-- https://www.cerpet.adc.education.fr/ressources/1055/SysML%20pour%20STI2D.pdf[VLib] (STI2D)
 - Maison BBC
 - Drone Parot
 
-=== Exemples d'applications
+=== Exemples d'exercices pratiques
 
 - Compléter des diagrammes existants
+- Le jeux des 7 erreurs
+- Créer un diagramme de contexte et un {bdd} du système avec du copier/coller de photo de la doc
+- Donner un diagramme de séquence comme énoncé d'un TP à réaliser
+- Donner plusieurs diagrammes partiels et leur demander de réaliser le complet (surtout si la manipulation
+est supportée par un outil, ils vont bien voir l'intérêt si on leur fournit les diagrammes partiels sous la
+forme de modèles à importer!)
+
 
 ifdef::backend-deckjs[]
 :leveloffset: 0
 endif::backend-deckjs[]
 
 //================================================================
-// Retour sur les diagrammes
+// Exemple complet
 //================================================================
 
-ifndef::backend-deckjs[]
+<<<<
+
+include::pacemaker.txt[]
+
+//================================================================
+// SysML couche 2
+//================================================================
+
+<<<<
 
 == La notation SysML
 
+ifndef::backend-deckjs[]
 :leveloffset: +1
 endif::backend-deckjs[]
 
@@ -284,26 +320,40 @@ ifdef::backend-deckjs[]
 :leveloffset: 0
 endif::backend-deckjs[]
 
-//include::cookbook.txt[]
+//================================================================
+// Enseigner SysML
+//================================================================
 
 include::upsti.txt[]
 
+include::upsticookbook.txt[]
+
+<<<<
+
 //================================================================
-// Annexes
+[[appendix]]
 //================================================================
 
 ifndef::backend-deckjs[]
 
-[[appendix]]
 = Annexes
 
 endif::backend-deckjs[]
+
+ifdef::backend-deckjs[]
+
+== Annexes
+
+* Le temps réel
+* Conventions
+* FAQ
+* Références utiles
+* Bibliographie
+
+endif::backend-deckjs[]
 	
-include::apx01Links.txt[]
-
-<<<<
-
 == Le temps et sa prise en compte dans les modèles
+//================================================================
 
 Il existe plusieurs façon de représenter les informations temporelles.
 
@@ -324,17 +374,13 @@ include::conventions.txt[]
 
 include::faq.txt[]
 
-//================================================================
-// Références utiles
-//================================================================
+//include::glossaire.txt[]
 
-== Références utiles
+ifdef::icamslides[]
+include::icamResume.txt[]
+endif::icamslides[]
 
-- http://cache.media.education.gouv.fr/file/special_3_ESR/45/2/programme-PTSI_252452.pdf[Programme du BO]
-- http://www.scoop.it/t/formation-sysml-sti2d[Le forum STI2D]
-- http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d?ref=http://www.scoop.it/t/formation-sysml-sti2d[Slides STI2D]
-- http://www.sysml-france.org/[SysML-France]
-- Contact : bruel@irit.fr
+include::apx01Links.txt[]
 
 include::biblio.txt[]
 

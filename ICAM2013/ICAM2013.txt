@@ -1,0 +1,33 @@
+:description:
+:keywords:
+:Author: Jean-Michel Bruel 
+:Author Initials: JMB
+:Email: bruel@irit.fr
+:Revision: 1.0
+:Date: {localdate}
+:images: images
+
+= Formation SysML ICAM
+
+== Besoins
+
+Durée :: 3 jours (6h/jour)
+
+Objectif:: Coller au programme officiel
+
+Contenu :: Cours et TP
+
+Dates approximatives :: fin juin?
+
+Lieu et équipements :: ICAM Toulouse
+
+Logiciel envisagé :: Magic Draw
+
+== Contact
+
+Muriel Signol (06-63-32-13-45)
+
+== Etude de cas souhaitée
+
+Le vélo électrique.
+

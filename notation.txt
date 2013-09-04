@@ -1,5 +1,3 @@
-<<<<
-
 //---------------------------------------------------------------------------------
 [[Notation]]
 == Pourquoi une nouvelle notation
@@ -42,9 +40,13 @@ Mais...
 * Vocabulaire beaucoup trop « software » pour être utilisé par les ingénieurs systèmes (concept de +classe+ ou d'+héritage+ par exemple)
 * Trop de diagrammes (13 sortes)
 
+ifndef::backend-deckjs[]
+
 //---------------------------------------------------------------------------------
 == Introduction à SysML
 //---------------------------------------------------------------------------------
+
+endif::backend-deckjs[]
 
 ifdef::backend-deckjs[]
 :leveloffset: -1
@@ -93,7 +95,7 @@ endif::book[]
 ifdef::book[image::Figure4-1.png[scale=40]]
 ifndef::book[image::Figure4-1.png[width="90%"]]
 
-ifdef::backend-deckjs[=== Organisation (suite)]
+ifdef::backend-deckjs[=== Organisation (raccourcis)]
 
 ifdef::book[]
 Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons souvent leur version abrégée
@@ -105,12 +107,16 @@ endif::book[]
 ifdef::book[image::Figure4-1-bis.png[scale=50]]
 ifndef::book[image::Figure4-1-bis.png[width="90%"]]
 
+ifndef::backend-deckjs[]
+
 .Définition : Types de diagrammes (OMG SysML v1.3, p. 170)
 [icon="./images/icons/sysml.jpeg"]
 [NOTE]
 ====
 _SysML diagram kinds should have the following names or (abbreviations) as part of the heading..._
 ====
+
+endif::backend-deckjs[]
 
 === Différence entre modèle et dessin
 
@@ -146,14 +152,17 @@ Il existe un certain nombre d'outils permettant de réaliser des modèles SysML.
 
 include::outils.txt[]
 
+ifndef::backend-deckjs[]
+
 Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
 
 Ce que je voudrai souligner ici c'est l'importance du modèle comme "dépôt" (je préfère le terme anglais de _repository_) d'éléments de base en relation les uns avec les autres. C'est toute la différence entre le dessin et le modèle.
 
-[CAUTION]
+[WARNING]
 ====
 Attention toutefois à ne pas confondre ce que vous permet (ou pas) de faire l'outil et la notation elle-même. Les fabricants ont parfois pris des libertés ou bien n'ont pas complètement implémenté toutes les subtilités de la notation.
 ====
+endif::backend-deckjs[]
 
 ifdef::book[]
 Dans le cadre de notre exemple fil rouge, nous utilisons l'outil {topcased}.
@@ -211,7 +220,7 @@ ifndef::book[]
 endif::book[]
 
 ifdef::backend-deckjs[]
-:leveloffset: 0
+:leveloffset: -1
 endif::backend-deckjs[]
 
 === Fondements
@@ -376,8 +385,21 @@ ifndef::book[[cols="h,4*",options="header",width="50%"]]
 
 === {revisions}
 
+ifndef::backend-deckjs[]
+
 . Quels sont les 5 types de dépendances entre _packageable elements_ ?
 . À quoi cela peut-il servir de définir les dépendances (donnez des exemples concrets) ?
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+. Quels sont les 5 types de dépendances entre _packageable elements_ ?
+. À quoi cela peut-il servir de définir les dépendances (donnez des exemples concrets) ?
+====
+endif::backend-deckjs[]
 
 ifdef::backend-deckjs[]
 :leveloffset: 0
@@ -413,7 +435,9 @@ On abordera :
 - Les _Requirements Diagrams_ 
 - Les considérations sur la traçabilité
 - Annotations des _Requirements_
-- Les _Use Case Diagrams_ (scénarios) 
+- Les _Use Case Diagrams_ 
+
+ifndef::backend-deckjs[]
 
 [TIP]
 ====
@@ -421,6 +445,8 @@ L'ingénierie des exigences est une discipline à part entière et nous n'abordo
 que les aspects en lien avec la modélisation système. Voir le livre de référence pour
 plus de détails (<<Sommerville1997>>) ou le guide de l'{afis} (<<REQ2012>>).
 ====
+
+endif::backend-deckjs[]
 
 === L'organisation des _Requirements_ 
 
@@ -454,9 +480,13 @@ image::plantuml/corde.png[]
 
 ==== Différents types d'organisation
 
+ifndef::backend-deckjs[]
+
 L'ingénierie des exigences aboutit généralement à une liste organisée d'exigences, que ce soit en terme
 de fonctionnelles/non fonctionnelles, de prioritaires/secondaires, etc.
 Le principal support de {sysml} à cette organisation, outre la possibilité de les annoter (cf. section <<reqStereotypes,Stéréotyper les exigences>>), consiste à utiliser les  _packages_.
+
+endif::backend-deckjs[]
 
 Plusieurs types d'organisations sont possibles :
 
@@ -475,6 +505,8 @@ Plusieurs types d'organisations sont possibles :
 
 ==== Tableaux de _Requirements_
 
+ifndef::backend-deckjs[]
+
 Les _requirements_ sont habituellement stockés dans des tableaux (feuilles excel le plus souvent!).
 Il est donc recommandé par le norme et possible dans de nombreux outils de représenter les exigences
 sous forme tabulaire.
@@ -485,6 +517,8 @@ sous forme tabulaire.
 ====
 _The tabular format is used to represent the requirements, their properties and relationships..._
 ====
+
+endif::backend-deckjs[]
 
 .Exemples tableau d'exigences (OMG SysML v1.3, p. 145)
 ifdef::book[image::req-table.png[scale=50]]
@@ -530,6 +564,10 @@ _Derivation_::
 ====
 Lorsqu'une exigence possède plusieurs cas `<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. <<conventions>>).
 ====
+
+ifdef::backend-deckjs[]
+=== Les _Requirements links_ (suite)
+endif::backend-deckjs[]
 
 .Exemples de relations entre exigences
 ifdef::book[image::req-exp1.png[scale=45]]
@@ -586,7 +624,7 @@ En général chaque _requirement_ devrait être relié à au moins un _use case_
 ====
 
 
-=== Les _Use Case Diagrams_ (scénarios) 
+=== Les _Use Case Diagrams_ 
 
 Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comportement>>, nous les abordons
 	ici du fait de leur proximité avec les _requirements_.
@@ -595,7 +633,7 @@ Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comporte
 ifdef::book[image::req-uc-relation.png[scale=50]]
 ifndef::book[image::req-uc-relation.png[width="40%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Les _Use Case Diagrams_ (suite)]
 
 Ce diagramme est exactement identique à celui d'{uml}.
 
@@ -603,7 +641,7 @@ Ce diagramme est exactement identique à celui d'{uml}.
 ifdef::book[image::UCGestionNotes.png[scale=50]]
 ifndef::book[image::UCGestionNotes.png[width="70%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Les _Use Case Diagrams_ (suite)]
 
 ifndef::book[]
 
@@ -635,7 +673,7 @@ ifndef::book[[cols="h,2,1,1,1",options="header",width="90%"]]
 | {implementation}	|	+\<<satisfy>>+, +\<<verify>>+	|        		|				|
 |======================
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Les _Use Case Diagrams_ (suite)]
 
 En terme de démarche, il est classique d'avoir de nombreux aller-retour entre la modélisation
 des exigences et la modélisation du système lui-même (cf. <<sysmod>>).
@@ -645,12 +683,25 @@ des exigences et la modélisation du système lui-même (cf. <<sysmod>>).
 ifdef::book[image::zigzag.png[scale=30]]
 ifndef::book[image::zigzag.png[width="70%",link="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"]]
 
-
 === {revisions}
+
+ifndef::backend-deckjs[]
 
 . Quelles sont les différences entre *besoins* et *exigences* ?
 . En quoi les cas d'utilisation sont-ils complémentaires des exigences?
 . Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+. Quelles sont les différences entre *besoins* et *exigences* ?
+. En quoi les cas d'utilisation sont-ils complémentaires des exigences?
+. Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
+====
+endif::backend-deckjs[]
 
 ifdef::backend-deckjs[]
 :leveloffset: 0
@@ -713,7 +764,7 @@ Un +{bdd}+ peut représenter :
 - un bloc
 - un bloc de contrainte (_constraint block_)
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Principes de base (suite)]
 
 Un diagramme de bloc décrit les relations entre les blocs (compositions, généralisations, ...).
 Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
@@ -723,7 +774,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
 ifdef::book[image::pacemaker-context.png[scale=50]]
 ifndef::book[image::pacemaker-context.png[width="80%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Principes de base (suite)]
 
 Un bloc est constitué d'un certain nombre de compartiments (_Compartments_) :
 
@@ -740,7 +791,7 @@ _Requirements_::
 _User defined_::
 	On peut définir ses propres compartiments.
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Principes de base (suite)]
 
 [[contraintes]]
 .Exemple de définition de contraintes
@@ -781,7 +832,11 @@ Il existe deux types de relations entre blocs :
 - l’association (y compris l’agrégation et la composition)
 - la généralisation/spécialisation
 
+ifndef::backend-deckjs[]
+
 Ces deux types de relations, bien connues en {uml}, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d'aborder les associations, il est important de différencier la description d'éléments structurels sous la forme d'un bloc (au travers d'un +{bdd}+ par exemple) et ces éléments pris individuellement. Ces derniers sont des *instances* individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d'un bloc consiste à représenter l'ensemble des éléments qui caractérisent tout une série d'objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c'est donc leur "signature" que l'on représente. C'est pour cela qu'un bloc n'est pas un élément physique, mais simplement sa représentation, tandis qu'une instance de ce bloc représentera elle cet élément physique. C'est le cas notamment des participants d'un diagramme de séquence ou encore des parties d'un composé, qui sont des instances et non des blocs.
+
+endif::backend-deckjs[]
 
 ====  Association
 
@@ -794,6 +849,8 @@ Dimension d’une association::
 Nombre de blocs mis en jeu par l’association +
 (binaire : 2, ternaire : 3, n-aire : n) +
 
+ifndef::backend-deckjs[]
+
 [NOTE]
 .Exemple d’association binaire
 ====
@@ -803,8 +860,9 @@ On veut indiquer quels sont les produits susceptibles d’être fournis par chaq
 ifdef::book[image:{acsi}/prod-fourn.png[scale=50]]
 ifndef::book[image:{acsi}/prod-fourn.png[width="40%"]]
 ====
+endif::backend-deckjs[]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Association (suite)]
 
 Nom d’une association::
 Afin de clarifier les informations, il est important de nommer les associations. +
@@ -814,7 +872,7 @@ Il existe trois façons de nommer une association :
 - un verbe conjugué avec un sens de lecture : +Fournit >+  ou  +< Est fourni par+
 - un rôle (placé à une extrémité de l’association)
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Association (suite)]
 
 Cardinalité::
 Indique à combien d’instances minimum et maximum du bloc d’en face est lié toute instance du bloc de départ. Elle est représentée par un couple +(M..N)+. 
@@ -823,6 +881,11 @@ Indique à combien d’instances minimum et maximum du bloc d’en face est lié
 ====
 Attention, dans une cardinalité +M..N+, +M+ doit toujours être inférieur ou égal à +N+.  Exemple : +3..10+.
 ====
+
+.Exemple d'associtaion
+ifdef::book[image::cardinalite.png[scale=50]]
+ifndef::book[image::cardinalite.png[width="50%"]]
+//[Clients]1..2--1..*[Comptes]
 
 ====  Vers le code : que signifie vraiment une association?
 
@@ -848,6 +911,8 @@ private List<Fournisseurs> fournisseurs;
 ...
 -----------------------------
 
+ifdef::backend-deckjs[==== Composition]
+
 En terme d'ingénierie système, on utilisera plutôt des associations spécifiques (l'agrégation et la composition).
 
 .Deux façon de représenter une propriété de type +B+
@@ -865,14 +930,20 @@ Un moyen simple en terme logiciel de déterminer si une association +A->B+ est u
 - c'est une association dirigée simple si aucun des deux cas précédent ne s'applique.
 ====
 
-====  Généralisation/spécialisation
+.Exemple de composition
+ifdef::book[image::compo.png[scale=50]]
+ifndef::book[image::compo.png[width="50%"]]
+//[<<block>>\nVoiture]++-1>[<<block>>\nMoteur]
+	
+====  Généralisation/Spécialisation
 
 Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de *généralisation*. À l'inverse, quand on constate qu'un bloc possède réellement plusieurs déclinaisons différentes et que l'on créé alors des blocs spécifiques, on parle alors de *spécialisation*.
 
 .Exemple de lien de généralisation/spécialisation
 ifdef::book[image::genspec.png[scale=50]]
 ifndef::book[image::genspec.png[width="50%"]]
-
+//[<<block>>\nMoteur]^-[<<block>>\nMoteurExplosion], [<<block>>\nMoteur]^-[<<block>>\nMoteurElectrique]
+	
 On retrouve cette association entre blocs, mais aussi entre acteurs, cas d'utilisation, etc.
 
 ifdef::backend-deckjs[]
@@ -906,7 +977,7 @@ est détruit (dépendance de vie).
 Il ne s'agit pas de redessiner le BDD. Les _parts_ sont des instances et non des classes (au sens objet). 
 ====
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Parts (suite)]
 
 On représente les _parts_ comme des bloc en traits pleins
 et les _references_ comme des blocs en trait pointillés.
@@ -921,7 +992,17 @@ ifdef::backend-slidy2[<<<]
 ifdef::book[image::parts2.png[scale=50]]
 ifndef::book[image::parts2.png[width="60%"]]
 
-==== Ports
+==== Ports (SysML 1.2)
+
+[CAUTION]
+====
+La dernière version de la spécification {norme} préconise l'abandon des ports tels que définis
+dans la version 1.2. Nous présentons les nouvelles notions dans la <<port13,section qui suit>>.
+
+Néanmoins, de par l'importance des exemples qui utilisent les notions habituelles de ports,
+et vu que tous les outils ne supportent pas encore les nouveaux ports, nous indiquons ici
+leur définition et recommandons pour l'instant de les utiliser.
+====
 
 Les ports :
 
@@ -936,6 +1017,8 @@ Les ports définissent les points d’interaction offerts (`«provided»`) et re
 Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaque hiérarchie.
 ====
 
+ifdef::backend-deckjs[==== Ports (suite)]
+
 .Exemples de flots 
 ifdef::book[image::ports-flots.png[scale=40]]
 ifndef::book[image::ports-flots.png[width="60%"]]
@@ -947,16 +1030,18 @@ ifndef::book[image::ports-flots.png[width="60%"]]
 _Ports are points at which external entities can connect to and interact with a block in different or more limited ways than connecting directly to the block itself._
 ====
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Ports (suite)]
 
 .Exemples de flots multi-physique entre ports
 ifdef::book[image::flots.png[scale=50]]
 ifndef::book[image::flots.png[width="90%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Ports (suite)]
 
-Les ports peuvent être de nature classique (comme en {UML}) et représenter la fourniture ou le besoin de services.
-Ils peuvent aussi être de nature "flux physique".
+Les ports peuvent être de nature classique (comme en {UML}) et représenter la fourniture ou le besoin de services. On parle alors 
+de _*standard flows*_.
+
+Ils peuvent aussi être de nature "flux physique", on parle de _*flow ports*_.
 
 Les +Flux+ peuvent être :
 
@@ -968,6 +1053,17 @@ Les +Flux+ peuvent être :
 Un _flow port_ atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux), 
 la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un _Value Type_ représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
 ====
+
+==== Ports (SysML 1.3)
+
+La nouvelle spécification {norme} introduit donc les concepts de:
+
+_proxy port_::
+Ils doivent remplacer les ports 1.2 (ports de flots et ports standards) en en reprenant les caractéristiques
+et en ajoutant la possibilité d'imbrication et de spécification renforcée. 
+
+_full port_::
+En fait il s'agit du même concept qu'une partie qui serait exposée à l'extérieur. 
 
 ifdef::backend-deckjs[]
 :leveloffset: -1
@@ -1053,8 +1149,22 @@ ifndef::book[[cols="h,4*",options="header",width="50%"]]
 
 === {revisions}
 
+ifndef::backend-deckjs[]
+
 . Quelles sont les différences entre une association dirigée (+->+), une composition (losange noir) et l'agrégation (losange blanc) ?
 . Puisqu'un +{bdd}+ me donne souvent la liste des sous-systèmes (liens de composition), pourquoi ai-je besoin d'un +{ibd}+ ?
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+. Quelles sont les différences entre une association dirigée (+->+), une composition (losange noir) et l'agrégation (losange blanc) ?
+. Puisqu'un +{bdd}+ me donne souvent la liste des sous-systèmes (liens de composition), pourquoi ai-je besoin d'un +{ibd}+ ?
+====
+endif::backend-deckjs[]
+
 
 ifdef::backend-deckjs[]
 :leveloffset: 0
@@ -1086,7 +1196,7 @@ endif::backend-deckjs[]
 
 On abordera :
 
-- les _Use Case Diagrams_ (scénarios) 
+- les _Use Case Diagrams_ 
 - les _Sequence Diagrams_ 
 - les _State Machines_
 - les _Activity Diagrams_
@@ -1128,6 +1238,12 @@ endif::backend-deckjs[]
 ==== Cas d'Utilisation (_Use Case_)
 
 include::{defs}/uc.txt[]
+
+ifdef::backend-deckjs[]
+image::plantuml/uc7.png[width="40%"]
+image::plantuml/uc3.png[width="40%"]
+endif::backend-deckjs[]
+image::plantuml/uc4.png[width="80%"]
 
 ==== Exemple de cas d'utilisation (UML)
 
@@ -1181,6 +1297,8 @@ prérogatives (notamment en terme d'utilisation du système) que le généralis�
 En général, une simple association relie acteurs et _Use Case_.
 On peut également orienter ces associations en plaçant une direction (flèche vide) au bout de l'association.
 
+image::plantuml/uc5.png[]
+
 ==== Relations entre _Use Case_
 
 Après avoir lister les cas d'utilisation, il est utile de les organiser et de montrer les relations entre eux.
@@ -1197,8 +1315,8 @@ Généralisation::
 
 [[ucdiag]]
 .Notation dans le diagramme d'UC
-ifdef::book[image::{acsi}/dessins/UC.png[scale=80]]
-ifndef::book[image::{acsi}/dessins/UC.png["Diagramme d'UC",width="35%"]]
+ifdef::book[image::UC.png[scale=80]]
+ifndef::book[image::UC.png["Diagramme d'UC",width="35%"]]
 
 [TIP]
 =====================================================================
@@ -1216,26 +1334,18 @@ inclut dans plusieurs UC. Si ce n'est pas le cas, il est généralement englobé
 
 [NOTE]
 ====
-Certains méthodologistes (comme T. Wielkins) préconisent de ne pas utiliser les acteurs et les cas d'utilisation
-(cf. son blog)
+Certains méthodologistes (comme Tim Weilkiens) préconisent de ne pas utiliser les acteurs et les cas d'utilisation
+(cf. son http://model-based-systems-engineering.com/[blog])
 ====
 
 ifndef::book[]
-
-
-==== Exemples complets (UML) : Service comptable
-
-[[ucexp]]
-.Exemple de diagramme d'UC
-ifdef::book[image::{acsi}/images/UC.png[scale=40]]
-ifndef::book[image::{acsi}/images/UC.png["Exemple de Diagramme d'UC",width="80%"]]
 
 ==== Exemples complets (UML) : Gestion des notes
 
 [[ucexp2]]
 .Autre exemple de diagramme d'UC
-ifdef::book[image::{acsi}/images/uc2.png[scale=60]]
-ifndef::book[image::{acsi}/images/uc2.png["Exemple de Diagramme d'UC",width="70%"]]
+ifdef::book[image::uc2.png[scale=60]]
+ifndef::book[image::uc2.png["Exemple de Diagramme d'UC",width="70%"]]
 
 endif::book[]
 
@@ -1270,11 +1380,11 @@ Barres d'activation::
 Messages::
 	ce qui "circule" d'un élément à l'autre (signal, appel de méthode, ...)
 
-ifdef::backend-slidy2[<<<]
+//ifdef::backend-deckjs[==== Généralités (suite)]
 
-.Exemple de diagramme de séquence
-ifdef::book[image::{acsi}/seq1.png["Diagramme de séquence",scale=40]]
-ifndef::book[image::{acsi}/seq1.png["Diagramme de séquence",width="40%"]]
+//.Exemple de diagramme de séquence
+//ifdef::book[image::{acsi}/seq1.png["Diagramme de séquence",scale=40]]
+//ifndef::book[image::{acsi}/seq1.png["Diagramme de séquence",width="40%"]]
 
 //.Exemple de diagramme de séquence (2)
 //ifdef::book[image::{acsi}/seq2.png["Eléments de notation",scale=40]]
@@ -1289,10 +1399,12 @@ ifndef::book[]
 
 ==== Exemple
 
+image::dsexp1.png[]
+
 [[seqexp]]
 .Exemple de diagramme de séquence (3)
-ifdef::book[image::{acsi}/seq3.png["Exemple de diagramme de séquence",scale=50]]
-ifndef::book[image::{acsi}/seq3.png["Exemple de diagramme de séquence",width="60%"]]
+ifdef::book[image::seq3.png["Exemple de diagramme de séquence",scale=50]]
+ifndef::book[image::seq3.png["Exemple de diagramme de séquence",width="60%"]]
 
 endif::book[]
 
@@ -1307,16 +1419,18 @@ On peut également représenter des instructions itératives et conditionnelles 
 * +{par}+ (parallèle)
 * +region+ (région critique - un seul _thread_ à la fois)
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Notions avancées (suite)]
 
 [[fowler]]
 .Exemple d' algorithme...
-ifdef::book[image::{acsi}/fowl1.png["Un algorithme",scale=40]]
-ifndef::book[image::{acsi}/fowl1.png["Un algorithme",width="30%"]]
+ifdef::book[image::fowl1.png["Un algorithme",scale=40]]
+ifndef::book[image::fowl1.png["Un algorithme",width="30%"]]
+
+ifdef::backend-deckjs[==== Notions avancées (suite)]
 
 .Et le diagramme correpondant
-ifdef::book[image::{acsi}/fowl2.png["Sa modélisation",scale=60]]
-ifndef::book[image::{acsi}/fowl2.png["Sa modélisation",width="60%"]]
+ifdef::book[image::fowl2.png["Sa modélisation",scale=60]]
+ifndef::book[image::fowl2.png["Sa modélisation",width="60%"]]
 
 ==== Exemple de conceptions
 
@@ -1327,17 +1441,19 @@ facilement que tel objet est plus chargé que d'autres. Les deux diagrammes suiv
 fonctionnalité. On mesure visuellement assez bien la différence entre la version "centralisée"
 (<<fowler1>>) et la version "objet" (<<fowler2>>).
 
+ifdef::backend-deckjs[==== Exemple de conceptions (suite)]
+
 [[fowler1]]
 .Conception "centralisée"
-ifdef::book[image::{acsi}/fowl3.png[scale=60]]
-ifndef::book[image::{acsi}/fowl3.png["Conception 'centralisée'",width="60%"]]
+ifdef::book[image::fowl3.png[scale=60]]
+ifndef::book[image::fowl3.png["Conception 'centralisée'",width="60%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Exemple de conceptions (suite)]
 
 [[fowler2]]
 .Conception "objet"
-ifdef::book[image::{acsi}/fowl4.png[scale=60]]
-ifndef::book[image::{acsi}/fowl4.png["Conception 'objet'",width="60%"]]
+ifdef::book[image::fowl4.png[scale=60]]
+ifndef::book[image::fowl4.png["Conception 'objet'",width="60%"]]
 
 
 [NOTE]
@@ -1353,26 +1469,26 @@ On fait un Diagramme de Séquence Système pour chaque cas d'utilisation (issu d
 
 Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocs composant le système (issus du +{bdd}+) collaborent pour réaliser le traitement demandé.
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
 
 [[exp1-uc]]
 .Diagramme d'UC
-ifdef::book[image::{acsi}/ucexp1.png[scale=50]]
-ifndef::book[image::{acsi}/ucexp1.png["Diagramme d'UC",width="30%"]]
+ifdef::book[image::ucexp1.png[scale=50]]
+ifndef::book[image::ucexp1.png["Diagramme d'UC",width="30%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
 
 [[exp1-dss]]
 .Le DSS correspondant
-ifdef::book[image::{acsi}/dssexp1.png[scale=50]]
-ifndef::book[image::{acsi}/dssexp1.png["Le DSS correspondant",width="30%"]]
+ifdef::book[image::dssexp1.png[scale=50]]
+ifndef::book[image::dssexp1.png["Le DSS correspondant",width="50%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
 
 [[exp1-ds]]
 .Le DS correspondant
-ifdef::book[image::{acsi}/dsexp1.png[scale=50]]
-ifndef::book[image::{acsi}/dsexp1.png["Le DS correspondant",width="70%"]]
+ifdef::book[image::dsexp1.png[scale=50]]
+ifndef::book[image::dsexp1.png["Le DS correspondant",width="70%"]]
 
 ifdef::backend-deckjs[]
 :leveloffset: -1
@@ -1390,9 +1506,13 @@ Le diagramme d’états comprend également deux *pseudo-états* :
 - l’état initial du diagramme d’états correspond à la création d’une instance ; 
 - l’état final du diagramme d’états correspond à la destruction de l’instance.
 
+ifdef::backend-deckjs[==== Diagramme d'états (suite)]
+
 .Un exemple de diagramme d'état (R,UK)
-ifdef::book[image::{acsi}/stm1.png[scale=50]]
-ifndef::book[image::{acsi}/stm1.png["Un diagramme d'état",width="70%"]]
+ifdef::book[image::stm1.png[scale=50]]
+ifndef::book[image::stm1.png["Un diagramme d'état",width="70%"]]
+
+ifdef::backend-deckjs[==== Diagramme d'états (suite)]
 
 Lorsqu'un état nécessite lui-même plus de détails, on créé un *état composite* (aussi appelé super-état) 
 qui est lui-même une machine à état. On peut ainsi factoriser des transitions déclenchées par le même événement (et amenant vers le même état cible), tout en spécifiant des transitions particulières entre les sous-états. 
@@ -1411,6 +1531,8 @@ Il est utilisé pour l’expression de la logique de contrôle et d’entrées/s
 .Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
 ifdef::book[image::act-pcmk1.png[scale=40]]
 ifndef::book[image::act-pcmk1.png[width="70%"]]
+
+ifdef::backend-deckjs[==== Diagramme d'activités (suite)]
 
 Les éléments de base du diagramme d’activité sont :
 
@@ -1466,6 +1588,8 @@ La fusion est l’inverse de la décision : le même symbole du losange, mais ce
 ifdef::book[image::flow-ctrl.png[scale=40]]
 ifndef::book[image::flow-ctrl.png[width="20%"]]
 
+ifdef::backend-deckjs[]
+
 [NOTE]
 ====
 Pour se rapprocher de {sart}, la norme prévoit la possibilité d'utiliser les pointillés pour les flux de contrôle.
@@ -1477,6 +1601,8 @@ Pour se rapprocher de {sart}, la norme prévoit la possibilité d'utiliser les p
 Control flow may be notated with a dashed line and stick arrowhead...
 ====
 ====
+
+endif::backend-deckjs[]
 
 === Réutilisation
 
@@ -1505,7 +1631,20 @@ ifndef::book[[cols="h,4*",options="header",width="50%"]]
 
 === {revisions}
 
+ifndef::backend-deckjs[]
+
 . Comment, pour exprimer un comportement, savoir si j'ai besoin d'un diagramme de séquence plutôt qu'un diagramme d'activité ou encore d'une machine à état ?
+
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+. Comment, pour exprimer un comportement, savoir si j'ai besoin d'un diagramme de séquence plutôt qu'un diagramme d'activité ou encore d'une machine à état ?
+====
+endif::backend-deckjs[]
 
 === Exercices
 
@@ -1617,9 +1756,23 @@ En résumé l'expression du comportement du système en {sysml} est très simila
 
 === {revisions}
 
+ifndef::backend-deckjs[]
+
 . Quelles sont les différences entre `<<satisfy>>` et `<<allocate>>` ?
 . Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
 . L'inverse est-il aussi important ?
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[]
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+. Quelles sont les différences entre `<<satisfy>>` et `<<allocate>>` ?
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+. L'inverse est-il aussi important ?
+====
+endif::backend-deckjs[]
 
 ifdef::correction[]
 

@@ -1,6 +1,7 @@
-* http://www.topcased.org/[TopCased]
-* http://www.eclipse.org/modeling/mdt/papyrus/[Papyrus]
-* http://www.artisansw.com/[Artisan]
-* http://www-01.ibm.com/software/rational/products/rhapsody[Rhapsody]
-* http://www.modeliosoft.com/[Modelio]
+* {TopCased}
+* {papyrus}
+* {artisan}
+* {Rhapsody}
+* {Modelio}
+* {magicdraw}
 * ...

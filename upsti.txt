@@ -1,9 +1,16 @@
-:icons: /Users/bruel/dev/asciidoc/images/icons
-== Context
+ifdef::backend-deckjs[]
+:leveloffset: +1
+endif::backend-deckjs[]
+
+= Enseigner SysML
 
 Cette partie est dédiée à l'enseignement à {SysML}. J'y distille des conseils et
 des remarques issues des nombreuses questions soulevées dans le cadre des journées
 SysML-France ou {upsti}.
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
 
 //===========================================================================
 == Respect des notations SysML
@@ -12,29 +19,26 @@ Je recommande vraiment l'utilisation d'outils (même de dessins, mais dédié à
 Ils respectent en général la norme {norme} (bien qu'il faille se méfier).
 Eviter de "dessiner" des diagrammes. 
 
-ifndef::deckjs[]
-:leveloffset: +1
-endif::deckjs[]
 
 Par contre la norme permet de faire des adaptations graphiques (cf. la discussion http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/).
+
+ifdef::backend-deckjs[]
+:leveloffset:0
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
+:leveloffset: +1	
+endif::backend-deckjs[]
 
 include::slides/cordeuse/bdd.asc[]
 
 include::slides/cordeuse/seq.asc[]
 
-
-ifndef::deckjs[]
-:leveloffset: 0
-endif::deckjs[]
-
-<<<<
-
 //===========================================================================
 == Diagramme des cas d'utilisation
 
-ifdef::deckjs[]
+ifdef::backend-deckjs[]
 :leveloffset: -1
-endif::deckjs[]
+endif::backend-deckjs[]
 
 [[Utilisation]]
 === Utilisation du système
@@ -58,22 +62,21 @@ Dans le diagramme ci-dessus il aurait fallut écrire :
 image::plantuml/uc7.png[]
 ====
 
-ifdef::deckjs[]
+ifdef::backend-deckjs[]
 :leveloffset: 0
-endif::deckjs[]
-
-ifndef::deckjs[]
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
 :leveloffset: +1
-endif::deckjs[]
+endif::backend-deckjs[]
 
 include::slides/cordeuse/uc.asc[]
 
-ifdef::deckjs[]
+ifdef::backend-deckjs[]
 :leveloffset: -1
-endif::deckjs[]
-ifndef::deckjs[]
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
 :leveloffset: 0
-endif::deckjs[]
+endif::backend-deckjs[]
 
 === Utilisation des `<<include>>`
 
@@ -91,6 +94,8 @@ image::plantuml/uc2.png[width="80%"]
 Dans la figure <<UC2>>, il n'y a aucune raison de ne pas inclure le cas d'utilisation
 +S'identifier+ directement dans le cas d'utilisation +Acheter en ligne+. Et avoir ainsi :
 
+ifdef::backend-deckjs[=== Utilisation des `<<include>>` (suite)]
+
 [[UC3]]
 .Solution 1 : On englobe les `<<include>>` "isolés"
 [icon="images/icons/appbar.weather.sun.png"]
@@ -100,7 +105,9 @@ image::plantuml/uc3.png[width="80%"]
 ====
 
 J'enseigne qu'un `<<include>>` devrait toujours concerner un cas inclut dans plusieurs autres, comme la figure <<UC4>> :
-	
+
+ifdef::backend-deckjs[=== Utilisation des `<<include>>` (suite)]
+
 [[UC4]]
 .Solution 2 : On "mutualise" les `<<include>>`
 [icon="images/icons/appbar.weather.sun.png"]
@@ -136,18 +143,19 @@ N'oublions pas que derrière chaque UC, il devrait y avoir un but d'une partie p
 ====
 
 
-ifdef::deckjs[]
+ifdef::backend-deckjs[]
 :leveloffset: 0
-endif::deckjs[]
-
-<<<<
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
+:leveloffset: +1
+endif::backend-deckjs[]
 
 //===========================================================================
 == Diagrammes de bloc
 
-ifdef::deckjs[]
+ifdef::backend-deckjs[]
 :leveloffset: -1
-endif::deckjs[]
+endif::backend-deckjs[]
 
 === Héritage
 
@@ -162,6 +170,8 @@ image:plantuml/bdd1.png[]
 ====
 
 La relation doit pourvoir se lire "est un". Or, un +SarmentAttaché+ n'est pas un +SarmentNonAttaché+ (c'est même le contraire)!
+
+ifdef::backend-deckjs[=== Héritage (suite)]
 
 Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de *généralisation*. À l'inverse, quand on constate qu'un bloc possède réellement plusieurs déclinaisons différentes et que l'on créé alors des blocs spécifiques, on parle alors de *spécialisation*.
 
@@ -186,11 +196,13 @@ Attention aux cardinnalités indiquées dans les associations.
 [icon="images/icons/appbar.weather.thunder.png"]
 [NOTE]
 ====
-image:cardBad.png[width="80%"]
+image:cardBad.png[width="70%"]
 
 Il ne s'agit pas d'une erreur de syntaxe SysML, mais d'une erreur de conception.
 Un +Alistar+ est composé de 8 +Propulseurs+ et un +Propulseurs+ est composé de 4 +Propulseurs arrières+. 4*8=32.
 ====
+
+ifdef::backend-deckjs[=== Cardinalités (suite)]
 
 .Solution possible
 [icon="images/icons/appbar.weather.sun.png"]
@@ -200,14 +212,74 @@ image:plantuml/bdd4.png[]
 image:plantuml/bdd5.png[]
 ====
 
-ifdef::deckjs[]
+ifdef::backend-deckjs[]
 :leveloffset: 0
-endif::deckjs[]
+endif::backend-deckjs[]
 
 
 //===========================================================================
-<<<<
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
+:leveloffset: +1
+endif::backend-deckjs[]
 
 include::slides/sm.asc[]
 
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
+:leveloffset: +1
+endif::backend-deckjs[]
+
+== Divers
+
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Du danger d'une lecture trop rapide de la norme
+
+C'est important de faire référence à la norme quand on avance un fait.
+J'essaye de m'y atteler personnellement dans mes écrits.
+Néanmoins il faut faire attention car on fait souvent des citations qui finalement ne sont que des extraits.
+
+.Erreur : citation sortie de son contexte
+[icon="images/icons/appbar.weather.thunder.png"]
+[NOTE]
+====
+"...[SysML] limite à 1 le nombre de régions dans un état composite (note de bas de page p. [17 de la norme]...)."
+====
+
+Cette partie de la norme {norme} mentionne effectivement cette phrase, mais comme un exemple de notes
+qui peuvent se retrouver dans des manuels d'outils qui ne respecteraient pas la norme justement!!
+
+.Solution : Faire attention au contexte (OMG SysML v1.3, p. 17)
+[icon="images/icons/appbar.weather.sun.png"]
+[NOTE]
+====
+"_In the case of “PARTIAL” support for a compliance point, in addition to a formal statement of compliance, implementors, and profile designers must also provide feature support statements._"
+====
+
+Un autre exemple issu d'{uml} où en fait la norme parle d'une convention adoptée pour ses propres meta-modèles :
+
+.Erreur : citation sortie de son contexte
+[icon="images/icons/appbar.weather.thunder.png"]
+[NOTE]
+====
+If no multiplicity is shown on an association end, it implies a multiplicity of exactly 1 (UML Superstructure Specification v2.4.1 p.18).
+====
+
+Il faut donc bien faire attention avec les extraits de norme.
+
+[TIP]
+====
+Quand on cite un extrait de la norme, citer le numéro de page du document papier et non celui du PDF.
+====
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
 

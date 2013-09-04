@@ -1,0 +1,20 @@
+ifdef::defs[]
+:defold: {defs}
+:defs: defs
+endif::defs[]
+
+[[def-actor]]
+Acteur::
+include::{defs}/act.txt[]
+
+[[def-uc]]
+Cas d'utilisation::
+include::{defs}/uc.txt[]
+
+[[def-pack]]
+Paquet (ou Paquetage, package)::
+include::{defs}/paq.txt[]
+
+ifdef::defold[]
+:defs: {defold}
+endif::defs[]

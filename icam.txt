@@ -59,6 +59,7 @@ include::definitions.txt[]
 :images: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images
 :icons: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons
 :plantuml: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/plantuml
+:defs: defs
 
 include::icam-main.txt[]
 

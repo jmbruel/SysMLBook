@@ -64,19 +64,20 @@ endif::backend-deckjs[]
 ==== Résoudre 
 
 * => pas vraiment de consignes
+* Votre expérience va primer
+* {Sysml} n'apporte rien si ce n'est de l'aide à apporter aux élèves via les *diagrammes paramétriques*?
 
-==== Expérimenter 
+==== Expérimenter/Concevoir/Réaliser
 
 * => pas vraiment de consignes
-
-==== Concevoir 
-* => pas vraiment de consignes
-
-==== Réaliser 
-* => pas vraiment de consignes
+* Les élèvent peuvent peut-être réaliser des schémas (type {bdd}) suite à leurs expérimentations?
+* Pour que les élèves puissent bien lire les diagrammes {sysml}, il va falloir qu'ils en réalisent.
+* Utiliser les diagrammes comme support de rendu de leur conception peut être une bonne idée.
 
 ==== Communiquer
 * => pas vraiment de consignes
+* Décrire un diagramme {sysml} à l'oral (surtout si c'est celui qu'on a réalisé soit même) est un bon exercice.
+
 
 ifdef::backend-deckjs[]
 :leveloffset: 0

@@ -1,0 +1,149 @@
+== Une démarche parmi d'autres
+
+Nous allons aborder le développement complet de notre exemple fil rouge en suivant une démarche classique et simple
+(utilisée par exemple dans <<SeeBook2012>>, où proche de la démarche globale enseignée dans nos cous de DUT Informatique, ou encore proche des documents de référence en la matière <<HAS2012>>, <<KAP2007>>,<<FIO2012>>) :
+
+0. Organisation (Outils, paquets, fichiers de base)
+1. Spécification du système (Besoins et analyse fonctionnelle)
+2. Conception du système (architecture et comportement)
+3. Traçabilité et Allocations
+4. Modèle de test
+
+Nous partirons du modèle des exigences produit initialement. Mais avant tout, parlons outils.
+
+ifdef::backend-deckjs[Une démarche parmi d'autres (suite)]
+
+Dans l'enchaînement ci-dessous, il manque bien sûr les retours arrière, les itérations, et
+enfin il ne faut pas le considérer comme un diagramme d'activité (cherchez les problèmes pour
+vous entraîner au diagramme d'activité).
+
+.Un enchaînement possible des diagrammes
+[icon="images/icons/appbar.weather.overcast.png"]
+[NOTE]
+====
+image::upsti-demarche.png[width="80%"]
+====
+//(start)->([pkg])->|a|,|a|->(req)->|b|,|a|->(uc)->|b|,|b|->(stm)->|c|,|b|->(seq)->|c|,|b|->(act)->|c|,|b|->|c|,|c|->(bdd)->|d|,|c|->(ibd)->|d|,|c|->([par])->|d|,|d|->(end)
+
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+
+=== Environnement de développement
+
+Un outil {SysML} seul ne suffit pas (cf. <<outils>>). Il faut penser à la documentation (cf. <<gendoc>>).
+
+.Outillage autour de SysML
+ifdef::book[image::SysMLTool-fr.png[scale=30]]
+ifndef::book[image::SysMLTool-fr.png[width="80%",alt="Outillage autour de SysML"]]
+
+ifdef::backend-deckjs[]
+:leveloffset: -2
+endif::backend-deckjs[]
+
+[[outils]]
+==== Outils
+
+Il existe de nombreux outils {sysml}. Nous renvoyons le lecteur sur le site de {sysmlfrance} pour 
+des informations sur les dernières versions des outils.
+
+
+[[gendoc]]
+==== Génération de documentation
+
+La plupart des outils permettent de générer de la documentation. Pour les outils basés {eclipse} comme
+{topcased}, il est possible d'utiliser le plug-in +GenDoc2+.
+
+.Génération de documentation à partir de TOPCASED (1)
+ifdef::book[image::gendoc-1.png[scale=40]]
+ifndef::book[image::gendoc-1.png["GENDOC",height="300",link="{images}/gendoc-1.png"]]
+
+ifdef::backend-deckjs[==== Génération de documentation (suite)]
+
+.Génération de documentation à partir de TOPCASED (1)
+ifdef::book[image::gendoc-2.png[scale=40]]
+ifndef::book[image::gendoc-2.png["GENDOC",height="300",link="{images}/gendoc-2.png"]]
+
+ifdef::backend-deckjs[==== Génération de documentation (suite)]
+
+Les outils commerciaux comme {rhapsody} permettent de générer de nombreux formats.
+
+.Génération de documentation à partir de Rhapsody
+ifdef::book[image::gendoc-rhapsody1.png[scale=40]]
+ifndef::book[image::gendoc-rhapsody1.png["Rhapsody",height="300",link="{images}/gendoc-rhapsody1.png"]]
+
+==== Animation de modèles et simulation
+
+Fortement liée aux outils, la possibilité d'animer les modèles ou encore d'effectuer des simulations
+est une exigence de plus en plus forte des ingénieurs systèmes.
+
+Il existe de nombreuses possibilités. Citons par exemple :
+
+Génération de code VHDL::
+	L'outil +RTaW+ propose, via génération de code VHDL de simuler les modèles. Voir une démonstration
+	https://www.realtimeatwork.com/wp-content/uploads/screencasts/bouncingball/[ici].
+
+ifdef::backend-deckjs[==== Animation de modèles et simulation (suite)]
+
+Simulation en Rhapsody::
+	L'outil {rhapsody} possède une interface très pratique pour faire du prototypage rapide.
++
+ifdef::book[image:rhapsody-animation.png[scale=50]]
+ifndef::book[image:rhapsody-animation.png["Animation",width="80%",link="rhapsody-animation.png"]]
++
+Voir mon tutoriel (en anglais) disponible http://jmbhome.heroku.com/teaching/SysML/tp-undergraduate.html[ici].
+
+ifdef::backend-deckjs[==== Animation de modèles et simulation (suite)]
+
+Animation de modèles en Artisan::
+	L'outil +Artisan+ permet également de faire de l'animation de modèles.
+	
+.Animation Artisan
+ifdef::book[image::artisan.png[scale=50]]
+ifndef::book[image::artisan.png["Animation",width="80%",link="artisan.png"]]
+
+ifdef::backend-deckjs[]
+:leveloffset: -1
+endif::backend-deckjs[]
+	
+=== Spécification du système
+
+Il s’agit ici de décrire le contexte et d’identifier les principaux cas d’utilisation du système.
+
+[[contexte]]
+
+=== Conception du système
+
+Chaque cas d'utilisation sera précisé (`seq` et `act`).
+Les données métier seront alors identifiées pour construire le modèle d’architecture logique (+{bdd}+ et +{ibd}+) complété par la description des comportements complexes (+{stm}+).
+Enfin le modèle d’architecture physique permettra de déterminer les aspects déploiement et constructions physiques d'équipements/
+
+=== Traçabilité et Allocations 
+
+Afin de consolider les différents modèles, les liens de traçabilité qui n'auront pas été déjà décrit footnote:[Il est recommandé de ne pas attendre pour matérialiser ces liens, mais de les exprimés dès que rencontrés dans telle ou telle modélisation.] seront rajoutés en insistant sur les liens :
+
+- de satisfaction des exigences par les éléments de l’architecture, 
+- d’allocation des éléments du modèle fonctionnel vers les éléments logiques, 
+- d’allocation des éléments logiques vers les éléments de l’architecture physique.
+
+=== Modèle de test
+
+Nous insistons dans l'ensemble de nos formations sur les approches _test-driven_, alors nous montrons dans cette section comment participer à la qualité du développement d'un système en formalisant (par exemple avec des diagrammes de séquence de scénarios à éviter)
+les test et les jeux de test.
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+
+include::recettes.txt[]
+
+ifdef::backend-deckjs[]
+:leveloffset: 0
+endif::backend-deckjs[]
+
+////
+=== Patrons de conception système
+
+Mérite une section ??
+
+/////
