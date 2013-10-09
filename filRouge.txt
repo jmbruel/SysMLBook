@@ -12,6 +12,8 @@ Il existe un certain nombre d'autres exemple complets :
 
 Les exemples complets ont le mérite de donner une vue d'ensemble des liens qui peuvent exister entre les différents diagrammes. On peut y voir comment ces diagrammes sont complémentaires les uns des autres. Ils sont en général plus réalistes que les diagrammes utilisés pour illustrer tel ou tel concept de la notation. 
 
+ifdef::backend-deckjs[:leveloffset: -1]
+
 === Enoncé
 
 [TIP]
@@ -103,3 +105,5 @@ Les responsabilités d'un témoin sont les suivantes :
 Pour enrichir vos modèles, vous pouvez incorporer certains des besoins non-fonctionnels décrits ci-dessous.
 
 include::nf-reqs-fr.txt[]
+
+ifdef::backend-deckjs[:leveloffset: 0]

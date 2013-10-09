@@ -3,7 +3,7 @@
 == FAQ
 //-================================================================================
 
-Cette _**F**requently **A**sked **Q**uestion_ a été construite par expérience, en regroupant 
+Cette FAQ (_**F**requently **A**sked **Q**uestions_) a été construite par expérience, en regroupant 
 les questions des étudiants durant mes différentes interventions. 
 J'ai aussi ajouté des questions souvent rencontrées dans les journées organisées par {sysmlfrance}. 
 
@@ -20,9 +20,10 @@ endif::backend-deckjs[]
 //-================================================================================
 // Généralités
 //-================================================================================
+
 === Quelle est la version courante de la spécification et comment l'obtenir?
 
-Verson +1.3+ et disponible à l'URL: http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf
+Version +1.3+ et disponible à l'URL: http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf
 
 === Quels en sont les changements notables depuis la dernière version ?
 (en lien avec  la question précédente)
@@ -41,6 +42,34 @@ et ajout d'un modèle (non normatif) pour définir les systèmes d'unités et de
 [NOTE]
 ====
 SysML v1.3 _Revision Task Force_ dirigée par Roger Burkhart et Rick Steiner améliore de manière régulière la spécification en fonction des retours des utilisateurs.
+====
+
+=== Quelle est la différence entre les différents ports : +proxy+, +nested+, +flow+, ... ?
+
+La version +1.3+ a précisé la sémantique des ports et abandonne le concept de +flow specification+
+au profit d'une description via un bloc possédant des +flow properties+ (cf. <<FlowP,Flow properties>>).
+
+[[FlowP]]
+.Préciser les propriétés des _Flow Ports_
+image:flowport2.png[scale=60] image:flowport1.png[scale=60]
+	
+Ainsi :
+
+- Les ports par défauts (hérités d'{uml}) permettent d'indiquer des services fournis et requis.
+- Les ports de type flot (_flow_) spécifient que quelque-chose "circule" dans ou depuis un bloc. 
+- Si le bloc représentant le port possède lui-même des ports, on parle alors de _nested ports_ (cf. <<nestedPort,Nested Ports>>).
+- Enfin, un _proxy port_ permet de donner accès à l'extérieur d'un bloc à l'un des ports de l'un de ses composants. 
+
+[[nestedPort]]
+._Nested Ports_
+image::nestedPort.png[scale=60]
+
+[NOTE]
+====
+Voi aussi les blogs :
+
+- http://model-based-systems-engineering.com/2012/04/02/whats-new-in-sysml-1-3/
+- http://model-based-systems-engineering.com/2013/09/23/sysml-full-ports-versus-proxy-ports/
 ====
 
 === Qu'est-ce que la certification SysML et comment la passer?
@@ -65,6 +94,7 @@ réalisé par {loic} : http://www.realtimeatwork.com/2010/06/test-quizz/
 //-================================================================================
 // REQ
 //-================================================================================
+
 === Peut-on avoir un _requirement_ contenu plusieurs fois ?
 
 Non. Le lien de _containment_ est en fait une action qui place le "contenu" dans le
@@ -177,9 +207,9 @@ _... Actors represent classifier roles that are external to the system that may 
 
 Pour la comprendre il ne faut pas utiliser le Larousse français (qui rend presque le caractère réciproque obligatoire),
 mais plutôt la comprendre dans son acceptation informatique (comme dans "Interaction Homme-Machine").
-Par exemple un message (appel de méthode) d'un élément vers un autre dans un diagramme de séquence est appelé en SysML une _interaction_.
+Par exemple un message (appel de méthode) d'un élément vers un autre dans un diagramme de séquence est appelé en {SysML} une _interaction_.
  
-SysML permet de *préciser le caractère réciproque* ou non de l'interaction par exemple entre un +Acteur+ et un +Cas d'utilisation+ :
+{SysML} permet de *préciser le caractère réciproque* ou non de l'interaction par exemple entre un +Acteur+ et un +Cas d'utilisation+ :
 
 [[UCinter]]
 .Trois types d'interaction différentes possibles en SysML
@@ -348,11 +378,11 @@ endif::uk[]
 
 Quelques autres questions que je laisse à votre sagacité :
 
-- Pourquoi les ingénieurs systèmes auraient-ils besoin d'un n-ième langage de modéliation ?
+- Pourquoi les ingénieurs systèmes auraient-ils besoin d'un n-ième langage de modélisation ?
 - Quelles sont les relations entre “open source SysML” et “OMG SysML” ?
 - Quelle est la feuille de route pour SysML 2.0?
 - Quelles sont les relations entre UML et SysML? Peut-on les utiliser ensemble?
-- Peut-on "customizer" SysML?
+- Peut-on "_customizer_" SysML?
 - Quel langage est le plus facile à apprendre, SysML ou UML?
 
 ifdef::uk[]
@@ -376,7 +406,7 @@ endif::backend-deckjs[]
 //-================================================================================
 == FABQ
 
-Cette _**F**requently **A**sked **B**ad **Q**uestion_ est une compilation des questions
+Cette _**F**requently **A**sked **B**ad **Q**uestions_ est une compilation des questions
 trouvées parfois dans les forums et qui montrent l'incompréhension qui entoure encore {sysml}. 
 
 ifdef::backend-deckjs[]

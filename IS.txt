@@ -15,6 +15,7 @@ ifndef::book[[align="center",cols="h,4*",options="header",width="50%"]]
 | {implementation}	|					|        		|				|
 |======================
 
+ifdef::backend-deckjs[:leveloffset: -1]
 
 === Points de vue
 
@@ -47,10 +48,14 @@ Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie d
 {implementation}::
 	Cette phase traite des développements finaux (construction ou approvisionnement en matériel, développement de codes, etc.).
 
+ifdef::backend-deckjs[:leveloffset: 0]
+
 == Différence avec l'ingénierie logicielle
 
 Enseignant en informatique, je me retrouve souvent à enseigner {sysml} à des informaticiens.
 D'où ce petit exposé sur mon opinion de la différence entre les deux "mondes".
+
+ifdef::backend-deckjs[:leveloffset: -1]
 
 === Une ingénierie plus ancienne
 
@@ -71,7 +76,7 @@ On parle de système complexe lorsque l'on a affaire à :
 ifdef::book[image::{images}/starwars.jpeg[scale=60]]
 ifndef::book[image::{images}/starwars.jpeg[alt="Système complexe",link="freeblueprints.net",width="70%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Des systèmes plus complexes (suite)]
 
 On parle aussi de *Système de systèmes* quand un système :
 
@@ -94,37 +99,39 @@ ifndef::book[image::{images}/analyse1.png[alt="Des reqs au système",width="70%"
 
 Pour cela l'{is} est découpée en plusieurs analyses, chacune avec un but bien particulier :
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
 .Analyse Fonctionnelle et/ou Comportementale
 ifdef::book[image::{images}/analyse2.png[scale=50]]
 ifndef::book[image::{images}/analyse2.png[alt="Des reqs au système",width="70%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
 .Analyse Structurelle
 ifdef::book[image::{images}/analyse3.png[scale=50]]
 ifndef::book[image::{images}/analyse3.png[alt="Des reqs au système",width="70%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
 .Analyse de performance
 ifdef::book[image::{images}/analyse4.png[scale=50]]
 ifndef::book[image::{images}/analyse4.png[alt="Des reqs au système",width="70%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
 .Analyses spécifiques
 ifdef::book[image::{images}/analyse5.png[scale=50]]
 ifndef::book[image::{images}/analyse5.png[alt="Des reqs au système",width="70%"]]
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
 Pour arriver à combler le gap entre le système à développer et ses spécifications.
 
 .Des exigences au système
 ifdef::book[image::{images}/analyse6.png[scale=50]]
 ifndef::book[image::{images}/analyse6.png[alt="Des reqs au système",width="70%"]]
+
+ifdef::backend-deckjs[:leveloffset: 0]
 
 == Normes et standards
 
@@ -173,8 +180,8 @@ Il est important pour une exigence qu'elle ne soit pas ambiguë (contrairement a
 [[fig:eggs]]
 .\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
 [caption="Illustration: "]
-ifdef::book[image::./images/ProgrammerHumor.jpg[scale=50]]
-ifndef::book[image::./images/ProgrammerHumor.jpg["Joke",width="70%"]]
+ifdef::book[image::{images}/ProgrammerHumor.jpg[scale=50]]
+ifndef::book[image::ProgrammerHumor.jpg["Joke",width="70%"]]
 
 [[structure]]
 == L'architecture du système
@@ -188,3 +195,4 @@ Liens avec la V&V
 
 include::Methodes.txt[]
 
+ifdef::backend-deckjs[:leveloffset: 0]

@@ -2,6 +2,8 @@
 
 Si vous ne deviez lire qu'un seul chapitre, voilà ce qu'il faudrait retenir.
 
+ifdef::backend-deckjs[:leveloffset: -1]
+
 === Fiche d'identité
 
 include::fiche.txt[]
@@ -21,16 +23,9 @@ Un ensemble de 9 types de diagrammes::
 ** Diagrammes d'activité (+{act}+)
 ** Diagrammes de cas d'utilisation (+{uc}+)
 ** Diagrammes d'états (+{stm}+)
-
-ifdef::backend-slidy2[]
-
-=== SysML, c'est (suite):
-
-Un ensemble de 9 types de diagrammes (suite)::
-
-endif::backend-slidy2[]
-
 * Diagramme d'exigence (+{req}+)
+
+ifdef::backend-deckjs[=== SysML, c'est (suite) :]
 
 Un profil {uml}::
 	C'est à dire une *extension* de cette notation, un ensemble de nouveaux concepts et éléments qui sont définis à partir des éléments de base d'{uml}. Un exemple : le +bloc+ {sysml} n'est qu'une redéfinition de la +classe+ {uml}.
@@ -64,18 +59,26 @@ ifndef::book[image::{images}/twitter2012.png[link="http://analytics.topsy.com/?q
 On y voit les journées SysML 2012 (Toulouse et Mulhouse).
 ====
 
+ifdef::backend-deckjs[=== Trends (suite)]
+
 ._Trends_ : Google (Carte)
 ifdef::book[image::{images}/google2012-1.png[scale=40]]
 ifndef::book[image::{images}/google2012-1.png[link="http://www.google.fr/trends/explore#q=SysML",width="60%"]]
+
+ifdef::backend-deckjs[=== Trends (suite)]
 
 ifndef::book[]
 ._Trends_ : Google (Liste)
 image::{images}/google2012-2.png[link="http://www.google.fr/trends/explore#q=SysML",width="70%"]
 endif::book[]
 
+ifdef::backend-deckjs[=== Trends (suite)]
+
 .Effet SysML-France?
 ifdef::book[image::{images}/google2012-3.png[scale=50]]
 ifndef::book[image::{images}/google2012-3.png[link="http://www.google.fr/trends/explore#q=SysML",width="60%"]]
+
+ifdef::backend-deckjs[=== Trends (suite)]
 
 À noter également que l'{OMG} a réalisé en 2009 une enquête sur l'utilisation de {sysml}footnote::[http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf] dont voici deux extraits :
 
@@ -88,3 +91,5 @@ ifndef::book[image::{images}/survey2.png[link="http://www.omgsysml.org/SysML_200
 .Diagrammes les plus utilisés
 ifdef::book[image::{images}/survey4.png[scale=50]]
 ifndef::book[image::{images}/survey4.png[link="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf",width="80%"]]
+
+ifdef::backend-deckjs[:leveloffset: 0]

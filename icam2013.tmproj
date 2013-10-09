@@ -3,26 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>definitions.txt</string>
+	<string>Makefile</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>Makefile</string>
 			<key>lastUsed</key>
-			<date>2013-07-02T08:41:49Z</date>
+			<date>2013-09-08T19:08:46Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>icam.txt</string>
 			<key>lastUsed</key>
-			<date>2013-06-30T12:45:03Z</date>
+			<date>2013-09-04T15:36:49Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>icam-main.txt</string>
 			<key>lastUsed</key>
-			<date>2013-07-09T20:00:24Z</date>
+			<date>2013-09-04T15:30:48Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -34,7 +36,7 @@
 			<key>filename</key>
 			<string>notation.txt</string>
 			<key>lastUsed</key>
-			<date>2013-06-30T19:54:45Z</date>
+			<date>2013-09-08T18:50:08Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -58,9 +60,7 @@
 			<key>filename</key>
 			<string>definitions.txt</string>
 			<key>lastUsed</key>
-			<date>2013-07-09T20:00:24Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2013-09-04T13:13:21Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -72,7 +72,7 @@
 			<key>filename</key>
 			<string>apx01Links.txt</string>
 			<key>lastUsed</key>
-			<date>2013-06-30T20:03:21Z</date>
+			<date>2013-09-08T19:08:46Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -106,28 +106,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>78</integer>
+				<integer>63</integer>
 				<key>line</key>
-				<integer>57</integer>
+				<integer>52</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>31</integer>
-		</dict>
-		<key>apx01Links.txt</key>
-		<dict>
-			<key>caret</key>
+			<integer>30</integer>
+			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>52</integer>
 			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>63</integer>
+				<key>line</key>
+				<integer>52</integer>
+			</dict>
 		</dict>
 		<key>biblio.txt</key>
 		<dict>
@@ -157,36 +159,6 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>definitions.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>2</integer>
-				<key>line</key>
-				<integer>65</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>65</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>5</integer>
-				<key>line</key>
-				<integer>65</integer>
-			</dict>
-		</dict>
 		<key>faq.txt</key>
 		<dict>
 			<key>caret</key>
@@ -201,6 +173,34 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>icam-main.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>97</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>304</integer>
+		</dict>
+		<key>icam.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>61</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>30</integer>
+		</dict>
 		<key>notation.txt</key>
 		<dict>
 			<key>caret</key>
@@ -208,12 +208,12 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>1245</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>1230</integer>
+			<integer>843</integer>
 		</dict>
 		<key>outils.txt</key>
 		<dict>
@@ -305,21 +305,13 @@
 	<key>openDocuments</key>
 	<array>
 		<string>Makefile</string>
-		<string>definitions.txt</string>
-		<string>apx01Links.txt</string>
-		<string>progSTI.txt</string>
-		<string>upsti.txt</string>
+		<string>icam-main.txt</string>
 		<string>notation.txt</string>
-		<string>outils.txt</string>
-		<string>conventions.txt</string>
-		<string>upsticookbook.txt</string>
-		<string>pacemaker.txt</string>
-		<string>biblio.txt</string>
-		<string>faq.txt</string>
+		<string>icam.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{10, 73}, {1006, 695}}</string>
+	<string>{{39, 74}, {763, 695}}</string>
 </dict>
 </plist>

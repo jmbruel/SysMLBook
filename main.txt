@@ -1,19 +1,16 @@
 //----------- Basic definitions for Asciidoc --------------
 :title: Introduction à SysML
 :doctype: book
-:description: Livre d'intro à SysML
+:description: Livre d'introduction à SysML
 :keywords: SysML Ingénierie Systèmes
 :Author: Jean-Michel Bruel 
 :Author Initials: JMB
 :Email: bruel@irit.fr
-:Revision: 1.2
+:Revision: 1.3
 :localdate: {sys: date +%d/%m/%Y}
 :date: {localdate}
 :startdate: 26/07/2012
-:images: images
 :dessins: dessins
-:acsi: /Users/bruel/dev/asciidoc/ACSI
-:defs: /Users/bruel/dev/asciidoc/ACSI/defs
 :toc_title: Table des matières
 :slideshowlocation: [IUT Blagnac]
 :duration: 85
@@ -30,129 +27,97 @@
 //fade, horizontal-slide, vertical-slide
 :deckjs_transition: horizontal-slide
 
-///////////////////////
-	AsciiDoc use `source-highlight` as default highlighter.
-
-	Styles available for pygment highlighter:
-	monokai, manni, perldoc, borland, colorful, default, murphy, vs, trac,
-	tango, fruity, autumn, bw, emacs, vim, pastie, friendly, native,
-
-	Uncomment following two lines if you want to highlight your code
-	with `Pygments`.
-///////////////////////
 //:pygments:
 //:pygments_style: native
-///////////////////////
-	Uncomment following line if you want to scroll inside slides
-	with {down,up} arrow keys.
-///////////////////////
 :scrollable:
-///////////////////////
-	Uncomment following line if you want to link css and js file 
-	from outside instead of embedding them into the output file.
-///////////////////////
 //:linkcss:
 
 = {title}
 
-// raccourcis sites
-:aadl: http://www.aadl.info/[AADL]indexterm:[AADL]
-:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]indexterm:[AsciiDoc]
-:doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
-:eclipse: http://www.eclipse.org[eclipse]indexterm:[eclipse]
-:marte: http://www.omgmarte.org/[MARTE]indexterm:[MARTE]
-:modelio: http://www.modeliosoft.com/[Modelio]
-:models: http://www.modelsconference.org/[MODELS]
-:moodle: http://webetud.iut-blagnac.fr[Moodle]
-:omg: http://www.omg.org[OMG(TM)]indexterm:[OMG(TM)]
-:pandoc: http://johnmacfarlane.net/pandoc/[Pandoc]
-:rapportPotier: http://www.industrie.gouv.fr/logiciel-embarque/Rapport-BGLE-final.pdf[Rapport Potier]
-:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]indexterm:[Rhapsody]
-:rtaw: http://www.realtimeatwork.com/[RTaW]indexterm:[RTaW]
-:slidy2: http://www.w3.org/Talks/Tools/Slidy2/[W3C HTML Slidy]
-:sosym: http://www.sosym.org[Software and System Modeling journal]
-:sym: http://www.omg.org/spec/SyM/[SysML-Modelica]indexterm:[Modelica]
-:sysml: http://www.omgsysml.org/[SysML(TM)]indexterm:[SysML(TM)]
-:sysmltrends: http://www.google.fr/trends/explore#q=sysml[SysML Trends]
-:topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
-:uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
+include::definitions.txt[]
 
-// data
-:eggstitle: Humour
-:STI2D: STI2D(((STI2D)))
-:Requirements: Requirements
-:Structure: Structure
-:Behavior: Comportement
-:Crosscutting: Transverse
-:organisation: Organisation
-:analysis: Analyse
-:design: Conception
-:implementation: Implémentation
-:resume: En résumé
-:revisions: Questions de révision
-:is: Ingénierie Système(((IS)))
-ifndef::uk[] 
-:stakeholders: parties prenantes 
-endif::uk[]
-:satisfy: +<<satisfy>>+
-:verify: +<<verify>>+
-	
-// personnes et institutions
-:afis: AFIS(((AFIS)))
-:agusti: Agusti Canals
-:dl: http://www.dept-info.ups-tlse.fr/index.php?option=com_content&view=article&id=294&Itemid=697&lang=fr[Master DL-SI]
-:incose: http://www.incose.org/[INCOSE]indexterm:[INCOSE]
-:irit: http://www.irit.fr[IRIT]
-:iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
-:jmi: Jean-Michel Inglebert
-:jmimail: jean-michel.inglebert@univ-tlse2.fr
-:karina: Karina Aguilar
-:loic: Loïc Féjoz
-:nico: Nicolas Belloir
-:nonne: Laurent Nonne
-:prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
-:pdss:  Pierre de Saqui Sannes
-:sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
-:univ-tlse: http://www.univ-toulouse.fr[Univesité de Toulouse]
-:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
-:uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
-:uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
-:ups: http://www.univ-tlse3.fr[UPS]
-:upsti: http://www.upsti.fr/[UPSTI]
-
-// SysML diagrams
-:seq: sd(((sd)))
-:sd: sd(((sd)))
-:bdd: bdd(((bdd)))
-:ibd: ibd(((ibd)))
-:act: act(((act)))
-:stm: stm(((stm)))
-:req: req(((req)))
-:uc: uc(((uc)))
-:pkg: pkg(((pkg)))
-:par: par(((par)))
-:dss: dss(((dss)))
 
 //Environnement
 :images: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images
 :icons: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons
 :plantuml: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/plantuml
+:defs: defs
+:acsi: /Users/bruel/Dropbox/Public/dev/ACSI/images/
 
-ifndef::backend-slidy2[]
+//------------------------------------- slides only --------------
+ifdef::backend-deckjs[]
 
+//================================================================
+// Plan
+//================================================================
+== Plan
+
+- Généralités
+- Survol global de SysML
+- Etude de cas pas à pas
+- Retour sur les diagrammes
+- Annexes
+
+endif::backend-deckjs[]
+
+//------------------------------------- book only ----------------
 ifdef::book[]
 
+//================================================================
+// Remerciements
+//================================================================
 [dedication]
 include::thanks.txt[]
 
+//================================================================
+// Préface
+//================================================================
 [preface]
 include::preface.txt[]
 
 endif::book[]
 
-= Partie 1 : Introduction
+//------------------------------------- slides only --------------
+ifdef::backend-deckjs[]
 
-endif::backend-slidy2[]
+== Qui suis-je ?
+
+- Professeur à l'{univ-tlse}
+- Co-fondateur de l'association {sysmlfrance}
+- Membre du comité éditorial de la revue _{sosym}_
+- Membre du _Steering Committee_ de la conférence ACM/IEEE {models}
+- Co-responsable de l'axe Systèmes Ambiants de l'{IRIT} 
+- Enseigne la modélisation depuis 1995
+
+image::logo-irit.png[width="50%"]
+
+== Objectifs et attentes
+
+- Formation à SysML pour novices
+- Réponses aux questions pour les moins novices
+- Conseils et démarche
+
+[icon="images/icons/tuxteacher.png"]
+[NOTE]
+====
+- Je me considère plus comme un collègue que comme un formateur.
+- Je ne maîtrise pas tout {sysml}.
+- Je suis novice en {MagicDraw}!
+- Je ne suis pas là pour vous dire ce que vous devez faire! 
+====
+endif::backend-deckjs[]
+
+//================================================================
+// Partie 1 : Introduction
+//================================================================
+
+ifndef::backend-deckjs[]
+
+ifdef::book[= Introduction]
+
+ifndef::book[= Partie 1 : Introduction]
+
+endif::backend-deckjs[]
 
 include::chap00AvantPropos.txt[]
 
@@ -164,45 +129,45 @@ include::sti2d.txt[]
 
 include::filRouge.txt[]
 
-ifndef::backend-slidy2[]
+ifndef::backend-deckjs[]
 
 = Partie 2 : Ingénierie système
 
-endif::backend-slidy2[]
+endif::backend-deckjs[]
 
 include::IS.txt[]
 
 
-ifndef::backend-slidy2[]
+ifndef::backend-deckjs[]
 
 = Partie 3 : La notation SysML
 
-endif::backend-slidy2[]
+endif::backend-deckjs[]
 
 include::notation.txt[]
 
-ifndef::backend-slidy2[]
+ifndef::backend-deckjs[]
 
 = Partie 4 : Modéliser un système en SysML
 
-endif::backend-slidy2[]
+endif::backend-deckjs[]
 
 include::cookbook.txt[]
 
-ifndef::backend-slidy2[]
+ifndef::backend-deckjs[]
 
 [[upsti]]
 = Partie 5 : Pédagogie
 
-endif::backend-slidy2[]
+endif::backend-deckjs[]
 
 include::upsti.txt[]
 
-ifndef::backend-slidy2[]
+ifndef::backend-deckjs[]
 
 = Partie 6 : Pour aller plus loin
 
-endif::backend-slidy2[]
+endif::backend-deckjs[]
 
 [[methodo]]
 == Considérations méthodologiques
@@ -295,16 +260,14 @@ endif::correction[]
 // APPENDIX
 //================================================================
 
-ifndef::backend-slidy2[]
+ifndef::backend-deckjs[]
 
 [[appendix]]
 = Annexes
 
-endif::backend-slidy2[]
+endif::backend-deckjs[]
 	
 include::apx01Links.txt[]
-
-include::conventions.txt[]
 
 /////
 == Historique de SysML
@@ -344,22 +307,43 @@ Quelques exemples de sujet propice au développement SysML.
 TBD...
 //////
 
+include::conventions.txt[]
+
 include::faq.txt[]
 
 include::biblio.txt[]
 
 include::glossary.txt[]
 
-ifndef::backend-slidy2[]
 ifdef::book[]
 
 [index]
 == Index
 
 endif::book[]
-endif::backend-slidy2[]
 
 
 include::about.txt[]
+
+
+[[conventions]]
+== Blabla
+Coucou
+
+[[uc]]
+== Blabla
+Coucou
+
+[[acteur]]
+== Blabla
+Coucou
+
+[[port13]]
+== Blabla
+Coucou
+
+[[SysML4STI2D]]
+== Blabla
+Coucou
 
 

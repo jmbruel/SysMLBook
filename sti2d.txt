@@ -11,6 +11,8 @@ L'objectif dans ces niveaux n'est pas de former des spécialistes de {SysML} mai
 A l'heure où nous écrivons ces lignes, il est en effet prévu de l'enseigner en classe prépa dès 2013.
 ====
 
+ifdef::backend-deckjs[:leveloffset: -1]
+
 === Utilisation pratique en STI2D
 
 Cet ouvrage est tout à fait utilisable dans le cadre des ces cours.
@@ -50,3 +52,4 @@ Notons que dans ce cadre là, les 9 diagrammes sont utilisables même si pour l'
 
 Les questions et exercices de fin de chapitres de la partie notation seront peut-être d'un niveau plus avancé pour servir véritablement d'exercices, mais pourront amener à une réflexion encadrée par l'enseignant. 
 
+ifdef::backend-deckjs[:leveloffset: 0]

@@ -1,6 +1,6 @@
 #-----------------------------------------------------
 MAIN=main
-ICONSDIR=/Users/bruel/dev/asciidoc/images/icons
+ICONSDIR=/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons
 IMAGESDIR=/Users/bruel/Dropbox/Public/dev/SysMLBook/images
 #-----------------------------------------------------
 
@@ -8,6 +8,7 @@ all: *.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
 	-a stylesheet=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/scribe.css \
+	-a imagesdir=$(IMAGESDIR) \
 	-a numbered $(MAIN).txt
 
 tout: tp deckjs sommaire ups slidy
@@ -66,6 +67,7 @@ deckjs:
 	@echo '==> Compiling asciidoc files to generate SLIDES'
 	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri -a numbered \
 	 -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 \
+	 -a imagesdir=$(IMAGESDIR) \
 	 -o $(MAIN).deckjs.html $(MAIN).txt
 
 #all: *.txt

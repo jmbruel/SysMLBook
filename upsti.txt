@@ -1,6 +1,4 @@
-ifdef::backend-deckjs[]
 :leveloffset: +1
-endif::backend-deckjs[]
 
 = Enseigner SysML
 
@@ -279,7 +277,5 @@ Il faut donc bien faire attention avec les extraits de norme.
 Quand on cite un extrait de la norme, citer le numéro de page du document papier et non celui du PDF.
 ====
 
-ifdef::backend-deckjs[]
 :leveloffset: 0
-endif::backend-deckjs[]
 

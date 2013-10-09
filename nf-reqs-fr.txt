@@ -1,4 +1,6 @@
-:leveloffset: 2
+ifdef::backend-deckjs[:leveloffset: -1]
+ifndef::backend-deckjs[:leveloffset: 2]
+
 Le système de gestion de crise doit montrer les suivants propriétés non-fonctionnelles :
 
 ifndef::book[]

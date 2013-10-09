@@ -1,7 +1,7 @@
-[bibliography]
 [[refs]]
-== Bibliographie
+== Références
 
+[bibliography]
 - [[[ENS2013]]] L. Gendre et J.-M. Virely, SysML. Tutoriel du 13/06/2013. ENS Cachan.
 - [[[FIO2012]]] Fiorèse S., Meinadier J., Découvrir et comprendre l’ingénierie système, AFIS 2012.
 - [[[FMS]]] A. Moore, R. Steiner, S. Friedenthal, A Practical Guide to SysML, The MK/OMG Press, MK/OMG Press, 2011 (2nd edition).

@@ -48,9 +48,7 @@ ifndef::backend-deckjs[]
 
 endif::backend-deckjs[]
 
-ifdef::backend-deckjs[]
-:leveloffset: -1
-endif::backend-deckjs[]
+ifdef::backend-deckjs[:leveloffset: -1]
 
 === Fiche d'identité
 
@@ -64,7 +62,7 @@ La figure <<liensdiag,suivante>>, tirée de la spécification, résume bien les 
 
 [[liensdiag]]
 .Liens entre UML et SysML
-ifdef::book[image::diff.png[scale=60]]
+ifdef::book[image::{images}/diff.png[scale=60]]
 ifndef::book[image::diff.png[width="60%"]]
 
 === Qui est "derrière"?
@@ -92,7 +90,7 @@ ifdef::book[]
 endif::book[]
 
 .Les 9 diagrammes SysML et leur lien avec UML
-ifdef::book[image::Figure4-1.png[scale=40]]
+ifdef::book[image::{images}/Figure4-1.png[scale=40]]
 ifndef::book[image::Figure4-1.png[width="90%"]]
 
 ifdef::backend-deckjs[=== Organisation (raccourcis)]
@@ -104,7 +102,7 @@ Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons sou
 endif::book[]
 
 .Version abrégée des diagrammes
-ifdef::book[image::Figure4-1-bis.png[scale=50]]
+ifdef::book[image::{images}/Figure4-1-bis.png[scale=50]]
 ifndef::book[image::Figure4-1-bis.png[width="90%"]]
 
 ifndef::backend-deckjs[]
@@ -193,7 +191,7 @@ Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Defin
 _package_, nommé "Context".  
 
 .Exemple de diagramme SysML
-ifdef::book[image::pacemaker-context.png[scale=45]]
+ifdef::book[image::{images}/pacemaker-context.png[scale=45]]
 ifndef::book[image::pacemaker-context.png[width="80%"]]
 
 .Convention : Utilisation systématique des cartouches
@@ -289,13 +287,13 @@ Les modèles peuvent être organisés selon toutes sortes de considération :
 ifdef::backend-slidy2[<<<]
 
 .Exemple d'organisation simple
-ifdef::book[image::pkg-organisation2.png[scale=40]]
+ifdef::book[image::{images}/pkg-organisation2.png[scale=40]]
 ifndef::book[image::pkg-organisation2.png[width="50%"]]
 
 ifdef::backend-slidy2[<<<]
 
 .Représentation de cette organisation dans un outil 
-ifdef::book[image::pkg-organisation-modelview.png[scale=50]]
+ifdef::book[image::{images}/pkg-organisation-modelview.png[scale=50]]
 ifndef::book[image::pkg-organisation-modelview.png[width="30%"]]
 
 ifdef::backend-slidy2[<<<]
@@ -308,7 +306,7 @@ endif::book[]
 ifdef::backend-slidy2[<<<]
 
 .Un autre exemple d'organisation
-ifdef::book[image::pkg-topcased.png[scale=40]]
+ifdef::book[image::{images}/pkg-topcased.png[scale=40]]
 ifndef::book[image::pkg-topcased.png[width="40%"]]
 
 ifdef::backend-slidy2[<<<]
@@ -476,7 +474,8 @@ A requirement is defined as a stereotype of UML Class..._
 //class TendreLaCorde <<requirement>>
 //---------------------------------------------------------------------
 
-image::plantuml/corde.png[]
+.Un _Requirement_ en SysML
+image::{images}/corde.png[]
 
 ==== Différents types d'organisation
 
@@ -521,7 +520,7 @@ _The tabular format is used to represent the requirements, their properties and 
 endif::backend-deckjs[]
 
 .Exemples tableau d'exigences (OMG SysML v1.3, p. 145)
-ifdef::book[image::req-table.png[scale=50]]
+ifdef::book[image::{images}/req-table.png[scale=50]]
 ifndef::book[image::req-table.png[width="70%"]]
 
 ifdef::backend-slidy2[<<<]
@@ -530,7 +529,7 @@ La plupart des outils modernes permettent le passage entre outils classiques de 
 et outils de modélisation {sysml} (comme {Modelio}, illustré ci-dessous).
 
 .Import Modelio de tableau d'exigences
-ifdef::book[image::req-modelio.png[scale=50]]
+ifdef::book[image::{images}/req-modelio.png[scale=50]]
 ifndef::book[image::req-modelio.png[width="80%"]]
 
 ifdef::backend-deckjs[]
@@ -570,7 +569,7 @@ ifdef::backend-deckjs[]
 endif::backend-deckjs[]
 
 .Exemples de relations entre exigences
-ifdef::book[image::req-exp1.png[scale=45]]
+ifdef::book[image::{images}/req-exp1.png[scale=45]]
 ifndef::book[image::req-exp1.png[width="50%"]]
 
 ifdef::backend-slidy2[<<<]
@@ -580,7 +579,7 @@ Il existe ensuite les relations entre les besoins et les autres éléments de mo
 dans la partie <<transvers,transverse>>.
 
 .Relations liées au _requirements_ dans TOPCASED
-ifdef::book[image::topcased-req-connections.png[scale=40]]
+ifdef::book[image::{images}/topcased-req-connections.png[scale=40]]
 ifndef::book[image::topcased-req-connections.png[width="20%"]]
 
 === Les _Requirements Diagrams_ 
@@ -588,7 +587,7 @@ ifndef::book[image::topcased-req-connections.png[width="20%"]]
 Voici un exemple de +{req}+ un peu plus étoffé, tiré de http://www.uml-sysml.org/sysml (voir aussi <<rationale>>) :
 
 .Exemples de composition d'exigences
-ifdef::book[image::hsuv-reqs1.png[scale=45]]
+ifdef::book[image::{images}/hsuv-reqs1.png[scale=45]]
 ifndef::book[image::hsuv-reqs1.png[width="90%"]]
 
 [[reqStereotypes]]
@@ -609,7 +608,7 @@ Il est possible d'annoter les éléments de modélisation en précisant les rais
 
 [[rationale]]
 .Exemples de _rationale_ et _problem_
-ifdef::book[image::hsuv-reqs2.png[scale=60]]
+ifdef::book[image::{images}/hsuv-reqs2.png[scale=60]]
 ifndef::book[image::hsuv-reqs2.png[width="90%"]]
 
 === Les considérations sur la traçabilité
@@ -630,7 +629,7 @@ Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comporte
 	ici du fait de leur proximité avec les _requirements_.
 
 .Exemple de lien entre _use case_ et _requirements_
-ifdef::book[image::req-uc-relation.png[scale=50]]
+ifdef::book[image::{images}/req-uc-relation.png[scale=50]]
 ifndef::book[image::req-uc-relation.png[width="40%"]]
 
 ifdef::backend-deckjs[=== Les _Use Case Diagrams_ (suite)]
@@ -638,7 +637,7 @@ ifdef::backend-deckjs[=== Les _Use Case Diagrams_ (suite)]
 Ce diagramme est exactement identique à celui d'{uml}.
 
 .Exemple de diagramme des cas d'utilisation
-ifdef::book[image::UCGestionNotes.png[scale=50]]
+ifdef::book[image::{images}/UCGestionNotes.png[scale=50]]
 ifndef::book[image::UCGestionNotes.png[width="70%"]]
 
 ifdef::backend-deckjs[=== Les _Use Case Diagrams_ (suite)]
@@ -680,7 +679,7 @@ des exigences et la modélisation du système lui-même (cf. <<sysmod>>).
 
 [[sysmod]]	
 .Exemple de démarche (_SYSMOD Zigzag pattern_)
-ifdef::book[image::zigzag.png[scale=30]]
+ifdef::book[image::{images}/zigzag.png[scale=30]]
 ifndef::book[image::zigzag.png[width="70%",link="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"]]
 
 === {revisions}
@@ -771,7 +770,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
 
 [[contextebdd]]
 .bdd du système dans son environnement
-ifdef::book[image::pacemaker-context.png[scale=50]]
+ifdef::book[image::{images}/pacemaker-context.png[scale=50]]
 ifndef::book[image::pacemaker-context.png[width="80%"]]
 
 ifdef::backend-deckjs[==== Principes de base (suite)]
@@ -795,7 +794,7 @@ ifdef::backend-deckjs[==== Principes de base (suite)]
 
 [[contraintes]]
 .Exemple de définition de contraintes
-ifdef::book[image::constraints.png[scale=50]]
+ifdef::book[image::{images}/constraints.png[scale=50]]
 ifndef::book[image::constraints.png[width="70%"]]
 
 
@@ -822,7 +821,7 @@ Les _values_ sont ce qui se rapproche le plus des attributs de classes UML.
 Pour associer un type aux valeurs, {SysML} propose de définir des _Value Types_.
 
 .Définition de _Value Types_.
-ifdef::book[image::valueType.png[scale=60]]
+ifdef::book[image::{images}/valueType.png[scale=60]]
 ifndef::book[image::valueType.png[width="60%"]]
 
 ==== Associations entre blocs
@@ -883,7 +882,7 @@ Attention, dans une cardinalité +M..N+, +M+ doit toujours être inférieur ou �
 ====
 
 .Exemple d'associtaion
-ifdef::book[image::cardinalite.png[scale=50]]
+ifdef::book[image::{images}/cardinalite.png[scale=50]]
 ifndef::book[image::cardinalite.png[width="50%"]]
 //[Clients]1..2--1..*[Comptes]
 
@@ -931,7 +930,7 @@ Un moyen simple en terme logiciel de déterminer si une association +A->B+ est u
 ====
 
 .Exemple de composition
-ifdef::book[image::compo.png[scale=50]]
+ifdef::book[image::{images}/compo.png[scale=50]]
 ifndef::book[image::compo.png[width="50%"]]
 //[<<block>>\nVoiture]++-1>[<<block>>\nMoteur]
 	
@@ -940,7 +939,7 @@ ifndef::book[image::compo.png[width="50%"]]
 Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de *généralisation*. À l'inverse, quand on constate qu'un bloc possède réellement plusieurs déclinaisons différentes et que l'on créé alors des blocs spécifiques, on parle alors de *spécialisation*.
 
 .Exemple de lien de généralisation/spécialisation
-ifdef::book[image::genspec.png[scale=50]]
+ifdef::book[image::{images}/genspec.png[scale=50]]
 ifndef::book[image::genspec.png[width="50%"]]
 //[<<block>>\nMoteur]^-[<<block>>\nMoteurExplosion], [<<block>>\nMoteur]^-[<<block>>\nMoteurElectrique]
 	
@@ -983,13 +982,13 @@ On représente les _parts_ comme des bloc en traits pleins
 et les _references_ comme des blocs en trait pointillés.
 
 .Exemple de _Parts_
-ifdef::book[image::parts.png[scale=35]]
+ifdef::book[image::{images}/parts.png[scale=35]]
 ifndef::book[image::parts.png[width="40%"]]
 
 ifdef::backend-slidy2[<<<]
 
 .Autre exemple de _Parts_
-ifdef::book[image::parts2.png[scale=50]]
+ifdef::book[image::{images}/parts2.png[scale=50]]
 ifndef::book[image::parts2.png[width="60%"]]
 
 ==== Ports (SysML 1.2)
@@ -1020,7 +1019,7 @@ Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaq
 ifdef::backend-deckjs[==== Ports (suite)]
 
 .Exemples de flots 
-ifdef::book[image::ports-flots.png[scale=40]]
+ifdef::book[image::{images}/ports-flots.png[scale=40]]
 ifndef::book[image::ports-flots.png[width="60%"]]
 
 .Définition : Ports (OMG SysML v1.3, p. 57)
@@ -1033,7 +1032,7 @@ _Ports are points at which external entities can connect to and interact with a 
 ifdef::backend-deckjs[==== Ports (suite)]
 
 .Exemples de flots multi-physique entre ports
-ifdef::book[image::flots.png[scale=50]]
+ifdef::book[image::{images}/flots.png[scale=50]]
 ifndef::book[image::flots.png[width="90%"]]
 
 ifdef::backend-deckjs[==== Ports (suite)]
@@ -1056,7 +1055,7 @@ la direction étant simplement indiquée par une flèche à l’intérieur du ca
 
 ==== Ports (SysML 1.3)
 
-La nouvelle spécification {norme} introduit donc les concepts de:
+La nouvelle spécification {norme} introduit les concepts de:
 
 _proxy port_::
 Ils doivent remplacer les ports 1.2 (ports de flots et ports standards) en en reprenant les caractéristiques
@@ -1068,6 +1067,11 @@ En fait il s'agit du même concept qu'une partie qui serait exposée à l'extér
 ifdef::backend-deckjs[]
 :leveloffset: -1
 endif::backend-deckjs[]
+
+[NOTE]
+====
+Pour une discussion sur les différences entre les deux ports : http://model-based-systems-engineering.com/2013/09/23/sysml-full-ports-versus-proxy-ports/
+====
 
 [[param]]
 === _Parametric Diagrams_
@@ -1091,7 +1095,7 @@ C'est un bloc particulier :
 - des relations liant (contraignant) ces paramètres
 
 .Exemple de contraintes
-ifdef::book[image::constraints.png[scale=50]]
+ifdef::book[image::{images}/constraints.png[scale=50]]
 ifndef::book[image::constraints.png[width="80%"]]
 
 .Définition : _ConstraintBlock_ (OMG SysML v1.3, p. 86)
@@ -1106,7 +1110,7 @@ _A constraint block is a block that packages the statement of a constraint so it
 C'est une forme particulière de _Internal Block Definition_
 
 .Exemple de diagramme paramétrique
-ifdef::book[image::param.png[scale=50]]
+ifdef::book[image::{images}/param.png[scale=50]]
 ifndef::book[image::param.png[width="90%"]]
 
 ==== _Value Binding_
@@ -1116,7 +1120,7 @@ Une fois les contraintes exprimées, il faut lier les paramètres (formels) à d
 Pour assigner des valeurs spécifiques, on utilise des _Block Configurations_;
 
 .Exemple de bloc de configuration
-ifdef::book[image::blockconf.png[scale=60]]
+ifdef::book[image::{images}/blockconf.png[scale=60]]
 ifndef::book[image::blockconf.png[width="90%", link="http://books.google.fr/books?id=8KY2YZIiXv0C&pg=PA174&lpg=PA174&dq=SYSml+%22block+configuration%22&source=bl&ots=ZdxokRYj6l&sig=PlDHvR8qGZC97W-C_08Yk9Xb1RY&hl=fr&sa=X&ei=1jizUOXKBsXAhAeinYHACg&ved=0CEEQ6AEwAg#v=onepage&q=SYSml%20%22block%20configuration%22&f=false"]]
 
 ifdef::backend-deckjs[]
@@ -1130,7 +1134,7 @@ Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} cl
 Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails. Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence classique (cf. section sur les <<seq>>).
 
 .Exemples de DSS
-ifdef::book[image::dss.png[scale=70]]
+ifdef::book[image::{images}/dss.png[scale=70]]
 ifndef::book[image::dss.png[width="70%"]]
 
 === {resume}
@@ -1237,13 +1241,14 @@ endif::backend-deckjs[]
 
 ==== Cas d'Utilisation (_Use Case_)
 
+.Exemple de cas d'utilisation
 include::{defs}/uc.txt[]
 
 ifdef::backend-deckjs[]
-image::plantuml/uc7.png[width="40%"]
-image::plantuml/uc3.png[width="40%"]
+image::{images}/uc7.png[width="40%"]
+image::{images}/uc3.png[width="40%"]
 endif::backend-deckjs[]
-image::plantuml/uc4.png[width="80%"]
+image::{images}/uc4.png[width="80%"]
 
 ==== Exemple de cas d'utilisation (UML)
 
@@ -1297,7 +1302,8 @@ prérogatives (notamment en terme d'utilisation du système) que le généralis�
 En général, une simple association relie acteurs et _Use Case_.
 On peut également orienter ces associations en plaçant une direction (flèche vide) au bout de l'association.
 
-image::plantuml/uc5.png[]
+.Relations orientées
+image::{images}/uc5.png[]
 
 ==== Relations entre _Use Case_
 
@@ -1315,7 +1321,7 @@ Généralisation::
 
 [[ucdiag]]
 .Notation dans le diagramme d'UC
-ifdef::book[image::UC.png[scale=80]]
+ifdef::book[image::{images}/UC.png[scale=80]]
 ifndef::book[image::UC.png["Diagramme d'UC",width="35%"]]
 
 [TIP]
@@ -1344,7 +1350,7 @@ ifndef::book[]
 
 [[ucexp2]]
 .Autre exemple de diagramme d'UC
-ifdef::book[image::uc2.png[scale=60]]
+ifdef::book[image::{images}/uc2.png[scale=60]]
 ifndef::book[image::uc2.png["Exemple de Diagramme d'UC",width="70%"]]
 
 endif::book[]
@@ -1403,7 +1409,7 @@ image::dsexp1.png[]
 
 [[seqexp]]
 .Exemple de diagramme de séquence (3)
-ifdef::book[image::seq3.png["Exemple de diagramme de séquence",scale=50]]
+ifdef::book[image::{images}/seq3.png["Exemple de diagramme de séquence",scale=50]]
 ifndef::book[image::seq3.png["Exemple de diagramme de séquence",width="60%"]]
 
 endif::book[]
@@ -1423,13 +1429,13 @@ ifdef::backend-deckjs[==== Notions avancées (suite)]
 
 [[fowler]]
 .Exemple d' algorithme...
-ifdef::book[image::fowl1.png["Un algorithme",scale=40]]
+ifdef::book[image::{images}/fowl1.png["Un algorithme",scale=40]]
 ifndef::book[image::fowl1.png["Un algorithme",width="30%"]]
 
 ifdef::backend-deckjs[==== Notions avancées (suite)]
 
 .Et le diagramme correpondant
-ifdef::book[image::fowl2.png["Sa modélisation",scale=60]]
+ifdef::book[image::{images}/fowl2.png["Sa modélisation",scale=60]]
 ifndef::book[image::fowl2.png["Sa modélisation",width="60%"]]
 
 ==== Exemple de conceptions
@@ -1445,14 +1451,14 @@ ifdef::backend-deckjs[==== Exemple de conceptions (suite)]
 
 [[fowler1]]
 .Conception "centralisée"
-ifdef::book[image::fowl3.png[scale=60]]
+ifdef::book[image::{images}/fowl3.png[scale=60]]
 ifndef::book[image::fowl3.png["Conception 'centralisée'",width="60%"]]
 
 ifdef::backend-deckjs[==== Exemple de conceptions (suite)]
 
 [[fowler2]]
 .Conception "objet"
-ifdef::book[image::fowl4.png[scale=60]]
+ifdef::book[image::{images}/fowl4.png[scale=60]]
 ifndef::book[image::fowl4.png["Conception 'objet'",width="60%"]]
 
 
@@ -1473,21 +1479,21 @@ ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
 
 [[exp1-uc]]
 .Diagramme d'UC
-ifdef::book[image::ucexp1.png[scale=50]]
+ifdef::book[image::{images}/ucexp1.png[scale=50]]
 ifndef::book[image::ucexp1.png["Diagramme d'UC",width="30%"]]
 
 ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
 
 [[exp1-dss]]
 .Le DSS correspondant
-ifdef::book[image::dssexp1.png[scale=50]]
+ifdef::book[image::{images}/dssexp1.png[scale=50]]
 ifndef::book[image::dssexp1.png["Le DSS correspondant",width="50%"]]
 
 ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
 
 [[exp1-ds]]
 .Le DS correspondant
-ifdef::book[image::dsexp1.png[scale=50]]
+ifdef::book[image::{images}/dsexp1.png[scale=50]]
 ifndef::book[image::dsexp1.png["Le DS correspondant",width="70%"]]
 
 ifdef::backend-deckjs[]
@@ -1509,7 +1515,7 @@ Le diagramme d’états comprend également deux *pseudo-états* :
 ifdef::backend-deckjs[==== Diagramme d'états (suite)]
 
 .Un exemple de diagramme d'état (R,UK)
-ifdef::book[image::stm1.png[scale=50]]
+ifdef::book[image::{images}/stm1.png[scale=50]]
 ifndef::book[image::stm1.png["Un diagramme d'état",width="70%"]]
 
 ifdef::backend-deckjs[==== Diagramme d'états (suite)]
@@ -1529,7 +1535,7 @@ Les diagrammes d'activité (_Activity Diagrams_) est utilisé pour représenter 
 Il est utilisé pour l’expression de la logique de contrôle et d’entrées/sorties. Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser, mais aussi ce qui est produit, consommé ou transformé au cours de l’exécution de cette activité.
 
 .Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
-ifdef::book[image::act-pcmk1.png[scale=40]]
+ifdef::book[image::{images}/act-pcmk1.png[scale=40]]
 ifndef::book[image::act-pcmk1.png[width="70%"]]
 
 ifdef::backend-deckjs[==== Diagramme d'activités (suite)]
@@ -1554,7 +1560,7 @@ Un *flot de contrôle* permet le contrôle de l’exécution des noeuds d'activi
 Le diagramme d’activité permet également d’utiliser des *flots d’objets* (reliant une action et un objet consommé ou produit). Les _object flow_, associés aux broches d'entrée/sortie (_input/output pin_) permettent alors de décrire les transformations sur les objets manipulés.
 
 .Un exemple de flot continu (UK)
-ifdef::book[image::act-flow-continuous.png[scale=50]]
+ifdef::book[image::{images}/act-flow-continuous.png[scale=50]]
 ifndef::book[image::act-flow-continuous.png["Un flot continu",width="30%"]]
 
 Pour permettre la modélisation des *flots continus*, {SysML} ajoute à {UML} la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.). 
@@ -1585,7 +1591,7 @@ La fusion est l’inverse de la décision : le même symbole du losange, mais ce
 
 [[Control]]
 .Les différents contrôles de flow SysML
-ifdef::book[image::flow-ctrl.png[scale=40]]
+ifdef::book[image::{images}/flow-ctrl.png[scale=40]]
 ifndef::book[image::flow-ctrl.png[width="20%"]]
 
 ifdef::backend-deckjs[]
@@ -1610,7 +1616,7 @@ Les activités peuvent être réutilisées à travers des actions d’appel (_ca
 L’action d’appel est représentée graphiquement par une fourche à droite de la boîte d’action, ainsi que par la chaîne : `nom d’action : nom d’activité`. {SysML} propose encore bien d’autres concepts et notations, comme la région interruptible, la région d’expansion ou encore les flots de type _stream_ qui sortent du cadre de ce livre d'introduction.
 
 .Exemple de _callBehaviorAction_ (UK)
-ifdef::book[image::act-call.png[scale=50]]
+ifdef::book[image::{images}/act-call.png[scale=50]]
 ifndef::book[image::act-call.png[width="20%"]]
 
 
@@ -1741,7 +1747,7 @@ C'est une forme particulière de _Internal Block Definition_ (cf. <<param>>). On
  (cf. <<contraintes>>), mais cette fois-ci on a la représentation graphique des liens entre les données.
 	
 .Exemple de diagramme paramétrique
-ifdef::book[image::param.png[scale=50]]
+ifdef::book[image::{images}/param.png[scale=50]]
 ifndef::book[image::param.png[width="90%"]]
 
 Il est regrettable que ce diagramme soit le moins utilisé (cf. <<enquete>>).
@@ -1787,3 +1793,4 @@ Encore plus je dirais, au sens où une exigence n'est couverte par aucune utilis
 
 endif::correction[]
 
+ifdef::backend-deckjs[:leveloffset: 0]

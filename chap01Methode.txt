@@ -1,10 +1,15 @@
+ifdef::backend-deckjs[:leveloffset: -1]
+
 === Méthode pour cet ouvrage
+
+ifndef::backend-deckjs[]
 
 [quote, Princesse Irulan, Extrait du Manuel de Muad’Dib]
 ____________________________________________________________________
 C’est à l’heure du commencement qu’il faut tout particulièrement veiller à ce que les équilibres soient précis.
 ____________________________________________________________________
 
+endif::backend-deckjs[]
 
 Mon approche pédagogique repose sur quelques principes, que j'ai essayé de mettre en oeuvre dans
 cet ouvrage :
@@ -15,14 +20,14 @@ La répétition::
 L'illustration::
 	Dans la mesure du possible, j'essaye de donner des exemples aux principes énoncés. Vous trouverez donc plus d'exemples que de définitions.
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Méthode pour cet ouvrage (suite)]
 
 Le référencement::
 	Les définitions ou autres affirmations sont tirées d'ouvrages de référence généralement citées.
 La "carte de base"::
 	J'aime réaliser une "carte" footnote:[voir aussi le concept de _Mind Maps_.] qui sert à "placer" les différents concepts abordés. Il me semble que cela permet aux étudiants de raccrocher les nouveaux concepts aux précédents.
 
-ifdef::backend-slidy2[<<<]
+ifdef::backend-deckjs[=== Méthode pour cet ouvrage (suite)]
 
 Aucune connaissance particulière d'{uml} n'est nécessaire, même si j'y fais référence à plusieurs endroits pour les étudiants qui connaissent cette notation (quasiment enseignée partout maintenant comme langage de modélisation).
 Il s'agit d'un parti pris prenant en compte plusieurs points :
@@ -31,3 +36,4 @@ Il s'agit d'un parti pris prenant en compte plusieurs points :
 - Les étudiants de STI2D ou de prepa ne connaissent pas {uml} et sont pourtant formés à {sysml}.
 - Ceux qui connaissent déjà {uml} auront sûrement plaisir à retrouver les bases.
 
+ifdef::backend-deckjs[:leveloffset: 0]

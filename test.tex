@@ -37,7 +37,7 @@
 \renewcommand{\DBKrevhistory}{}
 \setcounter{tocdepth}{0}
 \setcounter{secnumdepth}{1}
-\renewcommand{\DBKdate}{02/06/2013}
+\renewcommand{\DBKdate}{04/09/2013}
 \title{Introduction à SysML}
 \author{Jean-{}Michel Bruel}
 \hypersetup{%
@@ -82,8 +82,8 @@ Exemple de préface…
 % PART
 %
 
-\part{Partie 1 : Introduction}
-\label{_partie_1_introduction}\hyperlabel{_partie_1_introduction}%
+\part{Introduction}
+\label{_introduction}\hyperlabel{_introduction}%
 
 % ------- 
 % Chapter 
@@ -114,7 +114,7 @@ Si vous appartenez à l’une de ces catégories, ce livre \textbf{n’est pas p
 
 
 
-\item{} vous souhaitez préparer la certification de l’\href{http://www.omg.org}{OMG}\index{OMG} (mieux vaut vous plonger dans la spécification \hyperlink{SysML}{[SysML]})
+\item{} vous souhaitez préparer la certification de l’\href{http://www.omg.org}{OMG™}\index{OMG} (mieux vaut vous plonger dans la spécification \hyperlink{SysML}{[SysML]})
 
 
 \end{itemize}
@@ -122,7 +122,7 @@ Si vous appartenez à l’une de ces catégories, ce livre \textbf{n’est pas p
 \subsection{Historique}
 \label{_historique}\hyperlabel{_historique}%
 
-Ce document est la compilation de plusieurs années d’enseignement de \href{http://www.omgsysml.org/}{SysML}\index{SysML} depuis 2007, que ce soit :
+Ce document est la compilation de plusieurs années d’enseignement de \href{http://www.omgsysml.org/}{SysML™}\index{SysML} depuis 2007, que ce soit :
 \begin{itemize}
 
 \item{} au \href{http://dep-informatique.univ-pau.fr/live/masterTI}{Master TI}, de l’\href{http://www.univ-pau.fr/}{Université de Pau et des Pays de l’Adour} (cours d’introduction avec mon collègue et ami Nicolas Belloir),
@@ -150,7 +150,7 @@ Ce document est la compilation de plusieurs années d’enseignement de \href{ht
 
 \end{itemize}
 
-Vous trouverez en référence (cf. \hyperlink{refs}{Bibliographie}) les ouvrages et autres documents utilisés.
+Vous trouverez en référence (cf. \hyperlink{refs}{Références}) les ouvrages et autres documents utilisés.
 
 \section{Sur l’auteur}
 \label{_sur_l_8217_auteur}\hyperlabel{_sur_l_8217_auteur}%
@@ -163,7 +163,7 @@ Vous trouverez en référence (cf. \hyperlink{refs}{Bibliographie}) les ouvrages
 
 
 
-\item{} Membre du comité éditorial de la revue \emph{\href{http://www.sosym.org}{Software and System Modeling journal}} depuis sa création en 2002
+\item{} Membre du comité éditorial de la revue \emph{\href{http://www.sosym.org/}{SoSyM}} depuis sa création en 2002
 
 
 
@@ -209,7 +209,7 @@ utile possible, grâce notamment à la puissance d’\href{http://www.methods.co
 
 
 \item{} des références bibliographiques, présentées en fin de document
-(cf. \hyperlink{refs}{Bibliographie}),
+(cf. \hyperlink{refs}{Références}),
 
 
 
@@ -242,13 +242,30 @@ Celles-{}ci concernent en général des points de détail et permettent "d’all
 \end{DBKadmonition}
 \begin{DBKadmonition}{images/icons/note.png}{Définition : Exemple (OMG SysML v1.3, p. 152)}
 
-Ces notes concernent des définitions tirées de la spécification \href{http://www.omgsysml.org/}{SysML}\index{SysML} et sont donc précisément référencées.
+Ces notes concernent des définitions tirées de la spécification \href{http://www.omgsysml.org/}{SysML™}\index{SysML} et sont donc précisément référencées.
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Convention : Titre du conseil spécifique}
+
+Conseil spécifique aux formateurs.
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+Modélisation SysML incorrecte.
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+Modélisation SysML partiellement correcte ou pouvant prêter à confusion.
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+Modélisation SysML correcte.
 \end{DBKadmonition}
 
 \subsection{Pourquoi parler de "document"?}
 \label{_pourquoi_parler_de_document}\hyperlabel{_pourquoi_parler_de_document}%
 
-Parce que j’ignore la version que vous êtes en train de lire. A partir de l’\href{main.txt}{original}, plusieurs versions ont été générées grâce à \href{http://www.methods.co.nz/asciidoc}{AsciiDoc}\index{AsciiDoc} :
+Parce que j’ignore la version que vous êtes en train de lire. À partir de l’original,
+plusieurs versions ont été générées grâce à \href{http://www.methods.co.nz/asciidoc}{AsciiDoc}\index{AsciiDoc} :
 \begin{itemize}
 
 \item{} pour le web (nous utilisons à l’\href{http://www.iut-blagnac.fr/}{IUT de Blagnac} l’excellent \href{http://webetud.iut-blagnac.fr}{Moodle}) au format \href{http://www.sysml.fr/main}{html} 
@@ -272,11 +289,10 @@ Parce que j’ignore la version que vous êtes en train de lire. A partir de l�
 
 \begin{sidebar}
 
-Dernière MAJ : 02/06/2013 -{} 22:43:14 CEST\newline
+Dernière MAJ : 04/09/2013 -{} 19:54:36 CEST\newline
  Document généré par \href{mailto:bruel@irit.fr}{Jean-{}Michel Bruel} via \href{http://www.methods.co.nz/asciidoc}{AsciiDoc}\index{AsciiDoc} (version \texttt{8.\penalty0 6.\penalty0 8}) de \emph{Stuart Rackham}.
-La version présentation a été générée en utilisant \href{http://www.w3.org/Talks/Tools/Slidy2/}{W3C HTML Slidy} © de \emph{Dave Raggett}, amélioré par \href{mailto:jean-michel.inglebert@univ-tlse2.fr}{Jean-{}Michel Inglebert}.
 Pour l’instant ce document est libre d’utilisation et géré par la \emph{Licence Creative Commons}.
-\noindent\imgexists{images/88x31.png}{{\imgevalsize{images/88x31.png}{\includegraphics[scale=0.3]{images/88x31.png}}}}{images/88x31.png} \href{http://creativecommons.org/licenses/by-sa/3.0/}{licence Creative Commons Paternité -{} Partage à l'Identique 3.0 non transposé}.
+\noindent\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/88x31.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/88x31.png}{\includegraphics[scale=0.3]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/88x31.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/88x31.png} \href{http://creativecommons.org/licenses/by-sa/3.0/}{licence Creative Commons Paternité -{} Partage à l'Identique 3.0 non transposé}.
 \end{sidebar}
 
 N’hésitez pas à m’envoyer vos remarques en tout genre en m'écrivant à \href{mailto:bruel@irit.fr}{bruel@irit.fr}.
@@ -316,19 +332,19 @@ voir aussi le concept de \emph{Mind Maps}.
 
 \end{description}
 
-Aucune connaissance particulière d’\href{http://www.uml.org/}{UML}\index{UML} n’est nécessaire, même si j’y fais référence à plusieurs endroits pour les étudiants qui connaissent cette notation (quasiment enseignée partout maintenant comme langage de modélisation).
+Aucune connaissance particulière d’\href{http://www.uml.org/}{UML™}\index{UML™} n’est nécessaire, même si j’y fais référence à plusieurs endroits pour les étudiants qui connaissent cette notation (quasiment enseignée partout maintenant comme langage de modélisation).
 Il s’agit d’un parti pris prenant en compte plusieurs points :
 \begin{itemize}
 
-\item{} La plupart des ingénieurs systèmes ne connaissent pas \href{http://www.uml.org/}{UML}\index{UML}.
+\item{} La plupart des ingénieurs systèmes ne connaissent pas \href{http://www.uml.org/}{UML™}\index{UML™}.
 
 
 
-\item{} Les étudiants de STI2D ne connaissent pas \href{http://www.uml.org/}{UML}\index{UML} et sont pourtant formés à \href{http://www.omgsysml.org/}{SysML}\index{SysML}.
+\item{} Les étudiants de STI2D ou de prepa ne connaissent pas \href{http://www.uml.org/}{UML™}\index{UML™} et sont pourtant formés à \href{http://www.omgsysml.org/}{SysML™}\index{SysML}.
 
 
 
-\item{} Ceux qui connaissent \href{http://www.uml.org/}{UML}\index{UML} auront sûrement plaisir à retrouver les bases.
+\item{} Ceux qui connaissent déjà \href{http://www.uml.org/}{UML™}\index{UML™} auront sûrement plaisir à retrouver les bases.
 
 
 \end{itemize}
@@ -353,7 +369,7 @@ Si vous ne deviez lire qu’un seul chapitre, voilà ce qu’il faudrait retenir
 
 
 
-\item{} Première spécification adoptée à l’\href{http://www.omg.org}{OMG}\index{OMG} : 19 septembre 2007
+\item{} Première spécification adoptée à l’\href{http://www.omg.org}{OMG™}\index{OMG} : 19 septembre 2007
 
 
 
@@ -361,7 +377,7 @@ Si vous ne deviez lire qu’un seul chapitre, voilà ce qu’il faudrait retenir
 
 
 
-\item{} Paternité : \href{http://www.omg.org}{OMG}\index{OMG}/\href{http://www.uml.org/}{UML}\index{UML} + \href{http://www.incose.org/}{INCOSE}\index{INCOSE} 
+\item{} Paternité : \href{http://www.omg.org}{OMG™}\index{OMG}/\href{http://www.uml.org/}{UML™}\index{UML™} + \href{http://www.incose.org/}{INCOSE}\index{INCOSE} 
 
 
 \item{} Auteurs principaux :
@@ -436,12 +452,12 @@ Si vous ne deviez lire qu’un seul chapitre, voilà ce qu’il faudrait retenir
 \end{itemize}
 
 
-\item{} Diagramme d’exigence (\texttt{req\index{req}})
+\item{} Diagramme d’exigence (\texttt{\texttt{req}\index{req}})
 
 
 \end{itemize}
-\item[{ Un profil \href{http://www.uml.org/}{UML}\index{UML} }] \hspace{0em}\\
-         C’est à dire une \textbf{extension} de cette notation, un ensemble de nouveaux concepts et éléments qui sont définis à partir des éléments de base d’\href{http://www.uml.org/}{UML}\index{UML}. Un exemple : le \texttt{bloc} qui n’est qu’une redéfinition de la \texttt{cla\penalty5000 sse}.
+\item[{ Un profil \href{http://www.uml.org/}{UML™}\index{UML™} }] \hspace{0em}\\
+         C’est à dire une \textbf{extension} de cette notation, un ensemble de nouveaux concepts et éléments qui sont définis à partir des éléments de base d’\href{http://www.uml.org/}{UML™}\index{UML™}. Un exemple : le \texttt{bloc} \href{http://www.omgsysml.org/}{SysML™}\index{SysML} n’est qu’une redéfinition de la \texttt{cla\penalty5000 sse} \href{http://www.uml.org/}{UML™}\index{UML™}.
 
 \item[{ Une notation
 }] \hspace{0em}\\
@@ -456,27 +472,31 @@ Si vous ne deviez lire qu’un seul chapitre, voilà ce qu’il faudrait retenir
 \begin{description}
 \item[{ Une méthode
 }] \hspace{0em}\\
-         En effet, contrairement à ce que beaucoup pensent en l’abordant, \href{http://www.omgsysml.org/}{SysML}\index{SysML} ne propose pas de démarche particulière de développement de système. C’est à la fois sa force (votre méthode existante pourra continuer à être utilisée) comme sa faiblesse car cette absence de guide méthodologique fait souvent défaut à son utilisation.
+         En effet, contrairement à ce que beaucoup pensent en l’abordant, \href{http://www.omgsysml.org/}{SysML™}\index{SysML} ne propose pas de démarche particulière de développement de système. C’est à la fois sa force (votre méthode existante pourra continuer à être utilisée) comme sa faiblesse car cette absence de guide méthodologique fait souvent défaut à son utilisation.
 
 \item[{ Un outil
 }] \hspace{0em}\\
-         Nous verrons en effet que \href{http://www.omgsysml.org/}{SysML}\index{SysML} ne fait que ce qu’on veut bien en faire. Comme tout langage il est limité dans son pouvoir d’expression, mais surtout il reste une simple notation qu’il convient d’utiliser avec des outils et des démarches associées.
+         Nous verrons en effet que \href{http://www.omgsysml.org/}{SysML™}\index{SysML} ne fait que ce qu’on veut bien en faire. Comme tout langage il est limité dans son pouvoir d’expression, mais surtout il reste une simple notation qu’il convient d’utiliser avec des outils et des démarches associées.
 
 \item[{ Un raton laveur
 }] \hspace{0em}\\
          C’est juste pour voir ceux qui suivent. \index{Raton laveur} 
 \end{description}
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+On ne dit pas "le SysML" mais tout simplement "SysML".
+\end{DBKadmonition}
 
 \section{Références et liens utiles}
 \label{_références_et_liens_utiles}\hyperlabel{_références_et_liens_utiles}%
 
-Vous trouverez en fin d’ouvrage un ensemble de liens utiles (cf. Chapitre \ref{liens}) et de références (cf. \hyperlink{refs}{Bibliographie}). Sinon, vous pouvez aussi constatez les évolutions de l’intérêt pour \href{http://www.omgsysml.org/}{SysML}\index{SysML} grâce aux "\emph{trends}". Voici les dernières tendances au moment où nous écrivons ces lignes\footnote{
+Vous trouverez en fin d’ouvrage un ensemble de liens utiles (cf. Chapitre \ref{liens}) et de références (cf. \hyperlink{refs}{Références}). Sinon, vous pouvez aussi constatez les évolutions de l’intérêt pour \href{http://www.omgsysml.org/}{SysML™}\index{SysML} grâce aux "\emph{trends}". Voici les dernières tendances au moment où nous écrivons ces lignes\footnote{
 Ou bien utilisez les URLs comme \href{http://www.google.fr/trends/explore\#q=sysml}{http://www.google.fr/\-trends/\-explore\#q=sysml}.
 } :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/twitter2012.png}{{\imgevalsize{images/twitter2012.png}{\includegraphics[scale=0.5]{images/twitter2012.png}}}}{images/twitter2012.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/twitter2012.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/twitter2012.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/twitter2012.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/twitter2012.png}
 \end{center}
 \caption{\emph{Trends} : Twitter}
 \end{figure}
@@ -487,25 +507,25 @@ On y voit les journées SysML 2012 (Toulouse et Mulhouse).
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/google2012-1.png}{{\imgevalsize{images/google2012-1.png}{\includegraphics[scale=0.4]{images/google2012-1.png}}}}{images/google2012-{}1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-1.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-{}1.png}
 \end{center}
 \caption{\emph{Trends} : Google (Carte)}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/google2012-3.png}{{\imgevalsize{images/google2012-3.png}{\includegraphics[scale=0.5]{images/google2012-3.png}}}}{images/google2012-{}3.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-3.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-3.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-3.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/google2012-{}3.png}
 \end{center}
 \caption{Effet SysML-{}France?}
 \end{figure}
 
-À noter également que l’\href{http://www.omg.org}{OMG}\index{OMG} a réalisé en 2009 une enquête sur l’utilisation de \href{http://www.omgsysml.org/}{SysML}\index{SysML}\footnote{
+À noter également que l’\href{http://www.omg.org}{OMG™}\index{OMG} a réalisé en 2009 une enquête sur l’utilisation de \href{http://www.omgsysml.org/}{SysML™}\index{SysML}\footnote{
 \href{http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf}{http://www.omgsysml.org/\-SysML\_2009\_RFI\_Response\_Summary-{}bone-{}cloutier.pdf}
 } dont voici deux extraits :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/survey2.png}{{\imgevalsize{images/survey2.png}{\includegraphics[scale=0.5]{images/survey2.png}}}}{images/survey2.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey2.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey2.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey2.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey2.png}
 \end{center}
 \caption{Principaux domaines d’utilisation}
 \label{domaines}\hyperlabel{domaines}%
@@ -513,7 +533,7 @@ On y voit les journées SysML 2012 (Toulouse et Mulhouse).
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/survey4.png}{{\imgevalsize{images/survey4.png}{\includegraphics[scale=0.5]{images/survey4.png}}}}{images/survey4.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey4.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey4.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey4.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/survey4.png}
 \end{center}
 \caption{Diagrammes les plus utilisés}
 \label{enquete}\hyperlabel{enquete}%
@@ -523,25 +543,25 @@ On y voit les journées SysML 2012 (Toulouse et Mulhouse).
 % Chapter 
 % ------- 
 
-\chapter{A propos du Bac STI2D}
+\chapter{À propos du Bac STI2D et des classes prépas}
 \label{STI2D}\hyperlabel{STI2D}%
 
-Si vous utilisez cet ouvrage dans le cadre du bac STI2D\index{STI2D} (Sciences et Technologies de l’Industrie et du Développement Durable) qui a introduit depuis 2011 la notation \href{http://www.omgsysml.org/}{SysML}\index{SysML} au programme, nous donnons
+Si vous utilisez cet ouvrage dans le cadre du bac STI2D\index{STI2D} (Sciences et Technologies de l’Industrie et du Développement Durable) qui a introduit depuis 2011 la notation \href{http://www.omgsysml.org/}{SysML™}\index{SysML} au programme ou encore dans le cadre des classes préparatoires aux écoles d’ingénieur qui devraient l’adopter bientôt, nous donnons
 ici des conseils sur l’utilisation de ce cours \footnote{
 Je remercie au passage les collègues de Lycée rencontrés dans le cadre de \href{http://www.sysml-france.fr}{SysML-{}France}\index{SysML-{}France} pour nos fructueuses discussions à ce sujet.
 }.
 
-L’objectif en STI2D\index{STI2D} n’est pas de former des spécialistes de \href{http://www.omgsysml.org/}{SysML}\index{SysML} mais de permettre à tous d’apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l’importance de la communication devront primer.
+L’objectif dans ces niveaux n’est pas de former des spécialistes de \href{http://www.omgsysml.org/}{SysML™}\index{SysML} mais de permettre à tous d’apprendre une notation pour la modélisation de système qui se veut universelle. Il ne faut donc pas viser la complétude ou même demander trop de détails. La logique de la démarche de modélisation et l’importance de la communication devront primer.
 \begin{DBKadmonition}{images/icons/note.png}{Note}
 
-A l’heure où nous écrivons ces lignes, il est également prévu de l’enseigner en classe prépa dès 2013.
+A l’heure où nous écrivons ces lignes, il est en effet prévu de l’enseigner en classe prépa dès 2013.
 \end{DBKadmonition}
 
-\section{Utilisation pratique}
-\label{_utilisation_pratique}\hyperlabel{_utilisation_pratique}%
+\section{Utilisation pratique en STI2D}
+\label{_utilisation_pratique_en_sti2d}\hyperlabel{_utilisation_pratique_en_sti2d}%
 
-Cet ouvrage est tout à fait utilisable dans le cadre des cours dispensés en STI2D\index{STI2D}.
-Seul un sous-{}ensemble des diagrammes de \href{http://www.omgsysml.org/}{SysML}\index{SysML} a été retenu.
+Cet ouvrage est tout à fait utilisable dans le cadre des ces cours.
+Pour STI2D\index{STI2D}, seul un sous-{}ensemble des diagrammes de \href{http://www.omgsysml.org/}{SysML™}\index{SysML} a été retenu.
 Les élèves et les enseignants du bac STI2D\index{STI2D} pourront trouver dans ce document des
 éléments utiles sur ces diagrammes :
 \begin{itemize}
@@ -574,7 +594,7 @@ Les élèves et les enseignants du bac STI2D\index{STI2D} pourront trouver dans 
 Ces 6 diagrammes sont tous traités dans cet ouvrage à un niveau qui devrait correspondre
 à l’utilisation qui en est faite en STI2D\index{STI2D}.
 
-Ces 6 diagrammes servent trois objectifs principaux inscrits au programme et dont les
+Ils servent trois objectifs principaux inscrits au programme et dont les
 élèves pourront également trouver des éléments de réflexion :
 \begin{itemize}
 
@@ -590,13 +610,22 @@ Ces 6 diagrammes servent trois objectifs principaux inscrits au programme et don
 
 
 \end{itemize}
+\begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
+
+Un blog récent recense les supports en liens avec STI2D\index{STI2D} : \href{http://www.scoop.it/t/formation-sysml-sti2d}{http://www.scoop.it/\-t/\-formation-{}sysml-{}sti2d}.
+\end{DBKadmonition}
+
+\section{Classe préparatoire et UPSTI}
+\label{_classe_préparatoire_et_upsti}\hyperlabel{_classe_préparatoire_et_upsti}%
+
+L’Union des Professeurs de Sciences et Techniques Industrielles (\href{http://www.upsti.fr/}{UPSTI}) prépare à leur où nous écrivons ces lignes un document de cadrage en terme de méthodologie et de démarche. Nous n’insisterons donc pas sur ces aspects, mais donnerons quelques pistes dans le chapitre commun sur les conseils d’enseignement \hyperlink{upsti}{Pédagogie}.
+
+Notons que dans ce cadre là, les 9 diagrammes sont utilisables même si pour l’instant les diagrammes paramétriques et de paquetages sont un peu mis en retrait.
 
 \section{Pour aller plus loin}
 \label{_pour_aller_plus_loin}\hyperlabel{_pour_aller_plus_loin}%
 
-Les questions et exercices de fin de chapitres de la partie notation seront peut-{}être d’un niveau plus avancé pour servir véritablement d’exercices, mais pourront amener  à une réflexion encadrée par l’enseignant.
-
-Un blog récent recense les supports en liens avec STI2D\index{STI2D} : \href{http://www.scoop.it/t/formation-sysml-sti2d}{http://www.scoop.it/\-t/\-formation-{}sysml-{}sti2d}.
+Les questions et exercices de fin de chapitres de la partie notation seront peut-{}être d’un niveau plus avancé pour servir véritablement d’exercices, mais pourront amener à une réflexion encadrée par l’enseignant.
 
 % ------- 
 % Chapter 
@@ -612,17 +641,17 @@ donnés en annexe (cf. \hyperlink{appendix}{Annexes}).
 Il existe un certain nombre d’autres exemple complets :
 \begin{itemize}
 
-\item{} Le radio-{}réveil de \href{http://www.dotnetguru2.org/proques/index.php}{Pascal Roques} \hyperlink{Roques2010}{[Roques2010]}, un exemple simpliste mais didactique  qui a le mérite d'être déjà connu des modeleurs \href{http://www.uml.org/}{UML}\index{UML} qui ont lu ses livres.
+\item{} Le radio-{}réveil de \href{http://www.dotnetguru2.org/proques/index.php}{Pascal Roques} \hyperlink{Roques2010}{[Roques2010]}, un exemple simpliste mais didactique  qui a le mérite d'être déjà connu des modeleurs \href{http://www.uml.org/}{UML™}\index{UML™} qui ont lu ses livres.
 
 
 
-\item{} Le distilleur de \hyperlink{FMS}{[FMS]}, un exemple très complet et lui aussi très connu car beaucoup utilisé dans les tutoriels issus de l’\href{http://www.omg.org}{OMG}\index{OMG}.
+\item{} Le distilleur de \hyperlink{FMS}{[FMS]}, un exemple très complet et lui aussi très connu car beaucoup utilisé dans les tutoriels issus de l’\href{http://www.omg.org}{OMG™}\index{OMG}.
 
 
 
 \item{} Le pacemaker de \hyperlink{SeeBook2012}{[SeeBook2012]}\footnote{
-Nous avons réalisé le chapitre d’introduction à \href{http://www.omgsysml.org/}{SysML}\index{SysML} de cet ouvrage.
-}, un exemple très récent et dont l’avantage est d'être traité selon plusieurs approches différentes et complémentaires (\href{http://www.omgsysml.org/}{SysML}\index{SysML}, \href{http://www.aadl.info/}{AADL}\index{AADL} et \href{http://www.omgmarte.org/}{MARTE}\index{MARTE}).
+Nous avons réalisé le chapitre d’introduction à \href{http://www.omgsysml.org/}{SysML™}\index{SysML} de cet ouvrage.
+}, un exemple très récent et dont l’avantage est d'être traité selon plusieurs approches différentes et complémentaires (\href{http://www.omgsysml.org/}{SysML™}\index{SysML}, \href{http://www.aadl.info/}{AADL}\index{AADL} et \href{http://www.omgmarte.org/}{MARTE}\index{MARTE}).
 
 
 \end{itemize}
@@ -644,7 +673,7 @@ délai raisonnable.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/CMS.png}{{\imgevalsize{images/CMS.png}{\includegraphics[scale=0.7]{images/CMS.png}}}}{images/CMS.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/CMS.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/CMS.png}{\includegraphics[scale=0.7]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/CMS.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/CMS.png}
 \end{center}
 \caption{Le système CMS}
 \end{figure}
@@ -941,7 +970,7 @@ Le système de gestion de crise doit montrer les suivants propriétés non-{}fon
 % ------- 
 
 \chapter{Introduction}
-\label{_introduction}\hyperlabel{_introduction}%
+\label{_introduction_2}\hyperlabel{_introduction_2}%
 
 La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-{}ci :
@@ -1050,11 +1079,11 @@ Dans un axe horizontal, j’ai différencié quatre grands points de vue :
 \begin{description}
 \item[{ Requirements
 }] \hspace{0em}\\
-         Les exigences et leur prises en compte sont un éléments critique pour le succès du développement du système. Sans explorer l’ensemble des activités d’ingénierie système (ce qui nécessiterait tout un volume du type de Chapitre \ref{reqs}) nous insisterons beaucoup sur cet aspect qui est souvent à l’origine de l’intérêt de \href{http://www.omgsysml.org/}{SysML}\index{SysML}.
+         Les exigences et leur prises en compte sont un éléments critique pour le succès du développement du système. Sans explorer l’ensemble des activités d’ingénierie système (ce qui nécessiterait tout un volume du type de Chapitre \ref{reqs}) nous insisterons beaucoup sur cet aspect qui est souvent à l’origine de l’intérêt de \href{http://www.omgsysml.org/}{SysML™}\index{SysML}.
 
 \item[{ Structure
 }] \hspace{0em}\\
-         La description de l’architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important. C’est souvent la partie de \href{http://www.omgsysml.org/}{SysML}\index{SysML} qui pose le moins de problème aux débutants.
+         La description de l’architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important. C’est souvent la partie de \href{http://www.omgsysml.org/}{SysML™}\index{SysML} qui pose le moins de problème aux débutants.
 
 \item[{ Comportement
 }] \hspace{0em}\\
@@ -1103,7 +1132,7 @@ Dans un axe vertical, j’ai différencié quatre grandes phases du cycle de vie
 \chapter{Différence avec l’ingénierie logicielle}
 \label{_différence_avec_l_8217_ingénierie_logicielle}\hyperlabel{_différence_avec_l_8217_ingénierie_logicielle}%
 
-Enseignant en informatique, je me retrouve souvent à enseigner \href{http://www.omgsysml.org/}{SysML}\index{SysML} à des informaticiens.
+Enseignant en informatique, je me retrouve souvent à enseigner \href{http://www.omgsysml.org/}{SysML™}\index{SysML} à des informaticiens.
 D’où ce petit exposé sur mon opinion de la différence entre les deux "mondes".
 
 \section{Une ingénierie plus ancienne}
@@ -1140,7 +1169,7 @@ On parle de système complexe lorsque l’on a affaire à :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/starwars.jpeg}{{\imgevalsize{images/starwars.jpeg}{\includegraphics[scale=0.6]{images/starwars.jpeg}}}}{images/starwars.jpeg}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars.jpeg}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars.jpeg}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars.jpeg}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars.jpeg}
 \end{center}
 \caption{Un système complexe}
 \end{figure}
@@ -1163,7 +1192,7 @@ On parle aussi de \textbf{Système de systèmes} quand un système :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/starwars2.jpeg}{{\imgevalsize{images/starwars2.jpeg}{\includegraphics[scale=0.7]{images/starwars2.jpeg}}}}{images/starwars2.jpeg}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars2.jpeg}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars2.jpeg}{\includegraphics[scale=0.7]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars2.jpeg}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/starwars2.jpeg}
 \end{center}
 \caption{Un système de système}
 \end{figure}
@@ -1176,7 +1205,7 @@ de la façon la plus efficace possible.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/analyse1.png}{{\imgevalsize{images/analyse1.png}{\includegraphics[scale=0.5]{images/analyse1.png}}}}{images/analyse1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse1.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse1.png}
 \end{center}
 \caption{Des exigences au système}
 \end{figure}
@@ -1185,28 +1214,28 @@ Pour cela l’Ingénierie Système\index{IS} est découpée en plusieurs analyse
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/analyse2.png}{{\imgevalsize{images/analyse2.png}{\includegraphics[scale=0.5]{images/analyse2.png}}}}{images/analyse2.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse2.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse2.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse2.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse2.png}
 \end{center}
 \caption{Analyse Fonctionnelle et/ou Comportementale}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/analyse3.png}{{\imgevalsize{images/analyse3.png}{\includegraphics[scale=0.5]{images/analyse3.png}}}}{images/analyse3.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse3.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse3.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse3.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse3.png}
 \end{center}
 \caption{Analyse Structurelle}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/analyse4.png}{{\imgevalsize{images/analyse4.png}{\includegraphics[scale=0.5]{images/analyse4.png}}}}{images/analyse4.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse4.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse4.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse4.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse4.png}
 \end{center}
 \caption{Analyse de performance}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/analyse5.png}{{\imgevalsize{images/analyse5.png}{\includegraphics[scale=0.5]{images/analyse5.png}}}}{images/analyse5.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse5.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse5.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse5.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse5.png}
 \end{center}
 \caption{Analyses spécifiques}
 \end{figure}
@@ -1215,7 +1244,7 @@ Pour arriver à combler le gap entre le système à développer et ses spécific
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/analyse6.png}{{\imgevalsize{images/analyse6.png}{\includegraphics[scale=0.5]{images/analyse6.png}}}}{images/analyse6.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse6.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse6.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse6.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/analyse6.png}
 \end{center}
 \caption{Des exigences au système}
 \end{figure}
@@ -1255,18 +1284,39 @@ des notations et langages pour réaliser et communiquer avec ces modèles (cf. C
 \label{exigences}\hyperlabel{exigences}%
 
 L’ingénierie des exigences est d’une importance capitale en Ingénierie Système\index{IS}.
-Nous renvoyons pour l’instant le lecteur au cours de Master qui précède ce cours.
+En général les exigences sont exprimées par des ingénieurs dédiés à cette activité.
+La complexité des systèmes modernes (embarqués, communicants, critiques, …).
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/ingenierie-des-exigences.jpg}{{\imgevalsize{images/ingenierie-des-exigences.jpg}{\includegraphics[scale=0.6]{images/ingenierie-des-exigences.jpg}}}}{images/ingenierie-{}des-{}exigences.jpg}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ingenierie-des-exigences.jpg}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ingenierie-des-exigences.jpg}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ingenierie-des-exigences.jpg}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ingenierie-{}des-{}exigences.jpg}
 \end{center}
 \caption{300 corps de métiers sont parfois présents sur un chantier}
 \end{figure}
+\begin{DBKadmonition}{images/icons/tip.png}{Besoins, exigences : question de vocabulaire}
+
+La difficulté de l’emploi massif de l’anglais en Ingénierie Système\index{IS} fait qu’il existe souvent une confusion entre
+les termes anglais et leurs traduction anglaise. Nous précisons donc ici notre utilisation des termes :
+
+\noindent
+\begin{description}
+\item[{ \emph{Requirements} }] \hspace{0em}\\
+ Exigences, c’est à dire une fonction ou une propriété que doit satisfaire le système considéré.
+Par nature une exigence doit pouvoir être vérifiable.
+En génie logiciel on parle plus classiquement des spécifications ("spec") pour parler des contraintes à respecter pour un système. Les ingénieurs systèmes ont depuis longtemps intégré le terme d’exigences comme traduction directe de \emph{requirement}.
+
+\item[{ Besoins
+}] \hspace{0em}\\
+ Il s’agit des exigences du client. En \href{http://www.omgsysml.org/}{SysML™}\index{SysML} on va plus les retrouver dans les cas d’utilisation. Ils sont à l’origine des \emph{requirements} tels que définis plus haut.
+
+\end{description}
+\end{DBKadmonition}
+
+Il est important pour une exigence qu’elle ne soit pas ambiguë (contrairement au terme \texttt{en} dans la consigne exprimée par la maman dans l’illustration \hyperlink{fig:eggs}{ci-{}dessous} : "\emph{Ramène moi 1 bouteille de lait. S’il y a des oeufs, ramène m’en 6.}").
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{./images/ProgrammerHumor.jpg}{{\imgevalsize{./images/ProgrammerHumor.jpg}{\includegraphics[scale=0.5]{./images/ProgrammerHumor.jpg}}}}{./images/ProgrammerHumor.jpg}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ProgrammerHumor.jpg}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ProgrammerHumor.jpg}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ProgrammerHumor.jpg}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ProgrammerHumor.jpg}
 \end{center}
 \caption[{Humour (taken from here)}]{Humour (taken from \href{https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74}{here})}
 \label{fig:eggs}\hyperlabel{fig:eggs}%
@@ -1350,7 +1400,7 @@ it almost seem like a live teacher.
 \hspace*\fill--- Bertrand Russell
 \emph{The World of Mathematics (1956)} \end{quote}
 
-Il existe une notation qui se veut "unifiée" pour les modèles : \href{http://www.uml.org/}{UML}\index{UML}.
+Il existe une notation qui se veut "unifiée" pour les modèles : \href{http://www.uml.org/}{UML™}\index{UML™}.
 Néanmoins cette notation est peu adaptée pour l’Ingénierie Système\index{IS} :
 \begin{itemize}
 
@@ -1387,7 +1437,7 @@ Néanmoins cette notation est peu adaptée pour l’Ingénierie Système\index{I
 
 \end{itemize}
 
-En conclusion \href{http://www.uml.org/}{UML}\index{UML} est une bonne base :
+En conclusion \href{http://www.uml.org/}{UML™}\index{UML™} est une bonne base :
 \begin{itemize}
 
 \item{} Standard \emph{De facto} en génie logiciel
@@ -1432,7 +1482,7 @@ Mais…
 \section{Fiche d’identité}
 \label{_fiche_d_8217_identité_2}\hyperlabel{_fiche_d_8217_identité_2}%
 
-Voici à quoi pourrait ressembler la fiche d’identité de \href{http://www.omgsysml.org/}{SysML}\index{SysML} :
+Voici à quoi pourrait ressembler la fiche d’identité de \href{http://www.omgsysml.org/}{SysML™}\index{SysML} :
 
 
 \begin{sidebar}
@@ -1442,7 +1492,7 @@ Voici à quoi pourrait ressembler la fiche d’identité de \href{http://www.omg
 
 
 
-\item{} Première spécification adoptée à l’\href{http://www.omg.org}{OMG}\index{OMG} : 19 septembre 2007
+\item{} Première spécification adoptée à l’\href{http://www.omg.org}{OMG™}\index{OMG} : 19 septembre 2007
 
 
 
@@ -1450,7 +1500,7 @@ Voici à quoi pourrait ressembler la fiche d’identité de \href{http://www.omg
 
 
 
-\item{} Paternité : \href{http://www.omg.org}{OMG}\index{OMG}/\href{http://www.uml.org/}{UML}\index{UML} + \href{http://www.incose.org/}{INCOSE}\index{INCOSE} 
+\item{} Paternité : \href{http://www.omg.org}{OMG™}\index{OMG}/\href{http://www.uml.org/}{UML™}\index{UML™} + \href{http://www.incose.org/}{INCOSE}\index{INCOSE} 
 
 
 \item{} Auteurs principaux :
@@ -1476,11 +1526,11 @@ Voici à quoi pourrait ressembler la fiche d’identité de \href{http://www.omg
 \section{Différence avec UML}
 \label{_différence_avec_uml}\hyperlabel{_différence_avec_uml}%
 
-La figure \hyperlink{liensdiag}{suivante}, tirée de la spécification, résume bien les liens entre \href{http://www.omgsysml.org/}{SysML}\index{SysML} et \href{http://www.uml.org/}{UML}\index{UML}, à savoir que \href{http://www.omgsysml.org/}{SysML}\index{SysML} reprend une partie seulement des concepts d’\href{http://www.uml.org/}{UML}\index{UML} (appelée \texttt{UML\penalty5000 4\penalty5000 S\penalty5000 y\penalty5000 sML}) en y ajoutant des concepts nouveaux.
+La figure \hyperlink{liensdiag}{suivante}, tirée de la spécification, résume bien les liens entre \href{http://www.omgsysml.org/}{SysML™}\index{SysML} et \href{http://www.uml.org/}{UML™}\index{UML™}, à savoir que \href{http://www.omgsysml.org/}{SysML™}\index{SysML} reprend une partie seulement des concepts d’\href{http://www.uml.org/}{UML™}\index{UML™} (appelée \texttt{UML\penalty5000 4\penalty5000 S\penalty5000 y\penalty5000 sML}) en y ajoutant des concepts nouveaux.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/diff.png}{{\imgevalsize{images/diff.png}{\includegraphics[scale=0.6]{images/diff.png}}}}{images/diff.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/diff.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/diff.png}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/diff.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/diff.png}
 \end{center}
 \caption{Liens entre UML et SysML}
 \label{liensdiag}\hyperlabel{liensdiag}%
@@ -1506,19 +1556,19 @@ La figure \hyperlink{liensdiag}{suivante}, tirée de la spécification, résume 
 \end{description}
 \begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
 
-La liste complète des membres de l’\href{http://www.omg.org}{OMG}\index{OMG} est accessible à l’URL : \href{http://www.omg.org/cgi-bin/apps/membersearch.pl}{http://www.omg.org/\-cgi-{}bin/\-apps/\-membersearch.pl}
+La liste complète des membres de l’\href{http://www.omg.org}{OMG™}\index{OMG} est accessible à l’URL : \href{http://www.omg.org/cgi-bin/apps/membersearch.pl}{http://www.omg.org/\-cgi-{}bin/\-apps/\-membersearch.pl}
 \end{DBKadmonition}
 
 \section{Organisation des différents diagrammes}
 \label{_organisation_des_différents_diagrammes}\hyperlabel{_organisation_des_différents_diagrammes}%
 
-\href{http://www.omgsysml.org/}{SysML}\index{SysML} propose de couvrir la modélisation d’un système en 9 diagrammes. Ces diagrammes couvrent
+\href{http://www.omgsysml.org/}{SysML™}\index{SysML} propose de couvrir la modélisation d’un système en 9 diagrammes. Ces diagrammes couvrent
         les aspects structurels et comportementaux du système ainsi que les exigences. Le diagramme suivant
-        présente cette organisation en faisant au passage le lien avec ceux d’\href{http://www.uml.org/}{UML}\index{UML} :
+        présente cette organisation en faisant au passage le lien avec ceux d’\href{http://www.uml.org/}{UML™}\index{UML™} :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/Figure4-1.png}{{\imgevalsize{images/Figure4-1.png}{\includegraphics[scale=0.4]{images/Figure4-1.png}}}}{images/Figure4-{}1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-1.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-{}1.png}
 \end{center}
 \caption{Les 9 diagrammes SysML et leur lien avec UML}
 \end{figure}
@@ -1528,7 +1578,7 @@ Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons sou
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/Figure4-1-bis.png}{{\imgevalsize{images/Figure4-1-bis.png}{\includegraphics[scale=0.5]{images/Figure4-1-bis.png}}}}{images/Figure4-{}1-{}bis.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-1-bis.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-1-bis.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-1-bis.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/Figure4-{}1-{}bis.png}
 \end{center}
 \caption{Version abrégée des diagrammes}
 \end{figure}
@@ -1540,10 +1590,10 @@ Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons sou
 \section{Différence entre modèle et dessin}
 \label{_différence_entre_modèle_et_dessin}\hyperlabel{_différence_entre_modèle_et_dessin}%
 
-\href{http://www.omgsysml.org/}{SysML}\index{SysML} n’est pas une palette de dessins et d'éléments de base servant à faire
-des diagrammes. Il existe une représentation graphique des éléments modélisés en \href{http://www.omgsysml.org/}{SysML}\index{SysML}. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c’est \textbf{le modèle} qui importe le plus.
+\href{http://www.omgsysml.org/}{SysML™}\index{SysML} n’est pas une palette de dessins et d'éléments de base servant à faire
+des diagrammes. Il existe une représentation graphique des éléments modélisés en \href{http://www.omgsysml.org/}{SysML™}\index{SysML}. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c’est \textbf{le modèle} qui importe le plus.
 
-C’est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes \href{http://www.omgsysml.org/}{SysML}\index{SysML} \footnote{
+C’est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes \href{http://www.omgsysml.org/}{SysML™}\index{SysML} \footnote{
 Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.
 }, mais d’utiliser des outils dédiés (cf. Chapitre \ref{Outils}).
 
@@ -1610,7 +1660,7 @@ Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
 \textbf{Analyse, Conception, Implémentation \footnotemark{}}
 %
 }&\multicolumn{1}{p{20\newtblstarfactor}|}{\raggedright%
-\texttt{req\index{req}}
+\texttt{\texttt{req}\index{req}}
 %
 }&\multicolumn{1}{p{20\newtblstarfactor}|}{\raggedright%
 \texttt{bdd\index{bdd}}, \texttt{ibd\index{ibd}}, \texttt{sd\index{sd}}, \texttt{par\index{par}}
@@ -1640,19 +1690,22 @@ En fonction du niveau de détail.
 Il existe un certain nombre d’outils permettant de réaliser des modèles SysML. Voici une liste non exhaustive :
 \begin{itemize}
 
-\item{} \href{http://www.topcased.org/}{TopCased} 
+\item{} \href{http://www.topcased.org}{TOPCASED}\index{Topcased} 
 
 
-\item{} \href{http://www.eclipse.org/modeling/mdt/papyrus/}{Papyrus} 
+\item{} \href{http://www.eclipse.org/papyrus/}{Papyrus} 
 
 
 \item{} \href{http://www.artisansw.com/}{Artisan} 
 
 
-\item{} \href{http://www-01.ibm.com/software/rational/products/rhapsody}{Rhapsody} 
+\item{} \href{http://www-142.ibm.com/software/products/us/en/ratirhap}{Rhapsody}\index{Rhapsody} 
 
 
 \item{} \href{http://www.modeliosoft.com/}{Modelio} 
+
+
+\item{} \href{http://www.nomagic.com/}{MagicDraw} 
 
 
 \item{} …
@@ -1663,7 +1716,7 @@ Il existe un certain nombre d’outils permettant de réaliser des modèles SysM
 Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
 
 Ce que je voudrai souligner ici c’est l’importance du modèle comme "dépôt" (je préfère le terme anglais de \emph{repository}) d'éléments de base en relation les uns avec les autres. C’est toute la différence entre le dessin et le modèle.
-\begin{DBKadmonition}{images/icons/caution.png}{Attention}
+\begin{DBKadmonition}{images/icons/warning.png}{AVERTISSEMENT}
 
 Attention toutefois à ne pas confondre ce que vous permet (ou pas) de faire l’outil et la notation elle-{}même. Les fabricants ont parfois pris des libertés ou bien n’ont pas complètement implémenté toutes les subtilités de la notation.
 \end{DBKadmonition}
@@ -1677,19 +1730,19 @@ Dans le cadre de notre exemple fil rouge, nous utilisons l’outil \href{http://
 \chapter{Cadre pour les diagrammes}
 \label{_cadre_pour_les_diagrammes}\hyperlabel{_cadre_pour_les_diagrammes}%
 
-Abordons quelques principes généraux de \href{http://www.omgsysml.org/}{SysML}\index{SysML}, c’est à dire des éléments indépendant d’un diagramme en particulier :
+Abordons quelques principes généraux de \href{http://www.omgsysml.org/}{SysML™}\index{SysML}, c’est à dire des éléments indépendant d’un diagramme en particulier :
 \begin{itemize}
 
-\item{} Chaque diagramme \href{http://www.omgsysml.org/}{SysML}\index{SysML} représente un élément de modélisation
+\item{} Chaque diagramme \href{http://www.omgsysml.org/}{SysML™}\index{SysML} décrit un élément précis (nommé) de modélisation
 
 
 
-\item{} Chaque diagramme \href{http://www.omgsysml.org/}{SysML}\index{SysML} doit être inclus dans un cadre (\emph{Diagram Frame})
+\item{} Chaque diagramme \href{http://www.omgsysml.org/}{SysML™}\index{SysML} doit être représenté à l’intérieur d’un cadre (\emph{Diagram Frame})
 
 
 
-\item{} L’entête du cadre, appelé \textbf{cartouche}, indique les informations sur le diagramme :
-le type de diagramme (\texttt{req\index{req}}, \texttt{act\index{act}}, \texttt{bdd\index{bdd}}, \texttt{ibd\index{ibd}}, \texttt{stm\index{stm}}, etc.); le type d'élément (\emph{package}, \emph{block}, \emph{activity}, etc.); le nom de l'élément et le nom du diagramme ou de la vue.
+\item{} L’entête du cadre, appelé aussi \textbf{cartouche}, indique les informations sur le diagramme :
+le type de diagramme (\texttt{\texttt{req}\index{req}}, \texttt{act\index{act}}, \texttt{bdd\index{bdd}}, \texttt{ibd\index{ibd}}, \texttt{stm\index{stm}}, etc.); le type d'élément (\emph{package}, \emph{block}, \emph{activity}, etc.); le nom de l'élément et le nom du diagramme ou de la vue.
 
 
 \end{itemize}
@@ -1699,10 +1752,14 @@ Dans l’exemple ci-{}dessous, le diagramme "\emph{Context\_Overview}" est un \e
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/pacemaker-context.png}{{\imgevalsize{images/pacemaker-context.png}{\includegraphics[scale=0.45]{images/pacemaker-context.png}}}}{images/pacemaker-{}context.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}{\includegraphics[scale=0.45]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-{}context.png}
 \end{center}
 \caption{Exemple de diagramme SysML}
 \end{figure}
+\begin{DBKadmonition}{images/icons/note.png}{Convention : Utilisation systématique des cartouches}
+
+Tout diagramme proposé à un étudiant pour décrire un système devrait posséder un entête précis.
+\end{DBKadmonition}
 
 % ------- 
 % Chapter 
@@ -1739,7 +1796,7 @@ On abordera :
 
 Le diagramme de paquetage permet de représenter l’organisation des modèles en paquetages.
 
-Ce diagramme est identique à celui d’\href{http://www.uml.org/}{UML}\index{UML}, et le concept de paquetage (\emph{package}) est classique pour les développeurs (java notamment).
+Ce diagramme est identique à celui d’\href{http://www.uml.org/}{UML™}\index{UML™}, et le concept de paquetage (\emph{package}) est classique pour les développeurs (java notamment).
 Il permet d’organiser les modèles en créant un espace de nommage (cf Section \ref{namespace}).
 
 Les modèles peuvent être organisés selon toutes sortes de considération (cf. Section \ref{organisation}) :
@@ -1825,21 +1882,21 @@ Les modèles peuvent être organisés selon toutes sortes de considération :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/pkg-organisation2.png}{{\imgevalsize{images/pkg-organisation2.png}{\includegraphics[scale=0.4]{images/pkg-organisation2.png}}}}{images/pkg-{}organisation2.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-organisation2.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-organisation2.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-organisation2.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-{}organisation2.png}
 \end{center}
 \caption{Exemple d’organisation simple}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/pkg-organisation-modelview.png}{{\imgevalsize{images/pkg-organisation-modelview.png}{\includegraphics[scale=0.5]{images/pkg-organisation-modelview.png}}}}{images/pkg-{}organisation-{}modelview.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-organisation-modelview.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-organisation-modelview.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-organisation-modelview.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-{}organisation-{}modelview.png}
 \end{center}
 \caption{Représentation de cette organisation dans un outil}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/pkg-topcased.png}{{\imgevalsize{images/pkg-topcased.png}{\includegraphics[scale=0.4]{images/pkg-topcased.png}}}}{images/pkg-{}topcased.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-topcased.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-topcased.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-topcased.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pkg-{}topcased.png}
 \end{center}
 \caption{Un autre exemple d’organisation}
 \end{figure}
@@ -1848,7 +1905,7 @@ Les modèles peuvent être organisés selon toutes sortes de considération :
 L’outil \href{http://www.topcased.org}{TOPCASED}\index{Topcased} propose, lors de la création d’un premier modèle, de créer une organisation
 "type" par défaut.
 
-\noindent\imgexists{images/pkg-template.png}{{\imgevalsize{images/pkg-template.png}{\includegraphics[scale=0.3]{images/pkg-template.png}}}}{images/pkg-{}template.png}
+\noindent\imgexists{pkg-template.png}{{\imgevalsize{pkg-template.png}{\includegraphics[scale=0.3]{pkg-template.png}}}}{pkg-{}template.png}
 \end{DBKadmonition}
 
 \section{La notion de \emph{Namespaces}}
@@ -1866,7 +1923,7 @@ Pour éviter toute ambiguité, on peut utiliser pour les éléments de modèles 
 c’est à dire le nom de l'élément préfixé par son (ou ses) \emph{package(s)} (e.g., \texttt{Str\penalty5000 u\penalty5000 c\penalty5000 t\penalty5000 ure:\penalty0 :\penalty0 Pro\penalty5000 d\penalty5000 u\penalty5000 cts:\penalty0 :\penalty0 Clock}).
 \begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
 
-Dans les outils \href{http://www.omgsysml.org/}{SysML}\index{SysML}, il faut souvent demander explicitement à voir les noms complets (\emph{Qualified names})
+Dans les outils \href{http://www.omgsysml.org/}{SysML™}\index{SysML}, il faut souvent demander explicitement à voir les noms complets (\emph{Qualified names})
 des éléments (la plupart du temps dans les options graphiques).
 \end{DBKadmonition}
 
@@ -1897,8 +1954,8 @@ Un certain nombre de dépendances peuvent exister entre des éléments de \emph{
 \section{En résumé}
 \label{_en_résumé}\hyperlabel{_en_résumé}%
 
-\href{http://www.omgsysml.org/}{SysML}\index{SysML} propose un certain nombre de mécanismes pour organiser les différents modèles,
-tirés pour la plupart d’\href{http://www.uml.org/}{UML}\index{UML}. Ces mécanismes seront plus faciles à comprendre au travers
+\href{http://www.omgsysml.org/}{SysML™}\index{SysML} propose un certain nombre de mécanismes pour organiser les différents modèles,
+tirés pour la plupart d’\href{http://www.uml.org/}{UML™}\index{UML™}. Ces mécanismes seront plus faciles à comprendre au travers
 de leur utilisation concrète dans la suite.
 \begin{center}
 \begingroup%
@@ -2021,8 +2078,7 @@ On abordera :
 \item{} Annotations des \emph{Requirements} 
 
 
-\item{} Les \emph{Use Case Diagrams} (scénarios)
-
+\item{} Les \emph{Use Case Diagrams} 
 
 \end{itemize}
 \begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
@@ -2035,10 +2091,34 @@ plus de détails (\hyperlink{Sommerville1997}{[Sommerville1997]}) ou le guide de
 \section{L’organisation des \emph{Requirements}}
 \label{_l_8217_organisation_des_emphasis_requirements_emphasis}\hyperlabel{_l_8217_organisation_des_emphasis_requirements_emphasis}%
 
+Il ne s’agit pas ici de revenir sur les exigences elles-{}même, mais plutôt de voir comment \href{http://www.omgsysml.org/}{SysML™}\index{SysML} permet
+de les exprimer, de les manipuler et surtout de les lier avec le reste du système.
+
+\subsection{Représentation de base}
+\label{_représentation_de_base}\hyperlabel{_représentation_de_base}%
+
+Un \emph{Requirement} en \href{http://www.omgsysml.org/}{SysML™}\index{SysML} n’est qu’un bloc particulier.
+\begin{DBKadmonition}{images/icons/note.png}{Définition : Requirements (OMG SysML v1.3, p. 139)}
+
+\emph{A requirement specifies a capability or condition that must (or should) be satisfied…
+A requirement is defined as a stereotype of UML Class…}
+\end{DBKadmonition}
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/corde.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/corde.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/corde.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/corde.png}
+\end{center}
+\caption{Un \emph{Requirement} en SysML}
+\end{figure}
+
 \subsection{Différents types d’organisation}
 \label{_différents_types_d_8217_organisation}\hyperlabel{_différents_types_d_8217_organisation}%
 
-Comme nous l’avons vu pour les \emph{packages}, plusieurs types d’organisations sont possibles :
+L’ingénierie des exigences aboutit généralement à une liste organisée d’exigences, que ce soit en terme
+de fonctionnelles/non fonctionnelles, de prioritaires/secondaires, etc.
+Le principal support de \href{http://www.omgsysml.org/}{SysML™}\index{SysML} à cette organisation, outre la possibilité de les annoter (cf. section \hyperlink{reqStereotypes}{Stéréotyper les exigences}), consiste à utiliser les  \emph{packages}.
+
+Plusieurs types d’organisations sont possibles :
 \begin{itemize}
 
 \item{} Par niveau d’abstraction
@@ -2098,18 +2178,27 @@ Comme nous l’avons vu pour les \emph{packages}, plusieurs types d’organisati
 \subsection{Tableaux de \emph{Requirements}}
 \label{_tableaux_de_emphasis_requirements_emphasis}\hyperlabel{_tableaux_de_emphasis_requirements_emphasis}%
 
-Les \emph{requirements} sont généralement stockés dans des tableaux (feuilles excel le plus souvent!).
+Les \emph{requirements} sont habituellement stockés dans des tableaux (feuilles excel le plus souvent!).
+Il est donc recommandé par le norme et possible dans de nombreux outils de représenter les exigences
+sous forme tabulaire.
+\begin{DBKadmonition}{images/icons/note.png}{Définition : Requirements Table (OMG SysML v1.3, p. 145)}
+
+\emph{The tabular format is used to represent the requirements, their properties and relationships…}
+\end{DBKadmonition}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/req-table.png}{{\imgevalsize{images/req-table.png}{\includegraphics[scale=0.5]{images/req-table.png}}}}{images/req-{}table.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-table.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-table.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-table.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-{}table.png}
 \end{center}
-\caption{Exemples tableau d’exigences}
+\caption{Exemples tableau d’exigences (OMG SysML v1.3, p. 145)}
 \end{figure}
+
+La plupart des outils modernes permettent le passage entre outils classiques de gestion des exigences (comme \href{http://www-03.ibm.com/software/products/fr/fr/ratidoor/}{DOORS™})
+et outils de modélisation \href{http://www.omgsysml.org/}{SysML™}\index{SysML} (comme \href{http://www.modeliosoft.com/}{Modelio}, illustré ci-{}dessous).
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/req-modelio.png}{{\imgevalsize{images/req-modelio.png}{\includegraphics[scale=0.5]{images/req-modelio.png}}}}{images/req-{}modelio.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-modelio.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-modelio.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-modelio.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-{}modelio.png}
 \end{center}
 \caption{Import Modelio de tableau d’exigences}
 \end{figure}
@@ -2149,24 +2238,24 @@ Les principales relations entre \emph{requirement} sont :
 \noindent
 \begin{description}
 \item[{ \emph{Containment} }] \hspace{0em}\\
-         pour décrire la décomposition d’une exigence en plusieurs sous-{}exigences (⊕–)
+         Pour décrire la décomposition d’une exigence en plusieurs sous-{}exigences (⊕–). Typiquement dès qu’une exigence est exprimée avec une conjonction "et" ("La voiture doit être rapide et économe.").
 
 \item[{ \emph{Refinement} }] \hspace{0em}\\
-         pour décrire un ajout de précision (\texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}})
+         Pour décrire un ajout de précision (\texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}}), comme par exemple une précision.
 
 \item[{ \emph{Derivation} }] \hspace{0em}\\
-         pour indiquer une différence de niveau d’abstraction (\texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}}), par exemple
-        entre un système et un de ses sous-{}systèmes
+         Pour indiquer une différence de niveau d’abstraction (\texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}}), par exemple
+        entre un système et un de ses sous-{}systèmes.
 
 \end{description}
 \begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
 
-Lorsqu’un cas d’utilisation possède plusieurs cas \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. Chapitre \ref{conventions}).
+Lorsqu’une exigence possède plusieurs cas \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. Chapitre \ref{conventions}).
 \end{DBKadmonition}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/req-exp1.png}{{\imgevalsize{images/req-exp1.png}{\includegraphics[scale=0.45]{images/req-exp1.png}}}}{images/req-{}exp1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-exp1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-exp1.png}{\includegraphics[scale=0.45]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-exp1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-{}exp1.png}
 \end{center}
 \caption{Exemples de relations entre exigences}
 \end{figure}
@@ -2177,7 +2266,7 @@ dans la partie \hyperlink{transvers}{transverse}.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/topcased-req-connections.png}{{\imgevalsize{images/topcased-req-connections.png}{\includegraphics[scale=0.4]{images/topcased-req-connections.png}}}}{images/topcased-{}req-{}connections.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/topcased-req-connections.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/topcased-req-connections.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/topcased-req-connections.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/topcased-{}req-{}connections.png}
 \end{center}
 \caption{Relations liées au \emph{requirements} dans TOPCASED}
 \end{figure}
@@ -2185,13 +2274,43 @@ dans la partie \hyperlink{transvers}{transverse}.
 \section{Les \emph{Requirements Diagrams}}
 \label{_les_emphasis_requirements_diagrams_emphasis}\hyperlabel{_les_emphasis_requirements_diagrams_emphasis}%
 
-Voici un exemple de \texttt{req\index{req}} un peu plus étoffé, tiré de \href{http://www.uml-sysml.org/sysml}{http://www.uml-{}sysml.org/\-sysml} (voir aussi Figure \ref{rationale}) :
+Voici un exemple de \texttt{\texttt{req}\index{req}} un peu plus étoffé, tiré de \href{http://www.uml-sysml.org/sysml}{http://www.uml-{}sysml.org/\-sysml} (voir aussi Figure \ref{rationale}) :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/hsuv-reqs1.png}{{\imgevalsize{images/hsuv-reqs1.png}{\includegraphics[scale=0.45]{images/hsuv-reqs1.png}}}}{images/hsuv-{}reqs1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-reqs1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-reqs1.png}{\includegraphics[scale=0.45]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-reqs1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-{}reqs1.png}
 \end{center}
 \caption{Exemples de composition d’exigences}
+\end{figure}
+
+\section{Stéréotyper les \emph{Requirements}}
+\label{reqStereotypes}\hyperlabel{reqStereotypes}%
+
+Tout comme pour n’importe quel bloc, il est possible de stéréotyper les \emph{requirements}.
+Ceci permet de se définir ses propres priorités et classifications.
+Quelques exemples de stéréotypes utiles :
+\begin{itemize}
+
+\item{} \texttt{<{}<{}i\penalty5000 n\penalty5000 t\penalty5000 e\penalty5000 r\penalty5000 f\penalty5000 a\penalty5000 c\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t>{}>{}}, \texttt{<{}<{}p\penalty5000 h\penalty5000 y\penalty5000 s\penalty5000 i\penalty5000 c\penalty5000 a\penalty5000 l\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t>{}>{}}, …
+
+
+
+\item{} \texttt{<{}<{}F\penalty5000 u\penalty5000 n\penalty5000 c\penalty5000 t\penalty5000 i\penalty5000 o\penalty5000 n\penalty5000 a\penalty5000 l\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t>{}>{}}, \texttt{<{}<{}n\penalty5000 o\penalty5000 n\penalty5000 F\penalty5000 u\penalty5000 n\penalty5000 c\penalty5000 t\penalty5000 i\penalty5000 o\penalty5000 n\penalty5000 a\penalty5000 l\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t>{}>{}} 
+
+\end{itemize}
+
+\section{Annotations des \emph{Requirements}}
+\label{reqAnnot}\hyperlabel{reqAnnot}%
+
+Il est possible d’annoter les éléments de modélisation en précisant les raisons
+(\emph{rationale}) ou les éventuels problèmes anticipés (\emph{problem}).
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-reqs2.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-reqs2.png}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-reqs2.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/hsuv-{}reqs2.png}
+\end{center}
+\caption{Exemples de \emph{rationale} et \emph{problem}}
+\label{rationale}\hyperlabel{rationale}%
 \end{figure}
 
 \section{Les considérations sur la traçabilité}
@@ -2204,38 +2323,24 @@ sera abordé dans la partie Chapitre \ref{transvers}.
 En général chaque \emph{requirement} devrait être relié à au moins un \emph{use case} (et vice-{}versa!).
 \end{DBKadmonition}
 
-\section{Annotations des \emph{Requirements}}
-\label{_annotations_des_emphasis_requirements_emphasis}\hyperlabel{_annotations_des_emphasis_requirements_emphasis}%
-
-Il est possible d’annoter les éléments de modélisation en précisant les raisons
-(\emph{rationale}) ou les éventuels problèmes anticipés (\emph{problem}).
-\begin{figure}[H]
-
-\begin{center}
-\imgexists{images/hsuv-reqs2.png}{{\imgevalsize{images/hsuv-reqs2.png}{\includegraphics[scale=0.6]{images/hsuv-reqs2.png}}}}{images/hsuv-{}reqs2.png}
-\end{center}
-\caption{Exemples de \emph{rationale} et \emph{problem}}
-\label{rationale}\hyperlabel{rationale}%
-\end{figure}
-
-\section{Les \emph{Use Case Diagrams} (scénarios)}
-\label{_les_emphasis_use_case_diagrams_emphasis_scénarios}\hyperlabel{_les_emphasis_use_case_diagrams_emphasis_scénarios}%
+\section{Les \emph{Use Case Diagrams}}
+\label{_les_emphasis_use_case_diagrams_emphasis}\hyperlabel{_les_emphasis_use_case_diagrams_emphasis}%
 
 Bien que nous traitions les cas d’utilisation dans la partie \hyperlink{behavior}{comportement}, nous les abordons
         ici du fait de leur proximité avec les \emph{requirements}.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/req-uc-relation.png}{{\imgevalsize{images/req-uc-relation.png}{\includegraphics[scale=0.5]{images/req-uc-relation.png}}}}{images/req-{}uc-{}relation.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-uc-relation.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-uc-relation.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-uc-relation.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/req-{}uc-{}relation.png}
 \end{center}
 \caption{Exemple de lien entre \emph{use case} et \emph{requirements}}
 \end{figure}
 
-Ce diagramme est exactement identique à celui d’\href{http://www.uml.org/}{UML}\index{UML}.
+Ce diagramme est exactement identique à celui d’\href{http://www.uml.org/}{UML™}\index{UML™}.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/UCGestionNotes.png}{{\imgevalsize{images/UCGestionNotes.png}{\includegraphics[scale=0.5]{images/UCGestionNotes.png}}}}{images/UCGestionNotes.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UCGestionNotes.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UCGestionNotes.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UCGestionNotes.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UCGestionNotes.png}
 \end{center}
 \caption{Exemple de diagramme des cas d’utilisation}
 \end{figure}
@@ -2250,7 +2355,7 @@ Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plu
 Les exigences sont très importantes en ingénierie système, plus en tout cas qu’en ingénierie logiciel,
 du fait de la multiplication des sous-{}systèmes et donc des intermédiaires (fournisseurs, sous-{}traitants, etc.)
 avec qui les aspects contractuels seront souvent basés sur ces exigences. Il n’est donc pas étonnant qu’un  diagramme
-et des mécanismes dédiés aient été prévus en \href{http://www.omgsysml.org/}{SysML}\index{SysML}.
+et des mécanismes dédiés aient été prévus en \href{http://www.omgsysml.org/}{SysML™}\index{SysML}.
 \begin{center}
 \begingroup%
 \setlength{\newtblsparewidth}{\linewidth-2\tabcolsep-2\tabcolsep-2\tabcolsep-2\tabcolsep-2\tabcolsep-2\tabcolsep}%
@@ -2358,7 +2463,7 @@ des exigences et la modélisation du système lui-{}même (cf. Figure \ref{sysm
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/zigzag.png}{{\imgevalsize{images/zigzag.png}{\includegraphics[scale=0.3]{images/zigzag.png}}}}{images/zigzag.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/zigzag.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/zigzag.png}{\includegraphics[scale=0.3]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/zigzag.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/zigzag.png}
 \end{center}
 \caption{Exemple de démarche (\emph{SYSMOD Zigzag pattern})}
 \label{sysmod}\hyperlabel{sysmod}%
@@ -2453,11 +2558,11 @@ Un \texttt{bdd\index{bdd}} peut représenter :
 \end{itemize}
 
 Un diagramme de bloc décrit les relations entre les blocs (compositions, généralisations, …).
-Ce diagramme utilise les mêmes éléments que le diagramme de classe \href{http://www.uml.org/}{UML}\index{UML}.
+Ce diagramme utilise les mêmes éléments que le diagramme de classe \href{http://www.uml.org/}{UML™}\index{UML™}.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/pacemaker-context.png}{{\imgevalsize{images/pacemaker-context.png}{\includegraphics[scale=0.5]{images/pacemaker-context.png}}}}{images/pacemaker-{}context.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-{}context.png}
 \end{center}
 \caption{bdd du système dans son environnement}
 \label{contextebdd}\hyperlabel{contextebdd}%
@@ -2468,7 +2573,7 @@ Un bloc est constitué d’un certain nombre de compartiments (\emph{Compartment
 \noindent
 \begin{description}
 \item[{ \emph{Properties} }] \hspace{0em}\\
-         Equivalent \href{http://www.uml.org/}{UML}\index{UML} des propriétés (e.g., attributs).
+         Equivalent \href{http://www.uml.org/}{UML™}\index{UML™} des propriétés (e.g., attributs).
 
 \item[{ \emph{Operations} }] \hspace{0em}\\
          Les méthodes supportées par les instances du bloc.
@@ -2489,7 +2594,7 @@ Un bloc est constitué d’un certain nombre de compartiments (\emph{Compartment
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/constraints.png}{{\imgevalsize{images/constraints.png}{\includegraphics[scale=0.5]{images/constraints.png}}}}{images/constraints.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}
 \end{center}
 \caption{Exemple de définition de contraintes}
 \label{contraintes}\hyperlabel{contraintes}%
@@ -2522,11 +2627,11 @@ Les \emph{values} sont ce qui se rapproche le plus des attributs de classes UML.
 \subsection{\emph{Value Types}}
 \label{_emphasis_value_types_emphasis}\hyperlabel{_emphasis_value_types_emphasis}%
 
-Pour associer un type aux valeurs, \href{http://www.omgsysml.org/}{SysML}\index{SysML} propose de définir des \emph{Value Types}.
+Pour associer un type aux valeurs, \href{http://www.omgsysml.org/}{SysML™}\index{SysML} propose de définir des \emph{Value Types}.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/valueType.png}{{\imgevalsize{images/valueType.png}{\includegraphics[scale=0.6]{images/valueType.png}}}}{images/valueType.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/valueType.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/valueType.png}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/valueType.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/valueType.png}
 \end{center}
 \caption{Définition de \emph{Value Types}.}
 \end{figure}
@@ -2546,9 +2651,9 @@ Il existe deux types de relations entre blocs :
 
 \end{itemize}
 
-Ces deux types de relations, bien connues en \href{http://www.uml.org/}{UML}\index{UML}, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d’aborder les associations, il est important de différencier la description d'éléments structurels sous la forme d’un bloc (au travers d’un \texttt{bdd\index{bdd}} par exemple) et ces éléments pris individuellement. Ces derniers sont des \textbf{instances} individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d’un bloc consiste à représenter l’ensemble des éléments qui caractérisent tout une série d’objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c’est donc leur "signature" que l’on représente. C’est pour cela qu’un bloc n’est pas un élément physique, mais simplement sa représentation, tandis qu’une instance de ce bloc représentera elle cet élément physique. C’est le cas notamment des participants d’un diagramme de séquence ou encore des parties d’un composé, qui sont des instances et non des blocs.
+Ces deux types de relations, bien connues en \href{http://www.uml.org/}{UML™}\index{UML™}, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d’aborder les associations, il est important de différencier la description d'éléments structurels sous la forme d’un bloc (au travers d’un \texttt{bdd\index{bdd}} par exemple) et ces éléments pris individuellement. Ces derniers sont des \textbf{instances} individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d’un bloc consiste à représenter l’ensemble des éléments qui caractérisent tout une série d’objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c’est donc leur "signature" que l’on représente. C’est pour cela qu’un bloc n’est pas un élément physique, mais simplement sa représentation, tandis qu’une instance de ce bloc représentera elle cet élément physique. C’est le cas notamment des participants d’un diagramme de séquence ou encore des parties d’un composé, qui sont des instances et non des blocs.
 
-\subsubsection{Association}
+\subsection{Association}
 \label{_association}\hyperlabel{_association}%
 
 Une \textbf{association} est un ensemble de liens permanents existant entre les instances de deux ou plusieurs blocs.
@@ -2601,8 +2706,15 @@ On veut indiquer quels sont les produits susceptibles d’être fournis par chaq
 
 Attention, dans une cardinalité \texttt{M.\penalty0 .\penalty0 N}, \texttt{M} doit toujours être inférieur ou égal à \texttt{N}.  Exemple : \texttt{3.\penalty0 .\penalty0 10}.
 \end{DBKadmonition}
+\begin{figure}[H]
 
-\subsubsection{Vers le code : que signifie vraiment une association?}
+\begin{center}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/cardinalite.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/cardinalite.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/cardinalite.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/cardinalite.png}
+\end{center}
+\caption{Exemple d’associtaion}
+\end{figure}
+
+\subsection{Vers le code : que signifie vraiment une association?}
 \label{_vers_le_code_que_signifie_vraiment_une_association}\hyperlabel{_vers_le_code_que_signifie_vraiment_une_association}%
 
 En terme de logiciel, une \textbf{association} représente une contrainte sur la suite du développement : que ce soit un \textbf{code} (en langage orienté objet la plupart du temps) ou une \textbf{base de donnée}.
@@ -2654,15 +2766,22 @@ Un moyen simple en terme logiciel de déterminer si une association \texttt{A→
 
 \end{itemize}
 \end{DBKadmonition}
+\begin{figure}[H]
 
-\subsubsection{Généralisation/spécialisation}
+\begin{center}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/compo.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/compo.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/compo.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/compo.png}
+\end{center}
+\caption{Exemple de composition}
+\end{figure}
+
+\subsection{Généralisation/Spécialisation}
 \label{_généralisation_spécialisation}\hyperlabel{_généralisation_spécialisation}%
 
 Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de \textbf{généralisation}. À l’inverse, quand on constate qu’un bloc possède réellement plusieurs déclinaisons différentes et que l’on créé alors des blocs spécifiques, on parle alors de \textbf{spécialisation}.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/genspec.png}{{\imgevalsize{images/genspec.png}{\includegraphics[scale=0.5]{images/genspec.png}}}}{images/genspec.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/genspec.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/genspec.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/genspec.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/genspec.png}
 \end{center}
 \caption{Exemple de lien de généralisation/spécialisation}
 \end{figure}
@@ -2706,20 +2825,29 @@ et les \emph{references} comme des blocs en trait pointillés.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/parts.png}{{\imgevalsize{images/parts.png}{\includegraphics[scale=0.35]{images/parts.png}}}}{images/parts.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts.png}{\includegraphics[scale=0.35]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts.png}
 \end{center}
 \caption{Exemple de \emph{Parts}}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/parts2.png}{{\imgevalsize{images/parts2.png}{\includegraphics[scale=0.5]{images/parts2.png}}}}{images/parts2.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts2.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts2.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts2.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/parts2.png}
 \end{center}
 \caption{Autre exemple de \emph{Parts}}
 \end{figure}
 
-\subsection{Ports}
-\label{_ports}\hyperlabel{_ports}%
+\subsection{Ports (SysML 1.2)}
+\label{_ports_sysml_1_2}\hyperlabel{_ports_sysml_1_2}%
+\begin{DBKadmonition}{images/icons/caution.png}{Attention}
+
+La dernière version de la spécification \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3} préconise l’abandon des ports tels que définis
+dans la version 1.2. Nous présentons les nouvelles notions dans la \hyperlink{port13}{section qui suit}.
+
+Néanmoins, de par l’importance des exemples qui utilisent les notions habituelles de ports,
+et vu que tous les outils ne supportent pas encore les nouveaux ports, nous indiquons ici
+leur définition et recommandons pour l’instant de les utiliser.
+\end{DBKadmonition}
 
 Les ports :
 \begin{itemize}
@@ -2745,24 +2873,26 @@ Les ports définissent les points d’interaction offerts (\texttt{«pr\penalty5
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/ports-flots.png}{{\imgevalsize{images/ports-flots.png}{\includegraphics[scale=0.4]{images/ports-flots.png}}}}{images/ports-{}flots.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ports-flots.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ports-flots.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ports-flots.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ports-{}flots.png}
 \end{center}
 \caption{Exemples de flots}
 \end{figure}
-\begin{DBKadmonition}{images/icons/note.png}{Définition : Réutilisation d’exigences (OMG SysML v1.3, p. 57)}
+\begin{DBKadmonition}{images/icons/note.png}{Définition : Ports (OMG SysML v1.3, p. 57)}
 
 \emph{Ports are points at which external entities can connect to and interact with a block in different or more limited ways than connecting directly to the block itself.}
 \end{DBKadmonition}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/flots.png}{{\imgevalsize{images/flots.png}{\includegraphics[scale=0.5]{images/flots.png}}}}{images/flots.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flots.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flots.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flots.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flots.png}
 \end{center}
 \caption{Exemples de flots multi-{}physique entre ports}
 \end{figure}
 
-Les ports peuvent être de nature classique (comme en \href{http://www.uml.org/}{UML}\index{UML}) et représenter la fourniture ou le besoin de services.
-Ils peuvent aussi être de nature "flux physique".
+Les ports peuvent être de nature classique (comme en \href{http://www.uml.org/}{UML™}\index{UML™}) et représenter la fourniture ou le besoin de services. On parle alors
+de \emph{*standard flows*}.
+
+Ils peuvent aussi être de nature "flux physique", on parle de \emph{*flow ports*}.
 
 Les \texttt{Flux} peuvent être :
 \begin{itemize}
@@ -2781,10 +2911,26 @@ Un \emph{flow port} atomique ne spécifie qu’un seul type de flux en entrée o
 la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un \emph{Value Type} représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
 \end{DBKadmonition}
 
+\subsection{Ports (SysML 1.3)}
+\label{_ports_sysml_1_3}\hyperlabel{_ports_sysml_1_3}%
+
+La nouvelle spécification \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3} introduit donc les concepts de:
+
+\noindent
+\begin{description}
+\item[{ \emph{proxy port} }] \hspace{0em}\\
+ Ils doivent remplacer les ports 1.2 (ports de flots et ports standards) en en reprenant les caractéristiques
+et en ajoutant la possibilité d’imbrication et de spécification renforcée.
+
+\item[{ \emph{full port} }] \hspace{0em}\\
+ En fait il s’agit du même concept qu’une partie qui serait exposée à l’extérieur.
+
+\end{description}
+
 \section{\emph{Parametric Diagrams}}
 \label{param}\hyperlabel{param}%
 
-Afin de capturer de manière précise les contraintes entre valeurs, ou encore les liens entre les sorties et les entrées d’un bloc, \href{http://www.omgsysml.org/}{SysML}\index{SysML} utilise trois concepts clefs :
+Afin de capturer de manière précise les contraintes entre valeurs, ou encore les liens entre les sorties et les entrées d’un bloc, \href{http://www.omgsysml.org/}{SysML™}\index{SysML} utilise trois concepts clefs :
 \begin{itemize}
 
 \item{} \emph{Constraints} (un type de bloc)
@@ -2820,11 +2966,11 @@ C’est un bloc particulier :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/constraints.png}{{\imgevalsize{images/constraints.png}{\includegraphics[scale=0.5]{images/constraints.png}}}}{images/constraints.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/constraints.png}
 \end{center}
 \caption{Exemple de contraintes}
 \end{figure}
-\begin{DBKadmonition}{images/icons/note.png}{Définition : Réutilisation d’exigences (OMG SysML v1.3, p. 86)}
+\begin{DBKadmonition}{images/icons/note.png}{Définition : ConstraintBlock (OMG SysML v1.3, p. 86)}
 
 \emph{A constraint block is a block that packages the statement of a constraint so it may be applied in a reusable way to constrain properties of other blocks.}
 \end{DBKadmonition}
@@ -2836,7 +2982,7 @@ C’est une forme particulière de \emph{Internal Block Definition}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/param.png}{{\imgevalsize{images/param.png}{\includegraphics[scale=0.5]{images/param.png}}}}{images/param.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}
 \end{center}
 \caption{Exemple de diagramme paramétrique}
 \end{figure}
@@ -2850,7 +2996,7 @@ Pour assigner des valeurs spécifiques, on utilise des \emph{Block Configuration
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/blockconf.png}{{\imgevalsize{images/blockconf.png}{\includegraphics[scale=0.6]{images/blockconf.png}}}}{images/blockconf.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/blockconf.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/blockconf.png}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/blockconf.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/blockconf.png}
 \end{center}
 \caption{Exemple de bloc de configuration}
 \end{figure}
@@ -2858,13 +3004,13 @@ Pour assigner des valeurs spécifiques, on utilise des \emph{Block Configuration
 \section{Diagrammes de séquence système}
 \label{_diagrammes_de_séquence_système}\hyperlabel{_diagrammes_de_séquence_système}%
 
-Les diagrammes de séquence système (DSS) sont des \emph{Sequence Diagrams} \href{http://www.uml.org/}{UML}\index{UML} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement).
+Les diagrammes de séquence système (DSS) sont des \emph{Sequence Diagrams} \href{http://www.uml.org/}{UML™}\index{UML™} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement).
 
 Il permet de décrire les scénarios des cas d’utilisation sans entrer dans les détails. Il convient donc mieux à l’ingénierie système qu’un diagramme de séquence classique (cf. section sur les Section \ref{seq}).
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/dss.png}{{\imgevalsize{images/dss.png}{\includegraphics[scale=0.7]{images/dss.png}}}}{images/dss.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dss.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dss.png}{\includegraphics[scale=0.7]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dss.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dss.png}
 \end{center}
 \caption{Exemples de DSS}
 \end{figure}
@@ -2999,8 +3145,7 @@ En résumé, il existe plusieurs diagrammes permettant d’exprimer la structure
 On abordera :
 \begin{itemize}
 
-\item{} les \emph{Use Case Diagrams} (scénarios)
-
+\item{} les \emph{Use Case Diagrams} 
 
 
 \item{} les \emph{Sequence Diagrams} 
@@ -3022,7 +3167,7 @@ Les éléments de base :
 \begin{description}
 \item[{ Acteurs
 }] \hspace{0em}\\
-         les principaux acteurs (leur rôle) qui participent (on parle parfois d’acteurs principaux)
+         Les principaux éléments extérieurs au système considéré, et participant qui participent (on parle parfois d’acteurs principaux). Ils ont souvent un rôle.
         ou qui bénéficient (on parle alors d’acteurs secondaires) du système.
 
 \item[{ Cas d’utilisation
@@ -3040,13 +3185,13 @@ Les éléments de base :
 \end{description}
 \begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
 
-Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-{}mêmes pour identifier les acteurs.
+Un \textbf{acteur} représente un \textbf{rôle} joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-{}mêmes pour identifier les acteurs.
 \end{DBKadmonition}
 
 \section{Le Diagramme des Cas d’Utilisation}
 \label{_le_diagramme_des_cas_d_utilisation}\hyperlabel{_le_diagramme_des_cas_d_utilisation}%
 
-Le \textbf{Diagramme des Cas d’Utilisation} est un diagramme \href{http://www.uml.org/}{UML}\index{UML} permettant de représenter :
+Le \textbf{Diagramme des Cas d’Utilisation} est un diagramme \href{http://www.uml.org/}{UML™}\index{UML™} permettant de représenter :
 \begin{itemize}
 
 \item{} les \textbf{UC} (\emph{Use Case} ou Cas d’Utilisation)
@@ -3072,10 +3217,22 @@ Le \textbf{Diagramme des Cas d’Utilisation} est un diagramme \href{http://www.
 \subsection{Cas d’Utilisation (\emph{Use Case})}
 \label{_cas_d_8217_utilisation_emphasis_use_case_emphasis}\hyperlabel{_cas_d_8217_utilisation_emphasis_use_case_emphasis}%
 
-\label{uc}\hyperlabel{uc}%
+{\bf Exemple de cas d’utilisation} 
 Un cas d’utilisation représente un ensemble de \textbf{scénarios} que le système doit exécuter pour produire un résultat observable par un \hyperlink{acteur}{acteur}.
 
-\subsubsection{Exemple de cas d’utilisation (UML)}
+
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc4.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc4.png}{\includegraphics[width=0.8\imgrwidth,]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc4.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc4.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+
+\subsection{Exemple de cas d’utilisation (UML)}
 \label{_exemple_de_cas_d_8217_utilisation_uml}\hyperlabel{_exemple_de_cas_d_8217_utilisation_uml}%
 
 Retrait par carte bancaire
@@ -3098,7 +3255,7 @@ Retrait par carte bancaire
 
 \end{description}
 
-\subsubsection{Précisions}
+\subsection{Précisions}
 \label{_précisions}\hyperlabel{_précisions}%
 
 Un cas d’utilisation peut être précisé par :
@@ -3108,7 +3265,7 @@ Un cas d’utilisation peut être précisé par :
 
 
 
-\item{} un ou des diagrammes \href{http://www.uml.org/}{UML}\index{UML} (séquence, activité)
+\item{} un ou des diagrammes \href{http://www.uml.org/}{UML™}\index{UML™} (séquence, activité)
 
 
 \end{itemize}
@@ -3121,7 +3278,6 @@ généralement un diagramme de séquence à un cas d’utilisation (clic droit s
 \subsection{Acteur}
 \label{_acteur}\hyperlabel{_acteur}%
 
-\label{acteur}\hyperlabel{acteur}%
 Un acteur peut être une personne, un ensemble de personnes, un logiciel, un processus qui interagit avec un ou plusieurs \hyperlink{uc}{UC}.
 
 On peut trouver plusieurs types d’acteurs :
@@ -3168,6 +3324,13 @@ prérogatives (notamment en terme d’utilisation du système) que le générali
 
 En général, une simple association relie acteurs et \emph{Use Case}.
 On peut également orienter ces associations en plaçant une direction (flèche vide) au bout de l’association.
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc5.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc5.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc5.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/uc5.png}
+\end{center}
+\caption{Relations orientées}
+\end{figure}
 
 \subsection{Relations entre \emph{Use Case}}
 \label{_relations_entre_emphasis_use_case_emphasis}\hyperlabel{_relations_entre_emphasis_use_case_emphasis}%
@@ -3193,7 +3356,7 @@ Plusieurs relations sont possibles :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/dessins/UC.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/dessins/UC.png}{\includegraphics[scale=0.8]{/Users/bruel/dev/asciidoc/ACSI/dessins/UC.png}}}}{/Users/bruel/dev/asciidoc/ACSI/dessins/UC.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UC.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UC.png}{\includegraphics[scale=0.8]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UC.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/UC.png}
 \end{center}
 \caption{Notation dans le diagramme d’UC}
 \label{ucdiag}\hyperlabel{ucdiag}%
@@ -3225,8 +3388,8 @@ inclut dans plusieurs UC. Si ce n’est pas le cas, il est généralement englob
 \end{enumerate}
 \begin{DBKadmonition}{images/icons/note.png}{Note}
 
-Certains méthodologistes (comme T. Wielkins) préconisent de ne pas utiliser les acteurs et les cas d’utilisation
-(cf. son blog)
+Certains méthodologistes (comme Tim Weilkiens) préconisent de ne pas utiliser les acteurs et les cas d’utilisation
+(cf. son \href{http://model-based-systems-engineering.com/}{blog})
 \end{DBKadmonition}
 
 \section{\emph{Sequence Diagrams}}
@@ -3276,13 +3439,6 @@ Les éléments qui composent ce diagramme sont :
          ce qui "circule" d’un élément à l’autre (signal, appel de méthode, …)
 
 \end{description}
-\begin{figure}[H]
-
-\begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/seq1.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/seq1.png}{\includegraphics[scale=0.4]{/Users/bruel/dev/asciidoc/ACSI/images/seq1.png}}}}{Diagramme de séquence}
-\end{center}
-\caption{Exemple de diagramme de séquence}
-\end{figure}
 \begin{DBKadmonition}{images/icons/caution.png}{Attention}
 
 Les participants (et leur ligne de vie) représentent des instances de blocs (souvent "anonymes").
@@ -3318,7 +3474,7 @@ On peut également représenter des instructions itératives et conditionnelles 
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/fowl1.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/fowl1.png}{\includegraphics[scale=0.4]{/Users/bruel/dev/asciidoc/ACSI/images/fowl1.png}}}}{Un algorithme}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl1.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl1.png}}}}{Un algorithme}
 \end{center}
 \caption{Exemple d' algorithme…}
 \label{fowler}\hyperlabel{fowler}%
@@ -3326,7 +3482,7 @@ On peut également représenter des instructions itératives et conditionnelles 
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/fowl2.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/fowl2.png}{\includegraphics[scale=0.6]{/Users/bruel/dev/asciidoc/ACSI/images/fowl2.png}}}}{Sa modélisation}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl2.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl2.png}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl2.png}}}}{Sa modélisation}
 \end{center}
 \caption{Et le diagramme correpondant}
 \end{figure}
@@ -3343,7 +3499,7 @@ fonctionnalité. On mesure visuellement assez bien la différence entre la versi
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/fowl3.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/fowl3.png}{\includegraphics[scale=0.6]{/Users/bruel/dev/asciidoc/ACSI/images/fowl3.png}}}}{/Users/bruel/dev/asciidoc/ACSI/images/fowl3.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl3.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl3.png}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl3.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl3.png}
 \end{center}
 \caption{Conception "centralisée"}
 \label{fowler1}\hyperlabel{fowler1}%
@@ -3351,7 +3507,7 @@ fonctionnalité. On mesure visuellement assez bien la différence entre la versi
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/fowl4.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/fowl4.png}{\includegraphics[scale=0.6]{/Users/bruel/dev/asciidoc/ACSI/images/fowl4.png}}}}{/Users/bruel/dev/asciidoc/ACSI/images/fowl4.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl4.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl4.png}{\includegraphics[scale=0.6]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl4.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/fowl4.png}
 \end{center}
 \caption{Conception "objet"}
 \label{fowler2}\hyperlabel{fowler2}%
@@ -3372,7 +3528,7 @@ Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocs c
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/ucexp1.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/ucexp1.png}{\includegraphics[scale=0.5]{/Users/bruel/dev/asciidoc/ACSI/images/ucexp1.png}}}}{/Users/bruel/dev/asciidoc/ACSI/images/ucexp1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ucexp1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ucexp1.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ucexp1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/ucexp1.png}
 \end{center}
 \caption{Diagramme d’UC}
 \label{exp1-uc}\hyperlabel{exp1-uc}%
@@ -3380,7 +3536,7 @@ Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocs c
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/dssexp1.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/dssexp1.png}{\includegraphics[scale=0.5]{/Users/bruel/dev/asciidoc/ACSI/images/dssexp1.png}}}}{/Users/bruel/dev/asciidoc/ACSI/images/dssexp1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dssexp1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dssexp1.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dssexp1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dssexp1.png}
 \end{center}
 \caption{Le DSS correspondant}
 \label{exp1-dss}\hyperlabel{exp1-dss}%
@@ -3388,7 +3544,7 @@ Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocs c
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/dsexp1.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/dsexp1.png}{\includegraphics[scale=0.5]{/Users/bruel/dev/asciidoc/ACSI/images/dsexp1.png}}}}{/Users/bruel/dev/asciidoc/ACSI/images/dsexp1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dsexp1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dsexp1.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dsexp1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/dsexp1.png}
 \end{center}
 \caption{Le DS correspondant}
 \label{exp1-ds}\hyperlabel{exp1-ds}%
@@ -3397,7 +3553,7 @@ Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocs c
 \section{Diagramme d'états}
 \label{stm}\hyperlabel{stm}%
 
-\href{http://www.omgsysml.org/}{SysML}\index{SysML} a repris le concept, déjà connu en \href{http://www.uml.org/}{UML}\index{UML}, de machine à états  (\emph{State Machines}).
+\href{http://www.omgsysml.org/}{SysML™}\index{SysML} a repris le concept, déjà connu en \href{http://www.uml.org/}{UML™}\index{UML™}, de machine à états  (\emph{State Machines}).
 Ce diagramme représente les différents \textbf{états} possibles d’un bloc particulier, et comment ce bloc réagit à des événements en fonction de son état courant (en passant éventuellement dans un nouvel état).
 Cette réaction (nommée \textbf{transition}) possède un événement déclencheur, une condition (garde), un effet et un état cible.
 
@@ -3415,7 +3571,7 @@ Le diagramme d’états comprend également deux \textbf{pseudo-{}états} :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{/Users/bruel/dev/asciidoc/ACSI/images/stm1.png}{{\imgevalsize{/Users/bruel/dev/asciidoc/ACSI/images/stm1.png}{\includegraphics[scale=0.5]{/Users/bruel/dev/asciidoc/ACSI/images/stm1.png}}}}{/Users/bruel/dev/asciidoc/ACSI/images/stm1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/stm1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/stm1.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/stm1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/stm1.png}
 \end{center}
 \caption{Un exemple de diagramme d'état (R,UK)}
 \end{figure}
@@ -3436,7 +3592,7 @@ Il est utilisé pour l’expression de la logique de contrôle et d’entrées/s
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/act-pcmk1.png}{{\imgevalsize{images/act-pcmk1.png}{\includegraphics[scale=0.4]{images/act-pcmk1.png}}}}{images/act-{}pcmk1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-pcmk1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-pcmk1.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-pcmk1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-{}pcmk1.png}
 \end{center}
 \caption[{Exemple de diagramme d’activité (tiré de [SeeBook2012])}]{Exemple de diagramme d’activité (tiré de \hyperlink{SeeBook2012}{[SeeBook2012]})}
 \end{figure}
@@ -3464,7 +3620,7 @@ Les éléments de base du diagramme d’activité sont :
 \section{Actions}
 \label{_actions}\hyperlabel{_actions}%
 
-Les actions sont les unités fondamentales pour spécifier les comportements en \href{http://www.omgsysml.org/}{SysML}\index{SysML}.
+Les actions sont les unités fondamentales pour spécifier les comportements en \href{http://www.omgsysml.org/}{SysML™}\index{SysML}.
 Une action représente un traitement ou une transformation.
 Les actions sont contenues dans les activités, qui leur servent alors de contexte.
 
@@ -3477,12 +3633,12 @@ Le diagramme d’activité permet également d’utiliser des \textbf{flots d’
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/act-flow-continuous.png}{{\imgevalsize{images/act-flow-continuous.png}{\includegraphics[scale=0.5]{images/act-flow-continuous.png}}}}{images/act-{}flow-{}continuous.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-flow-continuous.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-flow-continuous.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-flow-continuous.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-{}flow-{}continuous.png}
 \end{center}
 \caption{Un exemple de flot continu (UK)}
 \end{figure}
 
-Pour permettre la modélisation des \textbf{flots continus}, \href{http://www.omgsysml.org/}{SysML}\index{SysML} ajoute à \href{http://www.uml.org/}{UML}\index{UML} la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.).
+Pour permettre la modélisation des \textbf{flots continus}, \href{http://www.omgsysml.org/}{SysML™}\index{SysML} ajoute à \href{http://www.uml.org/}{UML™}\index{UML™} la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.).
 On utilise pour cela des stéréotypes : \texttt{<{}<{}c\penalty5000 o\penalty5000 n\penalty5000 t\penalty5000 i\penalty5000 n\penalty5000 u\penalty5000 o\penalty5000 u\penalty5000 s>{}>{}} et \texttt{<{}<{}d\penalty5000 i\penalty5000 s\penalty5000 c\penalty5000 r\penalty5000 e\penalty5000 t\penalty5000 e>{}>{}}. Par défaut, un flot est supposé discret.
 \begin{DBKadmonition}{images/icons/note.png}{Définition : FlowProperty (OMG SysML v1.3, p. 63)}
 
@@ -3513,7 +3669,7 @@ Elle est représentée par un losange qui possède un arc entrant et plusieurs a
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/flow-ctrl.png}{{\imgevalsize{images/flow-ctrl.png}{\includegraphics[scale=0.4]{images/flow-ctrl.png}}}}{images/flow-{}ctrl.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flow-ctrl.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flow-ctrl.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flow-ctrl.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/flow-{}ctrl.png}
 \end{center}
 \caption{Les différents contrôles de flow SysML}
 \label{Control}\hyperlabel{Control}%
@@ -3523,11 +3679,11 @@ Elle est représentée par un losange qui possède un arc entrant et plusieurs a
 \label{_réutilisation}\hyperlabel{_réutilisation}%
 
 Les activités peuvent être réutilisées à travers des actions d’appel (\emph{callBehaviorAction}).
-L’action d’appel est représentée graphiquement par une fourche à droite de la boîte d’action, ainsi que par la chaîne : \texttt{nom d\penalty5000 ’\penalty5000 a\penalty5000 c\penalty5000 t\penalty5000 i\penalty5000 on :\penalty0  no\penalty5000 m d\penalty5000 ’\penalty5000 a\penalty5000 c\penalty5000 t\penalty5000 i\penalty5000 v\penalty5000 ité}. \href{http://www.omgsysml.org/}{SysML}\index{SysML} propose encore bien d’autres concepts et notations, comme la région interruptible, la région d’expansion ou encore les flots de type \emph{stream} qui sortent du cadre de ce livre d’introduction.
+L’action d’appel est représentée graphiquement par une fourche à droite de la boîte d’action, ainsi que par la chaîne : \texttt{nom d\penalty5000 ’\penalty5000 a\penalty5000 c\penalty5000 t\penalty5000 i\penalty5000 on :\penalty0  no\penalty5000 m d\penalty5000 ’\penalty5000 a\penalty5000 c\penalty5000 t\penalty5000 i\penalty5000 v\penalty5000 ité}. \href{http://www.omgsysml.org/}{SysML™}\index{SysML} propose encore bien d’autres concepts et notations, comme la région interruptible, la région d’expansion ou encore les flots de type \emph{stream} qui sortent du cadre de ce livre d’introduction.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/act-call.png}{{\imgevalsize{images/act-call.png}{\includegraphics[scale=0.5]{images/act-call.png}}}}{images/act-{}call.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-call.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-call.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-call.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/act-{}call.png}
 \end{center}
 \caption{Exemple de \emph{callBehaviorAction} (UK)}
 \end{figure}
@@ -3688,7 +3844,7 @@ On abordera ici les aspects transversaux comme :
 \section{Traçabilité des exigences}
 \label{_traçabilité_des_exigences}\hyperlabel{_traçabilité_des_exigences}%
 
-Nous avons vu déjà un certain nombre de mécanismes \href{http://www.omgsysml.org/}{SysML}\index{SysML} qui permettent de tracer les exigences.
+Nous avons vu déjà un certain nombre de mécanismes \href{http://www.omgsysml.org/}{SysML™}\index{SysML} qui permettent de tracer les exigences.
 Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un bloc \texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} une exigence).
 \begin{center}
 \begingroup%
@@ -3773,7 +3929,7 @@ XXX Mettre un exemple avec tous ces liens. XXX
 \section{Mécanismes d’allocation}
 \label{_mécanismes_d_8217_allocation}\hyperlabel{_mécanismes_d_8217_allocation}%
 
-Un mécanisme nouveau en \href{http://www.omgsysml.org/}{SysML}\index{SysML} et important pour l’Ingénierie Système\index{IS} est le mécanisme d'\textbf{allocation}. Il permet de
+Un mécanisme nouveau en \href{http://www.omgsysml.org/}{SysML™}\index{SysML} et important pour l’Ingénierie Système\index{IS} est le mécanisme d'\textbf{allocation}. Il permet de
 préciser quel élément conceptuel (comme un comportement ou une activité) est alloué sur quel élément physique.
 
 Il est possible d’exprimer cette allocation de plusieurs manières.
@@ -3790,7 +3946,7 @@ C’est une forme particulière de \emph{Internal Block Definition} (cf. Section
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/param.png}{{\imgevalsize{images/param.png}{\includegraphics[scale=0.5]{images/param.png}}}}{images/param.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/param.png}
 \end{center}
 \caption{Exemple de diagramme paramétrique}
 \end{figure}
@@ -3798,13 +3954,13 @@ C’est une forme particulière de \emph{Internal Block Definition} (cf. Section
 Il est regrettable que ce diagramme soit le moins utilisé (cf. Figure \ref{enquete}).
 \begin{DBKadmonition}{images/icons/note.png}{Note}
 
-Certaines approchent utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l’impact des changements de valeurs de tel ou tel paramètre.
+Certaines approchent (cf. \hyperlink{MeDICIS}{[MeDICIS]}) utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l’impact des changements de valeurs de tel ou tel paramètre.
 \end{DBKadmonition}
 
 \section{En résumé}
 \label{_en_résumé_5}\hyperlabel{_en_résumé_5}%
 
-En résumé l’expression du comportement du système en \href{http://www.omgsysml.org/}{SysML}\index{SysML} est très similaire à ce qui est fait dans \href{http://www.uml.org/}{UML}\index{UML}. On retrouve néanmoins le renforcement des liens entre éléments de modèles par les dépendances précises et les allocations. Un autre élément de renforcement entre éléments de modèles concerne le fait qu’un diagramme comportemental (comme une machine à état) est attachée à un élément bien précis (par exemple un bloc). Ces liens apparaissent entre blocs et machines à état, entre cas d’utilisation et diagrammes de séquence ou d’activité, etc.
+En résumé l’expression du comportement du système en \href{http://www.omgsysml.org/}{SysML™}\index{SysML} est très similaire à ce qui est fait dans \href{http://www.uml.org/}{UML™}\index{UML™}. On retrouve néanmoins le renforcement des liens entre éléments de modèles par les dépendances précises et les allocations. Un autre élément de renforcement entre éléments de modèles concerne le fait qu’un diagramme comportemental (comme une machine à état) est attachée à un élément bien précis (par exemple un bloc). Ces liens apparaissent entre blocs et machines à état, entre cas d’utilisation et diagrammes de séquence ou d’activité, etc.
 
 \section{Questions de révision}
 \label{_questions_de_révision_5}\hyperlabel{_questions_de_révision_5}%
@@ -3866,11 +4022,11 @@ Nous sommes des défenseurs des principes \hyperlink{DRY}{[DRY]} et \hyperlink{T
 Nous choisissons ici l’outil \href{http://www.topcased.org}{TOPCASED}\index{Topcased} pour des raisons que nous expliquerons ailleurs. La version utilisée pour réaliser les exemples de cette section
 est la version \texttt{5.\penalty0 2}.
 
-Un outil \href{http://www.omgsysml.org/}{SysML}\index{SysML} seul ne suffit pas (cf. Section \ref{outils}). Il faut penser à la documentation (cf. Section \ref{gendoc}).
+Un outil \href{http://www.omgsysml.org/}{SysML™}\index{SysML} seul ne suffit pas (cf. Section \ref{outils}). Il faut penser à la documentation (cf. Section \ref{gendoc}).
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{dessins/SysMLTool-fr.png}{{\imgevalsize{dessins/SysMLTool-fr.png}{\includegraphics[scale=0.3]{dessins/SysMLTool-fr.png}}}}{dessins/SysMLTool-{}fr.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/SysMLTool-fr.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/SysMLTool-fr.png}{\includegraphics[scale=0.3]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/SysMLTool-fr.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/SysMLTool-{}fr.png}
 \end{center}
 \caption{Outillage autour de SysML}
 \end{figure}
@@ -3878,7 +4034,7 @@ Un outil \href{http://www.omgsysml.org/}{SysML}\index{SysML} seul ne suffit pas 
 \subsection{Outils}
 \label{outils}\hyperlabel{outils}%
 
-Il existe de nombreux outils \href{http://www.omgsysml.org/}{SysML}\index{SysML}. Nous renvoyons le lecteur sur le site de \href{http://www.sysml-france.fr}{SysML-{}France}\index{SysML-{}France} pour
+Il existe de nombreux outils \href{http://www.omgsysml.org/}{SysML™}\index{SysML}. Nous renvoyons le lecteur sur le site de \href{http://www.sysml-france.fr}{SysML-{}France}\index{SysML-{}France} pour
 des informations sur les dernières versions des outils.
 
 \subsection{Génération de documentation}
@@ -3889,14 +4045,14 @@ La plupart des outils permettent de générer de la documentation. Pour les outi
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/gendoc-1.png}{{\imgevalsize{images/gendoc-1.png}{\includegraphics[scale=0.4]{images/gendoc-1.png}}}}{images/gendoc-{}1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-1.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-{}1.png}
 \end{center}
 \caption{Génération de documentation à partir de TOPCASED (1)}
 \end{figure}
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/gendoc-2.png}{{\imgevalsize{images/gendoc-2.png}{\includegraphics[scale=0.4]{images/gendoc-2.png}}}}{images/gendoc-{}2.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-2.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-2.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-2.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-{}2.png}
 \end{center}
 \caption{Génération de documentation à partir de TOPCASED (1)}
 \end{figure}
@@ -3905,7 +4061,7 @@ Les outils commerciaux comme \href{http://www-142.ibm.com/software/products/us/e
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/gendoc-rhapsody1.png}{{\imgevalsize{images/gendoc-rhapsody1.png}{\includegraphics[scale=0.4]{images/gendoc-rhapsody1.png}}}}{images/gendoc-{}rhapsody1.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-rhapsody1.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-rhapsody1.png}{\includegraphics[scale=0.4]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-rhapsody1.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/gendoc-{}rhapsody1.png}
 \end{center}
 \caption{Génération de documentation à partir de Rhapsody}
 \end{figure}
@@ -3930,7 +4086,15 @@ Il existe de nombreuses possibilités. Citons par exemple :
          L’outil \href{http://www-142.ibm.com/software/products/us/en/ratirhap}{Rhapsody}\index{Rhapsody} possède une interface très pratique pour faire du prototypage rapide.
 
 
-\noindent\imgexists{images/rhapsody-animation.png}{{\imgevalsize{images/rhapsody-animation.png}{\includegraphics[scale=0.5]{images/rhapsody-animation.png}}}}{images/rhapsody-{}animation.png}
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/rhapsody-animation.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/rhapsody-animation.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/rhapsody-animation.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/rhapsody-{}animation.png}\end{center}
+\end{minipage}
+
+
+\end{center}
 
 Voir mon tutoriel (en anglais) disponible \href{http://jmbhome.heroku.com/teaching/SysML/tp-undergraduate.html}{ici}.
 \item[{ Animation de modèles en Artisan
@@ -3941,7 +4105,7 @@ Voir mon tutoriel (en anglais) disponible \href{http://jmbhome.heroku.com/teachi
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/artisan.png}{{\imgevalsize{images/artisan.png}{\includegraphics[scale=0.5]{images/artisan.png}}}}{images/artisan.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/artisan.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/artisan.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/artisan.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/artisan.png}
 \end{center}
 \caption{Animation Artisan}
 \end{figure}
@@ -4007,7 +4171,7 @@ Voir aussi Section \ref{contexte}.
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/pacemaker-context.png}{{\imgevalsize{images/pacemaker-context.png}{\includegraphics[scale=0.5]{images/pacemaker-context.png}}}}{images/pacemaker-{}context.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-context.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/pacemaker-{}context.png}
 \end{center}
 \caption[{Le contexte du Pacemaker ([SeeBook2012])}]{Le contexte du Pacemaker (\hyperlink{SeeBook2012}{[SeeBook2012]})}
 \end{figure}
@@ -4022,8 +4186,374 @@ Un diagramme d'état peu modéliser les différents modes et les événements qu
 % PART
 %
 
-\part{Partie 5 : Pour aller plus loin}
-\label{_partie_5_pour_aller_plus_loin}\hyperlabel{_partie_5_pour_aller_plus_loin}%
+\part{Partie 5 : Pédagogie}
+\label{upsti}\hyperlabel{upsti}%
+
+% ------- 
+% Chapter 
+% ------- 
+
+\chapter{Enseigner SysML}
+\label{_enseigner_sysml}\hyperlabel{_enseigner_sysml}%
+
+Cette partie est dédiée à l’enseignement à \href{http://www.omgsysml.org/}{SysML™}\index{SysML}. J’y distille des conseils et
+des remarques issues des nombreuses questions soulevées dans le cadre des journées
+SysML-{}France ou \href{http://www.upsti.fr/}{UPSTI}.
+
+\section{Respect des notations SysML}
+\label{_respect_des_notations_sysml}\hyperlabel{_respect_des_notations_sysml}%
+
+Je recommande vraiment l’utilisation d’outils (même de dessins, mais dédié à) \href{http://www.omgsysml.org/}{SysML™}\index{SysML}.
+Ils respectent en général la norme \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3} (bien qu’il faille se méfier).
+Eviter de "dessiner" des diagrammes.
+
+Par contre la norme permet de faire des adaptations graphiques (cf. la discussion \href{http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/}{http://www.realtimeatwork.com/\-2011/\-08/\-is-{}sysml-{}too-{}abstract/\-}).
+
+\section{Diagramme de bloc}
+\label{_diagramme_de_bloc}\hyperlabel{_diagramme_de_bloc}%
+
+Par exemple dans ce diagramme les blocs ne respectent
+pas la syntaxe graphique de \href{http://www.omgsysml.org/}{SysML™}\index{SysML} :
+\begin{DBKadmonition}{images/icons/note.png}{Erreur : mauvais symboles graphiques pour les blocs}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{cordeuseContext.png}{{\imgevalsize{cordeuseContext.png}{\includegraphics[width=0.9\imgrwidth,]{cordeuseContext.png}}}}{cordeuseContext.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+
+Pour rappel, la notation \texttt{jmb :\penalty0  Pe\penalty5000 r\penalty5000 s\penalty5000 o\penalty5000 nne} permet de représenter un \textbf{objet} (une instance d’une classe ou d’un bloc).
+C’est donc une notation utilisée par exemple dans les participants d’un diagramme de séquence ou encore les parties
+d’un diagramme interne de bloc.
+
+Donc dans le diagramme ci-{}dessus, l’acteur est correct (on peut mettre des acteurs dans un bdd\index{bdd}, cf. OMG SysML v1.3 p.32), par contre
+les objets \texttt{Blo\penalty5000 ck :\penalty0  …} est une erreur de notation.
+\begin{DBKadmonition}{images/icons/note.png}{Solution : utiliser un outil (ici BOUML)}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{plantuml/cordeuseContext.png}{{\imgevalsize{plantuml/cordeuseContext.png}{\includegraphics[width=0.9\imgrwidth,]{plantuml/cordeuseContext.png}}}}{plantuml/cordeuseContext.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/warning.png}{AVERTISSEMENT}
+
+Attention, il est tout à fait possible de représenter des instances dans un bdd\index{bdd} (cf. OMG SysML v1.3 p.34),
+même si c’est très peu courant.
+\end{DBKadmonition}
+
+\section{Diagramme de séquence}
+\label{_diagramme_de_séquence}\hyperlabel{_diagramme_de_séquence}%
+\begin{DBKadmonition}{images/icons/note.png}{Erreur : pb avec les participants et la boucle}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{cordeuseSeqBad.png}{{\imgevalsize{cordeuseSeqBad.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{cordeuseSeqBad.png}}}}{cordeuseSeqBad.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+
+Plusieurs problèmes de non respect de la notation :
+\begin{itemize}
+
+\item{} il manque le rectangle aux participants
+
+
+
+\item{} les participants semblent être des blocs et non des instances
+
+
+
+\item{} la boucle devrait avoir une condition (même "toujours" pour une boucle infinie)
+
+
+\end{itemize}
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+Le dernier problème est plus une convention qu’une véritable erreur. Cf. Chapitre \ref{Conventions}.
+\end{DBKadmonition}
+
+\section{Diagramme des cas d’utilisation}
+\label{_diagramme_des_cas_d_8217_utilisation_2}\hyperlabel{_diagramme_des_cas_d_8217_utilisation_2}%
+
+\subsection{Utilisation du système}
+\label{Utilisation}\hyperlabel{Utilisation}%
+\begin{DBKadmonition}{images/icons/note.png}{Problème : Fournir n’est pas Obtenir…}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{ucBad.png}{{\imgevalsize{ucBad.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{ucBad.png}}}}{ucBad.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+
+Il vaut mieux définir les cas d’utilisation du point de vue de (ou des) utilisateurs plutôt que du système. Cf. Chapitre \ref{Conventions}.
+Pour rappel, un cas d’utilisation est un regroupement de scénarios qui correspondent à un but d’un des acteurs (dans le domaine du problème considéré et selon la granularité envisagée).
+
+Dans le diagramme ci-{}dessus il aurait fallut écrire :
+\begin{DBKadmonition}{images/icons/note.png}{Solution : Prendre le point de vue de l’utilisateur}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{plantuml/uc7.png}{{\imgevalsize{plantuml/uc7.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/uc7.png}}}}{plantuml/uc7.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+
+\section{Interaction avec les cas d’utilisation principaux}
+\label{_interaction_avec_les_cas_d_8217_utilisation_principaux}\hyperlabel{_interaction_avec_les_cas_d_8217_utilisation_principaux}%
+\begin{DBKadmonition}{images/icons/note.png}{Diagramme des Cas d’Utilisation erroné}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{image001.jpg}{{\imgevalsize{image001.jpg}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{image001.jpg}}}}{image001.jpg}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Erreur : oubli d’interaction}
+
+Dans le diagramme [?note], l’acteur \texttt{Uti\penalty5000 l\penalty5000 i\penalty5000 s\penalty5000 a\penalty5000 t\penalty5000 eur} n’interagit ni avec le cas \texttt{Ten\penalty5000 d\penalty5000 r\penalty5000 e l\penalty5000 a c\penalty5000 o\penalty5000 rde} ni avec \texttt{Pos\penalty5000 i\penalty5000 t\penalty5000 i\penalty5000 o\penalty5000 n\penalty5000 n\penalty5000 e\penalty5000 r r\penalty5000 a\penalty5000 q\penalty5000 u\penalty5000 e\penalty5000 tte} !
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Solution (extrait) : Modifier le diagramme en conséquence}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{plantuml/uc1.png}{{\imgevalsize{plantuml/uc1.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/uc1.png}}}}{plantuml/uc1.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+
+La solution n’est que partiellement satisfaisante (cf. point suivant).
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+J’ai fait disparaître le lien entre \texttt{Ten\penalty5000 d\penalty5000 r\penalty5000 e l\penalty5000 a c\penalty5000 o\penalty5000 rde} et \texttt{Corde}, mais uniquement car j’ai déduit de l’exemple
+que \texttt{Pro\penalty5000 g\penalty5000 r\penalty5000 a\penalty5000 m\penalty5000 mer} n’interagissait pas avec \texttt{Corde}. Et donc que \texttt{Ten\penalty5000 d\penalty5000 r\penalty5000 e l\penalty5000 a c\penalty5000 o\penalty5000 rde} n’interagit avec \texttt{Corde} que dans
+le sous-{}cas d’utilisation \texttt{Mai\penalty5000 n\penalty5000 t\penalty5000 e\penalty5000 n\penalty5000 i\penalty5000 r l\penalty5000 a t\penalty5000 e\penalty5000 n\penalty5000 s\penalty5000 ion}. C’est typiquement une ambiguité que le "client" doit lever.
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
+
+L’utilisation de stéréotypes comme \texttt{<{}<{}T\penalty5000 o\penalty5000 p\penalty5000 L\penalty5000 e\penalty5000 v\penalty5000 e\penalty5000 l>{}>{}} ou \texttt{<{}<{}P\penalty5000 r\penalty5000 i\penalty5000 n\penalty5000 c\penalty5000 i\penalty5000 p\penalty5000 a\penalty5000 l>{}>{}} peut permettre d'éviter d’interagir avec ces cas d’utilisation.
+\end{DBKadmonition}
+
+\section{Utilisation des \texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}}}
+\label{_utilisation_des_literal_lt_lt_include_gt_gt_literal}\hyperlabel{_utilisation_des_literal_lt_lt_include_gt_gt_literal}%
+
+Il faut faire attention à ne pas abuser des \texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}}.
+Par exemple ma recommandation en SysML/UML est de ne jamais avoir ça :
+\begin{DBKadmonition}{images/icons/note.png}{Problème : mauvaise utilisation de l'<{}<{}include>{}>{}}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{plantuml/uc2.png}{{\imgevalsize{plantuml/uc2.png}{\includegraphics[width=0.8\imgrwidth,]{plantuml/uc2.png}}}}{plantuml/uc2.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+
+Dans la figure [?note], il n’y a aucune raison de ne pas inclure le cas d’utilisation
+\texttt{S’i\penalty5000 d\penalty5000 e\penalty5000 n\penalty5000 t\penalty5000 i\penalty5000 f\penalty5000 ier} directement dans le cas d’utilisation \texttt{Ach\penalty5000 e\penalty5000 t\penalty5000 e\penalty5000 r e\penalty5000 n l\penalty5000 i\penalty5000 gne}. Et avoir ainsi :
+\begin{DBKadmonition}{images/icons/note.png}{Solution 1 : On englobe les <{}<{}include>{}>{} "isolés"}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{plantuml/uc3.png}{{\imgevalsize{plantuml/uc3.png}{\includegraphics[width=0.8\imgrwidth,]{plantuml/uc3.png}}}}{plantuml/uc3.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+
+J’enseigne qu’un \texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}} devrait toujours concerner un cas inclut dans plusieurs autres, comme la figure [?note] :
+\begin{DBKadmonition}{images/icons/note.png}{Solution 2 : On "mutualise" les <{}<{}include>{}>{}}
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{plantuml/uc4.png}{{\imgevalsize{plantuml/uc4.png}{\includegraphics[width=0.8\imgrwidth,]{plantuml/uc4.png}}}}{plantuml/uc4.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+\end{DBKadmonition}
+
+Néanmoins je vois deux raisons valables pour décomposer les cas d’utilisation avec des \texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}} qui se retrouvent isolés :
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Pour indiquer que seulement une partie du cas d’utilisation principal interagit avec un acteur (secondaire la plupart du temps).
+C’est ce qui est fait dans [?note].
+
+
+
+\item{} Pour faire de la décomposition fonctionnelle (cf. point suivant).
+
+
+\end{enumerate}
+
+\section{Niveau de détails des UC}
+\label{_niveau_de_détails_des_uc}\hyperlabel{_niveau_de_détails_des_uc}%
+
+Faut-{}il minimiser le nombre de cas d’utilisation ou au contraire détailler?
+Normalement un bon diagramme des UC est indépendant de la solution, il exprime
+plutôt le problème (les attentes).
+
+Néanmoins dans le cadre de l’enseignement en prépa comme support graphique à une analyse
+fonctionnelle, pourquoi pas détailler. À ce moment-{}là, utiliser des stéréotypes pour différencier
+les cas d’utilisation (\texttt{<{}<{}T\penalty5000 o\penalty5000 p\penalty5000 L\penalty5000 e\penalty5000 v\penalty5000 e\penalty5000 l>{}>{}} et \texttt{<{}<{}O\penalty5000 p\penalty5000 e\penalty5000 r\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 o\penalty5000 n\penalty5000 a\penalty5000 l>{}>{}} par exemple comme dans la documentation SysML 1.3 pp 185-{}186
+sur le \texttt{Hyb\penalty5000 r\penalty5000 i\penalty5000 d\penalty5000 SUV}).
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+La question de l’utilisation des cas d’utilisation pour exprimer les activités du système reste à trancher.
+Le diagramme des activités étant tout de même plus adapté a priori (cf. Chapitre \ref{faq}).
+Le principal défaut du diagramme [?note] est surtout de mélanger des cas d’utilisations de niveaux différents.
+N’oublions pas que derrière chaque UC, il devrait y avoir un but d’une partie prenante.
+\end{DBKadmonition}
+
+\section{Diagrammes de bloc}
+\label{_diagrammes_de_bloc}\hyperlabel{_diagrammes_de_bloc}%
+
+\subsection{Héritage}
+\label{_héritage}\hyperlabel{_héritage}%
+
+Attention à la notion d’héritage, complexe à appréhender. On ne peut surtout pas dire :
+\begin{DBKadmonition}{images/icons/note.png}{Erreur : Confondre héritage et propriété}
+
+Un bloc \texttt{Sar\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t\penalty5000 A\penalty5000 t\penalty5000 t\penalty5000 a\penalty5000 ché} hérite des blocs \texttt{Lien} et \texttt{Sar\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t\penalty5000 N\penalty5000 o\penalty5000 n\penalty5000 A\penalty5000 t\penalty5000 t\penalty5000 a\penalty5000 ché}.
+\noindent\imgexists{plantuml/bdd1.png}{{\imgevalsize{plantuml/bdd1.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/bdd1.png}}}}{plantuml/bdd1.png}
+\end{DBKadmonition}
+
+La relation doit pourvoir se lire "est un". Or, un \texttt{Sar\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t\penalty5000 A\penalty5000 t\penalty5000 t\penalty5000 a\penalty5000 ché} n’est pas un \texttt{Sar\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t\penalty5000 N\penalty5000 o\penalty5000 n\penalty5000 A\penalty5000 t\penalty5000 t\penalty5000 a\penalty5000 ché} (c’est même le contraire)!
+
+Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de \textbf{généralisation}. À l’inverse, quand on constate qu’un bloc possède réellement plusieurs déclinaisons différentes et que l’on créé alors des blocs spécifiques, on parle alors de \textbf{spécialisation}.
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{genspec.png}{{\imgevalsize{genspec.png}{\includegraphics[width=0.7\imgrwidth,]{genspec.png}}}}{genspec.png}
+\end{center}
+\caption{Exemple de lien de généralisation/spécialisation}
+\end{figure}
+
+On retrouve cette association entre blocs, mais aussi entre acteurs, cas d’utilisation, etc.
+\begin{DBKadmonition}{images/icons/note.png}{Solution}
+
+Un bloc \texttt{Sar\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t\penalty5000 A\penalty5000 t\penalty5000 t\penalty5000 a\penalty5000 ché} hérite du bloc \texttt{Sar\penalty5000 m\penalty5000 ent} et possède un \texttt{Lien}.
+\noindent\imgexists{plantuml/bdd2.png}{{\imgevalsize{plantuml/bdd2.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/bdd2.png}}}}{plantuml/bdd2.png}
+\end{DBKadmonition}
+
+\subsection{Cardinalités}
+\label{_cardinalités}\hyperlabel{_cardinalités}%
+
+Attention aux cardinnalités indiquées dans les associations.
+\begin{DBKadmonition}{images/icons/note.png}{Erreur : Le système est composé de 32 propulseurs!}
+
+\noindent\imgexists{cardBad.png}{{\imgevalsize{cardBad.png}{\includegraphics[width=0.7\imgrwidth,]{cardBad.png}}}}{cardBad.png}
+
+Il ne s’agit pas d’une erreur de syntaxe SysML, mais d’une erreur de conception.
+Un \texttt{Ali\penalty5000 s\penalty5000 tar} est composé de 8 \texttt{Pro\penalty5000 p\penalty5000 u\penalty5000 l\penalty5000 s\penalty5000 e\penalty5000 urs} et un \texttt{Pro\penalty5000 p\penalty5000 u\penalty5000 l\penalty5000 s\penalty5000 e\penalty5000 urs} est composé de 4 \texttt{Pro\penalty5000 p\penalty5000 u\penalty5000 l\penalty5000 s\penalty5000 e\penalty5000 u\penalty5000 r\penalty5000 s a\penalty5000 r\penalty5000 r\penalty5000 i\penalty5000 è\penalty5000 res}. 4*8=32.
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/note.png}{Solution possible}
+
+\noindent\imgexists{plantuml/bdd4.png}{{\imgevalsize{plantuml/bdd4.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/bdd4.png}}}}{plantuml/bdd4.png} \noindent\imgexists{plantuml/bdd5.png}{{\imgevalsize{plantuml/bdd5.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/bdd5.png}}}}{plantuml/bdd5.png}
+\end{DBKadmonition}
+
+\section{Diagramme d'états}
+\label{_diagramme_d_états}\hyperlabel{_diagramme_d_états}%
+
+\subsection{Différence entre UML et SysML sur les machines à état.}
+\label{_différence_entre_uml_et_sysml_sur_les_machines_à_état}\hyperlabel{_différence_entre_uml_et_sysml_sur_les_machines_à_état}%
+
+SysML a repris (quasiment, cf. plus bas) tel quel le diagramme d'états UML :
+\begin{DBKadmonition}{images/icons/note.png}{Définition : State Machines (OMG SysML v1.3, p. 189)}
+
+\emph{SysML reuses many of the major diagram types of UML. In some cases, the UML diagrams are strictly reused, such as use case, sequence, state machine, and package diagrams, whereas in other cases they are modified so that they are consistent with SysML extensions.}
+\end{DBKadmonition}
+
+À une exception près, les \emph{protocol state machines} qui ont été retiré pour des raisons de simplification :
+\begin{DBKadmonition}{images/icons/note.png}{Définition : State Machines (OMG SysML v1.3, p. 119)}
+
+\emph{The UML concept of protocol state machines is excluded from SysML to reduce the complexity of the language.}
+\end{DBKadmonition}
+
+\subsection{Lien avec le Grafcet}
+\label{_lien_avec_le_grafcet}\hyperlabel{_lien_avec_le_grafcet}%
+
+Le \href{http://fr.wikipedia.org/wiki/Grafcet}{Grafcet} étant plus proche des Réseaux de Petri, la correspondance la plus proche
+serait peut-{}être le diagramme d’activité.
+
+Voir aussi la FAQ \hyperlink{Grafcet}{Comment traduire un grafcet en machine à état ?}.
+
+\section{Divers}
+\label{_divers}\hyperlabel{_divers}%
+
+\subsection{Du danger d’une lecture trop rapide de la norme}
+\label{_du_danger_d_8217_une_lecture_trop_rapide_de_la_norme}\hyperlabel{_du_danger_d_8217_une_lecture_trop_rapide_de_la_norme}%
+
+C’est important de faire référence à la norme quand on avance un fait.
+J’essaye de m’y atteler personnellement dans mes écrits.
+Néanmoins il faut faire attention car on fait souvent des citations qui finalement ne sont que des extraits.
+\begin{DBKadmonition}{images/icons/note.png}{Erreur : citation sortie de son contexte}
+
+"…[SysML] limite à 1 le nombre de régions dans un état composite (note de bas de page p. [17 de la norme]…)."
+\end{DBKadmonition}
+
+Cette partie de la norme \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3} mentionne effectivement cette phrase, mais comme un exemple de notes
+qui peuvent se retrouver dans des manuels d’outils qui ne respecteraient pas la norme justement!!
+\begin{DBKadmonition}{images/icons/note.png}{Solution : Faire attention au contexte (OMG SysML v1.3, p. 17)}
+
+"\emph{In the case of “PARTIAL” support for a compliance point, in addition to a formal statement of compliance, implementors, and profile designers must also provide feature support statements.}"
+\end{DBKadmonition}
+
+Un autre exemple issu d’\href{http://www.uml.org/}{UML™}\index{UML™} où en fait la norme parle d’une convention adoptée pour ses propres meta-{}modèles :
+\begin{DBKadmonition}{images/icons/note.png}{Erreur : citation sortie de son contexte}
+
+If no multiplicity is shown on an association end, it implies a multiplicity of exactly 1 (UML Superstructure Specification v2.4.1 p.18).
+\end{DBKadmonition}
+
+Il faut donc bien faire attention avec les extraits de norme.
+\begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
+
+Quand on cite un extrait de la norme, citer le numéro de page du document papier et non celui du PDF.
+\end{DBKadmonition}
+%
+% PART
+%
+
+\part{Partie 6 : Pour aller plus loin}
+\label{_partie_6_pour_aller_plus_loin}\hyperlabel{_partie_6_pour_aller_plus_loin}%
 
 % ------- 
 % Chapter 
@@ -4032,7 +4562,7 @@ Un diagramme d'état peu modéliser les différents modes et les événements qu
 \chapter{Considérations méthodologiques}
 \label{methodo}\hyperlabel{methodo}%
 
-Exemples de démarche autour de \href{http://www.omgsysml.org/}{SysML}\index{SysML}, (cf. Chapitre \ref{Methodes}).
+Exemples de démarche autour de \href{http://www.omgsysml.org/}{SysML™}\index{SysML}, (cf. Chapitre \ref{Methodes}).
 \index{Méthodes}
 
 % ------- 
@@ -4042,7 +4572,7 @@ Exemples de démarche autour de \href{http://www.omgsysml.org/}{SysML}\index{Sys
 \chapter{Analyses et simulation}
 \label{Analyse}\hyperlabel{Analyse}%
 
-To be completed…
+To be completed
 
 % ------- 
 % Chapter 
@@ -4065,7 +4595,7 @@ En voici une capture d'écran :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/quizz.png}{{\imgevalsize{images/quizz.png}{\includegraphics[scale=0.3]{images/quizz.png}}}}{images/quizz.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/quizz.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/quizz.png}{\includegraphics[scale=0.3]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/quizz.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/quizz.png}
 \end{center}
 \caption{Exemple de QCM sur SysML}
 \end{figure}
@@ -4086,7 +4616,7 @@ Voici un petit exercice (en anglais pour l’instant, désolé) pour changer :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/crossword.png}{{\imgevalsize{images/crossword.png}{\includegraphics[scale=0.5]{images/crossword.png}}}}{images/crossword.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/crossword.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/crossword.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/crossword.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/crossword.png}
 \end{center}
 \caption{Mots-{}croisés sur SysML}
 \end{figure}
@@ -4166,7 +4696,7 @@ Voici un petit exercice (en anglais pour l’instant, désolé) pour changer :
 % Chapter 
 % ------- 
 
-\chapter{Liens utiles}
+\chapter{Liens et références utiles}
 \label{liens}\hyperlabel{liens}%
 \begin{itemize}
 
@@ -4197,6 +4727,21 @@ Voici un petit exercice (en anglais pour l’instant, désolé) pour changer :
 \item{} Le site de l’\href{http://www.afis.fr/}{AFIS} (Association Française
         d’Ingénierie Système)
 
+
+\end{itemize}
+
+
+\item{} Spécial STI2D et UPSTI
+
+\begin{itemize}
+
+\item{} \href{http://cache.media.education.gouv.fr/file/special_3_ESR/45/2/programme-PTSI_252452.pdf}{Programme du BO} 
+
+
+\item{} \href{http://www.scoop.it/t/formation-sysml-sti2d}{Le forum STI2D} 
+
+
+\item{} \href{http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d?ref=http://www.scoop.it/t/formation-sysml-sti2d}{Slides STI2D} 
 
 \end{itemize}
 
@@ -4272,74 +4817,12 @@ Voici un petit exercice (en anglais pour l’instant, désolé) pour changer :
 % Chapter 
 % ------- 
 
-\chapter{Conventions}
-\label{conventions}\hyperlabel{conventions}%
-
-Il existe un certain nombre de conventions complémentaires aux règles de la spécification elle-{}même.
-Nous ne les donnons ici qu'à titre indicatif. Il est important pour une organisation qui souhaite utiliser \href{http://www.omgsysml.org/}{SysML}\index{SysML} comme notation pour ses modèles de se mettre d’accord sur ce type de convention. En voici quelques-{}unes :
-\begin{itemize}
-
-\item{} Convention pour les noms :
-
-\begin{itemize}
-
-\item{} de blocs commencent par une majuscule (origine : \href{http://www.uml.org/}{UML}\index{UML})
-
-
-
-\item{} de cas d’utilisation (qui représentent une action) doivent être un verbe à l’infinitif (origine : \href{http://www.uml.org/}{UML}\index{UML})
-
-
-
-\item{} d’activité (qui représentent une action) doivent être un verbe à l’infinitif (origine : \href{http://www.uml.org/}{UML}\index{UML})
-
-
-
-\item{} d’attributs commencent par une minuscule et ne sont pas au pluriel  (origine : \href{http://www.uml.org/}{UML}\index{UML})
-
-
-\end{itemize}
-
-
-\item{} Convention pour les \emph{requirements} :
-
-\begin{itemize}
-
-\item{} …
-
-
-\end{itemize}
-
-
-\item{} Dépendances
-
-\begin{itemize}
-
-\item{} En général un cas d’utilisation qui n’est inclus (\texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}}) que dans un seul autre cas est fusionné dans ce dernier
-
-
-
-\item{} Lorsqu’un cas d’utilisation possède plusieurs cas \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. Chapitre \ref{conventions}).
-
-
-\end{itemize}
-
-\end{itemize}
-\begin{DBKadmonition}{images/icons/note.png}{Note}
-
-Pour les origines UML de certaines conventions, cf. \hyperlink{Styles}{[Styles]}.
-\end{DBKadmonition}
-
-% ------- 
-% Chapter 
-% ------- 
-
 \chapter{Le temps et sa prise en compte dans les modèles}
 \label{_le_temps_et_sa_prise_en_compte_dans_les_modèles}\hyperlabel{_le_temps_et_sa_prise_en_compte_dans_les_modèles}%
 
 Il existe plusieurs façon de représenter les informations temporelles.
 
-\href{http://www.omgsysml.org/}{SysML}\index{SysML} permet par exemple d’ajouter des contraintes temporelles sur le diagramme de séquence.
+\href{http://www.omgsysml.org/}{SysML™}\index{SysML} permet par exemple d’ajouter des contraintes temporelles sur le diagramme de séquence.
 Il existe deux types de contraintes :
 \begin{itemize}
 
@@ -4354,7 +4837,7 @@ Il existe deux types de contraintes :
 \begin{figure}[H]
 
 \begin{center}
-\imgexists{images/temps.png}{{\imgevalsize{images/temps.png}{\includegraphics[scale=0.5]{images/temps.png}}}}{images/temps.png}
+\imgexists{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/temps.png}{{\imgevalsize{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/temps.png}{\includegraphics[scale=0.5]{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/temps.png}}}}{/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/temps.png}
 \end{center}
 \caption[{Exemple de contrainte temporelle (tirée de [SysML])}]{Exemple de contrainte temporelle (tirée de \hyperlink{SysML}{[SysML]})}
 \end{figure}
@@ -4366,8 +4849,165 @@ le profil dédié à ces aspects : le profil \href{http://www.omgmarte.org/}{MAR
 % Chapter 
 % ------- 
 
+\chapter{Conventions et recommandations}
+\label{Conventions}\hyperlabel{Conventions}%
+
+Il existe un certain nombre de conventions complémentaires aux règles formelles de syntaxe que
+l’on trouve dans la spécification elle-{}même (rappelées à la fin de cette section).
+Nous ne les donnons ici qu'à titre indicatif. Il est important pour une organisation qui souhaite utiliser \href{http://www.omgsysml.org/}{SysML™}\index{SysML} comme notation pour ses modèles de se mettre d’accord sur ce type de convention. En voici quelques-{}unes dans lequel vous pourrez piocher pour définir \textbf{vos propres conventions}.
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+Pour les origines UML de certaines conventions, cf. \hyperlink{Styles}{[Styles]}.
+\end{DBKadmonition}
+
+\section{Points de vue}
+\label{_points_de_vue_2}\hyperlabel{_points_de_vue_2}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Les cas d’utilisation concernent les utilisateurs du système et non le système lui-{}même.
+Ainsi les cas d’utilisation \texttt{Obt\penalty5000 e\penalty5000 n\penalty5000 i\penalty5000 r l\penalty5000 e\penalty5000 s c\penalty5000 o\penalty5000 o\penalty5000 r\penalty5000 d\penalty5000 o\penalty5000 n\penalty5000 n\penalty5000 é\penalty5000 e\penalty5000 s a\penalty5000 c\penalty5000 t\penalty5000 u\penalty5000 e\penalty5000 l\penalty5000 les} ou \texttt{Enr\penalty5000 e\penalty5000 g\penalty5000 i\penalty5000 s\penalty5000 t\penalty5000 r\penalty5000 e\penalty5000 r u\penalty5000 n\penalty5000 e t\penalty5000 r\penalty5000 ace} sont de bons cas d’utilisation d’un GPS. Alors que \texttt{Eco\penalty5000 n\penalty5000 o\penalty5000 m\penalty5000 i\penalty5000 s\penalty5000 e\penalty5000 r l\penalty5000 a b\penalty5000 a\penalty5000 t\penalty5000 t\penalty5000 e\penalty5000 rie} ou \texttt{Cry\penalty5000 p\penalty5000 t\penalty5000 e\penalty5000 r l\penalty5000 e\penalty5000 s d\penalty5000 o\penalty5000 n\penalty5000 n\penalty5000 ées} ne sont pas de bons cas.
+
+
+
+\item{} Eviter de placer les matières premières comme des acteurs dans un diagramme d’utilisation, mais plutôt (éventuellement) comme des éléments de diagramme de définition de bloc (principalement celui de contexte).
+
+
+\end{enumerate}
+
+\section{Cas d’utilisation et acteurs}
+\label{_cas_d_8217_utilisation_et_acteurs}\hyperlabel{_cas_d_8217_utilisation_et_acteurs}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Placer les acteurs principaux à gauche (e.g., [?note]).
+
+
+
+\item{} Placer les acteurs secondaires à droite (e.g., [?note]).
+
+
+
+\item{} Différencier les acteurs humains (\emph{stickman}) des autres (stéréotype \texttt{<{}<{}a\penalty5000 c\penalty5000 t\penalty5000 o\penalty5000 r>{}>{}}) e.g., [?note].
+
+
+
+\item{} Différencier les cas d’utilisation selon :
+
+\begin{itemize}
+
+\item{} leur importance (e.g., \texttt{<{}<{}P\penalty5000 r\penalty5000 i\penalty5000 n\penalty5000 c\penalty5000 i\penalty5000 p\penalty5000 a\penalty5000 l>{}>{}}, \texttt{<{}<{}S\penalty5000 e\penalty5000 c\penalty5000 o\penalty5000 n\penalty5000 d\penalty5000 a\penalty5000 i\penalty5000 r\penalty5000 e>{}>{}});
+
+
+
+\item{} leur type (e.g., \texttt{<{}<{}T\penalty5000 o\penalty5000 p\penalty5000 L\penalty5000 e\penalty5000 v\penalty5000 e\penalty5000 l>{}>{}}, \texttt{<{}<{}O\penalty5000 p\penalty5000 e\penalty5000 r\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 o\penalty5000 n\penalty5000 a\penalty5000 l>{}>{}}).
+
+
+\end{itemize}
+
+\end{enumerate}
+
+\section{Nommage des divers éléments}
+\label{_nommage_des_divers_éléments}\hyperlabel{_nommage_des_divers_éléments}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Les noms de blocs commencent par une majuscule (source : \href{http://www.uml.org/}{UML™}\index{UML™}).
+
+
+
+\item{} Les noms de cas d’utilisation (qui représentent une façon d’utiliser le système du point de vue de l’acteur) doivent être un verbe à l’infinitif (source : \href{http://www.uml.org/}{UML™}\index{UML™}).
+
+
+
+\item{} Les noms d’activité (qui représentent une action) doivent être un verbe à l’infinitif (source : \href{http://www.uml.org/}{UML™}\index{UML™}).
+
+
+
+\item{} Les noms d’attributs commencent par une minuscule et ne sont pas au pluriel  (source : \href{http://www.uml.org/}{UML™}\index{UML™}).
+
+
+
+\item{} Nommer les "associationEnd" du point de vue du propriétaire et en minuscule (source : \hyperlink{ENS2013}{[ENS2013]}).
+
+
+\end{enumerate}
+
+\section{Les \emph{requirements}}
+\label{_les_emphasis_requirements_emphasis}\hyperlabel{_les_emphasis_requirements_emphasis}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Différencier les exigences descriptives et prescriptives. On pourra par exemple utiliser les stéréotypes \texttt{<{}<{}U\penalty5000 s\penalty5000 e\penalty5000 r\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t>{}>{}} et \texttt{<{}<{}S\penalty5000 y\penalty5000 s\penalty5000 t\penalty5000 e\penalty5000 m\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 n\penalty5000 t>{}>{}}. On pourra aussi définir deux \emph{packages} différents : \texttt{Des\penalty5000 c\penalty5000 r\penalty5000 i\penalty5000 p\penalty5000 t\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 nts} et
+\texttt{Pre\penalty5000 s\penalty5000 c\penalty5000 r\penalty5000 i\penalty5000 p\penalty5000 t\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 u\penalty5000 i\penalty5000 r\penalty5000 e\penalty5000 m\penalty5000 e\penalty5000 nts} (source : Chapitre \ref{SysML4STI2D})
+
+
+\end{enumerate}
+
+\section{Les dépendances}
+\label{_les_dépendances_2}\hyperlabel{_les_dépendances_2}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} En général un cas d’utilisation qui n’est inclus (\texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}}) que dans un seul autre cas est fusionné dans ce dernier.
+
+
+
+\item{} Lorsqu’un cas d’utilisation possède plusieurs cas \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (source : Chapitre \ref{SysML4STI2D}).
+
+
+\end{enumerate}
+
+\section{Blocs et associations}
+\label{_blocs_et_associations}\hyperlabel{_blocs_et_associations}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Utiliser la référence (faible agrégation) avec parcimonie car c’est un concept complexe à appréhender, surtout si pour des non informaticiens  (source : \hyperlink{ENS2013}{[ENS2013]}).
+
+
+\end{enumerate}
+
+\section{Divers}
+\label{_divers_2}\hyperlabel{_divers_2}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Toujours mentionner les multiplicités pour éviter toute ambiguïté, et de manière plus générale, éviter au maximum de se contenter des conventions par défaut (comme les \hyperlink{confof}{officielles}), sources d’incompréhensions potentielles.
+
+
+
+\item{} Toujours indiquer les conditions des \texttt{loop}, \texttt{alt}, etc. dans un diagramme de séquence.
+
+
+
+\item{} Vérifier la complétude et la non intersection des conditions des transitions sortant d’un même état.
+
+
+
+\item{} Ne pas hésiter à ajouter des légendes (sous forme de notes par exemple) à vos diagrammes un peu complexe.
+
+
+\end{enumerate}
+
+\section{Conventions "officielles" (dans la spécification http://www.omg.org/spec/SysML/1.3/PDF/[OMG SysML v1.3])}
+\label{confof}\hyperlabel{confof}%
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Les classes représentées dans un bdd\index{bdd} sont par défaut des \texttt{<{}<{}b\penalty5000 l\penalty5000 o\penalty5000 c\penalty5000 k>{}>{}}  (source : \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3}, p. 38).
+
+
+
+\item{} En l’absence de multiplicité sur les connecteurs, la multiplicité par défaut est "1" de chaque côté
+ (source : \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3}, p. 42).
+
+
+
+\item{} En l’absence de multiplicité sur les associations unidirectionnelles (fléchées), la multiplicité par défaut est "1"
+ (source : \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3}, p. 62).
+
+
+\end{enumerate}
+
+% ------- 
+% Chapter 
+% ------- 
+
 \chapter{FAQ}
-\label{_faq}\hyperlabel{_faq}%
+\label{faq}\hyperlabel{faq}%
 
 Cette \emph{\textbf{F}requently \textbf{A}sked \textbf{Q}uestion} a été construite par expérience, en regroupant
 les questions des étudiants durant mes différentes interventions.
@@ -4378,86 +5018,6 @@ Voir aussi cette \href{http://www.sysmlforum.com/faq}{FAQ} très bien faite.
 \end{DBKadmonition}
 
 Cette FAQ peut servir de base à la révision d’examens (cf. aussi Chapitre \ref{Exos}).
-
-\section{Peut-{}on avoir un \emph{requirement} contenu plusieurs fois ?}
-\label{_peut_on_avoir_un_emphasis_requirement_emphasis_contenu_plusieurs_fois}\hyperlabel{_peut_on_avoir_un_emphasis_requirement_emphasis_contenu_plusieurs_fois}%
-
-Non. Le lien de \emph{containment} est en fait une action qui place le "contenu" dans le
-"contenant". Dans TOPCASED, le diagramme laisse les liens précédents à l'écran, mais dans
-le modèle, c’est bien le dernier \emph{containment} réalisé qui est pris en compte. Dans
-la figure ci-{}dessous le lien \texttt{A-{}\penalty0 C} a été "dessiné" après celui \texttt{B-{}\penalty0 C}.
-\begin{figure}[H]
-
-\begin{center}
-\imgexists{exercices/topcased-containment-1.png}{{\imgevalsize{exercices/topcased-containment-1.png}{\includegraphics[scale=0.6]{exercices/topcased-containment-1.png}}}}{exercices/topcased-{}containment-{}1.png}
-\end{center}
-\caption{Exemple de divergence modèle/diagramme (diagramme)}
-\end{figure}
-\begin{figure}[H]
-
-\begin{center}
-\imgexists{exercices/topcased-containment-2.png}{{\imgevalsize{exercices/topcased-containment-2.png}{\includegraphics[scale=0.6]{exercices/topcased-containment-2.png}}}}{exercices/topcased-{}containment-{}2.png}
-\end{center}
-\caption{Exemple de divergence modèle/diagramme (modèle)}
-\end{figure}
-\begin{DBKadmonition}{images/icons/note.png}{Note}
-
-Ce "bug" provient du fait que le lien de \emph{containment} n’est pas un lien de dépendance,
-mais plutôt une représentation graphique de la contenance.
-\end{DBKadmonition}
-
-\section{Comment alors peut-{}on "partager" un \emph{requirement} ?}
-\label{_comment_alors_peut_on_partager_un_emphasis_requirement_emphasis}\hyperlabel{_comment_alors_peut_on_partager_un_emphasis_requirement_emphasis}%
-
-(En lien avec la question précédente)
-
-L’organisation \href{http://www.omgsysml.org/}{SysML}\index{SysML} des \emph{requirements} est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien \texttt{<{}<{}c\penalty5000 o\penalty5000 p\penalty5000 y>{}>{}} pour créer plusieurs copies d’un même \emph{requirement}. Personnellement je n’aime pas cette solution.
-\begin{figure}[H]
-
-\begin{center}
-\imgexists{exercices/topcased-containment-3.png}{{\imgevalsize{exercices/topcased-containment-3.png}{\includegraphics[scale=0.5]{exercices/topcased-containment-3.png}}}}{exercices/topcased-{}containment-{}3.png}
-\end{center}
-\caption{Exemple de partage de \emph{requirement}}
-\end{figure}
-\begin{DBKadmonition}{images/icons/note.png}{Définition : Réutilisation d’exigences (OMG SysML v1.3, Fig.16.6, p. 152)}
-
-\emph{…the use of the Copy dependency […] allow a single requirement to be reused in several requirements hierarchies.}
-\end{DBKadmonition}
-
-\section{Peut-{}on avoir un lien \texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} entre exigences?}
-\label{_peut_on_avoir_un_lien_literal_lt_lt_satisfy_gt_gt_literal_entre_exigences}\hyperlabel{_peut_on_avoir_un_lien_literal_lt_lt_satisfy_gt_gt_literal_entre_exigences}%
-
-Techniquement oui (\texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} étant dérivé de \texttt{<{}<{}d\penalty5000 e\penalty5000 p\penalty5000 e\penalty5000 n\penalty5000 d\penalty5000 e\penalty5000 n\penalty5000 c\penalty5000 y>{}>{}}), mais ça n’a pas beaucoup de sens que de dire qu’un besoin est satisfait par un autre. Il s’agit le plus souvent d’un lien \texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}}.
-\begin{DBKadmonition}{images/icons/note.png}{Note}
-
-Certaines méthodes utilisent ce lien pour par exemple exprimer qu’une exigence cliente est satisfaite par une exigence système (comme la méthode \hyperlink{Harmony}{[Harmony]}).
-\end{DBKadmonition}
-
-\section{Quelle est la différence entre \texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}} et \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} ?}
-\label{_quelle_est_la_différence_entre_literal_lt_lt_derivereqt_gt_gt_literal_et_literal_lt_lt_refine_gt_gt_literal}\hyperlabel{_quelle_est_la_différence_entre_literal_lt_lt_derivereqt_gt_gt_literal_et_literal_lt_lt_refine_gt_gt_literal}%
-
-La norme n’impose pas de sémantique précise à \texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}}. Il y a généralement deux interprétations.
-\begin{enumerate}[label=\arabic*.]
-
-\item{} Un usage classique est de l’utiliser pour ajouter des exigences plus détaillés déduites à partir d’autres exigences. Un exemple issue de la norme est une exigence de \texttt{pui\penalty5000 s\penalty5000 s\penalty5000 a\penalty5000 n\penalty5000 c\penalty5000 e m\penalty5000 o\penalty5000 t\penalty5000 eur} déduite (\texttt{der\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 eqt}) depuis l’exigence sur l’\texttt{acc\penalty5000 é\penalty5000 l\penalty5000 é\penalty5000 r\penalty5000 a\penalty5000 t\penalty5000 ion} d’un véhicule.
-
-
-
-\item{} Une vision plus stricte, aussi illustré par l’exemple précédent, est que l’exigence dérivée est une condition nécessaire (un pré-{}requis) à l’exigence cible.
-
-
-\end{enumerate}
-
-Autre exemple respectant 1 mais pas 2 : "Le véhicule doit posséder 4 roues." est dérivé de "Le véhicule doit se déplacer sur route." En effet, un aéroglisseur répondrait aussi l’exigence initiale et n’a pourtant pas de roues.
-
-Quant au \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} il est utilisé pour indiquer qu’un élément de modèle (qui peut être lui-{}même un \emph{requirement}) est un raffinement (au sens niveaux d’abstraction, du plus abstrait au plus concret) d’un \emph{requirement}. Par exemple, un \emph{use case} ou un diagramme d’activité peut être un raffinement d’une exigence fonctionnelle (textuelle par exemple).
-
-\section{A quoi sert le lien \texttt{<{}<{}t\penalty5000 r\penalty5000 a\penalty5000 c\penalty5000 e>{}>{}} ?}
-\label{_a_quoi_sert_le_lien_literal_lt_lt_trace_gt_gt_literal}\hyperlabel{_a_quoi_sert_le_lien_literal_lt_lt_trace_gt_gt_literal}%
-
-Il est utilisé pour indiquer que l’on souhaite conserver un lien de traçabilité entre les éléments
-(par exemple entre un élément de modélisation et un document). Il est recommandé d’utilisé une de ces
-versions plus précises (\texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}} ou \texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} par exemple).
 
 \section{Quelle est la version courante de la spécification et comment l’obtenir?}
 \label{_quelle_est_la_version_courante_de_la_spécification_et_comment_l_8217_obtenir}\hyperlabel{_quelle_est_la_version_courante_de_la_spécification_et_comment_l_8217_obtenir}%
@@ -4505,8 +5065,274 @@ et ajout d’un modèle (non normatif) pour définir les systèmes d’unités e
 SysML v1.3 \emph{Revision Task Force} dirigée par Roger Burkhart et Rick Steiner améliore de manière régulière la spécification en fonction des retours des utilisateurs.
 \end{DBKadmonition}
 
+\section{Qu’est-{}ce que la certification SysML et comment la passer?}
+\label{_qu_8217_est_ce_que_la_certification_sysml_et_comment_la_passer}\hyperlabel{_qu_8217_est_ce_que_la_certification_sysml_et_comment_la_passer}%
+
+Les informations sur la certification sont sur le
+\href{http://www.omg.org/ocsmp/exam-info.htm}{site dédié} de l’\href{http://www.omg.org}{OMG™}\index{OMG}.
+
+La certification (qui coûte environ 300€ par niveau) permet de garantir
+que celui qui la possède maîtrise la notation.
+Il faut actuellement s’inscrire via le site de \href{http://www.pearsonvue.com/omg/}{Pearson Vue}.
+\begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
+
+Il faut vraiment maîtriser les concepts eux-{}même (le métamodèle), et pas seulement avoir une bonne pratique.
+De plus, il faut également bien maîtriser l’anglais car les questions/réponses sont en anglais et leur
+formulation peut comporter des pièges.
+
+Pour vous tester sur le méta-{}modèle, vous pouvez vous tester sur le quizz
+réalisé par \href{mailto:loic.fejoz@realtimeatwork.com}{Loïc Féjoz} : \href{http://www.realtimeatwork.com/2010/06/test-quizz/}{http://www.realtimeatwork.com/\-2010/\-06/\-test-{}quizz/\-}
+\end{DBKadmonition}
+
+\section{Peut-{}on avoir un \emph{requirement} contenu plusieurs fois ?}
+\label{_peut_on_avoir_un_emphasis_requirement_emphasis_contenu_plusieurs_fois}\hyperlabel{_peut_on_avoir_un_emphasis_requirement_emphasis_contenu_plusieurs_fois}%
+
+Non. Le lien de \emph{containment} est en fait une action qui place le "contenu" dans le
+"contenant". Dans TOPCASED, le diagramme laisse les liens précédents à l'écran, mais dans
+le modèle, c’est bien le dernier \emph{containment} réalisé qui est pris en compte. Dans
+la figure ci-{}dessous le lien \texttt{A-{}\penalty0 C} a été "dessiné" après celui \texttt{B-{}\penalty0 C}.
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{topcased-containment-1.png}{{\imgevalsize{topcased-containment-1.png}{\includegraphics[scale=0.6]{topcased-containment-1.png}}}}{topcased-{}containment-{}1.png}
+\end{center}
+\caption{Exemple de divergence modèle/diagramme (diagramme)}
+\end{figure}
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{topcased-containment-2.png}{{\imgevalsize{topcased-containment-2.png}{\includegraphics[scale=0.6]{topcased-containment-2.png}}}}{topcased-{}containment-{}2.png}
+\end{center}
+\caption{Exemple de divergence modèle/diagramme (modèle)}
+\end{figure}
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+Ce "bug" provient du fait que le lien de \emph{containment} n’est pas un lien de dépendance,
+mais plutôt une représentation graphique de la contenance.
+\end{DBKadmonition}
+
+\section{Comment alors peut-{}on "partager" un \emph{requirement} ?}
+\label{_comment_alors_peut_on_partager_un_emphasis_requirement_emphasis}\hyperlabel{_comment_alors_peut_on_partager_un_emphasis_requirement_emphasis}%
+
+(En lien avec la question précédente)
+
+L’organisation \href{http://www.omgsysml.org/}{SysML™}\index{SysML} des \emph{requirements} est en fait un arbre. Pour réaliser ce "partage" certains utilisent un lien \texttt{<{}<{}c\penalty5000 o\penalty5000 p\penalty5000 y>{}>{}} pour créer plusieurs copies d’un même \emph{requirement}. Personnellement je n’aime pas cette solution.
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{topcased-containment-3.png}{{\imgevalsize{topcased-containment-3.png}{\includegraphics[scale=0.5]{topcased-containment-3.png}}}}{topcased-{}containment-{}3.png}
+\end{center}
+\caption{Exemple de partage de \emph{requirement}}
+\end{figure}
+\begin{DBKadmonition}{images/icons/note.png}{Définition : Réutilisation d’exigences (OMG SysML v1.3, Fig.16.6, p. 152)}
+
+\emph{…the use of the Copy dependency […] allow a single requirement to be reused in several requirements hierarchies.}
+\end{DBKadmonition}
+
+\section{Peut-{}on avoir un lien \texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} entre exigences?}
+\label{_peut_on_avoir_un_lien_literal_lt_lt_satisfy_gt_gt_literal_entre_exigences}\hyperlabel{_peut_on_avoir_un_lien_literal_lt_lt_satisfy_gt_gt_literal_entre_exigences}%
+
+Techniquement oui (\texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} étant dérivé de \texttt{<{}<{}d\penalty5000 e\penalty5000 p\penalty5000 e\penalty5000 n\penalty5000 d\penalty5000 e\penalty5000 n\penalty5000 c\penalty5000 y>{}>{}}), mais ça n’a pas beaucoup de sens que de dire qu’un besoin est satisfait par un autre. Il s’agit le plus souvent d’un lien \texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}}.
+\begin{DBKadmonition}{images/icons/note.png}{Note}
+
+Certaines méthodes utilisent ce lien pour par exemple exprimer qu’une exigence cliente est satisfaite par une exigence système (comme la méthode \hyperlink{Harmony}{[Harmony]}).
+\end{DBKadmonition}
+
+\section{Quelle est la différence entre \texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}} et \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} ?}
+\label{_quelle_est_la_différence_entre_literal_lt_lt_derivereqt_gt_gt_literal_et_literal_lt_lt_refine_gt_gt_literal}\hyperlabel{_quelle_est_la_différence_entre_literal_lt_lt_derivereqt_gt_gt_literal_et_literal_lt_lt_refine_gt_gt_literal}%
+
+La norme n’impose pas de sémantique précise à \texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}}. Il y a généralement deux interprétations.
+\begin{enumerate}[label=\arabic*.]
+
+\item{} Un usage classique est de l’utiliser pour ajouter des exigences plus détaillés déduites à partir d’autres exigences. Un exemple issue de la norme est une exigence de \texttt{pui\penalty5000 s\penalty5000 s\penalty5000 a\penalty5000 n\penalty5000 c\penalty5000 e m\penalty5000 o\penalty5000 t\penalty5000 eur} déduite (\texttt{der\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 eqt}) depuis l’exigence sur l’\texttt{acc\penalty5000 é\penalty5000 l\penalty5000 é\penalty5000 r\penalty5000 a\penalty5000 t\penalty5000 ion} d’un véhicule.
+
+
+
+\item{} Une vision plus stricte, aussi illustré par l’exemple précédent, est que l’exigence dérivée est une condition nécessaire (un pré-{}requis) à l’exigence cible.
+
+
+\end{enumerate}
+
+Autre exemple respectant 1 mais pas 2 : "Le véhicule doit posséder 4 roues." est dérivé de "Le véhicule doit se déplacer sur route." En effet, un aéroglisseur répondrait aussi l’exigence initiale et n’a pourtant pas de roues.
+
+Quant au \texttt{<{}<{}r\penalty5000 e\penalty5000 f\penalty5000 i\penalty5000 n\penalty5000 e>{}>{}} il est utilisé pour indiquer qu’un élément de modèle (qui peut être lui-{}même un \emph{requirement}) est un raffinement (au sens niveaux d’abstraction, du plus abstrait au plus concret) d’un \emph{requirement}. Par exemple, un \emph{use case} ou un diagramme d’activité peut être un raffinement d’une exigence fonctionnelle (textuelle par exemple).
+
+\section{A quoi sert le lien \texttt{<{}<{}t\penalty5000 r\penalty5000 a\penalty5000 c\penalty5000 e>{}>{}} ?}
+\label{_a_quoi_sert_le_lien_literal_lt_lt_trace_gt_gt_literal}\hyperlabel{_a_quoi_sert_le_lien_literal_lt_lt_trace_gt_gt_literal}%
+
+Il est utilisé pour indiquer que l’on souhaite conserver un lien de traçabilité entre les éléments
+(par exemple entre un élément de modélisation et un document). Il est recommandé d’utilisé une de ces
+versions plus précises (\texttt{<{}<{}d\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 v\penalty5000 e\penalty5000 R\penalty5000 e\penalty5000 q\penalty5000 t>{}>{}} ou \texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} par exemple).
+
+\section{Comment SysML permet-{}il la validation et la vérification des exigences ?}
+\label{_comment_sysml_permet_il_la_validation_et_la_vérification_des_exigences}\hyperlabel{_comment_sysml_permet_il_la_validation_et_la_vérification_des_exigences}%
+
+Comment \href{http://www.omgsysml.org/}{SysML™}\index{SysML} permet de vérifier et de valider les exigences ?
+
+La \textbf{validation} d’une exigence est de la responsabilité des parties prenantes.
+À partir de la spécification des exigences,
+ils valident qu’il s’agit bien du bon produit à construire.
+Typiquement, le diagramme des exigences sert de base à cette validation.
+
+La \textbf{vérification} d’une exigence est de la responsabilité de l’ingénieur système et/ou de l’analyste système.
+C’est à eux de montrer la correspondance entre les éléments constituant du système et les exigences spécifiées.
+C’est principalement pour cette activité que sont utilisés les relations \texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}} et \texttt{<{}<{}v\penalty5000 e\penalty5000 r\penalty5000 i\penalty5000 f\penalty5000 y>{}>{}}.
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{Requirements-VV.png}{{\imgevalsize{Requirements-VV.png}{\includegraphics[scale=0.5]{Requirements-VV.png}}}}{Requirements-{}VV.png}
+\end{center}
+\caption{Validation et Vérification des exigences (Reproduced by Permission © 2003-{}2013 PivotPoint Technology Corp)}
+\end{figure}
+
+\section{À quoi sert un diagramme des UC avec un seul cas d’utilisation ?}
+\label{_à_quoi_sert_un_diagramme_des_uc_avec_un_seul_cas_d_8217_utilisation}\hyperlabel{_à_quoi_sert_un_diagramme_des_uc_avec_un_seul_cas_d_8217_utilisation}%
+
+\begin{center}
+
+\noindent\begin{minipage}[c]{\linewidth}
+\begin{center}
+\imgexists{plantuml/uc6.png}{{\imgevalsize{plantuml/uc6.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/uc6.png}}}}{plantuml/uc6.png}\end{center}
+\end{minipage}
+
+
+\end{center}
+
+Tout simplement à relier les autres diagrammes à ce cas d’utilisation. Par exemple le comportement
+du système, l’architecture, etc. (les solutions) pourront être reliées (\texttt{<{}<{}s\penalty5000 a\penalty5000 t\penalty5000 i\penalty5000 s\penalty5000 f\penalty5000 y>{}>{}}) à ce cas.
+Il faut aussi ne pas perdre de vue qu’un diagramme peut évoluer. On pourra très bien rajouter au
+diagramme des cas non encore pris en compte comme \texttt{Tra\penalty5000 n\penalty5000 s\penalty5000 p\penalty5000 o\penalty5000 r\penalty5000 t\penalty5000 e\penalty5000 r l\penalty5000 e s\penalty5000 y\penalty5000 s\penalty5000 t\penalty5000 ème}, \texttt{Rec\penalty5000 y\penalty5000 c\penalty5000 l\penalty5000 e\penalty5000 r l\penalty5000 e s\penalty5000 y\penalty5000 s\penalty5000 t\penalty5000 ème}, etc.
+
+\section{Comment faut-{}il comprendre "interaction" dans les diagrammes d’UC ?}
+\label{_comment_faut_il_comprendre_interaction_dans_les_diagrammes_d_8217_uc}\hyperlabel{_comment_faut_il_comprendre_interaction_dans_les_diagrammes_d_8217_uc}%
+
+La définition de la norme \href{http://www.omg.org/spec/SysML/1.3/PDF/}{OMG SysML v1.3} :
+\begin{DBKadmonition}{images/icons/note.png}{Définition : Actors (OMG SysML v1.3, p. 123)}
+
+\emph{… Actors represent classifier roles that are external to the system that may correspond to users, systems, and or other environmental entities. They may interact either directly or indirectly with the system …}
+\end{DBKadmonition}
+
+Pour la comprendre il ne faut pas utiliser le Larousse français (qui rend presque le caractère réciproque obligatoire),
+mais plutôt la comprendre dans son acceptation informatique (comme dans "Interaction Homme-{}Machine").
+Par exemple un message (appel de méthode) d’un élément vers un autre dans un diagramme de séquence est appelé en SysML une \emph{interaction}.
+
+SysML permet de \textbf{préciser le caractère réciproque} ou non de l’interaction par exemple entre un \texttt{Act\penalty5000 eur} et un \texttt{Cas d\penalty5000 ’\penalty5000 u\penalty5000 t\penalty5000 i\penalty5000 l\penalty5000 i\penalty5000 s\penalty5000 a\penalty5000 t\penalty5000 ion} :
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{plantuml/uc5.png}{{\imgevalsize{plantuml/uc5.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{plantuml/uc5.png}}}}{plantuml/uc5.png}
+\end{center}
+\caption{Trois types d’interaction différentes possibles en SysML}
+\label{UCinter}\hyperlabel{UCinter}%
+\end{figure}
+
+\section{Les "matières premières" font-{}elles parties des acteurs ?}
+\label{_les_matières_premières_font_elles_parties_des_acteurs}\hyperlabel{_les_matières_premières_font_elles_parties_des_acteurs}%
+
+On pourrait les considérer comme des acteurs en se fiant à la définition (cf. \hyperlink{actorsdef}{Acteurs})
+et en les associant à des \emph{environmental entities}.
+Mais elles sont échangées avec les entités de l’environnement, ce qui n’est pas la même chose.
+Autrement dit, il faut indiquer qui fournit les matières premières et qui recueille les matières produites
+éventuellement en tant qu’acteurs, pas les matières elles-{}même, qui seront représenter comme des flux
+échangés ou des blocs.
+Eventuellement on peut les retrouver dans le diagramme de contexte ou encore dans un
+diagramme structurel comme le diagramme de bloc interne.
+\begin{DBKadmonition}{images/icons/tip.png}{ASTUCE}
+
+Je recommande la lecture (anglaise, \emph{sorry}) de l’excellent plaidoyer pour la mort des acteurs :
+\href{http://model-based-systems-engineering.com/tag/sysml/}{http://model-{}based-{}systems-{}engineering.com/\-tag/\-sysml/\-}.
+\end{DBKadmonition}
+\begin{DBKadmonition}{images/icons/warning.png}{AVERTISSEMENT}
+
+Donc non, le soleil et le vent ne sont pas des acteurs!! (ni la corde, ni la raquette)
+\end{DBKadmonition}
+
+\section{Pour l’analyse fonctionnelle : diagramme des UC ou des activités ?}
+\label{_pour_l_8217_analyse_fonctionnelle_diagramme_des_uc_ou_des_activités}\hyperlabel{_pour_l_8217_analyse_fonctionnelle_diagramme_des_uc_ou_des_activités}%
+
+Pour alimenter le débat, je renvois aux exemples donnés par \href{mailto:loic.fejoz@realtimeatwork.com}{Loïc Féjoz} lors de la journée \href{http://www.upsti.fr/}{UPSTI}.
+Voici un diagramme classique \href{http://fr.wikipedia.org/wiki/Analyse_fonctionnelle_(conception)}{FAST} :
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{fast.png}{{\imgevalsize{fast.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{fast.png}}}}{fast.png}
+\end{center}
+\caption{Diagramme FAST}
+\end{figure}
+\begin{figure}[H]
+
+\begin{center}
+\imgexists{sysml-fast.png}{{\imgevalsize{sysml-fast.png}{\includegraphics[width=\imgwidth,height=\imgheight,keepaspectratio=true]{sysml-fast.png}}}}{sysml-{}fast.png}
+\end{center}
+\caption{Représentation possible en SysML}
+\end{figure}
+
+On pourrait croire que ces schémas sont identiques mais pas du
+tout. \href{http://www.omgsysml.org/}{SysML™}\index{SysML} présente juste l’organisation du modèle et non l’arbre
+d’appel. De plus, \href{http://fr.wikipedia.org/wiki/Analyse_fonctionnelle_(conception)}{FAST} a tendance à focaliser sur une solution unique
+alors que \href{http://www.omgsysml.org/}{SysML™}\index{SysML} permet de repousser ce choix voir d’explorer des alternatives.
+
+\section{Quelle est la différence entre un \emph{join} de type "OU" et un \emph{fusion} dans un diagramme d’activités ?}
+\label{_quelle_est_la_différence_entre_un_emphasis_join_emphasis_de_type_ou_et_un_emphasis_fusion_emphasis_dans_un_diagramme_d_8217_activités}\hyperlabel{_quelle_est_la_différence_entre_un_emphasis_join_emphasis_de_type_ou_et_un_emphasis_fusion_emphasis_dans_un_diagramme_d_8217_activités}%
+
+Pour rappel le \emph{join} est utilisé pour représenter la synchronisation (le "rendez-{}vous") et
+représente donc une conjonction "ET". Mais le comportement par défaut pouvant être modifié par
+un ‘<{}<{}joinSpecification>{}>{}\`{}, on peut indiquer un "OU" pour signifier l’attente d’un seul des deux jetons.
+Mais justement le \emph{fusion} est là pour ça normalement. Ces 2 concepts étant issus d’\href{http://www.uml.org/}{UML™}\index{UML™}, il
+nous faut nous référer à la norme de ce dernier:
+\begin{DBKadmonition}{images/icons/note.png}{Définition : Types de diagrammes (UML Superstructure v2.4.1 p. 399)}
+
+All tokens offered on incoming edges are offered to the outgoing edge. There is no synchronization of flows or joining of tokens.
+\end{DBKadmonition}
+
+Il n’y a donc sémantiquement aucune différence.
+\begin{DBKadmonition}{images/icons/warning.png}{AVERTISSEMENT}
+
+Attention, il n’y a pas beaucoup de sens à utiliser un \emph{join} de cette façon, car non seulement il ne "joint" plus rien,
+mais en plus contrairement à un \emph{join} qui "consomme" les 2 jetons, une telle utilisation aurait pour effet de laisser
+les 2 jetons passer, mais l’un après l’autre!
+\end{DBKadmonition}
+
+\section{Un système peut il avoir plusieurs états?}
+\label{_un_système_peut_il_avoir_plusieurs_états}\hyperlabel{_un_système_peut_il_avoir_plusieurs_états}%
+
+On lit souvent qu’il n’y a pour un système ou un composant "qu’un seul état actif à la fois".
+
+Du point de vue structurel, si l’on considère que l'état à un instant \texttt{t} d’un composant est représenté par
+la valeur de ses attributs à cet instant, alors cette composition est unique. Néanmoins cela prête souvent
+à confusion avec le fait qu’un composant dont le comportement est décrit par une machine à état avec des
+régions concurrentes peut se retrouver dans plusieurs états (\href{http://www.omgsysml.org/}{SysML™}\index{SysML} du coup) en même temps.
+
+Il faut donc bien faire la différence entre :
+\begin{itemize}
+
+\item{} l'\textbf{état du système} (en tant qu’association de valeurs d’attributs à un instant T)
+qui lui est unique à un instant donné, et
+
+
+
+\item{} l'\textbf{état d’une machine à états} (en tant qu’abstraction d’un ensemble d'états au sens précédent).
+
+
+\end{itemize}
+\begin{DBKadmonition}{images/icons/note.png}{Exemple d’un système ayant plusieurs états, au sens des machine à états (fourni par mailto:loic.fejoz@realtimeatwork.com[Loïc Féjoz])}
+
+Soit un système avec une unique variable \texttt{i}.
+Les états du systèmes seraient par exemple l’ensemble des entiers naturels (positifs).
+Dans une machine à état UML, on pourrait par exemple avoir l'état \texttt{pair} et l'état \texttt{imp\penalty5000 air}.
+Mais on pourrait aussi avoir, deux-{}sous états (\texttt{nul} et \texttt{non-{}\penalty0 nul}) et rajouter en concurrence (\texttt{mul\penalty5000 t\penalty5000 i\penalty5000 p\penalty5000 l\penalty5000 e d\penalty5000 e 4} ou non, etc.).
+\end{DBKadmonition}
+
+\section{Comment traduire un Grafcet en machine à état ?}
+\label{Grafcet}\hyperlabel{Grafcet}%
+
+En automatique, la notation la plus connue pour représenter la dynamique d’un système est le \href{http://fr.wikipedia.org/wiki/Grafcet}{Grafcet}.
+Il semble qu’il existe une synthèse du passage \href{http://fr.wikipedia.org/wiki/Grafcet}{Grafcet} ⇒ diagramme d'état. J’attends de le trouver
+pour l’intégrer ici. Car sans en être un spécialiste, ce que j’en ai lu me fait plutôt penser à un diagramme
+d’activité (notamment par leur proximités à tous les deux avec les Réseaux de Petri).
+
 \section{Divers}
-\label{_divers}\hyperlabel{_divers}%
+\label{_divers_3}\hyperlabel{_divers_3}%
 
 Quelques autres questions que je laisse à votre sagacité :
 \begin{itemize}
@@ -4544,14 +5370,25 @@ Quelques autres questions que je laisse à votre sagacité :
 \label{_fabq}\hyperlabel{_fabq}%
 
 Cette \emph{\textbf{F}requently \textbf{A}sked \textbf{B}ad \textbf{Q}uestion} est une compilation des questions
-trouvées parfois dans les forums et qui montrent l’incompréhension qui entoure encore \href{http://www.omgsysml.org/}{SysML}\index{SysML}.
+trouvées parfois dans les forums et qui montrent l’incompréhension qui entoure encore \href{http://www.omgsysml.org/}{SysML™}\index{SysML}.
 
 \section{Comment installer SysML?}
 \label{_comment_installer_sysml}\hyperlabel{_comment_installer_sysml}%
 
-\href{http://www.omgsysml.org/}{SysML}\index{SysML} n’est pas un programme qu’on installe. Il existe de nombreux
+\href{http://www.omgsysml.org/}{SysML™}\index{SysML} n’est pas un programme qu’on installe. Il existe de nombreux
 outils qui chacun possède sa propre façon d'être installé sur votre machine
 (en fonction de votre système d’exploitation, si c’est un \emph{plugin}, etc.).
+
+\section{Comment exécuter un diagramme SysML?}
+\label{_comment_exécuter_un_diagramme_sysml}\hyperlabel{_comment_exécuter_un_diagramme_sysml}%
+
+Les diagrammes \href{http://www.omgsysml.org/}{SysML™}\index{SysML} ne sont que des dessins, des représentations graphiques,
+ils ne s'\emph{exécutent} donc pas. Bien sûr de nombreux travaux et outils portent sur
+les modèles exécutables. Il s’agit alors pour un outil de proposer de reproduire
+la dynamique d’un diagramme. Il s’agit en général de diagramme de comportement
+(par exemple une machine à état) pour lequel l’outil propose de simuler l’arrivée
+d'événement et de reproduire (plus ou moins graphiquement) le comportement modélisé
+(par exemple le franchissement d’une transition).
 % ------------------------------------------- 
 % Bibliography
 % ------------------------------------------- 
@@ -4559,7 +5396,7 @@ outils qui chacun possède sa propre façon d'être installé sur votre machine
 \addtocontents{toc}{\protect\setcounter{tocdepth}{4}\ignorespaces}
 \setcounter{tocdepth}{4}
 
-\chapter{Bibliographie}
+\chapter{Références}
 \label{refs}\hyperlabel{refs}%
 \begin{btSect}{}
 
@@ -4567,64 +5404,72 @@ outils qui chacun possède sa propre façon d'être installé sur votre machine
 \begin{bibgroup}
 \begin{thebibliography}{WIDELABEL}
 
-\bibitem{idp6254416}
+\bibitem{idp6635600}
+  \label{ENS2013}\hyperlabel{ENS2013}[ENS2013] L. Gendre et J.-{}M. Virely, SysML. Tutoriel du 13/06/2013. ENS Cachan.
+ 
+
+\bibitem{idp6637328}
   \label{FIO2012}\hyperlabel{FIO2012}[FIO2012] Fiorèse S., Meinadier J., Découvrir et comprendre l’ingénierie système, AFIS 2012.
  
 
-\bibitem{idp6256096}
-  \label{FMS}\hyperlabel{FMS}[FMS] Friedenthal…
+\bibitem{idp6639008}
+  \label{FMS}\hyperlabel{FMS}[FMS] A. Moore, R. Steiner, S. Friedenthal, A Practical Guide to SysML, The MK/OMG Press, MK/OMG Press, 2011 (2nd edition).
  
 
-\bibitem{idp6257568}
+\bibitem{idp6640736}
   \label{HAS2012}\hyperlabel{HAS2012}[HAS2012] Haskins C., SE Handbook Working Group, INCOSE Systems Engineering Handbook: Version 3.2.2, International Council on Systems Engineering, 2012.
  
 
-\bibitem{idp6259520}
+\bibitem{idp6642688}
   \label{KAP2007}\hyperlabel{KAP2007}[KAP2007] Kapurch S., NASA Systems Engineering Handbook, 2007 (\href{http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20080008301_2008008500.pdf}{pdf}).
  
 
-\bibitem{idp6261504}
-  [\label{MéDICIS}\hyperlabel{MéDICIS}] ENSI Bourges/PRiSM.
+\bibitem{idp6644672}
+  \label{MeDICIS}\hyperlabel{MeDICIS}[MeDICIS] ENSI Bourges/PRiSM.
  
 
-\bibitem{idp6263072}
+\bibitem{idp6646144}
   \label{REQ2012}\hyperlabel{REQ2012}[REQ2012] Guide Bonnes Pratiques en Ingénierie des Exigences, AFIS 2012.
  
 
-\bibitem{idp6264608}
+\bibitem{idp6647776}
   \label{Roques2010}\hyperlabel{Roques2010}[Roques2010] \href{http://www.dotnetguru2.org/proques/index.php}{Pascal Roques}. SysML par l’exemple -{} Un langage de modélisation pour systèmes complexes. Eyrolles. À acheter \href{http://www.numilog.com/LIVRES/FICHES/62775.Livre}{ici}.
  
 
-\bibitem{idp6267424}
-  \label{SeeBook2012}\hyperlabel{SeeBook2012}[SeeBook2012] Kordon et al. To be published. XXX
+\bibitem{idp6650592}
+  \label{SeeBook2012}\hyperlabel{SeeBook2012}[SeeBook2012] Embedded Systems Analysis and Modeling with SysML, UML and AADL, F. Kordon, J. Hugues, A. Canals, A. Dohet, Wiley, 2013.
  
 
-\bibitem{idp6269072}
+\bibitem{idp6652480}
   \label{Sommerville1997}\hyperlabel{Sommerville1997}[Sommerville1997] Ian Sommerville, Pete Sawyer. Requirements Engineering: A Good Practice Guide. Wiley, 1997.
  
 
-\bibitem{idp6270880}
+\bibitem{idp6654192}
   \label{SysML}\hyperlabel{SysML}[SysML] OMG. Systems modeling language version 1.3. Technical report, 2012.
  
 
-\bibitem{idp6272496}
+\bibitem{idp6655808}
   \label{taoup}\hyperlabel{taoup}[taoup] Eric Steven Raymond. The Art of Unix Programming. Addison-{}Wesley. ISBN 0-{}13-{}142901-{}9.
  
 
-\bibitem{idp6274352}
+\bibitem{idp6657664}
   \label{Walsh1999}\hyperlabel{Walsh1999}[Walsh1999] Norman Walsh \& Leonard Muellner. DocBook -{} The Definitive Guide. O’Reilly \& Associates. 1999. ISBN 1-{}56592-{}580-{}7.
  
 
-\bibitem{idp6276048}
+\bibitem{idp6659424}
   \label{Harmony}\hyperlabel{Harmony}[Harmony] Bruce Powel Douglass. Real-{}Time Agility: The Harmony/ESW Method for Real-{}Time and Embedded Systems Development. Addison-{}Wesley Professional, 2009. ISBN-{}10: 0-{}321-{}54549-{}4
  
 
-\bibitem{idp6278080}
+\bibitem{idp6661456}
   \label{Styles}\hyperlabel{Styles}[Styles] Scott W. Ambler. The Elements of UML 2.0 Style. Cambridge University Press, 2005. ISBN: 0-{}521-{}61678-{}6
  
 
-\bibitem{idp6279792}
+\bibitem{idp6663168}
   \label{Fowler2004}\hyperlabel{Fowler2004}[Fowler2004] Martin Fowler. UML 2.0 INFORMATIQUE PROFESSIONNELLE, 2004.
+ 
+
+\bibitem{idp6664688}
+  \label{Fejoz2013}\hyperlabel{Fejoz2013}[Fejoz2013] Loïc Fejoz. SysML4STI2D, présentation de SysML en STI2D, 2004. Disponible \href{http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d}{ici}.
  
 
 \end{thebibliography}
@@ -4648,28 +5493,28 @@ outils qui chacun possède sa propre façon d'être installé sur votre machine
 \noindent
 \begin{description}
 \item[{ \texttt{act\index{act}} }] \hspace{0em}\\
- Raccourcis pour Diagramme d'\textbf{ACT}ivité dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour Diagramme d'\textbf{ACT}ivité dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \item[{ \texttt{bdd\index{bdd}} }] \hspace{0em}\\
- Raccourcis pour \textbf{B}lock \textbf{D}efinition \textbf{D}iagram dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour \textbf{B}lock \textbf{D}efinition \textbf{D}iagram dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \item[{ \texttt{dss\index{dss}} }] \hspace{0em}\\
  \textbf{D}iagramme de \textbf{S}équence \textbf{S}ystème (un \texttt{sd\index{sd}} où seul le système dans sa globalité est représenté \footnote{
-Il ne s’agit pas d’un acronyme \href{http://www.omgsysml.org/}{SysML}\index{SysML} à proprement parler mais nous l’utilisons beaucoup.
+Il ne s’agit pas d’un acronyme \href{http://www.omgsysml.org/}{SysML™}\index{SysML} à proprement parler mais nous l’utilisons beaucoup.
 })
 
 \item[{ \texttt{ibd\index{ibd}} }] \hspace{0em}\\
- Raccourcis pour \textbf{I}nternal \textbf{B}lock \textbf{D}iagram dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour \textbf{I}nternal \textbf{B}lock \textbf{D}iagram dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \item[{ \texttt{par\index{par}} }] \hspace{0em}\\
- Raccourcis pour \textbf{P}arametric Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour \textbf{P}arametric Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \item[{ \texttt{pkg\index{pkg}} }] \hspace{0em}\\
- Raccourcis pour \textbf{P}a\textbf{K}a\textbf{G}e Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
-\item[{ \texttt{req\index{req}} }] \hspace{0em}\\
- Raccourcis pour \textbf{REQ}uirements Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour \textbf{P}a\textbf{K}a\textbf{G}e Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
+\item[{ \texttt{\texttt{req}\index{req}} }] \hspace{0em}\\
+ Raccourcis pour \textbf{REQ}uirements Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \item[{ \texttt{sd\index{sd}} }] \hspace{0em}\\
- Raccourcis pour \textbf{SEQ}quence Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour \textbf{SEQ}quence Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \item[{ \texttt{stm\index{stm}} }] \hspace{0em}\\
- Raccourcis pour \textbf{ST}ate \textbf{M}achine dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour \textbf{ST}ate \textbf{M}achine dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \item[{ \texttt{uc\index{uc}} }] \hspace{0em}\\
- Raccourcis pour \textbf{U}se \textbf{C}ase Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML}\index{SysML} 
+ Raccourcis pour \textbf{U}se \textbf{C}ase Diagram dans une cartouche \href{http://www.omgsysml.org/}{SysML™}\index{SysML} 
 \end{description}
 
 \textbf{Définitions générales}
@@ -4733,7 +5578,7 @@ Les définitions ci-{}dessous sont regroupées à titre indicatif. Je vous invit
 
 \item[{ SysML }]~ 
 
-  \emph{\textbf{Sys}tem \textbf{M}odeling \textbf{L}anguage} ™ : le langage de modélisation de systèmes maintenu par l’\href{http://www.omg.org}{OMG}\index{OMG}.
+  \emph{\textbf{Sys}tem \textbf{M}odeling \textbf{L}anguage} ™ : le langage de modélisation de systèmes maintenu par l’\href{http://www.omg.org}{OMG™}\index{OMG}.
 
 
 
@@ -4742,6 +5587,51 @@ Les définitions ci-{}dessous sont regroupées à titre indicatif. Je vous invit
 \setcounter{secnumdepth}{1}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}\ignorespaces}
 \setcounter{tocdepth}{0}
+
+% ------- 
+% Chapter 
+% ------- 
+
+\chapter{Blabla}
+\label{conventions}\hyperlabel{conventions}%
+
+Coucou
+
+% ------- 
+% Chapter 
+% ------- 
+
+\chapter{Blabla}
+\label{uc}\hyperlabel{uc}%
+
+Coucou
+
+% ------- 
+% Chapter 
+% ------- 
+
+\chapter{Blabla}
+\label{acteur}\hyperlabel{acteur}%
+
+Coucou
+
+% ------- 
+% Chapter 
+% ------- 
+
+\chapter{Blabla}
+\label{port13}\hyperlabel{port13}%
+
+Coucou
+
+% ------- 
+% Chapter 
+% ------- 
+
+\chapter{Blabla}
+\label{SysML4STI2D}\hyperlabel{SysML4STI2D}%
+
+Coucou
 \setcounter{secnumdepth}{-1}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{4}\ignorespaces}
 \setcounter{tocdepth}{4}

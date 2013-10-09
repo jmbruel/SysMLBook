@@ -1,6 +1,21 @@
 == Avant-propos
 
+ifdef::backend-deckjs[]
+:leveloffset: -1
+
+- Sur ce document
+- Sur l'auteur
+- Comment lire ce document
+
+endif::backend-deckjs[]
+
+ifndef::backend-deckjs[]
+
 === Sur ce document
+
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[:leveloffset: -2]
 
 ==== A qui est destiné ce document?
 
@@ -27,7 +42,7 @@ Ce document est la compilation de plusieurs années d'enseignement de {sysml} de
 
 Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés.
 
-ifndef::backend-slidy2[]
+ifndef::backend-deckjs[]
 ifndef::book[]
 
 Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
@@ -37,7 +52,9 @@ Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise :
 - mon maître d'{asciidoc} : {jmi}.
 
 endif::book[]
-endif::backend-slidy2[]
+endif::backend-deckjs[]
+
+ifdef::backend-deckjs[:leveloffset: -1]
 
 === Sur l'auteur
 - Professeur à l'{univ-tlse}
@@ -46,11 +63,13 @@ endif::backend-slidy2[]
 - Membre du _Steering Committee_ de la conférence ACM/IEEE {models} depuis 2008
 - Enseignant en modélisation depuis 1995
 ifndef::book[- Chef du département informatique de l'{iut} de 2009 à 2012]
-ifndef::book[- Co-responsable de l'axe *Systèmes Ambiants* de l'{IRIT}]
+ifndef::book[- Co-responsable de l'axe Systèmes Ambiants de l'{IRIT} depuis 2009]
 - Marié, une (merveilleuse) fille
 
 [[comment-lire]]
 === Comment lire ce document?
+
+ifdef::backend-deckjs[:leveloffset: -2]
 
 ==== Version électronique
 
@@ -81,6 +100,8 @@ en _italique_, non pas pour indiquer qu'il s'agit d'un
 mot anglais, mais pour indiquer au lecteur que nous employons
 volontairement ces termes (e.g., _Requirements_).
 
+ifdef::backend-deckjs[==== Conventions typographiques (suite)]
+
 Les figures, sauf mention contraire, ont été réalisées avec l'outil {topcased} en français.
 Le titre des figures indique (entre parenthèses) un +R+ pour les figures issues de {rhapsody} et un +UK+ pour les figures en anglais. Pour les conventions (de nommage notamment), cf. <<conventions>>.
 
@@ -100,11 +121,13 @@ Celles-ci concernent en général des points de détail et permettent "d'aller p
 ====
 
 .Définition : Exemple (OMG SysML v1.3, p. 152)
-[icon="./images/icons/sysml.jpeg"]
+[icon="/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons/sysml.jpeg"]
 [NOTE]
 ====
 Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
 ====
+
+ifdef::backend-deckjs[==== Conventions typographiques (suite)]
 
 .Convention : Titre du conseil spécifique
 [icon="./images/upsti-logo.png"]
@@ -133,7 +156,8 @@ Modélisation SysML correcte.
 
 ==== Pourquoi parler de "document"?
 
-Parce que j'ignore la version que vous êtes en train de lire. A partir de l'link:main.txt[original], plusieurs versions ont été générées grâce à {asciidoc} :
+Parce que j'ignore la version que vous êtes en train de lire. À partir de l'original, 
+plusieurs versions ont été générées grâce à {asciidoc} :
 
 * pour le web (nous utilisons à l'{iut} l'excellent {Moodle}) au format http://www.sysml.fr/main[html]
 * pour présentation (en amphi par exemple) au format http://www.sysml.fr/slidy[slidy] ou http://www.sysml.fr/deckjs[deck.js] 
@@ -144,9 +168,7 @@ Parce que j'ignore la version que vous êtes en train de lire. A partir de l'lin
 
 include::about.txt[]
 
-ifdef::book[]
-N'hésitez pas à m'envoyer vos remarques en tout genre en m'écrivant à {email}.
-endif::book[]
-ifndef::book[]
-N'hésitez pas à m'envoyer vos remarques en tout genre en m'écrivant mailto:{email}[ici].
-endif::book[]
+ifdef::book[N'hésitez pas à m'envoyer vos remarques en tout genre en m'écrivant à {email}.]
+ifndef::book[N'hésitez pas à m'envoyer vos remarques en tout genre en m'écrivant mailto:{email}[ici].]
+
+ifdef::backend-deckjs[:leveloffset: 0]

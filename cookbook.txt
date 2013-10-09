@@ -10,6 +10,8 @@ Nous allons aborder le développement complet de notre exemple fil rouge en suiv
 
 Nous partirons du modèle des exigences produit initialement. Mais avant tout, parlons outils.
 
+ifdef::backend-deckjs[:leveloffset: -1]
+
 === Environnement de développement
 
 Nous sommes des défenseurs des principes <<DRY>> et <<TDD>>. Nous allons donc réaliser nos diagrammes dans un outil et non "à la main" (de simples dessins).
@@ -19,8 +21,10 @@ est la version +5.2+.
 Un outil {SysML} seul ne suffit pas (cf. <<outils>>). Il faut penser à la documentation (cf. <<gendoc>>).
 
 .Outillage autour de SysML
-ifdef::book[image::{dessins}/SysMLTool-fr.png[scale=30]]
-ifndef::book[image::{dessins}/SysMLTool-fr.png[width="80%",alt="Outillage autour de SysML"]]
+ifdef::book[image::{images}/SysMLTool-fr.png[scale=30]]
+ifndef::book[image::SysMLTool-fr.png[width="80%",alt="Outillage autour de SysML"]]
+
+ifdef::backend-deckjs[:leveloffset: -2]
 
 [[outils]]
 ==== Outils
@@ -37,17 +41,17 @@ La plupart des outils permettent de générer de la documentation. Pour les outi
 
 .Génération de documentation à partir de TOPCASED (1)
 ifdef::book[image::{images}/gendoc-1.png[scale=40]]
-ifndef::book[image::{images}/gendoc-1.png["GENDOC",height="300",link="{images}/gendoc-1.png"]]
+ifndef::book[image::gendoc-1.png["GENDOC",height="300",link="gendoc-1.png"]]
 
 .Génération de documentation à partir de TOPCASED (1)
 ifdef::book[image::{images}/gendoc-2.png[scale=40]]
-ifndef::book[image::{images}/gendoc-2.png["GENDOC",height="300",link="{images}/gendoc-2.png"]]
+ifndef::book[image::gendoc-2.png["GENDOC",height="300",link="gendoc-2.png"]]
 
 Les outils commerciaux comme {rhapsody} permettent de générer de nombreux formats.
 
 .Génération de documentation à partir de Rhapsody
 ifdef::book[image::{images}/gendoc-rhapsody1.png[scale=40]]
-ifndef::book[image::{images}/gendoc-rhapsody1.png["Rhapsody",height="300",link="{images}/gendoc-rhapsody1.png"]]
+ifndef::book[image::gendoc-rhapsody1.png["Rhapsody",height="300",link="gendoc-rhapsody1.png"]]
 
 ==== Animation de modèles et simulation
 
@@ -62,8 +66,8 @@ Génération de code VHDL::
 Simulation en Rhapsody::
 	L'outil {rhapsody} possède une interface très pratique pour faire du prototypage rapide.
 +
-ifdef::book[image:{images}/rhapsody-animation.png[scale=50]]
-ifndef::book[image:{images}/rhapsody-animation.png["Animation",width="80%",link="{images}/rhapsody-animation.png"]]
+ifdef::book[image::{images}/rhapsody-animation.png[scale=50]]
+ifndef::book[image::rhapsody-animation.png["Animation",width="80%",link="rhapsody-animation.png"]]
 +
 Voir mon tutoriel (en anglais) disponible http://jmbhome.heroku.com/teaching/SysML/tp-undergraduate.html[ici].
 
@@ -72,7 +76,9 @@ Animation de modèles en Artisan::
 	
 .Animation Artisan
 ifdef::book[image::{images}/artisan.png[scale=50]]
-ifndef::book[image::{images}/artisan.png["Animation",width="80%",link="{images}/artisan.png"]]
+ifndef::book[image::artisan.png["Animation",width="80%",link="artisan.png"]]
+
+ifdef::backend-deckjs[:leveloffset: -1]
 	
 === Spécification du système
 
@@ -99,11 +105,15 @@ Afin de consolider les différents modèles, les liens de traçabilité qui n'au
 Nous insistons dans l'ensemble de nos formations sur les approches _test-driven_, alors nous montrons dans cette section comment participer à la qualité du développement d'un système en formalisant (par exemple avec des diagrammes de séquence de scénarios à éviter)
 les test et les jeux de test.
 
+ifdef::backend-deckjs[:leveloffset: 0]
+
 == Recettes et bonnes pratiques
 
 La plupart des ouvrages sur un langage enseignent les éléments de ce langage, comme nous l'avons fait à la partie précédente.
 Nous allons ici partir du principe inverse : comment modéliser tel ou tel partie ou vue de mon système avec SysML. Un peu à la
 manière des ouvrages du type _Cookbook_, nous allons donner une liste non exhaustives de recettes. Les choix des éléments de modélisation sont arbitraires ou tirés de discussions (comme ce sera mentionné si c'est le cas).
+
+ifdef::backend-deckjs[:leveloffset: -1]
 
 === Architecture
 
@@ -115,7 +125,7 @@ Voir aussi <<contexte>>.
 
 .Le contexte du Pacemaker (<<SeeBook2012>>)
 ifdef::book[image::{images}/pacemaker-context.png[scale=50]]
-ifndef::book[image::{images}/pacemaker-context.png[width="70%",alt="Le contexte du Pacemaker"]]
+ifndef::book[image::pacemaker-context.png[width="70%",alt="Le contexte du Pacemaker"]]
 
 === Comportement
 
@@ -129,3 +139,5 @@ NOTE: Un diagramme d'état peu modéliser les différents modes et les événeme
 Mérite une section ??
 
 /////
+
+ifdef::backend-deckjs[:leveloffset: 0]
