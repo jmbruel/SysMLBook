@@ -50,6 +50,8 @@ Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie d
 
 ifdef::backend-deckjs[:leveloffset: 0]
 
+<<<<
+
 == Différence avec l'ingénierie logicielle
 
 Enseignant en informatique, je me retrouve souvent à enseigner {sysml} à des informaticiens.
@@ -133,6 +135,8 @@ ifndef::book[image::{images}/analyse6.png[alt="Des reqs au système",width="70%"
 
 ifdef::backend-deckjs[:leveloffset: 0]
 
+<<<<
+
 == Normes et standards
 
 Il existe un grand nombre de standards en {is}. Cette section fera (bientôt) une revue
@@ -144,11 +148,15 @@ et qui sera utiles à ceux qui s'intéressent aux verrous technologiques liés �
 L'{is} génère beaucoup de documentation. Les processus de certification (par exemple dans l'aéronautique) sont
 encore basés sur des documents textuels. 
 
+<<<<
+
 == Des documents aux modèles
 
 Vue la complexité grandissante des systèmes, petit à petit cette ingénierie tente de passer d'une
 ingénierie *centrée documents* à une ingénierie *centrée modèles*. D'où l'importance de se poser la question
 des notations et langages pour réaliser et communiquer avec ces modèles (cf. <<Notation>>).
+
+<<<<
  
 [[exigences]]
 == Les exigences
@@ -183,10 +191,14 @@ Il est important pour une exigence qu'elle ne soit pas ambiguë (contrairement a
 ifdef::book[image::{images}/ProgrammerHumor.jpg[scale=50]]
 ifndef::book[image::ProgrammerHumor.jpg["Joke",width="70%"]]
 
+<<<<
+
 [[structure]]
 == L'architecture du système
 
 Liens avec AADL, ...
+
+<<<<
 
 [[comportement]]
 == Le comportement du système

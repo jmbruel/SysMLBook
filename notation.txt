@@ -42,6 +42,8 @@ Mais...
 
 ifndef::backend-deckjs[]
 
+<<<<
+
 //---------------------------------------------------------------------------------
 == Introduction à SysML
 //---------------------------------------------------------------------------------
@@ -122,23 +124,50 @@ endif::backend-deckjs[]
 des diagrammes. Il existe une représentation graphique des éléments modélisés en {SysML}. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est *le modèle* qui importe le plus. 
 
 C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes {SysML} footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés (cf. <<Outils>>).
+Ils respectent en général la norme {norme} (bien qu'il faille se méfier).
 
-ifdef::backend-deckjs[=== Carte des concepts]
+[NOTE]
+====
+Notez que la norme permet de faire des adaptations graphiques (cf. la discussion http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/).
+====
 
-Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
+// Merci à Raphaël Faudou pour cette partie
 
-.Organisation
-ifdef::book[[cols="h,4*",options="header"]]
-ifndef::book[[cols="h,4*",options="header",width="90%"]]
-|======================
-|				| {Requirements}, cf. <<reqs>> 	| {Structure}, cf. <<archi>>	| {Behavior}, cf. <<behavior>> 	| {Crosscutting}, cf. <<transvers>>
-| {organisation}	|		+pkg+			|     +pkg+, +{bdd}+   		|		+pkg+		|
-| {analysis}, {design}, {implementation} footnote:[En fonction du niveau de détail.]
-				|		+{req}+			|     +{bdd}+, +{ibd}+, +{seq}+, +{par}+   		| +{uc}+, +{seq}+, +{stm}+, +{act}+				| +{par}+
-|======================
+Un des intérêts de la modélisation est de faciliter la communication, notamment 
+au travers des diagrammes et leur aspect graphique et synthétique. 
+Un dessin est donc un plus par rapport à du texte. Néanmoins, il ne faut pas se
+contenter d'un simple dessin pour au moins deux raisons importantes :
+
+- un dessin n'est pas assez formel (comment être sûr d'avoir correctement utilisé tel ou tel symbole, cf. les deux exemples ci-dessous) ;
+- il est impossible d'assurer la cohérence globale des modèles dans le cas d'un dessin. 
+
+Un modèle est une sorte de base de donnée qui regroupe des éléments issues de différents points de vue (saisis le plus
+souvent au travers de diagrammes). Un diagramme est une vue partielle du modèle (donc incomplète). 
+Le modèle est la vraie plus value car il va permettre de détecter les incohérences sur les exigences, les problèmes de complétude, 
+lancer des analyses, faire des transformations vers d'autres langages ou formats, etc.
+Par exemple dans un outil de modélisation il y a une grande différence entre supprimer un élément d'un diagramme (on parlera
+alors de "masquer" un élément d'un diagramme) et supprimer un élément de modèle (ce qui aura pour effet de supprimer cet élément de 
+tous les diagrammes où il était présent). 
+
+Voici deux exemples de non respect de la notation qui illustre le type d'erreur que l'on trouve souvent dans les modèles qui circulent
+sur Internet ou même parfois dans certains livres.
+
+ifdef::backend-deckjs[]
+:leveloffset:0
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
+:leveloffset: +2	
+endif::backend-deckjs[]
+
+include::slides/cordeuse/bdd.asc[]
+
+include::slides/cordeuse/seq.asc[]
 
 ifdef::backend-deckjs[]
 :leveloffset: 0
+endif::backend-deckjs[]
+ifndef::backend-deckjs[]
+:leveloffset: +1
 endif::backend-deckjs[]
 
 //---------------------------------------------------------------------------------
@@ -200,6 +229,20 @@ ifndef::book[image::pacemaker-context.png[width="80%"]]
 ====
 Tout diagramme proposé à un étudiant pour décrire un système devrait posséder un entête précis.
 ====
+
+ifdef::backend-deckjs[=== Carte des concepts]
+
+Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
+
+.Organisation
+ifdef::book[[cols="h,4*",options="header"]]
+ifndef::book[[cols="h,4*",options="header",width="90%"]]
+|======================
+|				| {Requirements}, cf. <<reqs>> 	| {Structure}, cf. <<archi>>	| {Behavior}, cf. <<behavior>> 	| {Crosscutting}, cf. <<transvers>>
+| {organisation}	|		+pkg+			|     +pkg+, +{bdd}+   		|		+pkg+		|
+| {analysis}, {design}, {implementation} footnote:[En fonction du niveau de détail.]
+				|		+{req}+			|     +{bdd}+, +{ibd}+, +{seq}+, +{par}+   		| +{uc}+, +{seq}+, +{stm}+, +{act}+				| +{par}+
+|======================
 
 //---------------------------------------------------------------------------------
 [[org]]
@@ -1053,6 +1096,7 @@ Un _flow port_ atomique ne spécifie qu’un seul type de flux en entrée ou en 
 la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un _Value Type_ représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
 ====
 
+[[port13]]
 ==== Ports (SysML 1.3)
 
 La nouvelle spécification {norme} introduit les concepts de:
@@ -1793,4 +1837,4 @@ Encore plus je dirais, au sens où une exigence n'est couverte par aucune utilis
 
 endif::correction[]
 
-ifdef::backend-deckjs[:leveloffset: 0]
+:leveloffset: 0

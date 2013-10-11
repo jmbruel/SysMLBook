@@ -1,3 +1,5 @@
+<<<
+
 [[Methodes]]
 == Méthodes et démarches
 indexterm:[Méthodes]

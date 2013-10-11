@@ -107,6 +107,8 @@ image::logo-irit.png[width="50%"]
 ====
 endif::backend-deckjs[]
 
+<<<
+
 //================================================================
 // Partie 1 : Introduction
 //================================================================
@@ -123,13 +125,21 @@ include::chap00AvantPropos.txt[]
 
 include::chap01Methode.txt[]
 
+<<<
+
 include::sysml.txt[]
 
+<<<
+
 include::sti2d.txt[]
+
+<<<
 
 include::filRouge.txt[]
 
 ifndef::backend-deckjs[]
+
+<<<
 
 = Partie 2 : Ingénierie système
 
@@ -140,6 +150,8 @@ include::IS.txt[]
 
 ifndef::backend-deckjs[]
 
+<<<
+
 = Partie 3 : La notation SysML
 
 endif::backend-deckjs[]
@@ -147,6 +159,8 @@ endif::backend-deckjs[]
 include::notation.txt[]
 
 ifndef::backend-deckjs[]
+
+<<<
 
 = Partie 4 : Modéliser un système en SysML
 
@@ -156,6 +170,8 @@ include::cookbook.txt[]
 
 ifndef::backend-deckjs[]
 
+<<<<
+
 [[upsti]]
 = Partie 5 : Pédagogie
 
@@ -164,6 +180,8 @@ endif::backend-deckjs[]
 include::upsti.txt[]
 
 ifndef::backend-deckjs[]
+
+<<<<
 
 = Partie 6 : Pour aller plus loin
 
@@ -175,10 +193,14 @@ endif::backend-deckjs[]
 Exemples de démarche autour de {sysml}, (cf. <<Methodes>>).
 indexterm:[Méthodes]
 
+<<<<
+
 [[Analyse]]
 == Analyses et simulation
 
 To be completed
+
+<<<<
 
 [[Exos]]
 == Exercices de révision
@@ -262,6 +284,8 @@ endif::correction[]
 
 ifndef::backend-deckjs[]
 
+<<<<
+
 [[appendix]]
 = Annexes
 
@@ -279,6 +303,8 @@ Un point sur les évolutions de {sysml}.
 
 Un point sur comment aborder {sysml} quand on vient d'{uml}.
 /////
+
+<<<<
 
 == Le temps et sa prise en compte dans les modèles
 
@@ -307,11 +333,19 @@ Quelques exemples de sujet propice au développement SysML.
 TBD...
 //////
 
+<<<<
+
 include::conventions.txt[]
+
+<<<<
 
 include::faq.txt[]
 
+<<<<
+
 include::biblio.txt[]
+
+<<<<
 
 include::glossary.txt[]
 
@@ -322,28 +356,7 @@ ifdef::book[]
 
 endif::book[]
 
-
 include::about.txt[]
 
-
-[[conventions]]
-== Blabla
-Coucou
-
-[[uc]]
-== Blabla
-Coucou
-
-[[acteur]]
-== Blabla
-Coucou
-
-[[port13]]
-== Blabla
-Coucou
-
-[[SysML4STI2D]]
-== Blabla
-Coucou
 
 

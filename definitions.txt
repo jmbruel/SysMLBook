@@ -71,6 +71,7 @@ endif::uk[]
 :nonne: Laurent Nonne
 :prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
 :pdss:  Pierre de Saqui Sannes
+:rf: mailto:raphael.faudou@atos.net[Raphaël Faudou]
 :rdp: Réseaux de Petri
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :univ-tlse: http://www.univ-toulouse.fr[Univesité de Toulouse]

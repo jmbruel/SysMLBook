@@ -10,5 +10,6 @@
 * Conrad Bock
 * Cris Kobryn
 * Sanford Friedenthal
+- Logo officiel : image:icons/sysml.jpeg[scale=60]
 ********************************
 //====

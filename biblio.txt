@@ -1,7 +1,8 @@
 [[refs]]
 == Références
 
-[bibliography]
+Voici quelques références utiles.
+
 - [[[ENS2013]]] L. Gendre et J.-M. Virely, SysML. Tutoriel du 13/06/2013. ENS Cachan.
 - [[[FIO2012]]] Fiorèse S., Meinadier J., Découvrir et comprendre l’ingénierie système, AFIS 2012.
 - [[[FMS]]] A. Moore, R. Steiner, S. Friedenthal, A Practical Guide to SysML, The MK/OMG Press, MK/OMG Press, 2011 (2nd edition).
@@ -18,4 +19,4 @@
 - [[[Harmony]]] Bruce Powel Douglass. Real-Time Agility: The Harmony/ESW Method for Real-Time and Embedded Systems Development. Addison-Wesley Professional, 2009. ISBN-10: 0-321-54549-4
 - [[[Styles]]] Scott W. Ambler. The Elements of UML 2.0 Style. Cambridge University Press, 2005. ISBN: 0-521-61678-6
 - [[[Fowler2004]]] Martin Fowler. UML 2.0 INFORMATIQUE PROFESSIONNELLE, 2004.
-- [[[Fejoz2013]]] Loïc Fejoz. SysML4STI2D, présentation de SysML en STI2D, 2004. Disponible http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d[ici].
+- [[[Fejoz2013]]] Loïc Fejoz. [[SysML4STI2D]]SysML4STI2D, présentation de SysML en STI2D, 2004. Disponible http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d[ici].

@@ -16,7 +16,8 @@ tout: tp deckjs sommaire ups slidy
 book:
 	@echo '==> Book ouput'
 	a2x -a icons -a iconsdir=$(ICONSDIR) --verbose -ftex $(MAIN).txt
-	sed "s/T2A,T2D,//g" main.tex > test.tex
+#	sed "s/T2A,T2D,//g" main.tex > test.tex
+	cp main.tex test.tex
 	pdflatex test
 	makeindex test.idx
 	pdflatex test

@@ -1,6 +1,11 @@
+ifndef::backend-deckjs[]
+== Enseigner SysML
 :leveloffset: +1
-
+endif::backend-deckjs[]
+ifdef::backend-deckjs[]
+:leveloffset: +1
 = Enseigner SysML
+endif::backend-deckjs[]
 
 Cette partie est dédiée à l'enseignement à {SysML}. J'y distille des conseils et
 des remarques issues des nombreuses questions soulevées dans le cadre des journées
@@ -64,7 +69,7 @@ ifdef::backend-deckjs[]
 :leveloffset: 0
 endif::backend-deckjs[]
 ifndef::backend-deckjs[]
-:leveloffset: +1
+:leveloffset: +2
 endif::backend-deckjs[]
 
 include::slides/cordeuse/uc.asc[]
@@ -72,8 +77,9 @@ include::slides/cordeuse/uc.asc[]
 ifdef::backend-deckjs[]
 :leveloffset: -1
 endif::backend-deckjs[]
+
 ifndef::backend-deckjs[]
-:leveloffset: 0
+:leveloffset: +1
 endif::backend-deckjs[]
 
 === Utilisation des `<<include>>`

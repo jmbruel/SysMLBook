@@ -7,6 +7,7 @@ Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise :
 
 - {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
 - mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} ({RTaW});
+- {rf}, pour nos discussions, notamment autour de {topcased};
 - mon maître d'{asciidoc} : {jmi}.
 
 Je remercie les professeurs de lycée (que ce soit de l'option STI2D du bac ou des classes préparatoires)

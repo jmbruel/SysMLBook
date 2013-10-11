@@ -107,6 +107,8 @@ les test et les jeux de test.
 
 ifdef::backend-deckjs[:leveloffset: 0]
 
+<<<<
+
 == Recettes et bonnes pratiques
 
 La plupart des ouvrages sur un langage enseignent les éléments de ce langage, comme nous l'avons fait à la partie précédente.
