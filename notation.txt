@@ -15,7 +15,7 @@ endif::backend-deckjs[]
 
 
 Il existe une notation qui se veut "unifiée" pour les modèles : {uml}.
-Néanmoins cette notation est peu adaptée pour l'{is} :
+Néanmoins cette notation est peu adaptée pour {Lis} :
 
 * UML 1.x était complètement inadaptée :
 ** Principalement pour les systèmes d'information
@@ -80,7 +80,7 @@ AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
 
 [TIP]
 ====
-La liste complète des membres de l'{omg} est accessible à l'URL : http://www.omg.org/cgi-bin/apps/membersearch.pl
+La liste complète des membres de {Lomg} est accessible à l'URL : http://www.omg.org/cgi-bin/apps/membersearch.pl
 ====
 
 === Organisation des différents diagrammes
@@ -484,7 +484,7 @@ ifndef::backend-deckjs[]
 ====
 L'ingénierie des exigences est une discipline à part entière et nous n'abordons ici
 que les aspects en lien avec la modélisation système. Voir le livre de référence pour
-plus de détails (<<Sommerville1997>>) ou le guide de l'{afis} (<<REQ2012>>).
+plus de détails (<<Sommerville1997>>) ou le guide de {Lafis} (<<REQ2012>>).
 ====
 
 endif::backend-deckjs[]
@@ -1776,7 +1776,7 @@ XXX Mettre un exemple avec tous ces liens. XXX
 
 === Mécanismes d'allocation
 
-Un mécanisme nouveau en {sysml} et important pour l'{is} est le mécanisme d'*allocation*. Il permet de
+Un mécanisme nouveau en {sysml} et important pour {lis} est le mécanisme d'*allocation*. Il permet de
 préciser quel élément conceptuel (comme un comportement ou une activité) est alloué sur quel élément physique.
 
 Il est possible d'exprimer cette allocation de plusieurs manières.

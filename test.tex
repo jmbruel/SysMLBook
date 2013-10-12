@@ -28,7 +28,7 @@
 \renewcommand{\DBKreleaseinfo}{}
 \setcounter{tocdepth}{5}
 \setcounter{secnumdepth}{3}
-\renewcommand{\DBKdate}{11/10/2013}
+\renewcommand{\DBKdate}{12/10/2013}
 \title{Introduction à SysML}
 \author{Jean-{}Michel Bruel}
 \hypersetup{%
@@ -49,7 +49,7 @@ pdfauthor={Jean-{}Michel Bruel}%
 1.3~\par
 
 & ~\par
-11/10/2013
+12/10/2013
 & ~\par
 
 & ~\par
@@ -64,6 +64,17 @@ JMB
 \frontmatter
 \maketitle
 \tableofcontents
+\setcounter{secnumdepth}{-1}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}\ignorespaces}
+\setcounter{tocdepth}{-1}
+
+\chapter{}
+
+\pagebreak[4] 
+
+\setcounter{secnumdepth}{3}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{5}\ignorespaces}
+\setcounter{tocdepth}{5}
 \mainmatter
 %
 % PART
@@ -300,7 +311,7 @@ plusieurs versions ont été générées grâce à \href{http://www.methods.co.nz/ascii
 
 \begin{sidebar}
 
-Dernière MAJ : 11/10/2013 -{} 01:14:50 CEST\newline
+Dernière MAJ : 12/10/2013 -{} 09:52:25 CEST\newline
  Document généré par \href{mailto:bruel@irit.fr}{Jean-{}Michel Bruel} via \href{http://www.methods.co.nz/asciidoc}{AsciiDoc}\index{AsciiDoc} (version \texttt{8.\penalty0 6.\penalty0 8}) de \emph{Stuart Rackham}.
 La version présentation a été générée en utilisant \href{http://www.w3.org/Talks/Tools/Slidy2/}{W3C HTML Slidy} © de \emph{Dave Raggett}, amélioré par \href{mailto:jean-michel.inglebert@univ-tlse2.fr}{Jean-{}Michel Inglebert}.
 Pour l'instant ce document est libre d'utilisation et géré par la \emph{Licence Creative Commons}.
@@ -360,6 +371,9 @@ Il s'agit d'un parti pris prenant en compte plusieurs points :
 
 
 \end{itemize}
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -561,6 +575,9 @@ On y voit les journées SysML 2012 (Toulouse et Mulhouse).
 \label{enquete}\hyperlabel{enquete}%
 \end{figure}
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -648,6 +665,9 @@ Notons que dans ce cadre là, les 9 diagrammes sont utilisables même si pour l'in
 \label{_pour_aller_plus_loin}\hyperlabel{_pour_aller_plus_loin}%
 
 Les questions et exercices de fin de chapitres de la partie notation seront peut-{}être d'un niveau plus avancé pour servir véritablement d'exercices, mais pourront amener à une réflexion encadrée par l'enseignant.
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -984,6 +1004,9 @@ La traduction a été principalement obtenue automatiquement, alors n'hésitez pas 
 
 
 \end{itemize}
+
+\pagebreak[4] 
+
 %
 % PART
 %
@@ -1151,6 +1174,9 @@ Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie du 
 
 \end{description}
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -1275,6 +1301,9 @@ Pour arriver à combler le gap entre le système à développer et ses spécification
 \caption{Des exigences au système}
 \end{figure}
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -1291,6 +1320,9 @@ et qui sera utiles à ceux qui s'intéressent aux verrous technologiques liés à ce
 L'Ingénierie Système\index{IS} génère beaucoup de documentation. Les processus de certification (par exemple dans l'aéronautique) sont
 encore basés sur des documents textuels.
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -1301,6 +1333,9 @@ encore basés sur des documents textuels.
 Vue la complexité grandissante des systèmes, petit à petit cette ingénierie tente de passer d'une
 ingénierie \textbf{centrée documents} à une ingénierie \textbf{centrée modèles}. D'où l'importance de se poser la question
 des notations et langages pour réaliser et communiquer avec ces modèles (cf. Chapter~\ref{Notation}).
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -1348,6 +1383,9 @@ Il est important pour une exigence qu'elle ne soit pas ambiguë (contrairement au
 \label{fig:eggs}\hyperlabel{fig:eggs}%
 \end{figure}
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -1357,6 +1395,9 @@ Il est important pour une exigence qu'elle ne soit pas ambiguë (contrairement au
 
 Liens avec AADL, \ldots{}
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -1365,6 +1406,9 @@ Liens avec AADL, \ldots{}
 \label{comportement}\hyperlabel{comportement}%
 
 Liens avec la V\&V
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -1405,6 +1449,9 @@ Bien intégrer les niveaux d'abstraction dans votre démarche. SysML possède certa
 N'essayez pas de réaliser tous les diagrammes possibles pour votre système. Réalisez uniquement ceux qui sont utiles à votre cas particulier.
 
 \end{longfloat}
+
+\pagebreak[4] 
+
 %
 % PART
 %
@@ -1497,6 +1544,9 @@ Mais\ldots{}
 
 
 \end{itemize}
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -4554,14 +4604,20 @@ En résumé l'expression du comportement du système en \href{http://www.omgsysml.o
 
 \end{enumerate}
 
+\pagebreak[4] 
+
+%
+% PART
+%
+
+\part{Partie 4 : Modéliser un système en SysML}
+\label{_partie_4_modÃ©liser_un_systÃ¨me_en_sysml}\hyperlabel{_partie_4_modÃ©liser_un_systÃ¨me_en_sysml}%
+
 % ------- 
 % Chapter 
 % ------- 
 
-\chapter{Partie 4 : Modéliser un système en SysML}
-\label{_partie_4_modÃ©liser_un_systÃ¨me_en_sysml}\hyperlabel{_partie_4_modÃ©liser_un_systÃ¨me_en_sysml}%
-
-\section{Une démarche parmi d'autres}
+\chapter{Une démarche parmi d'autres}
 \label{_une_dÃ©marche_parmi_d_8217_autres}\hyperlabel{_une_dÃ©marche_parmi_d_8217_autres}%
 
 Nous allons aborder le développement complet de notre exemple fil rouge en suivant une démarche classique et simple
@@ -4587,7 +4643,7 @@ Nous allons aborder le développement complet de notre exemple fil rouge en suiva
 
 Nous partirons du modèle des exigences produit initialement. Mais avant tout, parlons outils.
 
-\subsection{Environnement de développement}
+\section{Environnement de développement}
 \label{_environnement_de_dÃ©veloppement}\hyperlabel{_environnement_de_dÃ©veloppement}%
 
 Nous sommes des défenseurs des principes \hyperlink{DRY}{[DRY]} et \hyperlink{TDD}{[TDD]}. Nous allons donc réaliser nos diagrammes dans un outil et non "à la main" (de simples dessins).
@@ -4603,13 +4659,13 @@ Un outil \href{http://www.omgsysml.org/}{SysML\texttrademark{}}\index{SysML} seu
 \caption{Outillage autour de SysML}
 \end{figure}
 
-\subsubsection{Outils}
+\subsection{Outils}
 \label{outils}\hyperlabel{outils}%
 
 Il existe de nombreux outils \href{http://www.omgsysml.org/}{SysML\texttrademark{}}\index{SysML}. Nous renvoyons le lecteur sur le site de \href{http://www.sysml-france.fr}{SysML-{}France}\index{SysML-{}France} pour
 des informations sur les dernières versions des outils.
 
-\subsubsection{Génération de documentation}
+\subsection{Génération de documentation}
 \label{gendoc}\hyperlabel{gendoc}%
 
 La plupart des outils permettent de générer de la documentation. Pour les outils basés \href{http://www.eclipse.org}{eclipse}\index{eclipse} comme
@@ -4638,7 +4694,7 @@ Les outils commerciaux comme \href{http://www-142.ibm.com/software/products/us/e
 \caption{Génération de documentation à partir de Rhapsody}
 \end{figure}
 
-\subsubsection{Animation de modèles et simulation}
+\subsection{Animation de modèles et simulation}
 \label{_animation_de_modÃ¨les_et_simulation}\hyperlabel{_animation_de_modÃ¨les_et_simulation}%
 
 Fortement liée aux outils, la possibilité d'animer les modèles ou encore d'effectuer des simulations
@@ -4682,19 +4738,19 @@ Voir mon tutoriel (en anglais) disponible \href{http://jmbhome.heroku.com/teachi
 \caption{Animation Artisan}
 \end{figure}
 
-\subsection{Spécification du système}
+\section{Spécification du système}
 \label{_spÃ©cification_du_systÃ¨me}\hyperlabel{_spÃ©cification_du_systÃ¨me}%
 
 Il s'agit ici de décrire le contexte et d'identifier les principaux cas d'utilisation du système.
 
-\subsection{Conception du système}
+\section{Conception du système}
 \label{contexte}\hyperlabel{contexte}%
 
 Chaque cas d'utilisation sera précisé (\texttt{seq} et \texttt{act}).
 Les données métier seront alors identifiées pour construire le modèle d'architecture logique (\texttt{bdd\index{bdd}} et \texttt{ibd\index{ibd}}) complété par la description des comportements complexes (\texttt{stm\index{stm}}).
 Enfin le modèle d'architecture physique permettra de déterminer les aspects déploiement et constructions physiques d'équipements/
 
-\subsection{Traçabilité et Allocations}
+\section{Traçabilité et Allocations}
 \label{_traÃ§abilitÃ©_et_allocations}\hyperlabel{_traÃ§abilitÃ©_et_allocations}%
 
 Afin de consolider les différents modèles, les liens de traçabilité qui n'auront pas été déjà décrit \footnote{
@@ -4715,20 +4771,27 @@ Il est recommandé de ne pas attendre pour matérialiser ces liens, mais de les ex
 
 \end{itemize}
 
-\subsection{Modèle de test}
+\section{Modèle de test}
 \label{_modÃ¨le_de_test}\hyperlabel{_modÃ¨le_de_test}%
 
 Nous insistons dans l'ensemble de nos formations sur les approches \emph{test-{}driven}, alors nous montrons dans cette section comment participer à la qualité du développement d'un système en formalisant (par exemple avec des diagrammes de séquence de scénarios à éviter)
 les test et les jeux de test.
 
-\section{Recettes et bonnes pratiques}
+\pagebreak[4] 
+
+
+% ------- 
+% Chapter 
+% ------- 
+
+\chapter{Recettes et bonnes pratiques}
 \label{_recettes_et_bonnes_pratiques}\hyperlabel{_recettes_et_bonnes_pratiques}%
 
 La plupart des ouvrages sur un langage enseignent les éléments de ce langage, comme nous l'avons fait à la partie précédente.
 Nous allons ici partir du principe inverse : comment modéliser tel ou tel partie ou vue de mon système avec SysML. Un peu à la
 manière des ouvrages du type \emph{Cookbook}, nous allons donner une liste non exhaustives de recettes. Les choix des éléments de modélisation sont arbitraires ou tirés de discussions (comme ce sera mentionné si c'est le cas).
 
-\subsection{Architecture}
+\section{Architecture}
 \label{_architecture}\hyperlabel{_architecture}%
 \begin{DBKadmonition}{}{Note}
 
@@ -4744,21 +4807,27 @@ Voir aussi Section~\ref{contexte}.
 \caption[{Le contexte du Pacemaker ([SeeBook2012])}]{Le contexte du Pacemaker (\hyperlink{SeeBook2012}{[SeeBook2012]})}
 \end{figure}
 
-\subsection{Comportement}
+\section{Comportement}
 \label{_comportement}\hyperlabel{_comportement}%
 \begin{DBKadmonition}{}{Note}
 
 Un diagramme d'état peu modéliser les différents modes et les événements qui produisent les changements de mode.
 \end{DBKadmonition}
 
+\pagebreak[4] 
+
+%
+% PART
+%
+
+\part{Partie 5 : Pédagogie}
+\label{upsti}\hyperlabel{upsti}%
+
 % ------- 
 % Chapter 
 % ------- 
 
-\chapter{Partie 5 : Pédagogie}
-\label{upsti}\hyperlabel{upsti}%
-
-\section{Enseigner SysML}
+\chapter{Enseigner SysML}
 \label{_enseigner_sysml}\hyperlabel{_enseigner_sysml}%
 
 Cette partie est dédiée à l'enseignement à \href{http://www.omgsysml.org/}{SysML\texttrademark{}}\index{SysML}. J'y distille des conseils et
@@ -4886,7 +4955,7 @@ Dans le diagramme ci-{}dessus il aurait fallut écrire :
 \end{center}
 \end{DBKadmonition}
 
-\section{Interaction avec les cas d'utilisation principaux}
+\subsection{Interaction avec les cas d'utilisation principaux}
 \label{_interaction_avec_les_cas_d_8217_utilisation_principaux}\hyperlabel{_interaction_avec_les_cas_d_8217_utilisation_principaux}%
 \begin{DBKadmonition}{}{Diagramme des Cas d'Utilisation erroné}
 
@@ -4929,7 +4998,7 @@ le sous-{}cas d'utilisation \texttt{Mai\penalty5000 n\penalty5000 t\penalty5000 
 L'utilisation de stéréotypes comme \texttt{<{}<{}T\penalty5000 o\penalty5000 p\penalty5000 L\penalty5000 e\penalty5000 v\penalty5000 e\penalty5000 l>{}>{}} ou \texttt{<{}<{}P\penalty5000 r\penalty5000 i\penalty5000 n\penalty5000 c\penalty5000 i\penalty5000 p\penalty5000 a\penalty5000 l>{}>{}} peut permettre d'éviter d'interagir avec ces cas d'utilisation.
 \end{DBKadmonition}
 
-\section{Utilisation des \texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}}}
+\subsection{Utilisation des \texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}}}
 \label{_utilisation_des_literal_lt_lt_include_gt_gt_literal}\hyperlabel{_utilisation_des_literal_lt_lt_include_gt_gt_literal}%
 
 Il faut faire attention à ne pas abuser des \texttt{<{}<{}i\penalty5000 n\penalty5000 c\penalty5000 l\penalty5000 u\penalty5000 d\penalty5000 e>{}>{}}.
@@ -4989,7 +5058,7 @@ C'est ce qui est fait dans [?note].
 
 \end{enumerate}
 
-\section{Niveau de détails des UC}
+\subsection{Niveau de détails des UC}
 \label{_niveau_de_dÃ©tails_des_uc}\hyperlabel{_niveau_de_dÃ©tails_des_uc}%
 
 Faut-{}il minimiser le nombre de cas d'utilisation ou au contraire détailler?
@@ -5113,6 +5182,9 @@ Il faut donc bien faire attention avec les extraits de norme.
 
 Quand on cite un extrait de la norme, citer le numéro de page du document papier et non celui du PDF.
 \end{DBKadmonition}
+
+\pagebreak[4] 
+
 %
 % PART
 %
@@ -5130,6 +5202,9 @@ Quand on cite un extrait de la norme, citer le numéro de page du document papier
 Exemples de démarche autour de \href{http://www.omgsysml.org/}{SysML\texttrademark{}}\index{SysML}, (cf. Chapter~\ref{Methodes}).
 \index{Méthodes}
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -5138,6 +5213,9 @@ Exemples de démarche autour de \href{http://www.omgsysml.org/}{SysML\texttradema
 \label{Analyse}\hyperlabel{Analyse}%
 
 To be completed
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -5250,6 +5328,9 @@ Voici un petit exercice (en anglais pour l'instant, désolé) pour changer :
 
 \end{itemize}
 \end{description}
+
+\pagebreak[4] 
+
 %
 % PART
 %
@@ -5378,6 +5459,9 @@ Voici un petit exercice (en anglais pour l'instant, désolé) pour changer :
 
 \end{itemize}
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -5409,6 +5493,9 @@ Il existe deux types de contraintes :
 
 Néanmoins, pour une prise en compte industriel des contraintes temporelles, il conviendra d'utiliser
 le profil dédié à ces aspects : le profil \href{http://www.omgmarte.org/}{MARTE}\index{MARTE}.
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -5523,7 +5610,7 @@ Ainsi les cas d'utilisation \texttt{Obt\penalty5000 e\penalty5000 n\penalty5000 
 \label{_blocs_et_associations}\hyperlabel{_blocs_et_associations}%
 \begin{enumerate}[label=\arabic*.]
 
-\item{} Utiliser la référence (faible agrégation) avec parcimonie car c'est un concept complexe à appréhender, surtout si pour des non informaticiens  (source : \hyperlink{ENS2013}{[ENS2013]}).
+\item{} Utiliser la référence (faible agrégation) avec parcimonie car c'est un concept complexe à appréhender, surtout pour des non informaticiens  (source : \hyperlink{ENS2013}{[ENS2013]}).
 
 
 \end{enumerate}
@@ -5549,7 +5636,7 @@ Ainsi les cas d'utilisation \texttt{Obt\penalty5000 e\penalty5000 n\penalty5000 
 
 \end{enumerate}
 
-\section{Conventions "officielles" (dans la spécification http://www.omg.org/spec/SysML/1.3/PDF/[OMG SysML v1.3])}
+\section{Conventions "officielles" (dans la spécification elle-{}même)}
 \label{confof}\hyperlabel{confof}%
 \begin{enumerate}[label=\arabic*.]
 
@@ -5567,6 +5654,9 @@ Ainsi les cas d'utilisation \texttt{Obt\penalty5000 e\penalty5000 n\penalty5000 
 
 
 \end{enumerate}
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -6007,6 +6097,9 @@ la dynamique d'un diagramme. Il s'agit en général de diagramme de comportement
 d'événement et de reproduire (plus ou moins graphiquement) le comportement modélisé
 (par exemple le franchissement d'une transition).
 
+\pagebreak[4] 
+
+
 % ------- 
 % Chapter 
 % ------- 
@@ -6085,6 +6178,9 @@ Voici quelques références utiles.
 
 
 \end{itemize}
+
+\pagebreak[4] 
+
 
 % ------- 
 % Chapter 
@@ -6173,16 +6269,25 @@ Les définitions ci-{}dessous sont regroupées à titre indicatif. Je vous invite
 }] \hspace{0em}\\
   \emph{\textbf{T}echnology \textbf{R}eadiness \textbf{L}evel} : Système de mesure employé par des agences gouvernementales américaines et par de nombreuses compagnies (et agences) mondiales afin d'évaluer le niveau de maturité d'une technologie (cf. \href{http://fr.wikipedia.org/wiki/Technology_Readiness_Level}{Wikipedia}).
 
+\item[{ STI2D
+}] \hspace{0em}\\
+  \textbf{S}ciences et \textbf{T}echnologies de l'\textbf{I}ndustrie et du \textbf{D}éveloppement \textbf{D}urable : série du baccarauléat qui met
+        l'accent sur les technologies transversales et qui a introduit en 2011 l'enseignement de \href{http://www.omgsysml.org/}{SysML\texttrademark{}}\index{SysML}.
+
 \item[{ SysML
 }] \hspace{0em}\\
   \emph{\textbf{Sys}tem \textbf{M}odeling \textbf{L}anguage} \texttrademark{} : Le langage de modélisation de systèmes maintenu par l'\href{http://www.omg.org}{OMG\texttrademark{}}\index{OMG}.
+
+\item[{ UML
+}] \hspace{0em}\\
+  \emph{\textbf{U}nified \textbf{M}odeling \textbf{L}anguage} \texttrademark{} : Le langage de modélisation généraliste maintenu par l'\href{http://www.omg.org}{OMG\texttrademark{}}\index{OMG}.
 
 \end{description}
 
 
 \begin{sidebar}
 
-Dernière MAJ : 11/10/2013 -{} 01:14:50 CEST\newline
+Dernière MAJ : 12/10/2013 -{} 09:52:25 CEST\newline
  Document généré par \href{mailto:bruel@irit.fr}{Jean-{}Michel Bruel} via \href{http://www.methods.co.nz/asciidoc}{AsciiDoc}\index{AsciiDoc} (version \texttt{8.\penalty0 6.\penalty0 8}) de \emph{Stuart Rackham}.
 La version présentation a été générée en utilisant \href{http://www.w3.org/Talks/Tools/Slidy2/}{W3C HTML Slidy} © de \emph{Dave Raggett}, amélioré par \href{mailto:jean-michel.inglebert@univ-tlse2.fr}{Jean-{}Michel Inglebert}.
 Pour l'instant ce document est libre d'utilisation et géré par la \emph{Licence Creative Commons}.

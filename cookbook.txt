@@ -107,7 +107,7 @@ les test et les jeux de test.
 
 ifdef::backend-deckjs[:leveloffset: 0]
 
-<<<<
+<<<
 
 == Recettes et bonnes pratiques
 
@@ -135,11 +135,5 @@ ifndef::book[image::pacemaker-context.png[width="70%",alt="Le contexte du Pacema
 [caption="Recette : "]
 NOTE: Un diagramme d'état peu modéliser les différents modes et les événements qui produisent les changements de mode.
 
-////
-=== Patrons de conception système
-
-Mérite une section ??
-
-/////
 
 ifdef::backend-deckjs[:leveloffset: 0]

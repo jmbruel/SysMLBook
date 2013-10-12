@@ -8,7 +8,7 @@ L'objectif dans ces niveaux n'est pas de former des spécialistes de {SysML} mai
 
 [NOTE]
 ====
-A l'heure où nous écrivons ces lignes, il est en effet prévu de l'enseigner en classe prépa dès 2013.
+À l'heure où nous écrivons ces lignes, il est en effet prévu de l'enseigner en classe prépa dès la rentrée 2013.
 ====
 
 ifdef::backend-deckjs[:leveloffset: -1]
@@ -44,9 +44,9 @@ Un blog récent recense les supports en liens avec {sti2d} : http://www.scoop.it
 
 === Classe préparatoire et UPSTI
 
-L'Union des Professeurs de Sciences et Techniques Industrielles ({UPSTI}) prépare à leur où nous écrivons ces lignes un document de cadrage en terme de méthodologie et de démarche. Nous n'insisterons donc pas sur ces aspects, mais donnerons quelques pistes dans le chapitre commun sur les conseils d'enseignement <<upsti,Pédagogie>>.
+L'Union des Professeurs de Sciences et Techniques Industrielles ({UPSTI}) prépare à l'heure où nous écrivons ces lignes un document de cadrage en terme de méthodologie et de démarche. Nous n'insisterons donc pas sur ces aspects, mais donnerons quelques pistes dans le chapitre commun sur les conseils d'enseignement (cf. <<upsti,Pédagogie>>).
 
-Notons que dans ce cadre là, les 9 diagrammes sont utilisables même si pour l'instant les diagrammes paramétriques et de paquetages sont un peu mis en retrait.
+Notons que dans ce cadre-là, les 9 diagrammes sont utilisables même si pour l'instant les diagrammes paramétriques et de paquetages sont un peu mis en retrait.
 
 === Pour aller plus loin
 

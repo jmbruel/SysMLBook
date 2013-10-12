@@ -55,7 +55,7 @@ image:flowport2.png[scale=60] image:flowport1.png[scale=60]
 	
 Ainsi :
 
-- Les ports par défauts (hérités d'{uml}) permettent d'indiquer des services fournis et requis.
+- Les ports par défauts (hérités {duml}) permettent d'indiquer des services fournis et requis.
 - Les ports de type flot (_flow_) spécifient que quelque-chose "circule" dans ou depuis un bloc. 
 - Si le bloc représentant le port possède lui-même des ports, on parle alors de _nested ports_ (cf. <<nestedPort,Nested Ports>>).
 - Enfin, un _proxy port_ permet de donner accès à l'extérieur d'un bloc à l'un des ports de l'un de ses composants. 
@@ -75,7 +75,7 @@ Voi aussi les blogs :
 === Qu'est-ce que la certification SysML et comment la passer?
 
 Les informations sur la certification sont sur le
-http://www.omg.org/ocsmp/exam-info.htm[site dédié] de l'{omg}.
+http://www.omg.org/ocsmp/exam-info.htm[site dédié] de {lomg}.
 
 La certification (qui coûte environ 300€ par niveau) permet de garantir
 que celui qui la possède maîtrise la notation. 

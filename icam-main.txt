@@ -29,11 +29,11 @@ endif::backend-deckjs[]
 
 === Qui suis-je ?
 
-- Professeur à l'{univ-tlse}
+- Professeur à {luniv-tlse}
 - Co-fondateur de l'association {sysmlfrance}
 - Membre du comité éditorial de la revue _{sosym}_
 - Membre du _Steering Committee_ de la conférence ACM/IEEE {models}
-- Co-responsable de l'axe Systèmes Ambiants de l'{IRIT} 
+- Co-responsable de l'axe Systèmes Ambiants de {lIRIT} 
 - Enseigne la modélisation depuis 1995
 
 ifdef::backend-deckjs[image:logo-irit.png[width="50%"]]

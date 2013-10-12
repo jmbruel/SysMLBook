@@ -20,3 +20,5 @@ Voici quelques références utiles.
 - [[[Styles]]] Scott W. Ambler. The Elements of UML 2.0 Style. Cambridge University Press, 2005. ISBN: 0-521-61678-6
 - [[[Fowler2004]]] Martin Fowler. UML 2.0 INFORMATIQUE PROFESSIONNELLE, 2004.
 - [[[Fejoz2013]]] Loïc Fejoz. [[SysML4STI2D]]SysML4STI2D, présentation de SysML en STI2D, 2004. Disponible http://fr.slideshare.net/REALTIMEATWORK/sysml4sti2d[ici].
+- [[[OMG2009]]] The Current State of Model Based Systems Engineering: Results from the OMG SysML Request for Information. 
+	Mary Bone and Robert Cloutier, 2009. Disponible http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf[ici].

@@ -30,12 +30,18 @@ Les définitions ci-dessous sont regroupées à titre indicatif. Je vous invite
 [[DRY]]DRY::
 	_**D**on't **R**epeat **Y**ourself_ : Un bon principe qui veut qu'on évite de répéter des tâches manuelles 
 	(comme les tests) en utilisant plutôt des scripts et des programmes.
+EIA::
+	_**E**lectronic **I**ndustries **A**lliance_ : un organisme de standardisation (voir {eia}).
 FAQ::
 	_**F**requently **A**sked **Q**uestions_ : une liste de questions souvent posées (et les réponses correspondantes) sur un thème donné.
+IEEE::
+	 _**I**nstitute of **E**lectrical and **E**lectronics **E**ngineers_ : une "société savante" américaine très influente en matière de standards (voir {ieee}).
 INCOSE::
 	**I**nternational **C**ouncil on **S**ystems **E**ngineering : Une organisation fondée en 1990 pour faire avancer les technologies d'{is}.
 [[IPT]]IPT::
 	_**I**ntegrated **P**roduct **T**eam_ : Une équipe classique en développement système.
+ISO::
+	_**I**nternational **O**rganization for **S**tandardization_ : Le leader mondial des normes (voir {iso}).
 OMG::
 	_**O**bject **M**anagement **G**roup_ : L'organisme international chargé des principales normes liés à l'objet (CORBA, UML, etc.).
 [[TDD]]TDD::
@@ -43,10 +49,10 @@ OMG::
 	code tant que les tests ne passent pas.
 TRL::
 	_**T**echnology **R**eadiness **L**evel_ : Système de mesure employé par des agences gouvernementales américaines et par de nombreuses compagnies (et agences) mondiales afin d'évaluer le niveau de maturité d'une technologie (cf. http://fr.wikipedia.org/wiki/Technology_Readiness_Level[Wikipedia]).
-STI2D:: 
+[[STI2D]]STI2D:: 
 	**S**ciences et **T**echnologies de l'**I**ndustrie et du **D**éveloppement **D**urable : série du baccarauléat qui met
 	l'accent sur les technologies transversales et qui a introduit en 2011 l'enseignement de {sysml}.
 SysML:: 
-	_**Sys**tem **M**odeling **L**anguage_ (TM) : Le langage de modélisation de systèmes maintenu par l'{omg}.
+	_**Sys**tem **M**odeling **L**anguage_ (TM) : Le langage de modélisation de systèmes maintenu par {lomg}.
 UML:: 
-	_**U**nified **M**odeling **L**anguage_ (TM) : Le langage de modélisation généraliste maintenu par l'{omg}.
+	_**U**nified **M**odeling **L**anguage_ (TM) : Le langage de modélisation généraliste maintenu par {lomg}.

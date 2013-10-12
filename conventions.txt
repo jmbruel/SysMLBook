@@ -1,9 +1,7 @@
-//-================================================================================
-[[Conventions]]
+//================================================================================
 == Conventions et recommandations
-//-================================================================================
+//================================================================================
 
-[[conventions]]
 Il existe un certain nombre de conventions complémentaires aux règles formelles de syntaxe que
 l'on trouve dans la spécification elle-même (rappelées à la fin de cette section).
 Nous ne les donnons ici qu'à titre indicatif. Il est important pour une organisation qui souhaite utiliser {sysml} comme notation pour ses modèles de se mettre d'accord sur ce type de convention. En voici quelques-unes dans lequel vous pourrez piocher pour définir *vos propres conventions*.

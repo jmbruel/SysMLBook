@@ -29,7 +29,7 @@ La "carte de base"::
 
 ifdef::backend-deckjs[=== Méthode pour cet ouvrage (suite)]
 
-Aucune connaissance particulière d'{uml} n'est nécessaire, même si j'y fais référence à plusieurs endroits pour les étudiants qui connaissent cette notation (quasiment enseignée partout maintenant comme langage de modélisation).
+Aucune connaissance particulière {l'{duml} n'est nécessaire, même si j'y fais référence à plusieurs endroits pour les étudiants qui connaissent cette notation (quasiment enseignée partout maintenant comme langage de modélisation).
 Il s'agit d'un parti pris prenant en compte plusieurs points :
 
 - La plupart des ingénieurs systèmes ne connaissent pas {uml}.

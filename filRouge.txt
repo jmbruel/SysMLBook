@@ -1,13 +1,13 @@
 == Un exemple fil rouge
 
 L'exemple de système qui sera modélisé tout au long de ce livre en guise d'exemple
-est l'exemple d'un système de gestion et de supervision de crise. Les détails sont
+est celui d'un système de gestion et de supervision de crise. Les détails sont
 donnés en annexe (cf. <<appendix,Annexes>>).
 
 Il existe un certain nombre d'autres exemple complets :
 
 - Le radio-réveil de {prfc} <<Roques2010>>, un exemple simpliste mais didactique  qui a le mérite d'être déjà connu des modeleurs {UML} qui ont lu ses livres.
-- Le distilleur de <<FMS>>, un exemple très complet et lui aussi très connu car beaucoup utilisé dans les tutoriels issus de l'{omg}. 
+- Le distilleur de <<FMS>>, un exemple très complet et lui aussi très connu car beaucoup utilisé dans les tutoriels issus de {lomg}. 
 - Le pacemaker de <<SeeBook2012>>footnote:[Nous avons réalisé le chapitre d'introduction à {sysml} de cet ouvrage.], un exemple très récent et dont l'avantage est d'être traité selon plusieurs approches différentes et complémentaires ({sysml}, {AADL} et {MARTE}).
 
 Les exemples complets ont le mérite de donner une vue d'ensemble des liens qui peuvent exister entre les différents diagrammes. On peut y voir comment ces diagrammes sont complémentaires les uns des autres. Ils sont en général plus réalistes que les diagrammes utilisés pour illustrer tel ou tel concept de la notation. 
@@ -27,7 +27,7 @@ une caserne de pompiers (appelé FSC pour _Fire Station Coordinator_) et un autr
 poste de police (appelé PSC pour _Police Station Coordinator_) afin de gérer une crise dans un 
 délai raisonnable. 
 
-.Le système CMS
+.Le système CMS (tiré de http://www.springerlink.com/content/9028524720q17475/[Kienzle2010])
 ifdef::book[image::{images}/CMS.png[scale=70]]
 ifndef::book[image::{images}/CMS.png[width="80%"]]
 
@@ -102,8 +102,6 @@ Les responsabilités d'un témoin sont les suivantes :
 
 ==== Informations complémentaires
 
-Pour enrichir vos modèles, vous pouvez incorporer certains des besoins non-fonctionnels décrits ci-dessous.
-
-include::nf-reqs-fr.txt[]
+Pour enrichir vos modèles, on pourra incorporer certains des besoins non-fonctionnels décrits en annexe (cf. <<appendix,Annexes>>).
 
 ifdef::backend-deckjs[:leveloffset: 0]

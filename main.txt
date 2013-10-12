@@ -7,7 +7,7 @@
 :Author Initials: JMB
 :Email: bruel@irit.fr
 :Revision: 1.3
-:localdate: {sys: date +%d/%m/%Y}
+// :localdate: {sys: date +%d/%m/%Y}
 :date: {localdate}
 :startdate: 26/07/2012
 :dessins: dessins
@@ -82,11 +82,11 @@ ifdef::backend-deckjs[]
 
 == Qui suis-je ?
 
-- Professeur à l'{univ-tlse}
+- Professeur à {Luniv-tlse}
 - Co-fondateur de l'association {sysmlfrance}
 - Membre du comité éditorial de la revue _{sosym}_
 - Membre du _Steering Committee_ de la conférence ACM/IEEE {models}
-- Co-responsable de l'axe Systèmes Ambiants de l'{IRIT} 
+- Co-responsable de l'axe Systèmes Ambiants de {LIRIT} 
 - Enseigne la modélisation depuis 1995
 
 image::logo-irit.png[width="50%"]
@@ -170,7 +170,7 @@ include::cookbook.txt[]
 
 ifndef::backend-deckjs[]
 
-<<<<
+<<<
 
 [[upsti]]
 = Partie 5 : Pédagogie
@@ -181,7 +181,7 @@ include::upsti.txt[]
 
 ifndef::backend-deckjs[]
 
-<<<<
+<<<
 
 = Partie 6 : Pour aller plus loin
 
@@ -193,14 +193,14 @@ endif::backend-deckjs[]
 Exemples de démarche autour de {sysml}, (cf. <<Methodes>>).
 indexterm:[Méthodes]
 
-<<<<
+<<<
 
 [[Analyse]]
 == Analyses et simulation
 
 To be completed
 
-<<<<
+<<<
 
 [[Exos]]
 == Exercices de révision
@@ -284,27 +284,22 @@ endif::correction[]
 
 ifndef::backend-deckjs[]
 
-<<<<
+<<<
 
 [[appendix]]
 = Annexes
 
 endif::backend-deckjs[]
+
+<<<
+
+include::nf-reqs-fr.txt[]
+
+<<<
 	
 include::apx01Links.txt[]
 
-/////
-== Historique de SysML
-
-Un point sur les évolutions de {sysml}.
-
-[[umlAsysml]]
-== D'UML à SysML
-
-Un point sur comment aborder {sysml} quand on vient d'{uml}.
-/////
-
-<<<<
+<<<
 
 == Le temps et sa prise en compte dans les modèles
 
@@ -323,29 +318,20 @@ ifndef::book[image::{images}/temps.png[width="70%"]]
 Néanmoins, pour une prise en compte industriel des contraintes temporelles, il conviendra d'utiliser 
 le profil dédié à ces aspects : le profil {marte}.
 
-/////
-== Idées de projets
-
-Quelques exemples de sujet propice au développement SysML.
-
-== Challenges et questions ouvertes autour de SysML
-
-TBD...
-//////
-
-<<<<
+<<<
+[[Conventions]]
 
 include::conventions.txt[]
 
-<<<<
+<<<
 
 include::faq.txt[]
 
-<<<<
+<<<
 
 include::biblio.txt[]
 
-<<<<
+<<<
 
 include::glossary.txt[]
 

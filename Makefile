@@ -2,12 +2,14 @@
 MAIN=main
 ICONSDIR=/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons
 IMAGESDIR=/Users/bruel/Dropbox/Public/dev/SysMLBook/images
+STYLE=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/golo.css
 #-----------------------------------------------------
 
 all: *.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
-	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
-	-a stylesheet=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/scribe.css \
+	asciidoc -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
+	-a book \
+	-a stylesheet=$(STYLE) \
 	-a imagesdir=$(IMAGESDIR) \
 	-a numbered $(MAIN).txt
 

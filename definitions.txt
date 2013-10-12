@@ -1,6 +1,7 @@
 // raccourcis sites
 :aadl: http://www.aadl.info/[AADL]indexterm:[AADL]
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]indexterm:[AsciiDoc]
+:dasciidoc: http://www.methods.co.nz/asciidoc[d'AsciiDoc]indexterm:[AsciiDoc]
 :artisan: http://www.artisansw.com/[Artisan]
 :deckjsite: http://houqp.github.io/asciidoc-deckjs/[deckjs]
 :doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
@@ -15,6 +16,7 @@
 :moodle: http://webetud.iut-blagnac.fr[Moodle]
 :norme: http://www.omg.org/spec/SysML/1.3/PDF/[OMG SysML v1.3]
 :omg: http://www.omg.org[OMG(TM)]indexterm:[OMG]
+:lomg: http://www.omg.org[l'OMG(TM)]indexterm:[OMG]
 :OSLC: http://open-services.net/[OSCL]
 :pandoc: http://johnmacfarlane.net/pandoc/[Pandoc]
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus]
@@ -30,6 +32,7 @@
 :sysmltrends: http://www.google.fr/trends/explore#q=sysml[SysML Trends]
 :topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
 :uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
+:duml: http://www.uml.org/[d'UML(TM)]indexterm:[UML(TM)]
 :umlspec: http://www.omg.org/spec/UML/2.4.1/Infrastructure/PDF/[UML 2.4.2 Specifictation]
 :vle: http://www.vle-project.org/wiki/Main_Page[VLE]
 :xtext: http://www.eclipse.org/Xtext/[Xtext]
@@ -49,6 +52,7 @@
 :resume: En résumé
 :revisions: Questions de révision
 :is: Ingénierie Système(((IS)))
+:lis: l'Ingénierie Système(((IS)))
 ifndef::uk[] 
 :stakeholders: parties prenantes 
 endif::uk[]
@@ -56,17 +60,23 @@ endif::uk[]
 :verify: +<<verify>>+
 	
 // personnes et institutions
-:afis: AFIS(((AFIS)))
+:afis: http://www.afis.fr/[AFIS](((AFIS)))
 :agusti: Agusti Canals
 :dl: http://www.dept-info.ups-tlse.fr/index.php?option=com_content&view=article&id=294&Itemid=697&lang=fr[Master DL-SI]
-:fast: http://fr.wikipedia.org/wiki/Analyse_fonctionnelle_(conception)[FAST]
-:incose: http://www.incose.org/[INCOSE]indexterm:[INCOSE]
-:irit: http://www.irit.fr[IRIT]
+:eia: http://www.eciaonline.org/eiastandards/[EIA](((EIA)))
+:fast: http://fr.wikipedia.org/wiki/Analyse_fonctionnelle_(conception)[FAST](((FAST)))
+:ieee: http://www.ieee.org/[IEEE](((IEEE)))
+:incose: http://www.incose.org/[INCOSE]indexterm:[INCOSE](((INCOSE)))
+:iso: http://www.iso.org/[ISO](((ISO)))
+:irit: http://www.irit.fr[IRIT](((IRIT)))
+:lirit: http://www.irit.fr[l'IRIT](((IRIT)))
 :iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
+:liut: http://www.iut-blagnac.fr/[l'IUT de Blagnac]
 :jmi: Jean-Michel Inglebert
 :jmimail: jean-michel.inglebert@univ-tlse2.fr
 :karina: Karina Aguilar
 :loic: mailto:loic.fejoz@realtimeatwork.com[Loïc Féjoz]
+:nasa: http://www.nasa.gov/[NASA]
 :nico: Nicolas Belloir
 :nonne: Laurent Nonne
 :prfc: http://www.dotnetguru2.org/proques/index.php[Pascal Roques]
@@ -75,12 +85,18 @@ endif::uk[]
 :rdp: Réseaux de Petri
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :univ-tlse: http://www.univ-toulouse.fr[Univesité de Toulouse]
+:luniv-tlse: http://www.univ-toulouse.fr[l'Univesité de Toulouse]
 :univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
+:luniv-tlse2: http://www.univ-tlse2.fr[l'Université de Toulouse II - Le Mirail]
 :uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
+:luag: http://www.uag.mx/[l'Universitad Autónoma de Guadalajara]
 :uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
+:luppa: http://www.univ-pau.fr/[l'Université de Pau et des Pays de l'Adour]
 :ups: http://www.univ-tlse3.fr[UPS]
+:lups: http://www.univ-tlse3.fr[l'UPS]
 :upsti: http://www.upsti.fr/[UPSTI]
-
+:lupsti: http://www.upsti.fr/[l'UPSTI]
+	
 // SysML diagrams
 :seq: sd(((sd)))
 :sd: sd(((sd)))
@@ -88,7 +104,7 @@ endif::uk[]
 :ibd: ibd(((ibd)))
 :act: act(((act)))
 :stm: stm(((stm)))
-:req: `req`(((req)))
+:req: req(((req)))
 :uc: uc(((uc)))
 :pkg: pkg(((pkg)))
 :par: par(((par)))

@@ -15,6 +15,12 @@ ifndef::book[[align="center",cols="h,4*",options="header",width="50%"]]
 | {implementation}	|					|        		|				|
 |======================
 
+Cette matrice permet de situer les différents éléments qui seront vus dans ce cours dans un cadre
+utile pour comparer ces éléments les uns aux autres.
+Je vous conseille de vous faire votre propre matrice.
+L'essentiel est de toujours bien se représenter les différents éléments qu'on aborde
+dans une carte mentale précise. Cela permet une meilleure mémorisation.
+
 ifdef::backend-deckjs[:leveloffset: -1]
 
 === Points de vue
@@ -32,6 +38,13 @@ Dans un axe horizontal, j'ai différencié quatre grands points de vue :
 	Un certains nombre de concepts sont transverses aux trois points de vue précédents. Il s'agira principalement de parler de cohérence entre
 	les phases de développement ou entre les points de vue.
 
+Ces différents points de vue ne doivent pas être confondus avec les différentes phases de développement (cf. paragraphe suivant).
+ Ils sont plutôt à rapprocher de la notion de préoccupation. C'est ainsi que j'ai choisi de distinguer trois points de vue
+qui se retrouvent souvent en modélisation : le point de vue des exigences qui permet de se focaliser sur les besoins des clients ;
+le point de vue structurel qui permet de se focaliser sur les différents composants du système ;
+et le point de vue comportemental qui permet de se focaliser sur le comportement du système.
+Ces trois points de vue n'étant pas indépendants les uns des autres, j'ai intégré un quatrième point de vue transversal.
+
 === Phase de développement
 
 Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie du développement :
@@ -48,6 +61,16 @@ Dans un axe vertical, j'ai différencié quatre grandes phases du cycle de vie d
 {implementation}::
 	Cette phase traite des développements finaux (construction ou approvisionnement en matériel, développement de codes, etc.).
 
+Il s'agit ici classiquement des grandes étapes de développement d'un système.
+ On pourrait être surpris par l'étape que j'ai appelé « organisation ».
+C'est une étape que je considère importante, particulièrement pour l'enseignement.
+Avant toute activité de modélisation ou de même de développement, il convient en effet
+de s'organiser en termes de choix d'outils, choix d'environnement, etc.
+Cette étape est souvent négligée par les étudiants.
+C'est pour cela que j'ai décidé de faire figurer cette étape de manière explicite.
+Bien sûr dans une organisation existante cette étape sera contrainte par les habitudes
+« maison ».
+
 ifdef::backend-deckjs[:leveloffset: 0]
 
 <<<<
@@ -62,17 +85,16 @@ ifdef::backend-deckjs[:leveloffset: -1]
 === Une ingénierie plus ancienne
 
 Que ce soit généralement en terme de cycle de développement ou historiquement,
-l'{is} arrive avant l'Ingénierie Logicielle. Les ingénieurs systèmes ont donc une longue
+{lis} arrive avant l'Ingénierie Logicielle. Les ingénieurs systèmes ont donc une longue
 expérience et des pratiques bien ancrées.
 
 === Des systèmes plus complexes
 
-On parle de système complexe lorsque l'on a affaire à :
+On parle de système complexe lorsque l'on a affaire à un ensemble d'éléments humains et matériels en relation avec :
 
-* un ensemble d'éléments humains et matériels en relation avec :
-** de nombreux éléments technologiques (Informatique, Hydraulique, Electronique, ...)
-** intégrés pour fournir des services (finalité du système) en fonction de leur environnement
-** interagissant entre eux et avec leur environnement
+- de nombreux éléments technologiques (Informatique, Hydraulique, Electronique, ...)
+- intégrés pour fournir des services (finalité du système) en fonction de leur environnement
+- interagissant entre eux et avec leur environnement
 
 .Un système complexe
 ifdef::book[image::{images}/starwars.jpeg[scale=60]]
@@ -92,43 +114,50 @@ ifndef::book[image::{images}/starwars2.jpeg[alt="Système de systèmes",link="st
 
 === Différents types d'analyse
 
-Toute la question que l'{is} cherche à résoudre est : comment passer des exigences au système
-de la façon la plus efficace possible.
+Toute la question que {lis} cherche à résoudre est : comment passer des exigences au système
+de la façon la plus efficace possible (cf. <<is1,IS : problème>>).
  
+[[is1]]
 .Des exigences au système
 ifdef::book[image::{images}/analyse1.png[scale=50]]
 ifndef::book[image::{images}/analyse1.png[alt="Des reqs au système",width="70%"]]
 
-Pour cela l'{is} est découpée en plusieurs analyses, chacune avec un but bien particulier :
+Pour cela {lis} est découpée en plusieurs analyses, chacune avec un but bien particulier :
 
 ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
+[[is2]]
 .Analyse Fonctionnelle et/ou Comportementale
 ifdef::book[image::{images}/analyse2.png[scale=50]]
 ifndef::book[image::{images}/analyse2.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
+[[is3]]
 .Analyse Structurelle
 ifdef::book[image::{images}/analyse3.png[scale=50]]
 ifndef::book[image::{images}/analyse3.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
+[[is3]]
 .Analyse de performance
 ifdef::book[image::{images}/analyse4.png[scale=50]]
 ifndef::book[image::{images}/analyse4.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
+[[is4]]
 .Analyses spécifiques
 ifdef::book[image::{images}/analyse5.png[scale=50]]
 ifndef::book[image::{images}/analyse5.png[alt="Des reqs au système",width="70%"]]
 
 ifdef::backend-deckjs[=== Différents types d'analyse (suite)]
 
-Pour arriver à combler le gap entre le système à développer et ses spécifications.
+Le but de ces analyses est d'arriver à combler le gap entre le système à développer et ses 
+spécifications  (cf. <<is5,IS : solution>>).
 
+[[is5]]
 .Des exigences au système
 ifdef::book[image::{images}/analyse6.png[scale=50]]
 ifndef::book[image::{images}/analyse6.png[alt="Des reqs au système",width="70%"]]
@@ -139,14 +168,22 @@ ifdef::backend-deckjs[:leveloffset: 0]
 
 == Normes et standards
 
-Il existe un grand nombre de standards en {is}. Cette section fera (bientôt) une revue
-de ces différents standards et organismes et de leur utilisation (IEEE, EIA, ISO, certification, NASA, INCOSE, AFIS, ...).
-
-Enfin, citons un rapport de 2010, le {rapportPotier}, qui présente l'état des logiciels embarqués
+Il existe un grand nombre de standards en {is}. Cette section  aurait pu faire une revue
+de ces différents standards et organismes et de leur utilisation ({IEEE}, {EIA}, {ISO}, {NASA}, {INCOSE}, {AFIS}, ...).
+Néanmoins,  les aspects normalisation et standardisation sortent
+du cadre de ce document.
+Pour plus de détails sur ces aspects, je renvoie le lecteur   à un rapport de 2010, le {rapportPotier}, qui présente l'état des logiciels embarqués
 et qui sera utiles à ceux qui s'intéressent aux verrous technologiques liés à ce domaine.
 
-L'{is} génère beaucoup de documentation. Les processus de certification (par exemple dans l'aéronautique) sont
-encore basés sur des documents textuels. 
+Ce qu'il faut retenir tout de même, c'est que {lis} génère beaucoup de documentation. 
+Les processus de certification (par exemple dans l'aéronautique) sont encore basés sur des documents textuels. 
+De plus en plus de grands comptes comme Airbus, Thalès, cherchent à utiliser des modèles
+pour remplacer à terme la documentation. L'idée est de générer cette documentation à partir des modèles
+et non l'inverse comme c'est plutôt le cas aujourd'hui. 
+
+Enfin je noterai concernant cette section qu'il est bien sûr important, avant tout travail de modélisation,
+de bien se renseigner sur les différentes procédures  en vigueur dans votre entreprise.
+Il convient de respecter bien évidemment les normes et standards qui contraignent votre activité.
 
 <<<<
 
@@ -156,6 +193,10 @@ Vue la complexité grandissante des systèmes, petit à petit cette ingénierie 
 ingénierie *centrée documents* à une ingénierie *centrée modèles*. D'où l'importance de se poser la question
 des notations et langages pour réaliser et communiquer avec ces modèles (cf. <<Notation>>).
 
+
+En {is} il arrive parfois que les personnes responsables des différents aspects de la modélisation soient complètement déconnectées. Par exemple une équipe complète d'ingénieurs spécialisés dans les exigences va les traiter puis une équipe spécialisée dans les aspects architecture et composants va définir la partie physique du système. Une autre équipe spécialisée dans les comportements va modéliser le comportement du système. L'utilisation d'un langage commun, comme {sysml}, pour toutes ces phases est
+une façon d'assurer la cohérence et la complémentarité des différents modèles.
+	
 <<<<
  
 [[exigences]]
@@ -165,7 +206,7 @@ L'ingénierie des exigences est d'une importance capitale en {is}.
 En général les exigences sont exprimées par des ingénieurs dédiés à cette activité.
 La complexité des systèmes modernes (embarqués, communicants, critiques, ...).
 
-.300 corps de métiers sont parfois présents sur un chantier
+.300 corps de métiers sont parfois présents sur un même chantier
 ifdef::book[image::{images}/ingenierie-des-exigences.jpg[scale=60]] 
 ifndef::book[image::{images}/ingenierie-des-exigences.jpg[alt="Joke",link="http://www.inria.fr/centre/rennes/actualites/vers-un-cahier-des-charges-mieux-formule",width="70%"]] 
 
@@ -173,7 +214,7 @@ ifndef::book[image::{images}/ingenierie-des-exigences.jpg[alt="Joke",link="http:
 [TIP]
 ====
 La difficulté de l'emploi massif de l'anglais en {is} fait qu'il existe souvent une confusion entre
-les termes anglais et leurs traduction anglaise. Nous précisons donc ici notre utilisation des termes :
+les termes anglais et leurs traduction française. Nous précisons donc ici notre utilisation des termes :
 
 _Requirements_::
 Exigences, c'est à dire une fonction ou une propriété que doit satisfaire le système considéré. 
@@ -186,8 +227,7 @@ Il s'agit des exigences du client. En {sysml} on va plus les retrouver dans les 
 Il est important pour une exigence qu'elle ne soit pas ambiguë (contrairement au terme +en+ dans la consigne exprimée par la maman dans l'illustration <<fig:eggs,ci-dessous>> : "_Ramène moi 1 bouteille de lait. S'il y a des oeufs, ramène m'en 6._").
 
 [[fig:eggs]]
-.\{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
-[caption="Illustration: "]
+.{eggstitle} (taken from https://plus.google.com/100035762233109552669/posts/a8Hafq2hZ74[here])
 ifdef::book[image::{images}/ProgrammerHumor.jpg[scale=50]]
 ifndef::book[image::ProgrammerHumor.jpg["Joke",width="70%"]]
 

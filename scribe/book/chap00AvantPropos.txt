@@ -12,18 +12,18 @@ Si vous appartenez à l'une de ces catégories, ce livre *n'est pas pour vous* :
 
 - vous cherchez un livre de référence (pour cela, même s'il est en anglais, je conseille <<FMS>>)
 - vous voulez vous perfectionner (ce livre n'est qu'une introduction)
-- vous souhaitez préparer la certification de l'{omg} (mieux vaut vous plonger dans la spécification <<SysML>>)
+- vous souhaitez préparer la certification de {lomg} (mieux vaut vous plonger dans la spécification <<SysML>>)
 
 ==== Historique
 
 Ce document est la compilation de plusieurs années d'enseignement de {sysml} depuis 2007, que ce soit :
 
-- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de l'{uppa} (cours d'introduction avec mon collègue et ami {nico}),
-- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de l'{UPS} (introduction),
-- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de l'{univ-tlse2} (introduction avec mon collègue et ami {pdss}),
+- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de {luppa} (cours d'introduction avec mon collègue et ami {nico}),
+- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de {lUPS} (introduction),
+- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de {luniv-tlse2} (introduction avec mon collègue et ami {pdss}),
 - au _Master of Science_ de Göteborg, Suède (introduction réalisée par {nico}),
-- à l'{uag}, au Mexique (40h de formation professionnelle aux employés de Continental),
-- ou plus récemment au {dl} de l'{ups}.
+- à {luag}, au Mexique (40h de formation professionnelle aux employés de Continental),
+- ou plus récemment au {dl} de {lups}.
 
 Vous trouverez en référence (cf. <<refs, Bibiliographie>>) les ouvrages et autres documents utilisés.
 
@@ -32,9 +32,9 @@ ifndef::book[]
 
 Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
 
-- {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
+- {nico} de l'{uppa}, {nonne} de {liut} et {karina} de {luag}; 
 - mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} (RTaW);
-- mon maître d'{asciidoc} : {jmi}.
+- mon maître {dasciidoc} : {jmi}.
 
 endif::book[]
 endif::backend-slidy2[]

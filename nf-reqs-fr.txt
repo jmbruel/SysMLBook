@@ -1,5 +1,7 @@
+== Complément sur l'exemple fil rouge bCMS
+
 ifdef::backend-deckjs[:leveloffset: -1]
-ifndef::backend-deckjs[:leveloffset: 2]
+ifndef::backend-deckjs[:leveloffset: 0]
 
 Le système de gestion de crise doit montrer les suivants propriétés non-fonctionnelles :
 

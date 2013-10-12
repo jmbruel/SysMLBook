@@ -27,43 +27,34 @@ Si vous appartenez à l'une de ces catégories, ce livre *n'est pas pour vous* :
 
 - vous cherchez un livre de référence (pour cela, même s'il est en anglais, je conseille <<FMS>>)
 - vous voulez vous perfectionner (ce livre n'est qu'une introduction)
-- vous souhaitez préparer la certification de l'{omg} (mieux vaut vous plonger dans la spécification <<SysML>>)
+- vous souhaitez préparer la certification de {lomg} (mieux vaut vous plonger dans la spécification <<SysML>>)
 
 ==== Historique
 
 Ce document est la compilation de plusieurs années d'enseignement de {sysml} depuis 2007, que ce soit :
 
-- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de l'{uppa} (cours d'introduction avec mon collègue et ami {nico}),
-- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de l'{UPS} (introduction),
-- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de l'{univ-tlse2} (introduction avec mon collègue et ami {pdss}),
-- au _Master of Science_ de Göteborg, Suède (introduction réalisée par {nico}),
-- à l'{uag}, au Mexique (40h de formation professionnelle aux employés de Continental),
-- ou plus récemment au {dl} de l'{ups}.
+- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de {luppa} (cours d'introduction avec mon collègue et ami {nico}),
+- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de {lUPS} (introduction),
+- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de {luniv-tlse2} (introduction avec mon collègue et ami {pdss}),
+- au _Master of Science_ de Göteborg, Suède (introduction réalisée par mon collègue et ami {nico}),
+- à {luag}, au Mexique (40h de formation professionnelle à des employés de Continental Mexique),
+- ou plus récemment au {dl} de {lups}.
 
 Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés.
-
-ifndef::backend-deckjs[]
-ifndef::book[]
-
-Je tiens à remercier mes collègues qui m'ont aidé dans mon entreprise : 
-
-- {nico} de l'{uppa}, {nonne} de l'{iut} et {karina} de l'{uag}; 
-- mes collègues de {sysmlfrance} : {prfc} (PRFC), {agusti} (C-S) et {loic} ({RTaW});
-- mon maître d'{asciidoc} : {jmi}.
-
-endif::book[]
-endif::backend-deckjs[]
 
 ifdef::backend-deckjs[:leveloffset: -1]
 
 === Sur l'auteur
-- Professeur à l'{univ-tlse}
+
+Voici quelques informations me concernant (pour peu que cela vous intéresse) :
+
+- Professeur à {luniv-tlse}
 - Co-fondateur de l'association {sysmlfrance} en 2009
 - Membre du comité éditorial de la revue _{sosym}_ depuis sa création en 2002
 - Membre du _Steering Committee_ de la conférence ACM/IEEE {models} depuis 2008
 - Enseignant en modélisation depuis 1995
-ifndef::book[- Chef du département informatique de l'{iut} de 2009 à 2012]
-ifndef::book[- Co-responsable de l'axe Systèmes Ambiants de l'{IRIT} depuis 2009]
+ifndef::book[- Chef du département informatique de {liut} de 2009 à 2012]
+ifndef::book[- Co-responsable de l'axe Systèmes Ambiants de {lIRIT} depuis 2009]
 - Marié, une (merveilleuse) fille
 
 [[comment-lire]]
@@ -102,8 +93,13 @@ volontairement ces termes (e.g., _Requirements_).
 
 ifdef::backend-deckjs[==== Conventions typographiques (suite)]
 
-Les figures, sauf mention contraire, ont été réalisées avec l'outil {topcased} en français.
-Le titre des figures indique (entre parenthèses) un +R+ pour les figures issues de {rhapsody} et un +UK+ pour les figures en anglais. Pour les conventions (de nommage notamment), cf. <<conventions>>.
+Le titre des figures indique (entre parenthèses) 
+un +R+ pour les figures issues de {rhapsody}, 
+un +T+ pour les figures issues de {topcased},
+un +M+ pour les figures issues de {magicdraw},
+et un +UK+ pour les figures en anglais. Pour les conventions (de nommage notamment), cf. <<conventions>>. 
+	
+Pour les notes, conseils, avertissements, etc. voici la liste des pictogrammes utilisés :
 
 [NOTE]
 ====
@@ -133,7 +129,8 @@ ifdef::backend-deckjs[==== Conventions typographiques (suite)]
 [icon="./images/upsti-logo.png"]
 [NOTE]
 ====
-Conseil spécifique aux formateurs.
+Conseil spécifique aux formateurs. Comme ces conseils viennent pour la plupart de mes
+discussions avec les membres de {lupsti}, j'ai choisi leur logo pour leur faire un clin d'oeil.
 ====
 
 [icon="images/icons/appbar.weather.thunder.png"]
@@ -159,10 +156,10 @@ Modélisation SysML correcte.
 Parce que j'ignore la version que vous êtes en train de lire. À partir de l'original, 
 plusieurs versions ont été générées grâce à {asciidoc} :
 
-* pour le web (nous utilisons à l'{iut} l'excellent {Moodle}) au format http://www.sysml.fr/main[html]
+* pour le web (nous utilisons à {liut} l'excellent {Moodle}) au format http://www.sysml.fr/main[html]
 * pour présentation (en amphi par exemple) au format http://www.sysml.fr/slidy[slidy] ou http://www.sysml.fr/deckjs[deck.js] 
 * pour impression au format http://www.sysml.fr/main.pdf[pdf] (bien que bien sûr nous vous recommandons l'achat du livre)
-* pour lire au format http://www.sysml.fr/main.mobi[Kindle] (bientôt!)
+* pour lire au format http://www.sysml.fr/main.mobi[Kindle]
 
 ==== Utilisation et autres mentions légales
 

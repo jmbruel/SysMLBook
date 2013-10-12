@@ -1,7 +1,10 @@
 ifndef::backend-deckjs[]
+
 == Enseigner SysML
+
 :leveloffset: +1
 endif::backend-deckjs[]
+
 ifdef::backend-deckjs[]
 :leveloffset: +1
 = Enseigner SysML
