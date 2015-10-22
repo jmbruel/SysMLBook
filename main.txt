@@ -3,7 +3,7 @@
 :doctype: book
 :description: Livre d'introduction à SysML
 :keywords: SysML Ingénierie Systèmes
-:Author: Jean-Michel Bruel 
+:Author: Jean-Michel Bruel
 :Author Initials: JMB
 :Email: bruel@irit.fr
 :Revision: 1.3
@@ -15,14 +15,15 @@
 :slideshowlocation: [IUT Blagnac]
 :duration: 85
 :slidebackground: asciidocslidy
-:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by Asciidoc and W3C Slidy &#169; 
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by Asciidoc and W3C Slidy &#169;
 :incremental!:
 :indir: dessins
 :source-highlighter: pygments
+:siteurl: http://bit.ly/jmb-M2DL
 
 //----------- dck.js --------------
-// swiss, neon beamer
-:deckjs_theme: web-2.0 
+// swiss, neon beamer, web-2.0
+:deckjs_theme: swiss
 
 //fade, horizontal-slide, vertical-slide
 :deckjs_transition: horizontal-slide
@@ -38,14 +39,14 @@ include::definitions.txt[]
 
 
 //Environnement
-:images: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images
-:icons: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons
-:plantuml: /Users/bruel/Dropbox/Public/dev/SysMLBook/slides/plantuml
+:images: /Users/bruel/Dropbox/dev/SysMLBook/images
+:icons: /Users/bruel/Dropbox/dev/SysMLBook/images/icons
+:plantuml: /Users/bruel/Dropbox/dev/SysMLBook/plantuml
 :defs: defs
-:acsi: /Users/bruel/Dropbox/Public/dev/ACSI/images/
+:acsi: /Users/bruel/Dropbox/dev/ACSI/images/
 
 //------------------------------------- slides only --------------
-ifdef::backend-deckjs[]
+ifdef::slides[]
 
 //================================================================
 // Plan
@@ -58,7 +59,7 @@ ifdef::backend-deckjs[]
 - Retour sur les diagrammes
 - Annexes
 
-endif::backend-deckjs[]
+endif::slides[]
 
 //------------------------------------- book only ----------------
 ifdef::book[]
@@ -78,7 +79,7 @@ include::preface.txt[]
 endif::book[]
 
 //------------------------------------- slides only --------------
-ifdef::backend-deckjs[]
+ifdef::slides[]
 
 == Qui suis-je ?
 
@@ -86,7 +87,7 @@ ifdef::backend-deckjs[]
 - Co-fondateur de l'association {sysmlfrance}
 - Membre du comité éditorial de la revue _{sosym}_
 - Membre du _Steering Committee_ de la conférence ACM/IEEE {models}
-- Co-responsable de l'axe Systèmes Ambiants de {LIRIT} 
+- Co-responsable de l'axe Systèmes Ambiants de {LIRIT}
 - Enseigne la modélisation depuis 1995
 
 image::logo-irit.png[width="50%"]
@@ -103,9 +104,9 @@ image::logo-irit.png[width="50%"]
 - Je me considère plus comme un collègue que comme un formateur.
 - Je ne maîtrise pas tout {sysml}.
 - Je suis novice en {MagicDraw}!
-- Je ne suis pas là pour vous dire ce que vous devez faire! 
+- Je ne suis pas là pour vous dire ce que vous devez faire!
 ====
-endif::backend-deckjs[]
+endif::slides[]
 
 <<<
 
@@ -113,13 +114,13 @@ endif::backend-deckjs[]
 // Partie 1 : Introduction
 //================================================================
 
-ifndef::backend-deckjs[]
+ifndef::slides[]
 
 ifdef::book[= Introduction]
 
 ifndef::book[= Partie 1 : Introduction]
 
-endif::backend-deckjs[]
+endif::slides[]
 
 include::chap00AvantPropos.txt[]
 
@@ -133,59 +134,61 @@ include::sysml.txt[]
 
 include::sti2d.txt[]
 
-<<<
-
+////
 include::filRouge.txt[]
+////
 
-ifndef::backend-deckjs[]
+ifndef::slides[]
 
 <<<
 
 = Partie 2 : Ingénierie système
 
-endif::backend-deckjs[]
+endif::slides[]
 
 include::IS.txt[]
 
 
-ifndef::backend-deckjs[]
+ifndef::slides[]
 
 <<<
 
 = Partie 3 : La notation SysML
 
-endif::backend-deckjs[]
+endif::slides[]
 
 include::notation.txt[]
 
-ifndef::backend-deckjs[]
+ifndef::slides[]
 
 <<<
 
 = Partie 4 : Modéliser un système en SysML
 
-endif::backend-deckjs[]
+endif::slides[]
 
 include::cookbook.txt[]
 
-ifndef::backend-deckjs[]
+/////
 
-<<<
+ifndef::slides[]
+
 
 [[upsti]]
 = Partie 5 : Pédagogie
 
-endif::backend-deckjs[]
+endif::slides[]
 
 include::upsti.txt[]
 
-ifndef::backend-deckjs[]
+/////
 
-<<<
+ifndef::slides[]
 
-= Partie 6 : Pour aller plus loin
 
-endif::backend-deckjs[]
+= Partie 5 : Pour aller plus loin
+
+endif::slides[]
 
 [[methodo]]
 == Considérations méthodologiques
@@ -237,7 +240,7 @@ ifndef::book[image::{images}/crossword.png["Crosword"]]
 
 Vertical (across)::
 - 2. outside-inside connection
-- 4. the full name of a model element is also a ... name 
+- 4. the full name of a model element is also a ... name
 - 6. the black diamond in SysML
 - 9. History is one of them
 - 10. what a block can do
@@ -257,22 +260,22 @@ ifdef::correction[]
 ==== Corrigé
 
 .................
-             A    
-DELEGATION   C    
-     S       T    
+             A
+DELEGATION   C
+     S       T
      Y   QUALIFIED
-     N       V    
-   R COMPOSITION  
- M E H       T A  
- E Q R       Y M  
-PSEUDOSTATES   E  
- S I N         S  
- A R OPERATION P  
- G E U      M  A  
- E M S   N  G  C  
-   E     I     E  
-TRANSITION INCOSE 
-   T     E        
+     N       V
+   R COMPOSITION
+ M E H       T A
+ E Q R       Y M
+PSEUDOSTATES   E
+ S I N         S
+ A R OPERATION P
+ G E U      M  A
+ E M S   N  G  C
+   E     I     E
+TRANSITION INCOSE
+   T     E
 .................
 
 endif::correction[]
@@ -282,21 +285,20 @@ endif::correction[]
 // APPENDIX
 //================================================================
 
-ifndef::backend-deckjs[]
+ifndef::slides[]
 
 <<<
+:numbered!:
 
 [[appendix]]
 = Annexes
 
-endif::backend-deckjs[]
+endif::slides[]
 
-<<<
-
+////
 include::nf-reqs-fr.txt[]
+////
 
-<<<
-	
 include::apx01Links.txt[]
 
 <<<
@@ -305,7 +307,7 @@ include::apx01Links.txt[]
 
 Il existe plusieurs façon de représenter les informations temporelles.
 
-{SysML} permet par exemple d’ajouter des contraintes temporelles sur le diagramme de séquence. 
+{SysML} permet par exemple d’ajouter des contraintes temporelles sur le diagramme de séquence.
 Il existe deux types de contraintes :
 
 - la contrainte de durée, qui permet d’indiquer une contrainte sur la durée exacte, la durée minimum ou la durée maximum entre deux événements ;
@@ -315,7 +317,7 @@ Il existe deux types de contraintes :
 ifdef::book[image::{images}/temps.png[scale=50]]
 ifndef::book[image::{images}/temps.png[width="70%"]]
 
-Néanmoins, pour une prise en compte industriel des contraintes temporelles, il conviendra d'utiliser 
+Néanmoins, pour une prise en compte industriel des contraintes temporelles, il conviendra d'utiliser
 le profil dédié à ces aspects : le profil {marte}.
 
 <<<
@@ -343,6 +345,3 @@ ifdef::book[]
 endif::book[]
 
 include::about.txt[]
-
-
-

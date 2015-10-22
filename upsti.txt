@@ -1,55 +1,55 @@
-ifndef::backend-deckjs[]
+ifndef::slides[]
 
 == Enseigner SysML
 
 :leveloffset: +1
-endif::backend-deckjs[]
+endif::slides[]
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: +1
 = Enseigner SysML
-endif::backend-deckjs[]
+endif::slides[]
 
 Cette partie est dédiée à l'enseignement à {SysML}. J'y distille des conseils et
 des remarques issues des nombreuses questions soulevées dans le cadre des journées
 SysML-France ou {upsti}.
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: 0
-endif::backend-deckjs[]
+endif::slides[]
 
 //===========================================================================
 == Respect des notations SysML
 
 Je recommande vraiment l'utilisation d'outils (même de dessins, mais dédié à) {sysml}.
 Ils respectent en général la norme {norme} (bien qu'il faille se méfier).
-Eviter de "dessiner" des diagrammes. 
+Eviter de "dessiner" des diagrammes.
 
 
 Par contre la norme permet de faire des adaptations graphiques (cf. la discussion http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/).
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset:0
-endif::backend-deckjs[]
-ifndef::backend-deckjs[]
-:leveloffset: +1	
-endif::backend-deckjs[]
+endif::slides[]
+ifndef::slides[]
+:leveloffset: +1
+endif::slides[]
 
-include::slides/cordeuse/bdd.asc[]
+include::bdd.asc[leveloffset=-1]
 
-include::slides/cordeuse/seq.asc[]
+include::seq.asc[]
 
 //===========================================================================
 == Diagramme des cas d'utilisation
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: -1
-endif::backend-deckjs[]
+endif::slides[]
 
 [[Utilisation]]
 === Utilisation du système
 
-.Problème : Fournir n'est pas Obtenir...	
+.Problème : Fournir n'est pas Obtenir...
 [icon="images/icons/appbar.weather.overcast.png"]
 [NOTE]
 ====
@@ -68,22 +68,16 @@ Dans le diagramme ci-dessus il aurait fallut écrire :
 image::plantuml/uc7.png[]
 ====
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: 0
-endif::backend-deckjs[]
-ifndef::backend-deckjs[]
+endif::slides[]
+ifndef::slides[]
 :leveloffset: +2
-endif::backend-deckjs[]
+endif::slides[]
 
-include::slides/cordeuse/uc.asc[]
+include::uc.asc[leveloffset=-1]
 
-ifdef::backend-deckjs[]
-:leveloffset: -1
-endif::backend-deckjs[]
-
-ifndef::backend-deckjs[]
-:leveloffset: +1
-endif::backend-deckjs[]
+:leveloffset: 0
 
 === Utilisation des `<<include>>`
 
@@ -101,7 +95,7 @@ image::plantuml/uc2.png[width="80%"]
 Dans la figure <<UC2>>, il n'y a aucune raison de ne pas inclure le cas d'utilisation
 +S'identifier+ directement dans le cas d'utilisation +Acheter en ligne+. Et avoir ainsi :
 
-ifdef::backend-deckjs[=== Utilisation des `<<include>>` (suite)]
+ifdef::slides[=== Utilisation des `<<include>>` (suite)]
 
 [[UC3]]
 .Solution 1 : On englobe les `<<include>>` "isolés"
@@ -113,7 +107,7 @@ image::plantuml/uc3.png[width="80%"]
 
 J'enseigne qu'un `<<include>>` devrait toujours concerner un cas inclut dans plusieurs autres, comme la figure <<UC4>> :
 
-ifdef::backend-deckjs[=== Utilisation des `<<include>>` (suite)]
+ifdef::slides[=== Utilisation des `<<include>>` (suite)]
 
 [[UC4]]
 .Solution 2 : On "mutualise" les `<<include>>`
@@ -124,7 +118,7 @@ image::plantuml/uc4.png[width="80%"]
 ====
 
 Néanmoins je vois deux raisons valables pour décomposer les cas d'utilisation avec des `<<include>>` qui se retrouvent isolés :
-	
+
 1. Pour indiquer que seulement une partie du cas d'utilisation principal interagit avec un acteur (secondaire la plupart du temps).
 C'est ce qui est fait dans <<UC1bis>>.
 
@@ -134,7 +128,7 @@ C'est ce qui est fait dans <<UC1bis>>.
 
 Faut-il minimiser le nombre de cas d'utilisation ou au contraire détailler?
 Normalement un bon diagramme des UC est indépendant de la solution, il exprime
-plutôt le problème (les attentes). 
+plutôt le problème (les attentes).
 
 Néanmoins dans le cadre de l'enseignement en prépa comme support graphique à une analyse
 fonctionnelle, pourquoi pas détailler. À ce moment-là, utiliser des stéréotypes pour différencier
@@ -145,24 +139,24 @@ sur le +HybridSUV+).
 ====
 La question de l'utilisation des cas d'utilisation pour exprimer les activités du système reste à trancher.
 Le diagramme des activités étant tout de même plus adapté a priori (cf. <<faq>>).
-Le principal défaut du diagramme <<UC1>> est surtout de mélanger des cas d'utilisations de niveaux différents. 
+Le principal défaut du diagramme <<UC1>> est surtout de mélanger des cas d'utilisations de niveaux différents.
 N'oublions pas que derrière chaque UC, il devrait y avoir un but d'une partie prenante.
 ====
 
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: 0
-endif::backend-deckjs[]
-ifndef::backend-deckjs[]
+endif::slides[]
+ifndef::slides[]
 :leveloffset: +1
-endif::backend-deckjs[]
+endif::slides[]
 
 //===========================================================================
 == Diagrammes de bloc
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: -1
-endif::backend-deckjs[]
+endif::slides[]
 
 === Héritage
 
@@ -178,7 +172,7 @@ image:plantuml/bdd1.png[]
 
 La relation doit pourvoir se lire "est un". Or, un +SarmentAttaché+ n'est pas un +SarmentNonAttaché+ (c'est même le contraire)!
 
-ifdef::backend-deckjs[=== Héritage (suite)]
+ifdef::slides[=== Héritage (suite)]
 
 Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter". Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de *généralisation*. À l'inverse, quand on constate qu'un bloc possède réellement plusieurs déclinaisons différentes et que l'on créé alors des blocs spécifiques, on parle alors de *spécialisation*.
 
@@ -209,7 +203,7 @@ Il ne s'agit pas d'une erreur de syntaxe SysML, mais d'une erreur de conception.
 Un +Alistar+ est composé de 8 +Propulseurs+ et un +Propulseurs+ est composé de 4 +Propulseurs arrières+. 4*8=32.
 ====
 
-ifdef::backend-deckjs[=== Cardinalités (suite)]
+ifdef::slides[=== Cardinalités (suite)]
 
 .Solution possible
 [icon="images/icons/appbar.weather.sun.png"]
@@ -219,33 +213,33 @@ image:plantuml/bdd4.png[]
 image:plantuml/bdd5.png[]
 ====
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: 0
-endif::backend-deckjs[]
+endif::slides[]
 
 
 //===========================================================================
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: 0
-endif::backend-deckjs[]
-ifndef::backend-deckjs[]
+endif::slides[]
+ifndef::slides[]
 :leveloffset: +1
-endif::backend-deckjs[]
+endif::slides[]
 
-include::slides/sm.asc[]
+include::sm.asc[]
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: 0
-endif::backend-deckjs[]
-ifndef::backend-deckjs[]
+endif::slides[]
+ifndef::slides[]
 :leveloffset: +1
-endif::backend-deckjs[]
+endif::slides[]
 
 == Divers
 
-ifdef::backend-deckjs[]
+ifdef::slides[]
 :leveloffset: -1
-endif::backend-deckjs[]
+endif::slides[]
 
 === Du danger d'une lecture trop rapide de la norme
 
@@ -287,4 +281,3 @@ Quand on cite un extrait de la norme, citer le numéro de page du document papie
 ====
 
 :leveloffset: 0
-

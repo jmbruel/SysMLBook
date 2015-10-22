@@ -93,12 +93,12 @@ volontairement ces termes (e.g., _Requirements_).
 
 ifdef::backend-deckjs[==== Conventions typographiques (suite)]
 
-Le titre des figures indique (entre parenthèses) 
-un +R+ pour les figures issues de {rhapsody}, 
+Le titre des figures indique (entre parenthèses)
+un +R+ pour les figures issues de {rhapsody},
 un +T+ pour les figures issues de {topcased},
 un +M+ pour les figures issues de {magicdraw},
-et un +UK+ pour les figures en anglais. Pour les conventions (de nommage notamment), cf. <<conventions>>. 
-	
+et un +UK+ pour les figures en anglais. Pour les conventions (de nommage notamment), cf. <<conventions>>.
+
 Pour les notes, conseils, avertissements, etc. voici la liste des pictogrammes utilisés :
 
 [NOTE]
@@ -117,7 +117,7 @@ Celles-ci concernent en général des points de détail et permettent "d'aller p
 ====
 
 .Définition : Exemple (OMG SysML v1.3, p. 152)
-[icon="/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons/sysml.jpeg"]
+[icon="/Users/bruel/Dropbox/dev/SysMLBook/images/icons/sysml.jpeg"]
 [NOTE]
 ====
 Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
@@ -153,11 +153,11 @@ Modélisation SysML correcte.
 
 ==== Pourquoi parler de "document"?
 
-Parce que j'ignore la version que vous êtes en train de lire. À partir de l'original, 
+Parce que j'ignore la version que vous êtes en train de lire. À partir de l'original,
 plusieurs versions ont été générées grâce à {asciidoc} :
 
 * pour le web (nous utilisons à {liut} l'excellent {Moodle}) au format http://www.sysml.fr/main[html]
-* pour présentation (en amphi par exemple) au format http://www.sysml.fr/slidy[slidy] ou http://www.sysml.fr/deckjs[deck.js] 
+* pour présentation (en amphi par exemple) au format http://www.sysml.fr/slidy[slidy] ou http://www.sysml.fr/deckjs[deck.js]
 * pour impression au format http://www.sysml.fr/main.pdf[pdf] (bien que bien sûr nous vous recommandons l'achat du livre)
 * pour lire au format http://www.sysml.fr/main.mobi[Kindle]
 

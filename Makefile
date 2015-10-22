@@ -1,8 +1,11 @@
 #-----------------------------------------------------
 MAIN=main
-ICONSDIR=/Users/bruel/Dropbox/Public/dev/SysMLBook/slides/images/icons
-IMAGESDIR=/Users/bruel/Dropbox/Public/dev/SysMLBook/images
-STYLE=/Users/bruel/Dropbox/Public/dev/SysMLBook/stylesheets/golo.css
+ICONSDIR=/Users/bruel/Dropbox/dev/SysMLBook/slides/images/icons
+IMAGESDIR=/Users/bruel/Dropbox/dev/SysMLBook/images
+STYLE=/Users/bruel/Dropbox/dev/SysMLBook/stylesheets/golo.css
+ASCIIDOCTOR=asciidoctor -a data-uri
+SLIDESTYLE=../asciidoctor-backends/haml/deckjs/
+
 #-----------------------------------------------------
 
 all: *.txt
@@ -66,12 +69,23 @@ tp: ups-tp.txt
 	asciidoc -a toc2 -b html5 -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
 	 -o ups-tp.html -a numbered ups-tp.txt
 
-deckjs:
+deckjs-old:
 	@echo '==> Compiling asciidoc files to generate SLIDES'
-	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri -a numbered \
+	asciidoctor -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri -a numbered \
 	 -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 \
 	 -a imagesdir=$(IMAGESDIR) \
 	 -o $(MAIN).deckjs.html $(MAIN).txt
+
+slides: main.adoc
+	@echo '==> Compiling asciidoc files to generate SLIDES'
+	$(ASCIIDOCTOR) \
+					 -T $(SLIDESTYLE) \
+					 -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 \
+					 -a imagesdir=$(IMAGESDIR) \
+					 -a slides \
+					 -a numbered \
+					 --trace \
+					 -o $@ $<
 
 #all: *.txt
 #	@echo '==> Compiling asciidoc files to generate HTML'
@@ -79,6 +93,7 @@ deckjs:
 sommaire: MasterDL.txt
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -b html5 -a icons -a iconsdir=$(ICONSDIR) MasterDL.txt
+
 ups: ups.txt
 	asciidoc -b html5 -a icons -a iconsdir=$(ICONSDIR) ups.txt
 	asciidoc -b deckjs -a icons -a iconsdir=$(ICONSDIR) -a data-uri \
@@ -92,11 +107,11 @@ slidy:
 	@echo '==> Compiling asciidoc files to generate HTML'
 	asciidoc -a posix --unsafe make.txt
 
-co: 
+co:
 	@echo '==> Checkout de la dernière version'
 	git checkout master
 
-commit: 
+commit:
 	@echo '==> Commit de la dernière version'
 	git add .
 	git commit -m "maj by JMB"
@@ -113,7 +128,7 @@ init:
 	@echo '==> Repository initial'
 	git init
 
-clean: 
+clean:
 	@echo '==> Suppression des fichiers de compilation'
 	@# fichiers de compilation latex
 	@rm -f *.log *.aux *.dvi *.toc *.lot *.lof *.ilg
